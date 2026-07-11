@@ -191,13 +191,13 @@ Object.entries(CATS).forEach(([k,v])=>{
     c.classList.toggle('on');
     if(c.classList.contains('on')){state.cats.add(k);c.style.background=v.color;c.style.color="#fff";}
     else{state.cats.delete(k);c.style.background="#fff";c.style.color="var(--ink)";}
-    render();
+    rerender();
   };
   catChips.appendChild(c);
 });
 document.getElementById('legend').innerHTML=Object.values(CATS).map(v=>`<div>${v.emoji} ${v.label}</div>`).join("");
 
-let state={city:"成都",cats:new Set(Object.keys(CATS)),halalOnly:false,q:"",tripDay:1};
+let state={city:"成都",cats:new Set(Object.keys(CATS)),halalOnly:false,q:"",tripDay:1,tripShowAll:false};
 let markers=[];
 let routeLine=null;
 
@@ -366,12 +366,40 @@ function renderTrip(){
     c.onclick=()=>{state.tripDay=dd.d;renderTrip();};
     chipRow.appendChild(c);
   });
+  // 顯示全部地點開關（疊加背景小圖釘，尊重上方分類/清真/搜尋篩選）
+  const allChip=document.createElement('span');
+  allChip.className='chip'+(state.tripShowAll?' on':'');
+  allChip.textContent='🗺 顯示全部地點（可搭配上方篩選）';
+  if(state.tripShowAll){allChip.style.background='#1a7a6d';allChip.style.color='#fff';}
+  allChip.onclick=()=>{state.tripShowAll=!state.tripShowAll;renderTrip();};
+  chipRow.appendChild(allChip);
   list.appendChild(chipRow);
   const head=document.createElement('div');
   head.style.cssText='font-size:13.5px;font-weight:700;padding:0 4px 8px';
   head.textContent=`Day ${day.d}（${day.wd}）${day.city==='重庆'?'重慶':day.city}：${day.title}`;
   list.appendChild(head);
-  document.getElementById('count').textContent=`📅 12月${day.date.split('/')[1]}日 ｜ ${day.stops.length} 站`;
+  // 背景疊加全部地點（半透明小圖釘）
+  let bgCount=0;
+  if(state.tripShowAll){
+    const dayCities=day.city==='双城'?['重庆','成都']:[day.city];
+    const stopNames=new Set(day.stops.map(s=>t2s(s.name)));
+    const q=t2s(state.q.toLowerCase());
+    PLACES.forEach(p=>{
+      if(!p.lat||!dayCities.includes(p.city))return;
+      const cat=catOf(p);
+      if(!state.cats.has(cat))return;
+      if(state.halalOnly&&FOOD_CATS.has(cat)&&!isHalalish(p))return;
+      if(q){const hay=t2s([p.name,p.area,p.address,p.cuisine,...(p.dishes||[]),...(p.activities||[])].join(" ").toLowerCase());if(!hay.includes(q))return;}
+      if(stopNames.has(t2s(p.name)))return;
+      const cfg=CATS[cat]||{color:"#555",emoji:"📌"};
+      const mk=L.marker([p.lat,p.lng],{icon:L.divIcon({className:'pin-wrap',
+        html:`<div class="pin" style="background:${cfg.color};transform:rotate(-45deg) scale(.72);opacity:.62"><span>${cfg.emoji}</span></div>`,
+        iconSize:[30,30],iconAnchor:[15,30],popupAnchor:[0,-26]}),zIndexOffset:0})
+        .addTo(map).bindPopup(popupHtml(p),{maxWidth:Math.min(300,window.innerWidth-90)});
+      markers.push(mk);bgCount++;
+    });
+  }
+  document.getElementById('count').textContent=`📅 12月${day.date.split('/')[1]}日 ｜ ${day.stops.length} 站${state.tripShowAll?`（＋背景 ${bgCount} 個地點）`:""}`;
   // 路線與標記
   const pts=[];
   day.stops.forEach((s,i)=>{
@@ -411,9 +439,15 @@ document.querySelectorAll('.city-tab').forEach(t=>t.onclick=()=>{
   if(state.city==="__trip"){renderTrip();return;}
   map.setView(CITY_CENTER[state.city],12);render();
 });
+function rerender(){
+  if(state.city==="__guides")renderGuides();
+  else if(state.city==="__tours")renderTours();
+  else if(state.city==="__trip")renderTrip();
+  else render();
+}
 document.getElementById('halalOnly').onclick=e=>{
   e.target.classList.toggle('on');state.halalOnly=e.target.classList.contains('on');
-  if(state.city!=="__guides"&&state.city!=="__tours")render();
+  rerender();
 };
 document.getElementById('resetBtn').onclick=()=>{
   state.cats=new Set(Object.keys(CATS));
@@ -424,13 +458,12 @@ document.getElementById('resetBtn').onclick=()=>{
     c.classList.add('on');
     const v=CATS[c.dataset.cat];c.style.background=v.color;c.style.color="#fff";
   });
-  if(state.city==="__guides")renderGuides();
-  else if(state.city==="__tours")renderTours();
+  if(state.city==="__guides"||state.city==="__tours"||state.city==="__trip")rerender();
   else{map.setView(CITY_CENTER[state.city],12);render();}
 };
 document.getElementById('search').oninput=e=>{
   state.q=e.target.value.trim();
-  state.city==="__guides"?renderGuides():(state.city==="__tours"?renderTours():render());
+  rerender();
 };
 
 PLACES.forEach((p,i)=>p._id=i);
