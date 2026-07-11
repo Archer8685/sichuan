@@ -4,3 +4,6 @@ Thumbs.db
 *.log
 __pycache__/
 *.py[cod]
+compact_list.txt
+rest_names.txt
+guides.json

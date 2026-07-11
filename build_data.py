@@ -53,10 +53,13 @@ for f in files:
     for it in data:
         it["city"] = norm_city(name, it)
         if "halal" in it: it["halal"] = norm_halal(it["halal"])
+        # rating 統一為字串 "4.6/5"
+        r = it.get("rating")
+        if isinstance(r, (int, float)): it["rating"] = f"{r}/5"
         # 統一 category/type
         cat = it.get("type") or it.get("category") or ""
         cat = cat.replace("景點", "景点").replace("甜點", "甜点").replace("飲料", "饮料")
-        if cat in ("景点", "商圈"): it["type"] = cat; it.pop("category", None)
+        if cat in ("景点", "商圈", "商场", "夜市"): it["type"] = cat; it.pop("category", None)
         else: it["category"] = cat; it.pop("type", None)
         # 座標轉 float
         for k in ("lat", "lng"):
@@ -68,7 +71,7 @@ for f in files:
 # 去重（同城市同名取第一筆）
 seen, deduped = set(), []
 for p in places:
-    key = (p["city"], re.sub(r"[（(].*?[)）]", "", p.get("name", "")).strip())
+    key = (p["city"], _norm_name(p.get("name", "")))
     if key in seen: continue
     seen.add(key); deduped.append(p)
 

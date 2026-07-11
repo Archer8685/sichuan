@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>成都・重慶 8天7夜 — 景點餐廳地圖</title>
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<link rel="stylesheet" href="libs/leaflet.css">
+<script src="libs/leaflet.js"></script>
 <style>
 :root{
   --bg:#faf7f2; --panel:#ffffff; --ink:#2b2620; --muted:#8a8177;
@@ -14,7 +14,41 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%;font-family:"PingFang TC","Microsoft JhengHei","Noto Sans TC",sans-serif;color:var(--ink);background:var(--bg)}
-#app{display:flex;height:100vh;height:100dvh;overflow:hidden}
+body{display:flex;flex-direction:column;overflow:hidden}
+.topnav{
+  position:relative;
+  z-index:1200;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  min-height:58px;
+  padding:9px clamp(14px, 3vw, 28px);
+  background:rgba(250,247,242,.96);
+  border-bottom:1px solid var(--line);
+  backdrop-filter:blur(12px);
+}
+.brand{display:flex;flex-direction:column;min-width:0}
+.brand strong{font-size:15px;line-height:1.25}
+.brand span{color:var(--muted);font-size:12px;line-height:1.35;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.navlinks{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.navlinks a{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:38px;
+  padding:0 14px;
+  border:1px solid var(--line);
+  border-radius:8px;
+  color:var(--ink);
+  background:var(--panel);
+  text-decoration:none;
+  font-size:14px;
+  font-weight:700;
+}
+.navlinks a[aria-current="page"]{color:#fff;background:var(--accent);border-color:var(--accent)}
+.navlinks a.map[aria-current="page"]{color:#fff;background:var(--accent2);border-color:var(--accent2)}
+#app{display:flex;flex:1;min-height:0;height:calc(100vh - 58px);height:calc(100dvh - 58px);overflow:hidden}
 
 /* ---------- sidebar ---------- */
 #sidebar{width:400px;min-width:340px;display:flex;flex-direction:column;background:var(--panel);border-right:1px solid var(--line);z-index:1000}
@@ -62,9 +96,13 @@ header p{font-size:12px;color:var(--muted);margin-top:3px}
 
 /* ---------- mobile ---------- */
 @media (max-width:760px){
-  #app{flex-direction:column-reverse}
-  #sidebar{width:100%;min-width:0;height:52dvh;border-right:none;border-top:1px solid var(--line)}
-  #map{height:48dvh;flex:none}
+  .topnav{min-height:62px;padding:8px 12px}
+  .brand strong{font-size:14px}
+  .brand span{font-size:11.5px}
+  .navlinks a{min-height:40px;padding:0 12px;font-size:13px}
+  #app{flex-direction:column-reverse;height:calc(100vh - 62px);height:calc(100dvh - 62px)}
+  #sidebar{width:100%;min-width:0;height:52%;border-right:none;border-top:1px solid var(--line)}
+  #map{height:48%;flex:none}
   header{padding:8px 14px 6px}
   header h1{font-size:15.5px}
   header p{font-size:11px}
@@ -77,15 +115,26 @@ header p{font-size:12px;color:var(--muted);margin-top:3px}
 </style>
 </head>
 <body>
+<nav class="topnav" aria-label="主要導覽">
+  <div class="brand">
+    <strong>Sichuan Trip</strong>
+    <span>2026/12/5 - 12/13</span>
+  </div>
+  <div class="navlinks">
+    <a href="index.html">行程</a>
+    <a class="map" href="map.html" aria-current="page">地圖</a>
+  </div>
+</nav>
 <div id="app">
   <div id="sidebar">
     <header>
       <h1>🐼 成都・重慶 美食景點地圖</h1>
-      <p>12/5–12/13 ｜ <a href="itinerary.html" style="color:var(--accent2)">📅 五版本行程規劃 →</a></p>
+      <p id="subtitle">12/5–12/13</p>
     </header>
     <div class="city-tabs">
       <div class="city-tab active" data-city="成都">成都</div>
       <div class="city-tab" data-city="重庆">重慶</div>
+      <div class="city-tab" data-city="__trip">📅 行程</div>
       <div class="city-tab" data-city="__tours">🚌 一日遊</div>
       <div class="city-tab" data-city="__guides">📚 攻略</div>
     </div>
@@ -93,6 +142,7 @@ header p{font-size:12px;color:var(--muted);margin-top:3px}
       <div class="filter-row" id="catChips"></div>
       <div class="filter-row">
         <span class="chip halal-chip" id="halalOnly">☪ 只看清真／清真友善（餐飲）</span>
+        <span class="chip" id="resetBtn">🔄 重置（全選）</span>
       </div>
       <input id="search" placeholder="搜尋名稱、菜色、區域…（支援繁體）">
     </div>
@@ -104,11 +154,14 @@ header p{font-size:12px;color:var(--muted);margin-top:3px}
 <div class="legend" id="legend"></div>
 
 <script src="data.js"></script>
+<script src="trip.js"></script>
 <script>
 // 分類設定：顏色＋圖示
 const CATS={
   "景点":{color:"#c0392b",emoji:"🏞",label:"景點"},
   "商圈":{color:"#8e44ad",emoji:"🛍️",label:"商圈"},
+  "商场":{color:"#6d28d9",emoji:"🏬",label:"商場"},
+  "夜市":{color:"#b45309",emoji:"🌃",label:"夜市"},
   "早餐":{color:"#e67e22",emoji:"🥣",label:"早餐"},
   "甜点":{color:"#d81b60",emoji:"🍰",label:"甜點"},
   "饮料":{color:"#1a7a6d",emoji:"🍵",label:"飲料"},
@@ -144,8 +197,9 @@ Object.entries(CATS).forEach(([k,v])=>{
 });
 document.getElementById('legend').innerHTML=Object.values(CATS).map(v=>`<div>${v.emoji} ${v.label}</div>`).join("");
 
-let state={city:"成都",cats:new Set(Object.keys(CATS)),halalOnly:false,q:""};
+let state={city:"成都",cats:new Set(Object.keys(CATS)),halalOnly:false,q:"",tripDay:1};
 let markers=[];
+let routeLine=null;
 
 function catOf(p){return p.type||p.category;}
 function isHalalish(p){return p.halal===true||p.halal==="友善"||p.halal==="true";}
@@ -160,6 +214,24 @@ function makeIcon(cat){
   });
 }
 
+function _distKm(a,b){const dx=(a.lat-b.lat)*111,dy=(a.lng-b.lng)*95;return Math.sqrt(dx*dx+dy*dy);}
+function nearbyOf(p,n,maxKm){
+  n=n||4;maxKm=maxKm||0.45;
+  if(!p||!p.lat)return[];
+  return PLACES.filter(q=>q.lat&&q.city===p.city&&q.name!==p.name&&!['交通','住宿'].includes(q.type||q.category))
+    .map(q=>[_distKm(p,q),q]).filter(pair=>pair[0]<=maxKm)
+    .sort((a,b)=>a[0]-b[0]).slice(0,n);
+}
+function nearbyText(p){
+  const nb=nearbyOf(p);
+  if(!nb.length)return"";
+  return nb.map(pair=>{
+    const q=pair[1],m=Math.max(50,Math.round(pair[0]*1000/50)*50);
+    const r=q.rating?`⭐${String(q.rating).split('/')[0]}`:"";
+    return `${q.name}${r?`（${r}）`:""} ${m}m`;
+  }).join("、");
+}
+const NEARBY_CATS=new Set(["景点","商圈","商场","夜市","住宿"]);
 function popupHtml(p){
   const dishes=(p.dishes||p.activities||[]).map(d=>`<span>${d}</span>`).join("");
   return `<div class="pp">
@@ -173,6 +245,7 @@ function popupHtml(p){
     ${dishes?`<div class="row"><b>${p.type||p.category==="交通"?"🎡 推薦項目：":"🍽 推薦菜色："}</b><div class="dish-chips">${dishes}</div></div>`:""}
     ${p.reason?`<div class="row"><b>💡 </b>${p.reason}</div>`:""}
     ${p.notes?`<div class="row warn"><b>⚠️ </b>${p.notes}</div>`:""}
+    ${NEARBY_CATS.has(p.type||p.category)&&nearbyText(p)?`<div class="row"><b>🧭 附近知名：</b>${nearbyText(p)}</div>`:""}
     ${p.address?`<div class="row"><b>📍 </b>${p.address}</div>`:""}
   </div>`;
 }
@@ -192,6 +265,7 @@ function passes(p){
 
 function render(){
   markers.forEach(m=>map.removeLayer(m));markers=[];
+  if(routeLine){map.removeLayer(routeLine);routeLine=null;}
   const list=document.getElementById('list');list.innerHTML="";
   const items=PLACES.filter(passes);
   document.getElementById('count').textContent=`顯示 ${items.length} 個地點（${state.city==="重庆"?"重慶":state.city}）`;
@@ -220,6 +294,7 @@ function render(){
 
 function renderGuides(){
   markers.forEach(m=>map.removeLayer(m));markers=[];
+  if(routeLine){map.removeLayer(routeLine);routeLine=null;}
   const list=document.getElementById('list');list.innerHTML="";
   const q=t2s(state.q.toLowerCase());
   const items=GUIDES.filter(g=>!q||t2s([g.title,g.summary,g.site,g.city,...(g.highlights||[])].join(" ").toLowerCase()).includes(q));
@@ -239,6 +314,7 @@ function renderGuides(){
 
 function renderTours(){
   markers.forEach(m=>map.removeLayer(m));markers=[];
+  if(routeLine){map.removeLayer(routeLine);routeLine=null;}
   const list=document.getElementById('list');list.innerHTML="";
   const TT=(typeof TOURS!=="undefined")?TOURS:[];
   const q=t2s(state.q.toLowerCase());
@@ -257,16 +333,100 @@ function renderTours(){
   });
 }
 
+// ---------- 📅 行程模式 ----------
+function _norm(s){return t2s((s||"").replace(/[（(].*?[)）]/g,"").replace(/[·・\s]/g,"").toLowerCase());}
+const _PIDX=PLACES.map(p=>[_norm(p.name),p]);
+function findPlace(name){
+  const n=_norm(name);if(!n)return null;
+  let best=null,bestLen=0;
+  for(const [pn,p] of _PIDX){
+    if(pn===n)return p;
+    if((pn.includes(n)||n.includes(pn))&&pn.length>bestLen){best=p;bestLen=pn.length;}
+  }
+  return best;
+}
+const KIND_COLOR={spot:"#c0392b",meal:"#1a7a6d",hotel:"#37474f",move:"#5d4037"};
+function numIcon(n,kind){
+  return L.divIcon({className:'pin-wrap',
+    html:`<div class="pin" style="background:${KIND_COLOR[kind]||"#555"}"><span style="font-size:13px;font-weight:700;color:#fff;font-family:sans-serif">${n}</span></div>`,
+    iconSize:[30,30],iconAnchor:[15,30],popupAnchor:[0,-30]});
+}
+function renderTrip(){
+  markers.forEach(m=>map.removeLayer(m));markers=[];
+  if(routeLine){map.removeLayer(routeLine);routeLine=null;}
+  const list=document.getElementById('list');list.innerHTML="";
+  const day=TRIP.find(x=>x.d===state.tripDay)||TRIP[0];
+  // 日期選擇 chips
+  const chipRow=document.createElement('div');
+  chipRow.style.cssText='display:flex;flex-wrap:wrap;gap:5px;padding:6px 4px 10px';
+  TRIP.forEach(dd=>{
+    const c=document.createElement('span');c.className='chip'+(dd.d===day.d?' on':'');
+    c.textContent=`D${dd.d} ${dd.date}`;
+    if(dd.d===day.d){c.style.background='#c0392b';c.style.color='#fff';}
+    c.onclick=()=>{state.tripDay=dd.d;renderTrip();};
+    chipRow.appendChild(c);
+  });
+  list.appendChild(chipRow);
+  const head=document.createElement('div');
+  head.style.cssText='font-size:13.5px;font-weight:700;padding:0 4px 8px';
+  head.textContent=`Day ${day.d}（${day.wd}）${day.city==='重庆'?'重慶':day.city}：${day.title}`;
+  list.appendChild(head);
+  document.getElementById('count').textContent=`📅 12月${day.date.split('/')[1]}日 ｜ ${day.stops.length} 站`;
+  // 路線與標記
+  const pts=[];
+  day.stops.forEach((s,i)=>{
+    const p=findPlace(s.name);
+    if(p&&p.lat&&p.lng){
+      pts.push([p.lat,p.lng]);
+      const mk=L.marker([p.lat,p.lng],{icon:numIcon(i+1,s.kind),zIndexOffset:1000+i})
+        .addTo(map)
+        .bindPopup(`<div class="pp"><div class="sub" style="margin-bottom:4px">${s.t}｜${s.label}</div>`+popupHtml(p).replace('<div class="pp">','')+`</div>`,{maxWidth:Math.min(300,window.innerWidth-90)});
+      mk._stopIdx=i;markers.push(mk);
+    }
+    const card=document.createElement('div');card.className='card';
+    const nb=(p&&(s.kind==='spot'||s.kind==='hotel'))?nearbyText(p):"";
+    card.innerHTML=`<div class="top"><span class="badge" style="background:${KIND_COLOR[s.kind]||'#555'}">${i+1}</span><h3>${s.name}</h3></div>
+      <div class="meta">🕐 ${s.t}｜${s.label}</div>
+      ${s.note?`<div class="dishes">${s.note}</div>`:""}
+      ${nb?`<div class="meta" style="margin-top:4px">🧭 附近：${nb}</div>`:""}
+      ${(s.go&&i<day.stops.length-1)?`<div class="meta" style="margin-top:4px;color:#4a6b8a">↓ ${s.go}</div>`:""}`;
+    card.onclick=()=>{
+      const mk=markers.find(m=>m._stopIdx===i);
+      if(mk){map.setView(mk.getLatLng(),15);mk.openPopup();
+        if(window.innerWidth<=760)window.scrollTo({top:0});}
+    };
+    list.appendChild(card);
+  });
+  if(pts.length>1){
+    routeLine=L.polyline(pts,{color:'#c0392b',weight:3,opacity:.75,dashArray:'8 6'}).addTo(map);
+    map.fitBounds(routeLine.getBounds(),{padding:[40,40]});
+  }else if(pts.length===1){map.setView(pts[0],13);}
+}
+
 document.querySelectorAll('.city-tab').forEach(t=>t.onclick=()=>{
   document.querySelectorAll('.city-tab').forEach(x=>x.classList.remove('active'));
   t.classList.add('active');state.city=t.dataset.city;
   if(state.city==="__guides"){renderGuides();return;}
   if(state.city==="__tours"){renderTours();return;}
+  if(state.city==="__trip"){renderTrip();return;}
   map.setView(CITY_CENTER[state.city],12);render();
 });
 document.getElementById('halalOnly').onclick=e=>{
   e.target.classList.toggle('on');state.halalOnly=e.target.classList.contains('on');
   if(state.city!=="__guides"&&state.city!=="__tours")render();
+};
+document.getElementById('resetBtn').onclick=()=>{
+  state.cats=new Set(Object.keys(CATS));
+  state.halalOnly=false;state.q="";
+  document.getElementById('search').value="";
+  const hc=document.getElementById('halalOnly');hc.classList.remove('on');
+  document.querySelectorAll('#catChips .chip').forEach(c=>{
+    c.classList.add('on');
+    const v=CATS[c.dataset.cat];c.style.background=v.color;c.style.color="#fff";
+  });
+  if(state.city==="__guides")renderGuides();
+  else if(state.city==="__tours")renderTours();
+  else{map.setView(CITY_CENTER[state.city],12);render();}
 };
 document.getElementById('search').oninput=e=>{
   state.q=e.target.value.trim();
@@ -274,6 +434,7 @@ document.getElementById('search').oninput=e=>{
 };
 
 PLACES.forEach((p,i)=>p._id=i);
+document.getElementById('subtitle').textContent=`12/5–12/13 ｜ ${PLACES.length} 個地點 ｜ ${GUIDES.length} 篇攻略 ｜ ${(typeof TOURS!=="undefined"?TOURS.length:0)} 條一日遊`;
 
 // 支援 map.html?q=關鍵字（行程頁連結跳轉用），自動選對城市
 const _urlQ=new URLSearchParams(location.search).get('q');
