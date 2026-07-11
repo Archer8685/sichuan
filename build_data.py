@@ -59,6 +59,7 @@ for f in files:
         # 統一 category/type
         cat = it.get("type") or it.get("category") or ""
         cat = cat.replace("景點", "景点").replace("甜點", "甜点").replace("飲料", "饮料")
+        if "伴手礼" in cat or "食品店" in cat: cat = "商场"
         if cat in ("景点", "商圈", "商场", "夜市"): it["type"] = cat; it.pop("category", None)
         else: it["category"] = cat; it.pop("type", None)
         # 座標轉 float

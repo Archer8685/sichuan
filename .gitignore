@@ -6,4 +6,5 @@ __pycache__/
 *.py[cod]
 compact_list.txt
 rest_names.txt
+exclude_lists.txt
 guides.json
