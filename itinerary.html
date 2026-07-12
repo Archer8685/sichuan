@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>成都・重慶 12/5–12/13 最終行程</title>
-<link rel="preload" href="data.js?v=8" as="script">
-<link rel="preload" href="trip.js?v=8" as="script">
+<link rel="preload" href="data.js?v=9" as="script">
+<link rel="preload" href="trip.js?v=9" as="script">
 <link rel="prefetch" href="libs/leaflet.js">
 <link rel="prefetch" href="libs/leaflet.css">
 <link rel="prefetch" href="map.html">
@@ -156,8 +156,8 @@ header .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
 </div>
 </div>
 
-<script src="data.js?v=8"></script>
-<script src="trip.js?v=8"></script>
+<script src="data.js?v=9"></script>
+<script src="trip.js?v=9"></script>
 <script>
 // ---- 共用：地點查找與繁簡 ----
 const _T2S=(typeof T2S!=="undefined")?T2S:{};
@@ -174,6 +174,25 @@ function lookup(name){
   return best;
 }
 function _distKm(a,b){const dx=(a.lat-b.lat)*111,dy=(a.lng-b.lng)*95;return Math.sqrt(dx*dx+dy*dy);}
+// 附近用餐（清真優先）：景點旁至少給 3 個吃飯選擇避免意外。
+// 規則：1.2km 內餐飲類；☪認證與(友)友善優先，不足 3 間才補最近的非清真；最多列 4 間。
+function nearbyEats(p){
+  if(!p||!p.lat)return"";
+  const FOOD=new Set(['早餐','甜点','饮料','午晚餐']);
+  const ex=_norm(p.name);
+  const cand=PLACES.filter(q=>q.lat&&q.city===p.city&&FOOD.has(q.type||q.category)&&_norm(q.name)!==ex)
+    .map(q=>({q,d:_distKm(p,q),r:(q.halal===true?0:(q.halal==='友善'?1:2))}))
+    .filter(x=>x.d<=1.2)
+    .sort((a,b)=>(a.r-b.r)||(a.d-b.d));
+  let pick=cand.filter(x=>x.r<2).slice(0,4);
+  if(pick.length<3)pick=pick.concat(cand.filter(x=>x.r===2).slice(0,3-pick.length));
+  pick=pick.slice(0,4).sort((a,b)=>a.d-b.d);
+  if(!pick.length)return"";
+  return pick.map(x=>{
+    const m=Math.max(50,Math.round(x.d*1000/50)*50);
+    return `${x.r===0?'☪ ':''}${x.q.name}${x.r===1?'（友）':''} ${m}m`;
+  }).join('、');
+}
 function nearbyText(p){
   if(!p||!p.lat)return"";
   const ex=_norm(p.name);
@@ -211,6 +230,10 @@ TRIP.forEach(day=>{
       if(s.kind==='meal'&&p.dishes&&p.dishes.length)moreBits.push(`🍽 必點：${p.dishes.slice(0,5).join("、")}`);
       if(p.duration)moreBits.push(`⏱ ${p.duration}`);
       if(p.notes)moreBits.push(`⚠️ ${p.notes}`);
+      if(s.kind==='spot'||s.kind==='hotel'){
+        const eats=nearbyEats(p);
+        if(eats)moreBits.push(`🍽 附近用餐：${eats}`);
+      }
       const nb=nearbyText(p);
       if(nb)moreBits.push(`🧭 附近知名：${nb}`);
     }

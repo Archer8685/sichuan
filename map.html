@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>成都・重慶 8天7夜 — 景點餐廳地圖</title>
-<link rel="preload" href="data.js?v=8" as="script">
-<link rel="preload" href="trip.js?v=8" as="script">
+<link rel="preload" href="data.js?v=9" as="script">
+<link rel="preload" href="trip.js?v=9" as="script">
 <link rel="prefetch" href="itinerary.html">
 <link rel="prefetch" href="prep.html">
 <link rel="stylesheet" href="libs/leaflet.css">
@@ -80,7 +80,8 @@ header p{font-size:12px;color:var(--muted);margin-top:3px}
 #search:focus{border-color:var(--accent)}
 #count{font-size:12px;color:var(--muted);padding:8px 18px 4px;transition:opacity .2s}
 .filters{transition:opacity .2s}
-#list{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;padding:4px 12px 20px;transition:opacity .2s}
+#list{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;padding:4px 12px 20px;transition:opacity .2s;overscroll-behavior:contain}
+html,body{overscroll-behavior:none} /* 防止下拉手勢觸發瀏覽器 pull-to-refresh 吃掉觸控 */
 .card{border:1px solid var(--line);border-radius:12px;padding:11px 13px;margin:8px 4px;cursor:pointer;background:#fff;transition:.12s}
 .card:hover{border-color:var(--accent);box-shadow:0 2px 10px rgba(0,0,0,.06)}
 .card .top{display:flex;align-items:center;gap:7px}
@@ -185,8 +186,8 @@ header p{font-size:12px;color:var(--muted);margin-top:3px}
 </div>
 <div class="legend" id="legend"></div>
 
-<script src="data.js?v=8"></script>
-<script src="trip.js?v=8"></script>
+<script src="data.js?v=9"></script>
+<script src="trip.js?v=9"></script>
 <script>
 // 分類設定：顏色＋圖示
 const CATS={
@@ -282,6 +283,24 @@ function nearbyText(p){
     const r=q.rating?`⭐${String(q.rating).split('/')[0]}`:"";
     return `${q.name}${r?`（${r}）`:""} ${m}m`;
   }).join("、");
+}
+// 附近用餐（清真優先）：景點站點旁至少列 3 個吃飯選擇。
+// 1.2km 內餐飲；☪認證/（友）友善優先，不足 3 間才補最近的非清真；最多 4 間。
+function nearbyEats(p){
+  if(!p||!p.lat)return"";
+  const ex=p.name;
+  const cand=PLACES.filter(q=>q.lat&&q.city===p.city&&FOOD_CATS.has(q.type||q.category)&&q.name!==ex)
+    .map(q=>({q,d:_distKm(p,q),r:(q.halal===true?0:(q.halal==='友善'?1:2))}))
+    .filter(x=>x.d<=1.2)
+    .sort((a,b)=>(a.r-b.r)||(a.d-b.d));
+  let pick=cand.filter(x=>x.r<2).slice(0,4);
+  if(pick.length<3)pick=pick.concat(cand.filter(x=>x.r===2).slice(0,3-pick.length));
+  pick=pick.slice(0,4).sort((a,b)=>a.d-b.d);
+  if(!pick.length)return"";
+  return pick.map(x=>{
+    const m=Math.max(50,Math.round(x.d*1000/50)*50);
+    return `${x.r===0?'☪ ':''}${x.q.name}${x.r===1?'（友）':''} ${m}m`;
+  }).join('、');
 }
 const NEARBY_CATS=new Set(["景点","商圈","商场","夜市","住宿"]);
 function popupHtml(p){
@@ -465,11 +484,14 @@ function renderTrip(keepView){
       mk._stopIdx=i;markers.push(mk);
     }
     const card=document.createElement('div');card.className='card';
-    const nb=(p&&(s.kind==='spot'||s.kind==='hotel'))?nearbyText(p):"";
+    const isPlaceStop=(s.kind==='spot'||s.kind==='hotel');
+    const nb=(p&&isPlaceStop)?nearbyText(p):"";
+    const eats=(p&&isPlaceStop)?nearbyEats(p):"";
     card.innerHTML=`<div class="top"><span class="badge" style="background:${KIND_COLOR[s.kind]||'#555'}">${i+1}</span><h3>${s.name}</h3></div>
       <div class="meta">🕐 ${s.t}｜${s.label}</div>
       ${s.note?`<div class="dishes">${s.note}</div>`:""}
       ${s.alt?`<div class="meta" style="margin-top:4px;color:#a04b12">🔥 熱門備選：${s.alt}</div>`:""}
+      ${eats?`<div class="meta" style="margin-top:4px;color:#0e7c3f">🍽 附近用餐：${eats}</div>`:""}
       ${nb?`<div class="meta" style="margin-top:4px">🧭 附近：${nb}</div>`:""}
       ${(s.go&&i<day.stops.length-1)?`<div class="meta" style="margin-top:4px;color:#4a6b8a">↓ ${s.go}</div>`:""}`;
     card.onclick=()=>{
@@ -597,38 +619,64 @@ document.addEventListener('click',e=>{
   window.addEventListener('resize',setInitial);
   window.addEventListener('orientationchange',setInitial);
 
-  let dragging=false,startY=0,startShown=0,moved=0,startT=0;
-  function onDown(e){
-    if(!isMobile())return;
-    dragging=true;moved=0;startT=Date.now();
-    startY=(e.touches?e.touches[0].clientY:e.clientY);
-    startShown=curShown||shownFor(mode);
-    sidebar.classList.add('dragging');
-    e.preventDefault();
-  }
-  function onMove(e){
-    if(!dragging)return;
-    const y=(e.touches?e.touches[0].clientY:e.clientY);
-    const dy=startY-y;moved=Math.max(moved,Math.abs(dy));
-    setShown(Math.min(sheetH(),Math.max(PEEK,startShown+dy)),false);
-  }
-  function onUp(){
-    if(!dragging)return;
-    dragging=false;
-    sidebar.classList.remove('dragging');
-    const isTap=moved<6&&(Date.now()-startT)<300;
-    if(isTap){applyMode(mode==='peek'?'half':'peek',true);return;}
+  // ── 手勢：整個面板皆可拖（Google Maps 式）──
+  // 規則：把手＝無條件拖面板；面板其他區域＝智慧判斷——
+  //   往下滑且清單已在頂部 → 拖面板（收合）
+  //   往上滑且面板未全開   → 拖面板（展開）；全開後上滑交還給清單捲動
+  // 判定前 8px 為緩衝（不干擾點擊）；水平為主的滑動不接管（保留篩選列橫滑）。
+  const listEl=document.getElementById('list');
+  let drag=null; // {startY,startX,startShown,taking,decided,fromHandle,moved,startT}
+  function snap(){
     const cands={peek:shownFor('peek'),half:shownFor('half'),full:shownFor('full')};
     let best='half',bestD=Infinity;
     Object.entries(cands).forEach(([k,v])=>{const d=Math.abs(curShown-v);if(d<bestD){bestD=d;best=k;}});
     applyMode(best,true);
   }
-  handle.addEventListener('touchstart',onDown,{passive:false});
-  handle.addEventListener('touchmove',onMove,{passive:true});
-  handle.addEventListener('touchend',onUp);
-  handle.addEventListener('mousedown',onDown);
-  window.addEventListener('mousemove',onMove);
-  window.addEventListener('mouseup',onUp);
+  function gStart(y,x,fromHandle){
+    if(!isMobile())return;
+    drag={startY:y,startX:x,startShown:curShown||shownFor(mode),
+          taking:fromHandle,decided:fromHandle,fromHandle,moved:0,startT:Date.now()};
+    if(fromHandle)sidebar.classList.add('dragging');
+  }
+  function gMove(y,x,e){
+    if(!drag)return;
+    const dy=drag.startY-y; // 正值＝往上
+    const dx=Math.abs(drag.startX-x);
+    drag.moved=Math.max(drag.moved,Math.abs(dy));
+    if(!drag.decided){
+      if(Math.abs(dy)<8&&dx<8)return;           // 緩衝區
+      if(dx>Math.abs(dy)){drag=null;return;}    // 橫向為主 → 交給橫滑列
+      const atFull=curShown>=sheetH()-4;
+      drag.taking = dy<0 ? (listEl.scrollTop<=0)   // 下滑：清單在頂才接管
+                         : !atFull;                 // 上滑：未全開才接管
+      drag.decided=true;
+      if(!drag.taking){drag=null;return;}          // 交還原生捲動
+      sidebar.classList.add('dragging');
+    }
+    if(drag.taking){
+      if(e&&e.cancelable)e.preventDefault();       // 阻止清單捲動/瀏覽器手勢搶走
+      setShown(Math.min(sheetH(),Math.max(PEEK,drag.startShown+dy)),false);
+    }
+  }
+  function gEnd(){
+    if(!drag)return;
+    const d=drag;drag=null;
+    sidebar.classList.remove('dragging');
+    if(!d.taking)return;
+    const isTap=d.fromHandle&&d.moved<6&&(Date.now()-d.startT)<300;
+    if(isTap){applyMode(mode==='peek'?'half':'peek',true);return;}
+    snap();
+  }
+  sidebar.addEventListener('touchstart',e=>{
+    if(e.target.closest('input'))return;           // 搜尋框不攔
+    gStart(e.touches[0].clientY,e.touches[0].clientX,!!e.target.closest('.sheet-handle'));
+  },{passive:true});
+  sidebar.addEventListener('touchmove',e=>gMove(e.touches[0].clientY,e.touches[0].clientX,e),{passive:false});
+  sidebar.addEventListener('touchend',gEnd);
+  sidebar.addEventListener('touchcancel',gEnd);    // 瀏覽器手勢中斷也要收尾，否則卡死
+  handle.addEventListener('mousedown',e=>{gStart(e.clientY,e.clientX,true);e.preventDefault();});
+  window.addEventListener('mousemove',e=>gMove(e.clientY,e.clientX,e));
+  window.addEventListener('mouseup',gEnd);
 })();
 </script>
 </body>
