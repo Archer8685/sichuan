@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>成都・重慶 9天8夜 — 景點餐廳地圖</title>
-<link rel="preload" href="data.js?v=30" as="script">
-<link rel="preload" href="trip.js?v=30" as="script">
+<link rel="preload" href="data.js?v=31" as="script">
+<link rel="preload" href="trip.js?v=31" as="script">
 <link rel="prefetch" href="itinerary.html">
 <link rel="prefetch" href="prep.html">
 <link rel="prefetch" href="guide.html">
@@ -162,7 +162,7 @@ html,body{overscroll-behavior:none} /* 防止下拉手勢觸發瀏覽器 pull-to
 <nav class="topnav" aria-label="主要導覽">
   <div class="brand">
     <strong>Sichuan Trip</strong>
-    <span class="site-meta" data-site-meta>2026/12/5–12/13 ｜ v30・更新 2026/07/12 21:39</span>
+    <span class="site-meta" data-site-meta>2026/12/5–12/13 ｜ v31・更新 2026/07/12 21:56</span>
   </div>
   <div class="navlinks">
     <a href="prep.html">行前</a>
@@ -200,8 +200,8 @@ html,body{overscroll-behavior:none} /* 防止下拉手勢觸發瀏覽器 pull-to
 </div>
 <div class="legend" id="legend"></div>
 
-<script src="data.js?v=30"></script>
-<script src="trip.js?v=30"></script>
+<script src="data.js?v=31"></script>
+<script src="trip.js?v=31"></script>
 <script>
 // 分類設定：顏色＋圖示
 const CATS={
@@ -319,8 +319,8 @@ function altHTML(stop){
     const d=(main&&main.lat&&q.lat)?_distKm(main,q):null;
     const dist=d!=null?` ${Math.max(50,Math.round(d*1000/50)*50)}m`:'';
     const mk=q.halal===true?'☪ ':'';const fr=q.halal==='友善'?'（友）':'';
-    const url='map.html?q='+encodeURIComponent(q.name.trim());
-    return `<a href="${url}" style="color:#a04b12">${mk}${q.name}${fr}</a>${dist}`;
+    const place=encodeURIComponent(q.name.trim());
+    return `<a href="map.html?q=${place}" data-focus-place="${place}" style="color:#a04b12">${mk}${q.name}${fr}</a>${dist}`;
   }).filter(Boolean);
   if(!items.length)return"";
   return `🔁 備選：${items.join('、')}${auto?'（就近同類）':''}`;
@@ -420,6 +420,26 @@ function findPlace(name){
   }
   return best;
 }
+function focusTripPlace(name){
+  const p=findPlace(name);
+  if(!p||!p.lat||!p.lng)return;
+  focusOn([p.lat,p.lng],15);
+  let mk=markers.find(m=>m._pid===p._id);
+  if(!mk){
+    const cat=catOf(p);
+    mk=L.marker([p.lat,p.lng],{icon:makeIcon(cat,p,false),zIndexOffset:1200})
+      .addTo(map).bindPopup(popupHtml(p),{maxWidth:Math.min(300,window.innerWidth-90)});
+    mk._pid=p._id;markers.push(mk);
+  }
+  mk.openPopup();
+}
+document.getElementById('list').addEventListener('click',e=>{
+  const link=e.target.closest('a[data-focus-place]');
+  if(!link)return;
+  e.preventDefault();
+  e.stopPropagation();
+  focusTripPlace(decodeURIComponent(link.dataset.focusPlace));
+},true);
 const KIND_COLOR={spot:"#c0392b",meal:"#1a7a6d",hotel:"#37474f",move:"#5d4037"};
 function numIcon(n,kind){
   return L.divIcon({className:'pin-wrap',
@@ -472,7 +492,7 @@ function renderTrip(keepView){
         html:`<div class="pin" style="background:${cfg.color};transform:rotate(-45deg) scale(.72);opacity:${searchMatch?'.62':'.16'}"><span>${cfg.emoji}</span></div>`,
         iconSize:[30,30],iconAnchor:[15,30],popupAnchor:[0,-26]}),zIndexOffset:0})
         .addTo(map).bindPopup(popupHtml(p),{maxWidth:Math.min(300,window.innerWidth-90)});
-      markers.push(mk);bgCount++;
+      mk._pid=p._id;markers.push(mk);bgCount++;
     });
   }
   const bgHint=state.tripShowAll?(bgCount>0?`（＋背景 ${bgCount} 個地點）`:`（背景 0 個——受上方分類/清真/搜尋篩選影響，按「全選」可顯示全部類型）`):"";
