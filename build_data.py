@@ -23,8 +23,13 @@ def norm_halal(v):
 def _norm_name(s):
     return re.sub(r"[（(].*?[)）]", "", s or "").replace("·", "").replace(" ", "").strip()
 
+def _norm_exact_name(s):
+    """保留分店後綴的評分比對鍵，避免不同分店互相覆蓋。"""
+    return (s or "").replace("（", "(").replace("）", ")").replace("·", "").replace(".", "").replace(" ", "").strip()
+
 tours = []
-ratings = {}
+ratings, ratings_exact = {}, {}
+ref_exact_names = set()
 for f in files:
     name = os.path.basename(f)
     try:
@@ -47,7 +52,17 @@ for f in files:
     if name.startswith("ratings"):
         for r in data:
             if r.get("rating"):
-                ratings[_norm_name(r["name"])] = (r["rating"], r.get("rating_source", ""))
+                # ref-images 是使用者提供的最新大眾點評截圖，應覆蓋舊評分；
+                # 其餘評分檔仍只用於補空值，避免無意改動既有資料。
+                rv = (
+                    r["rating"],
+                    r.get("rating_source", ""),
+                    name == "ratings_ref_images.json",
+                )
+                ratings[_norm_name(r["name"])] = rv
+                ratings_exact[_norm_exact_name(r["name"])] = rv
+                if name == "ratings_ref_images.json":
+                    ref_exact_names.add(_norm_exact_name(r["name"]))
         print(f"{name}: {len(data)} ratings")
         continue
     for it in data:
@@ -69,10 +84,11 @@ for f in files:
         places.append(it)
     print(f"{name}: {len(data)} places")
 
-# 去重（同城市同名取第一筆）
+# 去重（一般资料按主店名去重；使用者截图明确列出的分店各自保留）
 seen, deduped = set(), []
 for p in places:
-    key = (p["city"], _norm_name(p.get("name", "")))
+    exact_name = _norm_exact_name(p.get("name", ""))
+    key = (p["city"], exact_name if exact_name in ref_exact_names else _norm_name(p.get("name", "")))
     if key in seen: continue
     seen.add(key); deduped.append(p)
 
@@ -89,14 +105,15 @@ print(f"住宿過濾：{before_h} → {after_h} 間（只留行程用）")
 if ratings:
     hit = 0
     for p in deduped:
-        if p.get("rating"): hit += 1; continue
         n = _norm_name(p["name"])
-        m = ratings.get(n)
+        m = ratings_exact.get(_norm_exact_name(p["name"])) or ratings.get(n)
         if not m:
             for rn, rv in ratings.items():
                 if rn and (rn in n or n in rn): m = rv; break
-        if m:
+        if m and (not p.get("rating") or m[2]):
             p["rating"], p["rating_source"] = m[0], m[1]; hit += 1
+        elif p.get("rating"):
+            hit += 1
     print(f"評分已套用 {hit} 間")
 
 # 繁→簡字元對照表（供地圖搜尋支援繁體輸入）
