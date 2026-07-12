@@ -4,6 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>成都・重慶 12/5–12/13 最終行程</title>
+<link rel="preload" href="data.js?v=8" as="script">
+<link rel="preload" href="trip.js?v=8" as="script">
+<link rel="prefetch" href="libs/leaflet.js">
+<link rel="prefetch" href="libs/leaflet.css">
+<link rel="prefetch" href="map.html">
+<link rel="prefetch" href="prep.html">
+<style>
+/* 頁面載入覆蓋層（含跨頁點擊即時回饋） */
+#pgload{position:fixed;inset:0;z-index:9999;background:#faf7f2;display:flex;flex-direction:column;gap:12px;align-items:center;justify-content:center;transition:opacity .22s}
+#pgload.done{opacity:0;pointer-events:none}
+#pgload .sp{width:34px;height:34px;border:3px solid #e0d5c2;border-top-color:#c0392b;border-radius:50%;animation:pgsp .7s linear infinite}
+#pgload small{color:#8a8177;font-size:12px}
+@keyframes pgsp{to{transform:rotate(360deg)}}
+</style>
 <style>
 :root{
   --bg:#faf7f2; --panel:#fff; --ink:#2b2620; --muted:#8a8177;
@@ -14,8 +28,18 @@
 html{scroll-behavior:smooth}
 body{font-family:"PingFang TC","Microsoft JhengHei","Noto Sans TC",sans-serif;color:var(--ink);background:var(--bg);padding-bottom:calc(60px + env(safe-area-inset-bottom))}
 
+/* 頂部導覽（與 prep/map 一致；不再透過 index.html iframe） */
+.topnav{position:sticky;top:0;z-index:40;display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:58px;padding:9px clamp(14px,3vw,28px);background:rgba(250,247,242,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+.brand{display:flex;flex-direction:column;min-width:0}
+.brand strong{font-size:15px;line-height:1.25}
+.brand span{color:var(--muted);font-size:12px;line-height:1.35;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.navlinks{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.navlinks a{display:inline-flex;align-items:center;justify-content:center;min-height:38px;padding:0 14px;border:1px solid var(--line);border-radius:8px;color:var(--ink);background:var(--panel);text-decoration:none;font-size:14px;font-weight:700}
+.navlinks a[aria-current="page"]{color:#fff;background:var(--accent);border-color:var(--accent)}
+a:active,.chip:active,.card:active,.navlinks a:active{transform:scale(.97)}
+
 /* 黏性日期導覽 */
-.daynav{position:sticky;top:0;z-index:30;display:flex;gap:6px;overflow-x:auto;padding:10px 2px;margin:0 -2px;background:rgba(250,247,242,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.daynav{position:sticky;top:58px;z-index:30;display:flex;gap:6px;overflow-x:auto;padding:10px 2px;margin:0 -2px;background:rgba(250,247,242,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);-webkit-overflow-scrolling:touch;scrollbar-width:none}
 .daynav::-webkit-scrollbar{display:none}
 .daynav a{flex-shrink:0;padding:7px 12px;border-radius:20px;border:1px solid var(--line);background:var(--panel);font-size:12.5px;font-weight:700;color:var(--ink);text-decoration:none;white-space:nowrap;box-shadow:0 1px 2px rgba(0,0,0,.03)}
 .daynav a small{display:block;font-weight:400;font-size:10px;color:var(--muted);line-height:1.1;text-align:center}
@@ -38,8 +62,8 @@ header .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
 .bk .how{color:var(--muted);font-size:12px}
 
 /* 天卡片 */
-.day{background:var(--panel);border:1px solid var(--line);border-radius:14px;margin:14px 0;overflow:hidden;scroll-margin-top:66px}
-.bookings,.backup{scroll-margin-top:66px}
+.day{background:var(--panel);border:1px solid var(--line);border-radius:14px;margin:14px 0;overflow:hidden;scroll-margin-top:124px}
+.bookings,.backup{scroll-margin-top:124px}
 .day-h{display:flex;align-items:center;gap:9px;padding:11px 16px;border-bottom:1px solid var(--line);background:linear-gradient(to right,#fdfbf7,#fff);flex-wrap:wrap}
 .day-h .dnum{font-size:12px;color:#fff;background:var(--accent2);border-radius:8px;padding:2px 8px;white-space:nowrap}
 .day-h .date{font-weight:700;font-size:15px;white-space:nowrap}
@@ -77,6 +101,12 @@ header .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
 .gtips h2{font-size:15.5px;margin-bottom:6px}
 .gtips b{color:var(--accent2)}
 @media (max-width:600px){
+  .topnav{min-height:44px;padding:4px 12px}
+  .brand strong{font-size:13.5px}
+  .brand span{display:none}
+  .navlinks a{min-height:32px;padding:0 10px;font-size:12.5px;border-radius:7px}
+  .daynav{top:44px}
+  .day,.bookings,.backup{scroll-margin-top:106px}
   header h1{font-size:20px}
   .stop .tm{width:36px;font-size:11px}
   .go{margin-left:52px;max-width:calc(100% - 58px)}
@@ -89,6 +119,18 @@ header .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
 </style>
 </head>
 <body>
+<div id="pgload"><div class="sp"></div><small>行程載入中…</small></div>
+<nav class="topnav" aria-label="主要導覽">
+  <div class="brand">
+    <strong>Sichuan Trip</strong>
+    <span>2026/12/5 - 12/13</span>
+  </div>
+  <div class="navlinks">
+    <a href="prep.html">行前</a>
+    <a href="itinerary.html" aria-current="page">行程</a>
+    <a href="map.html">地圖</a>
+  </div>
+</nav>
 <div class="wrap">
 <header>
   <h1>🏆 成都・重慶 最終行程</h1>
@@ -196,6 +238,13 @@ document.getElementById('daynav').innerHTML=
 // ---- 備選清單 ----
 document.getElementById('backup').innerHTML+=BACKUPS.map(g=>
   `<h3>${g.g}</h3><ul>${g.items.map(x=>`<li>${x}</li>`).join("")}</ul>`).join("");
+
+// ---- 載入層：渲染完成即淡出；點站內連結立刻重新顯示（跨頁即時回饋） ----
+document.getElementById('pgload').classList.add('done');
+document.addEventListener('click',e=>{
+  const a=e.target.closest('a[href$=".html"]');
+  if(a&&!a.target)document.getElementById('pgload').classList.remove('done');
+});
 </script>
 </body>
 </html>

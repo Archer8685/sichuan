@@ -4,6 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>行前準備 — 成都・重慶 12/5–12/13</title>
+<link rel="preload" href="trip.js?v=8" as="script">
+<link rel="prefetch" href="itinerary.html">
+<link rel="prefetch" href="map.html">
+<link rel="prefetch" href="data.js?v=8">
+<style>
+#pgload{position:fixed;inset:0;z-index:9999;background:#faf7f2;display:flex;flex-direction:column;gap:12px;align-items:center;justify-content:center;transition:opacity .22s}
+#pgload.done{opacity:0;pointer-events:none}
+#pgload .sp{width:34px;height:34px;border:3px solid #e0d5c2;border-top-color:#c0392b;border-radius:50%;animation:pgsp .7s linear infinite}
+#pgload small{color:#8a8177;font-size:12px}
+@keyframes pgsp{to{transform:rotate(360deg)}}
+a:active,.toc a:active,.navlinks a:active{transform:scale(.97)}
+</style>
 <style>
 :root{
   --bg:#faf7f2; --panel:#fff; --ink:#2b2620; --muted:#8a8177;
@@ -74,10 +86,11 @@ section li{margin:3px 0}
   </div>
   <div class="navlinks">
     <a href="prep.html" aria-current="page">行前</a>
-    <a href="index.html">行程</a>
+    <a href="itinerary.html">行程</a>
     <a class="map" href="map.html">地圖</a>
   </div>
 </nav>
+<div id="pgload"><div class="sp"></div><small>載入中…</small></div>
 <div class="wrap">
 <header class="page">
   <h1>🧳 行前準備（台灣人赴陸版）</h1>
@@ -218,6 +231,13 @@ section li{margin:3px 0}
 <script>
 document.getElementById('bookingsList').innerHTML=BOOKINGS.map(b=>
   `<div class="bk${b.hot?' hot':''}"><span class="lead">${b.lead}</span><span><b>${b.what}</b><br><span class="how">${b.how}</span></span></div>`).join("");
+
+// 載入層：渲染完成即淡出；點站內連結立刻重新顯示
+document.getElementById('pgload').classList.add('done');
+document.addEventListener('click',e=>{
+  const a=e.target.closest('a[href$=".html"]');
+  if(a&&!a.target)document.getElementById('pgload').classList.remove('done');
+});
 </script>
 </body>
 </html>

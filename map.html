@@ -4,8 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>成都・重慶 8天7夜 — 景點餐廳地圖</title>
+<link rel="preload" href="data.js?v=8" as="script">
+<link rel="preload" href="trip.js?v=8" as="script">
+<link rel="prefetch" href="itinerary.html">
+<link rel="prefetch" href="prep.html">
 <link rel="stylesheet" href="libs/leaflet.css">
 <script src="libs/leaflet.js"></script>
+<style>
+#pgload{position:fixed;inset:0;z-index:9999;background:#faf7f2;display:flex;flex-direction:column;gap:12px;align-items:center;justify-content:center;transition:opacity .22s}
+#pgload.done{opacity:0;pointer-events:none}
+#pgload .sp{width:34px;height:34px;border:3px solid #e0d5c2;border-top-color:#c0392b;border-radius:50%;animation:pgsp .7s linear infinite}
+#pgload small{color:#8a8177;font-size:12px}
+@keyframes pgsp{to{transform:rotate(360deg)}}
+a:active,.chip:active,.card:active,.city-tab:active,.navlinks a:active{transform:scale(.97)}
+</style>
 <style>
 :root{
   --bg:#faf7f2; --panel:#ffffff; --ink:#2b2620; --muted:#8a8177;
@@ -131,6 +143,7 @@ header p{font-size:12px;color:var(--muted);margin-top:3px}
 </style>
 </head>
 <body>
+<div id="pgload"><div class="sp"></div><small>地圖載入中…</small></div>
 <nav class="topnav" aria-label="主要導覽">
   <div class="brand">
     <strong>Sichuan Trip</strong>
@@ -138,7 +151,7 @@ header p{font-size:12px;color:var(--muted);margin-top:3px}
   </div>
   <div class="navlinks">
     <a href="prep.html">行前</a>
-    <a href="index.html">行程</a>
+    <a href="itinerary.html">行程</a>
     <a class="map" href="map.html" aria-current="page">地圖</a>
   </div>
 </nav>
@@ -537,6 +550,13 @@ if(_urlQ){
 }
 render();
 if(_urlQ&&markers.length===1)markers[0].openPopup();
+
+// 載入層：首次渲染完成即淡出；點站內連結立刻重新顯示（跨頁即時回饋）
+document.getElementById('pgload').classList.add('done');
+document.addEventListener('click',e=>{
+  const a=e.target.closest('a[href$=".html"]');
+  if(a&&!a.target)document.getElementById('pgload').classList.remove('done');
+});
 
 // ---------- 手機底部面板：覆蓋式 bottom sheet（translateY 位移） ----------
 // 效能設計：面板固定渲染在 88% 高、用 transform:translateY 露出不同比例。
