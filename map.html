@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>成都・重慶 8天7夜 — 景點餐廳地圖</title>
-<link rel="preload" href="data.js?v=13" as="script">
-<link rel="preload" href="trip.js?v=13" as="script">
+<title>成都・重慶 9天8夜 — 景點餐廳地圖</title>
+<link rel="preload" href="data.js?v=14" as="script">
+<link rel="preload" href="trip.js?v=14" as="script">
 <link rel="prefetch" href="itinerary.html">
 <link rel="prefetch" href="prep.html">
 <link rel="stylesheet" href="libs/leaflet.css">
@@ -157,7 +157,7 @@ html,body{overscroll-behavior:none} /* 防止下拉手勢觸發瀏覽器 pull-to
 <nav class="topnav" aria-label="主要導覽">
   <div class="brand">
     <strong>Sichuan Trip</strong>
-    <span class="site-meta" data-site-meta>2026/12/5–12/13 ｜ v13・更新 2026/07/12 19:43</span>
+    <span class="site-meta" data-site-meta>2026/12/5–12/13 ｜ v14・更新 2026/07/12 19:49</span>
   </div>
   <div class="navlinks">
     <a href="prep.html">行前</a>
@@ -183,8 +183,8 @@ html,body{overscroll-behavior:none} /* 防止下拉手勢觸發瀏覽器 pull-to
       <div class="filter-row" id="catChips"></div>
       <div class="filter-row">
         <span class="chip halal-chip" id="halalOnly">☪ 只看清真／清真友善（餐飲）</span>
-        <span class="chip" id="resetBtn">🔄 重置（全選）</span>
-        <span class="chip" id="invertBtn">🔃 反選類型</span>
+        <span class="chip" id="resetBtn">✅ 全選</span>
+        <span class="chip" id="clearBtn">✕ 清除</span>
       </div>
       <input id="search" placeholder="搜尋名稱、菜色、區域…（支援繁體）">
     </div>
@@ -195,8 +195,8 @@ html,body{overscroll-behavior:none} /* 防止下拉手勢觸發瀏覽器 pull-to
 </div>
 <div class="legend" id="legend"></div>
 
-<script src="data.js?v=13"></script>
-<script src="trip.js?v=13"></script>
+<script src="data.js?v=14"></script>
+<script src="trip.js?v=14"></script>
 <script>
 // 分類設定：顏色＋圖示
 const CATS={
@@ -511,7 +511,7 @@ function renderTrip(keepView){
       markers.push(mk);bgCount++;
     });
   }
-  const bgHint=state.tripShowAll?(bgCount>0?`（＋背景 ${bgCount} 個地點）`:`（背景 0 個——受上方分類/清真/搜尋篩選影響，按 🔄 重置可全開）`):"";
+  const bgHint=state.tripShowAll?(bgCount>0?`（＋背景 ${bgCount} 個地點）`:`（背景 0 個——受上方分類/清真/搜尋篩選影響，按「全選」可顯示全部類型）`):"";
   document.getElementById('count').textContent=`📅 12月${day.date.split('/')[1]}日 ｜ ${day.stops.length} 站${bgHint}`;
   // 路線與標記
   const pts=[];
@@ -567,30 +567,21 @@ document.getElementById('halalOnly').onclick=e=>{
 };
 document.getElementById('resetBtn').onclick=()=>{
   state.cats=new Set(Object.keys(CATS));
-  state.halalOnly=false;state.q="";
-  document.getElementById('search').value="";
-  const hc=document.getElementById('halalOnly');hc.classList.remove('on');
   document.querySelectorAll('#catChips .chip').forEach(c=>{
     c.classList.add('on');
     const v=CATS[c.dataset.cat];c.style.background=v.color;c.style.color="#fff";
   });
-  if(state.city==="__guides"||state.city==="__tours"||state.city==="__trip")rerender();
-  else{map.setView(CITY_CENTER[state.city],12);render();}
+  rerender();
 };
 document.getElementById('search').oninput=e=>{
   state.q=e.target.value.trim();
   rerender();
 };
-document.getElementById('invertBtn').onclick=()=>{
+document.getElementById('clearBtn').onclick=()=>{
+  state.cats.clear();
   document.querySelectorAll('#catChips .chip').forEach(c=>{
-    const k=c.dataset.cat,v=CATS[k];
-    if(state.cats.has(k)){
-      state.cats.delete(k);c.classList.remove('on');
-      c.style.background="#fff";c.style.color="var(--ink)";
-    }else{
-      state.cats.add(k);c.classList.add('on');
-      c.style.background=v.color;c.style.color="#fff";
-    }
+    c.classList.remove('on');
+    c.style.background="#fff";c.style.color="var(--ink)";
   });
   rerender();
 };
