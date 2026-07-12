@@ -101,16 +101,23 @@ header p{font-size:12px;color:var(--muted);margin-top:3px}
   .brand span{font-size:11.5px}
   .navlinks a{min-height:40px;padding:0 12px;font-size:13px}
   #app{flex-direction:column-reverse;height:calc(100vh - 62px);height:calc(100dvh - 62px)}
-  #sidebar{width:100%;min-width:0;height:52%;border-right:none;border-top:1px solid var(--line)}
-  #map{height:48%;flex:none}
-  header{padding:8px 14px 6px}
+  #sidebar{width:100%;min-width:0;height:52%;border-right:none;border-top:1px solid var(--line);border-radius:16px 16px 0 0;margin-top:-14px;z-index:1001;box-shadow:0 -4px 16px rgba(0,0,0,.08)}
+  #sidebar::before{content:'';display:block;width:44px;height:5px;border-radius:3px;background:#ddd4c6;margin:7px auto 0;flex-shrink:0}
+  #map{height:calc(48% + 14px);flex:none}
+  header{padding:6px 14px 6px}
   header h1{font-size:15.5px}
   header p{font-size:11px}
-  .city-tab{padding:7px 2px;font-size:13px}
-  .chip{padding:6px 11px;font-size:13px}
-  #search{font-size:16px}   /* 避免 iOS 聚焦自動放大 */
+  .city-tabs{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .city-tabs::-webkit-scrollbar{display:none}
+  .city-tab{padding:8px 10px;font-size:13.5px;flex:0 0 auto;min-width:64px}
+  .filter-row{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding-bottom:3px}
+  .filter-row::-webkit-scrollbar{display:none}
+  .chip{padding:7px 12px;font-size:13px;flex:0 0 auto;white-space:nowrap}
+  #search{font-size:16px;padding:10px 12px}   /* 避免 iOS 聚焦自動放大 */
+  .card{padding:12px 14px}
+  .card h3{font-size:15px}
   .legend{display:none}
-  .leaflet-popup-content{min-width:190px;max-width:230px}
+  .leaflet-popup-content{min-width:190px;max-width:240px}
 }
 </style>
 </head>
