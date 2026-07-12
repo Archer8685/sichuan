@@ -62,6 +62,7 @@ header .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
 .stop details{margin-top:3px}
 .stop summary{font-size:11.5px;color:var(--muted);cursor:pointer;user-select:none}
 .stop .more{font-size:12px;color:#6b6257;background:#faf6ee;border-left:3px solid #e0d5c2;border-radius:0 8px 8px 0;padding:6px 9px;margin-top:4px;line-height:1.7}
+.stop .alt{font-size:12px;color:#a04b12;background:#fdf1e7;border-left:3px solid #e8b287;border-radius:0 8px 8px 0;padding:5px 9px;margin-top:5px;line-height:1.65}
 .go{display:inline-flex;align-items:center;gap:6px;margin:3px 0 3px 64px;font-size:11.5px;color:#41617f;background:#f2f6fa;border:1px dashed #cfdce8;border-radius:9px;padding:3px 10px;max-width:calc(100% - 70px)}
 .go::before{content:"↓";font-weight:700;color:#8fa8bd}
 
@@ -91,8 +92,7 @@ header .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
 <div class="wrap">
 <header>
   <h1>🏆 成都・重慶 最終行程</h1>
-  <div class="sub">2026/12/5（六）– 12/13（日）｜重慶進・成都出｜重慶解放碑美居 4 晚＋成都太古里春熙美居 4 晚<br>
-  點地點名稱可跳至<a href="map.html" style="color:var(--accent2)">🗺 互動地圖</a>（「📅 行程」頁籤可按天看路線）；每站下方「更多」可展開營業時間與附近店家。</div>
+  <div class="sub">2026/12/5（六）– 12/13（日）｜重慶進・成都出｜重慶解放碑美居 4 晚＋成都太古里春熙美居 4 晚</div>
   <div class="flights">
     <div class="flight">✈️ 去程 12/5（六）<b>CI903</b>＋<b>CX966</b> 香港 13:25 → <b>重慶江北 T3 16:00</b></div>
     <div class="flight">✈️ 回程 12/13（日）<b>CI552</b> <b>成都天府機場 13:15</b> 起飛（09:30 出發死線）</div>
@@ -100,7 +100,6 @@ header .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
 </header>
 
 <nav class="daynav" id="daynav"></nav>
-<div class="bookings" id="bookings"><h2>📋 出發前必訂清單</h2></div>
 <div id="days"></div>
 <div class="backup" id="backup"><h2>📌 備選清單（被移除／可替換的項目）</h2></div>
 
@@ -115,8 +114,8 @@ header .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
 </div>
 </div>
 
-<script src="data.js?v=7"></script>
-<script src="trip.js?v=7"></script>
+<script src="data.js?v=8"></script>
+<script src="trip.js?v=8"></script>
 <script>
 // ---- 共用：地點查找與繁簡 ----
 const _T2S=(typeof T2S!=="undefined")?T2S:{};
@@ -143,10 +142,6 @@ function nearbyText(p){
     return `${q.name}${q.rating?`（⭐${String(q.rating).split('/')[0]}）`:""} ${m}m`;
   }).join("、");
 }
-
-// ---- 必訂清單 ----
-document.getElementById('bookings').innerHTML+=BOOKINGS.map(b=>
-  `<div class="bk${b.hot?' hot':''}"><span class="lead">${b.lead}</span><span><b>${b.what}</b><br><span class="how">${b.how}</span></span></div>`).join("");
 
 // ---- 天卡片 ----
 const KIND={spot:{c:"#c0392b",t:"景點"},meal:{c:"#1a7a6d",t:"餐"},hotel:{c:"#37474f",t:"住"},move:{c:"#5d4037",t:"交通"}};
@@ -182,7 +177,8 @@ TRIP.forEach(day=>{
       <div class="line1"><span class="lbl" style="background:${k.c}">${s.label||k.t}</span><a href="map.html?q=${q}" target="_blank">${s.name}</a></div>
       ${s.note?`<div class="note">${s.note}</div>`:""}
       ${facts.length?`<div class="facts">${facts.map(f=>`<i>${f}</i>`).join("")}</div>`:""}
-      ${moreBits.length?`<details><summary>更多（營業時間・注意・附近）</summary><div class="more">${moreBits.join("<br>")}</div></details>`:""}
+      ${s.alt?`<div class="alt">🔥 熱門備選：${s.alt}</div>`:""}
+      ${moreBits.length?`<details open><summary>更多（營業時間・注意・附近）</summary><div class="more">${moreBits.join("<br>")}</div></details>`:""}
     </div></div>`;
     if(s.go&&i<day.stops.length-1)html+=`<div class="go">${s.go}</div>`;
   });
@@ -193,7 +189,7 @@ TRIP.forEach(day=>{
 
 // ---- 日期導覽列 ----
 document.getElementById('daynav').innerHTML=
-  `<a class="bkx" href="#bookings">📋 必訂</a>`+
+  `<a class="bkx" href="prep.html">🧳 行前準備</a>`+
   TRIP.map(d=>`<a href="#day-${d.d}">D${d.d}<small>${d.date}</small></a>`).join("")+
   `<a class="bkx" href="#backup">📌 備選</a>`;
 
