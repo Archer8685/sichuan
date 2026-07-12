@@ -378,7 +378,7 @@ function numIcon(n,kind){
     html:`<div class="pin" style="background:${KIND_COLOR[kind]||"#555"}"><span style="font-size:13px;font-weight:700;color:#fff;font-family:sans-serif">${n}</span></div>`,
     iconSize:[30,30],iconAnchor:[15,30],popupAnchor:[0,-30]});
 }
-function renderTrip(keepView){
+function renderTrip(){
   markers.forEach(m=>map.removeLayer(m));markers=[];
   if(routeLine){map.removeLayer(routeLine);routeLine=null;}
   const list=document.getElementById('list');list.innerHTML="";
@@ -398,7 +398,7 @@ function renderTrip(keepView){
   allChip.className='chip'+(state.tripShowAll?' on':'');
   allChip.textContent='🗺 顯示全部地點（可搭配上方篩選）';
   if(state.tripShowAll){allChip.style.background='#1a7a6d';allChip.style.color='#fff';}
-  allChip.onclick=()=>{state.tripShowAll=!state.tripShowAll;renderTrip(true);};// 切換疊加時保留目前視角，不重新取景
+  allChip.onclick=()=>{state.tripShowAll=!state.tripShowAll;renderTrip();};
   chipRow.appendChild(allChip);
   list.appendChild(chipRow);
   const head=document.createElement('div');
@@ -426,8 +426,7 @@ function renderTrip(keepView){
       markers.push(mk);bgCount++;
     });
   }
-  const bgHint=state.tripShowAll?(bgCount>0?`（＋背景 ${bgCount} 個地點）`:`（背景 0 個——受上方分類/清真/搜尋篩選影響，按 🔄 重置可全開）`):"";
-  document.getElementById('count').textContent=`📅 12月${day.date.split('/')[1]}日 ｜ ${day.stops.length} 站${bgHint}`;
+  document.getElementById('count').textContent=`📅 12月${day.date.split('/')[1]}日 ｜ ${day.stops.length} 站${state.tripShowAll?`（＋背景 ${bgCount} 個地點）`:""}`;
   // 路線與標記
   const pts=[];
   day.stops.forEach((s,i)=>{
@@ -456,8 +455,8 @@ function renderTrip(keepView){
   });
   if(pts.length>1){
     routeLine=L.polyline(pts,{color:'#c0392b',weight:3,opacity:.75,dashArray:'8 6'}).addTo(map);
-    if(!keepView)map.fitBounds(routeLine.getBounds(),{padding:[40,40]});
-  }else if(pts.length===1&&!keepView){map.setView(pts[0],13);}
+    map.fitBounds(routeLine.getBounds(),{padding:[40,40]});
+  }else if(pts.length===1){map.setView(pts[0],13);}
 }
 
 document.querySelectorAll('.city-tab').forEach(t=>t.onclick=()=>{
@@ -471,7 +470,7 @@ document.querySelectorAll('.city-tab').forEach(t=>t.onclick=()=>{
 function rerender(){
   if(state.city==="__guides")renderGuides();
   else if(state.city==="__tours")renderTours();
-  else if(state.city==="__trip")renderTrip(true);// 篩選變動不重置視角
+  else if(state.city==="__trip")renderTrip();
   else render();
 }
 document.getElementById('halalOnly').onclick=e=>{
