@@ -4,10 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>成都・重慶 9天8夜 — 景點餐廳地圖</title>
-<link rel="preload" href="data.js?v=27" as="script">
-<link rel="preload" href="trip.js?v=27" as="script">
+<link rel="preload" href="data.js?v=28" as="script">
+<link rel="preload" href="trip.js?v=28" as="script">
 <link rel="prefetch" href="itinerary.html">
 <link rel="prefetch" href="prep.html">
+<link rel="prefetch" href="guide.html">
 <link rel="stylesheet" href="libs/leaflet.css">
 <script src="libs/leaflet.js"></script>
 <style>
@@ -123,7 +124,8 @@ html,body{overscroll-behavior:none} /* 防止下拉手勢觸發瀏覽器 pull-to
   .brand strong{font-size:13.5px}
   .brand .trip-date{display:none}
   .brand .site-meta{display:block;font-size:9.5px}
-  .navlinks a{min-height:32px;padding:0 10px;font-size:12.5px;border-radius:7px}
+  .navlinks{gap:5px}
+  .navlinks a{min-height:32px;padding:0 8px;font-size:12px;border-radius:7px}
   #app{height:calc(100vh - 44px);height:calc(100dvh - 44px);position:relative;display:block}
   /* 地圖固定滿版；面板改覆蓋式＋translateY 位移：拖曳純 GPU 合成、
      地圖尺寸不變，不再需要逐幀 invalidateSize（卡頓主因） */
@@ -157,12 +159,13 @@ html,body{overscroll-behavior:none} /* 防止下拉手勢觸發瀏覽器 pull-to
 <nav class="topnav" aria-label="主要導覽">
   <div class="brand">
     <strong>Sichuan Trip</strong>
-    <span class="site-meta" data-site-meta>2026/12/5–12/13 ｜ v27・更新 2026/07/12 21:21</span>
+    <span class="site-meta" data-site-meta>2026/12/5–12/13 ｜ v28・更新 2026/07/12 21:28</span>
   </div>
   <div class="navlinks">
     <a href="prep.html">行前</a>
     <a href="itinerary.html">行程</a>
     <a class="map" href="map.html" aria-current="page">地圖</a>
+    <a href="guide.html">攻略</a>
   </div>
 </nav>
 <div id="app">
@@ -176,8 +179,6 @@ html,body{overscroll-behavior:none} /* 防止下拉手勢觸發瀏覽器 pull-to
       <div class="city-tab active" data-city="成都">成都</div>
       <div class="city-tab" data-city="重庆">重慶</div>
       <div class="city-tab" data-city="__trip">📅 行程</div>
-      <div class="city-tab" data-city="__tours">🚌 一日遊</div>
-      <div class="city-tab" data-city="__guides">📚 攻略</div>
     </div>
     <div class="filters">
       <div class="filter-row" id="catChips"></div>
@@ -195,8 +196,8 @@ html,body{overscroll-behavior:none} /* 防止下拉手勢觸發瀏覽器 pull-to
 </div>
 <div class="legend" id="legend"></div>
 
-<script src="data.js?v=27"></script>
-<script src="trip.js?v=27"></script>
+<script src="data.js?v=28"></script>
+<script src="trip.js?v=28"></script>
 <script>
 // 分類設定：顏色＋圖示
 const CATS={
@@ -403,47 +404,6 @@ function render(){
   });
 }
 
-function renderGuides(){
-  markers.forEach(m=>map.removeLayer(m));markers=[];
-  if(routeLine){map.removeLayer(routeLine);routeLine=null;}
-  const list=document.getElementById('list');list.innerHTML="";
-  const q=t2s(state.q.toLowerCase());
-  const items=GUIDES.filter(g=>!q||t2s([g.title,g.summary,g.site,g.city,...(g.highlights||[])].join(" ").toLowerCase()).includes(q));
-  document.getElementById('count').textContent=`共 ${items.length} 篇攻略（成都 ${GUIDES.filter(g=>g.city==="成都").length}、重慶 ${GUIDES.filter(g=>g.city==="重庆").length}、雙城 ${GUIDES.filter(g=>g.city==="成都+重庆").length}）`;
-  items.forEach(g=>{
-    const card=document.createElement('div');card.className='card';
-    const cityLabel=g.city==="重庆"?"重慶":(g.city==="成都+重庆"?"雙城":g.city);
-    const cityColor=g.city==="成都"?"#c0392b":(g.city==="重庆"?"#2255a4":"#8e44ad");
-    card.innerHTML=`<div class="top"><span class="badge" style="background:${cityColor}">${cityLabel}</span><h3>${g.title}</h3></div>
-      <div class="meta">來源：${g.site||""}</div>
-      <div class="dishes">${g.summary||""}</div>
-      ${(g.highlights&&g.highlights.length)?`<div class="meta" style="margin-top:4px">✦ ${g.highlights.slice(0,3).join("　✦ ")}</div>`:""}`;
-    card.onclick=()=>{if(g.url)window.open(g.url,'_blank');};
-    list.appendChild(card);
-  });
-}
-
-function renderTours(){
-  markers.forEach(m=>map.removeLayer(m));markers=[];
-  if(routeLine){map.removeLayer(routeLine);routeLine=null;}
-  const list=document.getElementById('list');list.innerHTML="";
-  const TT=(typeof TOURS!=="undefined")?TOURS:[];
-  const q=t2s(state.q.toLowerCase());
-  const items=TT.filter(t=>!q||t2s([t.name,t.city,t.type,t.reason,t.notes,...(t.highlights||[]),...(t.includes||[])].join(" ").toLowerCase()).includes(q));
-  document.getElementById('count').textContent=`共 ${items.length} 條一日遊（成都 ${TT.filter(t=>t.city==="成都").length}、重慶 ${TT.filter(t=>t.city==="重庆").length}）`;
-  items.forEach(t=>{
-    const card=document.createElement('div');card.className='card';
-    const cityColor=t.city==="成都"?"#c0392b":"#2255a4";
-    card.innerHTML=`<div class="top"><span class="badge" style="background:${cityColor}">${t.city==="重庆"?"重慶":t.city}出發</span><h3>${t.name}</h3><span class="halal-tag" style="color:#5d4037;border-color:#5d4037">${t.type||""}</span></div>
-      <div class="meta">⏱ ${t.duration||""}｜💰 ${t.price||""}</div>
-      ${t.highlights?`<div class="dishes">✨ ${t.highlights.join("、")}</div>`:""}
-      ${t.includes?`<div class="meta" style="margin-top:4px">✔ 含：${t.includes.join("、")}</div>`:""}
-      ${t.booking?`<div class="meta" style="margin-top:4px">🛒 ${t.booking}</div>`:""}
-      ${t.notes?`<div class="meta" style="margin-top:4px;color:#b7791f">⚠️ ${t.notes}</div>`:""}`;
-    list.appendChild(card);
-  });
-}
-
 // ---------- 📅 行程模式 ----------
 function _norm(s){return t2s((s||"").replace(/[（(].*?[)）]/g,"").replace(/[·・\s]/g,"").toLowerCase());}
 const _PIDX=PLACES.map(p=>[_norm(p.name),p]);
@@ -550,15 +510,11 @@ function renderTrip(keepView){
 document.querySelectorAll('.city-tab').forEach(t=>t.onclick=()=>{
   document.querySelectorAll('.city-tab').forEach(x=>x.classList.remove('active'));
   t.classList.add('active');state.city=t.dataset.city;
-  if(state.city==="__guides"){renderGuides();return;}
-  if(state.city==="__tours"){renderTours();return;}
   if(state.city==="__trip"){renderTrip();return;}
   map.setView(CITY_CENTER[state.city],12);render();
 });
 function rerender(){
-  if(state.city==="__guides")renderGuides();
-  else if(state.city==="__tours")renderTours();
-  else if(state.city==="__trip")renderTrip(true);// 篩選變動不重置視角
+  if(state.city==="__trip")renderTrip(true);// 篩選變動不重置視角
   else render();
 }
 document.getElementById('halalOnly').onclick=e=>{
@@ -587,7 +543,7 @@ document.getElementById('clearBtn').onclick=()=>{
 };
 
 PLACES.forEach((p,i)=>p._id=i);
-document.getElementById('subtitle').textContent=`12/5–12/13 ｜ ${PLACES.length} 個地點 ｜ ${GUIDES.length} 篇攻略 ｜ ${(typeof TOURS!=="undefined"?TOURS.length:0)} 條一日遊`;
+document.getElementById('subtitle').textContent=`12/5–12/13 ｜ ${PLACES.length} 個地點`;
 
 // 支援 map.html?q=關鍵字（行程頁連結跳轉用），自動選對城市
 const _urlQ=new URLSearchParams(location.search).get('q');

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>攻略・一日遊 — 成都・重慶 12/5–12/13</title>
+<link rel="preload" href="data.js?v=28" as="script">
+<link rel="preload" href="trip.js?v=28" as="script">
+<link rel="prefetch" href="itinerary.html">
+<link rel="prefetch" href="map.html">
+<link rel="prefetch" href="prep.html">
+<style>
+:root{
+  --bg:#faf7f2;--panel:#fff;--ink:#2b2620;--muted:#8a8177;
+  --accent:#c0392b;--accent2:#1a7a6d;--line:#e8e1d6;--chip:#f3ede3;
+  --cq:#2255a4;--cd:#c0392b;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"PingFang TC","Microsoft JhengHei","Noto Sans TC",sans-serif;color:var(--ink);background:var(--bg);padding-bottom:60px}
+a:active,.tab:active,.navlinks a:active{transform:scale(.97)}
+#pgload{position:fixed;inset:0;z-index:9999;background:var(--bg);display:flex;flex-direction:column;gap:12px;align-items:center;justify-content:center;transition:opacity .22s}
+#pgload.done{opacity:0;pointer-events:none}
+#pgload .sp{width:34px;height:34px;border:3px solid #e0d5c2;border-top-color:var(--accent);border-radius:50%;animation:spin .7s linear infinite}
+#pgload small{color:var(--muted);font-size:12px}
+@keyframes spin{to{transform:rotate(360deg)}}
+.topnav{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:58px;padding:9px clamp(14px,3vw,28px);background:rgba(250,247,242,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+.brand{display:flex;flex-direction:column;min-width:0}
+.brand strong{font-size:15px;line-height:1.25}
+.brand span{color:var(--muted);font-size:12px;line-height:1.35;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.navlinks{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.navlinks a{display:inline-flex;align-items:center;justify-content:center;min-height:38px;padding:0 14px;border:1px solid var(--line);border-radius:8px;color:var(--ink);background:var(--panel);text-decoration:none;font-size:14px;font-weight:700}
+.navlinks a[aria-current="page"]{color:#fff;background:#8e44ad;border-color:#8e44ad}
+.wrap{max-width:900px;margin:0 auto;padding:0 14px}
+header{padding:24px 0 12px}
+header h1{font-size:23px}
+header p{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
+.tools{position:sticky;top:58px;z-index:30;background:rgba(250,247,242,.96);backdrop-filter:blur(10px);padding:10px 0 12px;border-bottom:1px solid var(--line)}
+.tabs{display:flex;gap:7px;margin-bottom:8px}
+.tab{flex:1;padding:9px 12px;border:1px solid var(--line);border-radius:10px;background:var(--panel);color:var(--ink);font-family:inherit;font-size:13.5px;font-weight:700;cursor:pointer}
+.tab.active{color:#fff;background:#8e44ad;border-color:#8e44ad}
+#search{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--panel);color:var(--ink);font-family:inherit;font-size:14px;outline:none}
+#search:focus{border-color:#8e44ad;box-shadow:0 0 0 3px rgba(142,68,173,.1)}
+#count{font-size:12px;color:var(--muted);padding:12px 2px 5px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.card{display:block;padding:14px 16px;background:var(--panel);border:1px solid var(--line);border-radius:13px;color:var(--ink);text-decoration:none;box-shadow:0 1px 3px rgba(0,0,0,.03)}
+a.card:hover{border-color:#cdb8d4;box-shadow:0 4px 14px rgba(0,0,0,.07)}
+.top{display:flex;align-items:flex-start;gap:8px}
+.top h2{font-size:15.5px;line-height:1.45;flex:1}
+.badge{flex-shrink:0;color:#fff;border-radius:7px;padding:2px 7px;font-size:10.5px;font-weight:700;line-height:1.5}
+.meta{font-size:11.5px;color:var(--muted);margin-top:6px;line-height:1.65}
+.summary{font-size:13px;line-height:1.75;margin-top:8px;color:#514a43}
+.highlights{font-size:12px;line-height:1.7;margin-top:8px;color:var(--accent2)}
+.warn{color:#9a681d}
+@media(max-width:650px){
+  .topnav{min-height:44px;padding:4px 10px;gap:8px}
+  .brand strong{font-size:13px}
+  .brand .site-meta{display:none}
+  .navlinks{gap:5px}
+  .navlinks a{min-height:32px;padding:0 8px;font-size:12px;border-radius:7px}
+  .tools{top:44px}
+  header{padding:18px 0 8px}
+  header h1{font-size:20px}
+  .grid{grid-template-columns:1fr}
+  #search{font-size:16px}
+}
+</style>
+</head>
+<body>
+<div id="pgload"><div class="sp"></div><small>載入攻略中…</small></div>
+<nav class="topnav" aria-label="主要導覽">
+  <div class="brand">
+    <strong>Sichuan Trip</strong>
+    <span class="site-meta" data-site-meta>2026/12/5–12/13 ｜ v28・更新 2026/07/12 21:28</span>
+  </div>
+  <div class="navlinks">
+    <a href="prep.html">行前</a>
+    <a href="itinerary.html">行程</a>
+    <a href="map.html">地圖</a>
+    <a href="guide.html" aria-current="page">攻略</a>
+  </div>
+</nav>
+<main class="wrap">
+  <header>
+    <h1>📚 攻略・一日遊</h1>
+    <p>旅遊攻略來源與成都、重慶周邊一日遊集中在這裡，不再佔用地圖操作區。</p>
+  </header>
+  <div class="tools">
+    <div class="tabs">
+      <button class="tab active" data-view="guides">📚 攻略</button>
+      <button class="tab" data-view="tours">🚌 一日遊</button>
+    </div>
+    <input id="search" type="search" placeholder="搜尋標題、城市、景點或關鍵字…（支援繁體）">
+  </div>
+  <div id="count"></div>
+  <div class="grid" id="list"></div>
+</main>
+<script src="data.js?v=28"></script>
+<script src="trip.js?v=28"></script>
+<script>
+const _T2S=(typeof T2S!=="undefined")?T2S:{};
+function t2s(s){let r="";for(const c of s)r+=_T2S[c]||c;return r;}
+const state={view:"guides",q:""};
+const list=document.getElementById("list"),count=document.getElementById("count");
+function matches(parts){return !state.q||t2s(parts.join(" ").toLowerCase()).includes(t2s(state.q.toLowerCase()));}
+function cityLabel(city){return city==="重庆"?"重慶":city==="成都+重庆"?"雙城":city;}
+function cityColor(city){return city==="成都"? "#c0392b":city==="重庆"?"#2255a4":"#8e44ad";}
+function renderGuides(){
+  const items=GUIDES.filter(g=>matches([g.title,g.summary,g.site,g.city,...(g.highlights||[])]));
+  count.textContent=`共 ${items.length} 篇攻略（成都 ${GUIDES.filter(g=>g.city==="成都").length}、重慶 ${GUIDES.filter(g=>g.city==="重庆").length}、雙城 ${GUIDES.filter(g=>g.city==="成都+重庆").length}）`;
+  list.innerHTML=items.map(g=>`<a class="card" href="${g.url||"#"}" target="_blank" rel="noopener">
+    <div class="top"><span class="badge" style="background:${cityColor(g.city)}">${cityLabel(g.city)}</span><h2>${g.title}</h2></div>
+    <div class="meta">來源：${g.site||""}　↗ 開啟原文</div>
+    <div class="summary">${g.summary||""}</div>
+    ${(g.highlights&&g.highlights.length)?`<div class="highlights">✦ ${g.highlights.join("　✦ ")}</div>`:""}
+  </a>`).join("");
+}
+function renderTours(){
+  const items=TOURS.filter(t=>matches([t.name,t.city,t.type,t.reason,t.notes,t.booking,...(t.highlights||[]),...(t.includes||[])]));
+  count.textContent=`共 ${items.length} 條一日遊（成都 ${TOURS.filter(t=>t.city==="成都").length}、重慶 ${TOURS.filter(t=>t.city==="重庆").length}）`;
+  list.innerHTML=items.map(t=>`<article class="card">
+    <div class="top"><span class="badge" style="background:${cityColor(t.city)}">${cityLabel(t.city)}出發</span><h2>${t.name}</h2></div>
+    <div class="meta">${t.type||""}${t.duration?`　⏱ ${t.duration}`:""}${t.price?`<br>💰 ${t.price}`:""}</div>
+    ${t.reason?`<div class="summary">${t.reason}</div>`:""}
+    ${t.highlights?`<div class="highlights">✨ ${t.highlights.join("、")}</div>`:""}
+    ${t.includes?`<div class="meta">✔ 包含：${t.includes.join("、")}</div>`:""}
+    ${t.booking?`<div class="meta">🛒 ${t.booking}</div>`:""}
+    ${t.notes?`<div class="meta warn">⚠️ ${t.notes}</div>`:""}
+  </article>`).join("");
+}
+function render(){state.view==="guides"?renderGuides():renderTours();}
+document.querySelectorAll(".tab").forEach(tab=>tab.onclick=()=>{
+  document.querySelectorAll(".tab").forEach(x=>x.classList.remove("active"));
+  tab.classList.add("active");state.view=tab.dataset.view;render();
+});
+document.getElementById("search").oninput=e=>{state.q=e.target.value.trim();render();};
+render();
+document.getElementById("pgload").classList.add("done");
+</script>
+</body>
+</html>

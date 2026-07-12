@@ -4,12 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>成都・重慶 12/5–12/13 最終行程</title>
-<link rel="preload" href="data.js?v=27" as="script">
-<link rel="preload" href="trip.js?v=27" as="script">
+<link rel="preload" href="data.js?v=28" as="script">
+<link rel="preload" href="trip.js?v=28" as="script">
 <link rel="prefetch" href="libs/leaflet.js">
 <link rel="prefetch" href="libs/leaflet.css">
 <link rel="prefetch" href="map.html">
 <link rel="prefetch" href="prep.html">
+<link rel="prefetch" href="guide.html">
 <style>
 /* 頁面載入覆蓋層（含跨頁點擊即時回饋） */
 #pgload{position:fixed;inset:0;z-index:9999;background:#faf7f2;display:flex;flex-direction:column;gap:12px;align-items:center;justify-content:center;transition:opacity .22s}
@@ -113,7 +114,8 @@ header .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
   .brand strong{font-size:13.5px}
   .brand .trip-date{display:none}
   .brand .site-meta{display:block;font-size:9.5px}
-  .navlinks a{min-height:32px;padding:0 10px;font-size:12.5px;border-radius:7px}
+  .navlinks{gap:5px}
+  .navlinks a{min-height:32px;padding:0 8px;font-size:12px;border-radius:7px}
   .daynav{top:44px}
   .day,.bookings,.backup{scroll-margin-top:106px}
   header h1{font-size:20px}
@@ -132,12 +134,13 @@ header .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
 <nav class="topnav" aria-label="主要導覽">
   <div class="brand">
     <strong>Sichuan Trip</strong>
-    <span class="site-meta" data-site-meta>2026/12/5–12/13 ｜ v27・更新 2026/07/12 21:21</span>
+    <span class="site-meta" data-site-meta>2026/12/5–12/13 ｜ v28・更新 2026/07/12 21:28</span>
   </div>
   <div class="navlinks">
     <a href="prep.html">行前</a>
     <a href="itinerary.html" aria-current="page">行程</a>
     <a href="map.html">地圖</a>
+    <a href="guide.html">攻略</a>
   </div>
 </nav>
 <div class="wrap">
@@ -165,8 +168,8 @@ header .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
 </div>
 </div>
 
-<script src="data.js?v=27"></script>
-<script src="trip.js?v=27"></script>
+<script src="data.js?v=28"></script>
+<script src="trip.js?v=28"></script>
 <script>
 // ---- 共用：地點查找與繁簡 ----
 const _T2S=(typeof T2S!=="undefined")?T2S:{};
