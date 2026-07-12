@@ -76,6 +76,15 @@ for p in places:
     if key in seen: continue
     seen.add(key); deduped.append(p)
 
+# 住宿只保留行程實際使用/備選的旅館（其餘雅高酒店不上地圖）
+HOTEL_KEEP = ["重庆解放碑美居酒店", "成都太古里春熙美居酒店"]  # 只留行程實際使用的兩間美居
+before_h = sum(1 for p in deduped if (p.get("type") or p.get("category")) == "住宿")
+deduped = [p for p in deduped
+           if (p.get("type") or p.get("category")) != "住宿"
+           or any(k in p.get("name", "") for k in HOTEL_KEEP)]
+after_h = sum(1 for p in deduped if (p.get("type") or p.get("category")) == "住宿")
+print(f"住宿過濾：{before_h} → {after_h} 間（只留行程用）")
+
 # 套用評分（名稱正規化後精確→包含式匹配）
 if ratings:
     hit = 0

@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>成都・重慶 8天7夜 — 景點餐廳地圖</title>
-<link rel="preload" href="data.js?v=11" as="script">
-<link rel="preload" href="trip.js?v=11" as="script">
+<link rel="preload" href="data.js?v=12" as="script">
+<link rel="preload" href="trip.js?v=12" as="script">
 <link rel="prefetch" href="itinerary.html">
 <link rel="prefetch" href="prep.html">
 <link rel="stylesheet" href="libs/leaflet.css">
@@ -194,8 +194,8 @@ html,body{overscroll-behavior:none} /* 防止下拉手勢觸發瀏覽器 pull-to
 </div>
 <div class="legend" id="legend"></div>
 
-<script src="data.js?v=11"></script>
-<script src="trip.js?v=11"></script>
+<script src="data.js?v=12"></script>
+<script src="trip.js?v=12"></script>
 <script>
 // 分類設定：顏色＋圖示
 const CATS={
@@ -258,19 +258,19 @@ let routeLine=null;
 function catOf(p){return p.type||p.category;}
 function isHalalish(p){return p.halal===true||p.halal==="友善"||p.halal==="true";}
 function halalLabel(p){if(p.halal===true||p.halal==="true")return"☪ 清真";if(p.halal==="友善")return"☪ 清真友善";return null;}
-// 早餐／午晚餐共用同一圖示（🍽）；清真或清真友善的餐飲一律改用另一種圖示（☪），方便一眼找到能吃的店
+// 早餐／午晚餐共用餐廳圖示；甜點與飲料永遠保留自己的圖示，清真狀態另以標籤呈現。
 function iconFor(cat,p){
-  if(FOOD_CATS.has(cat)&&p&&isHalalish(p))return{emoji:HALAL_EMOJI,color:HALAL_COLOR};
+  if(MEAL_CATS.has(cat)&&p&&isHalalish(p))return{emoji:HALAL_EMOJI,color:HALAL_COLOR};
   if(MEAL_CATS.has(cat))return{emoji:"🍽",color:(CATS[cat]||{}).color||"#555"};
   const cfg=CATS[cat]||{color:"#555",emoji:"📌"};
   return{emoji:cfg.emoji,color:cfg.color};
 }
 
-function makeIcon(cat,p){
+function makeIcon(cat,p,dimmed){
   const cfg=iconFor(cat,p);
   return L.divIcon({
     className:'pin-wrap',
-    html:`<div class="pin" style="background:${cfg.color}"><span>${cfg.emoji}</span></div>`,
+    html:`<div class="pin" style="background:${cfg.color};${dimmed?'opacity:.22;transform:rotate(-45deg) scale(.78)':''}"><span>${cfg.emoji}</span></div>`,
     iconSize:[30,30],iconAnchor:[15,30],popupAnchor:[0,-30]
   });
 }
@@ -353,33 +353,40 @@ function popupHtml(p){
   </div>`;
 }
 
-function passes(p){
+function passesBase(p){
   if(p.city!==state.city)return false;
   const cat=catOf(p);
   if(!state.cats.has(cat))return false;
   if(state.halalOnly&&FOOD_CATS.has(cat)&&!isHalalish(p))return false;
-  if(state.q){
-    const q=t2s(state.q.toLowerCase());
-    const hay=t2s([p.name,p.area,p.address,p.cuisine,p.brand,p.reason,...(p.dishes||[]),...(p.activities||[])].join(" ").toLowerCase());
-    if(!hay.includes(q))return false;
-  }
   return true;
 }
+function matchesSearch(p){
+  if(!state.q)return true;
+  const q=t2s(state.q.toLowerCase());
+  const hay=t2s([p.name,p.area,p.address,p.cuisine,p.brand,p.reason,...(p.dishes||[]),...(p.activities||[])].join(" ").toLowerCase());
+  if(!hay.includes(q))return false;
+  return true;
+}
+function passes(p){return passesBase(p)&&matchesSearch(p);}
 
 function render(){
   markers.forEach(m=>map.removeLayer(m));markers=[];
   if(routeLine){map.removeLayer(routeLine);routeLine=null;}
   const list=document.getElementById('list');list.innerHTML="";
-  const items=PLACES.filter(passes);
+  const mapItems=PLACES.filter(passesBase);
+  const items=mapItems.filter(matchesSearch);
   document.getElementById('count').textContent=`顯示 ${items.length} 個地點（${state.city==="重庆"?"重慶":state.city}）`;
   const popW=Math.min(300,window.innerWidth-90);
-  items.forEach(p=>{
+  mapItems.forEach(p=>{
     const cat=catOf(p);
     if(p.lat&&p.lng){
-      const mk=L.marker([p.lat,p.lng],{icon:makeIcon(cat,p)})
+      const mk=L.marker([p.lat,p.lng],{icon:makeIcon(cat,p,!!state.q&&!matchesSearch(p)),zIndexOffset:matchesSearch(p)?100:0})
         .addTo(map).bindPopup(popupHtml(p),{maxWidth:popW});
       mk._pid=p._id;markers.push(mk);
     }
+  });
+  items.forEach(p=>{
+    const cat=catOf(p);
     const card=document.createElement('div');card.className='card';
     const hl=halalLabel(p);
     const badgeCfg=iconFor(cat,p);
@@ -492,11 +499,12 @@ function renderTrip(keepView){
       const cat=catOf(p);
       if(!state.cats.has(cat))return;
       if(state.halalOnly&&FOOD_CATS.has(cat)&&!isHalalish(p))return;
-      if(q){const hay=t2s([p.name,p.area,p.address,p.cuisine,...(p.dishes||[]),...(p.activities||[])].join(" ").toLowerCase());if(!hay.includes(q))return;}
+      let searchMatch=true;
+      if(q){const hay=t2s([p.name,p.area,p.address,p.cuisine,...(p.dishes||[]),...(p.activities||[])].join(" ").toLowerCase());searchMatch=hay.includes(q);}
       if(stopNames.has(t2s(p.name)))return;
       const cfg=iconFor(cat,p);
       const mk=L.marker([p.lat,p.lng],{icon:L.divIcon({className:'pin-wrap',
-        html:`<div class="pin" style="background:${cfg.color};transform:rotate(-45deg) scale(.72);opacity:.62"><span>${cfg.emoji}</span></div>`,
+        html:`<div class="pin" style="background:${cfg.color};transform:rotate(-45deg) scale(.72);opacity:${searchMatch?'.62':'.16'}"><span>${cfg.emoji}</span></div>`,
         iconSize:[30,30],iconAnchor:[15,30],popupAnchor:[0,-26]}),zIndexOffset:0})
         .addTo(map).bindPopup(popupHtml(p),{maxWidth:Math.min(300,window.innerWidth-90)});
       markers.push(mk);bgCount++;
@@ -591,11 +599,12 @@ document.getElementById('subtitle').textContent=`12/5–12/13 ｜ ${PLACES.lengt
 
 // 支援 map.html?q=關鍵字（行程頁連結跳轉用），自動選對城市
 const _urlQ=new URLSearchParams(location.search).get('q');
+let hitPlace=null;
 if(_urlQ){
   state.q=_urlQ;
   document.getElementById('search').value=_urlQ;
   const qs=t2s(_urlQ.toLowerCase());
-  const hitPlace=PLACES.find(p=>t2s([p.name,p.area||""].join(" ").toLowerCase()).includes(qs));
+  hitPlace=PLACES.find(p=>t2s([p.name,p.area||""].join(" ").toLowerCase()).includes(qs));
   if(hitPlace){
     state.city=hitPlace.city;
     document.querySelectorAll('.city-tab').forEach(x=>x.classList.toggle('active',x.dataset.city===hitPlace.city));
@@ -603,7 +612,10 @@ if(_urlQ){
   }
 }
 render();
-if(_urlQ&&markers.length===1)markers[0].openPopup();
+if(_urlQ&&hitPlace){
+  const hitMarker=markers.find(m=>m._pid===hitPlace._id);
+  if(hitMarker)hitMarker.openPopup();
+}
 
 // ---------- 📡 定位：顯示目前位置 ----------
 // 瀏覽器定位回傳 WGS-84；高德圖磚為 GCJ-02——中國境內必須轉換，否則偏移數百米。
