@@ -29,6 +29,12 @@ compact_list.txt  rest_names.txt  中間產物（可不上傳）
 
 其餘（Leaflet、字型、資料）皆已本地化，離線也能開啟版面。
 
+## 快取提醒
+
+`map.html`／`itinerary.html` 以 `data.js?v=N`／`trip.js?v=N` 帶版本號載入，是為了避免瀏覽器快取舊檔案。
+每次修改 `data.js` 或 `trip.js` 內容後，記得把兩個 HTML 檔裡對應的 `?v=N` 數字 +1，
+否則使用者（含 GitHub Pages CDN）可能繼續看到舊版本。
+
 ## 更新資料
 
 修改或新增 `data/*.json` 後執行 `python build_data.py`（需 `pip install zhconv`），
