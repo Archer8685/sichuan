@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>成都・重慶 9天8夜 — 景點餐廳地圖</title>
-<link rel="preload" href="data.js?v=29" as="script">
-<link rel="preload" href="trip.js?v=29" as="script">
+<link rel="preload" href="data.js?v=30" as="script">
+<link rel="preload" href="trip.js?v=30" as="script">
 <link rel="prefetch" href="itinerary.html">
 <link rel="prefetch" href="prep.html">
 <link rel="prefetch" href="guide.html">
@@ -72,7 +72,8 @@ header p{font-size:12px;color:var(--muted);margin-top:3px}
 .city-tabs{display:flex;gap:6px;padding:10px 14px 0;flex-wrap:wrap}
 .city-tab{flex:1;min-width:70px;padding:8px 4px;text-align:center;border:1px solid var(--line);border-radius:10px;cursor:pointer;font-size:14px;font-weight:600;background:var(--chip);transition:.15s;white-space:nowrap}
 .city-tab.active{background:var(--accent);color:#fff;border-color:var(--accent)}
-.filter-toggle{display:none}
+.filter-toggle{display:flex;align-items:center;justify-content:center;width:calc(100% - 28px);margin:8px 14px 0;padding:7px 10px;border:1px solid var(--line);border-radius:9px;background:var(--chip);color:var(--ink);font-family:inherit;font-size:12.5px;font-weight:700;cursor:pointer}
+.filters.collapsed{display:none}
 .filters{padding:10px 14px;border-bottom:1px solid var(--line)}
 .filter-row{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:8px}
 .chip{padding:5px 10px;border-radius:20px;font-size:12.5px;cursor:pointer;border:1px solid var(--line);background:#fff;user-select:none;transition:.12s}
@@ -145,8 +146,6 @@ html,body{overscroll-behavior:none} /* 防止下拉手勢觸發瀏覽器 pull-to
   .city-tabs{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
   .city-tabs::-webkit-scrollbar{display:none}
   .city-tab{padding:8px 10px;font-size:13.5px;flex:0 0 auto;min-width:64px}
-  .filter-toggle{display:flex;align-items:center;justify-content:center;width:calc(100% - 28px);margin:8px 14px 0;padding:7px 10px;border:1px solid var(--line);border-radius:9px;background:var(--chip);color:var(--ink);font-family:inherit;font-size:12.5px;font-weight:700;cursor:pointer}
-  .filters.mobile-hidden{display:none}
   .filter-row{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding-bottom:3px}
   .filter-row::-webkit-scrollbar{display:none}
   .chip{padding:7px 12px;font-size:13px;flex:0 0 auto;white-space:nowrap}
@@ -163,7 +162,7 @@ html,body{overscroll-behavior:none} /* 防止下拉手勢觸發瀏覽器 pull-to
 <nav class="topnav" aria-label="主要導覽">
   <div class="brand">
     <strong>Sichuan Trip</strong>
-    <span class="site-meta" data-site-meta>2026/12/5–12/13 ｜ v29・更新 2026/07/12 21:34</span>
+    <span class="site-meta" data-site-meta>2026/12/5–12/13 ｜ v30・更新 2026/07/12 21:39</span>
   </div>
   <div class="navlinks">
     <a href="prep.html">行前</a>
@@ -201,8 +200,8 @@ html,body{overscroll-behavior:none} /* 防止下拉手勢觸發瀏覽器 pull-to
 </div>
 <div class="legend" id="legend"></div>
 
-<script src="data.js?v=29"></script>
-<script src="trip.js?v=29"></script>
+<script src="data.js?v=30"></script>
+<script src="trip.js?v=30"></script>
 <script>
 // 分類設定：顏色＋圖示
 const CATS={
@@ -520,7 +519,7 @@ document.querySelectorAll('.city-tab').forEach(t=>t.onclick=()=>{
 });
 document.getElementById('filterToggle').onclick=e=>{
   const filters=document.getElementById('filters');
-  const hidden=filters.classList.toggle('mobile-hidden');
+  const hidden=filters.classList.toggle('collapsed');
   e.currentTarget.textContent=hidden?'⚙️ 顯示篩選':'⚙️ 隱藏篩選';
   e.currentTarget.setAttribute('aria-expanded',String(!hidden));
 };
