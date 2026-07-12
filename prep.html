@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>行前準備 — 成都・重慶 12/5–12/13</title>
-<link rel="preload" href="trip.js?v=20" as="script">
+<link rel="preload" href="trip.js?v=21" as="script">
 <link rel="prefetch" href="itinerary.html">
 <link rel="prefetch" href="map.html">
-<link rel="prefetch" href="data.js?v=20">
+<link rel="prefetch" href="data.js?v=21">
 <style>
 #pgload{position:fixed;inset:0;z-index:9999;background:#faf7f2;display:flex;flex-direction:column;gap:12px;align-items:center;justify-content:center;transition:opacity .22s}
 #pgload.done{opacity:0;pointer-events:none}
@@ -83,7 +83,7 @@ section li{margin:3px 0}
 <nav class="topnav" aria-label="主要導覽">
   <div class="brand">
     <strong>Sichuan Trip</strong>
-    <span class="site-meta" data-site-meta>2026/12/5–12/13 ｜ v20・更新 2026/07/12 20:07</span>
+    <span class="site-meta" data-site-meta>2026/12/5–12/13 ｜ v21・更新 2026/07/12 20:14</span>
   </div>
   <div class="navlinks">
     <a href="prep.html" aria-current="page">行前</a>
@@ -229,7 +229,7 @@ section li{margin:3px 0}
 </section>
 
 </div>
-<script src="trip.js?v=20"></script>
+<script src="trip.js?v=21"></script>
 <script>
 document.getElementById('bookingsList').innerHTML=BOOKINGS.map(b=>
   `<div class="bk${b.hot?' hot':''}"><span class="lead">${b.lead}</span><span><b>${b.what}</b><br><span class="how">${b.how}</span></span></div>`).join("");
