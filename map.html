@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>成都・重慶 8天7夜 — 景點餐廳地圖</title>
-<link rel="preload" href="data.js?v=9" as="script">
-<link rel="preload" href="trip.js?v=9" as="script">
+<link rel="preload" href="data.js?v=10" as="script">
+<link rel="preload" href="trip.js?v=10" as="script">
 <link rel="prefetch" href="itinerary.html">
 <link rel="prefetch" href="prep.html">
 <link rel="stylesheet" href="libs/leaflet.css">
@@ -106,6 +106,14 @@ html,body{overscroll-behavior:none} /* 防止下拉手勢觸發瀏覽器 pull-to
 .pp .dish-chips{display:flex;flex-wrap:wrap;gap:4px;margin-top:4px}
 .pp .dish-chips span{background:var(--chip);border-radius:8px;padding:2px 8px;font-size:11.5px}
 
+/* 定位 */
+.loc-btn{width:34px;height:34px;line-height:32px;text-align:center;font-size:17px;background:#fff;border:2px solid rgba(0,0,0,.2);border-radius:4px;cursor:pointer;user-select:none}
+.loc-btn.active{background:#1a7a6d;color:#fff}
+.loc-btn.err{background:#c0392b;color:#fff}
+.me-dot{width:16px;height:16px;border-radius:50%;background:#1976d2;border:3px solid #fff;box-shadow:0 0 0 2px rgba(25,118,210,.35);position:relative}
+.me-dot::after{content:'';position:absolute;inset:-9px;border-radius:50%;border:2px solid rgba(25,118,210,.45);animation:mepulse 1.6s ease-out infinite}
+@keyframes mepulse{0%{transform:scale(.5);opacity:1}100%{transform:scale(1.4);opacity:0}}
+
 /* legend */
 .legend{position:absolute;bottom:18px;right:12px;z-index:900;background:rgba(255,255,255,.94);border:1px solid var(--line);border-radius:12px;padding:8px 12px;font-size:12px;line-height:1.9}
 
@@ -186,8 +194,8 @@ html,body{overscroll-behavior:none} /* 防止下拉手勢觸發瀏覽器 pull-to
 </div>
 <div class="legend" id="legend"></div>
 
-<script src="data.js?v=9"></script>
-<script src="trip.js?v=9"></script>
+<script src="data.js?v=10"></script>
+<script src="trip.js?v=10"></script>
 <script>
 // 分類設定：顏色＋圖示
 const CATS={
@@ -289,13 +297,11 @@ function nearbyText(p){
 function nearbyEats(p){
   if(!p||!p.lat)return"";
   const ex=p.name;
-  const cand=PLACES.filter(q=>q.lat&&q.city===p.city&&FOOD_CATS.has(q.type||q.category)&&q.name!==ex)
+  const pick=PLACES.filter(q=>q.lat&&q.city===p.city&&FOOD_CATS.has(q.type||q.category)&&q.name!==ex)
     .map(q=>({q,d:_distKm(p,q),r:(q.halal===true?0:(q.halal==='友善'?1:2))}))
-    .filter(x=>x.d<=1.2)
-    .sort((a,b)=>(a.r-b.r)||(a.d-b.d));
-  let pick=cand.filter(x=>x.r<2).slice(0,4);
-  if(pick.length<3)pick=pick.concat(cand.filter(x=>x.r===2).slice(0,3-pick.length));
-  pick=pick.slice(0,4).sort((a,b)=>a.d-b.d);
+    .filter(x=>x.d<=0.5)
+    .sort((a,b)=>(a.r-b.r)||(a.d-b.d))
+    .slice(0,4).sort((a,b)=>a.d-b.d);
   if(!pick.length)return"";
   return pick.map(x=>{
     const m=Math.max(50,Math.round(x.d*1000/50)*50);
@@ -572,6 +578,83 @@ if(_urlQ){
 }
 render();
 if(_urlQ&&markers.length===1)markers[0].openPopup();
+
+// ---------- 📡 定位：顯示目前位置 ----------
+// 瀏覽器定位回傳 WGS-84；高德圖磚為 GCJ-02——中國境內必須轉換，否則偏移數百米。
+(function(){
+  function outOfChina(lat,lng){
+    if(lng>119.3&&lng<124.5&&lat>21.5&&lat<25.5)return true; // 台灣用 WGS-84，不做 GCJ 偏移
+    return lng<72.004||lng>137.8347||lat<0.8293||lat>55.8271;
+  }
+  function tLat(x,y){let r=-100+2*x+3*y+0.2*y*y+0.1*x*y+0.2*Math.sqrt(Math.abs(x));
+    r+=(20*Math.sin(6*x*Math.PI)+20*Math.sin(2*x*Math.PI))*2/3;
+    r+=(20*Math.sin(y*Math.PI)+40*Math.sin(y/3*Math.PI))*2/3;
+    r+=(160*Math.sin(y/12*Math.PI)+320*Math.sin(y*Math.PI/30))*2/3;return r;}
+  function tLng(x,y){let r=300+x+2*y+0.1*x*x+0.1*x*y+0.1*Math.sqrt(Math.abs(x));
+    r+=(20*Math.sin(6*x*Math.PI)+20*Math.sin(2*x*Math.PI))*2/3;
+    r+=(20*Math.sin(x*Math.PI)+40*Math.sin(x/3*Math.PI))*2/3;
+    r+=(150*Math.sin(x/12*Math.PI)+300*Math.sin(x/30*Math.PI))*2/3;return r;}
+  window.wgs2gcj=function(lat,lng){
+    if(outOfChina(lat,lng))return[lat,lng];
+    const a=6378245,ee=0.00669342162296594323;
+    let dLat=tLat(lng-105,lat-35),dLng=tLng(lng-105,lat-35);
+    const radLat=lat/180*Math.PI;
+    let magic=Math.sin(radLat);magic=1-ee*magic*magic;
+    const sqrtMagic=Math.sqrt(magic);
+    dLat=(dLat*180)/((a*(1-ee))/(magic*sqrtMagic)*Math.PI);
+    dLng=(dLng*180)/(a/sqrtMagic*Math.cos(radLat)*Math.PI);
+    return[lat+dLat,lng+dLng];
+  };
+
+  let watchId=null,meMarker=null,meCircle=null,firstFix=true;
+  const LocCtl=L.Control.extend({
+    options:{position:'topleft'},
+    onAdd(){
+      const d=L.DomUtil.create('div','loc-btn');
+      d.id='locBtn';d.title='顯示目前位置';d.textContent='🎯';
+      L.DomEvent.disableClickPropagation(d);
+      d.onclick=toggleLocate;
+      return d;
+    }
+  });
+  map.addControl(new LocCtl());
+  function setBtn(state){ // ''|'active'|'err'
+    const b=document.getElementById('locBtn');
+    b.className='loc-btn'+(state?' '+state:'');
+  }
+  function onPos(pos){
+    const [lat,lng]=wgs2gcj(pos.coords.latitude,pos.coords.longitude);
+    const acc=Math.min(pos.coords.accuracy||50,500);
+    if(!meMarker){
+      meMarker=L.marker([lat,lng],{icon:L.divIcon({className:'',html:'<div class="me-dot"></div>',iconSize:[16,16],iconAnchor:[8,8]}),zIndexOffset:2000,interactive:false}).addTo(map);
+      meCircle=L.circle([lat,lng],{radius:acc,color:'#1976d2',weight:1,fillColor:'#1976d2',fillOpacity:.12,interactive:false}).addTo(map);
+    }else{
+      meMarker.setLatLng([lat,lng]);
+      meCircle.setLatLng([lat,lng]).setRadius(acc);
+    }
+    if(firstFix){firstFix=false;focusOn([lat,lng],16);}
+    setBtn('active');
+  }
+  function onErr(e){
+    stopLocate();setBtn('err');
+    const msg=e.code===1?'定位權限被拒絕——請在瀏覽器設定允許本網站取得位置':
+             (e.code===2?'目前無法取得位置（GPS 訊號弱或未開啟）':'定位逾時，請再試一次');
+    alert('📡 '+msg);
+    setTimeout(()=>setBtn(''),1500);
+  }
+  function stopLocate(){
+    if(watchId!==null){navigator.geolocation.clearWatch(watchId);watchId=null;}
+    if(meMarker){map.removeLayer(meMarker);meMarker=null;}
+    if(meCircle){map.removeLayer(meCircle);meCircle=null;}
+    firstFix=true;setBtn('');
+  }
+  function toggleLocate(){
+    if(watchId!==null){stopLocate();return;}
+    if(!navigator.geolocation){alert('此瀏覽器不支援定位');return;}
+    setBtn('active');
+    watchId=navigator.geolocation.watchPosition(onPos,onErr,{enableHighAccuracy:true,maximumAge:5000,timeout:15000});
+  }
+})();
 
 // 載入層：首次渲染完成即淡出；點站內連結立刻重新顯示（跨頁即時回饋）
 document.getElementById('pgload').classList.add('done');
