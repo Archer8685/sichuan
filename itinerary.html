@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>成都・重慶 12/5–12/13 最終行程</title>
-<link rel="preload" href="data.js?v=24" as="script">
-<link rel="preload" href="trip.js?v=24" as="script">
+<link rel="preload" href="data.js?v=25" as="script">
+<link rel="preload" href="trip.js?v=25" as="script">
 <link rel="prefetch" href="libs/leaflet.js">
 <link rel="prefetch" href="libs/leaflet.css">
 <link rel="prefetch" href="map.html">
@@ -96,6 +96,8 @@ header .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
 .backup h2{font-size:16px;margin-bottom:6px}
 .backup h3{font-size:13.5px;color:var(--accent2);margin:10px 0 4px}
 .backup li{font-size:12.5px;line-height:1.8;margin-left:18px;color:#5a5248}
+.backup .maplinks{font-size:11.5px;color:var(--muted);margin:2px 0 5px}
+.backup .maplinks a{margin-right:8px}
 
 .gtips{margin-top:22px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 20px;font-size:13px;line-height:2}
 .gtips h2{font-size:15.5px;margin-bottom:6px}
@@ -124,7 +126,7 @@ header .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
 <nav class="topnav" aria-label="主要導覽">
   <div class="brand">
     <strong>Sichuan Trip</strong>
-    <span class="site-meta" data-site-meta>2026/12/5–12/13 ｜ v24・更新 2026/07/12 21:04</span>
+    <span class="site-meta" data-site-meta>2026/12/5–12/13 ｜ v25・更新 2026/07/12 21:09</span>
   </div>
   <div class="navlinks">
     <a href="prep.html">行前</a>
@@ -144,7 +146,7 @@ header .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
 
 <nav class="daynav" id="daynav"></nav>
 <div id="days"></div>
-<div class="backup" id="backup"><h2>📌 備選清單（被移除／可替換的項目）</h2></div>
+<div class="backup" id="backup"><h2>📌 備選清單</h2></div>
 
 <div class="gtips">
 <h2>🚇 通用交通與注意事項</h2>
@@ -157,8 +159,8 @@ header .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
 </div>
 </div>
 
-<script src="data.js?v=24"></script>
-<script src="trip.js?v=24"></script>
+<script src="data.js?v=25"></script>
+<script src="trip.js?v=25"></script>
 <script>
 // ---- 共用：地點查找與繁簡 ----
 const _T2S=(typeof T2S!=="undefined")?T2S:{};
@@ -174,6 +176,8 @@ function lookup(name){
   }
   return best;
 }
+function placeMapURL(p){return 'map.html?q='+encodeURIComponent(p.name.trim());}
+function placeMapLink(p,label){return `<a href="${placeMapURL(p)}" target="_blank">${label||p.name}</a>`;}
 function _distKm(a,b){const dx=(a.lat-b.lat)*111,dy=(a.lng-b.lng)*95;return Math.sqrt(dx*dx+dy*dy);}
 // 附近用餐（清真優先）：只列「真正在旁邊」的店，半徑 500m。
 // ☪認證→(友)友善→非清真 排序；同級按距離。有幾間列幾間（找不到就不顯示），最多 4 間。
@@ -189,7 +193,7 @@ function nearbyEats(p){
   if(!pick.length)return"";
   return pick.map(x=>{
     const m=Math.max(50,Math.round(x.d*1000/50)*50);
-    return `${x.r===0?'☪ ':''}${x.q.name}${x.r===1?'（友）':''} ${m}m`;
+    return `${x.r===0?'☪ ':''}${placeMapLink(x.q)}${x.r===1?'（友）':''} ${m}m`;
   }).join('、');
 }
 // 備選餐廳：每個餐點都有。手動 alt（店名陣列）優先，否則自動補同類最近清真店。
@@ -215,8 +219,7 @@ function altHTML(stop){
     const d=(main&&main.lat&&q.lat)?_distKm(main,q):null;
     const dist=d!=null?` ${Math.max(50,Math.round(d*1000/50)*50)}m`:'';
     const mk=q.halal===true?'☪ ':'';const fr=q.halal==='友善'?'（友）':'';
-    const url='map.html?q='+encodeURIComponent(nm.replace(/[（(].*?[)）]/g,'').trim());
-    return `<a href="${url}" target="_blank">${mk}${q.name}${fr}</a>${dist}`;
+    return `${mk}${placeMapLink(q)}${fr}${dist}`;
   }).filter(Boolean);
   if(!items.length)return"";
   return `<div class="alt">🔁 備選：${items.join('、')}${auto?'（就近同類）':''}</div>`;
@@ -228,7 +231,7 @@ function nearbyText(p){
     .map(q=>[_distKm(p,q),q]).filter(x=>x[0]<=0.45).sort((a,b)=>a[0]-b[0]).slice(0,4);
   return nb.map(x=>{
     const q=x[1],m=Math.max(50,Math.round(x[0]*1000/50)*50);
-    return `${q.name}${q.rating?`（⭐${String(q.rating).split('/')[0]}）`:""} ${m}m`;
+    return `${placeMapLink(q)}${q.rating?`（⭐${String(q.rating).split('/')[0]}）`:""} ${m}m`;
   }).join("、");
 }
 
@@ -265,7 +268,7 @@ TRIP.forEach(day=>{
       const nb=nearbyText(p);
       if(nb)moreBits.push(`🧭 附近知名：${nb}`);
     }
-    const q=encodeURIComponent(s.name.replace(/[（(].*?[)）]/g,"").trim());
+    const q=encodeURIComponent((p?p.name:s.name).trim());
     html+=`<div class="stop"><span class="tm">${s.t}</span><span class="rail"><i style="background:${k.c}"></i></span><div class="body">
       <div class="line1"><span class="lbl" style="background:${k.c}">${s.label||k.t}</span><a href="map.html?q=${q}" target="_blank">${s.name}</a></div>
       ${s.note?`<div class="note">${s.note}</div>`:""}
@@ -287,8 +290,15 @@ document.getElementById('daynav').innerHTML=
   `<a class="bkx" href="#backup">📌 備選</a>`;
 
 // ---- 備選清單 ----
+function backupItemHTML(group,item){
+  if(typeof item==="string")return `<li>${item}</li>`;
+  const seen=new Set();
+  const links=(item.names||[]).map(lookup).filter(p=>p&&!seen.has(p.name)&&seen.add(p.name))
+    .map(p=>placeMapLink(p,`🗺 ${p.name}`));
+  return `<li>${item.text}${links.length?`<div class="maplinks">${links.join("")}</div>`:""}</li>`;
+}
 document.getElementById('backup').innerHTML+=BACKUPS.map(g=>
-  `<h3>${g.g}</h3><ul>${g.items.map(x=>`<li>${x}</li>`).join("")}</ul>`).join("");
+  `<h3>${g.g}</h3><ul>${g.items.map(x=>backupItemHTML(g,x)).join("")}</ul>`).join("");
 
 // ---- 載入層：渲染完成即淡出；點站內連結立刻重新顯示（跨頁即時回饋） ----
 document.getElementById('pgload').classList.add('done');

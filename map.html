@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>成都・重慶 9天8夜 — 景點餐廳地圖</title>
-<link rel="preload" href="data.js?v=24" as="script">
-<link rel="preload" href="trip.js?v=24" as="script">
+<link rel="preload" href="data.js?v=25" as="script">
+<link rel="preload" href="trip.js?v=25" as="script">
 <link rel="prefetch" href="itinerary.html">
 <link rel="prefetch" href="prep.html">
 <link rel="stylesheet" href="libs/leaflet.css">
@@ -157,7 +157,7 @@ html,body{overscroll-behavior:none} /* 防止下拉手勢觸發瀏覽器 pull-to
 <nav class="topnav" aria-label="主要導覽">
   <div class="brand">
     <strong>Sichuan Trip</strong>
-    <span class="site-meta" data-site-meta>2026/12/5–12/13 ｜ v24・更新 2026/07/12 21:04</span>
+    <span class="site-meta" data-site-meta>2026/12/5–12/13 ｜ v25・更新 2026/07/12 21:09</span>
   </div>
   <div class="navlinks">
     <a href="prep.html">行前</a>
@@ -195,8 +195,8 @@ html,body{overscroll-behavior:none} /* 防止下拉手勢觸發瀏覽器 pull-to
 </div>
 <div class="legend" id="legend"></div>
 
-<script src="data.js?v=24"></script>
-<script src="trip.js?v=24"></script>
+<script src="data.js?v=25"></script>
+<script src="trip.js?v=25"></script>
 <script>
 // 分類設定：顏色＋圖示
 const CATS={
@@ -314,7 +314,7 @@ function altHTML(stop){
     const d=(main&&main.lat&&q.lat)?_distKm(main,q):null;
     const dist=d!=null?` ${Math.max(50,Math.round(d*1000/50)*50)}m`:'';
     const mk=q.halal===true?'☪ ':'';const fr=q.halal==='友善'?'（友）':'';
-    const url='map.html?q='+encodeURIComponent(nm.replace(/[（(].*?[)）]/g,'').trim());
+    const url='map.html?q='+encodeURIComponent(q.name.trim());
     return `<a href="${url}" style="color:#a04b12">${mk}${q.name}${fr}</a>${dist}`;
   }).filter(Boolean);
   if(!items.length)return"";
