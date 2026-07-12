@@ -108,7 +108,66 @@ def build_t2s(payload_text):
     return t2s
 
 payload = json.dumps(deduped, ensure_ascii=False) + json.dumps(guides, ensure_ascii=False) + json.dumps(tours, ensure_ascii=False)
-t2s_map = build_t2s(payload)
+
+# ── 顯示層簡→繁轉換 ──
+# 網頁以繁體中文呈現：所有「顯示用」字串轉為繁體（zh-tw）。
+# 但 city / type / category / halal 是程式內部比對用的 key（如 p.city==="重庆"、
+# CATS["景点"]），必須保留簡體原值；搜尋與行程站點比對均先經 t2s() 正規化，
+# 因此名稱轉繁後所有匹配邏輯照常運作。
+_S2T_SKIP_KEYS = {"city", "type", "category", "halal"}
+
+# zhconv 誤轉修正：地名的「里」不是「裡面」的裡；姓氏范、店名于塗保持原字；
+# 臺一律用台（台灣通行寫法：電台巷、觀景台）。
+_S2T_FIXES = [
+    ("錦裡", "錦里"), ("太古裡", "太古里"), ("下浩裡", "下浩里"), ("祥和裡", "祥和里"),
+    ("公裡", "公里"), ("裡程", "里程"), ("萬裡", "萬里"), ("五裡", "五里"), ("十裡", "十里"),
+    ("翡翠裡", "翡翠里"), ("天都裡", "天都里"), ("唐杜裡", "唐杜里"), ("愛裡耶", "愛里耶"),
+    ("裡弄", "里弄"), ("太古里東裡", "太古里東里"),
+    ("範嬢嬢", "范嬢嬢"), ("於塗", "于塗"), ("臺", "台"),
+]
+
+def _apply_fixes(s):
+    for a, b in _S2T_FIXES:
+        s = s.replace(a, b)
+    return s
+
+def to_traditional(obj, key=None):
+    try:
+        from zhconv import convert
+    except ImportError:
+        return obj
+    if isinstance(obj, dict):
+        return {k: (v if k in _S2T_SKIP_KEYS else to_traditional(v, k)) for k, v in obj.items()}
+    if isinstance(obj, list):
+        return [to_traditional(x, key) for x in obj]
+    if isinstance(obj, str):
+        from zhconv import convert
+        return _apply_fixes(convert(obj, "zh-tw"))
+    return obj
+
+deduped = to_traditional(deduped)
+guides = to_traditional(guides)
+tours = to_traditional(tours)
+
+# ── T2S 搜尋對照表（資料轉繁「之後」建置）──
+# 逐字用 zh-cn 反向轉換（繁→簡），無詞組對齊問題：
+# 涵蓋最終資料中出現的所有繁體字，搜尋時 query 與 haystack 都經
+# t2s() 正規化為簡體再比對，因此簡體/繁體輸入皆可命中。
+final_payload = json.dumps(deduped, ensure_ascii=False) + json.dumps(guides, ensure_ascii=False) + json.dumps(tours, ensure_ascii=False)
+t2s_map = build_t2s(payload)  # 先取單字級簡→繁反查＋手動修正表
+try:
+    from zhconv import convert as _conv
+    # 字元集合：最終繁體資料 ∪ 原簡體資料的 zh-tw 轉換（涵蓋使用者可能輸入、
+    # 但被修正表改掉的字，如 臺）
+    char_pool = set(final_payload) | set(_conv(payload, "zh-tw"))
+    for ch in char_pool:
+        if not "一" <= ch <= "鿿":
+            continue
+        simp = _conv(ch, "zh-cn")
+        if simp != ch and len(simp) == 1:
+            t2s_map[ch] = simp
+except ImportError:
+    pass
 
 out = os.path.join(BASE, "data.js")
 with open(out, "w", encoding="utf-8") as fh:
