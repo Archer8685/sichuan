@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>成都・重慶 12/5–12/13 最終行程</title>
-<link rel="preload" href="data.js?v=26" as="script">
-<link rel="preload" href="trip.js?v=26" as="script">
+<link rel="preload" href="data.js?v=27" as="script">
+<link rel="preload" href="trip.js?v=27" as="script">
 <link rel="prefetch" href="libs/leaflet.js">
 <link rel="prefetch" href="libs/leaflet.css">
 <link rel="prefetch" href="map.html">
@@ -49,6 +49,7 @@ a:active,.chip:active,.card:active,.navlinks a:active{transform:scale(.97)}
 .daynav a[data-city="双城"].active{border-color:#8e44ad;background:#8e44ad}
 .daynav a.active small{color:rgba(255,255,255,.82)}
 .daynav a.bkx{color:var(--amber);border-color:#e8d9a8;background:var(--amberbg)}
+.daynav a.bkx.active{color:#fff;border-color:var(--amber);background:var(--amber);box-shadow:0 3px 10px rgba(0,0,0,.18)}
 .wrap{max-width:900px;margin:0 auto;padding:0 14px}
 header{padding:24px 0 12px}
 header h1{font-size:23px}
@@ -131,7 +132,7 @@ header .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
 <nav class="topnav" aria-label="主要導覽">
   <div class="brand">
     <strong>Sichuan Trip</strong>
-    <span class="site-meta" data-site-meta>2026/12/5–12/13 ｜ v26・更新 2026/07/12 21:15</span>
+    <span class="site-meta" data-site-meta>2026/12/5–12/13 ｜ v27・更新 2026/07/12 21:21</span>
   </div>
   <div class="navlinks">
     <a href="prep.html">行前</a>
@@ -164,8 +165,8 @@ header .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
 </div>
 </div>
 
-<script src="data.js?v=26"></script>
-<script src="trip.js?v=26"></script>
+<script src="data.js?v=27"></script>
+<script src="trip.js?v=27"></script>
 <script>
 // ---- 共用：地點查找與繁簡 ----
 const _T2S=(typeof T2S!=="undefined")?T2S:{};
@@ -292,28 +293,37 @@ TRIP.forEach(day=>{
 const daynav=document.getElementById('daynav');
 function dayCityLabel(city){return city==='重庆'?'重慶':city==='成都'?'成都':'重慶→成都';}
 daynav.innerHTML=
-  `<a class="bkx" href="prep.html">🧳 行前準備</a>`+
   TRIP.map(d=>`<a href="#day-${d.d}" data-day="${d.d}" data-city="${d.city}">D${d.d} · ${dayCityLabel(d.city)}<small>${d.date}</small></a>`).join("")+
-  `<a class="bkx" href="#backup">📌 備選</a>`;
+  `<a class="bkx" href="#backup" data-backup>📌 備選</a>`;
 
 // 依目前瀏覽到的日卡自動高亮，並將按鈕水平置中。
 const daySections=TRIP.map(d=>document.getElementById(`day-${d.d}`));
 const dayLinks=[...daynav.querySelectorAll('a[data-day]')];
-let activeDay=0,spyQueued=false;
+const backupSection=document.getElementById('backup');
+const backupLink=daynav.querySelector('a[data-backup]');
+let activeDay="",spyQueued=false;
 function setActiveDay(day){
-  if(day===activeDay)return;
-  activeDay=day;
+  const key=String(day);
+  if(key===activeDay)return;
+  activeDay=key;
   dayLinks.forEach(a=>{
-    const on=Number(a.dataset.day)===day;
+    const on=a.dataset.day===key;
     a.classList.toggle('active',on);
     if(on)a.setAttribute('aria-current','true');else a.removeAttribute('aria-current');
   });
-  const active=dayLinks.find(a=>Number(a.dataset.day)===day);
+  const backupOn=key==='backup';
+  backupLink.classList.toggle('active',backupOn);
+  if(backupOn)backupLink.setAttribute('aria-current','true');else backupLink.removeAttribute('aria-current');
+  const active=backupOn?backupLink:dayLinks.find(a=>a.dataset.day===key);
   if(active)daynav.scrollTo({left:active.offsetLeft-(daynav.clientWidth-active.offsetWidth)/2,behavior:'smooth'});
 }
 function updateActiveDay(){
   spyQueued=false;
   const line=daynav.getBoundingClientRect().bottom+12;
+  if(backupSection.getBoundingClientRect().top<=line){
+    setActiveDay('backup');
+    return;
+  }
   let current=daySections[0];
   for(const section of daySections){
     if(section.getBoundingClientRect().top<=line)current=section;else break;
