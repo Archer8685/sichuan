@@ -1,5 +1,6 @@
 // 最終行程 — 單一資料來源（map.html 行程模式 + itinerary.html 皆由此渲染）
 // stop.go = 前往「下一站」的交通方式/時間/費用；name 需與 data.js PLACES 名稱一致
+const SITE_VERSION="v13", SITE_UPDATED_AT="2026/07/12 19:43";
 const HOTEL_CQ="重慶解放碑美居酒店", HOTEL_CD="成都太古里春熙美居酒店";
 
 // 📋 出發前必訂清單
@@ -180,3 +181,7 @@ const BACKUPS=[
   "1️⃣5️⃣ 寧夏回鄉齋清真餐廳（中興路）：原 D2 晚餐，讓位給觀音橋絲路香妃——清真寺對面手抓羊肉，住較場口想吃隨時步行可達",
   "備註：被替換的含豬早餐（老麻抄手、蔣六十八梯、花市豌雜、嚴太婆鍋魁）與非清真火鍋名店（周師兄、蜀大俠、大龍、枇杷園）均在地圖可查"]}
 ];
+
+document.querySelectorAll("[data-site-meta]").forEach(el=>{
+  el.innerHTML=`<span class="trip-date">2026/12/5–12/13 ｜ </span>${SITE_VERSION}・更新 ${SITE_UPDATED_AT}`;
+});

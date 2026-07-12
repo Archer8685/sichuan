@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>成都・重慶 8天7夜 — 景點餐廳地圖</title>
-<link rel="preload" href="data.js?v=12" as="script">
-<link rel="preload" href="trip.js?v=12" as="script">
+<link rel="preload" href="data.js?v=13" as="script">
+<link rel="preload" href="trip.js?v=13" as="script">
 <link rel="prefetch" href="itinerary.html">
 <link rel="prefetch" href="prep.html">
 <link rel="stylesheet" href="libs/leaflet.css">
@@ -121,7 +121,8 @@ html,body{overscroll-behavior:none} /* 防止下拉手勢觸發瀏覽器 pull-to
 @media (max-width:760px){
   .topnav{min-height:44px;padding:4px 12px}
   .brand strong{font-size:13.5px}
-  .brand span{display:none}
+  .brand .trip-date{display:none}
+  .brand .site-meta{display:block;font-size:9.5px}
   .navlinks a{min-height:32px;padding:0 10px;font-size:12.5px;border-radius:7px}
   #app{height:calc(100vh - 44px);height:calc(100dvh - 44px);position:relative;display:block}
   /* 地圖固定滿版；面板改覆蓋式＋translateY 位移：拖曳純 GPU 合成、
@@ -156,7 +157,7 @@ html,body{overscroll-behavior:none} /* 防止下拉手勢觸發瀏覽器 pull-to
 <nav class="topnav" aria-label="主要導覽">
   <div class="brand">
     <strong>Sichuan Trip</strong>
-    <span>2026/12/5 - 12/13</span>
+    <span class="site-meta" data-site-meta>2026/12/5–12/13 ｜ v13・更新 2026/07/12 19:43</span>
   </div>
   <div class="navlinks">
     <a href="prep.html">行前</a>
@@ -194,8 +195,8 @@ html,body{overscroll-behavior:none} /* 防止下拉手勢觸發瀏覽器 pull-to
 </div>
 <div class="legend" id="legend"></div>
 
-<script src="data.js?v=12"></script>
-<script src="trip.js?v=12"></script>
+<script src="data.js?v=13"></script>
+<script src="trip.js?v=13"></script>
 <script>
 // 分類設定：顏色＋圖示
 const CATS={
