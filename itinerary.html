@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>成都・重慶 12/5–12/13 最終行程</title>
 <link rel="preload" href="data.js?v=73" as="script">
-<link rel="preload" href="trip.js?v=73" as="script">
+<link rel="preload" href="trip.js?v=75" as="script">
 <link rel="prefetch" href="libs/leaflet.js">
 <link rel="prefetch" href="libs/leaflet.css">
 <link rel="prefetch" href="map.html">
@@ -158,7 +158,7 @@ header .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
 </div>
 
 <script src="data.js?v=73"></script>
-<script src="trip.js?v=73"></script>
+<script src="trip.js?v=75"></script>
 <script>
 // ---- 共用：地點查找與繁簡 ----
 const _T2S=(typeof T2S!=="undefined")?T2S:{};
@@ -271,7 +271,7 @@ TRIP.forEach(day=>{
       <div class="line1"><span class="lbl" style="background:${k.c}">${s.label||k.t}</span><a href="map.html?q=${q}" target="_blank">${s.name}</a></div>
       ${s.note?`<div class="note">${s.note}</div>`:""}
       ${facts.length?`<div class="facts">${facts.map(f=>`<i>${f}</i>`).join("")}</div>`:""}
-      ${s.kind==='meal'?altHTML(s):""}
+      ${(s.kind==='meal'||s.alt)?altHTML(s):""}
       ${moreBits.length?`<details open><summary>更多（營業時間・注意・附近）</summary><div class="more">${moreBits.join("<br>")}</div></details>`:""}
     </div></div>`;
     if(s.go&&i<day.stops.length-1)html+=`<div class="go">${s.go}</div>`;

@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>成都・重慶 9天8夜 — 景點餐廳地圖</title>
 <link rel="preload" href="data.js?v=73" as="script">
-<link rel="preload" href="trip.js?v=73" as="script">
+<link rel="preload" href="trip.js?v=75" as="script">
 <link rel="prefetch" href="itinerary.html">
 <link rel="prefetch" href="prep.html">
 <link rel="prefetch" href="guide.html">
@@ -209,7 +209,7 @@ html,body{overscroll-behavior:none} /* 防止下拉手勢觸發瀏覽器 pull-to
 <div class="legend" id="legend"></div>
 
 <script src="data.js?v=73"></script>
-<script src="trip.js?v=73"></script>
+<script src="trip.js?v=75"></script>
 <script>
 // 分類設定：顏色＋圖示
 const CATS={
@@ -552,7 +552,7 @@ function renderTrip(keepView){
     card.innerHTML=`<div class="top"><span class="badge" style="background:${KIND_COLOR[s.kind]||'#555'}">${i+1}</span><h3>${s.name}</h3></div>
       <div class="meta">🕐 ${s.t}｜${s.label}</div>
       ${s.note?`<div class="dishes">${s.note}</div>`:""}
-      ${s.kind==='meal'?(function(){const h=altHTML(s);return h?`<div class="meta" style="margin-top:4px;color:#a04b12">${h}</div>`:"";})():""}
+      ${(s.kind==='meal'||s.alt)?(function(){const h=altHTML(s);return h?`<div class="meta" style="margin-top:4px;color:#a04b12">${h}</div>`:"";})():""}
       ${eats?`<div class="meta" style="margin-top:4px;color:#0e7c3f">🍽 附近用餐：${eats}</div>`:""}
       ${nb?`<div class="meta" style="margin-top:4px">🧭 附近：${nb}</div>`:""}
       ${(s.go&&i<day.stops.length-1)?`<div class="meta" style="margin-top:4px;color:#4a6b8a">↓ ${s.go}</div>`:""}`;
