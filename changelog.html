@@ -123,28 +123,45 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
     <div class="eyebrow">Website field notes</div>
     <h1>一路修到更順。<span>網頁修改紀錄</span></h1>
     <p class="lead">把網站功能、行程調整與資料校正整理成可讀的版本誌。內容依 Git commit 與現有頁面交叉核對；相近的小修改合併描述，保留 commit 編號供回查。</p>
-    <p class="source-note">資料截點：2026/07/13 22:54（UTC+8）・<a href="https://github.com/Archer8685/sichuan/commits" target="_blank" rel="noopener">查看完整 Git 歷史 ↗</a></p>
+    <p class="source-note">資料截點：2026/07/14 07:46（UTC+8）・<a href="https://github.com/Archer8685/sichuan/commits" target="_blank" rel="noopener">查看完整 Git 歷史 ↗</a></p>
     <aside class="ticket" aria-label="版本資訊">
       <small>CHANGE LOG</small>
-      <strong>v78</strong>
+      <strong>v79</strong>
       <div class="route">CKG 重慶<br>↓ 9 DAYS<br>CTU 成都</div>
     </aside>
   </header>
 
   <section class="stats" aria-label="紀錄摘要">
-    <div class="stat"><b>80</b><span>筆既有 Git commits</span></div>
-    <div class="stat"><b>3 日</b><span>2026/07/11–07/13</span></div>
+    <div class="stat"><b>85</b><span>筆本次修改前 Git commits</span></div>
+    <div class="stat"><b>4 日</b><span>2026/07/11–07/14</span></div>
     <div class="stat"><b>5 頁</b><span>行前、行程、地圖、攻略、紀錄</span></div>
   </section>
 
   <nav class="jump" aria-label="依日期跳轉">
-    <a href="#d0713">07/13 最新</a>
+    <a href="#d0714">07/14 最新</a>
+    <a href="#d0713">07/13</a>
     <a href="#d0712">07/12 主體完成</a>
     <a href="#d0711">07/11 首次上線</a>
     <a href="#method">整理方式</a>
   </nav>
 
   <section class="timeline" aria-label="修改時間軸">
+    <article class="release" id="d0714">
+      <div class="date"><time datetime="2026-07-14">07 / 14</time><span>目前工作區・最新</span></div>
+      <div class="release-body">
+        <section class="change" data-kind="trip">
+          <h2>D4 加入撫琴夜市，D8 收攏春熙路採買 <span class="new">LATEST</span></h2>
+          <p>D4 晚餐後改去撫琴夜市感受老社區夜生活；茶百道與盤飧市移到原本就會逛 IFS、太古里與東大街的 D8，李山山茶事改列備選，減少跨區折返。</p>
+          <div class="meta"><span class="kind">行程</span><span class="commit">目前工作區</span></div>
+        </section>
+        <section class="change" data-kind="ui">
+          <h2>網站版本更新為 v79</h2>
+          <p>同步更新行程、地圖資料與離線 App 快取鍵，確保新夜市與調整後動線不會被舊快取遮蔽。</p>
+          <div class="meta"><span class="kind">版本</span><span class="commit">目前工作區</span></div>
+        </section>
+      </div>
+    </article>
+
     <article class="release" id="d0713">
       <div class="date"><time datetime="2026-07-13">07 / 13</time><span>27 commits・最新</span></div>
       <div class="release-body">
@@ -169,7 +186,7 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
           <div class="meta"><span class="kind">資料</span><a class="commit" href="https://github.com/Archer8685/sichuan/commit/af49fec" target="_blank" rel="noopener">af49fec</a><a class="commit" href="https://github.com/Archer8685/sichuan/commit/fcc48fc" target="_blank" rel="noopener">fcc48fc</a><a class="commit" href="https://github.com/Archer8685/sichuan/commit/e5b7fd7" target="_blank" rel="noopener">e5b7fd7</a></div>
         </section>
         <section class="change" data-kind="data">
-          <h2>修正重慶河岸與地標座標 <span class="new">LATEST</span></h2>
+          <h2>修正重慶河岸與地標座標</h2>
           <p>校正下浩里、朝天門碼頭、洪崖洞等重慶 POI 的地圖定位，處理 OSM／WGS-84 與高德 GCJ-02 座標系差異，避免圖釘落到江面、錯岸或偏離地標。</p>
           <div class="meta"><span class="kind">資料</span><a class="commit" href="https://github.com/Archer8685/sichuan/commit/7856cdd" target="_blank" rel="noopener">7856cdd</a><a class="commit" href="https://github.com/Archer8685/sichuan/commit/e0485f3" target="_blank" rel="noopener">e0485f3</a><a class="commit" href="https://github.com/Archer8685/sichuan/commit/ab1d090" target="_blank" rel="noopener">ab1d090</a></div>
         </section>
@@ -251,7 +268,7 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
 
   <section class="method" id="method">
     <h2>這份紀錄怎麼整理</h2>
-    <p>以 <code>git log</code> 的 80 筆既有 commit 為主，對照 itinerary.html、map.html、prep.html、guide.html、trip.js、data.js 與 README。相同目的的連續 commit 合併成一條，曾加入又移除的嘗試則保留在相關項目中說明。</p>
+    <p>以 <code>git log</code> 的 85 筆既有 commit 與目前工作區為主，對照 itinerary.html、map.html、prep.html、guide.html、trip.js、data.js 與 README。相同目的的連續 commit 合併成一條，曾加入又移除的嘗試則保留在相關項目中說明。</p>
     <details>
       <summary>為什麼不是逐筆照抄 commit？</summary>
       <ul>
