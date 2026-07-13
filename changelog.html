@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Sichuan Trip 網站的功能、行程與資料修改紀錄。">
+<title>修改紀錄 — Sichuan Trip</title>
+<link rel="prefetch" href="itinerary.html">
+<link rel="prefetch" href="map.html">
+<link rel="prefetch" href="prep.html">
+<link rel="prefetch" href="guide.html">
+<style>
+:root{
+  --bg:#faf7f2;--paper:#fff;--ink:#2b2620;--muted:#82786c;--line:#e8e1d6;
+  --red:#c0392b;--teal:#1a7a6d;--blue:#2255a4;--amber:#9b6b16;--chip:#f3ede3;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"PingFang TC","Microsoft JhengHei","Noto Sans TC",sans-serif;color:var(--ink);background:var(--bg);padding-bottom:64px}
+a{color:inherit}
+a:focus-visible,summary:focus-visible{outline:3px solid rgba(26,122,109,.35);outline-offset:3px;border-radius:5px}
+.topnav{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:58px;padding:9px clamp(14px,3vw,28px);background:rgba(250,247,242,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+.brand{display:flex;flex-direction:column;min-width:0}
+.brand strong{font-size:15px;line-height:1.25}
+.brand .site-meta{color:var(--teal);font-size:12px;line-height:1.35;text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.brand .site-meta::after{content:" →"}
+.navlinks{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.navlinks a{display:inline-flex;align-items:center;justify-content:center;min-height:38px;padding:0 14px;border:1px solid var(--line);border-radius:8px;color:var(--ink);background:var(--paper);text-decoration:none;font-size:14px;font-weight:700}
+.navlinks a:hover{border-color:#cdbfae}
+.wrap{width:min(920px,calc(100% - 28px));margin:0 auto}
+
+.hero{position:relative;padding:42px 0 28px;border-bottom:1px solid var(--line);overflow:hidden}
+.eyebrow{display:flex;align-items:center;gap:9px;color:var(--red);font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.eyebrow::before{content:"";width:28px;height:2px;background:var(--red)}
+.hero h1{max-width:680px;margin-top:12px;font-size:clamp(32px,7vw,58px);line-height:1.04;letter-spacing:-.045em}
+.hero h1 span{display:block;color:var(--teal)}
+.lead{max-width:670px;margin-top:16px;color:#5c544b;font-size:14px;line-height:1.85}
+.source-note{margin-top:12px;color:var(--muted);font-size:12px;line-height:1.7}
+.source-note a{color:var(--teal);font-weight:700;text-underline-offset:3px}
+.ticket{position:absolute;right:4px;top:44px;width:158px;padding:16px 17px 14px;border:1px solid #d9cdbd;border-radius:10px;background:var(--paper);box-shadow:5px 6px 0 #e9dfd1;transform:rotate(2.5deg)}
+.ticket::before,.ticket::after{content:"";position:absolute;left:-7px;width:12px;height:12px;border-radius:50%;background:var(--bg);border-right:1px solid #d9cdbd}
+.ticket::before{top:25px}.ticket::after{bottom:25px}
+.ticket small{display:block;color:var(--muted);font-size:9px;font-weight:800;letter-spacing:.14em}
+.ticket strong{display:block;margin:5px 0 11px;font-size:24px;letter-spacing:-.04em}
+.ticket .route{padding-top:9px;border-top:1px dashed #cdbfae;color:var(--teal);font-size:11px;font-weight:800;line-height:1.55}
+
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin:22px 0;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.stat{padding:15px 17px;background:var(--paper)}
+.stat b{display:block;font-size:22px;line-height:1.15}
+.stat span{display:block;margin-top:4px;color:var(--muted);font-size:11.5px}
+.jump{position:sticky;top:58px;z-index:30;display:flex;gap:7px;overflow-x:auto;padding:10px 0;background:rgba(250,247,242,.96);backdrop-filter:blur(10px);scrollbar-width:none}
+.jump::-webkit-scrollbar{display:none}
+.jump a{flex:none;padding:7px 12px;border:1px solid var(--line);border-radius:20px;background:var(--paper);font-size:12px;font-weight:750;text-decoration:none;white-space:nowrap}
+
+.timeline{padding-top:6px}
+.release{display:grid;grid-template-columns:118px minmax(0,1fr);gap:24px;padding:24px 0;border-top:1px solid var(--line);scroll-margin-top:116px}
+.release:first-child{border-top:0}
+.date{position:sticky;top:118px;align-self:start}
+.date time{display:block;font-size:18px;font-weight:850;letter-spacing:-.03em}
+.date span{display:block;margin-top:5px;color:var(--muted);font-size:11px;line-height:1.5}
+.release-body{position:relative;padding-left:25px}
+.release-body::before{content:"";position:absolute;left:5px;top:8px;bottom:8px;width:1px;background:#d7cec2}
+.change{position:relative;padding:0 0 22px}
+.change:last-child{padding-bottom:0}
+.change::before{content:"";position:absolute;left:-24px;top:7px;width:9px;height:9px;border:2px solid var(--bg);border-radius:50%;background:var(--teal);box-shadow:0 0 0 1px var(--teal)}
+.change[data-kind="trip"]::before{background:var(--red);box-shadow:0 0 0 1px var(--red)}
+.change[data-kind="data"]::before{background:var(--blue);box-shadow:0 0 0 1px var(--blue)}
+.change[data-kind="prep"]::before{background:var(--amber);box-shadow:0 0 0 1px var(--amber)}
+.change h2{font-size:17px;line-height:1.5}
+.change p{margin-top:5px;color:#5d554c;font-size:13.5px;line-height:1.75}
+.meta{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-top:9px}
+.kind{padding:2px 7px;border-radius:6px;background:#eaf4f2;color:var(--teal);font-size:10.5px;font-weight:800}
+.change[data-kind="trip"] .kind{background:#f9eae8;color:var(--red)}
+.change[data-kind="data"] .kind{background:#eaf0f8;color:var(--blue)}
+.change[data-kind="prep"] .kind{background:#f8f0df;color:var(--amber)}
+.commit{padding:2px 7px;border:1px solid var(--line);border-radius:6px;background:var(--paper);color:#6b6258;font-family:ui-monospace,"SFMono-Regular",Consolas,monospace;font-size:10.5px;text-decoration:none}
+.commit:hover{border-color:var(--teal);color:var(--teal)}
+.new{display:inline-flex;align-items:center;margin-left:5px;padding:2px 7px;border-radius:6px;background:var(--red);color:white;font-size:9.5px;letter-spacing:.06em;vertical-align:2px}
+
+.method{margin-top:24px;padding:18px 20px;border:1px solid var(--line);border-radius:13px;background:var(--paper)}
+.method h2{font-size:15px}.method p,.method li{color:#625a51;font-size:12.5px;line-height:1.75}
+.method p{margin-top:7px}.method ul{margin:8px 0 0 18px}
+details{margin-top:12px;border-top:1px dashed #d9cdbd;padding-top:12px}
+summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
+.footer{display:flex;justify-content:space-between;gap:16px;margin-top:28px;padding-top:17px;border-top:1px solid var(--line);color:var(--muted);font-size:11.5px;line-height:1.65}
+.footer a{color:var(--teal);font-weight:750}
+
+@media(max-width:720px){
+  .ticket{display:none}
+  .hero{padding-top:28px}.hero h1{max-width:560px}
+  .release{grid-template-columns:82px;gap:13px}
+  .release-body{padding-left:21px}.change::before{left:-20px}
+}
+@media(max-width:520px){
+  .topnav{min-height:44px;padding:4px 10px;gap:8px}
+  .brand strong{font-size:13px}.brand .site-meta{font-size:9.5px}
+  .navlinks{gap:4px}.navlinks a{min-height:32px;padding:0 7px;font-size:11.5px;border-radius:7px}
+  .jump{top:44px}.stats{grid-template-columns:1fr}.stat{display:flex;align-items:baseline;gap:9px;padding:11px 14px}.stat span{margin-top:0}
+  .release{display:block;padding:22px 0;scroll-margin-top:100px}.date{position:static;margin-bottom:17px}.date time{font-size:16px}.date span{display:inline;margin-left:5px}
+  .release-body{margin-left:3px}.change h2{font-size:16px}.change p{font-size:13px}
+  .footer{display:block}.footer span{display:block;margin-top:5px}
+}
+@media(max-width:365px){.brand .site-meta{display:none}.navlinks a{padding:0 6px;font-size:11px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<nav class="topnav" aria-label="主要導覽">
+  <div class="brand">
+    <strong>Sichuan Trip</strong>
+    <a class="site-meta" href="changelog.html" aria-current="page">修改紀錄</a>
+  </div>
+  <div class="navlinks">
+    <a href="prep.html">行前</a>
+    <a href="itinerary.html">行程</a>
+    <a href="map.html">地圖</a>
+    <a href="guide.html">攻略</a>
+  </div>
+</nav>
+
+<main class="wrap">
+  <header class="hero">
+    <div class="eyebrow">Website field notes</div>
+    <h1>一路修到更順。<span>網頁修改紀錄</span></h1>
+    <p class="lead">把網站功能、行程調整與資料校正整理成可讀的版本誌。內容依 Git commit 與現有頁面交叉核對；相近的小修改合併描述，保留 commit 編號供回查。</p>
+    <p class="source-note">資料截點：2026/07/13 22:54（UTC+8）・<a href="https://github.com/Archer8685/sichuan/commits" target="_blank" rel="noopener">查看完整 Git 歷史 ↗</a></p>
+    <aside class="ticket" aria-label="版本資訊">
+      <small>CHANGE LOG</small>
+      <strong>v75</strong>
+      <div class="route">CKG 重慶<br>↓ 9 DAYS<br>CTU 成都</div>
+    </aside>
+  </header>
+
+  <section class="stats" aria-label="紀錄摘要">
+    <div class="stat"><b>80</b><span>筆既有 Git commits</span></div>
+    <div class="stat"><b>3 日</b><span>2026/07/11–07/13</span></div>
+    <div class="stat"><b>5 頁</b><span>行前、行程、地圖、攻略、紀錄</span></div>
+  </section>
+
+  <nav class="jump" aria-label="依日期跳轉">
+    <a href="#d0713">07/13 最新</a>
+    <a href="#d0712">07/12 主體完成</a>
+    <a href="#d0711">07/11 首次上線</a>
+    <a href="#method">整理方式</a>
+  </nav>
+
+  <section class="timeline" aria-label="修改時間軸">
+    <article class="release" id="d0713">
+      <div class="date"><time datetime="2026-07-13">07 / 13</time><span>27 commits・最新</span></div>
+      <div class="release-body">
+        <section class="change" data-kind="trip">
+          <h2>住宿早餐回歸主線，地方早餐保留彈性</h2>
+          <p>重慶與成都住宿日改以已含的飯店早餐為預設，清真小麵、牛肉館、鍋盔等地方早餐改列備選，減少早晨繞路與時間壓力。</p>
+          <div class="meta"><span class="kind">行程</span><a class="commit" href="https://github.com/Archer8685/sichuan/commit/e609757" target="_blank" rel="noopener">e609757</a></div>
+        </section>
+        <section class="change" data-kind="prep">
+          <h2>行前時間軸與餐廳訂位提醒補齊</h2>
+          <p>準備頁同步目前行程，新增蜀宴賦、雍容薈、天方樓、黃玉明烤肉等訂位時機與方式，讓購票、訂位與出發準備能照時間完成。</p>
+          <div class="meta"><span class="kind">行前</span><a class="commit" href="https://github.com/Archer8685/sichuan/commit/8232ba6" target="_blank" rel="noopener">8232ba6</a><a class="commit" href="https://github.com/Archer8685/sichuan/commit/16fe697" target="_blank" rel="noopener">16fe697</a></div>
+        </section>
+        <section class="change" data-kind="trip">
+          <h2>重整 D2、D7、D8 動線，減少折返</h2>
+          <p>D2 改成單次過江的南岸動線；D7 恢復九眼橋為可選站；D8 調整 IFS、青石橋與下午茶順序，並確認雍容薈 IFS 二店有午市。</p>
+          <div class="meta"><span class="kind">行程</span><a class="commit" href="https://github.com/Archer8685/sichuan/commit/73faf38" target="_blank" rel="noopener">73faf38</a><a class="commit" href="https://github.com/Archer8685/sichuan/commit/abde67b" target="_blank" rel="noopener">abde67b</a><a class="commit" href="https://github.com/Archer8685/sichuan/commit/7a0c77e" target="_blank" rel="noopener">7a0c77e</a></div>
+        </section>
+        <section class="change" data-kind="data">
+          <h2>餐廳與小吃資料再校準</h2>
+          <p>新增首七牛肉、嚴太婆鍋魁、李山山茶事分店及景點附近小吃；青石橋補上海鮮代加工選項，帝王蟹清單則收斂為確認有活體供應的店家。</p>
+          <div class="meta"><span class="kind">資料</span><a class="commit" href="https://github.com/Archer8685/sichuan/commit/af49fec" target="_blank" rel="noopener">af49fec</a><a class="commit" href="https://github.com/Archer8685/sichuan/commit/fcc48fc" target="_blank" rel="noopener">fcc48fc</a><a class="commit" href="https://github.com/Archer8685/sichuan/commit/e5b7fd7" target="_blank" rel="noopener">e5b7fd7</a></div>
+        </section>
+        <section class="change" data-kind="data">
+          <h2>修正重慶河岸與地標座標 <span class="new">LATEST</span></h2>
+          <p>校正下浩里、朝天門碼頭、洪崖洞等重慶 POI 的地圖定位，處理 OSM／WGS-84 與高德 GCJ-02 座標系差異，避免圖釘落到江面、錯岸或偏離地標。</p>
+          <div class="meta"><span class="kind">資料</span><a class="commit" href="https://github.com/Archer8685/sichuan/commit/7856cdd" target="_blank" rel="noopener">7856cdd</a><a class="commit" href="https://github.com/Archer8685/sichuan/commit/e0485f3" target="_blank" rel="noopener">e0485f3</a><a class="commit" href="https://github.com/Archer8685/sichuan/commit/ab1d090" target="_blank" rel="noopener">ab1d090</a></div>
+        </section>
+        <section class="change" data-kind="ui">
+          <h2>地圖清單更貼近眼前位置</h2>
+          <p>清單改依地圖中心距離排序；游標停在店家卡片時會同步放大對應圖釘。曾測試「只顯示路線」切換，確認增加操作成本後移除。</p>
+          <div class="meta"><span class="kind">介面</span><a class="commit" href="https://github.com/Archer8685/sichuan/commit/b278358" target="_blank" rel="noopener">b278358</a><a class="commit" href="https://github.com/Archer8685/sichuan/commit/a152b22" target="_blank" rel="noopener">a152b22</a></div>
+        </section>
+        <section class="change" data-kind="ui">
+          <h2>加入離線瀏覽與地圖預載</h2>
+          <p>新增 Service Worker 快取網站殼層與已瀏覽圖磚，地圖頁可預先下載沿途區域；訊號不穩時仍能開啟行程、行前資料與看過的底圖。</p>
+          <div class="meta"><span class="kind">功能</span><a class="commit" href="https://github.com/Archer8685/sichuan/commit/c4cda07" target="_blank" rel="noopener">c4cda07</a></div>
+        </section>
+        <section class="change" data-kind="ui">
+          <h2>新增這一頁：修改紀錄</h2>
+          <p>把分散在 commit、README 與頁面裡的變更整理為獨立頁面，並從各頁頂部的版本／更新時間連入。</p>
+          <div class="meta"><span class="kind">功能</span><span class="commit">目前工作區</span></div>
+        </section>
+      </div>
+    </article>
+
+    <article class="release" id="d0712">
+      <div class="date"><time datetime="2026-07-12">07 / 12</time><span>50 commits・主體完成</span></div>
+      <div class="release-body">
+        <section class="change" data-kind="ui">
+          <h2>行程與地圖改用同一份資料</h2>
+          <p>重做網站主體：行程頁與地圖的「旅程模式」統一由 trip.js 產生，補上站點間交通、費用與訂票清單，降低兩頁資訊不一致的機率。</p>
+          <div class="meta"><span class="kind">架構</span><a class="commit" href="https://github.com/Archer8685/sichuan/commit/aaf84e1" target="_blank" rel="noopener">aaf84e1</a></div>
+        </section>
+        <section class="change" data-kind="data">
+          <h2>熱門資料擴充到 477 個地點</h2>
+          <p>整合必吃榜、黑珍珠與攜程等清單，一次新增 121 個成都、重慶熱門景點與餐廳，並持續補入清真餐廳、商場夜市和特色小吃。</p>
+          <div class="meta"><span class="kind">資料</span><a class="commit" href="https://github.com/Archer8685/sichuan/commit/25f5d4f" target="_blank" rel="noopener">25f5d4f</a><a class="commit" href="https://github.com/Archer8685/sichuan/commit/fbd1e94" target="_blank" rel="noopener">fbd1e94</a></div>
+        </section>
+        <section class="change" data-kind="ui">
+          <h2>全站繁體中文與手機版優化</h2>
+          <p>介面統一顯示繁體中文；改善手機地圖底部面板、手勢與控制列，並降低大量圖釘平移時的繪製負擔。</p>
+          <div class="meta"><span class="kind">介面</span><a class="commit" href="https://github.com/Archer8685/sichuan/commit/8ea8234" target="_blank" rel="noopener">8ea8234</a><a class="commit" href="https://github.com/Archer8685/sichuan/commit/f332e43" target="_blank" rel="noopener">f332e43</a><a class="commit" href="https://github.com/Archer8685/sichuan/commit/03f34d9" target="_blank" rel="noopener">03f34d9</a></div>
+        </section>
+        <section class="change" data-kind="prep">
+          <h2>建立台灣旅客版行前準備頁</h2>
+          <p>集中整理台胞證、eSIM／漫遊、支付寶與微信、12306、高鐵購票、訂房、行李及冬季天氣注意事項。</p>
+          <div class="meta"><span class="kind">行前</span><a class="commit" href="https://github.com/Archer8685/sichuan/commit/939d26e" target="_blank" rel="noopener">939d26e</a></div>
+        </section>
+        <section class="change" data-kind="trip">
+          <h2>九天行程反覆校正，加入三星堆與備選</h2>
+          <p>依區域重新分配成都、重慶各日，新增三星堆日並放鬆過密日程；每餐加入可連到地圖的替代選項，備選清單也拆分城市與類型。</p>
+          <div class="meta"><span class="kind">行程</span><a class="commit" href="https://github.com/Archer8685/sichuan/commit/df188ef" target="_blank" rel="noopener">df188ef</a><a class="commit" href="https://github.com/Archer8685/sichuan/commit/fff9087" target="_blank" rel="noopener">fff9087</a><a class="commit" href="https://github.com/Archer8685/sichuan/commit/0a67ff2" target="_blank" rel="noopener">0a67ff2</a></div>
+        </section>
+        <section class="change" data-kind="data">
+          <h2>強化清真與附近用餐資訊</h2>
+          <p>補入成都、重慶清真餐廳，標示清真、友善與需避開的食材；附近用餐收斂至 500 公尺，讓景點卡片提供真正走得到的選項。</p>
+          <div class="meta"><span class="kind">資料</span><a class="commit" href="https://github.com/Archer8685/sichuan/commit/64e9e66" target="_blank" rel="noopener">64e9e66</a><a class="commit" href="https://github.com/Archer8685/sichuan/commit/656bc66" target="_blank" rel="noopener">656bc66</a></div>
+        </section>
+        <section class="change" data-kind="ui">
+          <h2>攻略與一日遊移出地圖</h2>
+          <p>新增獨立攻略頁，讓來源文章與成都、重慶一日遊可搜尋瀏覽，地圖側欄則回歸地點篩選與導航。</p>
+          <div class="meta"><span class="kind">功能</span><a class="commit" href="https://github.com/Archer8685/sichuan/commit/5f654b1" target="_blank" rel="noopener">5f654b1</a></div>
+        </section>
+        <section class="change" data-kind="ui">
+          <h2>換頁速度、載入回饋與版本資訊</h2>
+          <p>移除舊入口的 iframe，增加預載與載入畫面；各頁頂部顯示網站版本及更新時間，讓使用者知道目前看到的資料新舊。</p>
+          <div class="meta"><span class="kind">介面</span><a class="commit" href="https://github.com/Archer8685/sichuan/commit/a6ef077" target="_blank" rel="noopener">a6ef077</a><a class="commit" href="https://github.com/Archer8685/sichuan/commit/34b27cf" target="_blank" rel="noopener">34b27cf</a></div>
+        </section>
+      </div>
+    </article>
+
+    <article class="release" id="d0711">
+      <div class="date"><time datetime="2026-07-11">07 / 11</time><span>3 commits・首次上線</span></div>
+      <div class="release-body">
+        <section class="change" data-kind="ui">
+          <h2>成都・重慶旅遊網站首次建立</h2>
+          <p>完成初版行程、Leaflet 地圖、資料建置腳本與景點餐廳資料，並加入 GitHub Pages 部署設定。</p>
+          <div class="meta"><span class="kind">里程碑</span><a class="commit" href="https://github.com/Archer8685/sichuan/commit/8189513" target="_blank" rel="noopener">8189513</a><a class="commit" href="https://github.com/Archer8685/sichuan/commit/455c13a" target="_blank" rel="noopener">455c13a</a></div>
+        </section>
+      </div>
+    </article>
+  </section>
+
+  <section class="method" id="method">
+    <h2>這份紀錄怎麼整理</h2>
+    <p>以 <code>git log</code> 的 80 筆既有 commit 為主，對照 itinerary.html、map.html、prep.html、guide.html、trip.js、data.js 與 README。相同目的的連續 commit 合併成一條，曾加入又移除的嘗試則保留在相關項目中說明。</p>
+    <details>
+      <summary>為什麼不是逐筆照抄 commit？</summary>
+      <ul>
+        <li>不少 commit 是同一段行程的連續微調，合併後更容易理解最後結果。</li>
+        <li>每條紀錄仍附短版 commit 編號，可連回 GitHub 查看原始差異。</li>
+        <li>「目前工作區」代表尚未有 commit 編號的新修改。</li>
+      </ul>
+    </details>
+  </section>
+
+  <footer class="footer">
+    <a href="itinerary.html">← 回到最終行程</a>
+    <span>最後整理：2026/07/13・Sichuan Trip</span>
+  </footer>
+</main>
+
+<script>
+if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){});});}
+</script>
+</body>
+</html>

@@ -3,7 +3,7 @@
 const APP_CACHE = 'sichuan-app-v1';
 const TILE_CACHE = 'sichuan-tiles-v1';
 // 首次安裝先預快取頁面與地圖引擎（資料 data.js/trip.js 由執行時快取，因帶 ?v= 版本號）
-const SHELL = ['./', 'map.html', 'itinerary.html', 'prep.html', 'guide.html', 'libs/leaflet.js', 'libs/leaflet.css'];
+const SHELL = ['./', 'map.html', 'itinerary.html', 'prep.html', 'guide.html', 'changelog.html', 'libs/leaflet.js', 'libs/leaflet.css'];
 
 self.addEventListener('install', e => {
   e.waitUntil((async () => {
