@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>行前準備 — 成都・重慶 12/5–12/13</title>
-<link rel="preload" href="trip.js?v=58" as="script">
+<link rel="preload" href="trip.js?v=60" as="script">
 <link rel="prefetch" href="itinerary.html">
 <link rel="prefetch" href="map.html">
-<link rel="prefetch" href="data.js?v=58">
+<link rel="prefetch" href="data.js?v=60">
 <link rel="prefetch" href="guide.html">
 <style>
 #pgload{position:fixed;inset:0;z-index:9999;background:#faf7f2;display:flex;flex-direction:column;gap:12px;align-items:center;justify-content:center;transition:opacity .22s}
@@ -58,14 +58,6 @@ section li{margin:3px 0}
 .chk li{list-style:none;margin:5px 0}
 .chk li::before{content:"☐ ";color:var(--accent2);font-weight:700}
 
-/* 必訂清單（沿用行程頁樣式） */
-.bk{display:flex;gap:10px;padding:7px 0;font-size:13px;line-height:1.6;border-bottom:1px dashed #ecdfb8}
-.bk:last-child{border-bottom:none}
-.bk .lead{flex-shrink:0;width:86px;font-weight:700;color:var(--amber);font-size:12px;padding-top:2px}
-.bk.hot .lead{color:#b03a2e}
-.bk .how{color:var(--muted);font-size:12px}
-.bookings-box{background:var(--amberbg);border:1.5px solid #e8d9a8;border-radius:12px;padding:12px 16px;margin-top:6px}
-
 @media (max-width:520px){
   .topnav{min-height:44px;padding:4px 12px}
   .brand strong{font-size:13.5px}
@@ -77,7 +69,6 @@ section li{margin:3px 0}
   section{padding:14px 14px}
   .tbl{font-size:12px}
   .tbl th,.tbl td{padding:6px 6px}
-  .bk .lead{width:72px}
 }
 </style>
 </head>
@@ -102,7 +93,7 @@ section li{margin:3px 0}
 </header>
 
 <nav class="toc">
-  <a href="#timeline">⏱ 時間軸</a><a href="#docs">🪪 證件</a><a href="#net">📶 網路</a><a href="#apps">📱 APP</a><a href="#pay">💳 支付</a><a href="#hotel">🏨 訂房</a><a href="#train">🚄 交通</a><a href="#bookings">📋 必訂清單</a><a href="#pack">🧳 行李</a><a href="#tips">⚠️ 其他提醒</a>
+  <a href="#timeline">⏱ 時間軸</a><a href="#docs">🪪 證件</a><a href="#net">📶 網路</a><a href="#apps">📱 APP</a><a href="#pay">💳 支付</a><a href="#hotel">🏨 訂房</a><a href="#train">🚄 交通</a><a href="#pack">🧳 行李</a><a href="#tips">⚠️ 其他提醒</a>
 </nav>
 
 <section id="timeline">
@@ -113,7 +104,7 @@ section li{margin:3px 0}
 <tr><td><b>11/20 前</b></td><td>買網路 eSIM／開通漫遊｜決定是否加購一日遊（大足／西嶺雪山，Klook/KKday 可先訂）｜換少量人民幣現金</td></tr>
 <tr><td><b>11/23 左右</b></td><td>🔥 <b>12306 開搶 12/8 約 14:00 成渝高鐵票</b>（預售約 15 天，以 12306 公告為準）；11/25 搶 12/10 都江堰動車來回</td></tr>
 <tr><td><b>12/1 前後</b></td><td>訂蜀宴賦 12/11 午宴（提前 7 天內最穩）｜訂小樹啉 Live 12/6 晚靠江位</td></tr>
-<tr><td><b>12/2–12/4</b></td><td>熊貓谷、長江索道、兩江夜遊——公眾號逐一預約（見下方必訂清單）｜查成渝天氣打包行李</td></tr>
+<tr><td><b>12/2–12/4</b></td><td>熊貓谷、長江索道、兩江夜遊——公眾號逐一預約｜查成渝天氣打包行李</td></tr>
 <tr><td><b>12/5 出發日</b></td><td>台胞證＋護照隨身｜人民幣現金｜行動電源放隨身包（≤20000mAh）｜到重慶 T3 先買軌道 3 日票</td></tr>
 </table>
 </section>
@@ -191,12 +182,6 @@ section li{margin:3px 0}
 </ul>
 </section>
 
-<section id="bookings">
-<h2>📋 出發前必訂清單（餐廳・門票・預約）</h2>
-<p style="color:var(--muted);font-size:12.5px">依「提前幾天」排序；紅字為熱門易滿。訂位時間點也已整合到上方時間軸。</p>
-<div class="bookings-box" id="bookingsList"></div>
-</section>
-
 <section id="pack">
 <h2>🧳 行李打包（12 月成渝：3–13°C 濕冷）</h2>
 <h3>衣物</h3>
@@ -231,11 +216,8 @@ section li{margin:3px 0}
 </section>
 
 </div>
-<script src="trip.js?v=58"></script>
+<script src="trip.js?v=60"></script>
 <script>
-document.getElementById('bookingsList').innerHTML=BOOKINGS.map(b=>
-  `<div class="bk${b.hot?' hot':''}"><span class="lead">${b.lead}</span><span><b>${b.what}</b><br><span class="how">${b.how}</span></span></div>`).join("");
-
 // 載入層：渲染完成即淡出；點站內連結立刻重新顯示
 document.getElementById('pgload').classList.add('done');
 document.addEventListener('click',e=>{

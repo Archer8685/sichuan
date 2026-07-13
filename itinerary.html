@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>成都・重慶 12/5–12/13 最終行程</title>
-<link rel="preload" href="data.js?v=58" as="script">
-<link rel="preload" href="trip.js?v=58" as="script">
+<link rel="preload" href="data.js?v=60" as="script">
+<link rel="preload" href="trip.js?v=60" as="script">
 <link rel="prefetch" href="libs/leaflet.js">
 <link rel="prefetch" href="libs/leaflet.css">
 <link rel="prefetch" href="map.html">
@@ -59,18 +59,9 @@ header .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
 .flight{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:7px 12px;font-size:12.5px}
 .flight b{color:var(--accent)}
 
-/* 必訂清單 */
-.bookings{margin:14px 0;background:var(--amberbg);border:1.5px solid #e8d9a8;border-radius:14px;padding:14px 18px}
-.bookings h2{font-size:16px;color:var(--amber);margin-bottom:8px}
-.bk{display:flex;gap:10px;padding:6px 0;font-size:13px;line-height:1.6;border-bottom:1px dashed #ecdfb8}
-.bk:last-child{border-bottom:none}
-.bk .lead{flex-shrink:0;width:86px;font-weight:700;color:var(--amber);font-size:12px;padding-top:2px}
-.bk.hot .lead{color:#b03a2e}
-.bk .how{color:var(--muted);font-size:12px}
-
 /* 天卡片 */
 .day{background:var(--panel);border:1px solid var(--line);border-radius:14px;margin:14px 0;overflow:hidden;scroll-margin-top:124px}
-.bookings,.backup{scroll-margin-top:124px}
+.backup{scroll-margin-top:124px}
 .day-h{display:flex;align-items:center;gap:9px;padding:11px 16px;border-bottom:1px solid var(--line);background:linear-gradient(to right,#fdfbf7,#fff);flex-wrap:wrap}
 .day-h .dnum{font-size:12px;color:#fff;background:var(--accent2);border-radius:8px;padding:2px 8px;white-space:nowrap}
 .day-h .date{font-weight:700;font-size:15px;white-space:nowrap}
@@ -97,8 +88,7 @@ header .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
 .go{display:inline-flex;align-items:center;gap:6px;margin:3px 0 3px 64px;font-size:11.5px;color:#41617f;background:#f2f6fa;border:1px dashed #cfdce8;border-radius:9px;padding:3px 10px;max-width:calc(100% - 70px)}
 .go::before{content:"↓";font-weight:700;color:#8fa8bd}
 
-/* 每日提醒 / 備選 */
-.tips{margin-top:8px;background:var(--amberbg);border-radius:10px;padding:8px 12px;font-size:12px;color:var(--amber);line-height:1.8}
+/* 備選 */
 .backup{background:var(--panel);border:1px solid var(--line);border-radius:14px;margin:18px 0;padding:14px 18px}
 .backup h2{font-size:16px;margin-bottom:6px}
 .backup h3{font-size:13.5px;color:var(--accent2);margin:10px 0 4px}
@@ -117,12 +107,11 @@ header .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
   .navlinks{gap:5px}
   .navlinks a{min-height:32px;padding:0 8px;font-size:12px;border-radius:7px}
   .daynav{top:44px}
-  .day,.bookings,.backup{scroll-margin-top:106px}
+  .day,.backup{scroll-margin-top:106px}
   header h1{font-size:20px}
   .stop .tm{width:36px;font-size:11px}
   .go{margin-left:52px;max-width:calc(100% - 58px)}
   .day-h .title{width:100%;text-align:left;margin-left:0}
-  .bk .lead{width:74px}
   .stop .line1{font-size:14.5px}
   .stop .note{font-size:13px}
   .backup li{font-size:13px}
@@ -168,8 +157,8 @@ header .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
 </div>
 </div>
 
-<script src="data.js?v=58"></script>
-<script src="trip.js?v=58"></script>
+<script src="data.js?v=60"></script>
+<script src="trip.js?v=60"></script>
 <script>
 // ---- 共用：地點查找與繁簡 ----
 const _T2S=(typeof T2S!=="undefined")?T2S:{};
@@ -287,7 +276,6 @@ TRIP.forEach(day=>{
     </div></div>`;
     if(s.go&&i<day.stops.length-1)html+=`<div class="go">${s.go}</div>`;
   });
-  if(day.tips&&day.tips.length)html+=`<div class="tips">💡 ${day.tips.join("<br>💡 ")}</div>`;
   html+=`</div></div>`;
   daysEl.innerHTML+=html;
 });
