@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>成都・重慶 9天8夜 — 景點餐廳地圖</title>
-<link rel="preload" href="data.js?v=64" as="script">
-<link rel="preload" href="trip.js?v=64" as="script">
+<link rel="preload" href="data.js?v=65" as="script">
+<link rel="preload" href="trip.js?v=65" as="script">
 <link rel="prefetch" href="itinerary.html">
 <link rel="prefetch" href="prep.html">
 <link rel="prefetch" href="guide.html">
@@ -73,6 +73,9 @@ header p{font-size:12px;color:var(--muted);margin-top:3px}
 .city-tab{flex:1;min-width:70px;padding:8px 4px;text-align:center;border:1px solid var(--line);border-radius:10px;cursor:pointer;font-size:14px;font-weight:600;background:var(--chip);transition:.15s;white-space:nowrap}
 .city-tab.active{background:var(--accent);color:#fff;border-color:var(--accent)}
 .filter-toggle{display:flex;align-items:center;justify-content:center;width:calc(100% - 28px);margin:8px 14px 0;padding:7px 10px;border:1px solid var(--line);border-radius:9px;background:var(--chip);color:var(--ink);font-family:inherit;font-size:12.5px;font-weight:700;cursor:pointer}
+#offlineBtn{display:block;width:calc(100% - 28px);margin:6px 14px 0;padding:8px 10px;border:1px solid #cfe3de;border-radius:9px;background:#eef6f4;color:var(--accent2);font-family:inherit;font-size:12.5px;font-weight:700;cursor:pointer}
+#offlineBtn:active{transform:scale(.97)}
+#offlineBtn:disabled{opacity:.6;cursor:default}
 .filters.collapsed{display:none}
 .filters{padding:10px 14px;border-bottom:1px solid var(--line)}
 .filter-row{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:8px}
@@ -198,14 +201,15 @@ html,body{overscroll-behavior:none} /* 防止下拉手勢觸發瀏覽器 pull-to
       <input id="search" placeholder="搜尋名稱、菜色、區域…（支援繁體）">
     </div>
     <div id="count"></div>
+    <button id="offlineBtn" type="button" title="把目前地圖範圍的底圖圖磚下載快取，之後離線可看">⬇️ 離線預載此區地圖</button>
     <div id="list"></div>
   </div>
   <div id="map"></div>
 </div>
 <div class="legend" id="legend"></div>
 
-<script src="data.js?v=64"></script>
-<script src="trip.js?v=64"></script>
+<script src="data.js?v=65"></script>
+<script src="trip.js?v=65"></script>
 <script>
 // 分類設定：顏色＋圖示
 const CATS={
@@ -809,6 +813,60 @@ document.addEventListener('click',e=>{
   handle.addEventListener('mousedown',e=>{gStart(e.clientY,e.clientX,true);e.preventDefault();});
   window.addEventListener('mousemove',e=>gMove(e.clientY,e.clientX,e));
   window.addEventListener('mouseup',gEnd);
+})();
+</script>
+<script>
+/* 離線：註冊 Service Worker ＋ 一鍵預載目前地圖範圍的高德圖磚 */
+(function(){
+  if('serviceWorker' in navigator){
+    window.addEventListener('load',function(){
+      navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){
+        if(!('caches' in window))return;
+        caches.open('sichuan-app-v1').then(function(c){
+          document.querySelectorAll('script[src],link[href]').forEach(function(el){
+            var u=el.src||el.href; if(!u||u.indexOf(location.origin)!==0)return;
+            c.match(u).then(function(hit){ if(!hit) fetch(u).catch(function(){}); });
+          });
+        });
+      }).catch(function(){});
+    });
+  }
+  var btn=document.getElementById('offlineBtn');
+  if(!btn)return;
+  if(!('caches' in window)){ btn.disabled=true; btn.textContent='離線預載需用 https 網址開啟'; return; }
+  function lon2tile(lon,z){return Math.floor((lon+180)/360*Math.pow(2,z));}
+  function lat2tile(lat,z){var r=lat*Math.PI/180;return Math.floor((1-Math.log(Math.tan(r)+1/Math.cos(r))/Math.PI)/2*Math.pow(2,z));}
+  function tileUrl(x,y,z){var s=['1','2','3','4'][Math.abs(x+y)%4];return 'https://webrd0'+s+'.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=8&x='+x+'&y='+y+'&z='+z;}
+  var busy=false, orig=btn.textContent;
+  btn.onclick=async function(){
+    if(busy)return;
+    var b=map.getBounds(), z0=Math.max(11,Math.round(map.getZoom())), zMax=Math.min(16,z0+2);
+    var urls=[];
+    for(var z=z0; z<=zMax; z++){
+      var xa=lon2tile(b.getWest(),z), xb=lon2tile(b.getEast(),z);
+      var ya=lat2tile(b.getNorth(),z), yb=lat2tile(b.getSouth(),z);
+      for(var x=Math.min(xa,xb); x<=Math.max(xa,xb); x++)
+        for(var y=Math.min(ya,yb); y<=Math.max(ya,yb); y++)
+          urls.push(tileUrl(x,y,z));
+    }
+    if(!urls.length)return;
+    if(urls.length>3000){ alert('此範圍圖磚太多（約 '+urls.length+' 張），請先放大地圖縮小範圍再預載。'); return; }
+    busy=true; btn.disabled=true;
+    var total=urls.length, done=0, fail=0, i=0;
+    var cache=await caches.open('sichuan-tiles-v1');
+    async function worker(){
+      while(i<urls.length){
+        var u=urls[i++];
+        try{ var res=await fetch(u,{mode:'no-cors'}); await cache.put(u,res); }
+        catch(e){ fail++; }
+        done++;
+        if(done%15===0||done===total) btn.textContent='預載中… '+done+'/'+total;
+      }
+    }
+    await Promise.all([worker(),worker(),worker(),worker(),worker(),worker()]);
+    btn.textContent='✅ 已預載 '+(total-fail)+'/'+total+' 張'+(fail?'（'+fail+' 張失敗）':'');
+    setTimeout(function(){ btn.textContent=orig; btn.disabled=false; busy=false; },5000);
+  };
 })();
 </script>
 </body>
