@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>成都・重慶 9天8夜 — 景點餐廳地圖</title>
-<link rel="preload" href="data.js?v=61" as="script">
-<link rel="preload" href="trip.js?v=61" as="script">
+<link rel="preload" href="data.js?v=62" as="script">
+<link rel="preload" href="trip.js?v=62" as="script">
 <link rel="prefetch" href="itinerary.html">
 <link rel="prefetch" href="prep.html">
 <link rel="prefetch" href="guide.html">
@@ -98,8 +98,12 @@ html,body{overscroll-behavior:none} /* 防止下拉手勢觸發瀏覽器 pull-to
 /* ---------- map & pins ---------- */
 #map{flex:1;height:100%}
 /* 效能：box-shadow 取代 filter:drop-shadow——數百個圖釘在手機平移時 filter 每幀重繪會卡 */
-.pin{width:30px;height:30px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);border:2px solid #fff;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 4px rgba(0,0,0,.35)}
+.pin{width:30px;height:30px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);border:2px solid #fff;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 4px rgba(0,0,0,.35);transition:transform .12s ease,box-shadow .12s ease}
 .pin span{transform:rotate(45deg);font-size:14px;line-height:1}
+/* 清單 hover 高亮對應圖釘 */
+.pin-wrap.pin-hl{z-index:1200 !important}
+.pin-wrap.pin-hl .pin{transform:rotate(-45deg) scale(1.5);box-shadow:0 0 0 4px rgba(26,122,109,.45),0 5px 14px rgba(0,0,0,.5)}
+.card.active{border-color:var(--accent2);box-shadow:0 3px 12px rgba(26,122,109,.18)}
 .leaflet-popup-content-wrapper{border-radius:12px}
 .leaflet-popup-content{margin:14px 16px;min-width:230px;max-width:300px}
 .pp h3{font-size:16px;margin-bottom:2px}
@@ -200,8 +204,8 @@ html,body{overscroll-behavior:none} /* 防止下拉手勢觸發瀏覽器 pull-to
 </div>
 <div class="legend" id="legend"></div>
 
-<script src="data.js?v=61"></script>
-<script src="trip.js?v=61"></script>
+<script src="data.js?v=62"></script>
+<script src="trip.js?v=62"></script>
 <script>
 // 分類設定：顏色＋圖示
 const CATS={
@@ -375,22 +379,24 @@ function matchesSearch(p){
 }
 function passes(p){return passesBase(p)&&matchesSearch(p);}
 
-function render(){
-  markers.forEach(m=>map.removeLayer(m));markers=[];
-  if(routeLine){map.removeLayer(routeLine);routeLine=null;}
-  const list=document.getElementById('list');list.innerHTML="";
-  const mapItems=PLACES.filter(passesBase);
-  const items=mapItems.filter(matchesSearch);
-  document.getElementById('count').textContent=`顯示 ${items.length} 個地點（${state.city==="重庆"?"重慶":state.city}）`;
-  const popW=Math.min(300,window.innerWidth-90);
-  mapItems.forEach(p=>{
-    const cat=catOf(p);
-    if(p.lat&&p.lng){
-      const mk=L.marker([p.lat,p.lng],{icon:makeIcon(cat,p,!!state.q&&!matchesSearch(p)),zIndexOffset:matchesSearch(p)?100:0})
-        .addTo(map).bindPopup(popupHtml(p),{maxWidth:popW});
-      mk._pid=p._id;markers.push(mk);
-    }
+// hover 清單卡片時，對應地圖圖釘放大高亮＋置頂
+function highlightMarker(pid,on){
+  const mk=markers.find(m=>m._pid===pid);
+  if(!mk||!mk._icon)return;
+  mk._icon.classList.toggle('pin-hl',on);
+  mk.setZIndexOffset(on?1300:(mk._z||0));
+}
+// 依「目前地圖中心」由近到遠排序（無座標者殿後）
+function sortByCenter(items){
+  const c=map.getCenter();
+  return items.slice().sort((a,b)=>{
+    const da=(a.lat&&a.lng)?c.distanceTo([a.lat,a.lng]):Infinity;
+    const db=(b.lat&&b.lng)?c.distanceTo([b.lat,b.lng]):Infinity;
+    return da-db;
   });
+}
+function buildList(items){
+  const list=document.getElementById('list');list.innerHTML="";
   items.forEach(p=>{
     const cat=catOf(p);
     const card=document.createElement('div');card.className='card';
@@ -404,9 +410,36 @@ function render(){
       if(p.lat&&p.lng){focusOn([p.lat,p.lng],15);
         const mk=markers.find(m=>m._pid===p._id);if(mk)mk.openPopup();}
     };
+    if(p.lat&&p.lng){
+      card.onmouseenter=()=>{card.classList.add('active');highlightMarker(p._id,true);};
+      card.onmouseleave=()=>{card.classList.remove('active');highlightMarker(p._id,false);};
+    }
     list.appendChild(card);
   });
 }
+function render(){
+  markers.forEach(m=>map.removeLayer(m));markers=[];
+  if(routeLine){map.removeLayer(routeLine);routeLine=null;}
+  const mapItems=PLACES.filter(passesBase);
+  const items=mapItems.filter(matchesSearch);
+  document.getElementById('count').textContent=`顯示 ${items.length} 個地點（${state.city==="重庆"?"重慶":state.city}）`;
+  const popW=Math.min(300,window.innerWidth-90);
+  mapItems.forEach(p=>{
+    const cat=catOf(p);
+    if(p.lat&&p.lng){
+      const z=matchesSearch(p)?100:0;
+      const mk=L.marker([p.lat,p.lng],{icon:makeIcon(cat,p,!!state.q&&!matchesSearch(p)),zIndexOffset:z})
+        .addTo(map).bindPopup(popupHtml(p),{maxWidth:popW});
+      mk._pid=p._id;mk._z=z;markers.push(mk);
+    }
+  });
+  buildList(sortByCenter(items));
+}
+// 平移／縮放結束後，清單依新的地圖中心重新由近到遠排序（僅地點模式，行程模式不動）
+map.on('moveend',()=>{
+  if(state.city==="__trip")return;
+  buildList(sortByCenter(PLACES.filter(passes)));
+});
 
 // ---------- 📅 行程模式 ----------
 function _norm(s){return t2s((s||"").replace(/[（(].*?[)）]/g,"").replace(/[·・\s]/g,"").toLowerCase());}
