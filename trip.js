@@ -1,6 +1,6 @@
 // 最終行程 — 單一資料來源（map.html 行程模式 + itinerary.html 皆由此渲染）
 // stop.go = 前往「下一站」的交通方式/時間/費用；name 需與 data.js PLACES 名稱一致
-const SITE_VERSION="v69", SITE_UPDATED_AT="2026/07/13 18:20";
+const SITE_VERSION="v70", SITE_UPDATED_AT="2026/07/13 18:40";
 const HOTEL_CQ="重慶解放碑美居酒店", HOTEL_CD="成都太古里春熙美居酒店";
 
 const TRIP=[
