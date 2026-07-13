@@ -9,6 +9,7 @@
 <link rel="prefetch" href="map.html">
 <link rel="prefetch" href="data.js?v=73">
 <link rel="prefetch" href="guide.html">
+<link rel="prefetch" href="changelog.html">
 <style>
 #pgload{position:fixed;inset:0;z-index:9999;background:#faf7f2;display:flex;flex-direction:column;gap:12px;align-items:center;justify-content:center;transition:opacity .22s}
 #pgload.done{opacity:0;pointer-events:none}
@@ -30,6 +31,7 @@ body{font-family:"PingFang TC","Microsoft JhengHei","Noto Sans TC",sans-serif;co
 .brand{display:flex;flex-direction:column;min-width:0}
 .brand strong{font-size:15px;line-height:1.25}
 .brand span{color:var(--muted);font-size:12px;line-height:1.35;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.brand .site-meta a{color:inherit;text-decoration:none}
 .navlinks{display:flex;align-items:center;gap:8px;flex-shrink:0}
 .navlinks a{display:inline-flex;align-items:center;justify-content:center;min-height:38px;padding:0 14px;border:1px solid var(--line);border-radius:8px;color:var(--ink);background:var(--panel);text-decoration:none;font-size:14px;font-weight:700}
 .navlinks a[aria-current="page"]{color:#fff;background:#b07a1f;border-color:#b07a1f}
@@ -76,7 +78,7 @@ section li{margin:3px 0}
 <nav class="topnav" aria-label="主要導覽">
   <div class="brand">
     <strong>Sichuan Trip</strong>
-    <span class="site-meta" data-site-meta>2026/12/5–12/13 ｜ v45・更新 2026/07/13 08:46</span>
+    <span class="site-meta"><a data-site-meta href="changelog.html" aria-label="查看網站修改紀錄">2026/12/5–12/13 ｜ v45・更新 2026/07/13 08:46</a></span>
   </div>
   <div class="navlinks">
     <a href="prep.html" aria-current="page">行前</a>
