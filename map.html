@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>成都・重慶 9天8夜 — 景點餐廳地圖</title>
-<link rel="preload" href="data.js?v=71" as="script">
-<link rel="preload" href="trip.js?v=71" as="script">
+<link rel="preload" href="data.js?v=72" as="script">
+<link rel="preload" href="trip.js?v=72" as="script">
 <link rel="prefetch" href="itinerary.html">
 <link rel="prefetch" href="prep.html">
 <link rel="prefetch" href="guide.html">
@@ -82,6 +82,7 @@ header p{font-size:12px;color:var(--muted);margin-top:3px}
 .chip{padding:5px 10px;border-radius:20px;font-size:12.5px;cursor:pointer;border:1px solid var(--line);background:#fff;user-select:none;transition:.12s}
 .chip.on{color:#fff;border-color:transparent}
 .chip.halal-chip.on{background:#0e7c3f}
+.chip#tripOnly.on{background:var(--accent2)}
 #search{width:100%;padding:9px 12px;border:1px solid var(--line);border-radius:10px;font-size:14px;outline:none}
 #search:focus{border-color:var(--accent)}
 #count{font-size:12px;color:var(--muted);padding:8px 18px 4px;transition:opacity .2s}
@@ -194,6 +195,7 @@ html,body{overscroll-behavior:none} /* 防止下拉手勢觸發瀏覽器 pull-to
     <div class="filters" id="filters">
       <div class="filter-row" id="catChips"></div>
       <div class="filter-row">
+        <span class="chip" id="tripOnly">🧭 只看行程站</span>
         <span class="chip halal-chip" id="halalOnly">☪ 只看清真／清真友善（餐飲）</span>
         <span class="chip" id="resetBtn">✅ 全選</span>
         <span class="chip" id="clearBtn">✕ 清除</span>
@@ -208,8 +210,8 @@ html,body{overscroll-behavior:none} /* 防止下拉手勢觸發瀏覽器 pull-to
 </div>
 <div class="legend" id="legend"></div>
 
-<script src="data.js?v=71"></script>
-<script src="trip.js?v=71"></script>
+<script src="data.js?v=72"></script>
+<script src="trip.js?v=72"></script>
 <script>
 // 分類設定：顏色＋圖示
 const CATS={
@@ -265,7 +267,7 @@ function focusOn(latlng,zoom){
   if(s>0)map.panBy([0,Math.round(s/2)],{animate:false}); // 讓目標落在可視區中央
 }
 
-let state={city:"成都",cats:new Set(Object.keys(CATS)),halalOnly:false,q:"",tripDay:1,tripShowAll:true};
+let state={city:"成都",cats:new Set(Object.keys(CATS)),halalOnly:false,tripOnly:false,q:"",tripDay:1,tripShowAll:true};
 let markers=[];
 let routeLine=null;
 
@@ -372,6 +374,7 @@ function passesBase(p){
   const cat=catOf(p);
   if(!state.cats.has(cat))return false;
   if(state.halalOnly&&FOOD_CATS.has(cat)&&!isHalalish(p))return false;
+  if(state.tripOnly&&!isTripStop(p))return false;
   return true;
 }
 function matchesSearch(p){
@@ -448,6 +451,10 @@ map.on('moveend',()=>{
 // ---------- 📅 行程模式 ----------
 function _norm(s){return t2s((s||"").replace(/[（(].*?[)）]/g,"").replace(/[·・\s]/g,"").toLowerCase());}
 const _PIDX=PLACES.map(p=>[_norm(p.name),p]);
+// 行程站名稱集合（供「只看行程站」篩選）
+const TRIP_NAMES=new Set();
+TRIP.forEach(d=>d.stops.forEach(s=>{ if(s.kind==="spot"||s.kind==="meal") TRIP_NAMES.add(_norm(s.name)); }));
+function isTripStop(p){return TRIP_NAMES.has(_norm(p.name));}
 function findPlace(name){
   const n=_norm(name);if(!n)return null;
   let best=null,bestLen=0;
@@ -586,6 +593,10 @@ function rerender(){
 }
 document.getElementById('halalOnly').onclick=e=>{
   e.target.classList.toggle('on');state.halalOnly=e.target.classList.contains('on');
+  rerender();
+};
+document.getElementById('tripOnly').onclick=e=>{
+  e.target.classList.toggle('on');state.tripOnly=e.target.classList.contains('on');
   rerender();
 };
 document.getElementById('resetBtn').onclick=()=>{
