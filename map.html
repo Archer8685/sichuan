@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>成都・重慶 9天8夜 — 景點餐廳地圖</title>
-<link rel="preload" href="data.js?v=84" as="script">
-<link rel="preload" href="trip.js?v=84" as="script">
+<link rel="preload" href="data.js?v=85" as="script">
+<link rel="preload" href="trip.js?v=85" as="script">
 <link rel="prefetch" href="itinerary.html">
 <link rel="prefetch" href="prep.html">
 <link rel="prefetch" href="guide.html">
@@ -84,8 +84,12 @@ header p{font-size:12px;color:var(--muted);margin-top:3px}
 .chip{padding:5px 10px;border-radius:20px;font-size:12.5px;cursor:pointer;border:1px solid var(--line);background:#fff;user-select:none;transition:.12s}
 .chip.on{color:#fff;border-color:transparent}
 .chip.halal-chip.on{background:#0e7c3f}
-#search{width:100%;padding:9px 12px;border:1px solid var(--line);border-radius:10px;font-size:14px;outline:none}
+#search{width:100%;padding:9px 34px 9px 12px;border:1px solid var(--line);border-radius:10px;font-size:14px;outline:none}
 #search:focus{border-color:var(--accent)}
+.search-wrap{position:relative}
+.search-clear{position:absolute;top:50%;right:6px;transform:translateY(-50%);width:24px;height:24px;display:none;align-items:center;justify-content:center;padding:0;border:0;border-radius:50%;background:var(--chip);color:var(--muted);font-size:12px;line-height:1;cursor:pointer}
+.search-clear:hover{background:#e7ddce;color:var(--ink)}
+.search-wrap.has-text .search-clear{display:flex}
 #count{font-size:12px;color:var(--muted);padding:8px 18px 4px;transition:opacity .2s}
 .filters{transition:opacity .2s}
 #list{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;padding:4px 12px 20px;transition:opacity .2s;overscroll-behavior:contain}
@@ -158,7 +162,7 @@ html,body{overscroll-behavior:none} /* 防止下拉手勢觸發瀏覽器 pull-to
   .filter-row{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding-bottom:3px}
   .filter-row::-webkit-scrollbar{display:none}
   .chip{padding:7px 12px;font-size:13px;flex:0 0 auto;white-space:nowrap}
-  #search{font-size:16px;padding:10px 12px}   /* 避免 iOS 聚焦自動放大 */
+  #search{font-size:16px;padding:10px 34px 10px 12px}   /* 避免 iOS 聚焦自動放大 */
   .card{padding:12px 14px}
   .card h3{font-size:15px}
   .legend{display:none}
@@ -200,7 +204,10 @@ html,body{overscroll-behavior:none} /* 防止下拉手勢觸發瀏覽器 pull-to
         <span class="chip" id="resetBtn">✅ 全選</span>
         <span class="chip" id="clearBtn">✕ 清除</span>
       </div>
-      <input id="search" placeholder="搜尋名稱、菜色、區域…（支援繁體）">
+      <div class="search-wrap">
+        <input id="search" placeholder="搜尋名稱、菜色、區域…（支援繁體）" autocomplete="off">
+        <button type="button" id="searchClear" class="search-clear" aria-label="清除搜尋" title="清除搜尋">✕</button>
+      </div>
     </div>
     <div id="count"></div>
     <button id="offlineBtn" type="button" title="把目前地圖範圍的底圖圖磚下載快取，之後離線可看">⬇️ 離線預載此區地圖</button>
@@ -210,8 +217,8 @@ html,body{overscroll-behavior:none} /* 防止下拉手勢觸發瀏覽器 pull-to
 </div>
 <div class="legend" id="legend"></div>
 
-<script src="data.js?v=84"></script>
-<script src="trip.js?v=84"></script>
+<script src="data.js?v=85"></script>
+<script src="trip.js?v=85"></script>
 <script>
 // 分類設定：顏色＋圖示
 const CATS={
@@ -228,7 +235,7 @@ const CATS={
 };
 const FOOD_CATS=new Set(["早餐","甜点","饮料","午晚餐"]);
 const MEAL_CATS=new Set(["早餐","午晚餐"]);
-const HALAL_COLOR="#0e7c3f",HALAL_EMOJI="☪";
+const HALAL_COLOR="#0e7c3f",HALAL_FRIENDLY_COLOR="#5cba6b",HALAL_EMOJI="☪";
 const CITY_CENTER={"成都":[30.6598,104.0633],"重庆":[29.5630,106.5516]};
 
 // 繁體 → 簡體搜尋轉換
@@ -256,7 +263,7 @@ Object.entries(CATS).forEach(([k,v])=>{
 });
 document.getElementById('legend').innerHTML=
   Object.entries(CATS).filter(([k])=>!MEAL_CATS.has(k)).map(([k,v])=>`<div>${v.emoji} ${v.label}</div>`).join("")+
-  `<div>🍽 早餐／午晚餐（非清真）</div><div style="color:${HALAL_COLOR}">${HALAL_EMOJI} 清真／清真友善（餐飲）</div>`;
+  `<div>🍽 早餐／午晚餐（非清真）</div><div style="color:${HALAL_COLOR}">${HALAL_EMOJI} 清真（深綠）</div><div style="color:${HALAL_FRIENDLY_COLOR}">${HALAL_EMOJI} 清真友善（淺綠）</div>`;
 
 // 手機覆蓋式面板會遮住地圖下半部：取景與聚焦都要補償露出高度
 function _sheetPx(){return (typeof window.sheetVisiblePx==='function')?window.sheetVisiblePx():0;}
@@ -276,7 +283,7 @@ function isHalalish(p){return p.halal===true||p.halal==="友善"||p.halal==="tru
 function halalLabel(p){if(p.halal===true||p.halal==="true")return"☪ 清真";if(p.halal==="友善")return"☪ 清真友善";return null;}
 // 早餐／午晚餐共用餐廳圖示；甜點與飲料永遠保留自己的圖示，清真狀態另以標籤呈現。
 function iconFor(cat,p){
-  if(MEAL_CATS.has(cat)&&p&&isHalalish(p))return{emoji:HALAL_EMOJI,color:HALAL_COLOR};
+  if(MEAL_CATS.has(cat)&&p&&isHalalish(p))return{emoji:HALAL_EMOJI,color:(p.halal==="友善"?HALAL_FRIENDLY_COLOR:HALAL_COLOR)};
   if(MEAL_CATS.has(cat))return{emoji:"🍽",color:(CATS[cat]||{}).color||"#555"};
   const cfg=CATS[cat]||{color:"#555",emoji:"📌"};
   return{emoji:cfg.emoji,color:cfg.color};
@@ -409,7 +416,7 @@ function buildList(items){
     const hl=halalLabel(p);
     const badgeCfg=iconFor(cat,p);
     const label=(CATS[cat]||{label:cat}).label;
-    card.innerHTML=`<div class="top"><span class="badge" style="background:${badgeCfg.color}">${badgeCfg.emoji||""} ${label}</span><h3>${p.name}</h3>${hl?`<span class="halal-tag">${hl}</span>`:""}</div>
+    card.innerHTML=`<div class="top"><span class="badge" style="background:${badgeCfg.color}${badgeCfg.color===HALAL_FRIENDLY_COLOR?';color:#14532d':''}">${badgeCfg.emoji||""} ${label}</span><h3>${p.name}</h3>${hl?`<span class="halal-tag">${hl}</span>`:""}</div>
       <div class="meta">${p.rating?"⭐ "+p.rating+"｜":""}${p.area||""}${p.brand?"｜"+p.brand:""}${p.hours?"｜"+p.hours:""}${p.price?"｜"+p.price:""}${p.ticket?"｜門票 "+p.ticket:""}</div>
       ${(p.dishes||p.activities)?`<div class="dishes">${(p.dishes||p.activities).slice(0,4).join("、")}</div>`:""}`;
     card.onclick=()=>{
@@ -598,10 +605,17 @@ document.getElementById('resetBtn').onclick=()=>{
   });
   rerender();
 };
-document.getElementById('search').oninput=e=>{
+const _searchEl=document.getElementById('search');
+const _searchWrap=_searchEl.closest('.search-wrap');
+function _syncSearchClear(){_searchWrap.classList.toggle('has-text',_searchEl.value.length>0);}
+_searchEl.oninput=e=>{
   state.q=e.target.value.trim();
+  _syncSearchClear();
   rerender();
 };
+_searchEl.addEventListener('keydown',e=>{if(e.key==='Escape'&&_searchEl.value){e.preventDefault();_clearSearch();}});
+function _clearSearch(){_searchEl.value="";state.q="";_syncSearchClear();_searchEl.focus();rerender();}
+document.getElementById('searchClear').onclick=_clearSearch;
 document.getElementById('clearBtn').onclick=()=>{
   state.cats.clear();
   document.querySelectorAll('#catChips .chip').forEach(c=>{
@@ -620,6 +634,7 @@ let hitPlace=null;
 if(_urlQ){
   state.q=_urlQ;
   document.getElementById('search').value=_urlQ;
+  _syncSearchClear();
   const qs=t2s(_urlQ.toLowerCase());
   hitPlace=PLACES.find(p=>t2s([p.name,p.area||""].join(" ").toLowerCase()).includes(qs));
   if(hitPlace){
