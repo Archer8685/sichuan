@@ -88,7 +88,8 @@ for f in files:
 seen, deduped = set(), []
 for p in places:
     exact_name = _norm_exact_name(p.get("name", ""))
-    key = (p["city"], exact_name if exact_name in ref_exact_names else _norm_name(p.get("name", "")))
+    keep_branch = p.pop("_dedupe_exact", False)
+    key = (p["city"], exact_name if keep_branch or exact_name in ref_exact_names else _norm_name(p.get("name", "")))
     if key in seen: continue
     seen.add(key); deduped.append(p)
 
@@ -149,7 +150,7 @@ _S2T_FIXES = [
     ("公裡", "公里"), ("裡程", "里程"), ("萬裡", "萬里"), ("五裡", "五里"), ("十裡", "十里"),
     ("翡翠裡", "翡翠里"), ("天都裡", "天都里"), ("唐杜裡", "唐杜里"), ("愛裡耶", "愛里耶"),
     ("裡弄", "里弄"), ("太古里東裡", "太古里東里"),
-    ("範嬢嬢", "范嬢嬢"), ("於塗", "于塗"), ("臺", "台"),
+    ("範嬢嬢", "范嬢嬢"), ("於塗", "于塗"), ("籤發", "簽發"), ("臺", "台"),
 ]
 
 def _apply_fixes(s):
