@@ -4,8 +4,8 @@
   "coordinate_system": "GCJ-02",
   "source": "高德地图 POI 搜索与单店页",
   "summary": {
-    "total": 543,
-    "verified": 364,
+    "total": 546,
+    "verified": 367,
     "unverified": 179
   },
   "places": [
@@ -5808,6 +5808,42 @@
       "lng": 103.972131,
       "previous_lat": 30.759,
       "previous_lng": 103.96
+    },
+    {
+      "name": "觀音橋好吃街（星天廣場店）",
+      "city": "重庆",
+      "status": "verified",
+      "amap_poiid": "B0KUFA48N3",
+      "amap_name": "观音桥好吃街(A区南门)",
+      "address": "重庆市两江新区观音桥好吃街A区(星天广场店)",
+      "lat": 29.575986,
+      "lng": 106.533747,
+      "previous_lat": null,
+      "previous_lng": null
+    },
+    {
+      "name": "茶百道（重慶觀音橋陽光世紀店）",
+      "city": "重庆",
+      "status": "verified",
+      "amap_poiid": "B0G1UHNZWU",
+      "amap_name": "茶百道(重庆观音桥阳光世纪店)",
+      "address": "重庆市两江新区建北一支路9号新世纪百货阳光奥莱F2层",
+      "lat": 29.575944,
+      "lng": 106.534679,
+      "previous_lat": null,
+      "previous_lng": null
+    },
+    {
+      "name": "北京老門框爆肚涮肉館（觀音橋店）",
+      "city": "重庆",
+      "status": "verified",
+      "amap_poiid": "B0FFKLPNIX",
+      "amap_name": "北京老门框爆肚涮肉馆(观音桥店)",
+      "address": "重庆市两江新区两江新区江北区杨河二村18号附48、49号",
+      "lat": 29.581705,
+      "lng": 106.529972,
+      "previous_lat": null,
+      "previous_lng": null
     }
   ]
 }

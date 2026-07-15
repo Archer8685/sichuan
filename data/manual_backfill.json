@@ -302,5 +302,82 @@
     "amap_poiid": "B0KUD76ILK",
     "coordinate_status": "verified",
     "coordinate_source": "高德地图 GCJ-02（2026-07-15核对）"
+  },
+  {
+    "name": "觀音橋好吃街（星天廣場店）",
+    "city": "重庆",
+    "category": "夜市",
+    "cuisine": "重慶小吃／綜合美食街",
+    "area": "江北區·觀音橋",
+    "address": "重庆市两江新区观音桥好吃街A区(星天广场店)",
+    "lat": 29.575986,
+    "lng": 106.533747,
+    "hours": "約10:30-22:00（各攤營業時間不同）",
+    "price": "少量分食約20-60元/人",
+    "rating": null,
+    "rating_source": null,
+    "dishes": [
+      "丁家坡洋芋",
+      "烤苕皮",
+      "酸辣粉",
+      "山城湯圓／冰粉"
+    ],
+    "reason": "觀音橋商圈內的大型小吃聚落，從步行街順路前往，適合正式晚餐前少量分食重慶小吃。",
+    "notes": "場內攤位異動快且多數不是清真店；若需避豬，優先選洋芋、苕皮、酸辣粉、冰粉等並詢問油鍋與器具是否共用。",
+    "amap_poiid": "B0KUFA48N3",
+    "coordinate_status": "verified",
+    "coordinate_source": "高德地图 GCJ-02（2026-07-15核对）"
+  },
+  {
+    "name": "茶百道（重慶觀音橋陽光世紀店）",
+    "city": "重庆",
+    "category": "饮料",
+    "halal": "友善",
+    "cuisine": "新式茶飲",
+    "area": "江北區·觀音橋",
+    "address": "重庆市两江新区建北一支路9号新世纪百货阳光奥莱F2层",
+    "lat": 29.575944,
+    "lng": 106.534679,
+    "hours": "約10:00-22:00（隨商場營業時間）",
+    "price": "約12-25元",
+    "rating": null,
+    "rating_source": null,
+    "dishes": [
+      "楊枝甘露",
+      "茉莉奶綠",
+      "西瓜啵啵"
+    ],
+    "reason": "高德定位距觀音橋好吃街南門約90公尺，逛完小吃街可順路取飲料。",
+    "notes": "高峰期可能等候；乳製品與配料如有飲食禁忌請現場確認。",
+    "amap_poiid": "B0G1UHNZWU",
+    "coordinate_status": "verified",
+    "coordinate_source": "高德地图 GCJ-02（2026-07-15核对）"
+  },
+  {
+    "name": "北京老門框爆肚涮肉館（觀音橋店）",
+    "city": "重庆",
+    "category": "午晚餐",
+    "halal": "友善",
+    "cuisine": "老北京爆肚／銅鍋涮羊肉",
+    "area": "江北區·觀音橋",
+    "address": "重庆市两江新区两江新区江北区杨河二村18号附48、49号",
+    "lat": 29.581705,
+    "lng": 106.529972,
+    "hours": "11:00-22:00",
+    "price": "人均約80-120元",
+    "rating": "4.3/5",
+    "rating_source": "Trip.com（近期頁面）",
+    "dishes": [
+      "鮮切羊肉",
+      "爆肚",
+      "麻醬蘸料",
+      "糖蒜",
+      "燒餅"
+    ],
+    "reason": "觀音橋附近可吃到老北京清湯銅鍋涮羊肉與爆肚；從好吃街步行約10-12分鐘，適合作為 D3 正式晚餐。",
+    "notes": "品牌源自清真涮肉傳統，但高德店名與近期餐飲頁未明示本分店的清真認證；請提前致電023-67838846確認肉源、鍋底、是否供應豬肉及器具是否分開。",
+    "amap_poiid": "B0FFKLPNIX",
+    "coordinate_status": "verified",
+    "coordinate_source": "高德地图 GCJ-02（2026-07-15核对）"
   }
 ]
