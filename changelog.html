@@ -123,22 +123,23 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
     <div class="eyebrow">Website field notes</div>
     <h1>一路修到更順。<span>網頁修改紀錄</span></h1>
     <p class="lead">把網站功能、行程調整與資料校正整理成可讀的版本誌。內容依 Git commit 與現有頁面交叉核對；相近的小修改合併描述，保留 commit 編號供回查。</p>
-    <p class="source-note">資料截點：2026/07/14 21:04（UTC+8）・<a href="https://github.com/Archer8685/sichuan/commits" target="_blank" rel="noopener">查看完整 Git 歷史 ↗</a></p>
+    <p class="source-note">資料截點：2026/07/15（UTC+8）・<a href="https://github.com/Archer8685/sichuan/commits" target="_blank" rel="noopener">查看完整 Git 歷史 ↗</a></p>
     <aside class="ticket" aria-label="版本資訊">
       <small>CHANGE LOG</small>
-      <strong>v82</strong>
+      <strong>v84</strong>
       <div class="route">CKG 重慶<br>↓ 9 DAYS<br>CTU 成都</div>
     </aside>
   </header>
 
   <section class="stats" aria-label="紀錄摘要">
     <div class="stat"><b>85</b><span>筆本次修改前 Git commits</span></div>
-    <div class="stat"><b>4 日</b><span>2026/07/11–07/14</span></div>
+    <div class="stat"><b>5 日</b><span>2026/07/11–07/15</span></div>
     <div class="stat"><b>5 頁</b><span>行前、行程、地圖、攻略、紀錄</span></div>
   </section>
 
   <nav class="jump" aria-label="依日期跳轉">
-    <a href="#d0714">07/14 最新</a>
+    <a href="#d0715">07/15 最新</a>
+    <a href="#d0714">07/14</a>
     <a href="#d0713">07/13</a>
     <a href="#d0712">07/12 主體完成</a>
     <a href="#d0711">07/11 首次上線</a>
@@ -146,18 +147,34 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
   </nav>
 
   <section class="timeline" aria-label="修改時間軸">
-    <article class="release" id="d0714">
-      <div class="date"><time datetime="2026-07-14">07 / 14</time><span>目前工作區・最新</span></div>
+    <article class="release" id="d0715">
+      <div class="date"><time datetime="2026-07-15">07 / 15</time><span>目前工作區・最新</span></div>
       <div class="release-body">
         <section class="change" data-kind="trip">
-          <h2>D6 改為三星堆＋都江堰包車一日遊 <span class="new">LATEST</span></h2>
-          <p>依包車時程重排三星堆導覽、仰天窩大熊貓廣場、都江堰景區與灌縣古城南橋；D5 午餐同步由天方樓改為皇城清真寺旁的天府皇城壩百年牛肉火鍋。</p>
+          <h2>D6 改為熊貓谷＋都江堰包車一日遊 <span class="new">LATEST</span></h2>
+          <p>D6 由三星堆改為都江堰熊貓谷路線：上午看半野放大熊貓，午後加入融創茂鐘書閣打卡，再接仰天窩廣場、都江堰景區與灌縣古城南橋；行前頁的預訂、購票與台胞證免票說明同步改為熊貓谷（官方實名購票）＋都江堰。</p>
           <div class="meta"><span class="kind">行程</span><span class="commit">目前工作區</span></div>
+        </section>
+        <section class="change" data-kind="data">
+          <h2>地圖新增鐘書閣（都江堰融創茂店）</h2>
+          <p>依融創文旅城實際位置（GCJ-02）新增鐘書閣圖釘，供 D6 午後打卡對照；網站版本更新為 v84。</p>
+          <div class="meta"><span class="kind">資料</span><span class="commit">目前工作區</span></div>
+        </section>
+      </div>
+    </article>
+
+    <article class="release" id="d0714">
+      <div class="date"><time datetime="2026-07-14">07 / 14</time><span>已提交</span></div>
+      <div class="release-body">
+        <section class="change" data-kind="trip">
+          <h2>D6 曾改為三星堆＋都江堰包車一日遊</h2>
+          <p>依包車時程重排三星堆導覽、仰天窩大熊貓廣場、都江堰景區與灌縣古城南橋；D5 午餐同步由天方樓改為皇城清真寺旁的天府皇城壩百年牛肉火鍋。（此三星堆版已於 07/15 改為熊貓谷版）</p>
+          <div class="meta"><span class="kind">行程</span><a class="commit" href="https://github.com/Archer8685/sichuan/commit/2520496" target="_blank" rel="noopener">2520496</a></div>
         </section>
         <section class="change" data-kind="ui">
           <h2>台胞證優惠備註與網站版本更新為 v82</h2>
           <p>準備頁新增「首來族」適用條件、三星堆與都江堰免首道門票提醒，以及武侯祠、杜甫草堂的長者規則；同步更新離線 App 快取鍵。</p>
-          <div class="meta"><span class="kind">版本</span><span class="commit">目前工作區</span></div>
+          <div class="meta"><span class="kind">版本</span><a class="commit" href="https://github.com/Archer8685/sichuan/commit/f56dda5" target="_blank" rel="noopener">f56dda5</a></div>
         </section>
       </div>
     </article>
