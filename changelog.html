@@ -126,7 +126,7 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
     <p class="source-note">資料截點：2026/07/15（UTC+8）・<a href="https://github.com/Archer8685/sichuan/commits" target="_blank" rel="noopener">查看完整 Git 歷史 ↗</a></p>
     <aside class="ticket" aria-label="版本資訊">
       <small>CHANGE LOG</small>
-      <strong>v90</strong>
+      <strong>v91</strong>
       <div class="route">CKG 重慶<br>↓ 9 DAYS<br>CTU 成都</div>
     </aside>
   </header>
@@ -150,8 +150,13 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
     <article class="release" id="d0715">
       <div class="date"><time datetime="2026-07-15">07 / 15</time><span>目前工作區・最新</span></div>
       <div class="release-body">
+        <section class="change" data-kind="trip">
+          <h2>夜景備選、洪崖洞與返程緩衝重新整理 <span class="new">LATEST</span></h2>
+          <p>鵝嶺二廠、南山一棵樹與兩江夜遊保留在每日行程中，但改以「備選」醒目標示並補上跳過條件；洪崖洞改排 D3 星期一晚餐後，從觀音橋返解放碑途中順遊以避開週末最高峰。D9 提前至 08:50 退房、10:10 抵達天府機場。D5 維持平日同區動線，不拆到較擁擠或更繞路的其他天，改以鶴鳴茶社停留時間作為當日彈性。同步修正備選榜仍稱 D6 未排熊貓谷的過期文字，網站版本更新為 v91。</p>
+          <div class="meta"><span class="kind">行程＋版本</span><span class="commit">目前工作區</span></div>
+        </section>
         <section class="change" data-kind="fix">
-          <h2>修正同品牌不同分店的地圖連結 <span class="new">LATEST</span></h2>
+          <h2>修正同品牌不同分店的地圖連結</h2>
           <p>地點查找原本會先移除括號內分店名，導致 D3「茶百道（重慶觀音橋陽光世紀店）」被錯配為成都奎星樓店。現在行程頁與地圖行程模式都改為先比對含分店名的完整名稱，找不到時才退回品牌模糊匹配；D3 茶百道連結已回歸測試為觀音橋陽光世紀店。網站版本更新為 v90。</p>
           <div class="meta"><span class="kind">分店匹配修正</span><span class="commit">目前工作區</span></div>
         </section>

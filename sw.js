@@ -1,6 +1,6 @@
 // sw.js — 離線快取
 // 策略：App 殼層（HTML/JS/CSS/Leaflet/資料）可離線；高德底圖圖磚 cache-first，看過或預載過即離線可用。
-const APP_CACHE = 'sichuan-app-v90';
+const APP_CACHE = 'sichuan-app-v91';
 const TILE_CACHE = 'sichuan-tiles-v1';
 // 首次安裝先預快取頁面與地圖引擎（資料 data.js/trip.js 由執行時快取，因帶 ?v= 版本號）
 const SHELL = ['./', 'map.html', 'itinerary.html', 'prep.html', 'guide.html', 'changelog.html', 'libs/leaflet.js', 'libs/leaflet.css'];
