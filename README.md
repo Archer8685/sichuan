@@ -12,6 +12,8 @@ data.js           ★ 唯一資料檔（PLACES / GUIDES / TOURS / T2S），由 b
 libs/             Leaflet 1.9.4 本地副本（已去 CDN 依賴）
 data/*.json       原始研究資料（部署可不上傳，僅重建 data.js 用）
 build_data.py     資料合併腳本：python build_data.py → 重新產生 data.js
+audit/            高德地圖座標全量稽核結果與逐筆判定紀錄
+apply_amap_audit.py 將稽核結果套用到 data/*.json；無法確認者會移除座標
 compact_list.txt  rest_names.txt  中間產物（可不上傳）
 .claude/          開發工具設定（不用上傳）
 ```

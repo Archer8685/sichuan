@@ -126,7 +126,7 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
     <p class="source-note">資料截點：2026/07/15（UTC+8）・<a href="https://github.com/Archer8685/sichuan/commits" target="_blank" rel="noopener">查看完整 Git 歷史 ↗</a></p>
     <aside class="ticket" aria-label="版本資訊">
       <small>CHANGE LOG</small>
-      <strong>v87</strong>
+      <strong>v88</strong>
       <div class="route">CKG 重慶<br>↓ 9 DAYS<br>CTU 成都</div>
     </aside>
   </header>
@@ -151,7 +151,12 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
       <div class="date"><time datetime="2026-07-15">07 / 15</time><span>目前工作區・最新</span></div>
       <div class="release-body">
         <section class="change" data-kind="data">
-          <h2>全量重查地圖座標並修正 42 個地點 <span class="new">LATEST</span></h2>
+          <h2>全站 543 個圖釘改以高德 POI 全量覆核 <span class="new">LATEST</span></h2>
+          <p>重新逐筆搜尋網站地圖載入的 543 個地點，並以高德單店頁的官方名稱、完整地址與 GCJ-02 六位座標覆核。364 個可靠匹配地點已更新地址與座標；179 個找不到有效 POI、店名不足以辨認或疑似錯分店的項目已取消圖釘並保留未確認紀錄，避免繼續顯示近似點。黃玉明烤肉已修正為南岸區一天門街102號附1號（29.553911, 106.599189），核心行程的蜀宴賦、東郊記憶、南橋與仰天窩廣場另經人工重查。完整逐筆結果保存在 <code>audit/amap_coordinates_2026-07-15.json</code>，網站版本更新為 v88。</p>
+          <div class="meta"><span class="kind">高德座標稽核</span><span class="commit">目前工作區</span></div>
+        </section>
+        <section class="change" data-kind="data">
+          <h2>全量重查地圖座標並修正 42 個地點</h2>
           <p>逐筆盤點 543 個地點，以店名、完整門牌、城市與公開地圖 POI 交叉比對；修正成都歡樂谷、成都川菜博物館、平樂古鎮、李子壩穿樓觀景台、黃桷坪塗鴉街、彈子石老街等景點，以及多家餐廳與商場的偏移座標。馬房灣七彩巷原本誤標在黃桷坪，已連同區域、地址與介紹改回沙坪壩；兩筆缺少座標的店家也補上已查得門址。網站版本更新為 v87。</p>
           <div class="meta"><span class="kind">資料校正</span><span class="commit">目前工作區</span></div>
         </section>

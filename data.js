@@ -4,9 +4,9 @@ const PLACES = [
   "category": "早餐",
   "halal": true,
   "area": "青羊區",
-  "address": "成都市青羊區三桂前街8號（騾馬市地鐵站附近）",
-  "lat": 30.665,
-  "lng": 104.0715,
+  "address": "成都市青羊區三桂前街51號",
+  "lat": 30.66177,
+  "lng": 104.073443,
   "hours": "約 06:30-21:00（早市有牛肉麵）",
   "price": 30,
   "dishes": [
@@ -18,6 +18,9 @@ const PLACES = [
   ],
   "reason": "皇城壩回民飲食的代表老館，只做牛肉，清真認證，本地人排隊的百年味道。",
   "notes": "飯點常排隊，建議早點去；價格實在，適合當早午餐。",
+  "amap_poiid": "B001C7UOAZ",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都",
   "rating": "4.2/5",
   "rating_source": "大眾點評截圖（2701條，2026/07/12）"
@@ -27,9 +30,9 @@ const PLACES = [
   "category": "早餐",
   "halal": true,
   "area": "青羊區",
-  "address": "成都市青羊區西御街（成都博物館對面、皇城清真寺隔壁）",
-  "lat": 30.657,
-  "lng": 104.06,
+  "address": "成都市青羊區小河街2號附2號皇城清真寺(東南角)",
+  "lat": 30.65651,
+  "lng": 104.063176,
   "hours": "約 07:30-19:00（賣完即止）",
   "price": 10,
   "dishes": [
@@ -38,6 +41,9 @@ const PLACES = [
   ],
   "reason": "皇城清真寺旁的清真牛肉餅名攤，6元一個現做現賣，高峰一天賣出7000多個。",
   "notes": "常排隊、可能只收現金/掃碼；逛完天府廣場和成都博物館順路。",
+  "amap_poiid": "B0IBKSH88M",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
@@ -46,8 +52,8 @@ const PLACES = [
   "halal": true,
   "area": "錦江區",
   "address": "成都市錦江區春熙路商圈（多家分店，另有萬象城等店，以地圖App實時為準）",
-  "lat": 30.657,
-  "lng": 104.081,
+  "lat": null,
+  "lng": null,
   "hours": "約 10:00-21:30（商場店開門較晚）",
   "price": 35,
   "dishes": [
@@ -58,6 +64,8 @@ const PLACES = [
   ],
   "reason": "清真蘭州牛肉麵連鎖，湯清面滑，環境乾淨，是市中心穩妥的清真選擇。",
   "notes": "商場店開門偏晚，當早午餐更合適；出行前用地圖確認最近門店。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "成都",
   "rating": "4.3/5",
   "rating_source": "綜合"
@@ -67,9 +75,9 @@ const PLACES = [
   "category": "早餐",
   "halal": true,
   "area": "武侯區",
-  "address": "成都市武侯區四川大學望江校區內（近學生生活區）",
-  "lat": 30.63,
-  "lng": 104.085,
+  "address": "成都市武侯區一環路南一段24號四川大學體育館真冰場內",
+  "lat": 30.632026,
+  "lng": 104.084643,
   "hours": "早餐約 07:00-09:30，午晚餐照常",
   "price": 15,
   "dishes": [
@@ -79,6 +87,9 @@ const PLACES = [
   ],
   "reason": "高校清真食堂，牛肉包被稱為成都清真早餐的隱藏名品，便宜實在。",
   "notes": "校園食堂，入校及支付方式可能受限（或需校園卡/訪客登記），行前確認。",
+  "amap_poiid": "B001C8VXHC",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
@@ -87,8 +98,8 @@ const PLACES = [
   "halal": true,
   "area": "新都區",
   "address": "成都市新都區唐家寺（回民聚居片區，川陝路沿線）",
-  "lat": 30.78,
-  "lng": 104.03,
+  "lat": null,
+  "lng": null,
   "hours": "約 07:00-18:00（賣完即止）",
   "price": 12,
   "dishes": [
@@ -98,6 +109,8 @@ const PLACES = [
   ],
   "reason": "唐家寺是成都近郊傳統回民聚居地，牛肉餅外皮酥脆、大蔥胡椒牛肉餡香氣足。",
   "notes": "離市區較遠（約20公里），可與新都桂湖/寶光寺行程合併；小攤多收現金或掃碼。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "成都"
  },
  {
@@ -105,9 +118,9 @@ const PLACES = [
   "category": "早餐",
   "halal": "友善",
   "area": "青羊區",
-  "address": "成都市青羊區人民中路三段19號（地鐵1號線文殊院站K出口旁）",
-  "lat": 30.6785,
-  "lng": 104.0725,
+  "address": "成都市青羊區通順橋路69號附1號(通順酒店旁)",
+  "lat": 30.673653,
+  "lng": 104.069157,
   "hours": "08:00-19:30",
   "price": 10,
   "dishes": [
@@ -117,6 +130,9 @@ const PLACES = [
   ],
   "reason": "文殊院地鐵口的排隊名店，一天賣上千個，牛肉款層層夾肉、炭火酥脆。",
   "notes": "同檔也賣豬肉鍋盔，點單時指明牛肉/素餡即可；高峰排隊15-30分鐘。",
+  "amap_poiid": "B0FFHSJT8V",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都",
   "rating": "4.5/5",
   "rating_source": "攜程"
@@ -126,9 +142,9 @@ const PLACES = [
   "category": "早餐",
   "halal": "友善",
   "area": "新都區",
-  "address": "成都市新都區軍屯路與成德大道交叉口東南側",
-  "lat": 30.82,
-  "lng": 104.16,
+  "address": "成都市新都區新新市場東環路店東門旁",
+  "lat": 30.822905,
+  "lng": 104.168012,
   "hours": "約 07:00-18:00",
   "price": 8,
   "dishes": [
@@ -137,6 +153,9 @@ const PLACES = [
   ],
   "reason": "軍屯鍋魁發源地一帶的原產地味道，千層酥餅現擀現烤。",
   "notes": "有豬肉餡款，請點牛肉或椒鹽素款；位置偏遠，市區可用嚴太婆鍋魁替代。",
+  "amap_poiid": "B0H06HGIX1",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
@@ -145,8 +164,8 @@ const PLACES = [
   "halal": "友善",
   "area": "青羊區",
   "address": "成都市青羊區文殊院街39號",
-  "lat": 30.677,
-  "lng": 104.074,
+  "lat": 30.674196,
+  "lng": 104.072595,
   "hours": "約 09:00-18:00",
   "price": 12,
   "dishes": [
@@ -157,6 +176,9 @@ const PLACES = [
   ],
   "reason": "文殊院旁的老字號，甜水麵粗面裹甜辣複製醬油，是最地道的老成都味。",
   "notes": "招牌全為素食，天然無豬肉，清真友善；店面小、高峰拼桌。",
+  "amap_poiid": "B001C08NHH",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都",
   "rating": "4.5/5",
   "rating_source": "大眾點評"
@@ -167,8 +189,8 @@ const PLACES = [
   "halal": "友善",
   "area": "青羊區",
   "address": "成都市青羊區西大街86號附13號",
-  "lat": 30.67,
-  "lng": 104.058,
+  "lat": null,
+  "lng": null,
   "hours": "約 08:00-20:30",
   "price": 15,
   "dishes": [
@@ -179,6 +201,8 @@ const PLACES = [
   ],
   "reason": "老字號豆花專門店，饊子豆花鹹鮮酥脆，是成都傳統早餐的經典。",
   "notes": "豆花本身為素；豆花面的臊子含豬肉，避開點純豆花品項即可。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "成都"
  },
  {
@@ -186,9 +210,9 @@ const PLACES = [
   "category": "早餐",
   "halal": "友善",
   "area": "錦江區",
-  "address": "成都市錦江區華興正街（王府井百貨後側，悅來茶園附近）",
-  "lat": 30.6605,
-  "lng": 104.079,
+  "address": "成都市錦江區梓潼橋正街45號附6號正成財富ID大廈1樓",
+  "lat": 30.660355,
+  "lng": 104.081421,
   "hours": "約 08:00-21:00",
   "price": 18,
   "dishes": [
@@ -198,6 +222,9 @@ const PLACES = [
   ],
   "reason": "銅鍋煮的番茄煎蛋面是成都人從小吃到大的味道，湯酸香、蛋焦邊。",
   "notes": "招牌番茄煎蛋面無豬肉，清真友善；其他面品臊子可能含豬肉，點單注意。",
+  "amap_poiid": "B001C8MQ6Z",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
@@ -206,8 +233,8 @@ const PLACES = [
   "halal": "友善",
   "area": "錦江區",
   "address": "成都市錦江區武成大街與牛王廟路口一帶（牛王廟地鐵站附近）",
-  "lat": 30.657,
-  "lng": 104.096,
+  "lat": null,
+  "lng": null,
   "hours": "約 07:00-20:00",
   "price": 18,
   "dishes": [
@@ -217,6 +244,8 @@ const PLACES = [
   ],
   "reason": "本地人心中的麵館頂流，早上七點就開門，湯麵香濃有鍋氣。",
   "notes": "招牌怪味面臊子含豬肉，請改點牛肉麵；高峰排隊。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "成都"
  },
  {
@@ -224,9 +253,9 @@ const PLACES = [
   "category": "早餐",
   "halal": false,
   "area": "青羊區",
-  "address": "成都市青羊區少城路12號人民公園東門附近",
-  "lat": 30.6625,
-  "lng": 104.0555,
+  "address": "成都市青羊區少城路12號人民公園紫薇閣內",
+  "lat": 30.656754,
+  "lng": 104.059012,
   "hours": "約 09:00-20:00",
   "price": 25,
   "dishes": [
@@ -237,6 +266,9 @@ const PLACES = [
   ],
   "reason": "始於1896年的中華老字號，紅油甜辣的調味是成都小吃的教科書。",
   "notes": "招牌水餃為純豬肉餡，清真需求者建議只點甜水麵、銀耳湯等素甜品項。",
+  "amap_poiid": "B001C8O6WT",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都",
   "rating": "4.0/5",
   "rating_source": "綜合"
@@ -246,9 +278,9 @@ const PLACES = [
   "category": "早餐",
   "halal": false,
   "area": "錦江區",
-  "address": "成都市錦江區春熙路南段6-8號",
-  "lat": 30.6555,
-  "lng": 104.0805,
+  "address": "成都市錦江區春熙路中山廣場東側城守街63號",
+  "lat": 30.654531,
+  "lng": 104.077614,
   "hours": "約 10:00-21:00",
   "price": 30,
   "dishes": [
@@ -259,6 +291,9 @@ const PLACES = [
   ],
   "reason": "1940年代創立的老字號，一店吃齊成都名小吃，適合初訪者打卡。",
   "notes": "抄手為豬肉餡；清真需求者可只點甜水麵等素食小吃，或僅作陪同用餐點。",
+  "amap_poiid": "B001C7UMYH",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都",
   "rating": "4.1/5",
   "rating_source": "攜程"
@@ -269,8 +304,8 @@ const PLACES = [
   "halal": false,
   "area": "錦江區",
   "address": "成都市錦江區紅星路四段（總店，另有多家分店）",
-  "lat": 30.65,
-  "lng": 104.085,
+  "lat": null,
+  "lng": null,
   "hours": "約 07:30-19:00",
   "price": 15,
   "dishes": [
@@ -281,6 +316,8 @@ const PLACES = [
   ],
   "reason": "百年包子老字號，皮薄松泡，是成都傳統包子鋪的代表。",
   "notes": "以豬肉包為主，清真需求者建議略過或只點素菜包+豆漿。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "成都",
   "rating": "4.0/5",
   "rating_source": "綜合"
@@ -291,8 +328,8 @@ const PLACES = [
   "halal": false,
   "area": "青羊區",
   "address": "成都市青羊區文殊坊街區內（草市街附近，另有多家分店）",
-  "lat": 30.676,
-  "lng": 104.075,
+  "lat": null,
+  "lng": null,
   "hours": "約 09:00-21:00",
   "price": 25,
   "dishes": [
@@ -303,6 +340,8 @@ const PLACES = [
   ],
   "reason": "成都肥腸粉非遺代表，手打紅薯粉滑彈，是本地早餐名片之一。",
   "notes": "招牌以豬肥腸為主，不符合清真需求；僅推薦給同行的非清真旅伴。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "成都",
   "rating": "4.5/5",
   "rating_source": "綜合"
@@ -312,9 +351,9 @@ const PLACES = [
   "category": "早餐",
   "halal": "友善",
   "area": "錦江區",
-  "address": "成都市錦江區青石橋北街（青石橋市場一帶）",
-  "lat": 30.652,
-  "lng": 104.077,
+  "address": "成都市錦江區學道街113-141,青石橋中街24-44號格萊美空間",
+  "lat": 30.653285,
+  "lng": 104.07222,
   "hours": "約 07:30-19:00",
   "price": 15,
   "dishes": [
@@ -324,6 +363,9 @@ const PLACES = [
   ],
   "reason": "青石橋老街的蕎面小店，現壓蕎麥麵帶麥香，是老成都的傳統早餐。",
   "notes": "點牛肉或素椒口味可避開豬肉；店小人多，環境市井；建議現金/掃碼。",
+  "amap_poiid": "B001C7UPYD",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
@@ -331,9 +373,9 @@ const PLACES = [
   "category": "早餐",
   "halal": "友善",
   "area": "青羊區",
-  "address": "成都市青羊區東城根南街（寬窄巷子東側步行可達）",
-  "lat": 30.6605,
-  "lng": 104.0555,
+  "address": "成都市青羊區東城根上街13號(達州賓館樓下)",
+  "lat": 30.658934,
+  "lng": 104.060511,
   "hours": "約 10:00-21:00",
   "price": 20,
   "dishes": [
@@ -343,6 +385,9 @@ const PLACES = [
   ],
   "reason": "以甜水麵出名的小吃店，麵條筋道、醬汁甜辣，離寬窄巷子近很順路。",
   "notes": "甜水麵與缽缽雞無豬肉；擔擔麵臊子含豬肉請避開。",
+  "amap_poiid": "B0FFKMK9TS",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
@@ -351,8 +396,8 @@ const PLACES = [
   "halal": "友善",
   "area": "青羊區",
   "address": "成都市青羊區文殊院街66號文殊院內",
-  "lat": 30.6775,
-  "lng": 104.0745,
+  "lat": null,
+  "lng": null,
   "hours": "約 08:00-17:00（早段供應素點）",
   "price": 30,
   "dishes": [
@@ -363,6 +408,8 @@ const PLACES = [
   ],
   "reason": "文殊院內的素齋茶園，全素無肉，環境清幽，吃完可逛寺院與文殊坊。",
   "notes": "全素食，天然清真友善；節假日人多，部分窗口下午早收。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "成都"
  },
  {
@@ -371,8 +418,8 @@ const PLACES = [
   "halal": "友善",
   "area": "金牛區",
   "address": "成都市金牛區曹家巷工人村2棟樓下（近太升橋）",
-  "lat": 30.674792,
-  "lng": 104.08342,
+  "lat": null,
+  "lng": null,
   "hours": "約 10:30-18:00（賣完即止，常不定休）",
   "price": 8,
   "dishes": [
@@ -382,6 +429,8 @@ const PLACES = [
   ],
   "reason": "『南有賀記、北有陸記』的北派代表，銅鍋炭火慢烘，皮脆芯軟。",
   "notes": "肉鬆餡可能為豬肉鬆，點甜餡或問清餡料；只收現金/掃碼，排隊常見。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "成都"
  },
  {
@@ -389,9 +438,9 @@ const PLACES = [
   "category": "早餐",
   "halal": "友善",
   "area": "武侯區",
-  "address": "成都市武侯區武侯祠大街231號錦里古街小吃區",
-  "lat": 30.6425,
-  "lng": 104.0435,
+  "address": "成都市武侯區錦里九品街12號附近",
+  "lat": 30.646922,
+  "lng": 104.049819,
   "hours": "約 10:00-21:00（隨景區）",
   "price": 12,
   "dishes": [
@@ -400,6 +449,9 @@ const PLACES = [
   ],
   "reason": "民國老字號牛肉焦餅，起酥油煎、純牛肉餡，是清真淵源的成都名小吃。",
   "notes": "現為小吃城/景區檔口經營，出行前查證檔口是否營業；景區價格略高。",
+  "amap_poiid": "B0FFGPPPV4",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
@@ -407,9 +459,9 @@ const PLACES = [
   "category": "甜点",
   "halal": "友善",
   "area": "青羊區",
-  "address": "成都市青羊區文廟西街1號附8號（石室中學大門對面）",
-  "lat": 30.651,
-  "lng": 104.057,
+  "address": "成都市青羊區文廟西街1號(文翁石室地鐵站E口步行450米)",
+  "lat": 30.652165,
+  "lng": 104.056687,
   "hours": "約 13:00-18:30（下午開賣，賣完即止）",
   "price": 8,
   "dishes": [
@@ -419,6 +471,9 @@ const PLACES = [
   ],
   "reason": "成都蛋烘糕『南派』扛把子，20多種自製餡料，鬆軟蛋香濃。",
   "notes": "下午才出攤且常排隊；肉鬆等鹹餡或含豬肉製品，甜餡最穩妥；備現金/掃碼。",
+  "amap_poiid": "B0FFF6WGQR",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
@@ -426,9 +481,9 @@ const PLACES = [
   "category": "甜点",
   "halal": "友善",
   "area": "青羊區",
-  "address": "成都市青羊區三道街（近奎星樓街、寬窄巷子步行可達）",
-  "lat": 30.665,
-  "lng": 104.0545,
+  "address": "成都市青羊區三道街2號附4號(西大街地鐵站F2口步行110米)",
+  "lat": 30.671506,
+  "lng": 104.056802,
   "hours": "約 09:00-18:00（賣完即止）",
   "price": 6,
   "dishes": [
@@ -436,6 +491,9 @@ const PLACES = [
   ],
   "reason": "成都糖油果子界的名攤，菜油現炸、紅糖掛漿，金黃油亮外脆內糯。",
   "notes": "傳統做法用菜籽油非豬油，購買時可再確認；小攤現金/掃碼。",
+  "amap_poiid": "B0FFKEV6GR",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
@@ -444,8 +502,8 @@ const PLACES = [
   "halal": "友善",
   "area": "青羊區",
   "address": "成都市青羊區十二橋路成都中醫藥大學附近（地鐵2號線中醫大省醫院站周邊）",
-  "lat": 30.664,
-  "lng": 104.043,
+  "lat": null,
+  "lng": null,
   "hours": "約 09:00-18:00（老攤營業時間不固定）",
   "price": 10,
   "dishes": [
@@ -455,6 +513,8 @@ const PLACES = [
   ],
   "reason": "本地人口口相傳的老字號銀耳湯，膠質濃稠、冰鎮清甜。",
   "notes": "街邊老攤位置和營業時間會變動，到附近後用地圖App再搜『銀耳湯』確認；備現金。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "成都"
  },
  {
@@ -462,9 +522,9 @@ const PLACES = [
   "category": "甜点",
   "halal": false,
   "area": "錦江區",
-  "address": "成都市錦江區總府路27號（春熙路商圈）",
-  "lat": 30.6595,
-  "lng": 104.083,
+  "address": "成都市錦江區總府路23號附2號",
+  "lat": 30.658539,
+  "lng": 104.07819,
   "hours": "約 09:00-21:00",
   "price": 15,
   "dishes": [
@@ -474,6 +534,9 @@ const PLACES = [
   ],
   "reason": "1894年創立的湯圓老字號，皮糯餡香，是成都甜食的招牌之一。",
   "notes": "傳統黑芝麻餡以豬油調製，清真需求者不建議食用，可只拍照打卡或詢問是否有無豬油款。",
+  "amap_poiid": "B001C06U88",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都",
   "rating": "4.1/5",
   "rating_source": "攜程"
@@ -484,8 +547,8 @@ const PLACES = [
   "halal": "友善",
   "area": "武侯區",
   "address": "成都市武侯區武侯祠大街231號錦里古街內",
-  "lat": 30.6425,
-  "lng": 104.0435,
+  "lat": null,
+  "lng": null,
   "hours": "約 10:00-21:30（隨景區）",
   "price": 10,
   "dishes": [
@@ -494,6 +557,8 @@ const PLACES = [
   ],
   "reason": "現場摔打餈粑『砰砰砰』三響的非遺表演型甜品，紅糖黃豆粉香濃。",
   "notes": "糯米+紅糖+黃豆粉，無豬肉豬油，清真友善；景區內人多，注意隨身物品。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "成都"
  },
  {
@@ -502,8 +567,8 @@ const PLACES = [
   "halal": "友善",
   "area": "青羊區",
   "address": "成都市青羊區奎星樓街東口（寬窄巷子步行5分鐘）",
-  "lat": 30.664,
-  "lng": 104.052,
+  "lat": null,
+  "lng": null,
   "hours": "約 11:00-22:00",
   "price": 15,
   "dishes": [
@@ -513,6 +578,8 @@ const PLACES = [
   ],
   "reason": "『冰粉一條街』奎星樓街的手工冰粉代表，吧檯現搓現做、料足文藝。",
   "notes": "12月冬季冰粉偏涼，可選擇熱醪糟類品項；配料全素，清真友善。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "成都",
   "rating": "3.8/5",
   "rating_source": "攜程"
@@ -523,8 +590,8 @@ const PLACES = [
   "halal": "友善",
   "area": "青羊區",
   "address": "成都市青羊區奎星樓街（近寬窄巷子）",
-  "lat": 30.664,
-  "lng": 104.0525,
+  "lat": null,
+  "lng": null,
   "hours": "約 11:00-22:00",
   "price": 15,
   "dishes": [
@@ -534,6 +601,8 @@ const PLACES = [
   ],
   "reason": "網紅冰粉店，醪糟、銀耳、桂花蜜的組合清爽不膩。",
   "notes": "全素配料，清真友善；冬天客流少、部分冰品可能停售。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "成都"
  },
  {
@@ -542,8 +611,8 @@ const PLACES = [
   "halal": "友善",
   "area": "錦江區",
   "address": "成都市錦江區玉雙路（地鐵玉雙路站附近）",
-  "lat": 30.665,
-  "lng": 104.101,
+  "lat": null,
+  "lng": null,
   "hours": "約 11:00-22:30",
   "price": 12,
   "dishes": [
@@ -553,6 +622,8 @@ const PLACES = [
   ],
   "reason": "本地人常去的平價冰粉老店，餈粑現做、配料給得大方。",
   "notes": "全素甜品，清真友善；店面小以外帶為主。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "成都"
  },
  {
@@ -561,8 +632,8 @@ const PLACES = [
   "halal": "友善",
   "area": "青羊區",
   "address": "成都市青羊區醬園公所街58號（文殊院旁）",
-  "lat": 30.6765,
-  "lng": 104.073,
+  "lat": null,
+  "lng": null,
   "hours": "約 08:30-19:00",
   "price": 20,
   "dishes": [
@@ -573,6 +644,8 @@ const PLACES = [
   ],
   "reason": "文殊院旁永遠在排隊的中式糕點老鋪，現烤桃酥香氣撲鼻，伴手禮首選。",
   "notes": "部分傳統酥點（如某些酥皮）可能使用豬油，購買前詢問店員成分；排隊常見。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "成都",
   "rating": "4.7/5",
   "rating_source": "攜程"
@@ -582,9 +655,9 @@ const PLACES = [
   "category": "甜点",
   "halal": "友善",
   "area": "青羊區",
-  "address": "成都市青羊區文殊坊五嶽宮街（文殊坊街區內）",
-  "lat": 30.676,
-  "lng": 104.0745,
+  "address": "成都市青羊區醬園公所街62號",
+  "lat": 30.673392,
+  "lng": 104.074678,
   "hours": "約 09:00-19:00",
   "price": 20,
   "dishes": [
@@ -595,6 +668,9 @@ const PLACES = [
   ],
   "reason": "文殊坊人氣中式點心鋪，現烤出爐、口味清甜，適合邊逛邊吃。",
   "notes": "酥皮類點心可能含豬油，請店員確認後再買；綠豆糕等蒸糕類較穩妥。",
+  "amap_poiid": "B0LRYLWB7C",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都",
   "rating": "4.5/5",
   "rating_source": "綜合"
@@ -604,9 +680,9 @@ const PLACES = [
   "category": "饮料",
   "halal": "友善",
   "area": "青羊區",
-  "address": "成都市青羊區少城路12號人民公園內",
-  "lat": 30.6625,
-  "lng": 104.055,
+  "address": "成都市青羊區祠堂街9號人民公園內(人民公園地鐵站B口步行330米)",
+  "lat": 30.656882,
+  "lng": 104.058603,
   "hours": "約 08:00-22:00",
   "price": 25,
   "dishes": [
@@ -617,6 +693,9 @@ const PLACES = [
   ],
   "reason": "1923年開業的百年茶社，竹椅矮桌、湖景蓋碗茶，是成都慢生活的原點。",
   "notes": "茶水20-30元/位無低消，可續水坐一下午；周末人多建議上午去；採耳約30-100元需議價。",
+  "amap_poiid": "B0FFH4YYGC",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
@@ -624,9 +703,9 @@ const PLACES = [
   "category": "饮料",
   "halal": "友善",
   "area": "雙流區",
-  "address": "成都市雙流區彭鎮馬市壩街64號",
-  "lat": 30.529,
-  "lng": 103.897,
+  "address": "成都市雙流區成都市彭鎮馬市壩街60一64",
+  "lat": 30.583166,
+  "lng": 103.871063,
   "hours": "約 06:00-18:00（清晨最有味道）",
   "price": 10,
   "dishes": [
@@ -635,6 +714,9 @@ const PLACES = [
   ],
   "reason": "明清老宅裡的百年茶館，蜂窩煤爐、斑駁土牆，人文攝影聖地。",
   "notes": "遊客茶價約10元/杯；離市區約1小時車程建議打車/自駕；清晨去拍照光線最佳，尊重老茶客先詢問再拍。",
+  "amap_poiid": "B0J32C050K",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
@@ -642,9 +724,9 @@ const PLACES = [
   "category": "饮料",
   "halal": "友善",
   "area": "錦江區",
-  "address": "成都市錦江區大慈寺路23號大慈寺內（太古里旁）",
-  "lat": 30.6555,
-  "lng": 104.0855,
+  "address": "成都市錦江區中紗帽街8號古大聖慈寺寺廟裡面廟內茶園",
+  "lat": 30.654107,
+  "lng": 104.083982,
   "hours": "約 09:00-17:30（隨寺院開放時間）",
   "price": 20,
   "dishes": [
@@ -653,6 +735,9 @@ const PLACES = [
   ],
   "reason": "千年古剎裡的禪意茶社，一牆之隔就是太古里，鬧中取靜性價比高。",
   "notes": "寺院內全素環境，清真友善；下午茶位緊張，需先購寺院門票（低價）或免票入內。",
+  "amap_poiid": "B0KD05WXH2",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
@@ -660,9 +745,9 @@ const PLACES = [
   "category": "饮料",
   "halal": "友善",
   "area": "武侯區/高新區",
-  "address": "成都市高新區世紀城路198號世紀城新國際會展中心3樓",
-  "lat": 30.568,
-  "lng": 104.062,
+  "address": "成都市武侯區高新區世紀城路166號",
+  "lat": 30.559275,
+  "lng": 104.073872,
   "hours": "約 11:00-21:30",
   "price": 80,
   "dishes": [
@@ -672,6 +757,9 @@ const PLACES = [
   ],
   "reason": "復原老成都街景的劇場式茶館，邊喝蓋碗茶邊看變臉吐火，適合晚間行程。",
   "notes": "晚間演出時段人均較高（含表演約100-150元），建議提前訂位；小吃含豬肉品項，點單注意。",
+  "amap_poiid": "B001C8MPZ8",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都",
   "rating": "4.6/5",
   "rating_source": "綜合"
@@ -682,8 +770,8 @@ const PLACES = [
   "halal": "友善",
   "area": "錦江區",
   "address": "成都市錦江區春熙路商圈（旗艦體驗店，另有IFS/太古里專櫃）",
-  "lat": 30.657,
-  "lng": 104.0815,
+  "lat": null,
+  "lng": null,
   "hours": "約 10:00-22:00",
   "price": 50,
   "dishes": [
@@ -693,6 +781,8 @@ const PLACES = [
   ],
   "reason": "四川名茶竹葉青的品牌體驗店，可試飲選購，是帶茶葉伴手禮的好去處。",
   "notes": "以賣茶為主、可坐下試飲；具體門店位置以地圖App『竹葉青』搜索為準。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "成都"
  },
  {
@@ -700,9 +790,9 @@ const PLACES = [
   "category": "饮料",
   "halal": "友善",
   "area": "青羊區·奎星樓街",
-  "address": "成都市青羊區奎星樓街18號附14號（奎星苑旁）",
-  "lat": 30.6687191,
-  "lng": 104.0532816,
+  "address": "成都市青羊區奎星樓街18號附14號",
+  "lat": 30.668792,
+  "lng": 104.053195,
   "hours": "09:00-22:00",
   "price": 15,
   "dishes": [
@@ -712,6 +802,9 @@ const PLACES = [
   ],
   "reason": "2008年發源於成都的國民奶茶品牌，回到發源地喝一杯最有儀式感。",
   "notes": "飲品無豬肉成分，清真友善；與D5奎星樓街行程同街，店址與營業時間已按攜程門店頁核對。",
+  "amap_poiid": "B0FFIXU58J",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都",
   "rating": "4.0/5",
   "rating_source": "攜程"
@@ -722,8 +815,8 @@ const PLACES = [
   "halal": "友善",
   "area": "錦江區",
   "address": "成都市錦江區春熙路商圈（總部在成都，市內門店密集）",
-  "lat": 30.656,
-  "lng": 104.0805,
+  "lat": null,
+  "lng": null,
   "hours": "約 10:00-22:30",
   "price": 12,
   "dishes": [
@@ -733,6 +826,8 @@ const PLACES = [
   ],
   "reason": "『半杯都是料』的成都本土品牌，燒仙草配料紮實，性價比高。",
   "notes": "全素配料為主，清真友善。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "成都",
   "rating": "4.4/5",
   "rating_source": "綜合"
@@ -742,9 +837,9 @@ const PLACES = [
   "category": "饮料",
   "halal": "友善",
   "area": "錦江區",
-  "address": "成都市錦江區春熙路商圈（成都本土品牌，多家門店）",
-  "lat": 30.6575,
-  "lng": 104.0808,
+  "address": "成都市錦江區大科甲巷3號附2號(春熙路地鐵站D口步行70米)",
+  "lat": 30.654274,
+  "lng": 104.079437,
   "hours": "約 10:00-22:30",
   "price": 18,
   "dishes": [
@@ -754,6 +849,9 @@ const PLACES = [
   ],
   "reason": "成都本土手作茶飲品牌，芋圓丸子現做，口感區別於連鎖大牌。",
   "notes": "配料全素，清真友善。",
+  "amap_poiid": "B0J3SZZI8G",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都",
   "rating": "4.4/5",
   "rating_source": "綜合"
@@ -764,8 +862,8 @@ const PLACES = [
   "halal": "友善",
   "area": "錦江區",
   "address": "成都市錦江區钂鈀街66號",
-  "lat": 30.6535,
-  "lng": 104.0885,
+  "lat": null,
+  "lng": null,
   "hours": "約 10:00-22:00（夜間轉酒吧業態）",
   "price": 40,
   "dishes": [
@@ -775,6 +873,8 @@ const PLACES = [
   ],
   "reason": "成都咖啡街钂鈀街的美式復古名店，一半咖啡一半機車銀飾，開心果Dirty被譽為全城最佳。",
   "notes": "钂鈀街+青蓮上街一帶聚集20多家特色小店，可安排半天City Walk；晚間有酒精飲品，介意者白天前往。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "成都",
   "rating": "5.0/5",
   "rating_source": "綜合"
@@ -785,8 +885,8 @@ const PLACES = [
   "halal": "友善",
   "area": "成華區",
   "address": "成都市成華區雙橋路151號附3號",
-  "lat": 30.657,
-  "lng": 104.115,
+  "lat": null,
+  "lng": null,
   "hours": "約 10:00-18:00（小店營業時間彈性）",
   "price": 20,
   "dishes": [
@@ -796,6 +896,8 @@ const PLACES = [
   ],
   "reason": "僅7平方米的成都最小咖啡店，1870年產古董咖啡機全手工壓制，人均20元性價比極高。",
   "notes": "店面極小以外帶為主；營業時間不固定，去前可在社交平台確認當日營業。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "成都"
  },
  {
@@ -805,9 +907,9 @@ const PLACES = [
   "halal": false,
   "cuisine": "貴州酸湯火鍋",
   "area": "武侯區·芳草街",
-  "address": "成都市武侯區芳草街15號",
-  "lat": 30.63054,
-  "lng": 104.05403,
+  "address": "成都市武侯區芳草街15號付1號(芳草街派出所對面)",
+  "lat": 30.630338,
+  "lng": 104.054095,
   "hours": "約11:30-次日02:00（實時營業時間以門店為準）",
   "price": "約51元/人",
   "rating": null,
@@ -820,7 +922,10 @@ const PLACES = [
    "洋芋粑粑"
   ],
   "reason": "芳草街上的貴州酸辣小火鍋，奪奪粉、酸湯與洋芋粑粑適合冬日下午暖胃。",
-  "notes": "非清真；菜單含軟哨、五花肉、豬板筋等豬肉品項，鍋底也可能使用筒骨，忌豬者不建議。地址與營業狀態於2026/07由360地圖及公開探店資料交叉核對。"
+  "notes": "非清真；菜單含軟哨、五花肉、豬板筋等豬肉品項，鍋底也可能使用筒骨，忌豬者不建議。地址與營業狀態於2026/07由360地圖及公開探店資料交叉核對。",
+  "amap_poiid": "B0J14MWMXP",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "沈堂甜水麵",
@@ -830,8 +935,8 @@ const PLACES = [
   "cuisine": "成都小吃/粉面",
   "area": "武侯區·芳草街",
   "address": "成都市武侯區芳草街新能巷2號附5號",
-  "lat": 30.63198,
-  "lng": 104.05459,
+  "lat": null,
+  "lng": null,
   "hours": "09:00-19:00",
   "price": "約15-20元/人",
   "rating": null,
@@ -844,7 +949,9 @@ const PLACES = [
    "紅油水餃"
   ],
   "reason": "芳草街人氣成都小吃店，粗面裹甜辣麻醬，搭配冰醉豆腐花解辣，適合城市漫步途中少量多嘗。",
-  "notes": "非清真；店內另售燒肉麵、水餃、抄手等，甜水麵醬料與製作器具也需現場確認，嚴格忌豬者不建議。地址與營業時間於2026/07由360地圖及公開餐飲頁面交叉核對。"
+  "notes": "非清真；店內另售燒肉麵、水餃、抄手等，甜水麵醬料與製作器具也需現場確認，嚴格忌豬者不建議。地址與營業時間於2026/07由360地圖及公開餐飲頁面交叉核對。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "白夜·花神詩空間",
@@ -854,8 +961,8 @@ const PLACES = [
   "cuisine": "咖啡/甜點/精釀酒吧",
   "area": "武侯區·芳華街",
   "address": "成都市武侯區芳華街28號",
-  "lat": 30.6295,
-  "lng": 104.053,
+  "lat": null,
+  "lng": null,
   "hours": "約10:00-次日02:00；展覽時段依活動公告",
   "price": "約40-80元/人",
   "rating": null,
@@ -867,7 +974,9 @@ const PLACES = [
    "詩人主題酒飲"
   ],
   "reason": "詩人翟永明與藝術家何多苓打造的複合文化空間，集咖啡、酒吧、書房和展覽於一體，是芳華街最具代表性的文藝休息站。",
-  "notes": "供應酒精且非清真；只喝咖啡也應確認甜點配方。2026年仍有展覽活動，前往前建議查看官方帳號確認當日開放時段。"
+  "notes": "供應酒精且非清真；只喝咖啡也應確認甜點配方。2026年仍有展覽活動，前往前建議查看官方帳號確認當日開放時段。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "飄香火鍋（玉林西路店）",
@@ -877,8 +986,8 @@ const PLACES = [
   "cuisine": "成都老火鍋",
   "area": "武侯區·玉林西路",
   "address": "成都市武侯區玉林西路34號附1號",
-  "lat": 30.6292382,
-  "lng": 104.055852,
+  "lat": 30.629255,
+  "lng": 104.055931,
   "hours": "11:00-次日01:30",
   "price": "約90-105元/人",
   "rating": null,
@@ -891,7 +1000,10 @@ const PLACES = [
    "鴨血"
   ],
   "reason": "2005年營業至今的玉林社區老火鍋，傳統牛油鍋底偏香辣微甜，是玉林西路最有代表性的正餐之一。",
-  "notes": "非清真；菜單明確含午餐肉、豬黃喉、腦花、肥腸等豬肉品項，共鍋與共用器具風險高，忌豬者不建議。店小熱門，晚餐時段可能排隊40分鐘以上。"
+  "notes": "非清真；菜單明確含午餐肉、豬黃喉、腦花、肥腸等豬肉品項，共鍋與共用器具風險高，忌豬者不建議。店小熱門，晚餐時段可能排隊40分鐘以上。",
+  "amap_poiid": "B001C03688",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "絲路面匠烤羊排（玉林店）",
@@ -901,8 +1013,8 @@ const PLACES = [
   "cuisine": "新疆菜/烤羊排",
   "area": "武侯區·玉林西路",
   "address": "成都市武侯區玉林西路167號附21號",
-  "lat": 30.630791,
-  "lng": 104.051883,
+  "lat": null,
+  "lng": null,
   "hours": "10:30-次日02:00",
   "price": "約60-80元/人",
   "rating": null,
@@ -915,7 +1027,9 @@ const PLACES = [
    "烤包子"
   ],
   "reason": "玉林西路的新疆風味餐廳，烤羊排、羊肉串與拌麵選擇完整，可作為芳草玉林城市漫步的正餐備選。",
-  "notes": "僅標清真友善：公開商戶頁歸類新疆菜，但未找到可核實的清真認證或清真標識；部分菜名只寫「肉」，嚴格清真者應先向門店確認肉源、調料與共用器具。"
+  "notes": "僅標清真友善：公開商戶頁歸類新疆菜，但未找到可核實的清真認證或清真標識；部分菜名只寫「肉」，嚴格清真者應先向門店確認肉源、調料與共用器具。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "小酒館（玉林西路店）",
@@ -925,8 +1039,8 @@ const PLACES = [
   "cuisine": "酒吧/簡餐",
   "area": "武侯區·玉林西路",
   "address": "成都市武侯區玉林西路55號",
-  "lat": 30.629555,
-  "lng": 104.05645,
+  "lat": 30.629532,
+  "lng": 104.056407,
   "hours": "15:00-次日02:00",
   "price": "約50-60元/人",
   "rating": "4.7/5",
@@ -938,7 +1052,10 @@ const PLACES = [
    "簡餐小食"
   ],
   "reason": "趙雷《成都》歌詞帶紅的玉林地標，適合在門口拍照或入內小坐，感受成都獨立音樂與酒吧文化。",
-  "notes": "供應酒精且非清真；玉林店目前以聚會休閒為主，通常沒有現場演出，想聽演出需查看其他分店的活動安排。"
+  "notes": "供應酒精且非清真；玉林店目前以聚會休閒為主，通常沒有現場演出，想聽演出需查看其他分店的活動安排。",
+  "amap_poiid": "B001C7T99N",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "玉林串串香（總店）",
@@ -947,9 +1064,9 @@ const PLACES = [
   "halal": false,
   "cuisine": "成都串串香",
   "area": "武侯區·玉林菜市",
-  "address": "成都市武侯區玉林街26號附23號",
-  "lat": 30.62672,
-  "lng": 104.06185,
+  "address": "成都市武侯區玉林街26號附23號(倪家橋地鐵站E口步行350米)",
+  "lat": 30.626662,
+  "lng": 104.062106,
   "hours": "09:00-次日04:30",
   "price": "約77元/人",
   "rating": null,
@@ -962,7 +1079,10 @@ const PLACES = [
    "骨頭清湯"
   ],
   "reason": "1995年開業的玉林老字號，是成都串串香代表店之一，從早到凌晨都能吃，適合夜市後續攤。",
-  "notes": "非清真；菜單含豬排骨等，骨頭清湯與共鍋也無法排除豬骨，忌豬者不建議。2025年末公開商戶頁仍列正常營業。"
+  "notes": "非清真；菜單含豬排骨等，骨頭清湯與共鍋也無法排除豬骨，忌豬者不建議。2025年末公開商戶頁仍列正常營業。",
+  "amap_poiid": "B001C7Y028",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "老黃記手撕烤兔（玉林街店）",
@@ -971,9 +1091,9 @@ const PLACES = [
   "halal": false,
   "cuisine": "烤兔/滷味",
   "area": "武侯區·玉林菜市",
-  "address": "成都市武侯區玉林街26號附19-21號",
-  "lat": 30.6267,
-  "lng": 104.06172,
+  "address": "成都市武侯區玉林街26號附19號(近玉林串串香總店)",
+  "lat": 30.627059,
+  "lng": 104.0622,
   "hours": "約09:30-24:00（不同平台時段有差異）",
   "price": "約56-70元/人",
   "rating": null,
@@ -986,7 +1106,10 @@ const PLACES = [
    "花生碎拌兔"
   ],
   "reason": "玉林菜市旁常年排隊的烤兔老店，整兔可現場手撕拌花生，麻辣與五香都適合外帶分享。",
-  "notes": "非清真；大眾點評菜單另有烤豬蹄、烤腦花等豬肉品項並可能共用器具。公開平台營業時段不一致，晚間前往建議先確認。"
+  "notes": "非清真；大眾點評菜單另有烤豬蹄、烤腦花等豬肉品項並可能共用器具。公開平台營業時段不一致，晚間前往建議先確認。",
+  "amap_poiid": "B001C8OQJ9",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "王媽手撕烤兔（玉林店）",
@@ -995,9 +1118,9 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "烤兔/兔頭",
   "area": "武侯區·玉林菜市",
-  "address": "成都市武侯區玉林橫街6號（玉林街26號附26-27號一帶）",
-  "lat": 30.62675,
-  "lng": 104.06198,
+  "address": "成都市武侯區玉林橫街8-10號(倪家橋地鐵站E口步行380米)",
+  "lat": 30.626687,
+  "lng": 104.061956,
   "hours": "約07:00-次日02:00",
   "price": "約58-75元/人",
   "rating": null,
@@ -1009,7 +1132,10 @@ const PLACES = [
    "兔腿"
   ],
   "reason": "玉林綜合市場的人氣代表，烤兔外酥內嫩、幹香入味，五香口味對不嗜辣者較友好。",
-  "notes": "僅標清真友善：主打兔肉但未找到清真認證，醃料、油品及共用器具均需現場確認；不同地圖使用玉林橫街6號或玉林街26號附26-27號。"
+  "notes": "僅標清真友善：主打兔肉但未找到清真認證，醃料、油品及共用器具均需現場確認；不同地圖使用玉林橫街6號或玉林街26號附26-27號。",
+  "amap_poiid": "B001C7WP7K",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "陳記爺爺婆婆蛋烘糕",
@@ -1019,8 +1145,8 @@ const PLACES = [
   "cuisine": "蛋烘糕/冰粉",
   "area": "武侯區·玉林四巷",
   "address": "成都市武侯區玉林東路9號玉林四巷口",
-  "lat": 30.629364,
-  "lng": 104.061387,
+  "lat": null,
+  "lng": null,
   "hours": "14:00-19:00；周一休息，賣完即收",
   "price": "約9元/人",
   "rating": null,
@@ -1032,7 +1158,9 @@ const PLACES = [
    "冰粉"
   ],
   "reason": "玉林四巷的老牌小攤，現烤蛋烘糕可選甜鹹十餘種口味，是下午城市漫步的經典點心。",
-  "notes": "僅標清真友善；肉鬆等鹹餡可能含豬，且共用烤具，建議只選紅豆沙等甜餡並先確認配方。周一不出攤。"
+  "notes": "僅標清真友善；肉鬆等鹹餡可能含豬，且共用烤具，建議只選紅豆沙等甜餡並先確認配方。周一不出攤。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "鍋盔女王（玉林店）",
@@ -1041,9 +1169,9 @@ const PLACES = [
   "halal": false,
   "cuisine": "南充鍋盔/涼粉",
   "area": "武侯區·玉林橫街",
-  "address": "成都市武侯區玉林橫街1號附8號",
-  "lat": 30.626509,
-  "lng": 104.061635,
+  "address": "成都市武侯區玉林街道玉林橫街1號附8號二層",
+  "lat": 30.626513,
+  "lng": 104.061623,
   "hours": "08:00-20:00",
   "price": "約8-20元/人",
   "rating": null,
@@ -1055,7 +1183,10 @@ const PLACES = [
    "旋子涼粉"
   ],
   "reason": "現烤酥脆鍋盔夾川北涼粉，是玉林街區高性價比碳水小吃，早上到傍晚都可順路買。",
-  "notes": "非清真；明確售賣紅油豬耳餡，其他餡料亦可能共用砧板與器具，忌豬者不建議。現址以2026公開地圖資料為準。"
+  "notes": "非清真；明確售賣紅油豬耳餡，其他餡料亦可能共用砧板與器具，忌豬者不建議。現址以2026公開地圖資料為準。",
+  "amap_poiid": "B0FFJN7XMF",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "慢攪粥底火鍋（玉林店）",
@@ -1064,7 +1195,7 @@ const PLACES = [
   "halal": false,
   "cuisine": "順德粥底火鍋",
   "area": "武侯區·玉林西路",
-  "address": "成都市武侯區玉林西路109號",
+  "address": "成都市武侯區玉林西路109號(芳草街地鐵站B口步行470米)",
   "lat": 30.629509,
   "lng": 104.054201,
   "hours": "營業時段以門店實時信息為準",
@@ -1079,7 +1210,10 @@ const PLACES = [
    "大骨老湯粥底"
   ],
   "reason": "玉林西路熱門粥底火鍋，牛肉與海鮮在米粥中涮煮，口味比紅油火鍋溫和，適合冬天聚餐。",
-  "notes": "非清真；粥底可能使用大骨湯，菜單明確含鮮豬肝、五花肉，忌豬者不建議。熱門時段可能長時間排隊。"
+  "notes": "非清真；粥底可能使用大骨湯，菜單明確含鮮豬肝、五花肉，忌豬者不建議。熱門時段可能長時間排隊。",
+  "amap_poiid": "B0IKTRKKNJ",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "青年火鍋（玉林總店）",
@@ -1088,9 +1222,9 @@ const PLACES = [
   "halal": false,
   "cuisine": "成都社區老火鍋",
   "area": "武侯區·玉林西路",
-  "address": "成都市武侯區玉林西路98號",
-  "lat": 30.62984,
-  "lng": 104.0521,
+  "address": "成都市武侯區白雲街37-41號(芳草街地鐵站D口步行430米)",
+  "lat": 30.627311,
+  "lng": 104.055963,
   "hours": "約17:00起營業（實時營業狀態以門店為準）",
   "price": "約80-100元/人",
   "rating": null,
@@ -1103,7 +1237,10 @@ const PLACES = [
    "紅糖餈粑"
   ],
   "reason": "居民樓下的市井老火鍋，傳統牛油鍋底與耙牛肉是招牌，塑料凳和手寫菜單保留社區感。",
-  "notes": "非清真；蛋炒飯公開資料明確為豬油製作，火鍋菜單及共鍋亦有豬肉風險。2026攻略仍推薦，17:00前到可降低排隊時間。"
+  "notes": "非清真；蛋炒飯公開資料明確為豬油製作，火鍋菜單及共鍋亦有豬肉風險。2026攻略仍推薦，17:00前到可降低排隊時間。",
+  "amap_poiid": "B0KAVR4U62",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "王牌嫩玉米餅（玉林綜合市場）",
@@ -1112,9 +1249,9 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "嫩玉米餅/蒸糕",
   "area": "武侯區·玉林綜合市場",
-  "address": "成都市武侯區玉林西街12號玉林綜合市場1層",
-  "lat": 30.626414,
-  "lng": 104.05964,
+  "address": "成都市武侯區玉林街道玉林綜合農貿市場M28號",
+  "lat": 30.626518,
+  "lng": 104.0603,
   "hours": "隨市場早市營業，建議上午前往",
   "price": "約1元/個",
   "rating": null,
@@ -1126,7 +1263,10 @@ const PLACES = [
    "鮮榨玉米汁"
   ],
   "reason": "玉林菜市場入口的排隊名攤，玉米餅剛出籠時表皮微酥、內裡軟糯，天然玉米甜味明顯。",
-  "notes": "僅標清真友善：玉米餅本身通常不含肉，但無清真認證且位於綜合熟食市場，嚴格清真者應先確認油品與製作環境；務必趁熱吃。"
+  "notes": "僅標清真友善：玉米餅本身通常不含肉，但無清真認證且位於綜合熟食市場，嚴格清真者應先確認油品與製作環境；務必趁熱吃。",
+  "amap_poiid": "B0FFGHGZTH",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "唐唐餈粑冰粉（玉林總店）",
@@ -1135,9 +1275,9 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "手搓冰粉/餈粑",
   "area": "武侯區·玉林西街",
-  "address": "成都市武侯區玉林西街後巷3號附3號",
-  "lat": 30.62491,
-  "lng": 104.060205,
+  "address": "成都市武侯區玉林西街後巷3號附3號(倪家橋兩路口火鍋對面)",
+  "lat": 30.62499,
+  "lng": 104.060131,
   "hours": "11:00-23:30",
   "price": "約13元/人",
   "rating": null,
@@ -1150,7 +1290,10 @@ const PLACES = [
    "狼牙土豆"
   ],
   "reason": "玉林總店從中午開到深夜，手搓冰粉加餈粑、紅糖與花生，是火鍋串串後的解辣甜品。",
-  "notes": "僅標清真友善；選擇基本餈粑或鮮果冰粉較穩妥，含醪糟款有發酵酒釀，嚴格清真者應避開並確認配料與共用器具。"
+  "notes": "僅標清真友善；選擇基本餈粑或鮮果冰粉較穩妥，含醪糟款有發酵酒釀，嚴格清真者應避開並確認配料與共用器具。",
+  "amap_poiid": "B0FFIAU2U8",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "峨眉山羅記豆腐腦（玉林店）",
@@ -1159,9 +1302,9 @@ const PLACES = [
   "halal": false,
   "cuisine": "峨眉豆腐腦/粉蒸肉",
   "area": "武侯區·玉林東街",
-  "address": "成都市武侯區玉林東街9號",
-  "lat": 30.62703,
-  "lng": 104.0663,
+  "address": "成都市武侯區玉林東街9號(倪家橋地鐵站A口步行190米)",
+  "lat": 30.627028,
+  "lng": 104.066338,
   "hours": "用餐時段營業，建議當天確認",
   "price": "約19元/人",
   "rating": null,
@@ -1173,7 +1316,10 @@ const PLACES = [
    "酥肉豆腐腦"
   ],
   "reason": "玉林東街的峨眉風味小吃，濃稠豆腐腦加粉條、酥肉或牛肉，適合早餐或輕午餐。",
-  "notes": "非清真；傳統酥肉與粉蒸肉通常為豬肉，湯底和配料也可能混用，忌豬者不建議。"
+  "notes": "非清真；傳統酥肉與粉蒸肉通常為豬肉，湯底和配料也可能混用，忌豬者不建議。",
+  "amap_poiid": "B0FFM8C97S",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "INFINITE·COFFEE·BAR",
@@ -1182,9 +1328,9 @@ const PLACES = [
   "halal": false,
   "cuisine": "精品咖啡/酒吧",
   "area": "武侯區·芳華街",
-  "address": "成都市武侯區芳華街5號",
-  "lat": 30.6292,
-  "lng": 104.0528,
+  "address": "成都市武侯區玉林苑(芳草街地鐵站D口步行370米)",
+  "lat": 30.623633,
+  "lng": 104.056437,
   "hours": "約10:30起營業，結束時間以門店為準",
   "price": "約23-40元/人",
   "rating": null,
@@ -1196,7 +1342,10 @@ const PLACES = [
    "晚間酒飲"
   ],
   "reason": "芳華街露營風戶外座咖啡店，Dirty與甜口拿鐵適合城市漫步中途休息，也是芳華街年輕店鋪氛圍代表。",
-  "notes": "供應酒精且非清真；只喝咖啡可現場確認奶製品與甜點配方。公開資料可確認地址及10:30開門，結束營業時間需當天查詢。"
+  "notes": "供應酒精且非清真；只喝咖啡可現場確認奶製品與甜點配方。公開資料可確認地址及10:30開門，結束營業時間需當天查詢。",
+  "amap_poiid": "B0IDRHHUHT",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "Bagel Camp",
@@ -1205,9 +1354,9 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "貝果/三明治/咖啡",
   "area": "武侯區·芳草街",
-  "address": "成都市武侯區芳草街27號附1號",
-  "lat": 30.6309,
-  "lng": 104.0547,
+  "address": "成都市武侯區芳華橫街10號(芳草街地鐵站D口步行410米)",
+  "lat": 30.623851,
+  "lng": 104.056787,
   "hours": "09:00-21:00",
   "price": "約30-50元/人",
   "rating": null,
@@ -1219,7 +1368,10 @@ const PLACES = [
    "咖啡"
   ],
   "reason": "芳草街的貝果專門店，適合作為城市漫步的輕食早餐或外帶點心。",
-  "notes": "僅標清真友善；三明治可能含培根、火腿等豬肉，建議選原味、奶酪或純素口味並確認共用器具。公開平台另有芳華橫街10號舊地址記錄，出發前建議用電話18917305927確認現址。"
+  "notes": "僅標清真友善；三明治可能含培根、火腿等豬肉，建議選原味、奶酪或純素口味並確認共用器具。公開平台另有芳華橫街10號舊地址記錄，出發前建議用電話18917305927確認現址。",
+  "amap_poiid": "B0KDCHO3SO",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "羅記霸霸牛肉麵（芳草街店）",
@@ -1229,8 +1381,8 @@ const PLACES = [
   "cuisine": "川味牛肉麵",
   "area": "武侯區·芳草街",
   "address": "成都市武侯區芳草街39號",
-  "lat": 30.6317,
-  "lng": 104.0545,
+  "lat": 30.628028,
+  "lng": 104.052884,
   "hours": "營業時段以門店實時信息為準",
   "price": "約20-35元/人",
   "rating": null,
@@ -1242,7 +1394,10 @@ const PLACES = [
    "小菜"
   ],
   "reason": "芳草街社區牛肉麵館，2026年仍有活躍招聘資訊，可作為快速早餐或輕午餐備選。",
-  "notes": "非清真；雖主打牛肉麵，但未找到清真認證，也無法確認湯底、調料及共用器具是否避豬，嚴格忌豬者不建議。"
+  "notes": "非清真；雖主打牛肉麵，但未找到清真認證，也無法確認湯底、調料及共用器具是否避豬，嚴格忌豬者不建議。",
+  "amap_poiid": "B0L1D7V4XZ",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "川院裡·清真川小館（寬窄巷子一店）",
@@ -1251,9 +1406,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真川菜/牛肉麵",
   "area": "青羊區·寬窄巷子",
-  "address": "成都市青羊區長順下街132號",
-  "lat": 30.670669,
-  "lng": 104.056808,
+  "address": "成都市青羊區上同仁路72號",
+  "lat": 30.673355,
+  "lng": 104.053151,
   "hours": "10:30-21:30",
   "price": "約60-80元/人",
   "rating": "3.9/5",
@@ -1265,7 +1420,10 @@ const PLACES = [
    "鮮椒牛肉乾拌麵"
   ],
   "reason": "寬窄巷子附近的清真川菜館，可在觀光區內吃到全牛肉版本的經典川味。",
-  "notes": "店名、地址與營業時間依大眾點評公開頁面交叉核對；出發前建議再確認當日營業狀態。"
+  "notes": "店名、地址與營業時間依大眾點評公開頁面交叉核對；出發前建議再確認當日營業狀態。",
+  "amap_poiid": "B0HUNM9OI4",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "清真高原第一家資格烤羊肉（玉林南路總店）",
@@ -1274,9 +1432,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真燒烤/羊肉",
   "area": "武侯區·玉林",
-  "address": "成都市武侯區玉林南路52號",
-  "lat": 30.622477,
-  "lng": 104.057743,
+  "address": "成都市武侯區玉林南路50號",
+  "lat": 30.624137,
+  "lng": 104.057639,
   "hours": "17:00-次日02:00",
   "price": "約80元/人",
   "rating": "4.1/5",
@@ -1289,7 +1447,10 @@ const PLACES = [
    "羊肉湯"
   ],
   "reason": "玉林夜宵圈的清真烤羊肉店，適合晚間專程吃羊肉串與烤羊排。",
-  "notes": "大眾點評截圖寫玉林店，公開地圖資料標為玉林南路總店。"
+  "notes": "大眾點評截圖寫玉林店，公開地圖資料標為玉林南路總店。",
+  "amap_poiid": "B0FFGWRAHR",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "清真皇城壩牛肉（肖家河店）",
@@ -1299,8 +1460,8 @@ const PLACES = [
   "cuisine": "清真川菜/全牛宴",
   "area": "武侯區·肖家河",
   "address": "成都市武侯區肖家河街2號",
-  "lat": 30.62979,
-  "lng": 104.044301,
+  "lat": 30.632632,
+  "lng": 104.044685,
   "hours": "約11:00起營業",
   "price": "約50元/人",
   "rating": "4.0/5",
@@ -1313,7 +1474,10 @@ const PLACES = [
    "牛肉豆花"
   ],
   "reason": "皇城壩牛肉體系的社區分店，以清真川味全牛菜為主。",
-  "notes": "結束營業時間未可靠查得，建議出發前確認。"
+  "notes": "結束營業時間未可靠查得，建議出發前確認。",
+  "amap_poiid": "B001C7WH8N",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "清真.回香園（南街店）",
@@ -1322,9 +1486,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真川菜/牛肉",
   "area": "都江堰市·南街",
-  "address": "成都市都江堰市南街51號（清真寺旁）",
-  "lat": 30.993937,
-  "lng": 103.616295,
+  "address": "成都市都江堰市南街51號",
+  "lat": 30.997779,
+  "lng": 103.61635,
   "hours": "08:00-21:00",
   "price": "約39元/人",
   "rating": "4.1/5",
@@ -1335,7 +1499,10 @@ const PLACES = [
    "泡椒牛肝"
   ],
   "reason": "都江堰南街清真寺旁的清真川菜館，可作為都江堰行程正餐。",
-  "notes": "保留大眾點評店名中的英文句點「.」。"
+  "notes": "保留大眾點評店名中的英文句點「.」。",
+  "amap_poiid": "B001C7V7CK",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "胖老漢椒麻雞清真新疆菜（西御街店）",
@@ -1344,9 +1511,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真新疆菜",
   "area": "青羊區·天府廣場/西御街",
-  "address": "成都市青羊區西御街77號國信大廈1樓",
-  "lat": 30.656326,
-  "lng": 104.060755,
+  "address": "成都市青羊區西御街77號1棟1層1號",
+  "lat": 30.656142,
+  "lng": 104.061302,
   "hours": "09:30-21:30",
   "price": "約68元/人",
   "rating": "4.4/5",
@@ -1359,7 +1526,10 @@ const PLACES = [
    "大盤雞"
   ],
   "reason": "天府廣場旁的清真新疆菜選擇，椒麻雞與烤串適合多人分享。",
-  "notes": "與既有胖老漢天府廣場店資料視為不同分店，按西御街門牌獨立標註。"
+  "notes": "與既有胖老漢天府廣場店資料視為不同分店，按西御街門牌獨立標註。",
+  "amap_poiid": "B0FFIFYF31",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "來伊回麻辣燙·火鍋串串清真（天府廣場店）",
@@ -1368,9 +1538,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真麻辣燙/火鍋串串",
   "area": "青羊區·天府廣場/西御街",
-  "address": "成都市青羊區西御街6號附8號1層",
-  "lat": 30.656326,
-  "lng": 104.060755,
+  "address": "成都市青羊區西御街6號附8(天府廣場地鐵站西1南口步行70米)",
+  "lat": 30.656543,
+  "lng": 104.06296,
   "hours": "09:30-次日00:30（出發前確認）",
   "price": null,
   "rating": null,
@@ -1384,7 +1554,10 @@ const PLACES = [
    "冒菜"
   ],
   "reason": "皇城清真寺旁的清真麻辣燙與火鍋串串，適合在天府廣場行程中替換正餐。",
-  "notes": "地址及清真經營信息已核對；營業時間來自門店公開招聘頁面，出發前仍建議以大眾點評門店頁為準。"
+  "notes": "地址及清真經營信息已核對；營業時間來自門店公開招聘頁面，出發前仍建議以大眾點評門店頁為準。",
+  "amap_poiid": "B0IB1UGRYN",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "清真·餚擺先生·窯爐烤魚（天府廣場店）",
@@ -1393,9 +1566,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真窯爐烤魚",
   "area": "青羊區·天府廣場/西御街",
-  "address": "成都市青羊區西御街6號附9號、10號",
-  "lat": 30.656326,
-  "lng": 104.060755,
+  "address": "成都市青羊區小河街2號附2號皇城清真寺(西南角)",
+  "lat": 30.656525,
+  "lng": 104.062725,
   "hours": "10:30-24:00",
   "price": null,
   "rating": "4.4/5",
@@ -1406,7 +1579,10 @@ const PLACES = [
    "時蔬配菜"
   ],
   "reason": "皇城清真寺旁的清真窯爐烤魚，適合在天府廣場行程中替換正餐。",
-  "notes": "品牌公開資料確認成都天府廣場旗艦店於2025年開業；營業時間與評分由用戶依據大眾點評提供。"
+  "notes": "品牌公開資料確認成都天府廣場旗艦店於2025年開業；營業時間與評分由用戶依據大眾點評提供。",
+  "amap_poiid": "B0LDZ9V72B",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "清真老皇城牛肉館",
@@ -1415,9 +1591,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真川菜/牛肉",
   "area": "青羊區·天府廣場/西御街",
-  "address": "成都市青羊區西御街8號附3號",
-  "lat": 30.656326,
-  "lng": 104.060755,
+  "address": "成都市武侯區武侯祠大街19號附156號",
+  "lat": 30.646431,
+  "lng": 104.057996,
   "hours": "11:00-21:00",
   "price": "約60-80元/人",
   "rating": "3.9/5",
@@ -1430,7 +1606,10 @@ const PLACES = [
    "蹄筋"
   ],
   "reason": "皇城清真寺周邊的老派清真牛肉川菜館。",
-  "notes": "地址已核對；地標密集，地圖點位以西御街門牌位置標示。"
+  "notes": "地址已核對；地標密集，地圖點位以西御街門牌位置標示。",
+  "amap_poiid": "B0L3YSJ0BM",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "清真嘉香齋牛雜火鍋（四季豪庭店）",
@@ -1439,9 +1618,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真牛雜火鍋",
   "area": "青白江區·彌牟鎮/唐家寺",
-  "address": "成都市青白江區彌牟鎮彌牟南街2號四季豪庭",
-  "lat": 30.881516,
-  "lng": 104.203098,
+  "address": "成都市青白江區鎮南路43號",
+  "lat": 30.878565,
+  "lng": 104.201242,
   "hours": "約10:00-22:00",
   "price": "約77元/人",
   "rating": "4.4/5",
@@ -1453,7 +1632,10 @@ const PLACES = [
    "苕粉"
   ],
   "reason": "唐家寺回民聚居區附近的清真牛雜火鍋。",
-  "notes": "公開資料僅確認四季豪庭位於彌牟南街2號；店鋪具體商鋪號未查得，點位標在小區商業區，前往前請於大眾點評確認。"
+  "notes": "公開資料僅確認四季豪庭位於彌牟南街2號；店鋪具體商鋪號未查得，點位標在小區商業區，前往前請於大眾點評確認。",
+  "amap_poiid": "B0FFL1IZHB",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "金鳳苑清真餐廳",
@@ -1463,15 +1645,17 @@ const PLACES = [
   "cuisine": "清真家常菜",
   "area": "都江堰市·迎賓大道",
   "address": "成都市都江堰市迎賓大道69號2棟1層3號",
-  "lat": 30.965881,
-  "lng": 103.658446,
+  "lat": null,
+  "lng": null,
   "hours": "10:00-20:00",
   "price": null,
   "rating": "4.0/5",
   "rating_source": "大眾點評截圖（51條，2026/07/12）",
   "dishes": [],
   "reason": "都江堰城區的清真家常餐廳，可作為景區外用餐備選。",
-  "notes": "公開來源亦寫作「清真·金鳳苑伊斯蘭餐廳」。"
+  "notes": "公開來源亦寫作「清真·金鳳苑伊斯蘭餐廳」。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "清真冒菜（仁厚街店）",
@@ -1480,9 +1664,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真冒菜/川味小吃",
   "area": "青羊區·寬窄巷子/仁厚街",
-  "address": "成都市青羊區仁厚街31號附4號",
-  "lat": 30.662995,
-  "lng": 104.058355,
+  "address": "成都市青羊區仁厚街22號附4號(寬窄巷子)",
+  "lat": 30.663007,
+  "lng": 104.058364,
   "hours": null,
   "price": null,
   "rating": "3.6/5",
@@ -1493,7 +1677,10 @@ const PLACES = [
    "抄手"
   ],
   "reason": "仁厚街清真餐飲聚落中的平价川味冒菜。",
-  "notes": "營業時間與人均未找到可靠公開資料，建議先在點評確認。"
+  "notes": "營業時間與人均未找到可靠公開資料，建議先在點評確認。",
+  "amap_poiid": "B0MUP1FOGM",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "古達麥·清真鮮牛肉漢堡（寬窄巷子店）",
@@ -1502,9 +1689,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真牛肉漢堡",
   "area": "青羊區·寬窄巷子",
-  "address": "成都市青羊區桂花巷51號1棟1單元1樓2號",
-  "lat": 30.662259,
-  "lng": 104.058732,
+  "address": "成都市青羊區桂花巷51-2號",
+  "lat": 30.662129,
+  "lng": 104.059007,
   "hours": "09:00-22:00",
   "price": "約23元/人",
   "rating": "4.2/5",
@@ -1514,7 +1701,10 @@ const PLACES = [
    "手工牛肉餅漢堡"
   ],
   "reason": "寬窄巷子附近少見的清真鮮牛肉漢堡，適合快速補給。",
-  "notes": "店名與門牌已交叉核對。"
+  "notes": "店名與門牌已交叉核對。",
+  "amap_poiid": "B0FFMGE2JM",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "曉味火鍋·清真（郫縣店）",
@@ -1524,15 +1714,17 @@ const PLACES = [
   "cuisine": "清真火鍋",
   "area": "郫都區·郫筒",
   "address": "成都市郫都區郫筒鎮梨園路一段190號1層",
-  "lat": 30.82107,
-  "lng": 103.874672,
+  "lat": null,
+  "lng": null,
   "hours": null,
   "price": null,
   "rating": "4.8/5",
   "rating_source": "大眾點評截圖（212條，2026/07/12）",
   "dishes": [],
   "reason": "郫都城區的清真火鍋分店。",
-  "notes": "公開資料可確認經營主體與地址，實時營業狀態請於出發前確認。"
+  "notes": "公開資料可確認經營主體與地址，實時營業狀態請於出發前確認。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "清真·西街味道串串火鍋（南橋清真寺店）",
@@ -1541,9 +1733,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真串串火鍋",
   "area": "都江堰市·南橋/清真寺",
-  "address": "成都市都江堰市南街54號附近",
-  "lat": 30.993937,
-  "lng": 103.616295,
+  "address": "成都市都江堰市都江堰景區西街出入口2號門東190米",
+  "lat": 30.997881,
+  "lng": 103.615367,
   "hours": "09:00-23:00",
   "price": "約54元/人",
   "rating": "4.2/5",
@@ -1554,7 +1746,10 @@ const PLACES = [
    "清真火鍋"
   ],
   "reason": "南橋與清真寺附近的清真串串火鍋，適合都江堰行程晚餐。",
-  "notes": "完整分店名已確認；公開地址有西街54號與南街54號兩種說法，點位暫依南街清真寺附近標示。"
+  "notes": "完整分店名已確認；公開地址有西街54號與南街54號兩種說法，點位暫依南街清真寺附近標示。",
+  "amap_poiid": "B0FFMAJDXH",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "清真·牛不比火鍋（青白江店）",
@@ -1564,8 +1759,8 @@ const PLACES = [
   "cuisine": "清真牛肉火鍋",
   "area": "青白江區·彌牟鎮/唐家寺",
   "address": "成都市青白江區彌牟鎮民族商貿西街6-16號",
-  "lat": 30.881516,
-  "lng": 104.203098,
+  "lat": 30.87995,
+  "lng": 104.205092,
   "hours": "11:00-22:30",
   "price": null,
   "rating": "4.9/5",
@@ -1576,7 +1771,10 @@ const PLACES = [
    "手打牛肉丸"
   ],
   "reason": "牛不比清真火鍋的青白江分店，位於唐家寺回民聚居區。",
-  "notes": "地址已核對，門牌地理編碼落在彌牟鎮商業區中心。"
+  "notes": "地址已核對，門牌地理編碼落在彌牟鎮商業區中心。",
+  "amap_poiid": "B0FFL7DO6A",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "奎伊鮮·清真鮮毛肚火鍋（悅薈時代廣場店）",
@@ -1585,9 +1783,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真毛肚牛雜火鍋",
   "area": "青白江區·悅薈時代廣場",
-  "address": "成都市青白江區華金大道三段66號悅薈時代廣場1樓",
-  "lat": 30.871723,
-  "lng": 104.262858,
+  "address": "成都市青白江區華金大道三段56號附14-17號",
+  "lat": 30.882825,
+  "lng": 104.271395,
   "hours": null,
   "price": null,
   "rating": "4.0/5",
@@ -1598,7 +1796,10 @@ const PLACES = [
    "牛筋"
   ],
   "reason": "青白江商業區的清真毛肚牛雜火鍋。",
-  "notes": "公開資料亦省略「清真」寫作奎伊鮮鮮毛肚牛雜火鍋；點位為悅薈時代廣場。"
+  "notes": "公開資料亦省略「清真」寫作奎伊鮮鮮毛肚牛雜火鍋；點位為悅薈時代廣場。",
+  "amap_poiid": "B0FFLKEGDM",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "張記清真唐家寺回香齋（玉雙店）",
@@ -1607,16 +1808,19 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真家常菜",
   "area": "成華區·玉雙路",
-  "address": "成都市成華區玉雙路商圈（具體門牌待核對）",
-  "lat": 30.654025,
-  "lng": 104.098857,
+  "address": "成都市成華區玉雙路5號附40號(玉雙路地鐵站F1口步行370米)",
+  "lat": 30.655518,
+  "lng": 104.095141,
   "hours": null,
   "price": null,
   "rating": "3.8/5",
   "rating_source": "大眾點評截圖（53條，2026/07/12）",
   "dishes": [],
   "reason": "大眾點評截圖所列的唐家寺系清真餐館玉雙分店。",
-  "notes": "⚠️ 公開網頁無法確認具體門牌，本圖僅標示玉雙路商圈約略位置；前往前請從大眾點評店鋪頁開啟導航。"
+  "notes": "⚠️ 公開網頁無法確認具體門牌，本圖僅標示玉雙路商圈約略位置；前往前請從大眾點評店鋪頁開啟導航。",
+  "amap_poiid": "B0FFK923QK",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "清真·貢院裡的川派牛排面（皇城清真寺店）",
@@ -1625,9 +1829,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真牛排面",
   "area": "青羊區·皇城清真寺/西御街",
-  "address": "成都市青羊區西御街6號附2號",
-  "lat": 30.656326,
-  "lng": 104.060755,
+  "address": "成都市青羊區西御街6號附2號(皇城清真寺旁)",
+  "lat": 30.656552,
+  "lng": 104.063098,
   "hours": "07:00-21:00",
   "price": "約25元/人",
   "rating": "4.0/5",
@@ -1636,7 +1840,10 @@ const PLACES = [
    "川派牛排面"
   ],
   "reason": "皇城清真寺旁的清真早餐與麵食選擇。",
-  "notes": "大眾點評截圖寫「貢院裡川派牛排面」，公開店名多寫「貢院裡的川派牛排面」。"
+  "notes": "大眾點評截圖寫「貢院裡川派牛排面」，公開店名多寫「貢院裡的川派牛排面」。",
+  "amap_poiid": "B0HD4ZH4JW",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "清真老馬資格烤羊肉串（望平街店）",
@@ -1646,8 +1853,8 @@ const PLACES = [
   "cuisine": "清真燒烤",
   "area": "成華區·望平街",
   "address": "成都市成華區望平街94號",
-  "lat": 30.655021,
-  "lng": 104.090641,
+  "lat": 30.655347,
+  "lng": 104.090759,
   "hours": null,
   "price": null,
   "rating": "4.2/5",
@@ -1656,7 +1863,10 @@ const PLACES = [
    "烤羊肉串"
   ],
   "reason": "望平街夜生活動線上的清真烤羊肉串店。",
-  "notes": "地址已交叉核對，營業時間請於出發前確認。"
+  "notes": "地址已交叉核對，營業時間請於出發前確認。",
+  "amap_poiid": "B0FFGSLV2W",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "清真·西遇憶品·燒烤·西北菜·手抓羊肉（九眼橋店）",
@@ -1665,9 +1875,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真西北菜/東鄉手抓",
   "area": "武侯區·九眼橋",
-  "address": "成都市武侯區一環路南一段9號附209-210號",
-  "lat": 30.636406,
-  "lng": 104.082179,
+  "address": "成都市武侯區一環路南一段9號附209號附210號",
+  "lat": 30.636525,
+  "lng": 104.081676,
   "hours": null,
   "price": null,
   "rating": "4.3/5",
@@ -1679,7 +1889,10 @@ const PLACES = [
    "青稞餅"
   ],
   "reason": "主打甘肅東鄉手抓羊肉與西北菜的清真餐廳。",
-  "notes": "截圖未顯示分店；公開資料有九眼橋、天仙橋、青龍巷多店，本圖採用名稱最吻合的九眼橋店並標出完整分店名。"
+  "notes": "截圖未顯示分店；公開資料有九眼橋、天仙橋、青龍巷多店，本圖採用名稱最吻合的九眼橋店並標出完整分店名。",
+  "amap_poiid": "B0J3RH1T6Q",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "清真·阿凡提烤羊肉（西華大學店）",
@@ -1688,9 +1901,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真燒烤/羊肉",
   "area": "郫都區·西華大學",
-  "address": "成都市郫都區紅光街道金怡巷110號",
-  "lat": 30.77761,
-  "lng": 103.944687,
+  "address": "成都市郫都區紅光鎮金怡巷110號附246號",
+  "lat": 30.785457,
+  "lng": 103.952462,
   "hours": null,
   "price": null,
   "rating": "4.6/5",
@@ -1700,7 +1913,10 @@ const PLACES = [
    "羊肉串"
   ],
   "reason": "西華大學周邊的清真烤羊肉店。",
-  "notes": "地址可確認，其他實時資訊未可靠查得。"
+  "notes": "地址可確認，其他實時資訊未可靠查得。",
+  "amap_poiid": "B0FFKSFGFH",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "清真唐記皇城壩壩牛肉麵",
@@ -1709,9 +1925,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真牛肉麵/川味牛肉菜",
   "area": "武侯區·玉林",
-  "address": "成都市武侯區玉林街7號附3號",
-  "lat": 30.628208,
-  "lng": 104.062274,
+  "address": "成都市武侯區玉林街7號附3號(省體育館/公交玉林街站/玉林中學)",
+  "lat": 30.628252,
+  "lng": 104.062341,
   "hours": "08:00-21:30",
   "price": null,
   "rating": "4.1/5",
@@ -1724,7 +1940,10 @@ const PLACES = [
    "番茄牛尾湯"
   ],
   "reason": "玉林社區內兼具牛肉麵與全牛川菜的清真老館。",
-  "notes": "公開資料未顯示正式分店後綴。"
+  "notes": "公開資料未顯示正式分店後綴。",
+  "amap_poiid": "B001C8RNFN",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "清真小馬烤肉（神仙樹北路店）",
@@ -1733,9 +1952,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真燒烤/西北菜",
   "area": "武侯區·神仙樹",
-  "address": "成都市武侯區神仙樹北路104-106號",
-  "lat": 30.620251,
-  "lng": 104.048988,
+  "address": "成都市武侯區神仙樹北路104號至106號",
+  "lat": 30.619413,
+  "lng": 104.048116,
   "hours": "12:00起營業（結束時間以門店當日為準）",
   "price": "約72元/人",
   "rating": "4.6/5",
@@ -1748,7 +1967,10 @@ const PLACES = [
    "手抓羊肉"
   ],
   "reason": "神仙樹片區的清真烤肉與手抓羊肉店。",
-  "notes": "12:00開始營業，勿提早抵達；結束時間建議出發前確認。"
+  "notes": "12:00開始營業，勿提早抵達；結束時間建議出發前確認。",
+  "amap_poiid": "B0FFK76J05",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "清真馬老四資格烤羊肉串（石羊場店）",
@@ -1757,9 +1979,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真燒烤",
   "area": "武侯區·石羊場",
-  "address": "成都市武侯區仁和南街63號",
-  "lat": 30.58159,
-  "lng": 104.02989,
+  "address": "成都市武侯區仁和南街63號(三元地鐵站F口步行400米)",
+  "lat": 30.581437,
+  "lng": 104.029832,
   "hours": null,
   "price": null,
   "rating": "4.8/5",
@@ -1771,7 +1993,10 @@ const PLACES = [
    "烤土豆"
   ],
   "reason": "石羊場片區的清真烤羊肉串店。",
-  "notes": "公開頁面可確認店名與地址，實時營業資訊請再確認。"
+  "notes": "公開頁面可確認店名與地址，實時營業資訊請再確認。",
+  "amap_poiid": "B0FFJ285FI",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "清真·牛不比火鍋（營門口店）",
@@ -1780,9 +2005,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真牛肉火鍋",
   "area": "金牛區·營門口",
-  "address": "成都市金牛區鄉農寺街59號金港商城B座底商",
-  "lat": 30.68393,
-  "lng": 104.04394,
+  "address": "成都市金牛區鄉農寺街59號金港商城營門口路店F1層",
+  "lat": 30.683917,
+  "lng": 104.043918,
   "hours": null,
   "price": "約90元/人",
   "rating": "4.7/5",
@@ -1795,7 +2020,10 @@ const PLACES = [
    "大刀牛肉"
   ],
   "reason": "牛不比清真牛肉火鍋的營門口分店。",
-  "notes": "實時營業時間未可靠查得。"
+  "notes": "實時營業時間未可靠查得。",
+  "amap_poiid": "B0FFG1JBG5",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "伊蘭麒蘭馨園·川菜·清真館（339電視塔店）",
@@ -1804,9 +2032,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真川菜",
   "area": "成華區·339電視塔/玉雙路",
-  "address": "成都市成華區雙林巷11號附10號",
-  "lat": 30.658867,
-  "lng": 104.100325,
+  "address": "成都市成華區雙林巷11號附4號",
+  "lat": 30.659074,
+  "lng": 104.100338,
   "hours": "約10:00起營業",
   "price": "約63元/人",
   "rating": "4.2/5",
@@ -1819,7 +2047,10 @@ const PLACES = [
    "紅燒羊蠍子"
   ],
   "reason": "339電視塔附近的清真川菜館，菜色比單純牛肉麵與火鍋更完整。",
-  "notes": "截圖文字「伊蘭麒麟馨園」經大眾點評與攜程頁面確認完整店名為「伊蘭麒蘭馨園」。"
+  "notes": "截圖文字「伊蘭麒麟馨園」經大眾點評與攜程頁面確認完整店名為「伊蘭麒蘭馨園」。",
+  "amap_poiid": "B0FFG4CY99",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "馬記清真肺片（玉林中橫巷）",
@@ -1828,9 +2059,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真滷味/涼拌牛肉",
   "area": "武侯區·玉林綜合市場",
-  "address": "成都市武侯區玉林西街12號玉林綜合市場內",
-  "lat": 30.62647,
-  "lng": 104.060757,
+  "address": "成都市武侯區玉林綜合菜市場1層A-21",
+  "lat": 30.626292,
+  "lng": 104.059779,
   "hours": "約09:00-12:00、16:00-18:00",
   "price": "約40元/人",
   "rating": "4.0/5",
@@ -1842,7 +2073,10 @@ const PLACES = [
    "牛舌"
   ],
   "reason": "玉林市場裡的清真涼拌牛肉與肺片攤店。",
-  "notes": "營業時段來自探店資料且較短，建議當天先確認；具體市場鋪位未公開。"
+  "notes": "營業時段來自探店資料且較短，建議當天先確認；具體市場鋪位未公開。",
+  "amap_poiid": "B0FFG0YG1E",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "石榴紅·疆來新疆特色清真餐廳（溫江店）",
@@ -1851,9 +2085,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真新疆菜",
   "area": "溫江區·湧泉",
-  "address": "成都市溫江區江浦路344-346號",
-  "lat": 30.683914,
-  "lng": 103.878772,
+  "address": "成都市溫江區江浦路346號344號",
+  "lat": 30.683729,
+  "lng": 103.884072,
   "hours": null,
   "price": null,
   "rating": "4.4/5",
@@ -1864,7 +2098,10 @@ const PLACES = [
    "手抓飯"
   ],
   "reason": "溫江區的新疆特色清真餐廳。",
-  "notes": "工商資料可確認經營主體與地址；實時營業狀態請從大眾點評確認。"
+  "notes": "工商資料可確認經營主體與地址；實時營業狀態請從大眾點評確認。",
+  "amap_poiid": "B0FFKPF3LH",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "達伍德清真火鍋（仁厚街店）",
@@ -1873,9 +2110,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真火鍋/麵食",
   "area": "青羊區·寬窄巷子/仁厚街",
-  "address": "成都市青羊區仁厚街22號附4號",
-  "lat": 30.662995,
-  "lng": 104.058355,
+  "address": "成都市青羊區仁厚街22-附5號",
+  "lat": 30.663089,
+  "lng": 104.058458,
   "hours": null,
   "price": null,
   "rating": "4.2/5",
@@ -1886,7 +2123,10 @@ const PLACES = [
    "雜醬面"
   ],
   "reason": "仁厚街清真餐飲聚落中的清真火鍋選擇。",
-  "notes": "公開來源對門牌附4號/附5號存在差異，本圖依360地圖的附4號標示。"
+  "notes": "公開來源對門牌附4號/附5號存在差異，本圖依360地圖的附4號標示。",
+  "amap_poiid": "B0FFG2J371",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "清真·十字一號牛肉館（邛崍店）",
@@ -1895,9 +2135,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真牛肉館",
   "area": "邛崍市·文君街道",
-  "address": "成都市邛崍市陽光路86號附201號2層",
-  "lat": 30.400641,
-  "lng": 103.481548,
+  "address": "成都市邛崍市陽光路86號附201號",
+  "lat": 30.40031,
+  "lng": 103.479695,
   "hours": null,
   "price": null,
   "rating": "3.8/5",
@@ -1907,7 +2147,10 @@ const PLACES = [
    "牛肉湯"
   ],
   "reason": "邛崍城區的清真牛肉館。",
-  "notes": "僅查得較早商家名錄，2026實時營業狀態未獲可靠來源確認；前往前務必先於點評確認。"
+  "notes": "僅查得較早商家名錄，2026實時營業狀態未獲可靠來源確認；前往前務必先於點評確認。",
+  "amap_poiid": "B0FFI9323Y",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "蘇坦·中東料理·清真·西餐廳（太古里店）",
@@ -1917,8 +2160,8 @@ const PLACES = [
   "cuisine": "中東/土耳其料理",
   "area": "錦江區 春熙路/太古里",
   "address": "中紗帽街8號成都遠洋太古里東里25棟2樓2307B",
-  "lat": 30.6535,
-  "lng": 104.081,
+  "lat": null,
+  "lng": null,
   "hours": "11:30-21:30",
   "price": "人均約130元",
   "rating": "4.7/5",
@@ -1931,7 +2174,9 @@ const PLACES = [
    "土耳其酸奶水果沙拉"
   ],
   "reason": "太古里核心商圈少見的清真認證中東餐廳，由埃及大廚主理，適合遊客就近用餐",
-  "notes": "店名明確標註清真Halal；西安姑娘與埃及大廚Ahmad創辦的品牌"
+  "notes": "店名明確標註清真Halal；西安姑娘與埃及大廚Ahmad創辦的品牌",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "香料集市新疆餐廳·清真聚餐（成都遠洋太古里店）",
@@ -1940,9 +2185,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "新疆菜",
   "area": "錦江區 春熙路/太古里",
-  "address": "成都市錦江區北糠市街成都遠洋太古里負1層M050a號（百麗宮電影院旁）",
-  "lat": 30.653334,
-  "lng": 104.083726,
+  "address": "成都市錦江區中紗帽街8號成都遠洋太古里中裡2層2240",
+  "lat": 30.652816,
+  "lng": 104.083614,
   "hours": "11:00-22:00",
   "price": "人均約99元",
   "rating": "4.0/5",
@@ -1954,7 +2199,10 @@ const PLACES = [
    "烤包子"
   ],
   "reason": "上海人氣新疆餐飲品牌駐蓉店，太古里店有落地窗景與花園露天位，環境出眾",
-  "notes": "大眾點評店名明確標示「清真聚餐」；另有萬象城店（成華區雙慶路8號萬象城1期A館5樓507號）"
+  "notes": "大眾點評店名明確標示「清真聚餐」；另有萬象城店（成華區雙慶路8號萬象城1期A館5樓507號）",
+  "amap_poiid": "B0FFGZYSP2",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "後花園（新疆私房菜）",
@@ -1964,8 +2212,8 @@ const PLACES = [
   "cuisine": "新疆菜/私房菜",
   "area": "青羊區 寬窄巷子/小南街",
   "address": "小南街包家巷99號院門口",
-  "lat": 30.662,
-  "lng": 104.053,
+  "lat": null,
+  "lng": null,
   "hours": "12:00-14:00, 17:30-21:30",
   "price": "人均約91元",
   "rating": "4.5/5",
@@ -1978,7 +2226,9 @@ const PLACES = [
    "手抓肉"
   ],
   "reason": "寬窄巷子附近預約制新疆私房菜，開店多年出品穩定，成都新疆菜排行榜第2名",
-  "notes": "需提前預約，食材有限售完即止，烤羊腿和涼皮需預約"
+  "notes": "需提前預約，食材有限售完即止，烤羊腿和涼皮需預約",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "一個勺子新疆錫伯主題私房菜",
@@ -1988,8 +2238,8 @@ const PLACES = [
   "cuisine": "新疆菜/錫伯族菜",
   "area": "青羊區 騾馬市/長順下街",
   "address": "長順下街紅牆巷49號附8號",
-  "lat": 30.669,
-  "lng": 104.055,
+  "lat": null,
+  "lng": null,
   "hours": "12:00-14:30, 17:30-22:00",
   "price": "人均約80元",
   "rating": "4.5/5",
@@ -2001,7 +2251,9 @@ const PLACES = [
    "燻馬排"
   ],
   "reason": "融合經典新疆菜與小眾錫伯族特色的主題私房菜，風味獨特",
-  "notes": "錫伯族並非穆斯林民族，菜單含燻馬腸/燻馬排等馬肉菜品，嚴格清真飲食者請注意甄別，標記為友善"
+  "notes": "錫伯族並非穆斯林民族，菜單含燻馬腸/燻馬排等馬肉菜品，嚴格清真飲食者請注意甄別，標記為友善",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "新疆飯店",
@@ -2011,8 +2263,8 @@ const PLACES = [
   "cuisine": "新疆菜",
   "area": "金牛區 一品天下/金沙遺址周邊",
   "address": "蜀金路36號（蜀金路金陽路交叉口中國農業銀行旁）",
-  "lat": 30.67963,
-  "lng": 104.00362,
+  "lat": null,
+  "lng": null,
   "hours": "10:00-21:30",
   "price": "人均約84元",
   "rating": "4.5/5",
@@ -2024,7 +2276,9 @@ const PLACES = [
    "烤羊肉串"
   ],
   "reason": "金沙遺址周邊正宗新疆風味老店，成都新疆菜館排行榜前十",
-  "notes": "未查到清真認證公示，按清真友善收錄"
+  "notes": "未查到清真認證公示，按清真友善收錄",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "雪蓮美食飯店",
@@ -2034,8 +2288,8 @@ const PLACES = [
   "cuisine": "新疆/青海清真風味",
   "area": "高新區 天府三街",
   "address": "天府三街947號店鋪",
-  "lat": 30.543,
-  "lng": 104.068,
+  "lat": null,
+  "lng": null,
   "hours": "09:00-22:00",
   "price": "人均約62元",
   "rating": "4.5/5",
@@ -2048,7 +2302,9 @@ const PLACES = [
    "大盤雞"
   ],
   "reason": "高新區軟體園一帶少見的西北清真風味館子，上班族聚餐熱門",
-  "notes": "羊肉選用青海羊，未見認證公示，標記友善"
+  "notes": "羊肉選用青海羊，未見認證公示，標記友善",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "達斯坦風情美食",
@@ -2058,8 +2314,8 @@ const PLACES = [
   "cuisine": "新疆菜",
   "area": "金牛區 一品天下/清溪西路",
   "address": "清溪西路40號",
-  "lat": 30.67906,
-  "lng": 104.0214,
+  "lat": null,
+  "lng": null,
   "hours": "09:30-14:00, 17:00-22:30",
   "price": "人均約84元",
   "rating": "4.5/5",
@@ -2072,7 +2328,9 @@ const PLACES = [
    "羊肉粉湯"
   ],
   "reason": "維族建築風格裝修，每晚7-8點有新疆歌舞表演，氛圍濃鬱",
-  "notes": "電話028-86123444；未見認證公示，標記友善"
+  "notes": "電話028-86123444；未見認證公示，標記友善",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "開斯巴郎",
@@ -2081,9 +2339,9 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "新疆菜",
   "area": "武侯區 紅瓦寺/川大周邊",
-  "address": "一環路南一段9號紅瓦寺凱悅新城B1層附14號",
-  "lat": 30.632,
-  "lng": 104.08,
+  "address": "成都市武侯區一環路南一段9號1幢-1層14",
+  "lat": 30.636708,
+  "lng": 104.081906,
   "hours": "09:00-22:30",
   "price": "人均約46元",
   "rating": "4.5/5",
@@ -2096,7 +2354,10 @@ const PLACES = [
    "過油肉拌麵"
   ],
   "reason": "紅瓦寺三大新疆餐館之一，主廚曾任職烏魯木齊胖老漢餐廳，性價比高",
-  "notes": "川大學生聚餐熱門，翻新後人氣上升"
+  "notes": "川大學生聚餐熱門，翻新後人氣上升",
+  "amap_poiid": "B0FFFGVE59",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "木卡姆新疆餐廳",
@@ -2106,8 +2367,8 @@ const PLACES = [
   "cuisine": "新疆菜",
   "area": "武侯區 紅瓦寺/川大周邊",
   "address": "一環路南一段紅瓦寺凱悅新城（與西域風情、開斯巴郎相隔數十米）",
-  "lat": 30.6318,
-  "lng": 104.0795,
+  "lat": null,
+  "lng": null,
   "hours": null,
   "price": null,
   "rating": null,
@@ -2118,7 +2379,9 @@ const PLACES = [
    "拌麵"
   ],
   "reason": "紅瓦寺凱悅新城三大新疆餐館之一，川大周邊穆斯林學生常去",
-  "notes": "公開資料較少，評分未查到，填null"
+  "notes": "公開資料較少，評分未查到，填null",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "伊真軒全牛宴（唐家寺店）",
@@ -2128,8 +2391,8 @@ const PLACES = [
   "cuisine": "清真川菜/全牛宴",
   "area": "青白江區 彌牟鎮（唐家寺）",
   "address": "彌牟鎮八陣巷28號",
-  "lat": 30.8796,
-  "lng": 104.20177,
+  "lat": null,
+  "lng": null,
   "hours": null,
   "price": "人均約53元",
   "rating": "4.0/5",
@@ -2142,7 +2405,9 @@ const PLACES = [
    "傳統八寶飯"
   ],
   "reason": "唐家寺回民聚居區的老資格清真全牛宴館子，環境乾淨、分量足",
-  "notes": "食客評價為'資格的清真館子'；與唐家寺羅記滷坊同片區但為不同店"
+  "notes": "食客評價為'資格的清真館子'；與唐家寺羅記滷坊同片區但為不同店",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "清真·小馬第一家資格烤羊肉串（紫荊美熙廣場店）",
@@ -2152,8 +2417,8 @@ const PLACES = [
   "cuisine": "清真燒烤",
   "area": "武侯區 紫荊/桐梓林",
   "address": "紫竹南一街5號紫荊美熙廣場3號1層",
-  "lat": 30.613,
-  "lng": 104.057,
+  "lat": null,
+  "lng": null,
   "hours": null,
   "price": "人均約55元",
   "rating": null,
@@ -2166,7 +2431,9 @@ const PLACES = [
    "烤餅"
   ],
   "reason": "店名冠'清真'的社區烤串老攤，夜宵擋口，羊肉新鮮無重羶味",
-  "notes": "電話15393033900；攜程點評數少暫無評分，填null"
+  "notes": "電話15393033900；攜程點評數少暫無評分，填null",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "棗子樹素餐廳",
@@ -2176,8 +2443,8 @@ const PLACES = [
   "cuisine": "素食",
   "area": "青羊區 八寶街/青龍街",
   "address": "青龍街27號鉑金城2號樓4樓（近八寶街）",
-  "lat": 30.668,
-  "lng": 104.062,
+  "lat": null,
+  "lng": null,
   "hours": "11:00-21:00",
   "price": "人均約98元",
   "rating": null,
@@ -2188,7 +2455,9 @@ const PLACES = [
    "養生湯品"
   ],
   "reason": "知名連鎖素食品牌在蓉店，全素無肉無酒，適合穆斯林作為清真友善選擇",
-  "notes": "電話028-86282848；素食餐廳非清真認證，標記友善；評分未查到填null"
+  "notes": "電話028-86282848；素食餐廳非清真認證，標記友善；評分未查到填null",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "土橋清真伊金園",
@@ -2198,8 +2467,8 @@ const PLACES = [
   "cuisine": "清真中餐/火鍋",
   "area": "金牛區 土橋（回民聚居半條街）",
   "address": "金牛區土橋金牛賓館側",
-  "lat": 30.713,
-  "lng": 104.008,
+  "lat": null,
+  "lng": null,
   "hours": null,
   "price": null,
   "rating": null,
@@ -2210,7 +2479,9 @@ const PLACES = [
    "牛雜湯"
   ],
   "reason": "土橋清真寺周邊回民半條街上的清真中餐火鍋館",
-  "notes": "電話028-87503809；來源為成都清真飲食攻略，評分未查到填null"
+  "notes": "電話028-87503809；來源為成都清真飲食攻略，評分未查到填null",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "伊蘭齋牛肉麵",
@@ -2219,9 +2490,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真牛肉麵",
   "area": "錦江區",
-  "address": "錦江區城市理想大廈B座入口172號",
-  "lat": 30.654824,
-  "lng": 104.068776,
+  "address": "成都市錦江區新光華街9號附35化隆牛肉麵",
+  "lat": 30.652864,
+  "lng": 104.068194,
   "hours": null,
   "price": null,
   "rating": null,
@@ -2231,7 +2502,10 @@ const PLACES = [
    "牛肉拉麵"
   ],
   "reason": "成都本地寶清真餐館名錄收錄的清真牛肉麵館，適合清真早午餐",
-  "notes": "評分未查到填null"
+  "notes": "評分未查到填null",
+  "amap_poiid": "B0FFG7FTF8",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "張拉拉蘭州手撕牛肉麵（成都門店）",
@@ -2241,8 +2515,8 @@ const PLACES = [
   "cuisine": "蘭州牛肉麵",
   "area": "錦江區 春熙路等多商圈",
   "address": "成都多家商場門店（春熙路商圈等，全市多店）",
-  "lat": 30.656,
-  "lng": 104.085,
+  "lat": null,
+  "lng": null,
   "hours": "10:00-21:30（各店略有差異）",
   "price": "人均約30元",
   "rating": null,
@@ -2253,7 +2527,9 @@ const PLACES = [
    "免費小菜/紅棗茶"
   ],
   "reason": "蘭州牛肉麵新式連鎖品牌在蓉擴張，明廚亮灶、可免費續面",
-  "notes": "蘭州牛肉麵為清真品類；成都門店具體評分未查到填null"
+  "notes": "蘭州牛肉麵為清真品類；成都門店具體評分未查到填null",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "共享椒麻雞",
@@ -2262,9 +2538,9 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "新疆椒麻雞",
   "area": "武侯區 玉林",
-  "address": "玉林東路39號",
-  "lat": 30.62939,
-  "lng": 104.059,
+  "address": "成都市武侯區玉林東路39號(玉林中學旁)",
+  "lat": 30.62934,
+  "lng": 104.059079,
   "hours": "約10:00-18:00（每日百餘只雞售完即止）",
   "price": "人均約40元",
   "rating": null,
@@ -2274,7 +2550,10 @@ const PLACES = [
    "椒麻海帶/土豆/藕片配菜"
   ],
   "reason": "玉林人氣新疆椒麻雞外賣檔口，每天一百多隻雞常常六點前售罄",
-  "notes": "僅外賣無堂食；澎湃新聞《在成都吃新疆菜》推薦；評分未查到填null"
+  "notes": "僅外賣無堂食；澎湃新聞《在成都吃新疆菜》推薦；評分未查到填null",
+  "amap_poiid": "B0FFJ37X8Y",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "伊盛齋清真糕點",
@@ -2283,9 +2562,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "回族清真糕點/蜜餞（油香、饊子、蜜餞、清真點心）",
   "area": "青白江區 彌牟鎮（唐家寺）",
-  "address": "青白江區彌牟鎮（唐家寺回民聚居區）",
-  "lat": 30.87,
-  "lng": 104.205,
+  "address": "成都市青白江區彌牟上街23-25號",
+  "lat": 30.880999,
+  "lng": 104.201447,
   "hours": null,
   "price": "人均 20-40 元",
   "rating": null,
@@ -2297,7 +2576,10 @@ const PLACES = [
    "清真月餅點心"
   ],
   "reason": "知乎回民網友公認的成都清真點心源頭，'成都所有能買到的清真點心基本都從這裡拿貨'，補上清真甜品/糕點空白類型。",
-  "notes": "唐家寺回民老字號作坊型糕點鋪，清真背景可靠；位置在彌牟鎮回民街區，建議搭配伊真軒、羅記滷坊同訪。評分平台無收錄，填 null。"
+  "notes": "唐家寺回民老字號作坊型糕點鋪，清真背景可靠；位置在彌牟鎮回民街區，建議搭配伊真軒、羅記滷坊同訪。評分平台無收錄，填 null。",
+  "amap_poiid": "B0FFL90CEB",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "清真蛋糕店（一環路店）",
@@ -2307,8 +2589,8 @@ const PLACES = [
   "cuisine": "清真烘焙/蛋糕",
   "area": "金牛區 一環路",
   "address": "一環路一段22-1號",
-  "lat": 30.674,
-  "lng": 104.043,
+  "lat": null,
+  "lng": null,
   "hours": null,
   "price": "人均 15-30 元",
   "rating": null,
@@ -2319,7 +2601,9 @@ const PLACES = [
    "清真糕點"
   ],
   "reason": "成都少見的掛牌清真烘焙店，甜品類型第二選擇。",
-  "notes": "資料來自欣欣旅遊成都清真飲食名錄（電話 028-85400372），信息較舊，前往前建議電話確認仍在營業；無平台評分，填 null。"
+  "notes": "資料來自欣欣旅遊成都清真飲食名錄（電話 028-85400372），信息較舊，前往前建議電話確認仍在營業；無平台評分，填 null。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "粵香村（清真中華老字號）",
@@ -2329,8 +2613,8 @@ const PLACES = [
   "cuisine": "老字號清真川菜（成都唯一清真中華老字號）",
   "area": "青羊區 東城根南街（皇城清真寺旁）",
   "address": "青羊區東城根南街66-68號",
-  "lat": 30.658,
-  "lng": 104.055,
+  "lat": null,
+  "lng": null,
   "hours": null,
   "price": "人均 50-80 元",
   "rating": "4.0/5",
@@ -2343,7 +2627,9 @@ const PLACES = [
    "紅燒什錦"
   ],
   "reason": "1920年代創立、1995年獲評中華老字號，成都唯一清真老字號，離皇城清真寺僅百米，清真伴手禮滷味與堂食兼備。",
-  "notes": "國營老字號背景，清真資質硬；商務部老字號數字博物館有檔案。大眾點評有店但快照未取到評分，填 null。"
+  "notes": "國營老字號背景，清真資質硬；商務部老字號數字博物館有檔案。大眾點評有店但快照未取到評分，填 null。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "沙漠之旅杜拜餐吧（Safari）",
@@ -2353,8 +2639,8 @@ const PLACES = [
   "cuisine": "杜拜/阿拉伯/北非料理（摩洛哥羊肉、突尼西亞庫斯庫斯）",
   "area": "武侯區 科華中路",
   "address": "武侯區科華中路150號金英匯新7號3幢301號（農商銀行旁）",
-  "lat": 30.63,
-  "lng": 104.084,
+  "lat": null,
+  "lng": null,
   "hours": "11:30-22:30",
   "price": "人均 127 元",
   "rating": "4.5/5",
@@ -2367,7 +2653,9 @@ const PLACES = [
    "約旦手抓飯"
   ],
   "reason": "杜拜老闆 Sam 親自主理的清真中東餐吧，蘇坦之外成都最有代表性的阿拉伯菜，覆蓋葉門/約旦/北非風味。",
-  "notes": "老闆為杜拜穆斯林，全店清真；巴基斯坦長粒米手抓飯是特色。多個穆斯林旅遊指南（HalalChinaTrips、WildGreatWall）收錄。"
+  "notes": "老闆為杜拜穆斯林，全店清真；巴基斯坦長粒米手抓飯是特色。多個穆斯林旅遊指南（HalalChinaTrips、WildGreatWall）收錄。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "YALLA YALLA 阿拉伯沙威瑪",
@@ -2377,8 +2665,8 @@ const PLACES = [
   "cuisine": "阿拉伯街頭小吃（沙威瑪卷餅、法拉費）",
   "area": "錦江區 東升街（春熙路南）",
   "address": "錦江區東升街26號",
-  "lat": 30.652,
-  "lng": 104.08,
+  "lat": null,
+  "lng": null,
   "hours": null,
   "price": "人均 30-50 元",
   "rating": null,
@@ -2390,7 +2678,9 @@ const PLACES = [
    "現烤阿拉伯薄餅"
   ],
   "reason": "成都罕見的阿拉伯沙威瑪專門小店，現烤餅皮配清真雞肉，填補清真快餐/街頭小吃類型。",
-  "notes": "店內僅約3個吧檯座位，以外賣外送為主（可送至華陽）；Chengdu-Expat 與 IslamiChina 清真名錄收錄；無平台評分，填 null。"
+  "notes": "店內僅約3個吧檯座位，以外賣外送為主（可送至華陽）；Chengdu-Expat 與 IslamiChina 清真名錄收錄；無平台評分，填 null。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "Rite Bite 巴基斯坦餐廳（瑞特貝特）",
@@ -2399,9 +2689,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "巴基斯坦菜（兼印度/西式）",
   "area": "郫都區 龍湖時代天街（電子科大清水河校區西門）",
-  "address": "郫都區合信路龍湖時代天街18棟3樓附321號",
-  "lat": 30.755,
-  "lng": 103.923,
+  "address": "成都市郫都區合作路龍湖時代天街18棟3樓321號",
+  "lat": 30.751747,
+  "lng": 103.920731,
   "hours": null,
   "price": "人均 60-90 元",
   "rating": null,
@@ -2413,7 +2703,10 @@ const PLACES = [
    "現烤 Naan"
   ],
   "reason": "巴基斯坦駐成都總領事推薦餐廳（2021領事推薦榜單），成都少有的正宗巴基斯坦清真菜，服務電子科大留學生群體。",
-  "notes": "巴基斯坦人經營，清真可靠；Tripadvisor 有收錄（Right Bite Pakistani Restaurant）但快照未取到分數，填 null；電話 15802898174。"
+  "notes": "巴基斯坦人經營，清真可靠；Tripadvisor 有收錄（Right Bite Pakistani Restaurant）但快照未取到分數，填 null；電話 15802898174。",
+  "amap_poiid": "B0G2AK3XDR",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "天都里印度餐廳（Tandoor）",
@@ -2423,8 +2716,8 @@ const PLACES = [
   "cuisine": "北印度菜（唐杜里烤爐料理）",
   "area": "武侯區 人民南路四段（倪家橋）",
   "address": "武侯區人民南路四段34號心族賓館東樓",
-  "lat": 30.623103,
-  "lng": 104.066332,
+  "lat": null,
+  "lng": null,
   "hours": null,
   "price": "人均 120-180 元",
   "rating": "3.6/5",
@@ -2436,7 +2729,9 @@ const PLACES = [
    "羊肉咖喱"
   ],
   "reason": "成都最老牌的印度餐廳（另在九方購物中心有分店），穆斯林旅遊指南 HalalChinaTrips 推薦的清真友善選擇。",
-  "notes": "印度主廚、肉類以清真渠道為主，但未見官方清真認證掛牌，標'友善'；就餐前可向店家確認。"
+  "notes": "印度主廚、肉類以清真渠道為主，但未見官方清真認證掛牌，標'友善'；就餐前可向店家確認。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "伊犇牛清真牛肉火鍋（寬窄巷子店）",
@@ -2446,8 +2741,8 @@ const PLACES = [
   "cuisine": "清真牛肉火鍋（川式麻辣/清湯鴛鴦）",
   "area": "青羊區 寬窄巷子",
   "address": "青羊區寬窄巷子景區旁（長順上街一帶）",
-  "lat": 30.669,
-  "lng": 104.055,
+  "lat": null,
+  "lng": null,
   "hours": null,
   "price": "人均 80-110 元",
   "rating": null,
@@ -2459,7 +2754,9 @@ const PLACES = [
    "麻辣牛油鍋（清真牛油）"
   ],
   "reason": "皇城壩之外的清真牛肉火鍋新選擇，位置就在寬窄巷子景區旁，遊客動線友好。",
-  "notes": "大眾點評有店頁（shop/57644001）但快照未能取到評分，填 null；掛清真招牌。"
+  "notes": "大眾點評有店頁（shop/57644001）但快照未能取到評分，填 null；掛清真招牌。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "清真·牛不比火鍋（建設路店）",
@@ -2468,9 +2765,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真火鍋（牛肉為主，另有愛琴海、營門口等分店）",
   "area": "成華區 建設路",
-  "address": "成華區建設路53號附7號",
-  "lat": 30.66889,
-  "lng": 104.10203,
+  "address": "成都市成華區建設路53號(電子科大建設北路地鐵站C口步行330米)",
+  "lat": 30.667996,
+  "lng": 104.100657,
   "hours": null,
   "price": "人均 93 元",
   "rating": "4.5/5",
@@ -2482,7 +2779,10 @@ const PLACES = [
    "手切羊肉"
   ],
   "reason": "本地連鎖清真火鍋品牌（建設路/營門口/愛琴海多店），建設路夜市商圈內，填補清真火鍋新店類型。",
-  "notes": "IslamiChina 清真名錄收錄；多分店可擇近前往（營門口店、海昌路愛琴海廣場5樓店）。"
+  "notes": "IslamiChina 清真名錄收錄；多分店可擇近前往（營門口店、海昌路愛琴海廣場5樓店）。",
+  "amap_poiid": "B0FFK35LDN",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "額爾敦銅鍋涮·冰煮羊（凍青樹總店）",
@@ -2491,9 +2791,9 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "北派銅鍋涮羊肉/內蒙冰煮羊",
   "area": "錦江區 太升南路（凍青樹街）",
-  "address": "錦江區凍青樹街89號（太升南路地鐵站B口步行約270米）",
-  "lat": 30.664,
-  "lng": 104.078,
+  "address": "成都市錦江區凍青樹街89號1層(太升南路地鐵站B口步行310米)",
+  "lat": 30.664753,
+  "lng": 104.079664,
   "hours": null,
   "price": "人均 107 元",
   "rating": "4.0/5",
@@ -2505,7 +2805,10 @@ const PLACES = [
    "烤羊排"
   ],
   "reason": "成都極少的老北京/內蒙式銅鍋涮羊肉，錫林郭勒直供羊肉，填補北派涮肉類型空白。",
-  "notes": "額爾敦為內蒙古錫林浩特品牌、全牛羊肉菜單，但成都門店未確認清真認證掛牌，標'友善'，穆斯林前往請先電話確認（028-81471447）。"
+  "notes": "額爾敦為內蒙古錫林浩特品牌、全牛羊肉菜單，但成都門店未確認清真認證掛牌，標'友善'，穆斯林前往請先電話確認（028-81471447）。",
+  "amap_poiid": "B0FFGRRGV3",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "回堂春",
@@ -2515,8 +2818,8 @@ const PLACES = [
   "cuisine": "清真回民燉菜/家常牛肉菜（老館子）",
   "area": "青羊區 金家壩街（天府廣場西側）",
   "address": "青羊區金家壩街5號",
-  "lat": 30.657,
-  "lng": 104.058,
+  "lat": null,
+  "lng": null,
   "hours": null,
   "price": "人均 40-70 元",
   "rating": null,
@@ -2528,7 +2831,9 @@ const PLACES = [
    "粉蒸牛肉"
   ],
   "reason": "天府廣場旁小街裡的回民老館子，以燉菜和酥點見長，多個清真美食指南（WildGreatWall、HalalChinaTrips）點名推薦。",
-  "notes": "皇城清真寺穆斯林社區常去的老店，清真可靠；電話 13808055715；無平台評分快照，填 null。"
+  "notes": "皇城清真寺穆斯林社區常去的老店，清真可靠；電話 13808055715；無平台評分快照，填 null。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "清真·鵝市巷·成都回民菜（小河街店）",
@@ -2537,9 +2842,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真回民川菜/江湖菜（川菜與回民烹飪融合）",
   "area": "青羊區 小河街（皇城清真寺旁）",
-  "address": "青羊區小河街（皇城清真寺旁）",
-  "lat": 30.657,
-  "lng": 104.06,
+  "address": "成都市青羊區西小河街12號天緯商務樓",
+  "lat": 30.657818,
+  "lng": 104.063112,
   "hours": null,
   "price": "人均 50-80 元",
   "rating": null,
@@ -2551,7 +2856,10 @@ const PLACES = [
    "牛肉江湖菜"
   ],
   "reason": "主打'成都回民菜'概念的清真川菜館，把川菜江湖味做成全清真，正好填補清真江湖菜/炒菜類型。",
-  "notes": "註冊主體為金牛區鵝市巷川菜館，小河街店緊鄰皇城清真寺；百度地圖有收錄；無平台評分快照，填 null。"
+  "notes": "註冊主體為金牛區鵝市巷川菜館，小河街店緊鄰皇城清真寺；百度地圖有收錄；無平台評分快照，填 null。",
+  "amap_poiid": "B0KB47XB49",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "蘭馨園川菜清真館（339電視塔店）",
@@ -2560,9 +2868,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真川菜家常館（兼羊蠍子、青花椒麻魚）",
   "area": "成華區 雙林路（339電視塔/玉雙路）",
-  "address": "成華區雙林巷11號附10號（地鐵4號線玉雙路站E2口約750米）",
-  "lat": 30.662,
-  "lng": 104.1,
+  "address": "成都市成華區雙林巷11號附4號",
+  "lat": 30.659074,
+  "lng": 104.100338,
   "hours": null,
   "price": "人均 54 元",
   "rating": "4.2/5",
@@ -2575,7 +2883,10 @@ const PLACES = [
    "桂花糕"
   ],
   "reason": "一店覆蓋多個稀缺類型：清真羊蠍子、清真花椒魚（烤魚/水煮魚類）、清真川式家常菜和清真中式甜糕。",
-  "notes": "IslamiChina 清真名錄收錄；339電視塔商圈，電話 19141979750。"
+  "notes": "IslamiChina 清真名錄收錄；339電視塔商圈，電話 19141979750。",
+  "amap_poiid": "B0FFG4CY99",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "清真回民餐館（金科北路店）",
@@ -2585,8 +2896,8 @@ const PLACES = [
   "cuisine": "清真家常菜/粉蒸牛肉（回民夫妻店）",
   "area": "金牛區 金泉街道（茶店子/高新西區方向）",
   "address": "金牛區金泉街道金科北路166號旁",
-  "lat": 30.727,
-  "lng": 104.005,
+  "lat": null,
+  "lng": null,
   "hours": "10:00起營業",
   "price": "人均 30-45 元",
   "rating": "4.2/5",
@@ -2598,7 +2909,9 @@ const PLACES = [
    "家常小炒"
   ],
   "reason": "高分平價的回民家常小館，粉蒸牛肉軟糯、紅油拌牛肉出色，覆蓋城西北區域的清真家常炒菜類型。",
-  "notes": "老闆為回民、態度熱情；Trip.com 評分4.6；電話 15308062441。"
+  "notes": "老闆為回民、態度熱情；Trip.com 評分4.6；電話 15308062441。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "清真·西北第一家資格烤肉美食城",
@@ -2607,9 +2920,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "西北清真烤肉美食城（大排檔合集，非單一串店）",
   "area": "青羊區 貝森路（外光華）",
-  "address": "青羊區貝森路194號",
-  "lat": 30.667,
-  "lng": 104.01,
+  "address": "成都市青羊區貝森路194號",
+  "lat": 30.670327,
+  "lng": 103.997873,
   "hours": null,
   "price": "人均 78 元",
   "rating": null,
@@ -2622,7 +2935,10 @@ const PLACES = [
    "新疆紅烏蘇（無醇飲品可選）"
   ],
   "reason": "以'美食城'大排檔形式聚合多檔西北清真小吃（饢坑、涼皮、烤肉），體驗區別於單一烤串店。",
-  "notes": "烤串雖屬飽和類型，但此處為清真美食城業態，涼皮/烤饢/油包腰為差異點；攜程有店頁暫無評分，填 null；電話 18328738884。"
+  "notes": "烤串雖屬飽和類型，但此處為清真美食城業態，涼皮/烤饢/油包腰為差異點；攜程有店頁暫無評分，填 null；電話 18328738884。",
+  "amap_poiid": "B0FFIKU903",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "小龍坎老火鍋（春熙路店）",
@@ -2630,9 +2946,9 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "火鍋",
   "area": "錦江區·春熙路",
-  "address": "成都市錦江區中山廣場西側春熙路商圈（多家分店）",
-  "lat": 30.6525,
-  "lng": 104.0805,
+  "address": "成都市錦江區天府大道中段500號東方希望天祥廣場D5 L1-40",
+  "lat": 30.657225,
+  "lng": 104.080725,
   "hours": "11:00-次日02:00",
   "price": 110,
   "dishes": [
@@ -2645,6 +2961,9 @@ const PLACES = [
   ],
   "reason": "成都最具代表性的連鎖老火鍋之一，麻辣濃香，遊客與本地人都常去。",
   "notes": "牛油鍋底為牛脂（非豬油），可放心；可點鴛鴦鍋或清油鍋。避開：老肉片、香菜丸子、酥肉（含豬肉）。旺季需現場取號排隊，建議下午5點前到或用美團線上排號。",
+  "amap_poiid": "B0FFLGJX2S",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都",
   "rating": "4.3/5",
   "rating_source": "綜合"
@@ -2655,9 +2974,9 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "火鍋",
   "area": "錦江區·春熙路",
-  "address": "成都市錦江區春熙路商圈（多家分店，太古里附近亦有）",
-  "lat": 30.6515,
-  "lng": 104.0815,
+  "address": "成都市錦江區上東大街6號春南商場2層(西南書城)",
+  "lat": 30.654001,
+  "lng": 104.076018,
   "hours": "11:00-次日01:00",
   "price": 120,
   "dishes": [
@@ -2669,6 +2988,9 @@ const PLACES = [
   ],
   "reason": "武俠主題網紅火鍋，菜品擺盤有儀式感，牛肉品項豐富，適合避豬者。",
   "notes": "牛油鍋底為牛脂；可點鴛鴦鍋。避開：老肉片、小酥肉（豬肉炸制）。飯點排隊較長，建議提前線上取號。",
+  "amap_poiid": "B0FFGKDUPM",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都",
   "rating": "4.5/5",
   "rating_source": "綜合"
@@ -2679,9 +3001,9 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "火鍋",
   "area": "武侯區·科華路",
-  "address": "成都市武侯區科華中路9號藍色加勒比廣場",
-  "lat": 30.627,
-  "lng": 104.088,
+  "address": "成都市武侯區科華北路143號附128號",
+  "lat": 30.623389,
+  "lng": 104.077113,
   "hours": "11:00-次日02:00",
   "price": 90,
   "dishes": [
@@ -2693,6 +3015,9 @@ const PLACES = [
   ],
   "reason": "源自重慶的排隊王老火鍋，鍋底醇厚，人均不高、性價比佳。",
   "notes": "牛油鍋底為牛脂；可選微辣或鴛鴦。避開：老肉、酥肉（含豬）。熱門時段需早到取號，晚市可能排1小時以上。",
+  "amap_poiid": "B0H3JZ2JET",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都",
   "rating": "4.4/5",
   "rating_source": "綜合"
@@ -2703,9 +3028,9 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "火鍋",
   "area": "錦江區·太古里",
-  "address": "成都市錦江區春熙路/太古里商圈（總店在武侯區一環路南）",
-  "lat": 30.6545,
-  "lng": 104.0845,
+  "address": "成都市錦江區東大街下東大街段166號二層",
+  "lat": 30.650983,
+  "lng": 104.080731,
   "hours": "11:00-次日02:00（部分門店至凌晨）",
   "price": 85,
   "dishes": [
@@ -2717,6 +3042,9 @@ const PLACES = [
   ],
   "reason": "成都本土火鍋頭部品牌，麻辣鮮香偏重口，人均約80元性價比高。",
   "notes": "牛油鍋底為牛脂；可點鴛鴦/清油鍋。避開：老肉片、小酥肉（豬肉）。營業至凌晨，適合當宵夜場；旺季取號排隊。",
+  "amap_poiid": "B0FFHIF7PC",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都",
   "rating": "4.4/5",
   "rating_source": "綜合"
@@ -2728,8 +3056,8 @@ const PLACES = [
   "cuisine": "火鍋（泰式海鮮）",
   "area": "錦江區·春熙路",
   "address": "成都市錦江區春熙路商圈（太古里、九眼橋等多家分店）",
-  "lat": 30.653,
-  "lng": 104.082,
+  "lat": null,
+  "lng": null,
   "hours": "11:00-22:30",
   "price": 120,
   "dishes": [
@@ -2740,6 +3068,8 @@ const PLACES = [
   ],
   "reason": "超人氣泰式海鮮火鍋，以海鮮和椰香冬陰功為主，完全可以吃到不含豬的一餐。",
   "notes": "以海鮮、蝦滑為主極易避豬；點單時仍確認丸滑類不選豬肉丸。排隊極兇，務必提前線上取號或開門即到；甜品小吃無限供應。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "成都",
   "rating": "4.6/5",
   "rating_source": "綜合"
@@ -2751,8 +3081,8 @@ const PLACES = [
   "cuisine": "火鍋",
   "area": "錦江區·太古里",
   "address": "成都市錦江區紗帽街太古里商圈（多家分店）",
-  "lat": 30.654,
-  "lng": 104.083,
+  "lat": null,
+  "lng": null,
   "hours": "11:00-次日01:00",
   "price": 100,
   "dishes": [
@@ -2764,6 +3094,8 @@ const PLACES = [
   ],
   "reason": "以鴨血為招牌的老火鍋，鴨血嫩滑入味，主打品項天然避豬。",
   "notes": "牛油鍋底為牛脂，招牌鴨血為鴨製品；避開：小酥肉、老肉片（含豬）。飯點排隊，建議取號後逛太古里等位。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "成都",
   "rating": "4.3/5",
   "rating_source": "綜合"
@@ -2775,8 +3107,8 @@ const PLACES = [
   "cuisine": "火鍋",
   "area": "成華區·玉雙路",
   "address": "成都市成華區玉雙路5號",
-  "lat": 30.662,
-  "lng": 104.098,
+  "lat": null,
+  "lng": null,
   "hours": "11:30-22:30",
   "price": 130,
   "dishes": [
@@ -2788,6 +3120,8 @@ const PLACES = [
   ],
   "reason": "成都本地人公認的老牌高端火鍋，鍋底香而不燥，環境較好適合家庭聚餐。",
   "notes": "牛油鍋底為牛脂；可點鴛鴦鍋。避開：酥肉、老肉片（含豬）。老牌名店，周末建議提前電話訂位。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "成都",
   "rating": "4.5/5",
   "rating_source": "綜合"
@@ -2799,8 +3133,8 @@ const PLACES = [
   "cuisine": "火鍋",
   "area": "市中心（多家分店）",
   "address": "成都市區多家分店（建議以大眾點評查詢就近門店）",
-  "lat": 30.66,
-  "lng": 104.07,
+  "lat": null,
+  "lng": null,
   "hours": "11:00-22:00（各店略異）",
   "price": 100,
   "dishes": [
@@ -2812,6 +3146,8 @@ const PLACES = [
   ],
   "reason": "成都老字號火鍋品牌，口味傳統穩定，本地宴請常客。",
   "notes": "牛油鍋底為牛脂；可點鴛鴦鍋。避開：酥肉、老肉（含豬）。分店地址以點評/地圖為準。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "成都"
  },
  {
@@ -2820,9 +3156,9 @@ const PLACES = [
   "halal": false,
   "cuisine": "川菜",
   "area": "錦江區·太古里",
-  "address": "成都市錦江區東糠市街2號（太古里旁）",
-  "lat": 30.651,
-  "lng": 104.085,
+  "address": "成都市錦江區東糠市街1號(春熙路地鐵站B口步行430米)",
+  "lat": 30.651319,
+  "lng": 104.083972,
   "hours": "11:00-14:00, 17:00-21:00",
   "price": 110,
   "dishes": [
@@ -2834,6 +3170,9 @@ const PLACES = [
   ],
   "reason": "眉山百年老字號進城，米其林一星川菜，菜品精緻、鴨魚雞選擇多。",
   "notes": "含豬注意：招牌『碗碗旺』為豬血製品、夫妻肺片/回鍋肉等經典菜含豬，點鴨、魚、雞類即可避開；麻婆豆腐肉末通常為豬肉，可詢問能否改牛肉。熱門需排隊取號，建議避開飯點高峰。",
+  "amap_poiid": "B0FFGPRKKM",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都",
   "rating": "4.5/5",
   "rating_source": "綜合"
@@ -2844,9 +3183,9 @@ const PLACES = [
   "halal": false,
   "cuisine": "川菜（蒼蠅館子）",
   "area": "金牛區·曹家巷",
-  "address": "成都市金牛區外曹家巷26號附15號",
-  "lat": 30.673332,
-  "lng": 104.087249,
+  "address": "成都市金牛區外曹家巷26號附15號(紅星橋地鐵站C口步行400米)",
+  "lat": 30.673283,
+  "lng": 104.08726,
   "hours": "約11:00-14:00, 17:00-21:00（賣完收工）",
   "price": 50,
   "dishes": [
@@ -2858,6 +3197,9 @@ const PLACES = [
   ],
   "reason": "1997年開業、被稱為『成都最牛蒼蠅館子』，本地人下館子代表，江湖菜靈魂。",
   "notes": "含豬注意：招牌腦花豆腐為豬腦、麻婆豆腐含豬肉末、回鍋肉等均含豬——避豬者點水煮牛肉、幹燒魚、素菜為主。環境簡陋、翻台快、不接受預訂，飯點排隊。",
+  "amap_poiid": "B001C8O7L7",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都",
   "rating": "3.7/5",
   "rating_source": "綜合"
@@ -2869,8 +3211,8 @@ const PLACES = [
   "cuisine": "川菜（老字號）",
   "area": "青羊區·騾馬市",
   "address": "成都市青羊區西玉龍街197號",
-  "lat": 30.662,
-  "lng": 104.07,
+  "lat": null,
+  "lng": null,
   "hours": "11:00-14:30, 17:00-21:00",
   "price": 60,
   "dishes": [
@@ -2881,6 +3223,8 @@ const PLACES = [
   ],
   "reason": "創於清同治元年（1862年）的麻婆豆腐發源老字號，來成都的經典打卡。",
   "notes": "含豬注意：傳統麻婆豆腐用豬肉末（部分門店可要求換牛肉末，點單時務必說明『牛肉臊子』）；回鍋肉、鹹燒白等亦含豬。遊客多，飯點略排隊。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "成都",
   "rating": "3.7/5",
   "rating_source": "綜合"
@@ -2892,8 +3236,8 @@ const PLACES = [
   "cuisine": "川菜",
   "area": "青羊區·寬窄巷子",
   "address": "成都市青羊區窄巷子16號",
-  "lat": 30.663,
-  "lng": 104.056,
+  "lat": null,
+  "lng": null,
   "hours": "11:00-21:30",
   "price": 130,
   "dishes": [
@@ -2905,6 +3249,8 @@ const PLACES = [
   ],
   "reason": "寬窄巷子內的川西院落餐廳，環境古雅，適合邊逛景點邊吃正餐。",
   "notes": "含豬注意：回鍋肉、甜燒白、擔擔麵（豬肉臊）等經典菜含豬，點雞、魚、素菜類即可。景區店價格略高，旺季建議訂位。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "成都"
  },
  {
@@ -2914,8 +3260,8 @@ const PLACES = [
   "cuisine": "川菜（私房菜）",
   "area": "青羊區·寬窄巷子周邊",
   "address": "成都市青羊區下同仁路（寬窄巷子西側）",
-  "lat": 30.666,
-  "lng": 104.053,
+  "lat": null,
+  "lng": null,
   "hours": "11:00-14:00, 17:00-21:00",
   "price": 150,
   "dishes": [
@@ -2926,6 +3272,8 @@ const PLACES = [
   ],
   "reason": "川西壩子私房菜代表，家常味升級版，環境院落感強，本地人宴客常選。",
   "notes": "含豬注意：私房燒菜（燒白、粉蒸肉等）多含豬，點雞魚牛及素菜為主並向服務員說明不吃豬。建議提前電話預約。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "成都"
  },
  {
@@ -2935,8 +3283,8 @@ const PLACES = [
   "cuisine": "川菜（新派）",
   "area": "錦江區·太古里",
   "address": "成都市錦江區中紗帽街8號成都遠洋太古里",
-  "lat": 30.654,
-  "lng": 104.084,
+  "lat": null,
+  "lng": null,
   "hours": "11:00-21:30",
   "price": 110,
   "dishes": [
@@ -2948,6 +3296,8 @@ const PLACES = [
   ],
   "reason": "柴門餐飲旗下輕正餐品牌，新派川菜精緻好拍，太古里逛街順路首選。",
   "notes": "含豬注意：招牌『飯兒紅燒肉』、素椒雜醬面（豬肉臊）含豬需避開，雞、魚類招牌多可放心。飯點取號排隊，翻台尚快。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "成都"
  },
  {
@@ -2956,9 +3306,9 @@ const PLACES = [
   "halal": false,
   "cuisine": "川菜",
   "area": "青羊區·寬窄巷子",
-  "address": "成都市青羊區寬窄巷子片區（泡桐樹街/實業街一帶）",
-  "lat": 30.6635,
-  "lng": 104.055,
+  "address": "成都市青羊區寬巷子42號(近同仁路)",
+  "lat": 30.664721,
+  "lng": 104.052256,
   "hours": "11:00-14:00, 17:00-21:00",
   "price": 150,
   "dishes": [
@@ -2969,6 +3319,9 @@ const PLACES = [
   ],
   "reason": "與川菜名店松雲澤淵源頗深（主廚張富元開立），傳統川菜功底紮實的小院餐廳。",
   "notes": "含豬注意：傳統蒸燒菜（鹹燒白、粉蒸肉）與部分傳統名菜含豬，點魚、雞、牛類並事先告知不吃豬。院落座位有限，建議預約。",
+  "amap_poiid": "B001C8X9BT",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
@@ -2977,9 +3330,9 @@ const PLACES = [
   "halal": false,
   "cuisine": "川菜",
   "area": "金牛區·羊西線",
-  "address": "成都市金牛區蜀漢路289號（另有萬達廣場等多家分店）",
-  "lat": 30.69,
-  "lng": 104.03,
+  "address": "成都市金牛區一品天下大街13號(地鐵2號7號線G出口)",
+  "lat": 30.689695,
+  "lng": 104.021295,
   "hours": "11:00-14:00, 17:00-21:00",
   "price": 100,
   "dishes": [
@@ -2991,6 +3344,9 @@ const PLACES = [
   ],
   "reason": "成都老牌大型酒樓，傳統川菜穩定發揮，招牌紅杏雞與鱔段粉絲幾乎桌桌必點。",
   "notes": "含豬注意：回鍋肉、鹹燒白、蒜泥白肉等含豬，招牌紅杏雞（雞）與鱔段粉絲（鱔魚）可放心。本地宴請熱門，周末飯點建議訂位。",
+  "amap_poiid": "B001C7WBV1",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都",
   "rating": "4.4/5",
   "rating_source": "綜合"
@@ -3002,8 +3358,8 @@ const PLACES = [
   "cuisine": "川菜（融合）",
   "area": "錦江區·東大街",
   "address": "成都市錦江區東大街紫東樓段35號",
-  "lat": 30.647,
-  "lng": 104.096,
+  "lat": null,
+  "lng": null,
   "hours": "11:00-14:00, 17:00-21:00",
   "price": 110,
   "dishes": [
@@ -3014,6 +3370,8 @@ const PLACES = [
   ],
   "reason": "1999年起家的成都融合川菜大店，招牌『開門紅』魚頭名聲在外，宴請常選。",
   "notes": "含豬注意：部分蒸菜燒菜含豬（燒白、排骨類），招牌開門紅為魚頭菜可放心。大店座位多，仍建議周末訂位。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "成都",
   "rating": "4.4/5",
   "rating_source": "綜合"
@@ -3024,9 +3382,9 @@ const PLACES = [
   "halal": false,
   "cuisine": "川菜",
   "area": "青羊區·杜甫草堂旁",
-  "address": "成都市青羊區青華路37號（近杜甫草堂）",
-  "lat": 30.662,
-  "lng": 104.025,
+  "address": "成都市青羊區光華村街66號附7號3-4層",
+  "lat": 30.66457,
+  "lng": 104.009996,
   "hours": "11:00-14:00, 17:00-21:00",
   "price": 150,
   "dishes": [
@@ -3037,6 +3395,9 @@ const PLACES = [
   ],
   "reason": "杜甫草堂旁的傳統川菜園林酒樓，出品穩定，逛完草堂順路用餐極方便。",
   "notes": "含豬注意：招牌『烤肉』與燒白類為豬肉需避開，雞、魚類菜品選擇多。環境好、性價比中上，飯點建議預約。",
+  "amap_poiid": "B001C7UCNH",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都",
   "rating": "4.5/5",
   "rating_source": "攜程"
@@ -3047,9 +3408,9 @@ const PLACES = [
   "halal": false,
   "cuisine": "川菜（江湖菜）",
   "area": "錦江區·太古里",
-  "address": "成都市錦江區太古里商圈（全市17家直營店）",
-  "lat": 30.654,
-  "lng": 104.085,
+  "address": "成都市錦江區武成大街7-9號(市二醫院地鐵站C口步行430米)",
+  "lat": 30.657726,
+  "lng": 104.089759,
   "hours": "11:00-21:30",
   "price": 80,
   "dishes": [
@@ -3060,6 +3421,9 @@ const PLACES = [
   ],
   "reason": "2014年溫江小店起家、蟬聯大眾點評必吃榜的江湖菜黑馬，招牌黑豆花水煮魚必點。",
   "notes": "含豬注意：部分江湖燒菜（肥腸、燒白類）含豬，招牌水煮魚、跳水兔、藤椒雞可放心。每月排隊上萬桌，務必提前線上取號。",
+  "amap_poiid": "B0GUMX9JO7",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都",
   "rating": "4.9/5",
   "rating_source": "綜合"
@@ -3071,8 +3435,8 @@ const PLACES = [
   "cuisine": "川菜（蒼蠅館子·燒菜）",
   "area": "青羊區·人民公園附近",
   "address": "成都市青羊區半邊橋街一帶（人民公園東側，以地圖查詢為準）",
-  "lat": 30.658,
-  "lng": 104.058,
+  "lat": null,
+  "lng": null,
   "hours": "約10:30-20:30（賣完即止）",
   "price": 45,
   "dishes": [
@@ -3083,6 +3447,8 @@ const PLACES = [
   ],
   "reason": "成都燒菜（家常燉燒類）蒼蠅館子代表，明檔指菜點餐，老成都煙火氣十足。",
   "notes": "含豬注意：燒白、蹄花、肥腸、紅燒肉等大量招牌燒菜含豬——指菜時選牛肉、雞、魚、素燒菜即可。高峰需拼桌排隊，下午去人較少。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "成都"
  },
  {
@@ -3091,9 +3457,9 @@ const PLACES = [
   "halal": false,
   "cuisine": "串串（冷鍋串串/冒菜）",
   "area": "青羊區·奎星樓街",
-  "address": "成都市青羊區奎星樓街33號（近寬窄巷子）",
-  "lat": 30.665,
-  "lng": 104.056,
+  "address": "成都市青羊區奎星樓街33號",
+  "lat": 30.668316,
+  "lng": 104.053617,
   "hours": "11:00-22:30",
   "price": 70,
   "dishes": [
@@ -3106,6 +3472,9 @@ const PLACES = [
   ],
   "reason": "寬窄巷子旁的冷串串排隊王，兔頭兔腰做得極出名，兔與牛品項天然避豬。",
   "notes": "含豬注意：腦花（槓上腦花為豬腦）、酥肉、部分丸類含豬需避開；兔頭、兔腰、鵪鶉蛋、牛肉串可放心。晚市排隊常超1小時，先取號再去寬窄巷子逛。",
+  "amap_poiid": "B0G3JU6D1Y",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都",
   "rating": "4.4/5",
   "rating_source": "綜合"
@@ -3117,8 +3486,8 @@ const PLACES = [
   "cuisine": "串串香",
   "area": "武侯區·致民路",
   "address": "成都市武侯區致民路38號附13號",
-  "lat": 30.6365,
-  "lng": 104.084,
+  "lat": null,
+  "lng": null,
   "hours": "11:30-次日01:00",
   "price": 65,
   "dishes": [
@@ -3131,6 +3500,8 @@ const PLACES = [
   ],
   "reason": "1987年創立的成都串串香代表品牌，招牌小郡肝（雞胗）是天然避豬好選擇。",
   "notes": "含豬注意：酥肉、豬黃喉（點單確認牛黃喉）、部分肉串含豬——拿串時認標籤、優先牛肉/雞類串。鍋底牛油為牛脂；飯點排隊，人均約60-70元。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "成都",
   "rating": "4.2/5",
   "rating_source": "綜合"
@@ -3142,8 +3513,8 @@ const PLACES = [
   "cuisine": "串串（市井麻辣燙）",
   "area": "武侯區·致民路",
   "address": "成都市武侯區致民路45號（多家分店）",
-  "lat": 30.637,
-  "lng": 104.083,
+  "lat": null,
+  "lng": null,
   "hours": "11:00-次日01:00",
   "price": 80,
   "dishes": [
@@ -3156,6 +3527,8 @@ const PLACES = [
   ],
   "reason": "復古市井風串串網紅，八九十年代成都街頭布景，拍照氛圍與味道兼具。",
   "notes": "含豬注意：酥肉（招牌小吃為豬肉炸制）、部分肉串含豬——優先香菜牛肉、小郡肝、掌中寶（均非豬）。熱門店飯點排隊，建議線上取號。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "成都",
   "rating": "4.3/5",
   "rating_source": "綜合"
@@ -3167,8 +3540,8 @@ const PLACES = [
   "cuisine": "冒菜（蒼蠅館子）",
   "area": "武侯區·洗面橋",
   "address": "成都市武侯區洗面橋橫街1號附13號",
-  "lat": 30.642,
-  "lng": 104.062,
+  "lat": null,
+  "lng": null,
   "hours": "約11:00-20:30（賣完即止）",
   "price": 30,
   "dishes": [
@@ -3179,6 +3552,8 @@ const PLACES = [
   ],
   "reason": "成都老牌冒菜蒼蠅館子代表，紅油香而不燥，人均30元的地道體驗。",
   "notes": "含豬注意：冒豬肉片、酥肉、肥腸類需避開，點牛肉、雞、毛肚與素菜即可；湯底一般為牛油/清油，點單可確認。店面小、高峰拼桌。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "成都"
  },
  {
@@ -3187,9 +3562,9 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "烤魚",
   "area": "錦江區·春熙路IFS",
-  "address": "成都市錦江區紅星路三段1號IFS國際金融中心（多家分店）",
-  "lat": 30.6528,
-  "lng": 104.08,
+  "address": "成都市錦江區紅星路三段1號IFS國際金融中心7樓",
+  "lat": 30.654508,
+  "lng": 104.080877,
   "hours": "11:00-22:30",
   "price": 120,
   "dishes": [
@@ -3200,6 +3575,9 @@ const PLACES = [
   ],
   "reason": "成都烤魚界排隊王『不吃火鍋就吃烤匠』，主打魚類正餐，天然適合避豬飲食。",
   "notes": "以魚為主極易避豬；配菜避開酥肉與豬腦花即可。排隊極兇（曾有排隊數小時紀錄），務必提前在公眾號/美團線上取號。",
+  "amap_poiid": "B0FFILAVWY",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都",
   "rating": "4.6/5",
   "rating_source": "綜合"
@@ -3210,9 +3588,9 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "兔頭/川味滷煮",
   "area": "錦江區·東大街",
-  "address": "成都市錦江區東大街下東大街段33號",
-  "lat": 30.650645,
-  "lng": 104.081832,
+  "address": "成都市錦江區下東大街51號(春熙路地鐵站E2口步行160米)",
+  "lat": 30.6516,
+  "lng": 104.080415,
   "hours": null,
   "price": 60,
   "dishes": [
@@ -3225,6 +3603,9 @@ const PLACES = [
   "rating_source": "大眾點評（用戶提供，2026/07/12）",
   "reason": "位於東大街的市區兔頭店，鄰近太古里，麻辣與五香兔頭適合順路外帶。",
   "notes": "兔頭為兔肉無豬，但店內其他滷味與製作工具可能混用；購買前仍需確認。",
+  "amap_poiid": "B0JD2HMJ1L",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
@@ -3234,8 +3615,8 @@ const PLACES = [
   "cuisine": "川菜（燉湯·蹄花）",
   "area": "青羊區·人民公園",
   "address": "成都市青羊區祠堂街27號附8號（人民公園對面）",
-  "lat": 30.66,
-  "lng": 104.056,
+  "lat": null,
+  "lng": null,
   "hours": "10:30-次日02:00",
   "price": 40,
   "dishes": [
@@ -3246,6 +3627,8 @@ const PLACES = [
   ],
   "reason": "成都夜宵與遊客名店，雪豆燉蹄花湯白肉糯是招牌——列入供參考的『含豬名店』。",
   "notes": "【含豬主打】招牌蹄花湯即豬蹄燉湯，避豬者不適合此店主打，僅同行者想體驗時可去，避豬者可點涼拌雞、冒牛肉與素菜。營業到凌晨，宵夜方便。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "成都",
   "rating": "4.1/5",
   "rating_source": "綜合"
@@ -3257,8 +3640,8 @@ const PLACES = [
   "cuisine": "清真川菜",
   "area": "青羊區 天府廣場／皇城清真寺",
   "address": "成都市青羊區西御街108號皇城清真寺一樓",
-  "lat": 30.6574,
-  "lng": 104.0618,
+  "lat": null,
+  "lng": null,
   "hours": "約10:30-21:00（以門店為準）",
   "price": 90,
   "dishes": [
@@ -3270,6 +3653,8 @@ const PLACES = [
   ],
   "reason": "1986年創立、開在皇城清真寺一樓的清真川菜老字號，是成都清真餐飲的門面，把伊斯蘭飲食規範與地道川味結合得最成熟。",
   "notes": "有清真認證（寺管餐廳，食材依伊斯蘭規範處理）；節假日建議訂位；緊鄰天府廣場地鐵站，觀光順路。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "成都",
   "rating": "4.0/5",
   "rating_source": "綜合"
@@ -3280,9 +3665,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真牛肉火鍋",
   "area": "青羊區 皇城清真寺",
-  "address": "成都市青羊區皇城清真寺旁（西御街/小河街口）",
-  "lat": 30.6578,
-  "lng": 104.0608,
+  "address": "成都市青羊區西御街6號(皇城清真寺旁)",
+  "lat": 30.65652,
+  "lng": 104.063133,
   "hours": "約11:00-21:30",
   "price": 95,
   "dishes": [
@@ -3294,6 +3679,9 @@ const PLACES = [
   ],
   "reason": "百年老字號非遺牛肉火鍋、明廚鮮切，鍋底為牛油（牛脂）或牛骨清湯，全程無豬肉製品，是想在成都吃火鍋又要清真的首選。",
   "notes": "有清真認證；四川「牛油鍋底」的牛油即牛脂並非豬油，此店本身即清真可完全放心；無煙無酒餐廳；飯點常排隊。",
+  "amap_poiid": "B0G175WH72",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都",
   "rating": "4.7/5",
   "rating_source": "大眾點評截圖（5375條，2026/07/12）"
@@ -3304,9 +3692,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真滷味/小吃",
   "area": "青羊區 皇城清真寺旁",
-  "address": "成都市青羊區小河街2號附2號（皇城清真寺旁）",
-  "lat": 30.6582,
-  "lng": 104.0604,
+  "address": "成都市青羊區西御街道小河街2號(天府廣場地鐵站西1南口步行60米)",
+  "lat": 30.65687,
+  "lng": 104.063177,
   "hours": "08:00-17:00",
   "price": 30,
   "dishes": [
@@ -3317,6 +3705,9 @@ const PLACES = [
   ],
   "reason": "皇城清真寺旁的清真滷味名店，滷牛肉和現烙牛肉餅是逛完寺/天府廣場最方便的清真輕午餐。",
   "notes": "清真老鋪（唐家寺回民滷味系）；下午5點前打烊，只適合午餐或外帶；牛肉餅約6元/個可當點心。",
+  "amap_poiid": "B0H2PURGYV",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
@@ -3326,8 +3717,8 @@ const PLACES = [
   "cuisine": "新疆菜",
   "area": "青羊區 天府廣場",
   "address": "成都市青羊區西御街77號國信大廈一樓",
-  "lat": 30.6569,
-  "lng": 104.0627,
+  "lat": null,
+  "lng": null,
   "hours": "11:00-21:30",
   "price": 80,
   "dishes": [
@@ -3340,6 +3731,8 @@ const PLACES = [
   ],
   "reason": "成都口碑最穩的清真新疆餐廳之一，椒麻雞和大盤雞分量大味正，市中心位置對遊客極友好。",
   "notes": "清真餐廳（新疆回族/維族經營）；高新區德商國際（益州大道1480號）另有分店；大盤雞分量大，2-3人一份即可。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "成都"
  },
  {
@@ -3348,9 +3741,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真川菜/牛肉",
   "area": "金牛區 土橋（回民聚居區）",
-  "address": "成都市金牛區土橋回民半條街（老成灌路土橋段）",
-  "lat": 30.7093,
-  "lng": 104.0012,
+  "address": "成都市金牛區土橋北街24號(金科北路地鐵站D口步行210米)",
+  "lat": 30.722761,
+  "lng": 104.008223,
   "hours": "06:30-14:00、16:00-20:30",
   "price": 50,
   "dishes": [
@@ -3361,6 +3754,9 @@ const PLACES = [
   ],
   "reason": "土橋是成都近郊回民聚居區，這條「半條街」全是清真店，此店的粉蒸牛肉和牛尾湯是本地穆斯林日常水準。",
   "notes": "清真（回民街區店鋪）；離市區稍遠（地鐵2號線百草路方向），適合安排半天專程吃牛肉；早上還有清真早點。",
+  "amap_poiid": "B0FFL3BGCF",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都",
   "rating": "4.0/5",
   "rating_source": "大眾點評截圖（366條，2026/07/12）"
@@ -3372,8 +3768,8 @@ const PLACES = [
   "cuisine": "清真川菜",
   "area": "青羊區 皇城壩一帶",
   "address": "成都市青羊區（皇城清真寺周邊，出行前以地圖App搜「蘇記穆罕」確認最新地址）",
-  "lat": 30.659,
-  "lng": 104.058,
+  "lat": null,
+  "lng": null,
   "hours": "11:00-13:30、17:30-20:00",
   "price": 60,
   "dishes": [
@@ -3384,6 +3780,8 @@ const PLACES = [
   ],
   "reason": "老派清真川菜小館，蒸牛胸標（牛胸腩粉蒸）是別處少見的回民傳統菜。",
   "notes": "清真老店；營業時段短且可能搬遷，出發前先在大眾點評/高德確認營業狀態。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "成都"
  },
  {
@@ -3393,8 +3791,8 @@ const PLACES = [
   "cuisine": "清真面點/餃子",
   "area": "青羊區",
   "address": "成都市青羊區千禧花園附近（以地圖App搜「老甘餃子館」為準）",
-  "lat": 30.664,
-  "lng": 104.05,
+  "lat": null,
+  "lng": null,
   "hours": "09:30-15:00、16:00-20:30",
   "price": 30,
   "dishes": [
@@ -3404,6 +3802,8 @@ const PLACES = [
   ],
   "reason": "回民經營的清真餃子館，牛肉茴香餡是招牌，想吃北方口味換換胃時的可靠選擇。",
   "notes": "清真；店面小、環境家常；下午3-4點間休息。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "成都"
  },
  {
@@ -3413,8 +3813,8 @@ const PLACES = [
   "cuisine": "清真燒烤（西北/新疆式）",
   "area": "市中心（青羊區一帶）",
   "address": "成都市中心（多為夜市型門店，以地圖App搜「古牧區烤羊肉串」定位）",
-  "lat": 30.665,
-  "lng": 104.06,
+  "lat": null,
+  "lng": null,
   "hours": "15:00-次日01:00",
   "price": 60,
   "dishes": [
@@ -3425,6 +3825,8 @@ const PLACES = [
   ],
   "reason": "成都少見的清真炭火羊肉串專門店，羊肉新鮮、下午開到凌晨，適合當晚餐或宵夜。",
   "notes": "清真；純燒烤店無豬肉品項；晚上人多需等位。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "成都"
  },
  {
@@ -3434,8 +3836,8 @@ const PLACES = [
   "cuisine": "清真川菜",
   "area": "青羊區 槐樹街（寬窄巷子北側）",
   "address": "成都市青羊區槐樹街5號",
-  "lat": 30.6688,
-  "lng": 104.0528,
+  "lat": null,
+  "lng": null,
   "hours": "約11:00-21:00（以門店為準）",
   "price": 60,
   "dishes": [
@@ -3446,6 +3848,8 @@ const PLACES = [
   ],
   "reason": "寬窄巷子步行可達的清真川菜館，逛完景區想吃正餐又要清真時位置最順。",
   "notes": "清真老店；資料較舊，出發前請以高德/大眾點評確認仍在營業。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "成都"
  },
  {
@@ -3455,8 +3859,8 @@ const PLACES = [
   "cuisine": "清真羊肉湯/烤肉",
   "area": "青羊區 上府街（騾馬市）／寬巷子",
   "address": "成都市青羊區上府街9-7號（羊湯）；寬巷子41號（烤肉）",
-  "lat": 30.6636,
-  "lng": 104.0656,
+  "lat": null,
+  "lng": null,
   "hours": "約10:30-21:00（以門店為準）",
   "price": 55,
   "dishes": [
@@ -3467,6 +3871,8 @@ const PLACES = [
   ],
   "reason": "半月樓是成都老牌清真字號，冬天一碗奶白羊肉湯配蘸碟非常應景。",
   "notes": "清真；12月冬季羊肉湯旺季生意好；兩個門店品項不同（湯／烤肉），先確認要去哪家。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "成都"
  },
  {
@@ -3476,8 +3882,8 @@ const PLACES = [
   "cuisine": "清真牛肉麵",
   "area": "一環路一段",
   "address": "成都市一環路一段22-1號",
-  "lat": 30.6693,
-  "lng": 104.0424,
+  "lat": null,
+  "lng": null,
   "hours": "約07:00-20:00（以門店為準）",
   "price": 25,
   "dishes": [
@@ -3487,6 +3893,8 @@ const PLACES = [
   ],
   "reason": "本地清真牛肉麵老店，湯頭用牛骨熬製，快速一餐的安心選擇。",
   "notes": "清真；資訊較舊，建議以地圖App確認營業狀態；人均便宜適合趕行程時用餐。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "成都"
  },
  {
@@ -3496,8 +3904,8 @@ const PLACES = [
   "cuisine": "清真蘭州牛肉麵（連鎖）",
   "area": "多分店（春熙路/萬象城/大悅城等商場）",
   "address": "成都多家商場店，以App搜「馬記永」選就近門店（春熙路商圈參考坐標）",
-  "lat": 30.6529,
-  "lng": 104.0805,
+  "lat": null,
+  "lng": null,
   "hours": "約10:00-21:30（商場營業時間）",
   "price": 42,
   "dishes": [
@@ -3509,6 +3917,8 @@ const PLACES = [
   ],
   "reason": "新式清真蘭州牛肉麵連鎖，出品穩定、環境乾淨，任何商圈都找得到，是旅途中最省心的清真保底選項。",
   "notes": "清真連鎖（回民品牌，牛羊肉均為清真屠宰）；同類連鎖陳香貴、張拉拉在成都也有店，可互為備選。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "成都",
   "rating": "4.3/5",
   "rating_source": "綜合"
@@ -3520,8 +3930,8 @@ const PLACES = [
   "cuisine": "新疆菜/炒米粉",
   "area": "多分店（春熙路、建設路等）",
   "address": "成都多家分店，以App搜「疆來新疆炒米粉」選就近門店（建設路商圈參考坐標）",
-  "lat": 30.6742,
-  "lng": 104.1063,
+  "lat": null,
+  "lng": null,
   "hours": "約11:00-21:00",
   "price": 35,
   "dishes": [
@@ -3532,6 +3942,8 @@ const PLACES = [
   ],
   "reason": "人氣新疆連鎖，大盤雞土豆軟爛入味、炒米粉夠辣夠香，價位親民。",
   "notes": "新疆清真系連鎖；炒米粉辣度高，不吃辣可選微辣；高峰期取號。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "成都"
  },
  {
@@ -3541,8 +3953,8 @@ const PLACES = [
   "cuisine": "新疆菜",
   "area": "錦江區 春熙路/太古里",
   "address": "成都市錦江區北糠市街 成都太古里負1層M050a號",
-  "lat": 30.6537,
-  "lng": 104.0812,
+  "lat": null,
+  "lng": null,
   "hours": "約10:30-21:30（隨商場）",
   "price": 75,
   "dishes": [
@@ -3554,6 +3966,8 @@ const PLACES = [
   ],
   "reason": "開在太古里的新疆餐廳，逛春熙路/太古里時最方便的清真正餐，分量足性價比高。",
   "notes": "新疆清真系；位於商場負一層，飯點排隊；離大慈寺步行3分鐘可順遊。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "成都"
  },
  {
@@ -3562,9 +3976,9 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "蹺腳牛肉/牛肉湯鍋（樂山系）",
   "area": "武侯區 科華北路",
-  "address": "成都市武侯區科華北路59號（天府三街1166號另有分店）",
-  "lat": 30.6357,
-  "lng": 104.0808,
+  "address": "成都市武侯區科華北路50號(川大望江校區西門對面)",
+  "lat": 30.627338,
+  "lng": 104.076331,
   "hours": "約11:00-21:30",
   "price": 70,
   "dishes": [
@@ -3576,6 +3990,9 @@ const PLACES = [
   ],
   "reason": "源自清光緒年間的百年樂山蹺腳牛肉，選峨眉山草飼黃牛，牛骨藥膳湯底清甜滋補，冬天喝非常舒服。",
   "notes": "非清真認證但全店以牛肉牛雜為主、湯底為牛骨中藥材熬製不含豬肉豬油，屬無豬肉友善；點單時可再確認避開個別豬肉小菜。",
+  "amap_poiid": "B0FFFAMJHI",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
@@ -3584,9 +4001,9 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "蹺腳牛肉/牛肉湯鍋（樂山系）",
   "area": "成華區 長榮路",
-  "address": "成都市成華區長榮路56號泛悅國際5棟",
-  "lat": 30.6918,
-  "lng": 104.1148,
+  "address": "成都市武侯區長榮路56號4棟1層12號(塔斯汀漢堡斜對面)",
+  "lat": 30.613218,
+  "lng": 104.079852,
   "hours": "10:30-21:00",
   "price": 60,
   "dishes": [
@@ -3597,6 +4014,9 @@ const PLACES = [
   ],
   "reason": "社區型樂山蹺腳牛肉館，牛骨湯鮮、價格實在，本地人復購率高。",
   "notes": "非清真認證；牛肉湯鍋體系無豬肉，點菜避開個別非牛肉配菜即可；離市中心稍遠。",
+  "amap_poiid": "B0G1TCVLJW",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
@@ -3605,9 +4025,9 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "蹺腳牛肉/牛肉湯鍋（樂山系）",
   "area": "錦江區/成華區 東風路",
-  "address": "成都市東風路北一巷新1號附9號",
-  "lat": 30.65266,
-  "lng": 104.09286,
+  "address": "成都市成華區東風路北一巷21號附6號",
+  "lat": 30.652641,
+  "lng": 104.09276,
   "hours": "11:00-14:00、17:00-21:00",
   "price": 55,
   "dishes": [
@@ -3618,6 +4038,9 @@ const PLACES = [
   ],
   "reason": "老口碑樂山系牛肉湯鍋，湯頭牛骨香濃、蘸幹碟吃法地道，人均50出頭很划算。",
   "notes": "非清真認證；全牛肉菜單為主，無豬肉友善；午晚分段營業注意時間。",
+  "amap_poiid": "B0FFFAC1Y6",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
@@ -3627,8 +4050,8 @@ const PLACES = [
   "cuisine": "簡陽羊肉湯",
   "area": "武侯區 玉林",
   "address": "成都市武侯區玉林南路15號玉林生活廣場1層",
-  "lat": 30.6208,
-  "lng": 104.0557,
+  "lat": null,
+  "lng": null,
   "hours": "約10:30-21:30（冬季延長）",
   "price": 80,
   "dishes": [
@@ -3640,6 +4063,8 @@ const PLACES = [
   ],
   "reason": "簡陽草池鎮「肖*仙」系羊肉湯在成都的招牌老店，開了二十多年，奶白羊湯正是12月成都的冬季名物。",
   "notes": "非清真認證；羊肉湯以羊骨羊肉熬製，點鍋時可請店家確認湯底不加豬骨/豬油（多數簡陽湯鍋為純羊湯）；冬至（12月21日前後）全城羊肉湯爆滿且漲價約10元/斤，務必避峰或早到。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "成都"
  },
  {
@@ -3648,9 +4073,9 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "簡陽羊肉湯",
   "area": "錦江區 三官堂（九眼橋東）",
-  "address": "成都市錦江區三官堂街（簡陽羊肉湯一條街）",
-  "lat": 30.6398,
-  "lng": 104.0936,
+  "address": "成都市錦江區三官堂街16號附41號",
+  "lat": 30.626306,
+  "lng": 104.094295,
   "hours": "約10:00-22:00（冬季旺季延長）",
   "price": 85,
   "dishes": [
@@ -3661,6 +4086,9 @@ const PLACES = [
   ],
   "reason": "三官堂是成都著名的簡陽羊肉湯聚集地，肖神仙等「八仙村」系老店湯濃肉嫩，冬夜喝湯氛圍一流。",
   "notes": "非清真認證；羊肉羊雜半斤起賣、冬至當天約138元/斤（平日118元/斤）；同街多家可比價；建議點純羊湯鍋並確認無豬油。",
+  "amap_poiid": "B0J3DCEGW4",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
@@ -3669,9 +4097,9 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "寺院素食",
   "area": "錦江區 大慈寺（太古里旁）",
-  "address": "成都市錦江區大慈寺路23號大慈寺內",
-  "lat": 30.6556,
-  "lng": 104.0854,
+  "address": "成都市錦江區",
+  "lat": 30.654807,
+  "lng": 104.085151,
   "hours": "約10:30-16:00（以寺內公告為準）",
   "price": 35,
   "dishes": [
@@ -3682,6 +4110,9 @@ const PLACES = [
   ],
   "reason": "緊鄰太古里的千年古寺素餐廳，逛街途中就能吃到一頓乾淨的全素午餐，性價比高。",
   "notes": "全素零肉類；營業時間偏午市、晚餐前多已收檔，建議安排為午餐；寺內環境需保持安靜。",
+  "amap_poiid": "B0FFFDRVXC",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
@@ -3691,9 +4122,9 @@ const PLACES = [
   "halal": false,
   "cuisine": "海鮮自助（帝王蟹/波龍/鮑魚）",
   "area": "高新區·火車南站",
-  "address": "成都市高新區天府大道北段8號蘇寧廣場城市奧特萊斯5樓509號（地鐵1號線火車南站G2口出200米）",
-  "lat": 30.612,
-  "lng": 104.076,
+  "address": "成都市武侯區天府大道北段8號蘇寧廣場5層509號",
+  "lat": 30.601641,
+  "lng": 104.066785,
   "hours": "場次制：午市約11:30-14:00、晚市約17:30-21:00（以預訂場次為準）",
   "price": "約460-1080元/人（依場次等級，含活帝王蟹場次較高）",
   "rating": "4.3/5",
@@ -3706,7 +4137,10 @@ const PLACES = [
    "挪威三文魚"
   ],
   "reason": "成都最知名的活帝王蟹自助，密子君等美食博主打卡挑戰店——活蟹現撈、波龍鮑魚暢吃。",
-  "notes": "⚠️ 需提前1-2天訂位並確認「活帝王蟹場次」（不同價位場次內容不同）；海鮮為主但自助區可能有含豬肉熱菜，取餐留意即可；電話19828308604"
+  "notes": "⚠️ 需提前1-2天訂位並確認「活帝王蟹場次」（不同價位場次內容不同）；海鮮為主但自助區可能有含豬肉熱菜，取餐留意即可；電話19828308604",
+  "amap_poiid": "B0FFLDDQRD",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "蜀宴賦·沉浸式漢文化餐秀（東郊記憶南大門）",
@@ -3715,9 +4149,9 @@ const PLACES = [
   "halal": false,
   "cuisine": "川菜宴席+漢唐歌舞餐秀",
   "area": "成華區·東郊記憶",
-  "address": "成都市成華區建設南支路4號27棟（東郊記憶南大門）",
-  "lat": 30.668,
-  "lng": 104.122,
+  "address": "成都市成華區建設南支路4號27棟(東郊記憶南大門)",
+  "lat": 30.667574,
+  "lng": 104.123075,
   "hours": "場次制：午宴/晚宴各1場，全程約98-108分鐘（以預約場次為準）",
   "price": "約300-600元/人（依席位等級，頌席/VIP更高）",
   "rating": "4.6/5",
@@ -3728,7 +4162,10 @@ const PLACES = [
    "環繞式歌舞表演"
   ],
   "reason": "中國首家全景沉浸式漢文化主題餐秀——邊吃川菜宴席邊看漢唐宋歌舞，成都現象級體驗。",
-  "notes": "⚠️ 必須提前預約（建議提前7天，前排席位更搶手）：大眾點評/美團/官方電話18780082487；非清真——預訂時可告知忌口請店家調整菜單（能否全無豬需與店家確認）；就在東郊記憶園區南門，看完順逛園區"
+  "notes": "⚠️ 必須提前預約（建議提前7天，前排席位更搶手）：大眾點評/美團/官方電話18780082487；非清真——預訂時可告知忌口請店家調整菜單（能否全無豬需與店家確認）；就在東郊記憶園區南門，看完順逛園區",
+  "amap_poiid": "B0IUL5RY71",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "慶聚齋清真餐廳（較場口店）",
@@ -3736,8 +4173,8 @@ const PLACES = [
   "halal": true,
   "area": "渝中區",
   "address": "渝中區中興路（較場口清真寺旁）",
-  "lat": 29.5516,
-  "lng": 106.5747,
+  "lat": null,
+  "lng": null,
   "hours": "09:30-22:00",
   "price": 42,
   "dishes": [
@@ -3748,6 +4185,8 @@ const PLACES = [
   ],
   "reason": "重慶最老牌的清真餐廳之一，被稱為重慶新疆菜鼻祖，牛羊肉自新疆空運，緊鄰較場口清真寺。",
   "notes": "清真認證，可放心用餐；開門較晚（9:30），適合當早午餐；節假日禮拜時段人多。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "重庆",
   "rating": "4.7/5",
   "rating_source": "大眾點評"
@@ -3757,9 +4196,9 @@ const PLACES = [
   "category": "早餐",
   "halal": true,
   "area": "渝北區",
-  "address": "渝北區松牌路101號（米蘭天空大門旁）",
-  "lat": 29.6152,
-  "lng": 106.5321,
+  "address": "重慶市兩江新區松牌路101號附20號米蘭天空4幢1-1號",
+  "lat": 29.590923,
+  "lng": 106.513096,
   "hours": "約10:00-21:30",
   "price": 40,
   "dishes": [
@@ -3770,6 +4209,9 @@ const PLACES = [
   ],
   "reason": "地道新疆清真店，選用天山巴什拜羊、阿勒泰羊，拌麵筋道、番茄羊肉香濃。",
   "notes": "清真店；位置離主城景區稍遠，可搭配渝北行程；上午開門偏晚，適合早午餐。",
+  "amap_poiid": "B0FFGJH4VR",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆"
  },
  {
@@ -3778,8 +4220,8 @@ const PLACES = [
   "halal": true,
   "area": "江北區",
   "address": "江北區觀音橋商圈（連鎖多店，以高德/大眾點評最新門店為準）",
-  "lat": 29.5919,
-  "lng": 106.532,
+  "lat": null,
+  "lng": null,
   "hours": "約07:00-21:00",
   "price": 25,
   "dishes": [
@@ -3790,6 +4232,8 @@ const PLACES = [
   ],
   "reason": "全國性清真蘭州拉麵品牌，清湯牛肉麵早餐穩妥之選，早上即營業。",
   "notes": "清真連鎖；門店位置可能調整，出發前用地圖App確認最近門店。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "重庆",
   "rating": "4.2/5",
   "rating_source": "綜合"
@@ -3799,9 +4243,9 @@ const PLACES = [
   "category": "早餐",
   "halal": false,
   "area": "渝中區",
-  "address": "渝中區解放西路171號（近十八梯）",
-  "lat": 29.5507,
-  "lng": 106.5717,
+  "address": "重慶市渝中區南紀門街道解放西路171號(儲奇門中藥材市場對面)",
+  "lat": 29.548825,
+  "lng": 106.573275,
   "hours": "約06:30-14:00",
   "price": 18,
   "dishes": [
@@ -3811,6 +4255,9 @@ const PLACES = [
   ],
   "reason": "1987年開業的重慶牛肉麵名片，牛肉燉得不耙不硬、紋路清晰，本地人排隊老店。",
   "notes": "招牌是牛肉麵，但店內也賣豬肥腸面，共用廚房且小面調料多含豬油；點牛肉麵/素椒麵並可要求少放油。高峰要排隊，部分老店偏好現金/掃碼。",
+  "amap_poiid": "B0FFFGPN8S",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆"
  },
  {
@@ -3818,9 +4265,9 @@ const PLACES = [
   "category": "早餐",
   "halal": false,
   "area": "渝中區",
-  "address": "渝中區中山三路139號",
-  "lat": 29.5533,
-  "lng": 106.5545,
+  "address": "重慶市渝中區中山三路125號",
+  "lat": 29.554107,
+  "lng": 106.549255,
   "hours": "約06:30-14:00",
   "price": 15,
   "dishes": [
@@ -3830,6 +4277,9 @@ const PLACES = [
   ],
   "reason": "兩路口本地人常去的小麵館，無鹼水面勁道，牛肉塊大，辣椒香而不燥。",
   "notes": "豌雜麵的雜醬為豬肉，避開；建議點牛肉麵或素椒麵。小面底料可能含豬油，介意可詢問店家。",
+  "amap_poiid": "B0FFKEECCG",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆"
  },
  {
@@ -3837,9 +4287,9 @@ const PLACES = [
   "category": "早餐",
   "halal": false,
   "area": "渝北區",
-  "address": "渝北區松石支路112號",
-  "lat": 29.586076,
-  "lng": 106.503138,
+  "address": "重慶市兩江新區松石支路112號附31號",
+  "lat": 29.586169,
+  "lng": 106.503897,
   "hours": "約06:00-14:00",
   "price": 14,
   "dishes": [
@@ -3849,6 +4299,9 @@ const PLACES = [
   ],
   "reason": "重慶小面50強常客，坐小板凳吃麵的老派體驗，湯頭和油辣子是招牌。",
   "notes": "豌雜麵含豬肉雜醬，點牛肉麵/素小面替代；調料含豬油可能性高，可要求清湯或少油。",
+  "amap_poiid": "B0017942JO",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆",
   "rating": "4.4/5",
   "rating_source": "綜合"
@@ -3859,8 +4312,8 @@ const PLACES = [
   "halal": false,
   "area": "九龍坡區",
   "address": "九龍坡區謝家灣正街（華潤萬象城旁）",
-  "lat": 29.533828,
-  "lng": 106.485796,
+  "lat": null,
+  "lng": null,
   "hours": "約06:30-15:00",
   "price": 15,
   "dishes": [
@@ -3870,6 +4323,8 @@ const PLACES = [
   ],
   "reason": "重慶小面50強第一名出身的老字號攤攤面，油辣子香氣霸道，遊客與本地人都多。",
   "notes": "招牌豌雜麵為豬肉雜醬，務必改點牛肉麵或素椒麵；分店多，認準謝家灣/楊家坪一帶門店。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "重庆",
   "rating": "4.4/5",
   "rating_source": "綜合"
@@ -3879,9 +4334,9 @@ const PLACES = [
   "category": "早餐",
   "halal": false,
   "area": "渝中區",
-  "address": "渝中區較場口附近（花市豌雜麵總店，另有多家分店）",
-  "lat": 29.5523,
-  "lng": 106.573,
+  "address": "重慶市渝中區接聖街8號重慶來福士廣場L1層",
+  "lat": 29.564757,
+  "lng": 106.587889,
   "hours": "約07:00-15:00",
   "price": 15,
   "dishes": [
@@ -3891,6 +4346,9 @@ const PLACES = [
   ],
   "reason": "傳說中的重慶小面20強，豌豆粑糯出名；雖以豌雜聞名，牛肉麵同樣在線。",
   "notes": "鎮店豌雜麵的雜醬是豬肉，請改點牛肉麵或純豌豆面；高峰排隊明顯。",
+  "amap_poiid": "B0HDPZJ05V",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆",
   "rating": "4.5/5",
   "rating_source": "綜合"
@@ -3901,8 +4359,8 @@ const PLACES = [
   "halal": false,
   "area": "江北區",
   "address": "江北區洋河四路10-18號附8號",
-  "lat": 29.5946,
-  "lng": 106.5452,
+  "lat": null,
+  "lng": null,
   "hours": "約06:30-14:30",
   "price": 14,
   "dishes": [
@@ -3912,6 +4370,8 @@ const PLACES = [
   ],
   "reason": "本地口碑麵館，幹熘入味、辣度可調，觀音橋商圈周邊吃地道小面的選擇。",
   "notes": "碗雜麵含豬肉，點牛肉麵/素小面；調料或含豬油，可提前告知店家。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "重庆",
   "rating": "4.3/5",
   "rating_source": "綜合"
@@ -3921,9 +4381,9 @@ const PLACES = [
   "category": "早餐",
   "halal": false,
   "area": "渝中區",
-  "address": "渝中區民生路（解放碑商圈）",
-  "lat": 29.556,
-  "lng": 106.574,
+  "address": "重慶市渝中區民生路250號(海航保利國際中心正對面)",
+  "lat": 29.557548,
+  "lng": 106.5704,
   "hours": "約09:00-21:30",
   "price": 18,
   "dishes": [
@@ -3933,6 +4393,9 @@ const PLACES = [
   ],
   "reason": "開業二十餘年的非遺老麻抄手，皮薄餡嫩、花椒後勁十足，是重慶抄手代表。",
   "notes": "注意：抄手餡為豬肉，僅推薦給同行非清真夥伴；清真/避豬者可只點素麵或跳過本店。",
+  "amap_poiid": "B0FFIKVC4X",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆"
  },
  {
@@ -3941,8 +4404,8 @@ const PLACES = [
   "halal": false,
   "area": "渝中區",
   "address": "渝中區五一路248號",
-  "lat": 29.5567,
-  "lng": 106.575,
+  "lat": null,
+  "lng": null,
   "hours": "約09:00-21:00",
   "price": 16,
   "dishes": [
@@ -3952,6 +4415,8 @@ const PLACES = [
   ],
   "reason": "2002年開業的解放碑老店，以超麻超辣的老麻抄手和過橋吃法著稱。",
   "notes": "注意：抄手為豬肉餡，避豬者建議只體驗酸辣粉/素麵或跳過；嗜麻者再挑戰老麻級別。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "重庆"
  },
  {
@@ -3959,9 +4424,9 @@ const PLACES = [
   "category": "早餐",
   "halal": false,
   "area": "渝中區",
-  "address": "渝中區鄒容路世貿大廈下（解放碑）",
-  "lat": 29.557,
-  "lng": 106.575,
+  "address": "重慶市渝中區世貿大廈(臨江門地鐵站3號口步行50米)",
+  "lat": 29.557569,
+  "lng": 106.574236,
   "hours": "約08:30-21:00",
   "price": 18,
   "dishes": [
@@ -3971,6 +4436,9 @@ const PLACES = [
   ],
   "reason": "解放碑排隊名店，現包抄手皮薄餡大，雞湯底鮮美，適合不吃辣的早晨。",
   "notes": "注意：抄手餡以豬肉為主，避豬者慎選；雞湯底相對清爽但仍非清真。",
+  "amap_poiid": "B0FFF9L6YU",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆"
  },
  {
@@ -3979,8 +4447,8 @@ const PLACES = [
   "halal": "友善",
   "area": "渝中區",
   "address": "渝中區十八梯傳統風貌區（老店原址：南紀門善果巷11號附1號）",
-  "lat": 29.5507,
-  "lng": 106.5717,
+  "lat": null,
+  "lng": null,
   "hours": "約07:00-14:00",
   "price": 8,
   "dishes": [
@@ -3990,6 +4458,8 @@ const PLACES = [
   ],
   "reason": "重慶油茶名店，米糊細膩綿滑、饊子酥脆，麻辣鮮香，是最本味的山城早餐。",
   "notes": "油茶主料為米糊+油炸饊子，一般無豬肉；建議確認饊子用植物油炸制。十八梯遊客多，早去。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "重庆"
  },
  {
@@ -3998,8 +4468,8 @@ const PLACES = [
   "halal": "友善",
   "area": "渝中區",
   "address": "渝中區小苑路10號",
-  "lat": 29.556,
-  "lng": 106.551,
+  "lat": null,
+  "lng": null,
   "hours": "約06:30-11:00",
   "price": 7,
   "dishes": [
@@ -4009,6 +4479,8 @@ const PLACES = [
   ],
   "reason": "社區老早點鋪，本地人從小吃到大的油茶味道，便宜量足。",
   "notes": "無豬肉主料，但非清真認證；賣完即收攤，儘量9點前到；小店可能只收現金/微信。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "重庆"
  },
  {
@@ -4016,9 +4488,9 @@ const PLACES = [
   "category": "早餐",
   "halal": "友善",
   "area": "沙坪垻區",
-  "address": "沙坪垻區磁器口正街小巷內2樓",
-  "lat": 29.5809,
-  "lng": 106.4499,
+  "address": "重慶市沙坪垻區磁器口正街76號",
+  "lat": 29.580624,
+  "lng": 106.451828,
   "hours": "約08:00-17:00",
   "price": 9,
   "dishes": [
@@ -4028,6 +4500,9 @@ const PLACES = [
   ],
   "reason": "磁器口人氣油茶老店，藏在巷子二樓卻天天爆滿，逛古鎮順路的地道早餐。",
   "notes": "油茶本身無豬肉；磁器口白天人流大，建議開街即去；店面小需拼桌。",
+  "amap_poiid": "B0FFHOSQNM",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆"
  },
  {
@@ -4035,9 +4510,9 @@ const PLACES = [
   "category": "早餐",
   "halal": "友善",
   "area": "江北區",
-  "address": "江北區建新東路富強二村3號附2號",
-  "lat": 29.5912,
-  "lng": 106.5416,
+  "address": "重慶市兩江新區富強二村3號附2號",
+  "lat": 29.572445,
+  "lng": 106.54677,
   "hours": "約06:30-11:30",
   "price": 7,
   "dishes": [
@@ -4047,6 +4522,9 @@ const PLACES = [
   ],
   "reason": "觀音橋背街的老派油茶鋪，做法傳統，幾乎全是街坊熟客。",
   "notes": "無豬肉主料；位置在老小區裡稍難找，跟著導航步行進小區。",
+  "amap_poiid": "B0FFLAQEPE",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆"
  },
  {
@@ -4054,9 +4532,9 @@ const PLACES = [
   "category": "早餐",
   "halal": "友善",
   "area": "渝中區",
-  "address": "渝中區學田灣正街59號",
-  "lat": 29.561,
-  "lng": 106.556,
+  "address": "重慶市渝中區學田灣正街59號",
+  "lat": 29.559117,
+  "lng": 106.550366,
   "hours": "約06:30-10:30（賣完收攤）",
   "price": 6,
   "dishes": [
@@ -4066,6 +4544,9 @@ const PLACES = [
   ],
   "reason": "重慶早餐『四大金剛』之一的糯米糰名攤，熱糯米裹油條榨菜再滾黃豆粉，一口滿足。",
   "notes": "素食友好（糯米+油條+黃豆粉）；確認油條為植物油炸；出攤早、售罄即止，建議8點前。",
+  "amap_poiid": "B0FFL2QM8X",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆"
  },
  {
@@ -4073,9 +4554,9 @@ const PLACES = [
   "category": "早餐",
   "halal": "友善",
   "area": "渝中區",
-  "address": "渝中區臨江路6號（近洪崖洞/解放碑）",
-  "lat": 29.562,
-  "lng": 106.576,
+  "address": "重慶市渝中區臨江路6號(朱氏胖子爛旁邊)",
+  "lat": 29.561256,
+  "lng": 106.577676,
   "hours": "約06:30-11:00",
   "price": 6,
   "dishes": [
@@ -4085,6 +4566,9 @@ const PLACES = [
   ],
   "reason": "離洪崖洞、解放碑步行可達的糯米糰老攤，住渝中的早晨最順路。",
   "notes": "無豬肉；鹹口內有榨菜肉鬆者需確認成分，穩妥點甜口（白糖+黃豆粉）。",
+  "amap_poiid": "B0FFKPM428",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆"
  },
  {
@@ -4092,9 +4576,9 @@ const PLACES = [
   "category": "早餐",
   "halal": "友善",
   "area": "沙坪垻區",
-  "address": "沙坪垻區磁器口正街沿街攤點",
-  "lat": 29.5804,
-  "lng": 106.452,
+  "address": "重慶市沙坪垻區磁南街1號",
+  "lat": 29.581184,
+  "lng": 106.449705,
   "hours": "約08:30-18:00",
   "price": 5,
   "dishes": [
@@ -4103,6 +4587,9 @@ const PLACES = [
   ],
   "reason": "上世紀流行的懷舊早點，因烙具似老式熨鬥得名，外層焦酥、內裡綿軟帶米香。",
   "notes": "米漿製品無豬肉，注意確認煎制用油；為流動/沿街攤，以現場看到為準，現金零錢更方便。",
+  "amap_poiid": "B00170IFE4",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆"
  },
  {
@@ -4111,8 +4598,8 @@ const PLACES = [
   "halal": false,
   "area": "渝中區",
   "address": "渝中區大同路（解放碑商圈，另有多家分店）",
-  "lat": 29.5565,
-  "lng": 106.5755,
+  "lat": null,
+  "lng": null,
   "hours": "約07:30-19:00",
   "price": 12,
   "dishes": [
@@ -4123,6 +4610,8 @@ const PLACES = [
   ],
   "reason": "始於1931年的重慶老字號包子，非遺技藝，甜口豆沙包和燒麥同樣出彩。",
   "notes": "注意：招牌醬肉包為豬肉餡，避豬者點玫瑰豆沙包、素菜包、糯米燒麥（燒麥或含豬油，需詢問）。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "重庆",
   "rating": "4.4/5",
   "rating_source": "綜合"
@@ -4133,8 +4622,8 @@ const PLACES = [
   "halal": false,
   "area": "沙坪垻區",
   "address": "沙坪垻區磁器口正街",
-  "lat": 29.5807,
-  "lng": 106.4505,
+  "lat": null,
+  "lng": null,
   "hours": "約09:00-20:00",
   "price": 12,
   "dishes": [
@@ -4144,6 +4633,8 @@ const PLACES = [
   ],
   "reason": "始於1930年代的重慶湯圓老字號，皮糯餡香，是山城湯圓的代表符號。",
   "notes": "注意：傳統黑芝麻餡按老做法含豬板油，介意者詢問是否有植物油/無豬油款，或點醪糟粉子小湯圓（多為無餡）。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "重庆",
   "rating": "4.3/5",
   "rating_source": "綜合"
@@ -4153,9 +4644,9 @@ const PLACES = [
   "category": "甜点",
   "halal": false,
   "area": "渝中區",
-  "address": "渝中區八一路好吃街（國美旁）",
-  "lat": 29.556,
-  "lng": 106.576,
+  "address": "重慶市渝中區解放碑街道八一路183號一層補1-2號八一美食街26號",
+  "lat": 29.555354,
+  "lng": 106.577117,
   "hours": "約10:00-21:30",
   "price": 12,
   "dishes": [
@@ -4165,6 +4656,9 @@ const PLACES = [
   ],
   "reason": "八一路好吃街上的湯圓專門店，小湯圓個小皮薄，一碗十來顆剛好當餐後甜口。",
   "notes": "黑芝麻餡傳統配方含豬油，點單前確認；冬天可點熱醪糟湯圓，更應季。",
+  "amap_poiid": "B0FFJEP6FX",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆"
  },
  {
@@ -4173,8 +4667,8 @@ const PLACES = [
   "halal": false,
   "area": "江北區",
   "address": "江北區觀音橋好吃街",
-  "lat": 29.5919,
-  "lng": 106.5325,
+  "lat": null,
+  "lng": null,
   "hours": "約10:00-22:00",
   "price": 13,
   "dishes": [
@@ -4185,6 +4679,8 @@ const PLACES = [
   ],
   "reason": "觀音橋小吃街人氣甜品店，一家店集齊湯圓、冰粉、涼蝦三樣重慶甜味。",
   "notes": "湯圓芝麻餡或含豬油，需確認；冰粉涼蝦偏夏季，12月去主推熱湯圓和餈粑。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "重庆",
   "rating": "4.4/5",
   "rating_source": "綜合"
@@ -4195,8 +4691,8 @@ const PLACES = [
   "halal": "友善",
   "area": "渝中區",
   "address": "渝中區八一路好吃街",
-  "lat": 29.5558,
-  "lng": 106.5762,
+  "lat": null,
+  "lng": null,
   "hours": "約10:00-22:00",
   "price": 10,
   "dishes": [
@@ -4206,6 +4702,8 @@ const PLACES = [
   ],
   "reason": "以能拉絲的紅糖涼糕出圈，米制甜品清爽不膩，逛解放碑的甜品補給站。",
   "notes": "米製品無豬肉，較友好；涼糕冰粉偏涼，冬天怕涼可選熱餈粑。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "重庆"
  },
  {
@@ -4213,9 +4711,9 @@ const PLACES = [
   "category": "甜点",
   "halal": false,
   "area": "渝中區",
-  "address": "渝中區大井巷（較場口附近）",
-  "lat": 29.553,
-  "lng": 106.575,
+  "address": "重慶市渝中區大井南巷5號公安局幼兒園對面",
+  "lat": 29.559368,
+  "lng": 106.571725,
   "hours": "約11:00-22:00",
   "price": 12,
   "dishes": [
@@ -4226,6 +4724,9 @@ const PLACES = [
   ],
   "reason": "主打冰湯圓的專門店，紅糖湯底配小湯圓和醪糟，是重慶人的傳統甜水。",
   "notes": "湯圓餡可能含豬油，點無餡小湯圓/涼蝦更穩妥；冰品居多，12月注意保暖或詢問熱飲款。",
+  "amap_poiid": "B0FFKPVMLC",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆"
  },
  {
@@ -4234,8 +4735,8 @@ const PLACES = [
   "halal": "友善",
   "area": "江北區",
   "address": "江北區觀音橋商圈（重慶20餘家分店，以地圖App為準）",
-  "lat": 29.5915,
-  "lng": 106.5335,
+  "lat": null,
+  "lng": null,
   "hours": "約11:00-22:30",
   "price": 12,
   "dishes": [
@@ -4245,6 +4746,8 @@ const PLACES = [
   ],
   "reason": "重慶本土冰粉連鎖，手工冰籽冰粉氣泡感明顯，配料給得大方，米涼糕口碑最好。",
   "notes": "植物基甜品，較友好；冰品為主，12月可能部分門店縮短營業或推熱甜品，先查點評。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "重庆"
  },
  {
@@ -4253,8 +4756,8 @@ const PLACES = [
   "halal": "友善",
   "area": "江北區",
   "address": "江北區觀音橋香港城好吃街出口處",
-  "lat": 29.5917,
-  "lng": 106.5322,
+  "lat": null,
+  "lng": null,
   "hours": "約11:00-22:00",
   "price": 8,
   "dishes": [
@@ -4264,6 +4767,8 @@ const PLACES = [
   ],
   "reason": "人均不到10元的平價甜品老店，紅豆沙雙皮奶是招牌，性價比極高。",
   "notes": "奶制甜品無豬肉；龜苓膏含龜板等動物成分，介意者避開只點雙皮奶。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "重庆"
  },
  {
@@ -4271,9 +4776,9 @@ const PLACES = [
   "category": "甜点",
   "halal": "友善",
   "area": "沙坪垻區",
-  "address": "沙坪垻區磁器口正街58號",
-  "lat": 29.5808,
-  "lng": 106.4502,
+  "address": "重慶市沙坪垻區磁器口正街77號",
+  "lat": 29.581175,
+  "lng": 106.451975,
   "hours": "約08:30-20:00",
   "price": 30,
   "dishes": [
@@ -4284,6 +4789,9 @@ const PLACES = [
   ],
   "reason": "磁器口排隊最長的百年麻花老字號，酥脆不膩，是最經典的重慶伴手禮。",
   "notes": "伴手禮類；一般為植物油炸制，穩妥選原味/蜂蜜等甜口；認準『陳昌銀』正牌，古鎮山寨陳麻花多。",
+  "amap_poiid": "B0FFG419S7",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆",
   "rating": "4.6/5",
   "rating_source": "綜合"
@@ -4294,8 +4802,8 @@ const PLACES = [
   "halal": "友善",
   "area": "江北區",
   "address": "江北區觀音橋北倉文創街區",
-  "lat": 29.593,
-  "lng": 106.537,
+  "lat": null,
+  "lng": null,
   "hours": "約12:00-21:00",
   "price": 40,
   "dishes": [
@@ -4305,6 +4813,8 @@ const PLACES = [
   ],
   "reason": "藏在北倉文創園的人氣法甜店，出品精緻，適合下午茶歇腳拍照。",
   "notes": "法甜可能含明膠（吉利丁）等動物成分，嚴格清真者點前詢問；店小熱門時段需等位。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "重庆"
  },
  {
@@ -4313,8 +4823,8 @@ const PLACES = [
   "halal": "友善",
   "area": "渝中區",
   "address": "渝中區解放碑時代廣場",
-  "lat": 29.5572,
-  "lng": 106.5768,
+  "lat": null,
+  "lng": null,
   "hours": "約10:00-22:00",
   "price": 30,
   "dishes": [
@@ -4324,6 +4834,8 @@ const PLACES = [
   ],
   "reason": "港式甜品連鎖，出品穩定、環境舒適，逛解放碑時的保底甜品選項。",
   "notes": "無豬肉；班戟奶油類甜品含乳製品和明膠風險低，嚴格者仍可詢問成分。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "重庆",
   "rating": "4.2/5",
   "rating_source": "綜合"
@@ -4333,9 +4845,9 @@ const PLACES = [
   "category": "饮料",
   "halal": "友善",
   "area": "九龍坡區",
-  "address": "九龍坡區黃桷坪街道新建路3棟臨街門面34號",
-  "lat": 29.4867,
-  "lng": 106.5158,
+  "address": "重慶市九龍坡區黃桷坪正街7號(四川美術學院地鐵站4號口步行50米)",
+  "lat": 29.488645,
+  "lng": 106.542732,
   "hours": "約07:00-20:00",
   "price": 12,
   "dishes": [
@@ -4345,6 +4857,9 @@ const PLACES = [
   ],
   "reason": "重慶保存最完好的老茶館，《瘋狂的石頭》取景地，一杯老蔭茶坐看最市井的山城。",
   "notes": "僅供茶水，無餐食顧慮；建議現金備零錢；配套黃桷坪塗鴉街、川美老校區一起逛；遊客漸多，早上去最有味道。",
+  "amap_poiid": "B001790I1V",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆",
   "rating": "4.6/5",
   "rating_source": "綜合"
@@ -4354,9 +4869,9 @@ const PLACES = [
   "category": "饮料",
   "halal": "友善",
   "area": "渝中區",
-  "address": "渝中區十八梯13號附16號",
-  "lat": 29.5505,
-  "lng": 106.572,
+  "address": "重慶市渝中區十八梯13號附16號(較場口地鐵站出口步行110米)",
+  "lat": 29.552193,
+  "lng": 106.572828,
   "hours": "10:00-20:00",
   "price": 30,
   "dishes": [
@@ -4366,6 +4881,9 @@ const PLACES = [
   ],
   "reason": "十八梯裡的川渝風茶鋪，有變臉、茶藝表演，冬天圍爐煮茶很應12月的景。",
   "notes": "純茶飲；表演時段人多，想安靜選工作日上午；圍爐煮茶套餐需按套計價。",
+  "amap_poiid": "B0I3HH6BT6",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆"
  },
  {
@@ -4374,8 +4892,8 @@ const PLACES = [
   "halal": "友善",
   "area": "渝中區",
   "address": "渝中區山城巷傳統風貌區內",
-  "lat": 29.5535,
-  "lng": 106.568,
+  "lat": null,
+  "lng": null,
   "hours": "約10:00-21:00",
   "price": 25,
   "dishes": [
@@ -4385,6 +4903,8 @@ const PLACES = [
   ],
   "reason": "藏在山城巷的老重慶茶館，喝的就是爬坡上坎後那一碗老蔭茶的解乏感。",
   "notes": "純茶飲無忌口問題；山城巷步道台階多，穿好走的鞋；觀景位下午容易滿。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "重庆"
  },
  {
@@ -4392,9 +4912,9 @@ const PLACES = [
   "category": "饮料",
   "halal": "友善",
   "area": "渝中區",
-  "address": "渝中區凱旋路東華觀藏書樓（較場口至小什字之間）",
-  "lat": 29.5575,
-  "lng": 106.581,
+  "address": "重慶市渝中區凱旋路73號",
+  "lat": 29.553043,
+  "lng": 106.578749,
   "hours": "約09:30-18:00",
   "price": 20,
   "dishes": [
@@ -4404,6 +4924,9 @@ const PLACES = [
   ],
   "reason": "古建築重修後開出的露天壩壩茶，在700年道觀旁喝茶曬太陽，本地人下午的快樂。",
   "notes": "露天為主，12月挑晴天午後去；僅茶水，可自帶小食（勿帶豬肉製品入清真同行者場合）。",
+  "amap_poiid": "B0FFM9FIZF",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆"
  },
  {
@@ -4411,9 +4934,9 @@ const PLACES = [
   "category": "饮料",
   "halal": "友善",
   "area": "沙坪垻區",
-  "address": "沙坪垻區磁器口正街（另有解放碑、觀音橋等多家分店）",
-  "lat": 29.5806,
-  "lng": 106.4508,
+  "address": "重慶市沙坪垻區磁器口南街16號附10號(步行街磁器長歌對面)",
+  "lat": 29.578073,
+  "lng": 106.450133,
   "hours": "約09:30-21:30",
   "price": 15,
   "dishes": [
@@ -4423,6 +4946,9 @@ const PLACES = [
   ],
   "reason": "發源於重慶的酸奶飲品品牌，被稱為重慶版『茶顏悅色』，紫米露是必點招牌。",
   "notes": "酸奶基底無豬肉成分，較友好；分店極多隨處可買，磁器口店排隊看運氣。",
+  "amap_poiid": "B0IDC4BEQ3",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆",
   "rating": "4.4/5",
   "rating_source": "綜合"
@@ -4433,8 +4959,8 @@ const PLACES = [
   "halal": "友善",
   "area": "渝中區",
   "address": "渝中區山城巷/第三步道沿線（領事巷入口附近）",
-  "lat": 29.5538,
-  "lng": 106.5675,
+  "lat": null,
+  "lng": null,
   "hours": "約10:00-19:00",
   "price": 30,
   "dishes": [
@@ -4444,6 +4970,8 @@ const PLACES = [
   ],
   "reason": "開在山城步道上的特調咖啡店，辣椒咖啡等在地化創意特調，是『山城味』咖啡代表。",
   "notes": "純咖啡飲品；沿步道爬坡而上，建議與山城巷、十八梯串成一條步行線。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "重庆"
  },
  {
@@ -4452,8 +4980,8 @@ const PLACES = [
   "halal": "友善",
   "area": "渝中區",
   "address": "渝中區鵝嶺正街1號鵝嶺貳廠文創公園內",
-  "lat": 29.5497,
-  "lng": 106.5372,
+  "lat": null,
+  "lng": null,
   "hours": "約10:30-21:00",
   "price": 35,
   "dishes": [
@@ -4463,6 +4991,8 @@ const PLACES = [
   ],
   "reason": "鵝嶺二廠裡的金屬冷淡風咖啡店，飲品與空間顏值雙高，《從你的全世界路過》取景園區。",
   "notes": "飲品為主無忌口問題；二廠在渝中半島制高點，可順看兩江景色，周末人多。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "重庆"
  },
  {
@@ -4471,8 +5001,8 @@ const PLACES = [
   "halal": "友善",
   "area": "渝中區",
   "address": "渝中區鵝嶺貳廠文創公園1號樓5樓天台",
-  "lat": 29.5495,
-  "lng": 106.537,
+  "lat": null,
+  "lng": null,
   "hours": "約11:00-22:00",
   "price": 40,
   "dishes": [
@@ -4482,6 +5012,8 @@ const PLACES = [
   ],
   "reason": "二廠天台上的觀景茶座，同時望長江嘉陵江，12月圍爐煮茶配江景正合適。",
   "notes": "天台風大，冬天注意保暖；煮茶套餐配的茶點若含肉脯類可要求更換。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "重庆"
  },
  {
@@ -4489,9 +5021,9 @@ const PLACES = [
   "category": "饮料",
   "halal": "友善",
   "area": "渝中區",
-  "address": "渝中區解放碑商圈（mini店面，另有龍珠花園等點位）",
-  "lat": 29.5568,
-  "lng": 106.5772,
+  "address": "重慶市渝中區解放碑鄒容路100號重慶時代廣場B2層201號",
+  "lat": 29.557933,
+  "lng": 106.576945,
   "hours": "約09:00-19:00",
   "price": 25,
   "dishes": [
@@ -4501,6 +5033,9 @@ const PLACES = [
   ],
   "reason": "重慶本土mini咖啡店代表，窗口小店出品認真，逛解放碑時的快取咖啡。",
   "notes": "外帶窗口為主基本無座位；店面小易錯過，跟導航到樓棟後留意招牌。",
+  "amap_poiid": "B0J2PHCGDV",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆"
  },
  {
@@ -4509,8 +5044,8 @@ const PLACES = [
   "halal": "友善",
   "area": "江北區",
   "address": "江北區紅旗河溝附近",
-  "lat": 29.6,
-  "lng": 106.521,
+  "lat": null,
+  "lng": null,
   "hours": "約11:00-21:00",
   "price": 30,
   "dishes": [
@@ -4520,6 +5055,8 @@ const PLACES = [
   ],
   "reason": "簡約韓式風格的社區咖啡館，安靜適合歇腳，避開景區人流的本地選擇。",
   "notes": "飲品無忌口問題；位於商住區內，具體樓棟以地圖App搜索店名為準。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "重庆"
  },
  {
@@ -4530,8 +5067,8 @@ const PLACES = [
   "cuisine": "清真重慶火鍋",
   "area": "渝北區 松牌路清真一條街",
   "address": "松牌路米蘭天空101號附23號（大連銀行旁）",
-  "lat": 29.595,
-  "lng": 106.521,
+  "lat": null,
+  "lng": null,
   "hours": null,
   "price": "人均約90元",
   "rating": null,
@@ -4543,7 +5080,9 @@ const PLACES = [
    "鮮毛肚"
   ],
   "reason": "松牌路新疆清真一條街上的清真牛油火鍋，牛骨熬湯、鮮切鮮燙，店內禁菸酒",
-  "notes": "電話023-67288186；攜程有收錄但評分未查到填null"
+  "notes": "電話023-67288186；攜程有收錄但評分未查到填null",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "伊蘭穆斯重慶清真火鍋",
@@ -4552,9 +5091,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真重慶火鍋",
   "area": "渝中區 較場口/清真寺",
-  "address": "渝中區中興路7號（穆斯林大廈清真寺旁）",
-  "lat": 29.554,
-  "lng": 106.575,
+  "address": "重慶市渝中區中興路7號附3號",
+  "lat": 29.552703,
+  "lng": 106.571875,
   "hours": null,
   "price": "人均約97元",
   "rating": "4.3/5",
@@ -4566,7 +5105,10 @@ const PLACES = [
    "麻辣清真鍋底"
   ],
   "reason": "較場口清真寺美食街上的清真火鍋，本地穆斯林認可度高",
-  "notes": "與馬隊長同街但為不同店家"
+  "notes": "與馬隊長同街但為不同店家",
+  "amap_poiid": "B0J16ZR7PZ",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "重慶清真火鍋城（較場口一店）",
@@ -4576,8 +5118,8 @@ const PLACES = [
   "cuisine": "清真重慶火鍋",
   "area": "渝中區 較場口/清真寺",
   "address": "渝中區較場口中興路5號附1號（渝亞大廈旁）",
-  "lat": 29.5545,
-  "lng": 106.5748,
+  "lat": null,
+  "lng": null,
   "hours": null,
   "price": null,
   "rating": null,
@@ -4588,7 +5130,9 @@ const PLACES = [
    "牛雜"
   ],
   "reason": "緊鄰較場口清真寺（穆斯林大廈）的老牌清真火鍋城",
-  "notes": "360地圖有收錄；評分未查到填null"
+  "notes": "360地圖有收錄；評分未查到填null",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "威靈頓酒店·醉西域風味餐廳",
@@ -4598,8 +5142,8 @@ const PLACES = [
   "cuisine": "新疆菜",
   "area": "渝北區 紅錦大道/財富中心",
   "address": "渝北區紅錦大道609號威靈頓酒店三樓（近財富中心）",
-  "lat": 29.607,
-  "lng": 106.531,
+  "lat": null,
+  "lng": null,
   "hours": null,
   "price": "人均約119元",
   "rating": "4.5/5",
@@ -4611,7 +5155,9 @@ const PLACES = [
    "手抓飯"
   ],
   "reason": "酒店內高檔新疆風味餐廳，重慶新疆菜排行榜前三",
-  "notes": "未見清真認證公示，標記友善"
+  "notes": "未見清真認證公示，標記友善",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "老三烤羊肉串",
@@ -4621,8 +5167,8 @@ const PLACES = [
   "cuisine": "清真燒烤",
   "area": "南岸區 南坪",
   "address": "南坪西路與珊瑚路交叉口東南方向227米",
-  "lat": 29.529,
-  "lng": 106.56,
+  "lat": null,
+  "lng": null,
   "hours": null,
   "price": "人均約60元",
   "rating": null,
@@ -4634,7 +5180,9 @@ const PLACES = [
    "葷素串"
   ],
   "reason": "南坪人氣清真燒烤，用料新鮮講究、無重羶味",
-  "notes": "清真美食網（純真生活）推薦；評分未查到填null"
+  "notes": "清真美食網（純真生活）推薦；評分未查到填null",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "沙灣蘭州拉麵館",
@@ -4644,8 +5192,8 @@ const PLACES = [
   "cuisine": "蘭州牛肉拉麵",
   "area": "渝北區 回興/寶聖大道",
   "address": "渝北區寶聖大道816號",
-  "lat": 29.696,
-  "lng": 106.556,
+  "lat": null,
+  "lng": null,
   "hours": null,
   "price": "人均約15元",
   "rating": null,
@@ -4655,7 +5203,9 @@ const PLACES = [
    "牛肉小菜"
   ],
   "reason": "傳統手工蘭州拉麵工藝，清真早餐/簡餐選擇",
-  "notes": "清真美食網推薦；評分未查到填null"
+  "notes": "清真美食網推薦；評分未查到填null",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "華巖寺素食餐廳",
@@ -4664,9 +5214,9 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "寺院素齋",
   "area": "九龍坡區 華巖寺景區",
-  "address": "九龍坡區華巖寺路華巖寺景區內（距華巖寺地鐵站3A口步行約5分鐘）",
-  "lat": 29.489,
-  "lng": 106.452,
+  "address": "重慶市九龍坡區華巖村5號附42號華巖寺(華巖寺地鐵站3B口步行470米)",
+  "lat": 29.490396,
+  "lng": 106.447154,
   "hours": "約09:00-17:00（寺院齋飯6:30/11:30/17:30三輪）",
   "price": "人均約75元（寺院齋飯8元/位）",
   "rating": "4.4/5",
@@ -4678,7 +5228,10 @@ const PLACES = [
    "素齋套餐"
   ],
   "reason": "寺院素食全素無肉無酒，182道創新素菜，穆斯林可作為清真友善選擇",
-  "notes": "佛教素齋非清真認證，標記友善"
+  "notes": "佛教素齋非清真認證，標記友善",
+  "amap_poiid": "B0FFI1SWHA",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "羅漢寺齋餐館（素麵）",
@@ -4688,8 +5241,8 @@ const PLACES = [
   "cuisine": "寺院素麵/素齋",
   "area": "渝中區 解放碑/羅漢寺",
   "address": "渝中區羅漢寺街7號羅漢寺內",
-  "lat": 29.562,
-  "lng": 106.581,
+  "lat": null,
+  "lng": null,
   "hours": "08:00-17:00（隨寺院開放時間）",
   "price": "素麵約10-20元（寺門票20元）",
   "rating": null,
@@ -4699,7 +5252,9 @@ const PLACES = [
    "素齋飯"
   ],
   "reason": "解放碑核心區寺院素麵，全素平價，遊覽洪崖洞/解放碑時的清真友善簡餐",
-  "notes": "佛教素齋非清真認證，標記友善；評分未查到填null"
+  "notes": "佛教素齋非清真認證，標記友善；評分未查到填null",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "春秋飯莊",
@@ -4709,8 +5264,8 @@ const PLACES = [
   "cuisine": "新疆清真菜",
   "area": "萬州區 沙龍路",
   "address": "萬州區沙龍路三段2117號",
-  "lat": 30.768232,
-  "lng": 108.396773,
+  "lat": null,
+  "lng": null,
   "hours": null,
   "price": null,
   "rating": null,
@@ -4721,7 +5276,9 @@ const PLACES = [
    "烤羊肉"
   ],
   "reason": "重慶本地寶'新疆清真菜館'名錄收錄的萬州清真飯莊",
-  "notes": "評分未查到填null"
+  "notes": "評分未查到填null",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "財紅飯莊",
@@ -4731,8 +5288,8 @@ const PLACES = [
   "cuisine": "新疆清真菜",
   "area": "萬州區 龍寶",
   "address": "萬州區龍安路與龍寶大道交叉口旁",
-  "lat": 30.753028,
-  "lng": 108.374274,
+  "lat": null,
+  "lng": null,
   "hours": null,
   "price": null,
   "rating": null,
@@ -4742,7 +5299,9 @@ const PLACES = [
    "牛羊肉家常菜"
   ],
   "reason": "重慶本地寶'新疆清真菜館'名錄收錄的萬州清真飯莊",
-  "notes": "評分未查到填null"
+  "notes": "評分未查到填null",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "八大碗（萬州）",
@@ -4751,9 +5310,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "回族八大碗/清真菜",
   "area": "萬州區 龍寶大街",
-  "address": "萬州區龍寶大街232號",
-  "lat": 30.794,
-  "lng": 108.37,
+  "address": "重慶市萬州區龍寶大街398號附1號",
+  "lat": 30.750809,
+  "lng": 108.376391,
   "hours": null,
   "price": null,
   "rating": null,
@@ -4764,7 +5323,10 @@ const PLACES = [
    "燴菜"
   ],
   "reason": "重慶本地寶'新疆清真菜館'名錄收錄，傳統回族宴席菜式",
-  "notes": "評分未查到填null"
+  "notes": "評分未查到填null",
+  "amap_poiid": "B001795I69",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "李福記抓飯",
@@ -4774,8 +5336,8 @@ const PLACES = [
   "cuisine": "新疆抓飯",
   "area": "萬州區 珊瑚街/萬達廣場",
   "address": "萬州區珊瑚街8號附14號萬達廣場3號",
-  "lat": 30.812565,
-  "lng": 108.38204,
+  "lat": null,
+  "lng": null,
   "hours": "09:00-21:00",
   "price": "人均約25元",
   "rating": null,
@@ -4786,7 +5348,9 @@ const PLACES = [
    "酸奶"
   ],
   "reason": "萬州萬達廣場旁的清真抓飯專門店，重慶本地寶清真菜名錄收錄",
-  "notes": "評分未查到填null"
+  "notes": "評分未查到填null",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "新疆果園（萬州）",
@@ -4796,8 +5360,8 @@ const PLACES = [
   "cuisine": "新疆清真菜",
   "area": "萬州區 友誼路",
   "address": "萬州區友誼路",
-  "lat": 30.816,
-  "lng": 108.366,
+  "lat": null,
+  "lng": null,
   "hours": null,
   "price": null,
   "rating": null,
@@ -4808,7 +5372,9 @@ const PLACES = [
    "拌麵"
   ],
   "reason": "萬州清真餐廳名錄收錄的新疆風味餐廳",
-  "notes": "評分未查到填null"
+  "notes": "評分未查到填null",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "新疆大盤雞（長壽店）",
@@ -4818,8 +5384,8 @@ const PLACES = [
   "cuisine": "新疆大盤雞",
   "area": "長壽區 桃源北二路",
   "address": "長壽區桃源北二路",
-  "lat": 29.856,
-  "lng": 107.074,
+  "lat": null,
+  "lng": null,
   "hours": null,
   "price": null,
   "rating": null,
@@ -4830,7 +5396,9 @@ const PLACES = [
    "拌麵"
   ],
   "reason": "重慶本地寶'新疆清真'欄目收錄的長壽區大盤雞專門店",
-  "notes": "清真認證情況未確認，標記友善；評分未查到填null"
+  "notes": "清真認證情況未確認，標記友善；評分未查到填null",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "老字號新疆餐廳大盤雞",
@@ -4839,9 +5407,9 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "新疆菜/大盤雞",
   "area": "渝中區 大坪",
-  "address": "渝中區大坪正街130號",
-  "lat": 29.541,
-  "lng": 106.519,
+  "address": "重慶市渝中區大坪正街71號",
+  "lat": 29.539861,
+  "lng": 106.510957,
   "hours": "11:00-22:00",
   "price": "人均約55元",
   "rating": null,
@@ -4852,7 +5420,10 @@ const PLACES = [
    "烤羊肉串"
   ],
   "reason": "大坪老牌新疆餐廳，重慶本地寶收錄",
-  "notes": "清真認證情況未確認，標記友善；評分未查到填null"
+  "notes": "清真認證情況未確認，標記友善；評分未查到填null",
+  "amap_poiid": "B0FFGJN773",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "沙灣大盤雞（石油路）",
@@ -4861,9 +5432,9 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "新疆沙灣大盤雞",
   "area": "渝中區 石油路",
-  "address": "渝中區石油路",
-  "lat": 29.533132,
-  "lng": 106.504704,
+  "address": "重慶市渝中區石油路1-4號(愛家超市對面)",
+  "lat": 29.54102,
+  "lng": 106.511537,
   "hours": null,
   "price": "人均約50元",
   "rating": null,
@@ -4874,7 +5445,10 @@ const PLACES = [
    "涼皮"
   ],
   "reason": "專營新疆沙灣風味大盤雞的清真風味菜館，TripAdvisor亦有收錄（石油路大盤雞）",
-  "notes": "清真認證情況未確認，標記友善；評分頁面無法訪問填null"
+  "notes": "清真認證情況未確認，標記友善；評分頁面無法訪問填null",
+  "amap_poiid": "B001785GXG",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "渝小穆重慶清真小面（較場口店）",
@@ -4883,9 +5457,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真重慶小面/米線/酸辣粉",
   "area": "渝中區 較場口",
-  "address": "重慶市渝中區新華路較場口78號附1號",
-  "lat": 29.5537,
-  "lng": 106.574,
+  "address": "重慶市渝中區較場口涼亭子7號",
+  "lat": 29.552647,
+  "lng": 106.570217,
   "hours": "08:00-22:00",
   "price": "約15-25元/人",
   "rating": "4.3/5",
@@ -4898,7 +5472,10 @@ const PLACES = [
    "米線"
   ],
   "reason": "極罕見的清真版重慶小面，讓穆斯林遊客也能體驗重慶最地道的小面文化，位於較場口穆斯林大廈生活圈。",
-  "notes": "回族經營清真麵館，緊鄰重慶清真寺/穆斯林大廈；電話18084018232；大眾點評有穆斯林食客好評。"
+  "notes": "回族經營清真麵館，緊鄰重慶清真寺/穆斯林大廈；電話18084018232；大眾點評有穆斯林食客好評。",
+  "amap_poiid": "B0K61RNIJ2",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "馬家渝清真萬州烤魚",
@@ -4907,9 +5484,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真萬州烤魚/江湖菜",
   "area": "渝中區 較場口（中興路清真美食街）",
-  "address": "重慶市渝中區中興路7號第5層",
-  "lat": 29.552,
-  "lng": 106.5745,
+  "address": "重慶市渝中區中興路7號第五層部分",
+  "lat": 29.552498,
+  "lng": 106.571695,
   "hours": null,
   "price": "烤魚約68元/份起",
   "rating": "3.9/5",
@@ -4922,7 +5499,10 @@ const PLACES = [
    "牛肉丸"
   ],
   "reason": "清真版的重慶非遺萬州烤魚，穆斯林可放心體驗重慶烤魚文化；就在較場口清真一條街內。",
-  "notes": "位於中興路清真街區（馬隊長火鍋同棟渝亞大廈），回族馬家經營；電話18584508166；美團有68元烤魚套餐。"
+  "notes": "位於中興路清真街區（馬隊長火鍋同棟渝亞大廈），回族馬家經營；電話18584508166；美團有68元烤魚套餐。",
+  "amap_poiid": "B0LGXZ90R3",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "飄香椒麻雞",
@@ -4932,8 +5512,8 @@ const PLACES = [
   "cuisine": "新疆昌吉椒麻雞專門店",
   "area": "沙坪垻區 西永",
   "address": "重慶市沙坪垻區西永路381號附4號",
-  "lat": 29.596,
-  "lng": 106.308,
+  "lat": null,
+  "lng": null,
   "hours": null,
   "price": null,
   "rating": null,
@@ -4944,7 +5524,9 @@ const PLACES = [
    "涼皮"
   ],
   "reason": "重慶少見的清真椒麻雞專門店，補足大盤雞/椒麻雞品類；位於沙坪垻西永，遠離較場口老區。",
-  "notes": "百度百科標註為沙坪垻區清真菜餐館（新疆清真）；評分與人均未查到，建議出發前電話確認營業。"
+  "notes": "百度百科標註為沙坪垻區清真菜餐館（新疆清真）；評分與人均未查到，建議出發前電話確認營業。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "卡亞土耳其餐廳 KAYA TURKISH RESTAURANT（解放碑店）",
@@ -4954,8 +5536,8 @@ const PLACES = [
   "cuisine": "土耳其菜/中東西餐",
   "area": "渝中區 解放碑",
   "address": "重慶市渝中區解放碑街道英利大融城6樓",
-  "lat": 29.558,
-  "lng": 106.576,
+  "lat": null,
+  "lng": null,
   "hours": null,
   "price": "人均約90-130元",
   "rating": null,
@@ -4968,7 +5550,9 @@ const PLACES = [
    "鷹嘴豆泥"
   ],
   "reason": "店招直接標註「清真HALAL」的土耳其餐廳，土耳其人經營，解放碑核心商圈即可體驗中東風味。",
-  "notes": "百度地圖店名含HALAL標識；另在渝北公園天街A館4F-35號有分店（土耳其人開店，小紅書/攜程多篇打卡）；電話13628301030。"
+  "notes": "百度地圖店名含HALAL標識；另在渝北公園天街A館4F-35號有分店（土耳其人開店，小紅書/攜程多篇打卡）；電話13628301030。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "TurKebab 土耳卡巴·土耳其菜（重慶光環店）",
@@ -4977,9 +5561,9 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "土耳其菜/烤肉",
   "area": "渝北區 光環購物公園",
-  "address": "重慶市渝北區湖彩路光環購物公園L4層S0809號商鋪",
-  "lat": 29.651281,
-  "lng": 106.530216,
+  "address": "重慶市兩江新區湖彩路118號重慶光環購物公園4層",
+  "lat": 29.650291,
+  "lng": 106.529343,
   "hours": null,
   "price": "人均約100-150元",
   "rating": null,
@@ -4992,7 +5576,10 @@ const PLACES = [
    "燕麥酸奶"
   ],
   "reason": "重慶連鎖最廣的土耳其餐廳（光環、萬象城、時代天街、來福士、新光天地均有店），異域風情濃、評價高。",
-  "notes": "土耳其風味連鎖，食材以牛羊雞為主；未查到官方清真認證文件，標註為清真友善，嚴格教眾建議現場確認；光環店電話023-63021717。"
+  "notes": "土耳其風味連鎖，食材以牛羊雞為主；未查到官方清真認證文件，標註為清真友善，嚴格教眾建議現場確認；光環店電話023-63021717。",
+  "amap_poiid": "B0KK3GWO9G",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "艾美沙中東餐廳",
@@ -5002,8 +5589,8 @@ const PLACES = [
   "cuisine": "中東菜（土耳其/阿拉伯風味）",
   "area": "江北區 北濱路鎏嘉碼頭",
   "address": "重慶市江北區北濱路鎏嘉碼頭B區3棟LG層",
-  "lat": 29.584,
-  "lng": 106.523,
+  "lat": null,
+  "lng": null,
   "hours": null,
   "price": null,
   "rating": null,
@@ -5015,7 +5602,9 @@ const PLACES = [
    "土耳其烤肉"
   ],
   "reason": "重慶首家中東特色餐廳，把地道土耳其及阿拉伯風味帶到山城，江北嘴/北濱路江景區位。",
-  "notes": "百度知道及本地資料稱其為重慶最早的中東菜館；參考電話023-67664680；部分網絡資料未更新營業狀態，前往前務必致電確認。"
+  "notes": "百度知道及本地資料稱其為重慶最早的中東菜館；參考電話023-67664680；部分網絡資料未更新營業狀態，前往前務必致電確認。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "海維奇清真牛肉館",
@@ -5025,8 +5614,8 @@ const PLACES = [
   "cuisine": "榮昌回族清真牛肉/清真全牛宴",
   "area": "榮昌區 清流鎮（回族聚居鎮）",
   "address": "重慶市榮昌區清流鎮廣場路6號附1-2號",
-  "lat": 29.54,
-  "lng": 105.7,
+  "lat": null,
+  "lng": null,
   "hours": null,
   "price": null,
   "rating": null,
@@ -5039,7 +5628,9 @@ const PLACES = [
    "涼拌牛肉"
   ],
   "reason": "榮昌清流鎮是重慶回族聚居地，清真牛肉烹製技藝入選非遺；這是當地代表性牛肉館，可吃到最正宗的榮昌清真全牛宴。",
-  "notes": "2015年開業的回族牛肉館（店主海維奇家族為當地回族），成渝自駕美食線路推薦點；距重慶主城約1.5小時車程。"
+  "notes": "2015年開業的回族牛肉館（店主海維奇家族為當地回族），成渝自駕美食線路推薦點；距重慶主城約1.5小時車程。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "西北樓手抓",
@@ -5048,9 +5639,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "西北菜/寧夏灘羊手抓羊肉",
   "area": "渝北區 新牌坊（松牌路清真美食街）",
-  "address": "重慶市渝北區松牌路米蘭天空（臨街門面）",
-  "lat": 29.59,
-  "lng": 106.511,
+  "address": "重慶市兩江新區松牌路米蘭天空101號附25號",
+  "lat": 29.591122,
+  "lng": 106.513392,
   "hours": null,
   "price": null,
   "rating": "4.5/5",
@@ -5062,7 +5653,10 @@ const PLACES = [
    "羊湯"
   ],
   "reason": "地道清真西北菜館，主打寧夏灘羊手抓，羊排軟爛無羶、配乾濕蘸料和新蒜，補足青海/寧夏手抓品類。",
-  "notes": "大眾點評探店稱其為渝北松牌路（新牌坊新疆/清真餐廳一條街）上的清真西北菜餐廳，路邊門面顯眼。"
+  "notes": "大眾點評探店稱其為渝北松牌路（新牌坊新疆/清真餐廳一條街）上的清真西北菜餐廳，路邊門面顯眼。",
+  "amap_poiid": "B0FFLLK68Y",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "BON APPÉTIT 法式麵包店（時代天街店）",
@@ -5072,8 +5666,8 @@ const PLACES = [
   "cuisine": "法式烘焙/麵包甜點（雲南清真背景）",
   "area": "渝中區 大坪 時代天街",
   "address": "重慶市渝中區石油路街道時代天街12號E館-1F9商鋪",
-  "lat": 29.539,
-  "lng": 106.514,
+  "lat": null,
+  "lng": null,
   "hours": null,
   "price": "約15-30元/人",
   "rating": null,
@@ -5085,7 +5679,9 @@ const PLACES = [
    "提拉米蘇"
   ],
   "reason": "被穆斯林食客稱為「法式清真麵包店」的連鎖烘焙品牌，重慶多家門店，補足清真甜品/烘焙品類。",
-  "notes": "雲南背景烘焙品牌，穆斯林顧客口碑傳為清真友善；未見官方清真認證掛牌，嚴格教眾請到店確認原料；重慶多店可就近選擇。"
+  "notes": "雲南背景烘焙品牌，穆斯林顧客口碑傳為清真友善；未見官方清真認證掛牌，嚴格教眾請到店確認原料；重慶多店可就近選擇。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "帕帕羅蒂 PappaRoti（龍湖時代天街店）",
@@ -5094,9 +5690,9 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "馬來西亞咖啡麵包（Coffee Bun）/飲品",
   "area": "渝中區 大坪 時代天街",
-  "address": "重慶市渝中區龍湖時代天街B館5樓連廊（UME電影院旁）",
-  "lat": 29.5385,
-  "lng": 106.5165,
+  "address": "重慶市渝中區大坪正街38號龍湖重慶時代天街C館L3層",
+  "lat": 29.535761,
+  "lng": 106.512788,
   "hours": "10:00-22:00",
   "price": "約15-25元/人",
   "rating": null,
@@ -5107,7 +5703,10 @@ const PLACES = [
    "奶茶"
   ],
   "reason": "源自馬來西亞的知名清真背景烘焙品牌（Coffee Bun鼻祖），是重慶能沾到「東南亞清真」邊的少數選擇。",
-  "notes": "品牌發源於馬來西亞並在多國持清真認證，但中國門店未必單獨認證，標註為清真友善；產品以麵包咖啡為主、無肉類。"
+  "notes": "品牌發源於馬來西亞並在多國持清真認證，但中國門店未必單獨認證，標註為清真友善；產品以麵包咖啡為主、無肉類。",
+  "amap_poiid": "B0IKGM28Y3",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "清之口清真餐廳（U城天街店）",
@@ -5117,8 +5716,8 @@ const PLACES = [
   "cuisine": "清真新疆菜/土耳其風味",
   "area": "沙坪垻區 大學城（U城天街）",
   "address": "重慶市沙坪垻區大學城北路97號龍湖U城天街B區4樓",
-  "lat": 29.607313,
-  "lng": 106.316153,
+  "lat": null,
+  "lng": null,
   "hours": null,
   "price": null,
   "rating": null,
@@ -5130,7 +5729,9 @@ const PLACES = [
    "手抓飯"
   ],
   "reason": "大學城商圈內的清真餐廳（輕軌1號線尖頂坡站直達），方便沙坪垻大學城的穆斯林師生與遊客，區域上填補主城西部空白。",
-  "notes": "大眾點評好評（口味/環境/服務滿分點評），菜單以新疆菜為主兼有土耳其元素；具體評分未公開抓取到。"
+  "notes": "大眾點評好評（口味/環境/服務滿分點評），菜單以新疆菜為主兼有土耳其元素；具體評分未公開抓取到。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "渝冀·英元老北京涮羊肉（茶亭北路店）",
@@ -5139,9 +5740,9 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "老北京銅鍋涮羊肉/寧夏灘羊",
   "area": "渝中區 大坪",
-  "address": "重慶市渝中區大坪茶亭北路（另有九龍坡科園六路142號等分店）",
-  "lat": 29.543,
-  "lng": 106.521,
+  "address": "重慶市渝中區茶亭北路31號附7號(石油路地鐵站1B口步行330米)",
+  "lat": 29.540053,
+  "lng": 106.510246,
   "hours": null,
   "price": "人均約80-180元",
   "rating": null,
@@ -5154,7 +5755,10 @@ const PLACES = [
    "麻醬蘸料"
   ],
   "reason": "1998年開業、27年老字號，重慶銅鍋涮羊肉的代表，主打寧夏灘羊，補足北派涮肉品類。",
-  "notes": "百度綜合推薦清真銅鍋涮肉時列出，但未查到清真認證掛牌，標註清真友善；穆斯林食客建議先電話確認食材與經營情況；冬季旺季18點後常滿座。"
+  "notes": "百度綜合推薦清真銅鍋涮肉時列出，但未查到清真認證掛牌，標註清真友善；穆斯林食客建議先電話確認食材與經營情況；冬季旺季18點後常滿座。",
+  "amap_poiid": "B0J2G5GJA3",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "清真牛羊肉（中興路店）",
@@ -5164,8 +5768,8 @@ const PLACES = [
   "cuisine": "清真生鮮/熟食鋪（牛羊肉、醬牛肉）",
   "area": "渝中區 較場口（穆斯林大廈旁）",
   "address": "重慶市渝中區中興路穆斯林大廈西門北側約40米",
-  "lat": 29.5525,
-  "lng": 106.575,
+  "lat": null,
+  "lng": null,
   "hours": null,
   "price": null,
   "rating": null,
@@ -5176,7 +5780,9 @@ const PLACES = [
    "清真熟食"
   ],
   "reason": "清真寺旁的清真牛羊肉鋪，可買放心肉與滷味熟食帶走，填補清真食品店/伴手禮品類。",
-  "notes": "百度地圖收錄POI，緊鄰重慶清真寺與慶聚齋；主營零售，適合自炊住客與伴手禮採購。；熟食滷味外帶鋪（醬牛肉），非內用餐廳"
+  "notes": "百度地圖收錄POI，緊鄰重慶清真寺與慶聚齋；主營零售，適合自炊住客與伴手禮採購。；熟食滷味外帶鋪（醬牛肉），非內用餐廳",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "伊品辣清真重慶火鍋（愛里耶賽兒店）",
@@ -5185,9 +5791,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真鮮切吊龍牛肉火鍋/辣滷",
   "area": "渝北區 新牌坊（松牌路清真美食街）",
-  "address": "重慶市渝北區松牌路101號附23號米蘭天空4幢1-4",
-  "lat": 29.5895,
-  "lng": 106.5105,
+  "address": "重慶市兩江新區松牌路101號附23號米蘭天空4幢1-4",
+  "lat": 29.590996,
+  "lng": 106.51321,
   "hours": null,
   "price": null,
   "rating": null,
@@ -5200,7 +5806,10 @@ const PLACES = [
    "滷雞腳"
   ],
   "reason": "與一般清真重慶火鍋不同，主打潮汕式當日現宰鮮切吊龍牛肉+清真辣滷，開放式廚房現切，鍋底一次性現熬。",
-  "notes": "位於新牌坊清真美食一條街；回族食客推薦，鍋底一次性；大眾點評多篇好評但未抓取到數字評分。"
+  "notes": "位於新牌坊清真美食一條街；回族食客推薦，鍋底一次性；大眾點評多篇好評但未抓取到數字評分。",
+  "amap_poiid": "B0I3DS4BS4",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "伊心園清真食品店（中興路店）",
@@ -5209,9 +5818,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真食品店/零食雜貨",
   "area": "渝中區·較場口/中興路",
-  "address": "重慶市渝中區中興路清真寺街區",
-  "lat": 29.5528,
-  "lng": 106.5736,
+  "address": "重慶市渝中區中興路2號第一家",
+  "lat": 29.552925,
+  "lng": 106.572325,
   "hours": null,
   "price": null,
   "rating": "3.5/5",
@@ -5222,7 +5831,10 @@ const PLACES = [
    "飲料"
   ],
   "reason": "較場口清真寺生活圈內的清真食品補給店。",
-  "notes": "截圖未顯示完整門牌；點位標在中興路清真餐飲街區，前往前請以大眾點評導航為準。"
+  "notes": "截圖未顯示完整門牌；點位標在中興路清真餐飲街區，前往前請以大眾點評導航為準。",
+  "amap_poiid": "B0K27P6NX4",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "伊瀾坊清真重慶火鍋（清真寺店）",
@@ -5231,9 +5843,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真重慶火鍋",
   "area": "渝中區·較場口/清真寺",
-  "address": "重慶市渝中區中興路9號附4號",
-  "lat": 29.5526,
-  "lng": 106.5724,
+  "address": "重慶市渝中區中興路7號(較場口地鐵站4號口步行60米)",
+  "lat": 29.552634,
+  "lng": 106.571578,
   "hours": "約11:00-次日02:30",
   "price": "約76元/人",
   "rating": "3.9/5",
@@ -5244,7 +5856,10 @@ const PLACES = [
    "牛油火鍋"
   ],
   "reason": "清真寺旁可吃重慶麻辣火鍋，營業至深夜。",
-  "notes": "地址由公開地圖資料核對；截圖顯示較場口九宮格榜第9名。"
+  "notes": "地址由公開地圖資料核對；截圖顯示較場口九宮格榜第9名。",
+  "amap_poiid": "B0HD7SO5WU",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "清真賽蘭姆山城麵館",
@@ -5253,9 +5868,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真重慶小面",
   "area": "渝中區·較場口",
-  "address": "重慶市渝中區較場口清真寺街區",
-  "lat": 29.553,
-  "lng": 106.5735,
+  "address": "重慶市渝中區重慶城區中興路9號附1號",
+  "lat": 29.55277,
+  "lng": 106.57185,
   "hours": "約07:00-21:30",
   "price": "約22元/人",
   "rating": "4.0/5",
@@ -5265,7 +5880,10 @@ const PLACES = [
    "牛肉麵"
   ],
   "reason": "較場口平價清真麵館，可作早餐或快速正餐。",
-  "notes": "截圖未顯示完整門牌；點位依較場口商圈標示。"
+  "notes": "截圖未顯示完整門牌；點位依較場口商圈標示。",
+  "amap_poiid": "B0JUOSZKRM",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "清真·西北菜·京穆蘭餐飲（重慶店）",
@@ -5274,9 +5892,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真西北菜",
   "area": "渝中區·較場口",
-  "address": "重慶市渝中區較場口公交站旁",
-  "lat": 29.5533,
-  "lng": 106.5728,
+  "address": "重慶市渝中區解放碑街道較場口68-16號",
+  "lat": 29.552348,
+  "lng": 106.574256,
   "hours": "約10:00-23:00",
   "price": "約54元/人",
   "rating": "3.7/5",
@@ -5286,7 +5904,10 @@ const PLACES = [
    "牛羊肉西北菜"
   ],
   "reason": "較場口清真西北菜選擇，營業時間較長。",
-  "notes": "地址與電話已由公開店鋪資料交叉核對。"
+  "notes": "地址與電話已由公開店鋪資料交叉核對。",
+  "amap_poiid": "B0K1MURFWS",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "駝鈴巷清真西北菜",
@@ -5295,9 +5916,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真西北菜",
   "area": "巴南區·李家沱/交通大學",
-  "address": "重慶市巴南區李家沱街道渝南大道5號",
-  "lat": 29.46109,
-  "lng": 106.55942,
+  "address": "重慶市巴南區李家沱街道渝南大道9號附18號",
+  "lat": 29.480973,
+  "lng": 106.569498,
   "hours": "約10:00-22:30",
   "price": "約47元/人",
   "rating": "4.4/5",
@@ -5308,7 +5929,10 @@ const PLACES = [
    "西北麵食"
   ],
   "reason": "交通大學一帶高分清真西北菜，人均適中。",
-  "notes": "公開店鋪資料可確認渝南大道5號。"
+  "notes": "公開店鋪資料可確認渝南大道5號。",
+  "amap_poiid": "B0L275KAM8",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "清真·伊佳人涮烤一體店",
@@ -5318,8 +5942,8 @@ const PLACES = [
   "cuisine": "清真涮烤/融合烤肉",
   "area": "北碚區·西南大學/天生街",
   "address": "重慶市北碚區天生路64號2-1號",
-  "lat": 29.8185,
-  "lng": 106.4255,
+  "lat": null,
+  "lng": null,
   "hours": "約10:00-23:00",
   "price": "約49元/人",
   "rating": "4.2/5",
@@ -5330,7 +5954,9 @@ const PLACES = [
    "烤肉"
   ],
   "reason": "西南大學附近兼具涮鍋與烤肉的清真店。",
-  "notes": "地址由公開店鋪資料核對。"
+  "notes": "地址由公開店鋪資料核對。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "回味伊品清真重慶小面酸辣粉炸雞小吃（合景·聚融廣場店）",
@@ -5339,9 +5965,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真重慶小面/酸辣粉/小吃",
   "area": "渝中區·較場口",
-  "address": "重慶市渝中區較場口30度街吧15號（合景聚融廣場一單元旁）",
-  "lat": 29.5535,
-  "lng": 106.5718,
+  "address": "重慶市渝中區100號魯祖廟傳統風貌區石灰市老街20、21號商鋪",
+  "lat": 29.553875,
+  "lng": 106.573875,
   "hours": "約08:00-24:00",
   "price": "約18元/人",
   "rating": "3.8/5",
@@ -5353,7 +5979,10 @@ const PLACES = [
    "清真炸雞"
   ],
   "reason": "較場口便宜快速的清真小吃，品類比單一麵館豐富。",
-  "notes": "完整分店名與地址由公開店鋪資料核對。"
+  "notes": "完整分店名與地址由公開店鋪資料核對。",
+  "amap_poiid": "B0FFG418SD",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "一念南山·見牛羊清真院子",
@@ -5362,9 +5991,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真牛羊肉/烤全羊",
   "area": "南岸區·南山/黃桷埡",
-  "address": "重慶市南岸區南山街道（具體門牌以店鋪導航為準）",
-  "lat": 29.5205,
-  "lng": 106.6015,
+  "address": "重慶市南岸區聽雨軒西南側",
+  "lat": 29.541401,
+  "lng": 106.633326,
   "hours": "約10:00-23:30",
   "price": "約97元/人",
   "rating": "4.1/5",
@@ -5375,7 +6004,10 @@ const PLACES = [
    "烤串"
   ],
   "reason": "南山庭院式清真餐廳，可搭配南山景點與果園體驗。",
-  "notes": "公開社群資料可確認位於南山；未查得可靠門牌，點位為南山商圈約略位置。"
+  "notes": "公開社群資料可確認位於南山；未查得可靠門牌，點位為南山商圈約略位置。",
+  "amap_poiid": "B0MBDHFUNP",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "清真·德元蘭州純湯牛肉麵（重慶解放碑店）",
@@ -5385,8 +6017,8 @@ const PLACES = [
   "cuisine": "清真蘭州牛肉麵",
   "area": "渝中區·解放碑",
   "address": "重慶市渝中區解放碑商圈（具體門牌以店鋪導航為準）",
-  "lat": 29.557,
-  "lng": 106.578,
+  "lat": null,
+  "lng": null,
   "hours": "24小時營業",
   "price": "約25元/人",
   "rating": "4.4/5",
@@ -5396,7 +6028,9 @@ const PLACES = [
    "牛肉小菜"
   ],
   "reason": "解放碑商圈24小時清真牛肉麵，適合早餐與宵夜。",
-  "notes": "截圖顯示解放碑商圈及24小時營業；公開網頁未查得可靠門牌，點位標在商圈中心。"
+  "notes": "截圖顯示解放碑商圈及24小時營業；公開網頁未查得可靠門牌，點位標在商圈中心。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "宸溪清真排酸牛羊肉",
@@ -5405,9 +6039,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真牛羊肉零售/牛肉火鍋",
   "area": "渝北區·人和商圈",
-  "address": "重慶市渝北區人和商圈（具體門牌以店鋪導航為準）",
-  "lat": 29.619,
-  "lng": 106.529,
+  "address": "重慶市兩江新區人興路301號",
+  "lat": 29.619567,
+  "lng": 106.535914,
   "hours": null,
   "price": null,
   "rating": null,
@@ -5418,7 +6052,10 @@ const PLACES = [
    "牛肉火鍋"
   ],
   "reason": "人和商圈新開清真牛羊肉店，可採購或現場用餐。",
-  "notes": "截圖未顯示評分、營業時間及門牌；點位標在人和商圈中心，前往前請從大眾點評開啟導航。"
+  "notes": "截圖未顯示評分、營業時間及門牌；點位標在人和商圈中心，前往前請從大眾點評開啟導航。",
+  "amap_poiid": "B0MUDHIVBO",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "清真·馬賽文燒烤·雲南昭通小肉串（龍頭寺店）",
@@ -5427,9 +6064,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真雲南昭通燒烤",
   "area": "渝北區·龍頭寺",
-  "address": "重慶市兩江新區天宮殿街道丁香路4附9號",
-  "lat": 29.611,
-  "lng": 106.552,
+  "address": "重慶市兩江新區保利香檳花園B區",
+  "lat": 29.60242,
+  "lng": 106.546844,
   "hours": "約16:00-次日03:30",
   "price": "約62元/人",
   "rating": "4.3/5",
@@ -5440,7 +6077,10 @@ const PLACES = [
    "烤串"
   ],
   "reason": "龍頭寺深夜清真燒烤，適合北站附近宵夜。",
-  "notes": "完整分店名與地址由公開店鋪資料核對；截圖顯示龍頭寺燒烤銷量榜第1名。"
+  "notes": "完整分店名與地址由公開店鋪資料核對；截圖顯示龍頭寺燒烤銷量榜第1名。",
+  "amap_poiid": "B0L23S4N80",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "清真西北第一家資格烤羊肉串（黃楊路店）",
@@ -5449,9 +6089,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真燒烤/羊肉串",
   "area": "渝中區·大坪/黃楊路",
-  "address": "重慶市渝中區黃楊路2號附1號",
-  "lat": 29.5205,
-  "lng": 106.522,
+  "address": "重慶市九龍坡區黃楊路2號附1號",
+  "lat": 29.531379,
+  "lng": 106.526062,
   "hours": "約16:00-次日04:00",
   "price": "約70元/人",
   "rating": "4.2/5",
@@ -5462,7 +6102,10 @@ const PLACES = [
    "烤羊排"
   ],
   "reason": "大坪一帶營業至凌晨的清真羊肉串店。",
-  "notes": "地址由公開地圖資料核對。"
+  "notes": "地址由公開地圖資料核對。",
+  "amap_poiid": "B0FFL98OGU",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "清真·真伊順重慶火鍋（總店）",
@@ -5472,8 +6115,8 @@ const PLACES = [
   "cuisine": "清真重慶火鍋/西北菜",
   "area": "渝中區·較場口/清真寺",
   "address": "重慶市渝中區中興路5號穆斯林大廈",
-  "lat": 29.5527,
-  "lng": 106.5721,
+  "lat": null,
+  "lng": null,
   "hours": "約09:00-24:00",
   "price": "約71元/人",
   "rating": "4.0/5",
@@ -5484,7 +6127,9 @@ const PLACES = [
    "牛羊肉"
   ],
   "reason": "較場口老牌清真火鍋總店，評價樣本多。",
-  "notes": "與真伊順新疆美食坊同屬較場口穆斯林大廈清真餐飲群；按截圖店名獨立標示。"
+  "notes": "與真伊順新疆美食坊同屬較場口穆斯林大廈清真餐飲群；按截圖店名獨立標示。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "清真·馬勇剛重慶小面（總店）",
@@ -5493,9 +6138,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真重慶小面",
   "area": "渝中區·較場口/南紀門",
-  "address": "重慶市渝中區南紀門街道較場口商圈",
-  "lat": 29.5505,
-  "lng": 106.5725,
+  "address": "重慶市渝中區渝亞大廈北門旁",
+  "lat": 29.552434,
+  "lng": 106.571954,
   "hours": "約07:00-21:00",
   "price": "約17元/人",
   "rating": "4.2/5",
@@ -5507,7 +6152,10 @@ const PLACES = [
    "抄手"
   ],
   "reason": "平價清真重慶小面總店，適合早餐。",
-  "notes": "公開點評頁僅顯示南紀門街道；點位標在較場口南側，具體門牌請以店鋪導航為準。"
+  "notes": "公開點評頁僅顯示南紀門街道；點位標在較場口南側，具體門牌請以店鋪導航為準。",
+  "amap_poiid": "B0LAMU355K",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "清真·馬夥記昭通小肉串",
@@ -5516,9 +6164,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真雲南昭通燒烤",
   "area": "九龍坡區·楊家坪/民主村",
-  "address": "重慶市九龍坡區楊家坪民主村社區（具體門牌以店鋪導航為準）",
-  "lat": 29.5135,
-  "lng": 106.517,
+  "address": "重慶市九龍坡區重慶市九龍坡區謝家灣街道民主一村實驗小學臨時停車場旁",
+  "lat": 29.511824,
+  "lng": 106.5192,
   "hours": "約17:00-次日02:00",
   "price": "約49元/人",
   "rating": "4.1/5",
@@ -5529,7 +6177,10 @@ const PLACES = [
    "烤串"
   ],
   "reason": "楊家坪新開的清真昭通燒烤店。",
-  "notes": "公開探店內容可確認位於民主村；未查得可靠門牌，點位標在民主村商圈。"
+  "notes": "公開探店內容可確認位於民主村；未查得可靠門牌，點位標在民主村商圈。",
+  "amap_poiid": "B0MAV647OR",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "青渝大叔重慶清真串串火鍋",
@@ -5538,9 +6189,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真串串火鍋",
   "area": "渝中區·較場口/南紀門",
-  "address": "重慶市渝中區中興路113號",
-  "lat": 29.5488,
-  "lng": 106.5725,
+  "address": "重慶市渝中區中興路112-1號",
+  "lat": 29.552566,
+  "lng": 106.570223,
   "hours": "約11:00-次日02:00",
   "price": "約80元/人",
   "rating": "3.9/5",
@@ -5551,7 +6202,10 @@ const PLACES = [
    "牛油火鍋"
   ],
   "reason": "較場口清真街區少見的串串火鍋專門店。",
-  "notes": "地址由公開店鋪資料核對。"
+  "notes": "地址由公開店鋪資料核對。",
+  "amap_poiid": "B0MBG53EWA",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "清真7892串巷小烤",
@@ -5561,8 +6215,8 @@ const PLACES = [
   "cuisine": "清真串巷小烤",
   "area": "合川區·草街/重慶人文科技學院",
   "address": "重慶市合川區草街街道育才路20號附48號",
-  "lat": 29.9689,
-  "lng": 106.4124,
+  "lat": null,
+  "lng": null,
   "hours": "約17:00-次日02:00",
   "price": "約21元/人",
   "rating": "3.5/5",
@@ -5572,7 +6226,9 @@ const PLACES = [
    "牛羊肉串"
   ],
   "reason": "重慶人文科技學院旁的平價清真燒烤。",
-  "notes": "地址由公開搜索資料核對；點位以學院街區坐標標示。"
+  "notes": "地址由公開搜索資料核對；點位以學院街區坐標標示。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "清真·真伊順重慶火鍋（松牌路店）",
@@ -5581,9 +6237,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真重慶火鍋/新疆菜",
   "area": "渝北區·龍溪鎮/松牌路",
-  "address": "重慶市渝北區松牌路101號附20號（米蘭天空大門旁）",
-  "lat": 29.5895,
-  "lng": 106.5105,
+  "address": "重慶市兩江新區松牌路101號附20號米蘭天空4幢1-1號",
+  "lat": 29.590923,
+  "lng": 106.513096,
   "hours": "約11:00-24:00",
   "price": "約72元/人",
   "rating": "4.7/5",
@@ -5595,7 +6251,10 @@ const PLACES = [
    "新疆菜"
   ],
   "reason": "松牌路清真美食街高分火鍋分店，評價樣本充足。",
-  "notes": "完整地址由本地美食公開資料核對；截圖顯示龍溪鎮火鍋口味榜第2名。"
+  "notes": "完整地址由本地美食公開資料核對；截圖顯示龍溪鎮火鍋口味榜第2名。",
+  "amap_poiid": "B0FFGJH4VR",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "珮姐老火鍋（較場口店）",
@@ -5603,9 +6262,9 @@ const PLACES = [
   "halal": false,
   "cuisine": "火鍋",
   "area": "渝中區 較場口/解放碑",
-  "address": "重慶市渝中區新華路177號",
-  "lat": 29.5555,
-  "lng": 106.5762,
+  "address": "重慶市渝中區民生路5號第一層(山城羊肉館對面)",
+  "lat": 29.554612,
+  "lng": 106.573507,
   "hours": "約 11:00–凌晨2:00",
   "price": "人均 130–160 元",
   "dishes": [
@@ -5617,6 +6276,9 @@ const PLACES = [
   ],
   "reason": "重慶最具代表性的網紅老火鍋之一，外地遊客與本地人都認可，牛油鍋底香辣醇厚。",
   "notes": "牛油鍋底為牛脂非豬油。避開：酥肉、老肉片、香菜丸子、午餐肉（均含豬肉）；點毛肚/鴨腸/牛肉/魚類即可全程無豬。排隊極兇，建議下午提前現場取號或用美團線上排號；洪崖洞店更擠，較場口店相對好排。",
+  "amap_poiid": "B0FFFAJLA1",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆",
   "rating": "4.7/5",
   "rating_source": "綜合"
@@ -5628,8 +6290,8 @@ const PLACES = [
   "cuisine": "火鍋",
   "area": "江北區 觀音橋",
   "address": "重慶市江北區觀音橋步行街商圈（建新北路一帶）",
-  "lat": 29.5772,
-  "lng": 106.533,
+  "lat": null,
+  "lng": null,
   "hours": "約 11:30–凌晨2:00",
   "price": "人均 100–130 元",
   "dishes": [
@@ -5641,6 +6303,8 @@ const PLACES = [
   ],
   "reason": "近年重慶人氣最旺的排隊王之一，鍋底偏辣、走年輕網紅路線，抖音粉絲數百萬。",
   "notes": "牛油鍋底為牛脂。避開：酥肉、豬天堂、午餐肉等豬類涮品。『永遠在排隊』，務必提早取號（可線上排隊）；怕辣可點微辣或鴛鴦鍋。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "重庆",
   "rating": "4.6/5",
   "rating_source": "綜合"
@@ -5652,8 +6316,8 @@ const PLACES = [
   "cuisine": "火鍋",
   "area": "渝中區 望龍門（近解放碑/朝天門）",
   "address": "重慶市渝中區解放東路128號（望龍門車站旁）",
-  "lat": 29.5528,
-  "lng": 106.5842,
+  "lat": null,
+  "lng": null,
   "hours": "約 11:00–24:00",
   "price": "人均 60–90 元",
   "dishes": [
@@ -5665,6 +6329,8 @@ const PLACES = [
   ],
   "reason": "開了約20年的本地老館子，環境簡單價格實在，是本地人認可的地道老火鍋，離解放碑、朝天門都近。",
   "notes": "牛油鍋底為牛脂。避開：老肉片、酥肉等豬類菜品。店面小、裝修舊屬老重慶風格，飯點需等位但比網紅店好排。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "重庆"
  },
  {
@@ -5673,9 +6339,9 @@ const PLACES = [
   "halal": false,
   "cuisine": "火鍋",
   "area": "沙坪垻區 小龍坎電台巷",
-  "address": "重慶市沙坪垻區小龍坎電台巷290號",
-  "lat": 29.5567,
-  "lng": 106.4566,
+  "address": "重慶市沙坪垻區小龍坎電台巷290號附10號",
+  "lat": 29.551919,
+  "lng": 106.462394,
   "hours": "約 11:30–凌晨2:00",
   "price": "人均 100–150 元",
   "dishes": [
@@ -5687,6 +6353,9 @@ const PLACES = [
   ],
   "reason": "電台巷裡的老牌蒼蠅火鍋代表，鍋底厚重香辣、麻味足，重口味愛好者首選。",
   "notes": "牛油鍋底為牛脂。避開：酥肉、老肉片等豬類；腦花通常為豬腦，避豬者勿點。位置在居民區巷子裡，導航步行前往；與電台巷火鍋發源地同一片區，可順路感受老社區。",
+  "amap_poiid": "B00178UDH4",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆",
   "rating": "4.4/5",
   "rating_source": "TripAdvisor"
@@ -5697,9 +6366,9 @@ const PLACES = [
   "halal": false,
   "cuisine": "火鍋（防空洞體驗）",
   "area": "渝中區 兩路口",
-  "address": "重慶市渝中區中山三路149號-7",
-  "lat": 29.5533,
-  "lng": 106.554,
+  "address": "重慶市渝中區中山三路149號附1號",
+  "lat": 29.556657,
+  "lng": 106.549174,
   "hours": "16:00–凌晨2:00（多為晚餐場，午餐前往請先確認）",
   "price": "人均 85–100 元",
   "dishes": [
@@ -5711,6 +6380,9 @@ const PLACES = [
   ],
   "reason": "1989年開業、重慶最早開在防空洞裡的火鍋店，洞內鎢絲燈泡老重慶氛圍一絕，體驗感滿分。",
   "notes": "牛油鍋底為牛脂。避開：酥肉、老肉片、香菜丸子等豬類涮品。注意多從下午4點才營業，基本只做晚餐；冬天洞內恆溫很舒服，飯點排隊建議開門即到。",
+  "amap_poiid": "B0FFFRGA5T",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆"
  },
  {
@@ -5720,8 +6392,8 @@ const PLACES = [
   "cuisine": "火鍋（山景超大園區）",
   "area": "南岸區 南山",
   "address": "重慶市南岸區南山街道金竹村龍井榜社",
-  "lat": 29.541,
-  "lng": 106.625,
+  "lat": 29.491167,
+  "lng": 106.588195,
   "hours": "約 09:00–次日1:00",
   "price": "人均 90–130 元",
   "dishes": [
@@ -5733,6 +6405,9 @@ const PLACES = [
   ],
   "reason": "佔地50畝、近700桌的『世界最大火鍋店』（吉尼斯認證），坐在南山半山上吃火鍋看夜景，體驗獨特。",
   "notes": "牛油鍋底為牛脂。避開：酥肉、老肉片等豬類。位置在南山上較偏，建議打車前往（從南岸約20分鐘）；園區大不太需要排隊，適合傍晚去順看夜景。",
+  "amap_poiid": "B001703649",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆",
   "rating": "4.3/5",
   "rating_source": "綜合"
@@ -5744,8 +6419,8 @@ const PLACES = [
   "cuisine": "火鍋",
   "area": "渝中區 較場口",
   "address": "重慶市渝中區較場口商圈（發源地為沙坪垻小龍坎電台巷）",
-  "lat": 29.5545,
-  "lng": 106.574,
+  "lat": null,
+  "lng": null,
   "hours": "約 11:00–凌晨2:00",
   "price": "人均 100–130 元",
   "dishes": [
@@ -5757,6 +6432,8 @@ const PLACES = [
   ],
   "reason": "從小龍坎電台巷起家、火遍全國的重慶老火鍋品牌，牛油鍋底濃香，市區分店方便打卡。",
   "notes": "牛油鍋底為牛脂。避開：小酥肉（招牌但為豬肉！）、老肉片、香菜丸子。熱門店需線上取號排隊；市區多家分店可就近選擇。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "重庆",
   "rating": "4.6/5",
   "rating_source": "綜合"
@@ -5767,9 +6444,9 @@ const PLACES = [
   "halal": false,
   "cuisine": "火鍋",
   "area": "渝中區 解放碑",
-  "address": "重慶市渝中區解放碑商圈（民權路一帶）",
-  "lat": 29.5573,
-  "lng": 106.5769,
+  "address": "重慶市渝中區民生路9號1-2號陽光星座公寓底商(較場口地鐵站9號口步行190米)",
+  "lat": 29.554946,
+  "lng": 106.573703,
   "hours": "約 11:30–凌晨2:00",
   "price": "人均 130–160 元",
   "dishes": [
@@ -5781,6 +6458,9 @@ const PLACES = [
   ],
   "reason": "多次登大眾點評必吃榜的重慶頭部火鍋，服務好、食材新鮮，本地人宴客也常選。",
   "notes": "【注意】招牌『大刀腰片』為豬腰，避豬者勿點招牌，改點毛肚/鴨腸/牛肉一樣出色；另避開酥肉、老肉片。排隊熱門，建議線上取號。",
+  "amap_poiid": "B0FFIPDMQ8",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆",
   "rating": "4.7/5",
   "rating_source": "綜合"
@@ -5792,8 +6472,8 @@ const PLACES = [
   "cuisine": "火鍋（新派網紅）",
   "area": "渝中區 較場口",
   "address": "重慶市渝中區較場口商圈",
-  "lat": 29.5543,
-  "lng": 106.5735,
+  "lat": null,
+  "lng": null,
   "hours": "約 11:30–凌晨2:00",
   "price": "人均 110–140 元",
   "dishes": [
@@ -5805,6 +6485,8 @@ const PLACES = [
   ],
   "reason": "2025年重慶火鍋十大品牌之一的新派網紅代表，創意菜品多、氛圍年輕，適合想拍照打卡的一餐。",
   "notes": "牛油鍋底為牛脂。避開：招牌『豬天堂』（豬牙梗）、酥肉、午餐肉。排隊重災區，務必提前線上排號或避開飯點。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "重庆",
   "rating": "4.6/5",
   "rating_source": "綜合"
@@ -5815,9 +6497,9 @@ const PLACES = [
   "halal": false,
   "cuisine": "火鍋",
   "area": "渝中區 洪崖洞",
-  "address": "重慶市渝中區滄白路洪崖洞景區一帶",
-  "lat": 29.562095,
-  "lng": 106.577677,
+  "address": "重慶市渝中區解放碑地下環道與鳳凰門地下道交叉口東80米",
+  "lat": 29.555857,
+  "lng": 106.574534,
   "hours": "約 11:00–23:00",
   "price": "人均 90–120 元",
   "dishes": [
@@ -5829,6 +6511,9 @@ const PLACES = [
   ],
   "reason": "重慶老牌連鎖大品牌，鍋底辣度分級可選、品質穩定，逛洪崖洞順路解決一餐最方便。",
   "notes": "牛油/青油鍋底不含豬油。避開：酥肉、老肉片等豬類涮品。連鎖店好訂位，適合不想排網紅店隊的日子；洪崖洞店觀景位需早到。",
+  "amap_poiid": "B0KKGK99DQ",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆",
   "rating": "4.3/5",
   "rating_source": "綜合"
@@ -5840,8 +6525,8 @@ const PLACES = [
   "cuisine": "牛肉火鍋/江湖菜",
   "area": "渝中區 大坪",
   "address": "重慶市渝中區大坪正街石油路家屬區底商（時代天街A館1號門對面）",
-  "lat": 29.539,
-  "lng": 106.519,
+  "lat": null,
+  "lng": null,
   "hours": "約 11:00–22:00",
   "price": "人均 70–100 元",
   "dishes": [
@@ -5853,6 +6538,8 @@ const PLACES = [
   ],
   "reason": "以大塊軟耙牛肉聞名的本地傳奇老店，牛肉主打、麻辣鮮香，是避豬旅客最省心的一頓。",
   "notes": "全店以牛肉牛雜為主，幾乎可全程無豬（廚房非清真）。老店在居民樓下、店規『霸道』出名，態度直接勿介意；來福士也有分店（環境較好）。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "重庆",
   "rating": "4.5/5",
   "rating_source": "綜合"
@@ -5863,9 +6550,9 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "牛肉菜/渝菜老字號",
   "area": "渝中區 解放碑",
-  "address": "重慶市渝中區解放碑商圈（八一路一帶）",
-  "lat": 29.557,
-  "lng": 106.577,
+  "address": "重慶市渝中區解放碑街道五一路10號3F-2號",
+  "lat": 29.55978,
+  "lng": 106.579619,
   "hours": "約 11:00–21:30",
   "price": "人均 80–120 元",
   "dishes": [
@@ -5877,6 +6564,9 @@ const PLACES = [
   ],
   "reason": "中華老字號，重慶以牛肉菜聞名近百年的正餐酒樓，全牛宴傳統深厚，適合想吃『不辣也精彩』的一餐。",
   "notes": "菜單以牛肉為絕對主角，避豬非常容易（廚房非清真）；個別江湖菜如毛血旺可能含豬血/午餐肉，點前詢問。適合家庭正餐、不用排隊。",
+  "amap_poiid": "B0G0AKQ82N",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆",
   "rating": "4.4/5",
   "rating_source": "綜合"
@@ -5887,9 +6577,9 @@ const PLACES = [
   "halal": false,
   "cuisine": "江湖菜（商場店）",
   "area": "江北區 觀音橋",
-  "address": "重慶市江北區觀音橋北城天街購物廣場內",
-  "lat": 29.5775,
-  "lng": 106.533,
+  "address": "重慶市兩江新區觀音橋步行街8號大融城6層",
+  "lat": 29.57522,
+  "lng": 106.532842,
   "hours": "約 11:00–21:30（隨商場）",
   "price": "人均 70–90 元",
   "dishes": [
@@ -5901,6 +6591,9 @@ const PLACES = [
   ],
   "reason": "把江湖菜帶進商場的規範化代表，環境乾淨、點菜方便，適合不想鑽巷子的午餐。",
   "notes": "部分菜（回鍋肉、燒白等）含豬肉，點蛙/雞/魚類即可避開。商場店飯點等位適中，交通方便，適合逛觀音橋時安排。",
+  "amap_poiid": "B00178UE0C",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆",
   "rating": "4.3/5",
   "rating_source": "綜合"
@@ -5912,8 +6605,8 @@ const PLACES = [
   "cuisine": "渝菜/江湖菜",
   "area": "渝中區 洪崖洞",
   "address": "重慶市渝中區嘉濱路洪崖洞景區內",
-  "lat": 29.562095,
-  "lng": 106.577677,
+  "lat": null,
+  "lng": null,
   "hours": "約 11:00–21:30",
   "price": "人均 80–110 元",
   "dishes": [
@@ -5925,6 +6618,8 @@ const PLACES = [
   ],
   "reason": "重慶餐飲龍頭老字號，辣子田螺與芋兒雞是成名招牌，在洪崖洞就能吃到正規渝菜正餐。",
   "notes": "招牌以田螺、雞、兔為主易避豬；但粉蒸肉、回鍋肉、鹹燒白等經典豬菜需避開，合菜類點前確認配料。洪崖洞店觀光客多，飯點建議錯峰。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "重庆",
   "rating": "4.3/5",
   "rating_source": "綜合"
@@ -5936,8 +6631,8 @@ const PLACES = [
   "cuisine": "渝菜/江湖菜",
   "area": "渝中區 較場口",
   "address": "重慶市渝中區較場口商圈",
-  "lat": 29.554,
-  "lng": 106.573,
+  "lat": null,
+  "lng": null,
   "hours": "約 11:00–21:30",
   "price": "人均 80–110 元",
   "dishes": [
@@ -5948,6 +6643,8 @@ const PLACES = [
   ],
   "reason": "重慶連鎖人氣渝菜館，環境復古、菜品覆蓋經典重慶味，多店好找適合行程靈活安排。",
   "notes": "【注意】招牌『醪糟紅燒肉』『紫氣東來毛血旺』（含豬血/火腿腸）為豬類需避開；點辣子雞、太安魚等雞魚類為主。熱門店飯點需取號。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "重庆",
   "rating": "4.5/5",
   "rating_source": "綜合"
@@ -5958,9 +6655,9 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "來鳳魚/江湖菜",
   "area": "渝中區 解放碑",
-  "address": "重慶市渝中區解放碑商圈",
-  "lat": 29.558,
-  "lng": 106.576,
+  "address": "重慶市渝中區大同巷28號1-5(臨江門地鐵站3號口步行410米)",
+  "lat": 29.557142,
+  "lng": 106.57158,
   "hours": "約 11:00–22:00",
   "price": "人均 70–100 元",
   "dishes": [
@@ -5972,6 +6669,9 @@ const PLACES = [
   ],
   "reason": "來鳳魚是重慶江湖菜的鼻祖菜（始於璧山來鳳驛），這家把頭牌魚菜開進解放碑，遊客動線最方便。",
   "notes": "以魚類為絕對主打、易避豬（廚房非清真，個別配菜確認即可）。解放碑店飯點人多，建議早到。",
+  "amap_poiid": "B0G33ZWTCJ",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆"
  },
  {
@@ -5981,8 +6681,8 @@ const PLACES = [
   "cuisine": "來鳳魚/璧山兔",
   "area": "渝北區 北環",
   "address": "重慶市渝北區北環一帶（導航店名前往）",
-  "lat": 29.606,
-  "lng": 106.518,
+  "lat": null,
+  "lng": null,
   "hours": "約 11:00–21:30",
   "price": "人均 60–90 元",
   "dishes": [
@@ -5994,6 +6694,8 @@ const PLACES = [
   ],
   "reason": "同時吃到璧山兩大名產——來鳳魚與璧山兔（重慶老字號技藝），不用專程跑璧山。",
   "notes": "魚+兔主打、易避豬。位置離主城核心區較遠，建議打車或安排在機場/北區行程順路；想吃最正宗可改去璧山區來鳳街道老店（車程約1小時）。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "重庆"
  },
  {
@@ -6003,8 +6705,8 @@ const PLACES = [
   "cuisine": "魚火鍋/江湖菜",
   "area": "南岸區 南濱路",
   "address": "重慶市南岸區南濱路（雲陽縣順水魚館）",
-  "lat": 29.542541,
-  "lng": 106.581262,
+  "lat": null,
+  "lng": null,
   "hours": "約 11:00–22:00",
   "price": "人均 80–110 元",
   "dishes": [
@@ -6016,6 +6718,8 @@ const PLACES = [
   ],
   "reason": "重慶知名魚火鍋品牌，活魚現殺、鍋底可選辣度，坐南濱路還能看渝中半島江景。",
   "notes": "全魚類主打、易避豬（鍋底為菜油/牛油系，點單時可確認）。適合吃不動牛油火鍋那天的替代方案；江景位建議訂位。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "重庆"
  },
  {
@@ -6025,8 +6729,8 @@ const PLACES = [
   "cuisine": "萬州烤魚",
   "area": "渝中區 兩路口/大田灣",
   "address": "重慶市渝中區體育路19號（重慶血庫三岔路口旁）",
-  "lat": 29.556,
-  "lng": 106.551,
+  "lat": null,
+  "lng": null,
   "hours": "約 17:00–凌晨（以晚餐宵夜為主，午餐請先確認）",
   "price": "人均 50–70 元",
   "dishes": [
@@ -6037,6 +6741,8 @@ const PLACES = [
   ],
   "reason": "幾十年老字號萬州烤魚，本地人認的蒼蠅館子級烤魚，炭香入味、價格實惠。",
   "notes": "烤魚本身無豬；【注意】加配菜時避開培根、香腸、午餐肉類，選土豆/豆皮/青筍即可。店面樸素，晚市生意好建議早去。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "重庆"
  },
  {
@@ -6045,9 +6751,9 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "萬州烤魚",
   "area": "沙坪垻區 三峽廣場附近",
-  "address": "重慶市沙坪垻區沙北街92號附26號（重慶七中旁巷子裡）",
-  "lat": 29.563,
-  "lng": 106.458,
+  "address": "重慶市沙坪垻區沙北街92號附14號(重慶大學地鐵站1B口步行180米)",
+  "lat": 29.570031,
+  "lng": 106.462944,
   "hours": "約 11:00–22:00",
   "price": "人均 40–60 元",
   "dishes": [
@@ -6058,6 +6764,9 @@ const PLACES = [
   ],
   "reason": "藏在七中旁巷子裡的高性價比萬州烤魚，人均40元上下，學生和街坊都愛。",
   "notes": "烤魚無豬；配菜避開香腸/培根類即可。位置在巷子裡需導航步行，適合安排在磁器口/沙坪垻行程同日。",
+  "amap_poiid": "B001794MK3",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆"
  },
  {
@@ -6066,7 +6775,7 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "雞類江湖菜（藥膳麻辣雞）",
   "area": "渝中區 李子壩",
-  "address": "重慶市渝中區李子壩正街60號（李子壩公園正對面）",
+  "address": "重慶市渝中區李子壩正街60號(輕軌2號線李子壩站,李子壩公園正對面)",
   "lat": 29.551647,
   "lng": 106.535731,
   "hours": "約 11:00–21:30",
@@ -6079,6 +6788,9 @@ const PLACES = [
   ],
   "reason": "五登大眾點評必吃榜、渝中區非遺美食，藥膳麻辣紅湯燉跑山雞，看完李子壩輕軌穿樓走幾步就到。",
   "notes": "以雞為主易避豬（廚房非清真）。與李子壩輕軌穿樓打卡點同區，強烈建議排同一半天；飯點排隊，可先取號再去江邊拍照。",
+  "amap_poiid": "B0FFFAJOPH",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆",
   "rating": "4.5/5",
   "rating_source": "綜合"
@@ -6089,9 +6801,9 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "泉水雞",
   "area": "南岸區 南山",
-  "address": "重慶市南岸區南山泉水雞一條街（黃桷埡附近）",
-  "lat": 29.549,
-  "lng": 106.617,
+  "address": "重慶市南岸區泉水雞一條街崇文路247號(海昌加勒比海公園附近)",
+  "lat": 29.551976,
+  "lng": 106.615469,
   "hours": "約 10:30–21:30",
   "price": "人均 70–100 元",
   "dishes": [
@@ -6102,6 +6814,9 @@ const PLACES = [
   ],
   "reason": "泉水雞發源地南山一條街的老字號之一，現點現殺土雞、一雞三吃，配南山空氣與夜景。",
   "notes": "全雞宴易避豬；『一雞三吃』的雞血湯為雞血非豬血。位置在南山上，建議打車前往，可與一棵樹觀景台/枇杷園行程二選一同日安排。",
+  "amap_poiid": "B0FFF5VG58",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆"
  },
  {
@@ -6111,8 +6826,8 @@ const PLACES = [
   "cuisine": "江湖菜",
   "area": "九龍坡區（導航確認最新店址）",
   "address": "重慶市九龍坡區（本地口碑江湖菜館，出發前以大眾點評最新地址為準）",
-  "lat": 29.532,
-  "lng": 106.511,
+  "lat": null,
+  "lng": null,
   "hours": "約 11:00–21:30",
   "price": "人均 60–80 元",
   "dishes": [
@@ -6123,6 +6838,8 @@ const PLACES = [
   ],
   "reason": "本地人推薦的江湖菜口碑館子，魚菜與尖椒雞見長，遊客少更有市井味。",
   "notes": "【資訊待核】公開資料較少、店址可能變動，出發前務必在大眾點評確認營業狀態與地址；點魚類/雞類避豬容易，回鍋肉類豬菜避開。若查無營業可用『馬房灣66號江湖菜』替代。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "重庆"
  },
  {
@@ -6131,9 +6848,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "新疆菜/清真菜/清真火鍋",
   "area": "渝中區 較場口/中興路清真寺",
-  "address": "重慶市渝中區中興路5號穆斯林大廈1樓",
-  "lat": 29.5525,
-  "lng": 106.5738,
+  "address": "重慶市渝中區中興路5號較場口地鐵站4號出口正對面穆斯林大廈1層",
+  "lat": 29.552686,
+  "lng": 106.572238,
   "hours": "09:00-23:30（同集團分店時段，建議電話確認）",
   "price": 95,
   "dishes": [
@@ -6146,6 +6863,9 @@ const PLACES = [
   ],
   "reason": "重慶知名度最高的老牌清真新疆菜館，曾為政府清真接待指定餐廳，火鍋區全牛羊無豬肉無內臟。",
   "notes": "清真認證（穆斯林大廈內、清真寺旁）；火鍋為純牛油鍋底、食材僅牛羊蔬菜耗兒魚；旺季飯點需等位。",
+  "amap_poiid": "B0FFKG6FXS",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆"
  },
  {
@@ -6154,9 +6874,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真菜/清真火鍋",
   "area": "渝中區 較場口/中興路清真寺",
-  "address": "重慶市渝中區中興路5號穆斯林大廈",
-  "lat": 29.5527,
-  "lng": 106.574,
+  "address": "重慶市渝中區較場口中興路5號",
+  "lat": 29.552656,
+  "lng": 106.572198,
   "hours": "約10:00-21:30（建議電話確認）",
   "price": 78,
   "dishes": [
@@ -6168,6 +6888,9 @@ const PLACES = [
   ],
   "reason": "重慶清真寺體系內的老字號清真餐廳，回族經營，是本地穆斯林社群的日常食堂。",
   "notes": "清真認證（清真寺附設）；環境樸實，適合想吃放心清真川味與火鍋的旅客。",
+  "amap_poiid": "B0MB2S0DJ0",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆",
   "rating": "4.0/5",
   "rating_source": "大眾點評截圖（593條，2026/07/12）"
@@ -6178,9 +6901,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真火鍋",
   "area": "渝中區 較場口/中興路清真寺",
-  "address": "重慶市渝中區中興路7號附1號",
-  "lat": 29.5522,
-  "lng": 106.5736,
+  "address": "重慶市渝中區中興路7號第五層部分",
+  "lat": 29.552516,
+  "lng": 106.571933,
   "hours": "約11:00-24:00（建議電話確認）",
   "price": 85,
   "dishes": [
@@ -6192,6 +6915,9 @@ const PLACES = [
   ],
   "reason": "位於穆斯林美食街上的清真火鍋，塊狀純牛油鍋底厚重香濃，店面明亮乾淨、接待熱情。",
   "notes": "清真認證；牛油=牛脂肪熬製；一到飯點客滿，建議避峰或電話訂位。",
+  "amap_poiid": "B0FFKSFTA5",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆",
   "rating": "4.2/5",
   "rating_source": "大眾點評截圖（4064條，2026/07/12）"
@@ -6202,9 +6928,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真菜/西北菜",
   "area": "渝中區 中興路（清真寺對面）",
-  "address": "重慶市渝中區中興路12號（清真寺對面）",
-  "lat": 29.552,
-  "lng": 106.5734,
+  "address": "重慶市渝中區中興路12號(清真寺對面)(較場口地鐵站4號口旁)",
+  "lat": 29.552943,
+  "lng": 106.572116,
   "hours": "約10:30-21:30（建議電話確認）",
   "price": 60,
   "dishes": [
@@ -6216,6 +6942,9 @@ const PLACES = [
   ],
   "reason": "寧夏回族風味清真館，就在清真寺正對面，主打西北手抓羊肉與麵食，價格實惠。",
   "notes": "清真認證（回族經營、清真寺周邊）；適合禮拜後用餐或想吃西北口味時。",
+  "amap_poiid": "B0FFFAJUDO",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆",
   "rating": "4.4/5",
   "rating_source": "大眾點評截圖（318條，2026/07/12）"
@@ -6227,8 +6956,8 @@ const PLACES = [
   "cuisine": "新疆菜/清真菜",
   "area": "渝中區 較場口/中興路",
   "address": "重慶市渝中區中興路3號",
-  "lat": 29.553,
-  "lng": 106.5742,
+  "lat": null,
+  "lng": null,
   "hours": "約10:30-22:00（建議電話確認）",
   "price": 65,
   "dishes": [
@@ -6240,6 +6969,8 @@ const PLACES = [
   ],
   "reason": "清真寺美食街上的新疆餐廳，拉條子與烤包子道地，與真伊順互為替補、等位時的好選擇。",
   "notes": "清真認證（清真寺周邊穆斯林街區）；分量大，兩人點菜注意份量。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "重庆"
  },
  {
@@ -6248,9 +6979,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真火鍋",
   "area": "渝中區 較場口",
-  "address": "重慶市渝中區中興路5附2號",
-  "lat": 29.5524,
-  "lng": 106.5737,
+  "address": "重慶市渝中區較場口地鐵站4號出口正對面穆斯林大廈負1樓",
+  "lat": 29.552671,
+  "lng": 106.572127,
   "hours": "約11:00-23:00（建議電話確認）",
   "price": 79,
   "dishes": [
@@ -6262,6 +6993,9 @@ const PLACES = [
   ],
   "reason": "較場口清真火鍋群的新面孔，走網紅8D重慶風裝潢，全清真食材吃火鍋無顧慮。",
   "notes": "清真認證（穆斯林大廈街區）；與真伊順、馬隊長同一條街，可比價選擇。",
+  "amap_poiid": "B0FFM48HYU",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆",
   "rating": "4.3/5",
   "rating_source": "大眾點評截圖（1483條，2026/07/12）"
@@ -6273,8 +7007,8 @@ const PLACES = [
   "cuisine": "新疆菜/清真火鍋",
   "area": "渝北區 松牌路（另有五里店/江北嘴店）",
   "address": "重慶市兩江新區松牌路101號附24號（米蘭天空店）",
-  "lat": 29.59106,
-  "lng": 106.51335,
+  "lat": null,
+  "lng": null,
   "hours": "約11:00-22:00（建議電話確認）",
   "price": 82,
   "dishes": [
@@ -6286,6 +7020,8 @@ const PLACES = [
   ],
   "reason": "新疆菜與清真重慶火鍋二合一，觀音橋/江北方向住宿時最方便的清真選擇之一。",
   "notes": "清真認證；有多家分店，出發前以地圖App確認最近分店位置與營業狀態。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "重庆",
   "rating": "4.6/5",
   "rating_source": "大眾點評截圖（1157條，2026/07/12）"
@@ -6297,8 +7033,8 @@ const PLACES = [
   "cuisine": "清真菜/全牛宴",
   "area": "渝中區 蓮花支路",
   "address": "重慶市渝中區蓮花支路69號",
-  "lat": 29.556,
-  "lng": 106.57,
+  "lat": null,
+  "lng": null,
   "hours": "約11:00-21:00（建議電話確認）",
   "price": 70,
   "dishes": [
@@ -6310,6 +7046,8 @@ const PLACES = [
   ],
   "reason": "以整牛入席的清真全牛主題館，從牛肉湯到滷牛肉一次吃全，牛肉愛好者首選。",
   "notes": "清真認證（本地寶清真菜名錄收錄）；店面較傳統，建議中午前往。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "重庆"
  },
  {
@@ -6319,8 +7057,8 @@ const PLACES = [
   "cuisine": "蘭州牛肉麵/清真",
   "area": "渝中區 解放碑 鄒容路",
   "address": "重慶市渝中區鄒容路",
-  "lat": 29.556,
-  "lng": 106.577,
+  "lat": null,
+  "lng": null,
   "hours": "07:30-21:00",
   "price": 25,
   "dishes": [
@@ -6331,6 +7069,8 @@ const PLACES = [
   ],
   "reason": "解放碑商圈內少見的清真蘭州拉麵，逛街途中最快速、最便宜的無豬肉正餐。",
   "notes": "清真（蘭州拉麵體系，回族經營）；快餐型，翻桌快無需預約。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "重庆"
  },
  {
@@ -6339,9 +7079,9 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "新疆菜",
   "area": "渝中區 朝天門 來福士廣場",
-  "address": "重慶市渝中區接聖街8號來福士購物中心",
-  "lat": 29.563517,
-  "lng": 106.58813,
+  "address": "重慶市渝中區朝天門接聖街8號重慶來福士廣場L3-91",
+  "lat": 29.565142,
+  "lng": 106.588292,
   "hours": "約11:00-21:30（隨商場營業時間）",
   "price": 90,
   "dishes": [
@@ -6353,6 +7093,9 @@ const PLACES = [
   ],
   "reason": "重慶最有名的新疆連鎖品牌之一，大盤雞分量足、羊肉酥軟不膩，來福士店逛朝天門順路。",
   "notes": "清真友善（新疆菜系全牛羊雞、無豬肉，認證情況以門店公示為準）；商場店飯點需取號。",
+  "amap_poiid": "B0G23ZCAMY",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆",
   "rating": "4.3/5",
   "rating_source": "綜合"
@@ -6364,8 +7107,8 @@ const PLACES = [
   "cuisine": "新疆菜",
   "area": "江北區 觀音橋/九街",
   "address": "重慶市江北區北城天街九街萬匯中心",
-  "lat": 29.584,
-  "lng": 106.534,
+  "lat": null,
+  "lng": null,
   "hours": "約11:00-22:00（隨商場營業時間）",
   "price": 68,
   "dishes": [
@@ -6377,6 +7120,8 @@ const PLACES = [
   ],
   "reason": "知名新疆連鎖，性價比在同類中最高（人均約68元），觀音橋商圈住宿者的穩定選擇。",
   "notes": "清真友善（無豬肉菜單，認證以門店為準）；連鎖出品穩定，適合帶長輩。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "重庆",
   "rating": "4.3/5",
   "rating_source": "綜合"
@@ -6387,9 +7132,9 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "新疆菜",
   "area": "渝北區 新牌坊 愛琴海購物公園",
-  "address": "重慶市渝北區新南路2號愛琴海購物公園",
-  "lat": 29.6035,
-  "lng": 106.5065,
+  "address": "重慶市兩江新區金開大道1003號愛琴海購物公園4層",
+  "lat": 29.641842,
+  "lng": 106.548473,
   "hours": "約11:00-21:30（隨商場營業時間）",
   "price": 74,
   "dishes": [
@@ -6401,6 +7146,9 @@ const PLACES = [
   ],
   "reason": "重慶新疆菜排行榜常客，商場店環境好、出餐快，北部新區一帶最方便的牛羊主題餐廳。",
   "notes": "清真友善（無豬肉菜單，認證以門店為準）；周末商場人多建議錯峰。",
+  "amap_poiid": "B0FFIP8R3R",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆",
   "rating": "4.3/5",
   "rating_source": "綜合"
@@ -6412,8 +7160,8 @@ const PLACES = [
   "cuisine": "新疆菜",
   "area": "渝北區 冉家壩",
   "address": "重慶市渝北區冉家壩（龍湖紫都城一帶）",
-  "lat": 29.61,
-  "lng": 106.514,
+  "lat": null,
+  "lng": null,
   "hours": "約11:00-21:30（建議電話確認）",
   "price": 74,
   "dishes": [
@@ -6425,6 +7173,8 @@ const PLACES = [
   ],
   "reason": "城市惠重慶新疆菜排行第一名，莊園式新疆餐廳，烤全羊與抓飯評價突出。",
   "notes": "清真友善（新疆菜系無豬肉，認證以門店為準）；烤全羊需提前預訂。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "重庆"
  },
  {
@@ -6433,9 +7183,9 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "蘭州牛肉麵",
   "area": "沙坪垻區 金沙天街",
-  "address": "重慶市沙坪垻區龍湖金沙天街",
-  "lat": 29.541,
-  "lng": 106.455,
+  "address": "重慶市沙坪垻區北站東路188號龍湖重慶金沙天街A館5F層",
+  "lat": 29.553993,
+  "lng": 106.459475,
   "hours": "約10:00-21:30（隨商場營業時間）",
   "price": 35,
   "dishes": [
@@ -6446,6 +7196,9 @@ const PLACES = [
   ],
   "reason": "大眾點評人氣蘭州牛肉麵品牌（851人推薦），磁器口/沙坪垻方向遊玩時的無豬肉快餐首選。",
   "notes": "清真友善（蘭州牛肉麵體系傳統上為清真工藝，門店認證以現場公示為準）。",
+  "amap_poiid": "B0I1NRA8JF",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆"
  },
  {
@@ -6454,9 +7207,9 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "羊肉湯鍋/渝菜",
   "area": "渝中區 解放碑 民生路",
-  "address": "重慶市渝中區民生路9號陽光星座2樓",
-  "lat": 29.5558,
-  "lng": 106.5738,
+  "address": "重慶市渝中區民生路9號陽光星座3樓(萬豪酒店對面)",
+  "lat": 29.554907,
+  "lng": 106.573677,
   "hours": "約11:00-21:30（建議電話確認）",
   "price": 80,
   "dishes": [
@@ -6468,6 +7221,9 @@ const PLACES = [
   ],
   "reason": "始於1937年的準百年老店，老重慶人心中吃羊肉的聖地，紅燒羊排軟糯麻辣、冬季進補首選。",
   "notes": "非清真認證（點羊肉類菜品即可避豬）；12月正值羊肉旺季，飯點常排隊。",
+  "amap_poiid": "B00170CPWH",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆"
  },
  {
@@ -6476,9 +7232,9 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "羊肉湯鍋",
   "area": "渝中區 文化街（近解放碑東）",
-  "address": "重慶市渝中區文化街31、33號",
-  "lat": 29.5545,
-  "lng": 106.58,
+  "address": "重慶市渝中區文化街33號附二(莫蘭酒店旁)",
+  "lat": 29.552628,
+  "lng": 106.580882,
   "hours": "約10:30-21:00（建議電話確認）",
   "price": 60,
   "dishes": [
@@ -6490,6 +7246,9 @@ const PLACES = [
   ],
   "reason": "渝中老街裡的羊肉專門店，全店以羊為主，粉蒸羊肉與羊雜湯是本地人冬天的心頭好。",
   "notes": "非清真認證（全羊主題、易避豬）；老店環境樸素，人均實惠。",
+  "amap_poiid": "B0FFFAJHJC",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆"
  },
  {
@@ -6499,8 +7258,8 @@ const PLACES = [
   "cuisine": "烤全羊/羊肉湯鍋",
   "area": "九龍坡區 楊家坪 九濱路",
   "address": "重慶市九龍坡區九濱路外灘廣場",
-  "lat": 29.508,
-  "lng": 106.523,
+  "lat": null,
+  "lng": null,
   "hours": "約16:00-24:00為主（烤全羊需預訂，建議電話確認）",
   "price": 100,
   "dishes": [
@@ -6511,6 +7270,8 @@ const PLACES = [
   ],
   "reason": "重慶烤全羊地圖上的人氣名店，江邊露天座看長江與南濱路夜景，羊皮酥肉嫩無羶味。",
   "notes": "非清真認證（活羊現殺現烤、全羊主題）；烤全羊需提前預訂，秋冬限定氛圍最佳，晚餐為主。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "重庆"
  },
  {
@@ -6520,8 +7281,8 @@ const PLACES = [
   "cuisine": "萬州烤魚/農夫烤魚",
   "area": "渝中區 中山一路（近兩路口/解放碑之間）",
   "address": "重慶市渝中區中山一路財信渝中城6號附50號",
-  "lat": 29.556,
-  "lng": 106.556,
+  "lat": null,
+  "lng": null,
   "hours": "約11:30-22:30（建議電話確認）",
   "price": 70,
   "dishes": [
@@ -6532,6 +7293,8 @@ const PLACES = [
   ],
   "reason": "十年老店，魚現殺現烤、鋪滿大紅燈籠椒，香辣夠味又不死鹹，本地熟客多。",
   "notes": "非清真（魚類主打；請店家配菜避開臘腸臘肉）；晚餐時段較熱門。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "重庆"
  },
  {
@@ -6541,8 +7304,8 @@ const PLACES = [
   "cuisine": "酸菜魚/渝菜",
   "area": "渝中區 洪崖洞",
   "address": "重慶市渝中區嘉陵江濱江路88號洪崖洞（具體樓層以現場為準）",
-  "lat": 29.562095,
-  "lng": 106.577677,
+  "lat": null,
+  "lng": null,
   "hours": "約11:00-21:30（建議電話確認）",
   "price": 90,
   "dishes": [
@@ -6553,6 +7316,8 @@ const PLACES = [
   ],
   "reason": "重慶菜代表品牌，老壇酸菜魚用正宗川味酸菜、酸辣開胃，逛洪崖洞可無縫銜接。",
   "notes": "非清真（綜合渝菜館，點魚類與牛肉菜即可；下單時說明不要豬肉/豬油菜品）；洪崖洞夜間人流極大，建議午餐或早晚餐錯峰。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "重庆",
   "rating": "4.3/5",
   "rating_source": "綜合"
@@ -6564,9 +7329,9 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "融合烤肉·江景夜景餐廳",
   "area": "南岸區·上新街/南山山腰",
-  "address": "重慶市南岸區龍門浩街道上新街山腰（導航「黃玉明烤肉」，需爬坡步梯）",
-  "lat": 29.552,
-  "lng": 106.6,
+  "address": "重慶市南岸區龍門浩街道一天門街102號附1號(長豐汽修廠右拐上行40米)",
+  "lat": 29.553911,
+  "lng": 106.599189,
   "hours": "約16:00-24:00（夜景時段為主，以店家為準）",
   "price": "約125元/人",
   "rating": "4.6/5",
@@ -6578,7 +7343,10 @@ const PLACES = [
    "圍爐煮茶"
   ],
   "reason": "洪崖洞正對面山腰的夜景烤肉——邊烤肉邊聽民謠，俯瞰渝中半島、來福士與東水門大橋百萬江景，與丁老頭烤肉同家。",
-  "notes": "⚠️ 網紅店建議提前訂位/取號；從山腳爬坡步梯約10分鐘；非清真但烤肉自選食材，點牛肉雞肉海鮮即可避豬；12月山腰風大注意保暖"
+  "notes": "⚠️ 網紅店建議提前訂位/取號；從山腳爬坡步梯約10分鐘；非清真但烤肉自選食材，點牛肉雞肉海鮮即可避豬；12月山腰風大注意保暖",
+  "amap_poiid": "B0KUV1F64M",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "小樹啉 Live（南濱煙雨店）",
@@ -6588,8 +7356,8 @@ const PLACES = [
   "cuisine": "融合烤肉·江景 Live 餐吧",
   "area": "南岸區·南濱路/東原1891",
   "address": "重慶市南岸區南濱路80號東原1891",
-  "lat": 29.544845,
-  "lng": 106.588546,
+  "lat": null,
+  "lng": null,
   "hours": "約11:00-次日00:30（Live 時段以店家當日公告為準）",
   "price": "約77元/人",
   "rating": "4.0/5",
@@ -6601,7 +7369,9 @@ const PLACES = [
    "特調飲品"
   ],
   "reason": "東原1891臨江的融合烤肉餐吧，可看渝中半島江景並聽現場音樂，適合南山夜景後下山續攤。",
-  "notes": "⚠️ 非清真且菜單含豬肉、供應酒類；點牛肉、雞肉與蔬菜並明確告知忌口，避開豬梅花等豬肉品項；靠江位建議提前預訂，出發前確認 Live 場次。"
+  "notes": "⚠️ 非清真且菜單含豬肉、供應酒類；點牛肉、雞肉與蔬菜並明確告知忌口，避開豬梅花等豬肉品項；靠江位建議提前預訂，出發前確認 Live 場次。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "聚福洋行江景火鍋（南濱路店）",
@@ -6610,9 +7380,9 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "江景火鍋",
   "area": "南岸區·南濱路",
-  "address": "重慶市南岸區南濱路（近喜來登雙子塔）",
-  "lat": 29.5555,
-  "lng": 106.5735,
+  "address": "重慶市南岸區南濱路塗山鎮玄壇廟八角巷11-5(慈雲老街旁)",
+  "lat": 29.567763,
+  "lng": 106.595259,
   "hours": "約11:00-次日02:00",
   "price": "約130元/人",
   "rating": "4.5/5",
@@ -6624,7 +7394,10 @@ const PLACES = [
    "鮮貨拼盤"
   ],
   "reason": "南濱路江邊的老牌江景火鍋，一邊吃重慶火鍋一邊看渝中半島燈火與長江，火鍋＋江景一次滿足。",
-  "notes": "非清真火鍋但牛油=牛脂、點牛羊毛肚鴨腸等避豬即可；靠江位建議訂位；營業到深夜適合看夜景"
+  "notes": "非清真火鍋但牛油=牛脂、點牛羊毛肚鴨腸等避豬即可；靠江位建議訂位；營業到深夜適合看夜景",
+  "amap_poiid": "B0J2TA6DY4",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "UNDER JOY 城市營地（海棠煙雨江景Live）",
@@ -6633,9 +7406,9 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "美式燻烤·江景Live餐吧",
   "area": "南岸區·南濱路海棠煙雨",
-  "address": "重慶市南岸區南濱路海棠煙雨公園下方（近慈雲寺、下浩里）",
-  "lat": 29.5565,
-  "lng": 106.5825,
+  "address": "重慶市南岸區塗山鎮南濱路慈雲寺地下停車場內",
+  "lat": 29.564601,
+  "lng": 106.594733,
   "hours": "約14:00-次日01:00",
   "price": "約150元/人",
   "rating": "4.6/5",
@@ -6647,7 +7420,10 @@ const PLACES = [
    "烤肉拼盤"
   ],
   "reason": "江邊草坪帳篷營地風格，有駐唱樂隊Live與智能霧森系統，邊聽現場音樂邊看江景微醺，年輕人最愛的江景餐吧。",
-  "notes": "非清真（燻烤含豬肋排、供酒），點牛肉海鮮避豬；Live演出多在晚間，江風大注意保暖；氛圍為主餐點其次"
+  "notes": "非清真（燻烤含豬肋排、供酒），點牛肉海鮮避豬；Live演出多在晚間，江風大注意保暖；氛圍為主餐點其次",
+  "amap_poiid": "B0LUXSMBDL",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "格薩藏宴·江景落日烤肉（南濱路店）",
@@ -6656,9 +7432,9 @@ const PLACES = [
   "halal": false,
   "cuisine": "藏式烤肉·江景餐廳",
   "area": "南岸區·上新街/馬鞍山",
-  "address": "重慶市南岸區上新街馬鞍山247號（近碼頭小面）",
-  "lat": 29.548012,
-  "lng": 106.593826,
+  "address": "重慶市南岸區上新街174號",
+  "lat": 29.548035,
+  "lng": 106.593829,
   "hours": "實時營業時間以門店為準",
   "price": "約131元/人",
   "rating": "4.8/5",
@@ -6671,7 +7447,10 @@ const PLACES = [
    "藏式甜茶"
   ],
   "reason": "上新街馬鞍山的藏式江景烤肉，可看落日與渝中半島夜景，並體驗犛牛肉、羊排、酸奶與藏式甜茶。",
-  "notes": "⚠️ 非清真；菜單明確含厚切五花肉與土豬五花肉，烤盤及器具可能共用。忌豬者需提前告知並確認可否分開處理；熱門江景位建議預約。"
+  "notes": "⚠️ 非清真；菜單明確含厚切五花肉與土豬五花肉，烤盤及器具可能共用。忌豬者需提前告知並確認可否分開處理；熱門江景位建議預約。",
+  "amap_poiid": "B0LR3UCMYR",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "玉芝蘭",
@@ -6680,9 +7459,9 @@ const PLACES = [
   "halal": false,
   "cuisine": "新派川菜/私房菜（Tasting Menu）",
   "area": "青羊區·長發街（人民公園北側）",
-  "address": "青羊區長發街24號附1號",
-  "lat": 30.6699,
-  "lng": 104.0562,
+  "address": "成都市青羊區長發街24號附1號",
+  "lat": 30.666764,
+  "lng": 104.058706,
   "hours": "午市/晚市兩輪，僅接受預約（每日僅兩輪席位）",
   "price": "人均約1500-2800元",
   "rating": "米其林二星（2026）",
@@ -6694,7 +7473,10 @@ const PLACES = [
    "甜燒白"
   ],
   "reason": "蘭桂均大師私房菜，2018年首版黑珍珠成都唯一三鑽，現為米其林二星，成都精緻川菜天花板",
-  "notes": "需至少提前3天預約並付訂金，無招牌藏於居民樓；菜單含豬肉菜式，特殊飲食需求需提前溝通"
+  "notes": "需至少提前3天預約並付訂金，無招牌藏於居民樓；菜單含豬肉菜式，特殊飲食需求需提前溝通",
+  "amap_poiid": "B001C8R4F8",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "松雲澤",
@@ -6704,8 +7486,8 @@ const PLACES = [
   "cuisine": "川菜包席（南堂菜/榮樂園一脈）",
   "area": "錦江區·琉璃場",
   "address": "錦江區琉璃路8號翡翠里2-8號",
-  "lat": 30.62028,
-  "lng": 104.09199,
+  "lat": null,
+  "lng": null,
   "hours": "午市11:30-14:00，晚市17:30-21:00（需預約）",
   "price": "包席400-2000元/位（四人起訂）",
   "rating": "黑珍珠一鑽",
@@ -6717,7 +7499,9 @@ const PLACES = [
    "罈子肉"
   ],
   "reason": "血脈上溯老字號正興園/榮樂園的傳統川菜包席館，黑珍珠鑽級常客，川菜古法宴席活化石",
-  "notes": "只有包間沒有大廳，必須提前預定隨堂配菜；罈子肉等經典菜含豬肉"
+  "notes": "只有包間沒有大廳，必須提前預定隨堂配菜；罈子肉等經典菜含豬肉",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "許家菜",
@@ -6726,9 +7510,9 @@ const PLACES = [
   "halal": false,
   "cuisine": "精緻川菜",
   "area": "武侯區·望江公園",
-  "address": "望江路1號中海格林威治城8幢附1號",
-  "lat": 30.6339,
-  "lng": 104.0919,
+  "address": "成都市武侯區望江路1號格林威治廣場8幢附1號(近望江公園)",
+  "lat": 30.637468,
+  "lng": 104.090055,
   "hours": "午市約11:30-14:00，晚市17:30起（建議預約）",
   "price": "人均約300-500元",
   "rating": "黑珍珠一鑽",
@@ -6740,7 +7524,10 @@ const PLACES = [
    "樟茶鴨"
   ],
   "reason": "黑珍珠指南成都常客，以味型編排菜單的川菜名店，紅燜甲魚為鎮店之寶",
-  "notes": "晚市建議提前訂位；部分經典川菜含豬肉"
+  "notes": "晚市建議提前訂位；部分經典川菜含豬肉",
+  "amap_poiid": "B0FFF6JVL2",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "子非",
@@ -6750,8 +7537,8 @@ const PLACES = [
   "cuisine": "創意川菜/園林私房菜",
   "area": "青羊區·寬窄巷子",
   "address": "寬巷子25號",
-  "lat": 30.6697,
-  "lng": 104.0555,
+  "lat": null,
+  "lng": null,
   "hours": "午市11:30-14:00，晚市17:30-21:30（需預約）",
   "price": "人均約650-1200元",
   "rating": "黑珍珠鑽級（曾上榜）",
@@ -6763,7 +7550,9 @@ const PLACES = [
    "川式甜品"
   ],
   "reason": "寬窄巷子內的園林式高端川菜，黑珍珠上榜餐廳，取名莊子「子非魚」，佐餐有川劇民樂表演",
-  "notes": "位置在寬窄巷子景區內，務必提前預約包間；套餐含豬肉菜可提前告知調整"
+  "notes": "位置在寬窄巷子景區內，務必提前預約包間；套餐含豬肉菜可提前告知調整",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "Silver Pot·銀鍋現代川菜",
@@ -6773,8 +7562,8 @@ const PLACES = [
   "cuisine": "現代川菜（花椒風味主題）",
   "area": "高新區·大源（悠方購物中心）",
   "address": "高新區府城大道西段505號悠方購物中心",
-  "lat": 30.5407,
-  "lng": 104.0611,
+  "lat": null,
+  "lng": null,
   "hours": "午市11:30-14:00，晚市17:30-21:30",
   "price": "人均約400-700元",
   "rating": "黑珍珠一鑽＋米其林一星",
@@ -6786,7 +7575,9 @@ const PLACES = [
    "現代版麻婆豆腐"
   ],
   "reason": "連續多年蟬聯黑珍珠一鑽與米其林一星，以「花椒風味實驗室」聞名全國",
-  "notes": "熱門時段建議預約；含豬肉菜式，可按需調整菜單"
+  "notes": "熱門時段建議預約；含豬肉菜式，可按需調整菜單",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "柴門薈",
@@ -6796,8 +7587,8 @@ const PLACES = [
   "cuisine": "精緻川菜/川味融合",
   "area": "高新區·交子公園（中海環宇薈）",
   "address": "高新區交子大道277號中海環宇薈",
-  "lat": 30.5666,
-  "lng": 104.0621,
+  "lat": null,
+  "lng": null,
   "hours": "午市11:30-14:00，晚市17:30-21:30",
   "price": "人均約400-800元",
   "rating": "黑珍珠一鑽＋米其林一星",
@@ -6809,7 +7600,9 @@ const PLACES = [
    "川式頭湯菜"
   ],
   "reason": "柴門餐飲旗下高端線，集米其林一星、黑珍珠一鑽、金梧桐大師餐廳頭銜於一身（柴門飯兒已收錄，此為不同定位品牌）",
-  "notes": "建議預約江景位；部分菜品含豬肉"
+  "notes": "建議預約江景位；部分菜品含豬肉",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "銀芭1986",
@@ -6819,8 +7612,8 @@ const PLACES = [
   "cuisine": "創意川菜",
   "area": "天府新區·麓鎮",
   "address": "天府新區麓鎮山頂廣場（天府麓鎮店）",
-  "lat": 30.4692,
-  "lng": 104.0803,
+  "lat": null,
+  "lng": null,
   "hours": "午市11:30-14:00，晚市17:30-21:00（建議預約）",
   "price": "人均約300-600元",
   "rating": "黑珍珠鑽級（蟬聯七年）",
@@ -6832,7 +7625,9 @@ const PLACES = [
    "季節限定套餐"
   ],
   "reason": "蟬聯七年黑珍珠鑽級；「銀芭三味雞」入選2025黑珍珠年度十大菜品（成都唯一代表）",
-  "notes": "位置較遠在麓鎮小鎮，適合駕車前往；回鍋肉等招牌含豬肉"
+  "notes": "位置較遠在麓鎮小鎮，適合駕車前往；回鍋肉等招牌含豬肉",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "成都吃客",
@@ -6842,8 +7637,8 @@ const PLACES = [
   "cuisine": "創意川菜/網紅川菜",
   "area": "武侯區·致民路（另有奎星樓街等分店）",
   "address": "致民路48號",
-  "lat": 30.6367,
-  "lng": 104.0805,
+  "lat": null,
+  "lng": null,
   "hours": "12:00-13:30，17:00-21:00（排隊取號早）",
   "price": "人均約90-110元",
   "rating": null,
@@ -6855,7 +7650,9 @@ const PLACES = [
    "秘制烤腦花"
   ],
   "reason": "大眾點評必吃榜多年常客，奎星樓街與致民路「排隊王」，創意擺盤配紮實川味",
-  "notes": "不接受電話訂位，需現場取號排隊，建議開餐前到；烤腦花為豬腦花需避開者注意"
+  "notes": "不接受電話訂位，需現場取號排隊，建議開餐前到；烤腦花為豬腦花需避開者注意",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "五里關火鍋",
@@ -6865,8 +7662,8 @@ const PLACES = [
   "cuisine": "牛油火鍋",
   "area": "金牛區·五里墩（總店，另有奎星樓街、小關廟等分店）",
   "address": "金牛區五里墩（居民樓總店），分店遍布市區",
-  "lat": 30.6753,
-  "lng": 104.0369,
+  "lat": null,
+  "lng": null,
   "hours": "約11:30-凌晨（各店略異）",
   "price": "人均約100-130元",
   "rating": null,
@@ -6879,7 +7676,9 @@ const PLACES = [
    "冰湯圓"
   ],
   "reason": "從五里墩居民樓「鍋底實驗室」起家的現象級排隊王，日均排隊2000+號，大眾點評熱門榜/必吃榜常客",
-  "notes": "務必提前線上取號排隊；午餐肉、醬肉蒸餃等自製品含豬肉"
+  "notes": "務必提前線上取號排隊；午餐肉、醬肉蒸餃等自製品含豬肉",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "萍姐火鍋·公路夜市",
@@ -6889,8 +7688,8 @@ const PLACES = [
   "cuisine": "重慶老火鍋＋夜市小吃",
   "area": "錦江區/成華區等多店（春熙路商圈有大店）",
   "address": "成都多家門店，以「公路夜市」主題大店為主（另有簡陽店等）",
-  "lat": 30.6598,
-  "lng": 104.081,
+  "lat": null,
+  "lng": null,
   "hours": "約11:00-次日2:00",
   "price": "人均約90-120元",
   "rating": null,
@@ -6902,7 +7701,9 @@ const PLACES = [
    "手工冰湯圓"
   ],
   "reason": "滷校長團隊打造的火鍋+90年代公路夜市場景品牌，成都曾創單日線上排隊1854桌紀錄，節假日全城熱搜第一",
-  "notes": "節假日排隊極長，建議非高峰前往；酥肉等含豬肉"
+  "notes": "節假日排隊極長，建議非高峰前往；酥肉等含豬肉",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "朱光玉火鍋館",
@@ -6912,8 +7713,8 @@ const PLACES = [
   "cuisine": "重慶火鍋",
   "area": "成華區·望平街（成都首店）",
   "address": "成華區望平街（濱河路商圈）",
-  "lat": 30.6666,
-  "lng": 104.0955,
+  "lat": null,
+  "lng": null,
   "hours": "約11:30-凌晨",
   "price": "人均約100-130元",
   "rating": "4.6/5",
@@ -6925,7 +7726,9 @@ const PLACES = [
    "現打鮮蝦滑"
   ],
   "reason": "2021年成都首店落戶望平街即登頂大眾點評美食熱門榜/火鍋熱門榜雙第一，單日排隊400+號",
-  "notes": "晚市門口大排長龍，建議提前線上取號"
+  "notes": "晚市門口大排長龍，建議提前線上取號",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "康二姐串串香",
@@ -6934,9 +7737,9 @@ const PLACES = [
   "halal": false,
   "cuisine": "冷鍋串串/串串香",
   "area": "錦江區·中道街",
-  "address": "中道街99號附32號",
-  "lat": 30.649,
-  "lng": 104.094,
+  "address": "成都市錦江區中道街99號附32號",
+  "lat": 30.660199,
+  "lng": 104.090377,
   "hours": "11:00-20:00（牛肉串串常提前賣完）",
   "price": "人均約50-70元",
   "rating": null,
@@ -6948,7 +7751,10 @@ const PLACES = [
    "腦花（豬）"
   ],
   "reason": "上過《天天向上》的老牌蒼蠅串串，晚上8點仍在排隊的翻台王，大眾點評串串品類頭部",
-  "notes": "招牌牛肉串串要早去搶，賣完即止；葷串部分為豬肉製品可挑牛肉類"
+  "notes": "招牌牛肉串串要早去搶，賣完即止；葷串部分為豬肉製品可挑牛肉類",
+  "amap_poiid": "B001C7WFGA",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "葉婆婆缽缽雞",
@@ -6957,9 +7763,9 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "樂山缽缽雞/冷串串",
   "area": "錦江區·太古里（另有人民南路、建設路、萬象城、錦里等店）",
-  "address": "春熙路太古里商圈（成都多店）",
-  "lat": 30.6553,
-  "lng": 104.0838,
+  "address": "成都市成華區建設巷1號附19號20號",
+  "lat": 30.670418,
+  "lng": 104.103411,
   "hours": "約10:30-21:30",
   "price": "人均約50-70元",
   "rating": null,
@@ -6971,7 +7777,10 @@ const PLACES = [
    "冰粉"
   ],
   "reason": "1980年代樂山犍為起家的非遺缽缽雞，多次獲大眾點評必吃榜，成都開到哪排到哪",
-  "notes": "以雞肉素菜為主、無豬肉主打故標友善，但個別葷串及甜皮鴨檔口需自行確認；高峰需排隊"
+  "notes": "以雞肉素菜為主、無豬肉主打故標友善，但個別葷串及甜皮鴨檔口需自行確認；高峰需排隊",
+  "amap_poiid": "B0FFHL8E27",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "豪蝦傳龍蝦館",
@@ -6980,9 +7789,9 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "小龍蝦/夜宵",
   "area": "錦江區·春熙路太古里",
-  "address": "春熙路太古里商圈（總店）",
-  "lat": 30.656,
-  "lng": 104.083,
+  "address": "成都市錦江區下東大街36號鬱金香廣場2樓(春熙路)",
+  "lat": 30.650996,
+  "lng": 104.079945,
   "hours": "約17:00-次日1:00（夏季旺季延長）",
   "price": "人均約120-160元",
   "rating": null,
@@ -6994,7 +7803,10 @@ const PLACES = [
    "滷味拼盤"
   ],
   "reason": "成都小龍蝦界老牌頂流（創始人蔣毅為餐飲圈知名人物），夏夜排隊名店",
-  "notes": "小龍蝦為主打故標友善，滷味配菜或含豬肉需確認；旺季晚市排隊久"
+  "notes": "小龍蝦為主打故標友善，滷味配菜或含豬肉需確認；旺季晚市排隊久",
+  "amap_poiid": "B001C8X4KM",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "周記盆盆蝦",
@@ -7003,9 +7815,9 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "盆盆蝦/大排檔河鮮",
   "area": "大邑縣（近20年老店）",
-  "address": "大邑縣西嶺大道43號（另有雪山大道二段店）",
-  "lat": 30.5726,
-  "lng": 103.5224,
+  "address": "成都市大邑縣雪山大道二段528-530號(盛德廣場A區)",
+  "lat": 30.564139,
+  "lng": 103.519097,
   "hours": "11:00-22:30",
   "price": "人均約102元",
   "rating": null,
@@ -7017,7 +7829,10 @@ const PLACES = [
    "時令河鮮"
   ],
   "reason": "開店近20年的盆盆蝦名店，蝦開背去線、按斤稱的海鮮大排檔模式，馬蜂窩/攜程攻略常客",
-  "notes": "位於大邑縣城，適合西嶺雪山沿線順訪；蝦蟹為主標友善，配菜需確認"
+  "notes": "位於大邑縣城，適合西嶺雪山沿線順訪；蝦蟹為主標友善，配菜需確認",
+  "amap_poiid": "B0H63R9JYQ",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "天添飯店",
@@ -7027,8 +7842,8 @@ const PLACES = [
   "cuisine": "家常川菜/蒼蠅館子",
   "area": "武侯區·玉林",
   "address": "玉林東街16號",
-  "lat": 30.6212,
-  "lng": 104.0648,
+  "lat": null,
+  "lng": null,
   "hours": "約11:00-14:00，17:00-21:00",
   "price": "人均約28-45元",
   "rating": null,
@@ -7040,7 +7855,9 @@ const PLACES = [
    "松鼠魚"
   ],
   "reason": "玉林片區口碑蒼蠅館子代表，各大成都蒼蠅館子榜單常客，好吃平價",
-  "notes": "店面小高峰需等位；家常菜多含豬肉，招牌雞雜/魚類可避開"
+  "notes": "店面小高峰需等位；家常菜多含豬肉，招牌雞雜/魚類可避開",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "盤飧市",
@@ -7049,9 +7866,9 @@ const PLACES = [
   "halal": false,
   "cuisine": "川式醃滷/老字號",
   "area": "錦江區·華興街（近王府井，另有春熙路店）",
-  "address": "華興街62-63號",
-  "lat": 30.6608,
-  "lng": 104.0779,
+  "address": "成都市錦江區華興正街62號",
+  "lat": 30.659712,
+  "lng": 104.079623,
   "hours": "11:00-14:00，17:00-21:00（外賣滷味窗口時間更長）",
   "price": "人均約40-72元",
   "rating": null,
@@ -7063,7 +7880,10 @@ const PLACES = [
    "滷雞翅"
   ],
   "reason": "1925年創立的中華老字號，店名取自杜甫詩句，川式滷菜一絕，本地人打滷菜排隊名店",
-  "notes": "招牌「鍋盔夾滷肉」為豬肉，清真需求者只能選禽類滷味且同案製作；堂食+外帶窗口兩種模式"
+  "notes": "招牌「鍋盔夾滷肉」為豬肉，清真需求者只能選禽類滷味且同案製作；堂食+外帶窗口兩種模式",
+  "amap_poiid": "B0FFFALD4F",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "夫妻肺片總店（人民公司老字號）",
@@ -7072,9 +7892,9 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "川菜老字號/涼拌菜",
   "area": "錦江區·總府路（春熙路商圈）",
-  "address": "總府路23號1-2層",
-  "lat": 30.6592,
-  "lng": 104.0824,
+  "address": "成都市錦江區總府街23號、25號",
+  "lat": 30.658505,
+  "lng": 104.078161,
   "hours": "10:30-21:30",
   "price": "人均約48-54元",
   "rating": null,
@@ -7086,7 +7906,10 @@ const PLACES = [
    "川北涼粉"
   ],
   "reason": "1933年創立、1995年授牌中華老字號，成都飲食公司直營總店，夫妻肺片發源正宗",
-  "notes": "招牌肺片為牛肉牛雜制標友善，但餐廳其他川菜部分含豬肉需點單時避開"
+  "notes": "招牌肺片為牛肉牛雜制標友善，但餐廳其他川菜部分含豬肉需點單時避開",
+  "amap_poiid": "B001C7UMTU",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "耗子洞張鴨子",
@@ -7095,9 +7918,9 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "樟茶鴨/川式滷鴨老字號",
   "area": "青羊區·鼓樓南街（提督街起家）",
-  "address": "青羊區鼓樓南街（近提督街，另有石人南路等分店）",
-  "lat": 30.663,
-  "lng": 104.0725,
+  "address": "成都市青羊區鼓樓南街16號",
+  "lat": 30.661069,
+  "lng": 104.072389,
   "hours": "約09:30-20:30",
   "price": "人均約40-80元",
   "rating": null,
@@ -7109,7 +7932,10 @@ const PLACES = [
    "全鴨席"
   ],
   "reason": "1928年提督街起家的中華老字號（2007年首批授牌），樟茶鴨獲國家金鼎獎、成都市非遺",
-  "notes": "以鴨為主打標友善，個別滷味含豬需確認；適合外帶手信"
+  "notes": "以鴨為主打標友善，個別滷味含豬需確認；適合外帶手信",
+  "amap_poiid": "B001C7V5HK",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "白家高記肥腸粉",
@@ -7118,9 +7944,9 @@ const PLACES = [
   "halal": false,
   "cuisine": "肥腸粉/成都名小吃",
   "area": "雙流區·白家場鎮",
-  "address": "雙流區白家場鎮（總店，白家開店年頭最長的老店）",
-  "lat": 30.57,
-  "lng": 104.012,
+  "address": "成都市雙流區西航港新街153號",
+  "lat": 30.551143,
+  "lng": 104.013952,
   "hours": "約06:30-15:00（賣完收攤）",
   "price": "人均約25-31元",
   "rating": null,
@@ -7132,7 +7958,10 @@ const PLACES = [
    "白味肥腸湯"
   ],
   "reason": "百年六代傳人的雙流白家肥腸粉發源老字號，「成都名小吃」，白家場鎮地標",
-  "notes": "全店以豬肥腸為主打，清真不適用；小份10元起，早去避排隊"
+  "notes": "全店以豬肥腸為主打，清真不適用；小份10元起，早去避排隊",
+  "amap_poiid": "B001C7RP9I",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "KUMO KUMO",
@@ -7142,8 +7971,8 @@ const PLACES = [
   "cuisine": "現烤芝士蛋糕/網紅甜品",
   "area": "錦江區·春熙路商圈（成都首店）",
   "address": "春熙路商圈（成都首店，另有多家商場店）",
-  "lat": 30.657,
-  "lng": 104.0808,
+  "lat": null,
+  "lng": null,
   "hours": "約10:00-22:00（隨商場）",
   "price": "人均約40-70元",
   "rating": null,
@@ -7155,7 +7984,9 @@ const PLACES = [
    "芝士撻"
   ],
   "reason": "2020年創立的現烤芝士蛋糕排隊王，成都首店開業即成打卡點，城市限定款吸引甜品客",
-  "notes": "無豬肉製品標友善（含乳製品與酒漬配料個別款需確認）；熱門時段需排隊叫號"
+  "notes": "無豬肉製品標友善（含乳製品與酒漬配料個別款需確認）；熱門時段需排隊叫號",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "貳麻酒館",
@@ -7165,8 +7996,8 @@ const PLACES = [
   "cuisine": "中式雞尾酒館/成都鬼飲食",
   "area": "成華區·猛追灣339（小森林店，另有蘭桂坊、太古里等店）",
   "address": "成華區猛追灣339購物中心（339小森林店）",
-  "lat": 30.666,
-  "lng": 104.101,
+  "lat": null,
+  "lng": null,
   "hours": "約14:00-次日2:00",
   "price": "人均約136-200元",
   "rating": null,
@@ -7179,7 +8010,9 @@ const PLACES = [
    "冰湯圓"
   ],
   "reason": "2014年創立的成都本土國潮小酒館頂流，露天壩子茶館式飲酒場景，開新店曾排隊一公里",
-  "notes": "供應酒精飲品故不適用清真；鬼飲食小吃部分含豬肉；電視塔夜景位搶手建議早到"
+  "notes": "供應酒精飲品故不適用清真；鬼飲食小吃部分含豬肉；電視塔夜景位搶手建議早到",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "何師燒烤",
@@ -7189,8 +8022,8 @@ const PLACES = [
   "cuisine": "川式燒烤/夜宵",
   "area": "錦江區·太古里（另有交子大道等40+直營店）",
   "address": "春熙路太古里商圈（太古里店）",
-  "lat": 30.6553,
-  "lng": 104.085,
+  "lat": null,
+  "lng": null,
   "hours": "約17:00-次日2:00（部分店午市營業）",
   "price": "人均約52-70元",
   "rating": null,
@@ -7203,7 +8036,9 @@ const PLACES = [
    "幹拌牛肉串"
   ],
   "reason": "1994年五位西南財大學子創辦，30年40+家全直營門店，川渝燒烤行業標杆品牌",
-  "notes": "招牌烤五花為豬肉，牛肉串/烤魚/素烤可避開；夜宵高峰排隊"
+  "notes": "招牌烤五花為豬肉，牛肉串/烤魚/素烤可避開；夜宵高峰排隊",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "銀灘鮑魚火鍋",
@@ -7212,9 +8047,9 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "海鮮鮑魚火鍋",
   "area": "武侯區·希望路（近神仙樹）",
-  "address": "武侯區希望路（希望路店）",
-  "lat": 30.6027,
-  "lng": 104.05,
+  "address": "成都市武侯區人民南路四段46號105棟1單元1層2號4號銀灘鮑魚火鍋(桐梓林店)",
+  "lat": 30.615099,
+  "lng": 104.062814,
   "hours": "約11:30-14:00，17:30-21:30",
   "price": "人均約250-400元",
   "rating": "黑珍珠一鑽",
@@ -7226,7 +8061,10 @@ const PLACES = [
    "手打蝦滑"
   ],
   "reason": "連續8年黑珍珠在榜的火鍋品類代表，鮑魚海鮮火鍋高端定位",
-  "notes": "海鮮為主標友善，鍋底及部分涮品需確認無豬肉成分；建議預約"
+  "notes": "海鮮為主標友善，鍋底及部分涮品需確認無豬肉成分；建議預約",
+  "amap_poiid": "B0FFJGG76B",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "Tivano義大利餐廳",
@@ -7235,9 +8073,9 @@ const PLACES = [
   "halal": false,
   "cuisine": "義大利菜/西餐",
   "area": "錦江區·筆帖式街（太古里旁）",
-  "address": "錦江區筆帖式街（筆帖式街店）",
-  "lat": 30.6543,
-  "lng": 104.0815,
+  "address": "成都市錦江區筆帖式街81號成都居舍酒店負一樓(春熙路太古里內)",
+  "lat": 30.651814,
+  "lng": 104.084844,
   "hours": "約11:30-14:30，17:30-22:00",
   "price": "人均約400-700元",
   "rating": "黑珍珠一鑽",
@@ -7249,7 +8087,10 @@ const PLACES = [
    "提拉米蘇"
   ],
   "reason": "連續8年黑珍珠在榜的成都意餐標杆，太古里旁老宅改造空間",
-  "notes": "意式火腿/臘腸類含豬肉，海鮮意面與素食選項可避開；晚市建議訂位"
+  "notes": "意式火腿/臘腸類含豬肉，海鮮意面與素食選項可避開；晚市建議訂位",
+  "amap_poiid": "B0FFG7C7U4",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "岷山飯店·THE RIVER HOUSE西餐廳",
@@ -7258,9 +8099,9 @@ const PLACES = [
   "halal": false,
   "cuisine": "現代西餐/河景精緻料理",
   "area": "武侯區·人民南路二段（錦江河畔）",
-  "address": "人民南路二段55號岷山飯店",
-  "lat": 30.6528,
-  "lng": 104.0655,
+  "address": "成都市錦江區人民南路二段55號岷山飯店21樓",
+  "lat": 30.64865,
+  "lng": 104.066853,
   "hours": "約11:30-14:00，17:30-21:30",
   "price": "人均約500-800元",
   "rating": "黑珍珠一鑽",
@@ -7272,7 +8113,10 @@ const PLACES = [
    "法式甜品"
   ],
   "reason": "連續8年黑珍珠在榜，老牌岷山飯店內的河畔精緻西餐，本地高端西餐代表",
-  "notes": "西餐菜單或含豬肉/酒精配料，可提前溝通；建議預約河景位"
+  "notes": "西餐菜單或含豬肉/酒精配料，可提前溝通；建議預約河景位",
+  "amap_poiid": "B0FFHESE46",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "白樂天毛肚火鍋館（龍湖春森星悅薈店）",
@@ -7281,9 +8125,9 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "火鍋（老字號毛肚火鍋）",
   "area": "江北區 北濱路/華新街",
-  "address": "重慶市江北區北濱一路256號龍湖重慶春森星悅薈9區1F",
-  "lat": 29.576,
-  "lng": 106.552,
+  "address": "重慶市兩江新區北濱一路256號附6龍湖星悅薈(春森彼岸)A9區-F10102",
+  "lat": 29.570107,
+  "lng": 106.55058,
   "hours": "約 11:00–22:30（以門店為準）",
   "price": "人均 85–120 元",
   "rating": "5.0/5",
@@ -7296,7 +8140,10 @@ const PLACES = [
    "紅糖手工湯圓"
   ],
   "reason": "1921年開於較場口的重慶第一家毛肚火鍋館，2014年原品牌恢復重建，2015年獲『重慶老字號』認定；紅泥小火爐、鳴堂叫菜等民國儀式感是招牌體驗。",
-  "notes": "主打毛肚/鵝腸等牛系涮品、牛油鍋底（牛脂），非清真；菜單仍有酥肉、老肉片等豬類涮品需避開。周末飯點建議提前取號。"
+  "notes": "主打毛肚/鵝腸等牛系涮品、牛油鍋底（牛脂），非清真；菜單仍有酥肉、老肉片等豬類涮品需避開。周末飯點建議提前取號。",
+  "amap_poiid": "B0FFHPCPLH",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "渝味曉宇火鍋（枇杷山正街總店）",
@@ -7305,9 +8152,9 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "火鍋（老火鍋）",
   "area": "渝中區 枇杷山/七星崗",
-  "address": "重慶市渝中區枇杷山正街86號（市三院住院部旁）",
-  "lat": 29.5518,
-  "lng": 106.5665,
+  "address": "重慶市渝中區枇杷山正街86號(近三院住院部)",
+  "lat": 29.552342,
+  "lng": 106.556924,
   "hours": "約 9:00–24:00",
   "price": "人均 85–105 元",
   "rating": "4.9/5",
@@ -7320,7 +8167,10 @@ const PLACES = [
    "紅糖餈粑"
   ],
   "reason": "登上央視《舌尖上的中國2》的重慶老火鍋代表，1995年由4張桌子的麻辣燙小店起家，常年入選重慶火鍋50強。",
-  "notes": "牛油鍋底為牛脂，非清真；避開酥肉、老豬肉片、香菜豬肉丸子等豬類。軌道1號線七星崗站步行可達，晚市遊客多需等位。"
+  "notes": "牛油鍋底為牛脂，非清真；避開酥肉、老豬肉片、香菜豬肉丸子等豬類。軌道1號線七星崗站步行可達，晚市遊客多需等位。",
+  "amap_poiid": "B001798TYA",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "萍姐火鍋·公路夜市（金獅廣場店）",
@@ -7330,8 +8180,8 @@ const PLACES = [
   "cuisine": "火鍋（火鍋+夜市小吃複合業態）",
   "area": "南岸區 南濱路/彈子石",
   "address": "重慶市南岸區彈子石金獅廣場（具體樓層以平台為準）",
-  "lat": 29.585,
-  "lng": 106.603,
+  "lat": null,
+  "lng": null,
   "hours": "約 11:00–凌晨2:00（以門店為準）",
   "price": "人均 88–95 元",
   "rating": null,
@@ -7344,7 +8194,9 @@ const PLACES = [
    "手打蝦滑"
   ],
   "reason": "首店誕生於觀音橋的現象級『公路夜市』火鍋，把小吃街、甜品鋪搬進火鍋店，曾創單日線上排隊上千桌紀錄，多城門店常年霸榜大眾點評熱門榜。",
-  "notes": "牛油鍋底為牛脂，非清真；豬類涮品（酥肉、午餐肉等）需避開。排隊極兇，務必線上取號；金獅廣場店坐標為商圈近似值。"
+  "notes": "牛油鍋底為牛脂，非清真；豬類涮品（酥肉、午餐肉等）需避開。排隊極兇，務必線上取號；金獅廣場店坐標為商圈近似值。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "渝宗老灶火鍋（解放碑直營店）",
@@ -7354,8 +8206,8 @@ const PLACES = [
   "cuisine": "火鍋（老灶火鍋）",
   "area": "渝中區 解放碑",
   "address": "重慶市渝中區解放碑商圈（門店以攜程/大眾點評收錄為準）",
-  "lat": 29.556,
-  "lng": 106.576,
+  "lat": null,
+  "lng": null,
   "hours": "約 11:00–凌晨（以門店為準）",
   "price": "人均 90–120 元",
   "rating": null,
@@ -7367,7 +8219,9 @@ const PLACES = [
    "老肉片（含豬）"
   ],
   "reason": "入選重慶火鍋50強的老灶火鍋代表，牛油醇厚、辣椒花椒鋪滿鍋面，被本地媒體評為『老火鍋的經典』。",
-  "notes": "招牌『屠場鮮豬血』『老肉片』均為豬類，標記非清真友善。地址為商圈近似位置，出發前以地圖App核實門店。"
+  "notes": "招牌『屠場鮮豬血』『老肉片』均為豬類，標記非清真友善。地址為商圈近似位置，出發前以地圖App核實門店。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "大隊長主題火鍋（解放碑店）",
@@ -7377,8 +8231,8 @@ const PLACES = [
   "cuisine": "火鍋（主題火鍋）",
   "area": "渝中區 解放碑/青年路",
   "address": "重慶市渝中區青年路18號中天大酒店2樓",
-  "lat": 29.5559,
-  "lng": 106.5745,
+  "lat": null,
+  "lng": null,
   "hours": "約 11:00–凌晨2:00（以門店為準）",
   "price": "人均 80–110 元",
   "rating": "3.3/5",
@@ -7391,7 +8245,9 @@ const PLACES = [
    "大隊長手工豆腐花"
   ],
   "reason": "上世紀知青教室懷舊主題的網紅連鎖，重慶主城7家直營店（含洪崖洞江景店），是遊客體驗主題火鍋的高熱度選項。",
-  "notes": "牛油鍋底為牛脂；酥肉、丸子類多含豬需避開。洪崖洞江景店景觀好但攜程評分偏低（偏貴、翻台快），解放碑店/北城天街店口碑更穩。"
+  "notes": "牛油鍋底為牛脂；酥肉、丸子類多含豬需避開。洪崖洞江景店景觀好但攜程評分偏低（偏貴、翻台快），解放碑店/北城天街店口碑更穩。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "純陽老酒館·川菜（七星崗店）",
@@ -7400,9 +8256,9 @@ const PLACES = [
   "halal": false,
   "cuisine": "川菜/渝菜（市井酒館菜）",
   "area": "渝中區 七星崗",
-  "address": "重慶市渝中區中一支路50號（軌道七星崗站2號出口旁）",
-  "lat": 29.556,
-  "lng": 106.562,
+  "address": "重慶市渝中區觀音巖中一支路50號(七星崗地鐵2號出口步行70米)",
+  "lat": 29.554631,
+  "lng": 106.561284,
   "hours": "約 11:00–21:30（以門店為準）",
   "price": "人均 60–80 元",
   "rating": "4.7/5",
@@ -7415,7 +8271,10 @@ const PLACES = [
    "巷口烤腦花"
   ],
   "reason": "始於1985年的網紅民國風老酒館，小酒配川菜的市井氛圍在小紅書/抖音爆火，是渝中區打卡度最高的渝菜館之一。",
-  "notes": "招牌鮮椒蹄花、蒜泥白肉均為豬肉，非清真友善。飯點排隊較長，可先取號再逛七星崗/通遠門城牆。"
+  "notes": "招牌鮮椒蹄花、蒜泥白肉均為豬肉，非清真友善。飯點排隊較長，可先取號再逛七星崗/通遠門城牆。",
+  "amap_poiid": "B0FFGJN852",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "慈記外婆橋餐廳（解放碑店）",
@@ -7424,9 +8283,9 @@ const PLACES = [
   "halal": false,
   "cuisine": "川菜/渝菜（家常渝菜）",
   "area": "渝中區 解放碑",
-  "address": "重慶市渝中區五一路2號解放碑大都會東方廣場7樓",
-  "lat": 29.558,
-  "lng": 106.576,
+  "address": "重慶市渝中區鄒容路68號大都會東方廣場7樓",
+  "lat": 29.557849,
+  "lng": 106.578944,
   "hours": "約 11:00–21:30（以門店為準）",
   "price": "人均 52–70 元",
   "rating": "4.7/5",
@@ -7439,7 +8298,10 @@ const PLACES = [
    "麻婆豆腐"
   ],
   "reason": "解放碑老牌川渝菜館『外婆橋』體系門店，距解放碑紀念碑約200米，價格親民、出品穩定，長期位居解放碑商圈川菜熱門榜。",
-  "notes": "粉蒸肉、粉蒸排骨等招牌為豬肉，非清真友善。位於商場7樓，電梯直達；飯點遊客多建議錯峰。"
+  "notes": "粉蒸肉、粉蒸排骨等招牌為豬肉，非清真友善。位於商場7樓，電梯直達；飯點遊客多建議錯峰。",
+  "amap_poiid": "B0FFF3DIQ5",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "三斤耗兒魚（北倉店）",
@@ -7449,8 +8311,8 @@ const PLACES = [
   "cuisine": "江湖菜（耗兒魚專門店）",
   "area": "江北區 觀音橋·北倉文創街區",
   "address": "重慶市江北區觀音橋北倉文創街區（塔坪片區）",
-  "lat": 29.585,
-  "lng": 106.54,
+  "lat": null,
+  "lng": null,
   "hours": "約 11:00–22:00（以門店為準）",
   "price": "人均 80–110 元",
   "rating": null,
@@ -7461,7 +8323,9 @@ const PLACES = [
    "泡椒耗兒魚"
   ],
   "reason": "2016年開於北倉文創園的耗兒魚專門店，把重慶人最愛的『耗兒魚』做成單品品牌，大眾點評耗兒魚人氣商戶榜常客，主城有北倉/南坪/九濱路等店。",
-  "notes": "以海魚（馬面魨）為主打，無豬主打菜，對避豬者友善但非清真認證；配菜下單前確認。文創園環境適合飯後拍照。"
+  "notes": "以海魚（馬面魨）為主打，無豬主打菜，對避豬者友善但非清真認證；配菜下單前確認。文創園環境適合飯後拍照。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "十八梯鄧凳面（解放碑總店）",
@@ -7470,9 +8334,9 @@ const PLACES = [
   "halal": false,
   "cuisine": "重慶小面",
   "area": "渝中區 十八梯/較場口",
-  "address": "重慶市渝中區潘家溝17號（十八梯傳統風貌區旁）",
-  "lat": 29.5535,
-  "lng": 106.5717,
+  "address": "重慶市渝中區潘家溝17號",
+  "lat": 29.553986,
+  "lng": 106.570399,
   "hours": "約 7:00–19:00（以門店為準）",
   "price": "人均 15–20 元",
   "rating": "5.0/5",
@@ -7485,7 +8349,10 @@ const PLACES = [
    "冰粉"
   ],
   "reason": "大眾點評2025年『必吃榜』新入圍小吃店，十八梯片區經營多年的凳子面老攤，麻辣香濃的豌雜麵是招牌。",
-  "notes": "豌雜麵雜醬、肥腸面均含豬，非清真友善（可點牛肉麵替代）。早午高峰翻台快，逛十八梯順路吃最方便。"
+  "notes": "豌雜麵雜醬、肥腸面均含豬，非清真友善（可點牛肉麵替代）。早午高峰翻台快，逛十八梯順路吃最方便。",
+  "amap_poiid": "B0FFLG2V95",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "絡耳胡麵館（福紅路店）",
@@ -7494,9 +8361,9 @@ const PLACES = [
   "halal": false,
   "cuisine": "重慶小面",
   "area": "南岸區 南坪·福紅路",
-  "address": "重慶市南岸區福紅路17號附近",
-  "lat": 29.53538,
-  "lng": 106.575208,
+  "address": "重慶市南岸區福紅路6附9號附近",
+  "lat": 29.5353,
+  "lng": 106.575333,
   "hours": "約 6:30–14:00（小麵店多午後收攤，以門店為準）",
   "price": "人均 12–18 元",
   "rating": null,
@@ -7507,7 +8374,10 @@ const PLACES = [
    "牛肉麵"
   ],
   "reason": "大眾點評2025年『必吃榜』重慶新上榜麵館，官方通稿點名的『紮根街頭巷尾的煙火小店』代表之一。",
-  "notes": "雜醬類含豬，非清真友善。社區小店座位少，高峰拼桌；建議上午前往。"
+  "notes": "雜醬類含豬，非清真友善。社區小店座位少，高峰拼桌；建議上午前往。",
+  "amap_poiid": "B0FFFVSJMC",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "龔大娃豆花面",
@@ -7516,9 +8386,9 @@ const PLACES = [
   "halal": false,
   "cuisine": "重慶小面/豆花面",
   "area": "渝中區 解放碑一帶",
-  "address": "重慶市渝中區解放碑附近（以大眾點評收錄門店為準）",
-  "lat": 29.557,
-  "lng": 106.577,
+  "address": "重慶市渝中區民生路230號附2號(臨江門地鐵站出入口步行430米)",
+  "lat": 29.557778,
+  "lng": 106.570868,
   "hours": "約 7:00–15:00（以門店為準）",
   "price": "人均 12–18 元",
   "rating": null,
@@ -7529,7 +8399,10 @@ const PLACES = [
    "豆花飯"
   ],
   "reason": "大眾點評2024年『必吃榜』上榜小店，官方發布通稿點名的重慶特色麵館，以一碗豆花面出圈。",
-  "notes": "雜醬澆頭含豬，非清真友善。門店位置以點評App實時收錄為準（本條坐標為解放碑商圈近似值）。"
+  "notes": "雜醬澆頭含豬，非清真友善。門店位置以點評App實時收錄為準（本條坐標為解放碑商圈近似值）。",
+  "amap_poiid": "B0LG3H7Y24",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "小龍蹄花館（觀音橋店）",
@@ -7538,9 +8411,9 @@ const PLACES = [
   "halal": false,
   "cuisine": "渝菜小吃（蹄花湯專門店）",
   "area": "江北區 觀音橋",
-  "address": "重慶市江北區觀音橋商圈（以大眾點評收錄為準）",
-  "lat": 29.5817,
-  "lng": 106.5344,
+  "address": "重慶市兩江新區兩江新區江北區小灣一村94號附2號",
+  "lat": 29.572687,
+  "lng": 106.526165,
   "hours": "約 11:00–22:00（以門店為準）",
   "price": "人均 30–50 元",
   "rating": null,
@@ -7551,7 +8424,10 @@ const PLACES = [
    "蹄花飯"
   ],
   "reason": "大眾點評2025年『必吃榜』重慶新入圍特色小吃店，把耙糯的重慶蹄花湯做成單品招牌。",
-  "notes": "招牌即豬蹄花，含豬主打、不適合避豬者（halal:false）。湯鮮耙糯適合微辣需求的同行者。"
+  "notes": "招牌即豬蹄花，含豬主打、不適合避豬者（halal:false）。湯鮮耙糯適合微辣需求的同行者。",
+  "amap_poiid": "B00170L298",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "開半天豬耳朵面",
@@ -7560,9 +8436,9 @@ const PLACES = [
   "halal": false,
   "cuisine": "重慶小面",
   "area": "渝中區 大坪/長江二路",
-  "address": "重慶市渝中區長江二路153附1-3號",
-  "lat": 29.546,
-  "lng": 106.541,
+  "address": "重慶市渝中區長江二路153附1-3號(近馬家堡人行天橋)",
+  "lat": 29.535452,
+  "lng": 106.516481,
   "hours": "約 7:00–13:30（只開半天、賣完收攤）",
   "price": "人均 12–20 元",
   "rating": null,
@@ -7573,7 +8449,10 @@ const PLACES = [
    "涼拌豬耳"
   ],
   "reason": "重慶本地寶『必吃小面指南』收錄的特色麵館，『只開半天』的任性營業方式和豬耳朵配面的獨特吃法出名。",
-  "notes": "招牌即豬耳朵，含豬主打（halal:false）。真的只開上午半天，睡懶覺就吃不到。"
+  "notes": "招牌即豬耳朵，含豬主打（halal:false）。真的只開上午半天，睡懶覺就吃不到。",
+  "amap_poiid": "B0FFFAJ6VW",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "好又來酸辣粉（解放碑店）",
@@ -7582,9 +8461,9 @@ const PLACES = [
   "halal": false,
   "cuisine": "重慶小吃（酸辣粉）",
   "area": "渝中區 解放碑·八一路好吃街",
-  "address": "重慶市渝中區八一路好吃街（解放碑步行街旁）",
-  "lat": 29.5565,
-  "lng": 106.5775,
+  "address": "重慶市渝中區民族路16號新重慶國際小商品批發中心F1",
+  "lat": 29.560624,
+  "lng": 106.582763,
   "hours": "約 10:00–22:00（以門店為準）",
   "price": "人均 10–15 元",
   "rating": null,
@@ -7595,7 +8474,10 @@ const PLACES = [
    "原味酸辣粉"
   ],
   "reason": "解放碑八一路好吃街的排隊王老店，『隨時去買都在排隊』，是重慶酸辣粉的城市名片級攤位。",
-  "notes": "雜醬/肥腸澆頭含豬（halal:false），可詢問是否能只要素澆。站著吃的窗口店，翻台極快，排隊看著長其實走得快。"
+  "notes": "雜醬/肥腸澆頭含豬（halal:false），可詢問是否能只要素澆。站著吃的窗口店，翻台極快，排隊看著長其實走得快。",
+  "amap_poiid": "B0FFLFA208",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "徐鼎盛民間菜（雙碑店）",
@@ -7604,9 +8486,9 @@ const PLACES = [
   "halal": false,
   "cuisine": "渝菜/民間江湖菜",
   "area": "沙坪垻區 雙碑",
-  "address": "重慶市沙坪垻區雙碑勞動橋123號附7號",
-  "lat": 29.608,
-  "lng": 106.427,
+  "address": "重慶市沙坪垻區雙倍勞動橋123號附7號1-11-2鼎盛山水旁",
+  "lat": 29.606984,
+  "lng": 106.445491,
   "hours": "約 11:00–21:30（以門店為準）",
   "price": "人均 50–70 元",
   "rating": null,
@@ -7618,7 +8500,10 @@ const PLACES = [
    "青椒皮蛋"
   ],
   "reason": "重慶本土人氣民間菜連鎖，主城多店，是本地人聚餐吃『家常渝菜』的口碑選擇，價格實在分量大。",
-  "notes": "燒白、粉蒸肉等經典渝菜為豬肉（halal:false）。雙碑店離磁器口約3公里，可與磁器口行程串聯。"
+  "notes": "燒白、粉蒸肉等經典渝菜為豬肉（halal:false）。雙碑店離磁器口約3公里，可與磁器口行程串聯。",
+  "amap_poiid": "B0FFF3UQYE",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "灩設火鍋料理（南濱路店）",
@@ -7628,8 +8513,8 @@ const PLACES = [
   "cuisine": "精緻火鍋料理",
   "area": "南岸區 南濱路",
   "address": "重慶市南岸區南濱路陽光100兩江壹號4層",
-  "lat": 29.5735896,
-  "lng": 106.5906088,
+  "lat": 29.573589,
+  "lng": 106.59061,
   "hours": "約 11:30–22:30（建議預訂）",
   "price": "人均 250–400 元",
   "rating": null,
@@ -7641,7 +8526,10 @@ const PLACES = [
    "精緻毛肚"
   ],
   "reason": "2025黑珍珠餐廳指南重慶6家上榜餐廳之一（一鑽），把重慶火鍋做成精緻料理的代表，坐擁南濱路江景。",
-  "notes": "以牛肉海鮮類涮品為主打，對避豬者友善但非清真；個別豬類涮品避開即可。高端價位，建議提前訂位選江景座。"
+  "notes": "以牛肉海鮮類涮品為主打，對避豬者友善但非清真；個別豬類涮品避開即可。高端價位，建議提前訂位選江景座。",
+  "amap_poiid": "B0FFIR8G72",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "山茶四季（萬象城店）",
@@ -7650,9 +8538,9 @@ const PLACES = [
   "halal": false,
   "cuisine": "創意川菜/精緻渝菜",
   "area": "九龍坡區 謝家灣·萬象城",
-  "address": "重慶市九龍坡區謝家灣正街55號重慶萬象城",
-  "lat": 29.5218,
-  "lng": 106.516,
+  "address": "重慶市九龍坡區謝家灣正街55號重慶萬象城南區L2層L256",
+  "lat": 29.514922,
+  "lng": 106.517669,
   "hours": "約 11:00–21:30（以商場營業時間為準）",
   "price": "人均 150–250 元",
   "rating": null,
@@ -7663,7 +8551,10 @@ const PLACES = [
    "茶香類甜品"
   ],
   "reason": "2025黑珍珠餐廳指南重慶一鑽餐廳，川菜精緻化路線的代表，環境雅致適合正式聚餐。",
-  "notes": "川菜體系含豬類菜品（halal:false）。位於萬象城商場內，飯點建議預訂。"
+  "notes": "川菜體系含豬類菜品（halal:false）。位於萬象城商場內，飯點建議預訂。",
+  "amap_poiid": "B0HRHU2XLG",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "于塗·文化餐廳（棕櫚店）",
@@ -7673,8 +8564,8 @@ const PLACES = [
   "cuisine": "融合渝菜/文化主題餐廳",
   "area": "渝北區 新牌坊·棕櫚泉",
   "address": "重慶市渝北區棕櫚泉國際花園片區（以大眾點評收錄為準）",
-  "lat": 29.618,
-  "lng": 106.515,
+  "lat": null,
+  "lng": null,
   "hours": "約 11:00–21:30（建議預訂）",
   "price": "人均 200–350 元",
   "rating": null,
@@ -7685,7 +8576,9 @@ const PLACES = [
    "創意甜品"
   ],
   "reason": "連續8年入選黑珍珠餐廳指南的重慶餐廳（2025一鑽），全市在榜資歷最深，以巴渝文化主題的精緻餐飲著稱。",
-  "notes": "菜單含豬類經典渝菜（halal:false）。預約制為主，坐標為棕櫚泉片區近似值。"
+  "notes": "菜單含豬類經典渝菜（halal:false）。預約制為主，坐標為棕櫚泉片區近似值。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "飛龍唐小館（恆大世紀城店）",
@@ -7695,8 +8588,8 @@ const PLACES = [
   "cuisine": "私房菜/渝菜",
   "area": "渝北區 恆大世紀城",
   "address": "重慶市渝北區恆大世紀城片區（以大眾點評收錄為準）",
-  "lat": 29.628,
-  "lng": 106.524,
+  "lat": null,
+  "lng": null,
   "hours": "約 11:00–21:30（建議預訂）",
   "price": "人均 150–250 元",
   "rating": null,
@@ -7707,7 +8600,9 @@ const PLACES = [
    "手工甜品"
   ],
   "reason": "2025黑珍珠餐廳指南重慶新晉一鑽餐廳，官方點評稱其為『具有當地特色的私房菜餐廳』，擴充了重慶上榜菜系豐富性。",
-  "notes": "私房渝菜含豬類菜品（halal:false）。位置較偏渝北，適合專程美食行程；坐標為片區近似值。"
+  "notes": "私房渝菜含豬類菜品（halal:false）。位置較偏渝北，適合專程美食行程；坐標為片區近似值。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "羅賓斯牛排館（重慶麗晶酒店）",
@@ -7716,9 +8611,9 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "西餐/牛排",
   "area": "江北區 江北嘴",
-  "address": "重慶市江北區江北城西大街22號重慶麗晶酒店內",
-  "lat": 29.573,
-  "lng": 106.581,
+  "address": "重慶市兩江新區金沙門路66號",
+  "lat": 29.571297,
+  "lng": 106.570815,
   "hours": "約 17:30–22:00（晚餐為主，以酒店公告為準）",
   "price": "人均 500–800 元",
   "rating": null,
@@ -7730,7 +8625,10 @@ const PLACES = [
    "紅酒配餐"
   ],
   "reason": "2025黑珍珠餐廳指南重慶一鑽，麗晶酒店旗艦牛排館，是重慶最高規格的西餐廳之一。",
-  "notes": "以牛排海鮮為主打，對避豬者友善（培根類單品避開即可），非清真認證。正裝感強、需預訂，適合紀念日。"
+  "notes": "以牛排海鮮為主打，對避豬者友善（培根類單品避開即可），非清真認證。正裝感強、需預訂，適合紀念日。",
+  "amap_poiid": "B0FFHHNAM9",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "千閱鳴素食私宴",
@@ -7740,8 +8638,8 @@ const PLACES = [
   "cuisine": "素食/私宴",
   "area": "江北區·鎏嘉碼頭",
   "address": "重慶市江北區北濱一路192號附5號4-1（鎏嘉碼頭店）",
-  "lat": 29.55667,
-  "lng": 106.51644,
+  "lat": null,
+  "lng": null,
   "hours": "預約制（午晚市兩輪）",
   "price": "人均 300–500 元",
   "rating": null,
@@ -7752,7 +8650,9 @@ const PLACES = [
    "素高湯菜品"
   ],
   "reason": "2025黑珍珠餐廳指南重慶一鑽，全素私宴形態在重慶極為稀有，為回民/素食同行者提供高端選項。",
-  "notes": "全素無豬無肉，對清真需求非常友善（仍非清真認證）。完全預約制，需提前通過大眾點評/電話訂位。"
+  "notes": "全素無豬無肉，對清真需求非常友善（仍非清真認證）。完全預約制，需提前通過大眾點評/電話訂位。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "鄉壩老城來鳳魚（璧山總店）",
@@ -7761,9 +8661,9 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "江湖菜（來鳳魚）",
   "area": "璧山區（距主城約40分鐘車程）",
-  "address": "重慶市璧山區（總店，以大眾點評收錄為準）",
-  "lat": 29.592,
-  "lng": 106.227,
+  "address": "重慶市璧山區登雲路168號",
+  "lat": 29.57836,
+  "lng": 106.198835,
   "hours": "約 11:00–21:30（以門店為準）",
   "price": "人均 60–90 元",
   "rating": null,
@@ -7774,7 +8674,10 @@ const PLACES = [
    "魚頭湯"
   ],
   "reason": "大眾點評2025年『必吃榜』重慶新上榜商戶，官方通稿點名的市井地道風味，來鳳魚是重慶江湖菜的鼻祖菜之一。",
-  "notes": "活魚現烹、魚為主打，對避豬者友善（非清真認證）。位於璧山區、離主城較遠，適合自駕或高鐵璧山站行程。"
+  "notes": "活魚現烹、魚為主打，對避豬者友善（非清真認證）。位於璧山區、離主城較遠，適合自駕或高鐵璧山站行程。",
+  "amap_poiid": "B0G29ZML9V",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "鬼冒火薑絲兔·江湖菜（江北店）",
@@ -7784,8 +8687,8 @@ const PLACES = [
   "cuisine": "江湖菜（薑絲兔）",
   "area": "江北區（以大眾點評收錄為準）",
   "address": "重慶市江北區（江北店，以大眾點評收錄為準）",
-  "lat": 29.582,
-  "lng": 106.534,
+  "lat": null,
+  "lng": null,
   "hours": "約 11:00–22:00（以門店為準）",
   "price": "人均 60–90 元",
   "rating": null,
@@ -7796,7 +8699,9 @@ const PLACES = [
    "江湖菜小炒"
   ],
   "reason": "大眾點評2025年『必吃榜』重慶新上榜江湖菜館，以重口味薑絲兔單品出圈的市井小店。",
-  "notes": "兔肉為主打、無豬招牌，對避豬者友善（非清真認證），個別配菜需確認。坐標為觀音橋商圈近似值，出發前以點評App核實。"
+  "notes": "兔肉為主打、無豬招牌，對避豬者友善（非清真認證），個別配菜需確認。坐標為觀音橋商圈近似值，出發前以點評App核實。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "小平酒玖·小平小火鍋",
@@ -7806,8 +8711,8 @@ const PLACES = [
   "cuisine": "小火鍋/市井酒館",
   "area": "萬州區·新城路",
   "address": "重慶市萬州區新城路二巷5號",
-  "lat": 30.804515,
-  "lng": 108.383891,
+  "lat": 30.808184,
+  "lng": 108.3814,
   "hours": "約 11:00–凌晨（以門店為準）",
   "price": "人均 50–80 元",
   "rating": null,
@@ -7818,7 +8723,10 @@ const PLACES = [
    "市井滷味"
   ],
   "reason": "大眾點評2025年『必吃榜』重慶新上榜商戶，官方通稿點名的市井小火鍋代表，小鍋小酒的煙火氣路線。",
-  "notes": "市井火鍋含豬類涮品滷味（halal:false）。門店位置以點評App實時收錄為準。"
+  "notes": "市井火鍋含豬類涮品滷味（halal:false）。門店位置以點評App實時收錄為準。",
+  "amap_poiid": "B0I2LLIFYG",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "Coffeeholic（鵝嶺二廠店）",
@@ -7827,9 +8735,9 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "咖啡/精品咖啡館",
   "area": "渝中區 鵝嶺·二廠文創公園",
-  "address": "重慶市渝中區鵝嶺正街1號鵝嶺二廠文創公園內",
-  "lat": 29.5537,
-  "lng": 106.5497,
+  "address": "重慶市渝中區李子壩正街35號重慶市軌道集團建設大樓F1層",
+  "lat": 29.553223,
+  "lng": 106.537903,
   "hours": "約 10:00–20:00（以門店為準）",
   "price": "人均 30–50 元",
   "rating": null,
@@ -7841,7 +8749,10 @@ const PLACES = [
    "甜點切件"
   ],
   "reason": "鵝嶺二廠文創公園的『頭牌網紅咖啡店』，是《從你的全世界路過》取景地二廠裡打卡度最高的咖啡館，媒體多次點名的重慶咖啡代表。",
-  "notes": "咖啡飲品無豬（友善、非清真認證）。可與鵝嶺公園瞰勝樓、二廠天橋拍照點串聯，周末下午人多。"
+  "notes": "咖啡飲品無豬（友善、非清真認證）。可與鵝嶺公園瞰勝樓、二廠天橋拍照點串聯，周末下午人多。",
+  "amap_poiid": "B0LUNLAXNL",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "李若桃·手作酸奶（觀音橋店）",
@@ -7850,9 +8761,9 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "手作酸奶/甜品飲品",
   "area": "江北區 觀音橋",
-  "address": "重慶市江北區觀音橋步行街商圈（以大眾點評收錄門店為準）",
-  "lat": 29.5817,
-  "lng": 106.5344,
+  "address": "重慶市兩江新區觀音橋東環路14號",
+  "lat": 29.575589,
+  "lng": 106.534035,
   "hours": "約 10:00–22:00（跟隨商圈營業）",
   "price": "人均 15–25 元",
   "rating": null,
@@ -7863,14 +8774,17 @@ const PLACES = [
    "酸奶紫米露"
   ],
   "reason": "繼『一隻酸奶牛』後重慶本土最火的手作酸奶品牌之一，全市開出60+門店並向成都、西安擴張，銷量與網絡口碑俱佳。",
-  "notes": "酸奶甜品無豬（友善、非清真認證）。門店多為商圈窗口店，觀音橋店坐標為商圈近似值。"
+  "notes": "酸奶甜品無豬（友善、非清真認證）。門店多為商圈窗口店，觀音橋店坐標為商圈近似值。",
+  "amap_poiid": "B0MUJYS3CK",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "成都大熊貓繁育研究基地",
   "type": "景点",
   "area": "成華區",
-  "lat": 30.7328,
-  "lng": 104.1465,
+  "lat": 30.740573,
+  "lng": 104.138176,
   "hours": "冬季（11月-次年2月）8:00開園，16:30停止入園，17:30清園；上午票入園8:00-12:00，下午票12:00-16:30",
   "ticket": "55元（學生半價27元）",
   "reason": "全球最著名的大熊貓保護研究機構，可近距離觀看各年齡段大熊貓。冬季熊貓怕熱不怕冷，12月反而活躍度高，是觀賞好時機。",
@@ -7884,14 +8798,18 @@ const PLACES = [
   ],
   "notes": "必須通過官方微信公眾號「成都大熊貓繁育研究基地」實名預約購票，一人一證一票；旺日票源緊張建議提前3-7天預約；早上8:00-10:30是熊貓進食最活躍時段，強烈建議買上午票開園即入；園區大，建議搭配觀光車",
   "duration": "3-4小時",
+  "address": "成都市成華區熊貓大道1375號",
+  "amap_poiid": "B001C7WE5S",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
   "name": "寬窄巷子",
   "type": "景点",
   "area": "青羊區",
-  "lat": 30.6693,
-  "lng": 104.0614,
+  "lat": 30.663869,
+  "lng": 104.053307,
   "hours": "街區全天開放，店鋪約10:00-22:00",
   "ticket": "免費",
   "reason": "清代滿城遺留的三條老巷（寬巷子、窄巷子、井巷子），是成都最具代表性的歷史文化街區。青磚黛瓦配茶館、川劇、小吃，濃縮了老成都的閒適生活。",
@@ -7905,14 +8823,18 @@ const PLACES = [
   ],
   "notes": "遊客量大，建議工作日或早上人少時前往；商業化程度高，餐飲價格偏貴；夜晚亮燈後氛圍更好；與人民公園、奎星樓街步行可達可串聯",
   "duration": "1.5-2.5小時",
+  "address": "成都市青羊區少城街道金河路口寬窄巷子",
+  "amap_poiid": "B001C7YCM4",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
   "name": "錦里古街",
   "type": "景点",
   "area": "武侯區",
-  "lat": 30.647,
-  "lng": 104.0545,
+  "lat": 30.645994,
+  "lng": 104.049828,
   "hours": "街區全天開放，店鋪約10:00-22:30",
   "ticket": "免費",
   "reason": "緊鄰武侯祠的三國主題仿古商業街，被譽為「成都版清明上河圖」。夜晚紅燈籠亮起時是成都最經典的夜景畫面之一。",
@@ -7925,14 +8847,18 @@ const PLACES = [
   ],
   "notes": "強烈建議傍晚到訪、天黑後看夜景（12月約18:00天黑）；周末人流密集注意隨身物品；與武侯祠同一片區，建議下午武侯祠+傍晚錦里",
   "duration": "1.5-2小時",
+  "address": "成都市武侯區武侯祠大街231號附1號",
+  "amap_poiid": "B0FFFD3P2C",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
   "name": "武侯祠博物館",
   "type": "景点",
   "area": "武侯區",
-  "lat": 30.6474,
-  "lng": 104.0522,
+  "lat": 30.646168,
+  "lng": 104.047992,
   "hours": "冬季約8:30-18:00（17:30停止入館）；旺季8:30-18:30",
   "ticket": "50元（學生半價25元）",
   "reason": "中國唯一君臣合祀祠廟（劉備與諸葛亮），也是最負盛名的三國遺蹟博物館。紅牆竹影小徑是成都最出圈的拍照點。",
@@ -7945,14 +8871,18 @@ const PLACES = [
   ],
   "notes": "建議線上提前購票免排隊；紅牆拍照點人多，早上開門時人最少；可請講解或租語音導覽了解三國典故；出口直通錦里",
   "duration": "1.5-2小時",
+  "address": "成都市武侯區武侯祠大街231號",
+  "amap_poiid": "B001C07VJ2",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
   "name": "杜甫草堂博物館",
   "type": "景点",
   "area": "青羊區",
-  "lat": 30.6646,
-  "lng": 104.0283,
+  "lat": 30.660153,
+  "lng": 104.028514,
   "hours": "約9:00-18:00（17:30停止入園），冬季或提前至17:00閉園",
   "ticket": "50元（學生半價25元）",
   "reason": "詩聖杜甫流寓成都時的故居，留下240餘首詩作，「安得廣廈千萬間」即作於此。園林清幽，紅牆夾道竹林是必拍機位。",
@@ -7965,14 +8895,18 @@ const PLACES = [
   ],
   "notes": "建議線上購票；12月中下旬起園內臘梅漸開、香氣怡人；與四川博物院、浣花溪公園相鄰可串聯半天；人文景點建議聽講解",
   "duration": "1.5-2.5小時",
+  "address": "成都市青羊區青華路37號",
+  "amap_poiid": "B001C06EMZ",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
   "name": "人民公園·鶴鳴茶社",
   "type": "景点",
   "area": "青羊區",
-  "lat": 30.6626,
-  "lng": 104.0611,
+  "lat": 30.657133,
+  "lng": 104.058249,
   "hours": "公園約6:30-22:00；鶴鳴茶社約8:00-21:00",
   "ticket": "免費（茶位費約20-40元/位）",
   "reason": "體驗成都「慢生活」的最佳場所。百年歷史的鶴鳴茶社竹椅蓋碗茶、長嘴壺摻茶、採耳師傅穿梭其間，是最地道的成都市井畫面。",
@@ -7986,14 +8920,18 @@ const PLACES = [
   ],
   "notes": "周末茶社一位難求，建議工作日上午去；採耳請認準持證師傅並先談好價格；12月若出太陽，全成都人都會來這裡曬太陽，氣氛一絕",
   "duration": "1.5-2小時",
+  "address": "成都市青羊區小南街8號人民公園(人民公園地鐵站B口步行340米)",
+  "amap_poiid": "B0MUF7HU4A",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
   "name": "青羊宮",
   "type": "景点",
   "area": "青羊區",
-  "lat": 30.663,
-  "lng": 104.0435,
+  "lat": 30.661542,
+  "lng": 104.042609,
   "hours": "約8:00-17:30",
   "ticket": "10元",
   "reason": "川西第一道觀，相傳老子曾在此顯聖，唐代即為道教聖地。八卦亭、三清殿古建精美，殿前銅羊摸了祈福，香火旺而遊客不多。",
@@ -8006,14 +8944,18 @@ const PLACES = [
   ],
   "notes": "清淨小眾，適合與杜甫草堂、浣花溪同片區安排；12月初若暖冬銀杏或仍有餘韻；殿內請勿拍攝神像",
   "duration": "1小時",
+  "address": "成都市青羊區一環路西二段9號(青羊宮地鐵站C口向後步行90米)",
+  "amap_poiid": "B001C04CFE",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
   "name": "文殊院",
   "type": "景点",
   "area": "青羊區",
-  "lat": 30.6795,
-  "lng": 104.0729,
+  "lat": 30.675418,
+  "lng": 104.072527,
   "hours": "約9:00-17:00",
   "ticket": "免費",
   "reason": "川西著名禪林，清代建築保存完整，市中心難得的清幽古寺。門口的文殊院街區小吃雲集，宮廷糕點鋪常年排隊，是本地人認證的美食據點。",
@@ -8026,14 +8968,18 @@ const PLACES = [
   ],
   "notes": "免費入寺，寺內素齋和茶館性價比高；宮廷糕點鋪（嚴太婆鍋盔對面）建議避開中午排隊高峰；地鐵1號線文殊院站直達",
   "duration": "1.5-2小時",
+  "address": "成都市青羊區文殊院街66號(文殊院地鐵站K口步行400米)",
+  "amap_poiid": "B001C7WPBD",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
   "name": "東郊記憶",
   "type": "景点",
   "area": "成華區",
-  "lat": 30.6685,
-  "lng": 104.127,
+  "lat": 30.668697,
+  "lng": 104.122906,
   "hours": "園區全天開放，店鋪展覽約10:00-22:00",
   "ticket": "免費（部分展覽演出另收費）",
   "reason": "由紅光電子管廠舊址改造的工業風文創園區，蘇式廠房、煙囪、火車頭保留完整，是成都最火的年輕潮流聚集地和拍照勝地。",
@@ -8047,14 +8993,18 @@ const PLACES = [
   ],
   "notes": "下午去拍照+待到晚上看燈光氛圍最佳；周末常有市集和演出可留意公眾號；與建設路小吃街、339電視塔同在成華區可串聯",
   "duration": "2-3小時",
+  "address": "成都市成華區跳蹬河街道建設南支路1號",
+  "amap_poiid": "B001C8NUD2",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
   "name": "四川大學（望江校區）",
   "type": "景点",
   "area": "武侯區",
-  "lat": 30.6337,
-  "lng": 104.0895,
+  "lat": 30.630838,
+  "lng": 104.083932,
   "hours": "校園對外開放時段以學校規定為準（一般白天可預約入校）",
   "ticket": "免費",
   "reason": "百年名校，民國紅磚老建築與參天銀杏樹相映，初冬滿地金黃是成都最美銀杏觀賞地之一。校園氛圍安靜，適合漫步感受學院氣息。",
@@ -8066,14 +9016,18 @@ const PLACES = [
   ],
   "notes": "校外人員入校通常需通過學校小程序實名預約或登記，行前請查最新入校政策；12月上旬去還有機會趕上銀杏尾巴；緊鄰望江樓公園和九眼橋",
   "duration": "1-1.5小時",
+  "address": "成都市武侯區望江路街道一環路南一段24號",
+  "amap_poiid": "B001C05RRS",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
   "name": "望江樓公園",
   "type": "景点",
   "area": "武侯區",
-  "lat": 30.6365,
-  "lng": 104.095,
+  "lat": 30.629277,
+  "lng": 104.092217,
   "hours": "開放區約6:00-21:00；文物區9:00-18:00",
   "ticket": "開放區免費；文物區（崇麗閣）約20元",
   "reason": "紀念唐代女詩人薛濤的園林，錦江邊的崇麗閣是成都地標古建。園內竹類品種全國之最，竹林幽徑非常出片。",
@@ -8085,14 +9039,18 @@ const PLACES = [
   ],
   "notes": "本地人常來的清淨公園，遊客少；可與四川大學、九眼橋串成一條錦江沿線半日路線",
   "duration": "1-1.5小時",
+  "address": "成都市武侯區望江路30號",
+  "amap_poiid": "B001C06R0O",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
   "name": "都江堰景區",
   "type": "景点",
   "area": "都江堰市",
-  "lat": 31.003,
-  "lng": 103.612,
+  "lat": 31.003363,
+  "lng": 103.610529,
   "hours": "冬季8:00-17:30（17:00停止售票）",
   "ticket": "80元；台胞證首來族（簽發次數01、簽發一年內）可詢問免首道門票；其他學生／長者依規定",
   "reason": "兩千多年前李冰父子修建的世界文化遺產水利工程，至今仍在灌溉成都平原。魚嘴分水、飛沙堰、寶瓶口的巧思令人嘆服，安瀾索橋橫跨岷江氣勢壯觀。",
@@ -8106,14 +9064,18 @@ const PLACES = [
   ],
   "notes": "建議提前線上預約購票；請講解員或語音導覽才能看懂水利原理；冬季岷江為枯水期水量較小但遊客少；成都犀浦站乘城際鐵路約30分鐘直達；可與熊貓谷或青城山拼一日遊",
   "duration": "3-4小時",
+  "address": "成都市都江堰市公園路",
+  "amap_poiid": "B001C06PA9",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
   "name": "青城山（前山）",
   "type": "景点",
   "area": "都江堰市",
-  "lat": 30.901,
-  "lng": 103.573,
+  "lat": 30.897272,
+  "lng": 103.57292,
   "hours": "冬季（10月-12月）8:30-17:00（16:30停止售票）",
   "ticket": "前山80元（學生半價）；索道單程35元/往返60元；後山20元",
   "reason": "中國道教發祥地之一，「青城天下幽」，世界文化遺產。前山道觀古建密集，上清宮、天師洞香火千年不絕，冬季山間雲霧繚繞更顯仙氣。",
@@ -8127,14 +9089,18 @@ const PLACES = [
   ],
   "notes": "12月山上氣溫比市區低3-5度，注意保暖防滑；建議索道上+步行下節省體力；前山看道觀文化、後山看自然風光，時間有限選前山；與都江堰同線，兩者一日遊節奏較趕，建議住都江堰一晚",
   "duration": "4-5小時",
+  "address": "成都市都江堰市青城山內",
+  "amap_poiid": "B001C8SBIF",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
   "name": "金沙遺址博物館",
   "type": "景点",
   "area": "青羊區",
-  "lat": 30.6845,
-  "lng": 104.0145,
+  "lat": 30.679347,
+  "lng": 104.011651,
   "hours": "9:00-18:00（17:00停止入館）；12月逢周一閉館",
   "ticket": "70元（學生半價35元）",
   "reason": "商周時期古蜀國都邑遺址，出土的太陽神鳥金飾是中國文化遺產標誌。遺蹟館保留考古發掘現場原貌，與三星堆一脈相承，是理解古蜀文明的必訪之地。",
@@ -8147,14 +9113,18 @@ const PLACES = [
   ],
   "notes": "注意：12月周一閉館（僅1、2、7、8月及法定節假日周一開放），行程務必避開周一；建議線上預約購票；看完金沙如意猶未盡可另安排廣漢三星堆",
   "duration": "2-3小時",
+  "address": "成都市青羊區金沙遺址路2號金沙遺址博物館",
+  "amap_poiid": "B001C7Y2D1",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
   "name": "四川博物院",
   "type": "景点",
   "area": "青羊區",
-  "lat": 30.6595,
-  "lng": 104.0295,
+  "lat": 30.660792,
+  "lng": 104.034127,
   "hours": "9:00-17:00（16:00停止入館），周一閉館",
   "ticket": "免費（需預約）",
   "reason": "西南地區最大的綜合性博物館，張大千臨摹敦煌壁畫、漢代畫像磚、巴蜀青銅器館藏尤為出色，免費即可看遍四川千年文物。",
@@ -8167,14 +9137,18 @@ const PLACES = [
   ],
   "notes": "周一閉館；需在「四川博物院」微信公眾號免費預約；就在浣花溪公園旁，與杜甫草堂步行可達，適合安排同一個半天",
   "duration": "2小時",
+  "address": "成都市青羊區青華路5號",
+  "amap_poiid": "B001C7Y7I2",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
   "name": "熊貓谷（都江堰繁育野放研究中心）",
   "type": "景点",
   "area": "都江堰市",
-  "lat": 30.954,
-  "lng": 103.595,
+  "lat": 30.962326,
+  "lng": 103.587278,
   "hours": "冬季（11月-次年4月）8:00-17:30，16:30停止入園",
   "ticket": "成人55元（部分渠道含紀念品套票64元，兒童/老人/學生半價）",
   "reason": "熊貓基地的野化放歸訓練基地，藏在山谷中，遊客比市區基地少得多，能更安靜地看熊貓。山林環境接近野外，熊貓狀態更自然。",
@@ -8186,14 +9160,18 @@ const PLACES = [
   ],
   "notes": "僅限官方線上實名購票，線下無售票；位於都江堰玉堂街道，適合與都江堰景區或青城山拼成一日；園區較小1.5-2小時可逛完；若市區熊貓基地約不上票，這裡是優質替代",
   "duration": "1.5-2小時",
+  "address": "成都市都江堰市環山旅遊路玉堂段408號",
+  "amap_poiid": "B0FFF06JQQ",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
   "name": "皇城清真寺與回民街區",
   "type": "景点",
   "area": "青羊區",
-  "lat": 30.656,
-  "lng": 104.063,
+  "lat": null,
+  "lng": null,
   "hours": "寺外街區全天；清真寺白天開放（禮拜時段勿擾）",
   "ticket": "免費",
   "reason": "始建於明代的清真古寺，就在天府廣場旁，是成都回族社區中心。周邊小街藏著地道的清真美食，牛肉焦餅、鍋盔、牛雜是本地人從小吃到大的味道。",
@@ -8206,14 +9184,16 @@ const PLACES = [
   ],
   "notes": "清真寺非穆斯林一般不入禮拜殿，周五主麻日人多請注意尊重；美食店多集中在西御街、上升街一帶，中午時段最熱鬧；緊鄰天府廣場地鐵站交通極方便",
   "duration": "1-1.5小時",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "成都"
  },
  {
   "name": "天府熊貓塔（339電視塔）",
   "type": "景点",
   "area": "成華區",
-  "lat": 30.669,
-  "lng": 104.1045,
+  "lat": 30.662211,
+  "lng": 104.094814,
   "hours": "觀景台約11:00-21:30（以官方公告為準）",
   "ticket": "觀景台淡季（11月-2月）60元，旺季80元；學生票約40元",
   "reason": "中國西部第一高塔（339米），塔身爬著巨型熊貓雕塑。塔下猛追灣濱河夜市煙火氣十足，登塔可俯瞰整個成都夜景。",
@@ -8226,14 +9206,18 @@ const PLACES = [
   ],
   "notes": "建議傍晚上塔，一次看齊日落+夜景；塔下香香巷、望平街美食可一併解決晚餐；12月淡季票價更便宜",
   "duration": "1.5-2小時",
+  "address": "成都市成華區天府熊貓塔",
+  "amap_poiid": "B0HU2RTZOX",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
   "name": "麓湖·麓客島",
   "type": "景点",
   "area": "天府新區",
-  "lat": 30.462,
-  "lng": 104.072,
+  "lat": 30.458846,
+  "lng": 104.063457,
   "hours": "麓湖公園全天；麓客島約10:00-18:00（渡船時刻為準）",
   "ticket": "麓湖公園免費；上麓客島需乘船（往返約40-60元，島上項目另計）",
   "reason": "成都新貴生態水城，湖水清澈、建築設計感極強，被稱為「成都小聖託裡尼」。A4美術館和湖畔咖啡店讓這裡成為文藝青年新寵。",
@@ -8247,14 +9231,18 @@ const PLACES = [
   ],
   "notes": "距市區約40分鐘車程（地鐵1號線轉車或打車），適合安排大半天；周末島上親子客多；冬季水上項目部分停開，以看展+湖景+咖啡為主",
   "duration": "3-4小時",
+  "address": "成都市雙流區麓湖中路998號",
+  "amap_poiid": "B0FFI72LKM",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
   "name": "大慈寺",
   "type": "景点",
   "area": "錦江區",
-  "lat": 30.6543,
-  "lng": 104.0837,
+  "lat": 30.654243,
+  "lng": 104.083791,
   "hours": "約8:00-17:30",
   "ticket": "免費",
   "reason": "千年古剎「震旦第一叢林」，玄奘曾在此受戒。古寺被太古里的現代商業包圍，一牆之隔古今交融，是成都新舊碰撞最戲劇性的畫面。",
@@ -8266,14 +9254,18 @@ const PLACES = [
   ],
   "notes": "就在太古里旁邊，逛街時順路進來即可；寺內茶館是鬧市中難得的安靜角落；免費入寺",
   "duration": "0.5-1小時",
+  "address": "成都市錦江區大慈寺路21-23號(春熙路地鐵站C口步行360米)",
+  "amap_poiid": "B001C00869",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
   "name": "西村大院",
   "type": "景点",
   "area": "青羊區",
-  "lat": 30.672323,
-  "lng": 104.003845,
+  "lat": 30.670628,
+  "lng": 104.002572,
   "hours": "全天開放，店鋪約10:00-22:00",
   "ticket": "免費",
   "reason": "建築師劉家琨（普利茲克獎得主）設計的環形跑道建築，竹林+清水混凝土+空中跑道構成獨特的市井烏託邦，是建築迷和攝影愛好者的朝聖地。",
@@ -8286,14 +9278,18 @@ const PLACES = [
   ],
   "notes": "小眾免費景點，遊客少本地生活氣息濃；黃昏時分跑道上拍剪影最出片；距金沙遺址博物館不遠可串聯",
   "duration": "1-1.5小時",
+  "address": "成都市青羊區貝森北路1號",
+  "amap_poiid": "B0FFG75NYP",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
   "name": "夜遊錦江（合江亭·東門碼頭）",
   "type": "景点",
   "area": "錦江區",
-  "lat": 30.656,
-  "lng": 104.09,
+  "lat": 30.649944,
+  "lng": 104.086761,
   "hours": "遊船約18:30-21:30（班次以當日為準）；岸邊全天",
   "ticket": "遊船約98-118元；沿岸步行免費",
   "reason": "重現「門泊東吳萬里船」意境的錦江夜遊，乘烏篷船看兩岸光影演繹與東門碼頭燈光秀。合江亭、安順廊橋夜景是成都夜晚最溫柔的一面。",
@@ -8306,14 +9302,18 @@ const PLACES = [
   ],
   "notes": "遊船票建議提前在「夜遊錦江」公眾號預訂；12月江邊夜晚溼冷，坐船注意保暖；不坐船沿岸步行到九眼橋也很精彩",
   "duration": "1-1.5小時",
+  "address": "成都市錦江區天仙橋濱河路東門碼頭夜遊錦江售票處",
+  "amap_poiid": "B0FFMHC88N",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
   "name": "春熙路",
   "type": "商圈",
   "area": "錦江區",
-  "lat": 30.6525,
-  "lng": 104.082,
+  "lat": 30.656609,
+  "lng": 104.078021,
   "hours": "步行街全天，商場約10:00-22:00",
   "ticket": "免費",
   "reason": "成都百年商業地標，「百年金街」，人流量全國前列的步行街。潮流商場、老字號小吃與街頭時尚在此交匯，感受成都的繁華與「好逛」。",
@@ -8325,14 +9325,18 @@ const PLACES = [
   ],
   "notes": "與太古里、IFS連成一片，一次逛完；周末人流極大注意隨身物品；地鐵2/3號線春熙路站直達",
   "duration": "2-3小時（與太古里IFS合計半天）",
+  "address": "成都市錦江區",
+  "amap_poiid": "B0KUN7L690",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
   "name": "成都遠洋太古里",
   "type": "商圈",
   "area": "錦江區",
-  "lat": 30.6538,
-  "lng": 104.0824,
+  "lat": 30.653378,
+  "lng": 104.083806,
   "hours": "約10:00-22:00",
   "ticket": "免費",
   "reason": "以川西院落風格打造的開放式街區商業體，青瓦坡屋頂配國際大牌旗艦店，是「新與舊」融合的典範，也是全國最具設計感的商圈之一。",
@@ -8346,14 +9350,18 @@ const PLACES = [
   ],
   "notes": "傍晚亮燈後最美；方所書店入口較隱蔽在負一層；聖誕季（12月）通常有主題裝置很適合拍照",
   "duration": "2-3小時",
+  "address": "成都市錦江區中紗帽街8號成都太古里L2層",
+  "amap_poiid": "B0KR7KGS1E",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
   "name": "成都IFS國際金融中心",
   "type": "商圈",
   "area": "錦江區",
-  "lat": 30.6529,
-  "lng": 104.081,
+  "lat": 30.656125,
+  "lng": 104.082525,
   "hours": "約10:00-22:00",
   "ticket": "免費（樓頂雕塑庭園免費開放至約21:00）",
   "reason": "紅星路上的高端商場，外牆翻爬的巨型熊貓裝置「I Am Here」是成都最著名的城市符號之一。樓頂雕塑庭園可近距離摸到熊貓屁股。",
@@ -8365,14 +9373,18 @@ const PLACES = [
   ],
   "notes": "看熊貓全景在紅星路與大科甲巷路口仰拍最佳；上樓頂庭園從商場7層直達，免費；聖誕新年季商場中庭裝置值得一看",
   "duration": "1-1.5小時",
+  "address": "成都市錦江區1 IFS國際金融中心(春熙路地鐵站C口步行450米)",
+  "amap_poiid": "B0MDPOMLPD",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
   "name": "望平街·猛追灣",
   "type": "商圈",
   "area": "成華區",
-  "lat": 30.666,
-  "lng": 104.101,
+  "lat": 30.653725,
+  "lng": 104.090775,
   "hours": "街區全天，餐廳約11:00-23:00，夜宵更晚",
   "ticket": "免費",
   "reason": "錦江邊的濱河生活街區，老成都社區改造的典範。香香巷蒼蠅館子密度極高，濱河步道咖啡店、酒吧一路排開，本地人晚飯夜宵的心頭好。",
@@ -8385,14 +9397,18 @@ const PLACES = [
   ],
   "notes": "傍晚來先逛河邊再鑽香香巷吃晚飯；與339電視塔步行可達，飯後登塔看夜景是黃金組合；熱門館子飯點要排隊",
   "duration": "2-3小時",
+  "address": "成都市成華區望平街",
+  "amap_poiid": "B0IUX7HTH8",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
   "name": "芳草街・芳華街",
   "type": "商圈",
   "area": "武侯區",
-  "lat": 30.62837,
-  "lng": 104.0501,
+  "lat": 30.625648,
+  "lng": 104.051133,
   "hours": "街區全天，咖啡館與文創小店約10:00-22:00",
   "ticket": "免費",
   "reason": "玉林片區的慢調生活街區，芳草街、芳華街沿線聚集獨立咖啡館、復古小店、手作與街頭藝術，適合從下午一路散步到玉林西路。",
@@ -8404,14 +9420,18 @@ const PLACES = [
   ],
   "notes": "建議下午從地鐵8號線芳草街站D口附近起步，沿芳華街、玉潔巷走向玉林西路；全程約1-1.5公里，社區街區請輕聲不擾民",
   "duration": "1-1.5小時",
+  "address": "成都市武侯區",
+  "amap_poiid": "BZA8N505QA",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
   "name": "玉林西路",
   "type": "商圈",
   "area": "武侯區",
-  "lat": 30.6315,
-  "lng": 104.0555,
+  "lat": 30.629365,
+  "lng": 104.054073,
   "hours": "街區全天，小酒館約下午至凌晨，餐館11:00-22:00",
   "ticket": "免費",
   "reason": "因趙雷《成都》「走到玉林路的盡頭，坐在小酒館的門口」而封神的老社區街區。沒有景點包裝，全是真實的成都市井：串串香、蒼蠅館子、老茶鋪和街坊生活。",
@@ -8424,14 +9444,18 @@ const PLACES = [
   ],
   "notes": "小酒館門口拍照人多，店內晚上常有演出需早到；這一帶適合傍晚開逛、晚飯吃串串收尾；社區街區請輕聲不擾民",
   "duration": "2-3小時",
+  "address": "成都市武侯區",
+  "amap_poiid": "BZA8N505AB",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
   "name": "九眼橋酒吧街·蘭桂坊",
   "type": "商圈",
   "area": "錦江區",
-  "lat": 30.6448,
-  "lng": 104.0935,
+  "lat": 30.64048,
+  "lng": 104.087296,
   "hours": "酒吧約19:00-次日2:00；橋與江景全天",
   "ticket": "免費（酒吧消費另計）",
   "reason": "成都夜生活地標，錦江與府河交匯處酒吧林立，九眼橋古橋配兩岸霓虹是經典夜景。從清吧到夜店一應俱全，感受成都的不夜城一面。",
@@ -8443,14 +9467,18 @@ const PLACES = [
   ],
   "notes": "夜景最佳機位在橋對岸濱江路；周五周六夜晚最熱鬧；緊鄰四川大學與望江樓公園，可白天校園+傍晚江景+夜晚酒吧一條線",
   "duration": "2-3小時（夜間）",
+  "address": "成都市武侯區致民東路19號南河苑(九眼橋碼頭遺址附近)",
+  "amap_poiid": "B0L3TH87C0",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
   "name": "交子公園商圈（天府雙塔·交子之環）",
   "type": "商圈",
   "area": "高新區",
-  "lat": 30.5755,
-  "lng": 104.0665,
+  "lat": 30.582568,
+  "lng": 104.072828,
   "hours": "公園全天；雙塔燈光秀約19:00-22:00；商場約10:00-22:00",
   "ticket": "免費",
   "reason": "成都金融城核心的未來感商圈，218米天府雙塔每晚上演燈光秀，橙色環形天橋「交子之環」是新晉頂流機位。SKP、悠方等高端商業環繞，展現成都最現代的一面。",
@@ -8463,14 +9491,18 @@ const PLACES = [
   ],
   "notes": "燈光秀每晚約19:00起，交子公園湖邊是正面最佳視角；節假日交子之環上人多需排隊拍照；周邊停車難建議地鐵（6/18號線）",
   "duration": "2小時（夜間最佳）",
+  "address": "成都市武侯區天府大道北段",
+  "amap_poiid": "B0FFHUHA9B",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
   "name": "鐵像寺水街",
   "type": "商圈",
   "area": "高新區",
-  "lat": 30.562,
-  "lng": 104.0555,
+  "lat": 30.557844,
+  "lng": 104.050038,
   "hours": "街區全天，店鋪約10:00-22:00",
   "ticket": "免費",
   "reason": "高新區裡的川西水鄉風格慢生活街區，小橋流水配黛瓦白牆，陳錦茶鋪露天壩壩茶遠近聞名。都市白領的午後偷閒地，遊客不多氛圍極佳。",
@@ -8483,14 +9515,18 @@ const PLACES = [
   ],
   "notes": "適合安排在天府新區/麓湖行程的同一天；晴天下午茶鋪一座難求建議早點去；緊鄰大源商務區，地鐵18號線可達",
   "duration": "1.5-2小時",
+  "address": "成都市武侯區鐵像寺路88號",
+  "amap_poiid": "B001C937OI",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
   "name": "奎星樓街",
   "type": "商圈",
   "area": "青羊區",
-  "lat": 30.6705,
-  "lng": 104.0598,
+  "lat": 30.668365,
+  "lng": 104.053864,
   "hours": "街區全天，餐廳約11:00-22:00",
   "ticket": "免費",
   "reason": "寬窄巷子旁的本地美食文創小街，避開遊客大軍的「平價版寬窄巷子」。冒椒火辣等排隊名店雲集，明堂創意工作區聚集了成都的獨立創作者。",
@@ -8502,14 +9538,18 @@ const PLACES = [
   ],
   "notes": "熱門店飯點排隊1小時起，建議錯峰（下午3-5點）；與寬窄巷子、人民公園步行串聯；街短店精，重點在吃",
   "duration": "1-1.5小時",
+  "address": "成都市青羊區",
+  "amap_poiid": "B0FFG3XSU4",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
   "name": "建設路小吃街（建設巷）",
   "type": "商圈",
   "area": "成華區",
-  "lat": 30.6755,
-  "lng": 104.1165,
+  "lat": null,
+  "lng": null,
   "hours": "約11:00-22:00，傍晚至夜間最熱鬧",
   "ticket": "免費",
   "reason": "電子科大旁的學生黨小吃天堂，據說是成都小吃密度最高的街巷之一。脆皮五花肉、降龍爪爪、蛋烤等網紅小吃鼻祖都從這裡走紅，價格親民分量實在。",
@@ -8522,15 +9562,17 @@ const PLACES = [
   ],
   "notes": "傍晚17:00後攤位最全人氣最旺；人多擁擠看好隨身物品；與東郊記憶步行約15分鐘，可作東郊記憶行程的晚餐站",
   "duration": "1-1.5小時",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "成都"
  },
  {
   "name": "三星堆博物館",
   "type": "景点",
   "area": "德陽市廣漢市·三星堆鎮",
-  "address": "四川省德陽市廣漢市三星堆鎮鴨子河畔",
-  "lat": 31.00308,
-  "lng": 104.21814,
+  "address": "德陽市廣漢市向新路133號",
+  "lat": 31.001439,
+  "lng": 104.218621,
   "hours": "08:30-18:00（17:00停止入館，原則上周一不閉館）",
   "ticket": "普通票72元；台胞證首來族（簽發次數01、簽發一年內）可詢問免首道門票",
   "reason": "古蜀文明代表遺址博物館，新館集中展出青銅神樹、黃金面具、金杖與青銅大立人，是成都周邊最值得專程前往的博物館之一。",
@@ -8543,14 +9585,17 @@ const PLACES = [
   ],
   "notes": "全網實名預約、現場原則上不售票；首來族優惠仍須提前向景區或包車業者確認實名預約與票價退差。建議預留4-5小時並租語音導覽或預約人工講解。成都東站乘城際列車至廣漢北站，再打車約20分鐘。",
   "duration": "4-5小時",
+  "amap_poiid": "B034600ZUS",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都"
  },
  {
   "name": "洪崖洞民俗風貌區",
   "type": "景点",
   "area": "渝中區",
-  "lat": 29.562095,
-  "lng": 106.577677,
+  "lat": 29.562204,
+  "lng": 106.579027,
   "hours": "全天開放；商鋪約11:00-23:00；夜景亮燈約18:00-22:30（冬季天黑早，約18:00即亮燈）",
   "ticket": "免費",
   "reason": "重慶最具代表性的吊腳樓建築群，依山就勢層層疊疊共11層，夜晚亮燈後宛如《千與千尋》場景。是重慶夜景的頭號名片，幾乎所有遊客的必到之地。",
@@ -8563,14 +9608,18 @@ const PLACES = [
   ],
   "notes": "旺季與節假日人流極大，建議18:00前先到千廝門大橋佔機位；12月約18:00天黑即可看夜景，不用等太晚；樓內電梯排隊長，可走樓梯；貴重物品注意保管。",
   "duration": "1.5-2小時（含拍照）",
+  "address": "重慶市渝中區嘉陵江濱江路88號(小什字地鐵站9號口步行430米)",
+  "amap_poiid": "B0FFG8V7SH",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆"
  },
  {
   "name": "長江索道",
   "type": "景点",
   "area": "渝中區（北站新華路）",
-  "lat": 29.556,
-  "lng": 106.5837,
+  "lat": 29.553272,
+  "lng": 106.59241,
   "hours": "冬季（12月1日-2月底）08:00-21:00；夏季08:00-22:00；法定節假日07:30-22:30",
   "ticket": "單程30元，往返50元",
   "reason": "有『萬里長江第一條空中走廊』之稱的過江索道，橫跨長江連接渝中與南岸，是電影《瘋狂的石頭》等多部影視取景地。4分鐘凌空過江，白天看兩江交匯、夜晚看燈火，是最『重慶』的交通體驗。",
@@ -8582,6 +9631,10 @@ const PLACES = [
   ],
   "notes": "強烈建議提前在『長江索道』微信公眾號購票併線上取號，按提示時段前往，現場排隊常超1小時；建議買單程，南岸下站後順遊龍門浩老街；日落至夜景時段最熱門。",
   "duration": "0.5-1小時（含排隊）",
+  "address": "重慶市渝中區新華路151號(小什字地鐵站5B口旁),上新街4號(索道南站)",
+  "amap_poiid": "B001706L1A",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆"
  },
  {
@@ -8601,14 +9654,18 @@ const PLACES = [
   ],
   "notes": "拍攝免費無需預約，列車班次密集不用久等；乘2號線體驗時選李子壩站前後區間（牛角沱-佛圖關方向）；觀景台遊客多，注意錯峰，上午人較少。",
   "duration": "0.5-1小時",
+  "address": "重慶市渝中區李子壩正街62號(李子壩地鐵站1號口步行110米)",
+  "amap_poiid": "B0FFLH5QFT",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆"
  },
  {
   "name": "磁器口古鎮",
   "type": "景点",
   "area": "沙坪垻區",
-  "lat": 29.58078,
-  "lng": 106.45064,
+  "lat": 29.581184,
+  "lng": 106.449705,
   "hours": "全天開放；店鋪約09:00-21:00",
   "ticket": "免費",
   "reason": "千年古鎮、嘉陵江畔曾經的水陸碼頭，『一條石板路，千年磁器口』。雖然商業化較重，但巷弄裡的茶館、川劇、手工酸辣粉與陳麻花仍是體驗老重慶市井的好去處。",
@@ -8621,14 +9678,18 @@ const PLACES = [
   ],
   "notes": "周末與節假日人擠人，建議工作日上午前往；主街商業化重，多走橫巷更有味道；地鐵1號線磁器口站直達；12月江邊風大注意保暖。",
   "duration": "2-3小時",
+  "address": "重慶市沙坪垻區磁南街1號",
+  "amap_poiid": "B00170IFE4",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆"
  },
  {
   "name": "山城第三步道",
   "type": "景点",
   "area": "渝中區",
-  "lat": 29.55089,
-  "lng": 106.56553,
+  "lat": 29.550481,
+  "lng": 106.566712,
   "hours": "全天開放（建議白天至日落時段）",
   "ticket": "免費",
   "reason": "最能體會重慶『山城』本色的免費徒步線路，沿懸崖修建的棧道串起老居民區、抗戰遺址與長江江景。一邊是老重慶的市井煙火，一邊是懸空觀江視野。",
@@ -8641,14 +9702,18 @@ const PLACES = [
   ],
   "notes": "全程台階多，穿舒適防滑的鞋；與山城巷可串成一條線路；冬季午後陽光時段最舒服；部分路段無護欄商鋪，注意腳下。",
   "duration": "1.5-2小時",
+  "address": "重慶市渝中區中興路234號旁",
+  "amap_poiid": "B001791SBK",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆"
  },
  {
   "name": "山城巷傳統風貌區",
   "type": "景点",
   "area": "渝中區",
-  "lat": 29.5515,
-  "lng": 106.5738,
+  "lat": 29.550114,
+  "lng": 106.568822,
   "hours": "街區全天開放；店鋪約10:00-22:00",
   "ticket": "免費（個別展覽、體驗項目另收費）",
   "reason": "重慶唯一以『山城』命名的老巷，依崖而建的百年石板街經文創改造後，老建築裡開滿了茶館、書店與小酒館，是白天看江、傍晚看燈的寶藏街區。",
@@ -8661,14 +9726,18 @@ const PLACES = [
   ],
   "notes": "與第三步道、十八梯距離近可串聯；日落前1小時抵達最佳，可一次收集日景與夜景；台階多注意穿平底鞋。",
   "duration": "1-2小時",
+  "address": "重慶市渝中區七星崗街道南區路與中興路交叉口東北50米",
+  "amap_poiid": "B0FFK7WOXJ",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆"
  },
  {
   "name": "白象居",
   "type": "景点",
   "area": "渝中區",
-  "lat": 29.55564,
-  "lng": 106.58503,
+  "lat": 29.556103,
+  "lng": 106.585193,
   "hours": "全天開放（居民樓，建議白天09:00-18:00參觀，夜間勿擾）",
   "ticket": "免費",
   "reason": "1992年建成的24層無電梯居民樓，靠1樓、10樓、15樓三個出口分別通向三條不同高度的馬路，是重慶魔幻地形的極致樣本，《隱秘的角落》《少年的你》取景地。",
@@ -8680,14 +9749,18 @@ const PLACES = [
   ],
   "notes": "這是有近300戶居民的住宅樓，務必保持安靜、不進入住戶區域、不堵塞通道；上下靠爬樓梯，量力而行；地鐵小什字站7號口步行可達。",
   "duration": "0.5-1小時",
+  "address": "重慶市渝中區白象街1-6號(小什字地鐵站7號口步行460米)",
+  "amap_poiid": "B001797GGV",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆"
  },
  {
   "name": "鵝嶺二廠文創公園",
   "type": "景点",
   "area": "渝中區",
-  "lat": 29.5555,
-  "lng": 106.527,
+  "lat": 29.550993,
+  "lng": 106.539896,
   "hours": "園區約10:00-22:00（各店鋪不一）",
   "ticket": "免費",
   "reason": "由民國中央銀行印鈔廠舊址改造的文創園區，工業風老廠房裡聚集了咖啡館、買手店與觀景平台，電影《從你的全世界路過》取景地，文藝青年打卡首選。",
@@ -8700,14 +9773,18 @@ const PLACES = [
   ],
   "notes": "與鵝嶺公園相鄰可一起遊；傍晚上天台可等日落轉夜景；李子壩站步行上山約15-20分鐘為上坡，可打車上山、步行下山順路看李子壩穿樓。",
   "duration": "1.5-2小時",
+  "address": "重慶市渝中區鵝嶺正街1號TESTBED2貳廠文創公園",
+  "amap_poiid": "B0L359FQDA",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆"
  },
  {
   "name": "黃桷坪塗鴉一條街",
   "type": "景点",
   "area": "九龍坡區",
-  "lat": 29.48593,
-  "lng": 106.541563,
+  "lat": 29.488979,
+  "lng": 106.539867,
   "hours": "全天開放（街區）",
   "ticket": "免費",
   "reason": "四川美術學院（黃桷坪校區）門前1.25公里的街道，整片居民樓外牆被塗鴉覆蓋，是全國規模最大的塗鴉藝術街區，充滿川美的藝術氣息與老城煙火氣。",
@@ -8720,14 +9797,18 @@ const PLACES = [
   ],
   "notes": "距市中心較遠（地鐵2號線謝家灣站轉公交或打車），建議與交通茶館排半天行程；街區是生活區，拍照注意避讓居民車輛。",
   "duration": "2-3小時（含交通茶館）",
+  "address": "重慶市九龍坡區黃桷坪正街88號四川美術學院黃桷坪校區旁",
+  "amap_poiid": "B0FFLNMAZT",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆"
  },
  {
   "name": "南山一棵樹觀景台",
   "type": "景点",
   "area": "南岸區",
-  "lat": 29.5507,
-  "lng": 106.6053,
+  "lat": 29.545208,
+  "lng": 106.602311,
   "hours": "09:00-22:30（22:00停止入園）",
   "ticket": "30元（學生半價）",
   "reason": "觀賞渝中半島全景夜景的經典制高點，『不覽夜景，未到重慶』說的就是這裡。隔江俯瞰兩江環抱的半島燈海，是明信片級別的重慶夜景機位。",
@@ -8739,14 +9820,18 @@ const PLACES = [
   ],
   "notes": "12月約17:40-18:00天黑，建議17:00前到；山上氣溫比市區低3-5度，務必加衣；上山公共運輸不便，建議打車（下山高峰打車難，可預約）；霧天夜景打折扣，出發前看天氣。",
   "duration": "1.5-2小時",
+  "address": "重慶市南岸區龍黃公路",
+  "amap_poiid": "B0L2S55CIM",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆"
  },
  {
   "name": "朝天門廣場",
   "type": "景点",
   "area": "渝中區",
-  "lat": 29.5663,
-  "lng": 106.5864,
+  "lat": 29.56688,
+  "lng": 106.587866,
   "hours": "全天開放",
   "ticket": "免費",
   "reason": "長江與嘉陵江交匯處的『重慶之眼』，可清晰看到兩江清濁分明的交匯線，身後是巨艦造型的來福士。這裡也是兩江夜遊遊輪的主要碼頭。",
@@ -8758,14 +9843,18 @@ const PLACES = [
   ],
   "notes": "兩江夜遊建議提前在線購票並確認班次，冬季首班約19:00；江邊風大，冬季夜遊要穿夠；廣場在施工時部分區域會圍擋，以現場為準。",
   "duration": "1-1.5小時（夜遊另加1.5小時）",
+  "address": "重慶市渝中區朝千路1號",
+  "amap_poiid": "B00170L11G",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆"
  },
  {
   "name": "來福士探索艙·觀景台",
   "type": "景点",
   "area": "渝中區",
-  "lat": 29.563517,
-  "lng": 106.58813,
+  "lat": 29.565856,
+  "lng": 106.587584,
   "hours": "10:00-22:00（節假日可能調整）",
   "ticket": "觀光票120元（優待票100元，常有線上優惠）",
   "reason": "橫跨四棟塔樓頂部約250米高的『水晶連廊』，是重慶最高的觀景平台之一。360度俯瞰兩江交匯、渝中半島與南山，視角與南山一棵樹互補。",
@@ -8777,14 +9866,18 @@ const PLACES = [
   ],
   "notes": "建議線上提前購票有優惠；日落前1小時入場性價比最高，一票看日景+夜景；霧霾或大霧天視野差，行前看天氣；入口在來福士L1層7號門旁。",
   "duration": "1-1.5小時",
+  "address": "重慶市渝中區朝千路與接聖街交叉口東140米",
+  "amap_poiid": "B0KKFGI107",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆"
  },
  {
   "name": "十八梯傳統風貌區",
   "type": "景点",
   "area": "渝中區",
-  "lat": 29.5526,
-  "lng": 106.5755,
+  "lat": 29.551015,
+  "lng": 106.573042,
   "hours": "街區全天開放；店鋪約10:00-22:00",
   "ticket": "免費",
   "reason": "連接上半城與下半城的百年老梯坎，承載老重慶的城市記憶，改造後成為傳統風貌街區，石階、黃葛樹與燈籠很有山城味道，夜景燈光也頗出片。",
@@ -8797,14 +9890,18 @@ const PLACES = [
   ],
   "notes": "改造後商業化較新，適合與山城巷、白象居排同一天；夜間亮燈後氛圍更好；台階多，穿舒適鞋。",
   "duration": "1-1.5小時",
+  "address": "重慶市渝中區中興路1號(較場口地鐵站出入口旁)",
+  "amap_poiid": "B0G1XDI8P4",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆"
  },
  {
   "name": "湖廣會館",
   "type": "景点",
   "area": "渝中區",
-  "lat": 29.5571,
-  "lng": 106.5866,
+  "lat": 29.557921,
+  "lng": 106.586915,
   "hours": "09:00-18:00（17:00停止售票入館）",
   "ticket": "32元",
   "reason": "清代『湖廣填四川』移民史的見證，全國現存規模最大的古會館建築群之一。金碧輝煌的戲樓與精美木雕，在高樓環繞中保留了一片明清時空。",
@@ -8817,14 +9914,18 @@ const PLACES = [
   ],
   "notes": "與白象居、長江索道、羅漢寺同片區可串聯；官方微信可購票；館內部分區域不定期修繕，以現場為準。",
   "duration": "1-1.5小時",
+  "address": "重慶市渝中區長江濱江路芭蕉園1號",
+  "amap_poiid": "B0017822LZ",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆"
  },
  {
   "name": "羅漢寺",
   "type": "景点",
   "area": "渝中區",
-  "lat": 29.55968,
-  "lng": 106.58153,
+  "lat": 29.559756,
+  "lng": 106.581619,
   "hours": "約08:00-17:00",
   "ticket": "10元",
   "reason": "始建於北宋的千年古剎，被寫字樓包圍的『都市寺廟』，五百阿羅漢塑像形態各異。電影《瘋狂的石頭》重要取景地，鬧市中一步入禪的反差感十足。",
@@ -8836,14 +9937,18 @@ const PLACES = [
   ],
   "notes": "寺內禮佛區域注意安靜、部分殿堂禁止拍照；就在解放碑與洪崖洞之間，順路即可；香期（初一十五）人多。",
   "duration": "0.5-1小時",
+  "address": "重慶市渝中區解放碑街道羅漢寺街7號(小什字地鐵站6號口旁)",
+  "amap_poiid": "B001702CBC",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆"
  },
  {
   "name": "重慶中國三峽博物館",
   "type": "景点",
   "area": "渝中區",
-  "lat": 29.5648,
-  "lng": 106.5484,
+  "lat": 29.562014,
+  "lng": 106.550513,
   "hours": "周二至周日09:00-17:00（16:30停止入館），周一閉館（法定節假日除外）",
   "ticket": "免費（需實名預約）",
   "reason": "首批國家一級博物館，系統展示三峽歷史文化、巴渝古代文明與重慶大轟炸歲月。看懂重慶的前世今生，從這裡開始最合適，而且正對人民大禮堂。",
@@ -8856,14 +9961,18 @@ const PLACES = [
   ],
   "notes": "需提前在『重慶中國三峽博物館』微信公眾號實名預約（可約7日內），周末名額緊張建議提前2-3天；周一閉館注意排程；講解器或定時人工講解值得用。",
   "duration": "2-3小時",
+  "address": "重慶市渝中區人民路236號",
+  "amap_poiid": "B001709RVF",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆"
  },
  {
   "name": "重慶市人民大禮堂",
   "type": "景点",
   "area": "渝中區",
-  "lat": 29.5615,
-  "lng": 106.55402,
+  "lat": 29.561674,
+  "lng": 106.553277,
   "hours": "08:00-18:00（17:30停止售票；有演出或活動時暫停參觀）",
   "ticket": "入內參觀8元（廣場與外觀免費）",
   "reason": "1950年代仿天壇祈年殿風格的地標建築，被譽為亞洲最大的仿古建築群之一，綠瓦紅柱氣勢恢宏。與三峽博物館隔人民廣場相望，一次看兩個。",
@@ -8876,14 +9985,18 @@ const PLACES = [
   ],
   "notes": "外觀拍照免費，入內僅8元可視時間決定；有大型會議演出時不開放入內；地鐵2號線曾家巖站步行可達。",
   "duration": "0.5-1小時（含廣場）",
+  "address": "重慶市渝中區人民路173號(曾家巖地鐵站3號口步行240米)",
+  "amap_poiid": "B00170BPJJ",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆"
  },
  {
   "name": "皇冠大扶梯",
   "type": "景点",
   "area": "渝中區（兩路口）",
-  "lat": 29.55169,
-  "lng": 106.54913,
+  "lat": 29.552279,
+  "lng": 106.54921,
   "hours": "約06:45-22:00",
   "ticket": "單程2元",
   "reason": "全長112米、亞洲第二長的坡地大扶梯，連接兩路口與菜園壩火車站，30度陡坡一眼望不到頭，2元就能體驗的重慶魔幻交通，《少年的你》取景地。",
@@ -8895,14 +10008,18 @@ const PLACES = [
   ],
   "notes": "刷交通卡或掃碼即可進站；通勤高峰（上下班時間）人多不便拍照，建議平峰前往；扶梯上拍照注意安全、勿逗留擋道。",
   "duration": "0.5小時",
+  "address": "重慶市渝中區兩路口中山三路107號皇冠大廈B1層(兩路口地鐵站4號口旁)",
+  "amap_poiid": "B0FFFP5D5R",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆"
  },
  {
   "name": "大足石刻（寶頂山）",
   "type": "景点",
   "area": "大足區（近郊，市區車程約1.5-2小時）",
-  "lat": 29.751,
-  "lng": 105.795,
+  "lat": 29.743664,
+  "lng": 105.790121,
   "hours": "冬季約08:30-18:00（16:30前入園為宜）；北山石刻08:30-17:30",
   "ticket": "淡季（12月1日-2月28日）寶頂山100元（含聖壽寺），北山50元；旺季寶頂山140元",
   "reason": "世界文化遺產，中國晚期石窟藝術的巔峰之作，千手觀音、釋迦涅槃聖跡圖等造像精美震撼且保存完好。與雲岡、龍門齊名，卻更貼近世俗生活題材，值得專程一日遊。",
@@ -8915,14 +10032,18 @@ const PLACES = [
   ],
   "notes": "12月正值淡季票價優惠且人少；從重慶西站/沙坪垻站乘高鐵至大足石刻站再轉車，或直接參加一日遊/包車；石刻區講解很重要，建議拼講解；山區冬季溼冷注意保暖。",
   "duration": "半天至1天（寶頂山約3小時）",
+  "address": "重慶市大足區香山街與廣大路交叉口西480米",
+  "amap_poiid": "B0LG054C2N",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆"
  },
  {
   "name": "武隆天生三橋",
   "type": "景点",
   "area": "武隆區（近郊，市區車程約2.5小時）",
-  "lat": 29.4507,
-  "lng": 107.781,
+  "lat": null,
+  "lng": null,
   "hours": "冬季09:00-16:00（16:00停止入園）",
   "ticket": "淡季（11月1日-2月28日）約95元（含轉運車40元及下行電梯15元）；旺季125元",
   "reason": "世界自然遺產『武隆喀斯特』核心景區，天龍橋、青龍橋、黑龍橋三座天然石拱橋氣勢磅礴，《滿城盡帶黃金甲》《變形金剛4》取景地。冬季若逢降雪，天坑雪景別有意境。",
@@ -8934,14 +10055,16 @@ const PLACES = [
   ],
   "notes": "冬季開放時間短（16:00停止入園），務必上午出發；重慶北站乘高鐵至武隆站轉景區交通，或參加一日遊最省心；步道以下行為主但仍需體力，穿防滑鞋；12月山區溼冷，比市區低約5度，遇冰雪部分路段可能管制，出發前查景區公告。",
   "duration": "1天（景區內約3-4小時）",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
   "city": "重庆"
  },
  {
   "name": "解放碑商圈",
   "type": "商圈",
   "area": "渝中區",
-  "lat": 29.5566,
-  "lng": 106.577,
+  "lat": 29.556728,
+  "lng": 106.57688,
   "hours": "步行街全天開放；商場約10:00-22:00；餐飲夜宵至更晚",
   "ticket": "免費",
   "reason": "以抗戰勝利紀功碑（解放碑）為中心的西部第一步行街，重慶最核心的商業地標。高樓環繞老碑的畫面本身就是重慶縮影，購物、美食、夜生活一站式。",
@@ -8954,14 +10077,18 @@ const PLACES = [
   ],
   "notes": "跨年夜解放碑聽鐘聲是本地傳統，12月底人流巨大注意安全；好吃街熱門店常排隊；商圈酒店多，適合作為住宿大本營。",
   "duration": "2-3小時",
+  "address": "重慶市渝中區",
+  "amap_poiid": "B0FFGI0JVF",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆"
  },
  {
   "name": "觀音橋商圈",
   "type": "商圈",
   "area": "江北區",
-  "lat": 29.5776,
-  "lng": 106.5327,
+  "lat": 29.576104,
+  "lng": 106.533919,
   "hours": "步行街全天開放；商場約10:00-22:00",
   "ticket": "免費",
   "reason": "江北區核心商圈，規模與人氣與解放碑並列，本地年輕人更愛來這裡。北城天街等商場雲集，周邊小吃江湖氣更足，物價比解放碑更親民。",
@@ -8974,14 +10101,18 @@ const PLACES = [
   ],
   "notes": "地鐵3號線觀音橋站直達；與北倉文創街區步行可達，建議排同一晚；周五周末晚高峰人多。",
   "duration": "2-3小時",
+  "address": "重慶市兩江新區",
+  "amap_poiid": "B0FFHOSTJ8",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆"
  },
  {
   "name": "北倉文創街區",
   "type": "商圈",
   "area": "江北區（觀音橋旁）",
-  "lat": 29.5805,
-  "lng": 106.5383,
+  "lat": 29.578539,
+  "lng": 106.538685,
   "hours": "約10:00-22:00（各店鋪不一）",
   "ticket": "免費",
   "reason": "由江北紡織倉庫舊址改造的文創街區，藏在觀音橋鬧市背後，紅磚廠房裡是書店、咖啡館、買手店與展覽空間，鬧中取靜，是本地文藝青年的後花園。",
@@ -8994,14 +10125,18 @@ const PLACES = [
   ],
   "notes": "區域不大，適合作為觀音橋行程的加菜；下午至傍晚氛圍最好；部分展覽需另購票。",
   "duration": "1-1.5小時",
+  "address": "重慶市兩江新區興塔路與建北一支路交叉口東50米",
+  "amap_poiid": "B0FFHSIGMG",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆"
  },
  {
   "name": "龍門浩老街",
   "type": "商圈",
   "area": "南岸區",
-  "lat": 29.55593,
-  "lng": 106.59489,
+  "lat": 29.555993,
+  "lng": 106.594746,
   "hours": "街區全天開放；店鋪約10:00-22:00",
   "ticket": "免費",
   "reason": "長江南岸開埠時期的老碼頭街區，保留大量開埠建築與使館舊址，改造後咖啡館與餐廳錯落山坡。傍晚在這裡隔江看渝中半島天際線亮燈，是性價比極高的夜景機位。",
@@ -9014,14 +10149,18 @@ const PLACES = [
   ],
   "notes": "乘長江索道到上新街站步行前往最順路；日落前到，藍調時刻拍對岸最美；坡道台階多。",
   "duration": "1.5-2小時",
+  "address": "重慶市南岸區南濱路105號(上新街地鐵站2號口步行320米)",
+  "amap_poiid": "B0FFJ0756U",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆"
  },
  {
   "name": "彈子石老街",
   "type": "商圈",
   "area": "南岸區",
-  "lat": 29.57975,
-  "lng": 106.58797,
+  "lat": 29.579193,
+  "lng": 106.587806,
   "hours": "街區約10:00-22:00",
   "ticket": "免費",
   "reason": "號稱『一街觀兩江』的開埠主題老街，沿山坡分層而建，法國水師兵營等歷史建築與新中式商業結合。人少清淨，看江北嘴與渝中兩岸夜景視野開闊。",
@@ -9034,14 +10173,18 @@ const PLACES = [
   ],
   "notes": "人流比洪崖洞少很多，適合怕擠的行程；與南濱路、龍門浩同在南岸可串成一條線；部分店鋪入駐率一般，以逛景觀建築為主。",
   "duration": "1-1.5小時",
+  "address": "重慶市南岸區裕華路與衛國路交叉口西南360米",
+  "amap_poiid": "B0LBC52UA8",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆"
  },
  {
   "name": "南濱路",
   "type": "商圈",
   "area": "南岸區",
-  "lat": 29.5575,
-  "lng": 106.5952,
+  "lat": 29.541622,
+  "lng": 106.576856,
   "hours": "全天開放；餐飲酒吧約11:00-24:00",
   "ticket": "免費",
   "reason": "長江南岸的濱江景觀大道與餐飲娛樂帶，是眺望渝中半島夜景的最佳橫向畫卷，『重慶外灘』之稱。長嘉匯購物公園段可同時望見朝天門來福士與湖廣會館燈火。",
@@ -9054,14 +10197,18 @@ const PLACES = [
   ],
   "notes": "夜景最佳時段18:30-21:30；江邊冬夜風大務必保暖；範圍很長，建議鎖定長嘉匯段；節假日江景餐廳需訂位。",
   "duration": "2-3小時（含晚餐）",
+  "address": "重慶市南岸區",
+  "amap_poiid": "B0FFG8696H",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆"
  },
  {
   "name": "江北嘴中央商務區",
   "type": "商圈",
   "area": "江北區",
-  "lat": 29.5698,
-  "lng": 106.5795,
+  "lat": 29.571902,
+  "lng": 106.567912,
   "hours": "全天開放；大劇院演出時間以排期為準；商場約10:00-22:00",
   "ticket": "免費（大劇院演出另購票）",
   "reason": "嘉陵江與長江交匯北岸的金融城，摩天樓群+重慶大劇院構成現代重慶天際線。江邊是拍洪崖洞與渝中半島的頂級機位，夜晚『開往星空的列車』輕軌機位也在附近。",
@@ -9074,6 +10221,10 @@ const PLACES = [
   ],
   "notes": "拍洪崖洞全景請到大劇院下方江灘步道，18:00-22:00亮燈時段最佳；冬季江風大注意保暖；與洪崖洞隔橋步行約20分鐘可串聯。",
   "duration": "1.5-2小時",
+  "address": "重慶市兩江新區慶雲路16號",
+  "amap_poiid": "B0FFH437AB",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "重庆"
  },
  {
@@ -9081,8 +10232,8 @@ const PLACES = [
   "city": "重庆",
   "type": "景点",
   "area": "渝中區",
-  "lat": 29.56607,
-  "lng": 106.57859,
+  "lat": 29.569264,
+  "lng": 106.57679,
   "hours": "全天開放（步行上橋）",
   "ticket": "免費",
   "reason": "拍洪崖洞全景的最佳機位，橋面直望吊腳樓群與嘉陵江，夜景攝影必到。",
@@ -9092,15 +10243,19 @@ const PLACES = [
    "步行連接江北嘴與渝中"
   ],
   "notes": "周末橋上人多，東側人行道機位較穩；夜拍建議手持防抖",
-  "duration": "30-60分鐘"
+  "duration": "30-60分鐘",
+  "address": "重慶市兩江新區",
+  "amap_poiid": "B0FFGBJ8U6",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "中興路清真寺（較場口）",
   "city": "重庆",
   "type": "景点",
   "area": "渝中區·較場口",
-  "lat": 29.551,
-  "lng": 106.577,
+  "lat": null,
+  "lng": null,
   "hours": "約05:30-21:00（禮拜時段為主）",
   "ticket": "免費",
   "reason": "重慶穆斯林社區核心，周邊中興路一帶即清真美食街區（真伊順、馬隊長、寧夏回鄉齋等聚集）。",
@@ -9110,15 +10265,17 @@ const PLACES = [
    "感受回民街區日常"
   ],
   "notes": "主麻日（周五）人多莊嚴；非穆斯林參訪請保持安靜、勿打擾禮拜",
-  "duration": "30分鐘＋用餐"
+  "duration": "30分鐘＋用餐",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "天府廣場",
   "city": "成都",
   "type": "景点",
   "area": "青羊區",
-  "lat": 30.6575,
-  "lng": 104.0657,
+  "lat": 30.657401,
+  "lng": 104.065861,
   "hours": "全天開放",
   "ticket": "免費",
   "reason": "成都地理與交通原點，毛主席像與太陽神鳥圖案廣場，地鐵1/2號線交會，皇城清真寺與四川科技館在側。",
@@ -9128,15 +10285,19 @@ const PLACES = [
    "步行至皇城清真寺清真街區"
   ],
   "notes": "地下即地鐵樞紐與商場；廣場安檢進入",
-  "duration": "30-60分鐘"
+  "duration": "30-60分鐘",
+  "address": "成都市青羊區人民南路一段86號(天府廣場地鐵站出入口步行50米)",
+  "amap_poiid": "B001C7WEYU",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "北山石刻（大足）",
   "city": "重庆",
   "type": "景点",
   "area": "大足區",
-  "lat": 29.711,
-  "lng": 105.7,
+  "lat": 29.712337,
+  "lng": 105.710284,
   "hours": "09:00-17:00（冬季16:30停止入園）",
   "ticket": "淡季約70元（與寶頂山聯票約140元）",
   "reason": "與寶頂山並列的大足石刻精華，晚唐至宋代造像近萬尊，轉輪經藏窟被譽為「石刻皇冠」。",
@@ -9146,15 +10307,19 @@ const PLACES = [
    "聯票同日遊寶頂山"
   ],
   "notes": "距寶頂山約15公里，包車或出租接駁；光線較暗石窟內禁閃光燈",
-  "duration": "1.5-2小時"
+  "duration": "1.5-2小時",
+  "address": "重慶市大足區北山路北山石刻景區",
+  "amap_poiid": "B001700FE5",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "龍水峽地縫（武隆）",
   "city": "重庆",
   "type": "景点",
   "area": "武隆區",
-  "lat": 29.412,
-  "lng": 107.8,
+  "lat": null,
+  "lng": null,
   "hours": "09:00-16:00（冬季提早停止入園）",
   "ticket": "淡季約85元",
   "reason": "與天生三橋同日可遊的喀斯特地縫，80米瀑布飛瀉、棧道穿行谷底，冬季水汽氤氳如仙境。",
@@ -9164,15 +10329,17 @@ const PLACES = [
    "垂直電梯下降80米"
   ],
   "notes": "步道溼滑務必防滑鞋；與天生三橋聯遊需預留體力，冬季15:00前入園",
-  "duration": "1.5-2小時"
+  "duration": "1.5-2小時",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "灌縣古城·南橋",
   "city": "成都",
   "type": "景点",
   "area": "都江堰市",
-  "lat": 30.999,
-  "lng": 103.606,
+  "lat": 30.996316,
+  "lng": 103.615948,
   "hours": "全天開放（古城商鋪約09:00-21:00）",
   "ticket": "免費",
   "reason": "都江堰景區門口的百年廊橋與古城街區，雕梁畫棟橫跨岷江內江，看雪山融水奔流腳下。",
@@ -9183,14 +10350,18 @@ const PLACES = [
    "幸福路小吃街"
   ],
   "notes": "就在都江堰景區離堆公園入口旁，遊完景區順路；冬季傍晚江風大注意保暖",
-  "duration": "1-1.5小時"
+  "duration": "1-1.5小時",
+  "address": "成都市都江堰市團結巷146號",
+  "amap_poiid": "B001C09HZL",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "仰天窩大熊貓廣場",
   "city": "成都",
   "type": "景点",
   "area": "都江堰市·離堆公園站",
-  "address": "都江堰市灌口街道都江堰大道2號都江堰水文化廣場東南角",
+  "address": "成都市都江堰市灌口街道都江堰大道2號都江堰水文化廣場(東南角)",
   "lat": 30.993722,
   "lng": 103.62285,
   "hours": "全天開放",
@@ -9202,16 +10373,19 @@ const PLACES = [
    "水文化廣場短暫停留"
   ],
   "notes": "免費城市廣場，離堆公園站旁；包車停留約20-30分鐘即可",
-  "duration": "20-30分鐘"
+  "duration": "20-30分鐘",
+  "amap_poiid": "B001C92D90",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "成都博物館",
   "city": "成都",
   "type": "景点",
   "area": "青羊區·天府廣場",
-  "address": "青羊區小河街1號（天府廣場西側）",
-  "lat": 30.6588,
-  "lng": 104.0617,
+  "address": "成都市青羊區小河街1號",
+  "lat": 30.657297,
+  "lng": 104.063749,
   "hours": "周二-周四、周日9:00-17:00；周五、周六9:00-20:30；周一閉館（法定節假日除外）",
   "ticket": "免費",
   "rating": "4.8/5",
@@ -9225,16 +10399,19 @@ const PLACES = [
    "文創商店淘周邊"
   ],
   "notes": "只接受線上預約（微信公眾號提前約，熱門時段秒光）；周五周六夜場延時開放；地鐵1/2號線天府廣場站直達。",
-  "duration": "2-3小時"
+  "duration": "2-3小時",
+  "amap_poiid": "B001C8SBG2",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "四川科技館",
   "city": "成都",
   "type": "景点",
   "area": "青羊區·天府廣場",
-  "address": "青羊區人民中路一段16號（天府廣場北側）",
-  "lat": 30.6633,
-  "lng": 104.0656,
+  "address": "成都市青羊區人民中路一段16號",
+  "lat": 30.660257,
+  "lng": 104.06568,
   "hours": "周二-周日9:00-17:00（16:30停止入館），周一閉館",
   "ticket": "免費",
   "rating": "4.7/5",
@@ -9248,16 +10425,19 @@ const PLACES = [
    "看球幕/巨幕影院"
   ],
   "notes": "需公眾號實名預約；周末及假期人多建議開館即入；與成都博物館隔廣場相望可一天連逛。",
-  "duration": "2-3小時"
+  "duration": "2-3小時",
+  "amap_poiid": "B001C7USC2",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "浣花溪公園",
   "city": "成都",
   "type": "景点",
   "area": "青羊區·浣花溪",
-  "address": "青羊區青華路9號（杜甫草堂南側）",
-  "lat": 30.662496,
-  "lng": 104.033692,
+  "address": "成都市青羊區草堂街道青華路9號(近杜甫草堂)",
+  "lat": 30.657467,
+  "lng": 104.029022,
   "hours": "全天開放",
   "ticket": "免費",
   "rating": "4.7/5",
@@ -9271,16 +10451,19 @@ const PLACES = [
    "順路連逛杜甫草堂"
   ],
   "notes": "緊鄰杜甫草堂和四川博物院，建議三點一線安排半天；清晨和傍晚光線最好。",
-  "duration": "1.5-2小時"
+  "duration": "1.5-2小時",
+  "amap_poiid": "B001C7UM1C",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "成都自然博物館（成都理工大學博物館）",
   "city": "成都",
   "type": "景点",
   "area": "成華區·十里店",
-  "address": "成華區成華大道十里店路88號",
-  "lat": 30.6786,
-  "lng": 104.1428,
+  "address": "成都市成華區成華大道十里店路88號(十里店地鐵站B口步行110米)",
+  "lat": 30.67821,
+  "lng": 104.144295,
   "hours": "9:00-17:00（16:30停止入館），周一閉館（法定節假日除外）",
   "ticket": "20元（半價10元）",
   "rating": "4.7/5",
@@ -9294,16 +10477,19 @@ const PLACES = [
    "帶娃看恐龍互動展"
   ],
   "notes": "官方微信公眾號實名預約購票；地鐵8號線十里店站直達；周末恐龍廳人流大，建議上午前往。",
-  "duration": "2-3小時"
+  "duration": "2-3小時",
+  "amap_poiid": "B0FFLA0FTW",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "天府藝術公園",
   "city": "成都",
   "type": "景点",
   "area": "金牛區·北三環",
-  "address": "金牛區金牛大道（地鐵27號線/6號線可達）",
-  "lat": 30.7275,
-  "lng": 104.043,
+  "address": "成都市金牛區金泉街道金牛大道金牛壩路388號",
+  "lat": 30.711411,
+  "lng": 104.022692,
   "hours": "公園全天開放；天府美術館、人文藝術圖書館約9:00-18:00（周一閉館）",
   "ticket": "免費（部分特展收費）",
   "rating": "4.6/5",
@@ -9317,16 +10503,19 @@ const PLACES = [
    "夜景倒影攝影"
   ],
   "notes": "美術館和圖書館需公眾號預約；傍晚湖面倒影是最佳拍攝時段；周邊停車緊張建議地鐵前往。",
-  "duration": "半天"
+  "duration": "半天",
+  "amap_poiid": "B0HUTAZ5FP",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "青龍湖溼地公園",
   "city": "成都",
   "type": "景点",
   "area": "龍泉驛區·十陵",
-  "address": "龍泉驛區成洛大道十陵街道（地鐵4號線明蜀王陵站）",
-  "lat": 30.632,
-  "lng": 104.176,
+  "address": "成都市龍泉驛區十陵風景區內",
+  "lat": 30.646345,
+  "lng": 104.183631,
   "hours": "6:00-21:00",
   "ticket": "免費",
   "rating": "4.6/5",
@@ -9340,16 +10529,19 @@ const PLACES = [
    "親子放風箏"
   ],
   "notes": "園區極大建議租自行車；帳篷區周末一位難求要趕早；觀鳥最佳季節為11月-次年3月。",
-  "duration": "半天"
+  "duration": "半天",
+  "amap_poiid": "B0FFG9I9IK",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "東門市井",
   "city": "成都",
   "type": "景点",
   "area": "錦江區·獅子山",
-  "address": "錦江區菱窠西路70號（李劼人故居旁）",
-  "lat": 30.61785,
-  "lng": 104.1254,
+  "address": "成都市錦江區獅子山街道菱窠西路9號(獅子山地鐵站A口步行160米)",
+  "lat": 30.617677,
+  "lng": 104.125115,
   "hours": "全天開放（店鋪約10:00-22:00）",
   "ticket": "免費",
   "rating": "4.5/5",
@@ -9363,16 +10555,19 @@ const PLACES = [
    "聽川劇圍鼓"
   ],
   "notes": "免費進入，人均消費低；下午茶時段氛圍最好；可與三聖鄉順線遊玩。",
-  "duration": "2-3小時"
+  "duration": "2-3小時",
+  "amap_poiid": "B0FFJNPVQZ",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "U37創意倉庫",
   "city": "成都",
   "type": "景点",
   "area": "錦江區·水碾河",
-  "address": "錦江區水碾河南三街37號",
-  "lat": 30.652,
-  "lng": 104.103,
+  "address": "成都市錦江區水碾河南三街37號(近嬌子音樂廳)",
+  "lat": 30.646822,
+  "lng": 104.098911,
   "hours": "全天開放（店鋪約11:00-22:00）",
   "ticket": "免費",
   "rating": null,
@@ -9386,16 +10581,19 @@ const PLACES = [
    "周末逛市集"
   ],
   "notes": "規模不大適合順路；離春熙路/東郊記憶都近；下午光線穿過爬山虎最出片。",
-  "duration": "1-2小時"
+  "duration": "1-2小時",
+  "amap_poiid": "B001C8XPVV",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "水井坊博物館",
   "city": "成都",
   "type": "景点",
   "area": "錦江區·水井街",
-  "address": "錦江區水井街19號（近蘭桂坊）",
-  "lat": 30.6498,
-  "lng": 104.094,
+  "address": "成都市錦江區水井坊街道水井街19-25號",
+  "lat": 30.645047,
+  "lng": 104.086085,
   "hours": "9:30-17:30（周一閉館）",
   "ticket": "50元",
   "rating": "4.6/5",
@@ -9409,16 +10607,19 @@ const PLACES = [
    "順遊九眼橋酒吧街"
   ],
   "notes": "有講解場次建議跟講解；與合江亭、蘭桂坊步行可達；對白酒無興趣者可酌情跳過。",
-  "duration": "1-1.5小時"
+  "duration": "1-1.5小時",
+  "amap_poiid": "B001C929NV",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "成都川菜博物館",
   "city": "成都",
   "type": "景点",
   "area": "郫都區·古城鎮",
-  "address": "郫都區古城街道榮華北巷8號",
-  "lat": 30.894877,
-  "lng": 103.93077,
+  "address": "成都市郫都區榮華北巷8號",
+  "lat": 30.895112,
+  "lng": 103.930192,
   "hours": "9:00-18:00",
   "ticket": "56元起（互動體驗課另計）",
   "rating": "4.5/5",
@@ -9432,16 +10633,19 @@ const PLACES = [
    "觀看蒙眼刀工表演"
   ],
   "notes": "體驗課需提前預約場次；距市區約1小時車程建議自駕或包車；可與郫都區其他點位串聯。",
-  "duration": "3-4小時"
+  "duration": "3-4小時",
+  "amap_poiid": "B001C7U21B",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "黃龍溪古鎮",
   "city": "成都",
   "type": "景点",
   "area": "雙流區·黃龍溪鎮",
-  "address": "雙流區黃龍溪鎮",
-  "lat": 30.313,
-  "lng": 103.973,
+  "address": "成都市雙流區黃龍溪鎮黃金路70號",
+  "lat": 30.317805,
+  "lng": 103.970525,
   "hours": "全天開放（店鋪約9:00-21:00）",
   "ticket": "免費",
   "rating": "4.4/5",
@@ -9455,16 +10659,19 @@ const PLACES = [
    "喝竹椅壩壩茶"
   ],
   "notes": "夏季玩水人爆多建議工作日去；帶娃玩水記得備換洗衣物；市區有直達公交/景區專線約1小時。",
-  "duration": "半天-1天"
+  "duration": "半天-1天",
+  "amap_poiid": "B001C8MSP5",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "洛帶古鎮",
   "city": "成都",
   "type": "景点",
   "area": "龍泉驛區·洛帶鎮",
-  "address": "龍泉驛區洛帶鎮三峨街",
-  "lat": 30.640495,
-  "lng": 104.328976,
+  "address": "成都市龍泉驛區三峨街",
+  "lat": 30.636189,
+  "lng": 104.328377,
   "hours": "全天開放（會館約9:00-17:30）",
   "ticket": "古鎮免費（金龍長城、會館部分收費）",
   "rating": "4.4/5",
@@ -9478,16 +10685,19 @@ const PLACES = [
    "漢服古鎮拍照"
   ],
   "notes": "地鐵2號線龍泉驛站轉公交可達，是成都地鐵可達性最好的古鎮；周末人多建議早去；金龍長城步行往返約2小時。",
-  "duration": "半天-1天"
+  "duration": "半天-1天",
+  "amap_poiid": "B001C8P5T0",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "街子古鎮",
   "city": "成都",
   "type": "景点",
   "area": "崇州市·街子鎮",
-  "address": "崇州市街子鎮（鳳棲山下）",
-  "lat": 30.805,
-  "lng": 103.555,
+  "address": "成都市崇州市惠豐路1號",
+  "lat": 30.813673,
+  "lng": 103.550022,
   "hours": "全天開放",
   "ticket": "免費",
   "rating": "4.5/5",
@@ -9501,16 +10711,19 @@ const PLACES = [
    "民宿住一晚避暑"
   ],
   "notes": "可與青城山後山串聯遊玩；夏季是避暑熱門，民宿需提前訂；自駕約1.5小時。",
-  "duration": "半天-1天"
+  "duration": "半天-1天",
+  "amap_poiid": "B001C7XDI6",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "平樂古鎮",
   "city": "成都",
   "type": "景点",
   "area": "邛崍市·平樂鎮",
-  "address": "邛崍市平樂鎮",
-  "lat": 30.343883,
-  "lng": 103.336781,
+  "address": "成都市邛崍市福惠街136號",
+  "lat": 30.34014,
+  "lng": 103.33049,
   "hours": "全天開放",
   "ticket": "免費（蘆溝竹海等周邊景點另計）",
   "rating": "4.4/5",
@@ -9524,16 +10737,19 @@ const PLACES = [
    "騎竹海觀光車"
   ],
   "notes": "距成都約1.5-2小時車程適合過夜；夏季周末沿江茶位緊俏；可順遊邛崍邛窯遺址公園。",
-  "duration": "1天"
+  "duration": "1天",
+  "amap_poiid": "B001C7XDSY",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "安仁古鎮·建川博物館聚落",
   "city": "成都",
   "type": "景点",
   "area": "大邑縣·安仁鎮",
-  "address": "大邑縣安仁鎮迎賓路二段（建川博物館聚落）",
-  "lat": 30.485,
-  "lng": 103.607,
+  "address": "成都市大邑縣安仁古鎮(西南角)",
+  "lat": 30.500369,
+  "lng": 103.619753,
   "hours": "古鎮全天開放；建川博物館9:00-17:30",
   "ticket": "古鎮免費；建川博物館通票100元；劉氏莊園50元",
   "rating": "4.7/5",
@@ -9547,16 +10763,19 @@ const PLACES = [
    "看《今時今日安仁》實景演出"
   ],
   "notes": "建川館多一天看不完，建議鎖定抗戰正面戰場館、俘虜館、地震館等重點；自駕約1.5小時；對歷史感興趣者強烈建議留一整天。",
-  "duration": "1天"
+  "duration": "1天",
+  "amap_poiid": "B001C80TG4",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "五鳳溪古鎮",
   "city": "成都",
   "type": "景点",
   "area": "金堂縣·五鳳鎮",
-  "address": "金堂縣五鳳鎮",
-  "lat": 30.56,
-  "lng": 104.474,
+  "address": "成都市金堂縣五鳳鎮五鳳溪景區",
+  "lat": 30.605714,
+  "lng": 104.483152,
   "hours": "全天開放",
   "ticket": "免費",
   "rating": "4.3/5",
@@ -9570,16 +10789,19 @@ const PLACES = [
    "山坡俯拍古鎮全景"
   ],
   "notes": "適合不愛人擠人的遊客；鎮小半天可逛完，可與沱江畫廊自駕線串聯；餐飲選擇較少。",
-  "duration": "半天"
+  "duration": "半天",
+  "amap_poiid": "B0FFGQ3K69",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "成都海昌極地海洋公園",
   "city": "成都",
   "type": "景点",
   "area": "天府新區·華陽",
-  "address": "天府新區華陽街道海洋路68號",
-  "lat": 30.479,
-  "lng": 104.083,
+  "address": "成都市雙流區天府新區海洋路68號海合安成都極地海洋公園內(北側)",
+  "lat": 30.496181,
+  "lng": 104.07318,
   "hours": "9:30-17:30（旺季夜場延至20:30，以官方公告為準）",
   "ticket": "成人票約280元（線上預訂常有優惠）",
   "rating": "4.6/5",
@@ -9593,16 +10815,19 @@ const PLACES = [
    "帶娃玩淘氣堡"
   ],
   "notes": "表演場次先拍好時刻表再規划動線；地鐵1號線廣福站轉乘可達；節假日建議線上購票免排隊。",
-  "duration": "半天-1天"
+  "duration": "半天-1天",
+  "amap_poiid": "B0FFKTLWYA",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "成都歡樂谷",
   "city": "成都",
   "type": "景点",
   "area": "金牛區·西華大道",
-  "address": "金牛區西華大道16號",
-  "lat": 30.722485,
-  "lng": 104.0338,
+  "address": "成都市金牛區西華街道西華大道16號",
+  "lat": 30.719292,
+  "lng": 104.032415,
   "hours": "9:30-18:30（夜場活動期間延長，以官方為準）",
   "ticket": "標準票約230元（夜場/學生票另有價）",
   "rating": "4.6/5",
@@ -9616,16 +10841,19 @@ const PLACES = [
    "摩天輪看日落"
   ],
   "notes": "周末熱門項目排隊1小時起，建議開園即入直奔刺激項目；App可查實時排隊時間；地鐵6號線歡樂谷站直達。",
-  "duration": "1天"
+  "duration": "1天",
+  "amap_poiid": "B001C80821",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "丹景台（城市之眼）",
   "city": "成都",
   "type": "景点",
   "area": "龍泉山城市森林公園（天府新區/簡陽交界）",
-  "address": "龍泉山城市森林公園丹景台景區（簡陽市與雙流區交界）",
-  "lat": 30.4,
-  "lng": 104.25,
+  "address": "成都市簡陽市成都城市之眼天文台西南側",
+  "lat": 30.350765,
+  "lng": 104.255309,
   "hours": "9:00-17:30（展覽館周一閉館）",
   "ticket": "景區免費（需預約），展覽館40元",
   "rating": "4.5/5",
@@ -9639,16 +10867,19 @@ const PLACES = [
    "沿龍泉山綠道騎行"
   ],
   "notes": "需在公眾號預約入園；日出場次要凌晨自駕上山，冬季雲海概率高；山頂風大注意保暖。",
-  "duration": "2-3小時"
+  "duration": "2-3小時",
+  "amap_poiid": "B0L2SA59AH",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "三聖鄉·花鄉農居",
   "city": "成都",
   "type": "景点",
   "area": "錦江區·三聖街道",
-  "address": "錦江區三聖街道紅砂村（三聖花鄉）",
-  "lat": 30.607,
-  "lng": 104.157,
+  "address": "成都市錦江區三聖街道紅砂社區136號",
+  "lat": 30.583761,
+  "lng": 104.160874,
   "hours": "全天開放（花市約8:00-18:00）",
   "ticket": "免費",
   "rating": "4.3/5",
@@ -9662,16 +10893,19 @@ const PLACES = [
    "周末逛創意市集"
   ],
   "notes": "春節前買花人流最猛；分散多個片區建議騎車串聯；可與東門市井同日安排。",
-  "duration": "半天"
+  "duration": "半天",
+  "amap_poiid": "B001C08YVZ",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "麓湖·藝展中心（含A4美術館）",
   "city": "成都",
   "type": "景点",
   "area": "天府新區·麓湖生態城",
-  "address": "天府新區麓湖生態城天府大道旁（地鐵1號線紅石公園站）",
-  "lat": 30.462,
-  "lng": 104.069,
+  "address": "成都市雙流區天府大道南一段1386號",
+  "lat": 30.467215,
+  "lng": 104.070319,
   "hours": "10:00-18:00（A4美術館周一閉館）",
   "ticket": "免費（美術館特展另收費）",
   "rating": null,
@@ -9685,7 +10919,10 @@ const PLACES = [
    "周末逛麓客市集"
   ],
   "notes": "特展需線上購票；與麓客島隔湖相望但入口不同；傍晚湖面反光時段最出片。",
-  "duration": "2-3小時"
+  "duration": "2-3小時",
+  "amap_poiid": "B0FFFVW3SC",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "興隆湖溼地公園",
@@ -9693,8 +10930,8 @@ const PLACES = [
   "type": "景点",
   "area": "天府新區·興隆街道",
   "address": "天府新區興隆湖環湖路（地鐵1號線興隆湖站）",
-  "lat": 30.408,
-  "lng": 104.074,
+  "lat": null,
+  "lng": null,
   "hours": "全天開放（中信書店10:00-21:00）",
   "ticket": "免費",
   "rating": "4.6/5",
@@ -9708,16 +10945,18 @@ const PLACES = [
    "兒童藝術中心遛娃"
   ],
   "notes": "書店周末需排隊限流；環湖較長建議共享單車；夏季傍晚和冬季晴天最舒服。",
-  "duration": "半天"
+  "duration": "半天",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "東安湖體育公園",
   "city": "成都",
   "type": "景点",
   "area": "龍泉驛區·東安湖",
-  "address": "龍泉驛區車城大道東安湖畔",
-  "lat": 30.554,
-  "lng": 104.282,
+  "address": "成都市龍泉驛區東安街道體育公園路16號、18號、20號、22號",
+  "lat": 30.598399,
+  "lng": 104.248359,
   "hours": "全天開放",
   "ticket": "免費",
   "rating": "4.6/5",
@@ -9731,16 +10970,19 @@ const PLACES = [
    "趕場演唱會/賽事"
   ],
   "notes": "有演唱會時周邊交通管制人流巨大；地鐵2號線轉公交或自駕前往；夜晚燈光秀時段最佳。",
-  "duration": "2-4小時"
+  "duration": "2-4小時",
+  "amap_poiid": "B0FFK5LFR9",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "西嶺雪山",
   "city": "成都",
   "type": "景点",
   "area": "大邑縣·西嶺鎮",
-  "address": "大邑縣西嶺鎮西嶺雪山景區",
-  "lat": 30.70547,
-  "lng": 103.22903,
+  "address": "成都市大邑縣",
+  "lat": 30.675123,
+  "lng": 103.171633,
   "hours": "9:00-18:00（滑雪季延長，以官方為準）",
   "ticket": "門票約30-60元（前山/後山不同），索道及滑雪另計",
   "rating": "4.5/5",
@@ -9754,16 +10996,19 @@ const PLACES = [
    "山地民宿度假"
   ],
   "notes": "滑雪季（12月-2月）周末車流大建議早出發或住山下；索道排隊久留足時間；山頂溫差大備羽絨服。",
-  "duration": "1天"
+  "duration": "1天",
+  "amap_poiid": "B0L0JHG0KT",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "桂溪生態公園",
   "city": "成都",
   "type": "景点",
   "area": "高新區·天府大道",
-  "address": "高新區天府大道北段1700號（環球中心東側）",
-  "lat": 30.567,
-  "lng": 104.072,
+  "address": "成都市武侯區天府一街附近",
+  "lat": 30.563054,
+  "lng": 104.067314,
   "hours": "全天開放",
   "ticket": "免費",
   "rating": "4.6/5",
@@ -9777,16 +11022,19 @@ const PLACES = [
    "帶娃玩兒童樂園"
   ],
   "notes": "地鐵1號線錦城廣場站直達；周末草坪爆滿建議上午佔位；緊鄰環球中心可順路購物。",
-  "duration": "半天"
+  "duration": "半天",
+  "amap_poiid": "B0FFH0US9N",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "COSMO成都",
   "city": "成都",
   "type": "商场",
   "area": "錦江區·大業路（天府廣場東南）",
-  "address": "錦江區大業路6號",
-  "lat": 30.65,
-  "lng": 104.076,
+  "address": "成都市錦江區大業路6號COSMO",
+  "lat": 30.652302,
+  "lng": 104.069666,
   "hours": "10:00-22:00",
   "ticket": "免費",
   "rating": "4.7/5",
@@ -9800,16 +11048,19 @@ const PLACES = [
    "街拍穿搭"
   ],
   "notes": "工作日人少好逛，周末快閃活動多；距春熙路太古里步行圈內可串聯；地鐵3號線新南門站附近。",
-  "duration": "2-3小時"
+  "duration": "2-3小時",
+  "amap_poiid": "B0FFJV337V",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "REGULAR源野",
   "city": "成都",
   "type": "商场",
   "area": "高新區·大源",
-  "address": "高新區大源中央公園負一層（地鐵5號線大源站）",
-  "lat": 30.559,
-  "lng": 104.052,
+  "address": "成都市武侯區天府二街777號",
+  "lat": 30.550719,
+  "lng": 104.047522,
   "hours": "約10:00-21:00（各店鋪不一）",
   "ticket": "免費",
   "rating": "4.6/5",
@@ -9823,7 +11074,10 @@ const PLACES = [
    "周末看快閃展覽"
   ],
   "notes": "店少而精適合慢逛，不適合購物掃貨型遊客；下午自然光進入下沉庭院時最出片；周邊大源板塊咖啡店密集。",
-  "duration": "1.5-2小時"
+  "duration": "1.5-2小時",
+  "amap_poiid": "B0HRSDQ17S",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "悠方購物中心（uFun）",
@@ -9831,8 +11085,8 @@ const PLACES = [
   "type": "商场",
   "area": "高新區·金融城",
   "address": "高新區府城大道中段88號（環球中心旁）",
-  "lat": 30.572,
-  "lng": 104.067,
+  "lat": null,
+  "lng": null,
   "hours": "10:00-22:00",
   "ticket": "免費",
   "rating": "4.7/5",
@@ -9846,7 +11100,9 @@ const PLACES = [
    "節日主題美陳打卡"
   ],
   "notes": "緊鄰環球中心與桂溪生態公園可一線串聯；餐廳飯點排隊建議提前取號；地鐵1號線錦城廣場站可達。",
-  "duration": "2-3小時"
+  "duration": "2-3小時",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "天府紅購物中心",
@@ -9854,8 +11110,8 @@ const PLACES = [
   "type": "商场",
   "area": "武侯區·磨子橋",
   "address": "武侯區一環路南一段（地鐵3號線磨子橋站旁）",
-  "lat": 30.636,
-  "lng": 104.074,
+  "lat": null,
+  "lng": null,
   "hours": "10:00-22:00",
   "ticket": "免費",
   "rating": null,
@@ -9869,16 +11125,18 @@ const PLACES = [
    "看主題快閃展"
   ],
   "notes": "緊鄰川大望江校區，學生客流大；晚間燈光氛圍更好；適合與九眼橋夜景串聯。",
-  "duration": "1.5-2小時"
+  "duration": "1.5-2小時",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "萬達廣場（錦華店）",
   "city": "成都",
   "type": "商场",
   "area": "錦江區·錦華路",
-  "address": "錦江區錦華路三段88號",
-  "lat": 30.607,
-  "lng": 104.103,
+  "address": "成都市錦江區錦華路一段68號",
+  "lat": 30.621009,
+  "lng": 104.096473,
   "hours": "10:00-22:00",
   "ticket": "免費",
   "rating": null,
@@ -9892,16 +11150,19 @@ const PLACES = [
    "節假日逛中庭活動"
   ],
   "notes": "鄰近地鐵13號線在建片區，建議導航確認最近公交/地鐵站；周末餐飲高峰需取號；與東門市井、三聖鄉同片區可順路。",
-  "duration": "2-3小時"
+  "duration": "2-3小時",
+  "amap_poiid": "B001C92D7K",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "钂鈀街",
   "city": "成都",
   "type": "商圈",
   "area": "錦江區·太古里東側",
-  "address": "錦江區钂鈀街（近紗帽街、太古里）",
-  "lat": 30.656,
-  "lng": 104.09,
+  "address": "成都市錦江區(停運)夜遊觀光1號線",
+  "lat": 30.648155,
+  "lng": 104.081688,
   "hours": "全天開放（店鋪多營業至凌晨）",
   "ticket": "免費",
   "rating": null,
@@ -9915,7 +11176,10 @@ const PLACES = [
    "深夜小酒館聽歌"
   ],
   "notes": "從太古里步行5分鐘即到，適合逛完商圈來收尾；晚上9點後氛圍最佳；店鋪更替快以現場為準。",
-  "duration": "2-3小時"
+  "duration": "2-3小時",
+  "amap_poiid": "BV11468424",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "天府沸騰小鎮（瑪歌莊園）",
@@ -9923,8 +11187,8 @@ const PLACES = [
   "type": "商圈",
   "area": "新都區·三河街道",
   "address": "新都區三河街道熊貓大道旁（近成都熊貓基地北側）",
-  "lat": 30.755,
-  "lng": 104.15,
+  "lat": null,
+  "lng": null,
   "hours": "約11:00-23:00（晚間最熱）",
   "ticket": "免費進入（餐飲消費另計）",
   "rating": null,
@@ -9938,16 +11202,18 @@ const PLACES = [
    "順路白天逛熊貓基地"
   ],
   "notes": "周末晚市必須提前訂位；人均約100-150元；建議傍晚到先拍照再開涮。",
-  "duration": "3-4小時（晚間）"
+  "duration": "3-4小時（晚間）",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "肖家河美食街",
   "city": "成都",
   "type": "夜市",
   "area": "高新區·肖家河",
-  "address": "高新區肖家河街道肖家河沿街",
-  "lat": 30.622,
-  "lng": 104.043,
+  "address": "成都市武侯區",
+  "lat": 30.629591,
+  "lng": 104.044229,
   "hours": "全天（18:00-24:00夜宵最熱鬧）",
   "ticket": "免費",
   "rating": null,
@@ -9961,7 +11227,10 @@ const PLACES = [
    "宵夜配冰粉"
   ],
   "notes": "環境偏市井，追求精緻體驗者慎選；熱門蒼蠅館子飯點排隊；地鐵9號線孵化園站步行可達。",
-  "duration": "1.5-2小時"
+  "duration": "1.5-2小時",
+  "amap_poiid": "B0FFH6JJWE",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "致民路美食街",
@@ -9969,8 +11238,8 @@ const PLACES = [
   "type": "夜市",
   "area": "錦江區·致民路（九眼橋旁）",
   "address": "錦江區致民路（近安順廊橋、九眼橋）",
-  "lat": 30.642,
-  "lng": 104.08,
+  "lat": null,
+  "lng": null,
   "hours": "全天（餐廳多營業至凌晨）",
   "ticket": "免費",
   "rating": null,
@@ -9984,7 +11253,9 @@ const PLACES = [
    "深夜食堂宵夜"
   ],
   "notes": "網紅店飯點排隊建議錯峰；與合江亭、蘭桂坊步行串聯；夜景最佳時段20:00後。",
-  "duration": "2-3小時"
+  "duration": "2-3小時",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "金剛碑歷史文化街區",
@@ -9992,8 +11263,8 @@ const PLACES = [
   "type": "景点",
   "area": "北碚區",
   "address": "重慶市北碚區縉雲山下嘉陵江畔金剛碑村（離北碚城區約5公里）",
-  "lat": 29.8478,
-  "lng": 106.4223,
+  "lat": null,
+  "lng": null,
   "hours": "全天開放（商鋪約10:00-21:30，特別活動期間以公告為準）",
   "ticket": "免費（特別活動期間可能收費，曾實行每日限額預約）",
   "rating": "4.7/5",
@@ -10007,16 +11278,18 @@ const PLACES = [
    "文創小店淘手作"
   ],
   "notes": "建議與北溫泉、縉雲山串聯成北碚一日遊；傍晚亮燈後氛圍最佳；節假日人多建議早去",
-  "duration": "2-3小時"
+  "duration": "2-3小時",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "下浩里老街",
   "city": "重庆",
   "type": "景点",
   "area": "南岸區",
-  "address": "重慶市南岸區龍門浩街道下浩正街（東水門大橋南橋頭下方）",
-  "lat": 29.55757,
-  "lng": 106.59531,
+  "address": "重慶市南岸區下浩里(上新街地鐵站2號口步行370米)",
+  "lat": 29.556725,
+  "lng": 106.594325,
   "hours": "全天開放（店鋪約10:00-22:00）",
   "ticket": "免費",
   "rating": "4.6/5",
@@ -10030,16 +11303,19 @@ const PLACES = [
    "探訪獨立小店與畫廊"
   ],
   "notes": "從上新街地鐵站步行可達，可與龍門浩老街、南濱路串聯；石板路較多建議穿平底鞋",
-  "duration": "1.5-2.5小時"
+  "duration": "1.5-2.5小時",
+  "amap_poiid": "B0L2R5MWVE",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "開往春天的列車（佛圖關觀景點）",
   "city": "重庆",
   "type": "景点",
   "area": "渝中區",
-  "address": "重慶市渝中區佛圖關公園（軌道2號線佛圖關—大坪段沿線）",
-  "lat": 29.5461,
-  "lng": 106.52139,
+  "address": "重慶市渝中區李子壩正街170-附2號",
+  "lat": 29.546168,
+  "lng": 106.52147,
   "hours": "佛圖關公園約6:00-18:00（山上入口18點關門）",
   "ticket": "免費",
   "rating": "4.6/5",
@@ -10053,7 +11329,10 @@ const PLACES = [
    "春季賞美人梅"
   ],
   "notes": "最佳觀賞期2月底-3月初；2號線大坪站5號口或佛圖關站B口進入，需爬坡；拍攝機位在公園步道紅牆段",
-  "duration": "1-2小時"
+  "duration": "1-2小時",
+  "amap_poiid": "B0LGG71ABE",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "三層馬路·山城步道",
@@ -10061,8 +11340,8 @@ const PLACES = [
   "type": "景点",
   "area": "渝中區",
   "address": "重慶市渝中區鵝嶺正街—健康路—李子壩正街一帶（鵝嶺至李子壩）",
-  "lat": 29.558,
-  "lng": 106.529,
+  "lat": null,
+  "lng": null,
   "hours": "全天開放",
   "ticket": "免費",
   "rating": "4.6/5",
@@ -10076,16 +11355,18 @@ const PLACES = [
    "串聯李子壩輕軌穿樓打卡"
   ],
   "notes": "建議從高往低走（鵝嶺→李子壩）省力；全程約2公里台階較多；可與鵝嶺公園、二廠串聯",
-  "duration": "2-3小時"
+  "duration": "2-3小時",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "戴家巷崖壁步道",
   "city": "重庆",
   "type": "景点",
   "area": "渝中區",
-  "address": "重慶市渝中區臨江路戴家巷（洪崖洞上方崖壁）",
-  "lat": 29.560998,
-  "lng": 106.576551,
+  "address": "重慶市渝中區嘉陵江臨江路",
+  "lat": 29.561696,
+  "lng": 106.576617,
   "hours": "全天開放（店鋪約11:00-23:00）",
   "ticket": "免費",
   "rating": "4.7/5",
@@ -10099,16 +11380,19 @@ const PLACES = [
    "步行下到嘉濱路江邊"
   ],
   "notes": "看洪崖洞夜景比正面更出片且免排隊；步道台階較陡，夜間人多注意安全",
-  "duration": "1-1.5小時"
+  "duration": "1-1.5小時",
+  "amap_poiid": "B0HBKZPN7C",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "鵝嶺公園（瞰勝樓）",
   "city": "重庆",
   "type": "景点",
   "area": "渝中區",
-  "address": "重慶市渝中區鵝嶺正街176號",
-  "lat": 29.54965,
-  "lng": 106.5358,
+  "address": "重慶市渝中區鵝嶺正街176號鵝嶺公園內(東側)",
+  "lat": 29.549899,
+  "lng": 106.538266,
   "hours": "公園6:30-22:00，瞰勝樓約9:00-22:00",
   "ticket": "公園免費，瞰勝樓登樓5元",
   "rating": "4.6/5",
@@ -10122,16 +11406,19 @@ const PLACES = [
    "傍晚看日落華燈初上"
   ],
   "notes": "看夜景建議日落前登樓佔機位；與鵝嶺二廠步行約10分鐘；2號線曾家巖或鵝嶺站可達",
-  "duration": "1-2小時"
+  "duration": "1-2小時",
+  "amap_poiid": "B0MUF7HM0B",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "馬房灣七彩巷",
   "city": "重庆",
   "type": "景点",
   "area": "沙坪垻區·馬房灣",
-  "address": "重慶市沙坪垻區馬房灣66號江湖菜旁",
-  "lat": 29.56315,
-  "lng": 106.44797,
+  "address": "重慶市沙坪垻區童家橋街道楊梨路與楊公橋交叉口西北60米",
+  "lat": 29.562782,
+  "lng": 106.447733,
   "hours": "全天開放",
   "ticket": "免費",
   "rating": null,
@@ -10145,16 +11432,19 @@ const PLACES = [
    "品嘗馬房灣江湖菜"
   ],
   "notes": "位於沙坪垻區馬房灣，不在九龍坡黃桷坪；可與磁器口、沙坪垻商圈同日安排。",
-  "duration": "0.5-1小時"
+  "duration": "0.5-1小時",
+  "amap_poiid": "B0HD39QYFL",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "白居寺長江大橋「星際之門」觀景點",
   "city": "重庆",
   "type": "景点",
   "area": "巴南區/大渡口區",
-  "address": "重慶市巴南區巴濱路白居寺長江大橋南橋頭觀景平台",
-  "lat": 29.443,
-  "lng": 106.475,
+  "address": "重慶市大渡口區白居寺長江大橋與中順大道交叉口北460米",
+  "lat": 29.429184,
+  "lng": 106.505505,
   "hours": "全天開放（夜間橋體燈光約19:00-23:00）",
   "ticket": "免費",
   "rating": "4.5/5",
@@ -10168,16 +11458,19 @@ const PLACES = [
    "對岸大濱路拍大橋全景"
   ],
   "notes": "拍「蟲洞」效果需到橋墩正下方仰拍，廣角鏡頭更佳；軌道18號線可達周邊；日落後藍調時刻最出片",
-  "duration": "1-1.5小時"
+  "duration": "1-1.5小時",
+  "amap_poiid": "B0L25UCKOE",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "國泰藝術中心·重慶美術館",
   "city": "重庆",
   "type": "景点",
   "area": "渝中區",
-  "address": "重慶市渝中區臨江路1號（解放碑商圈內）",
-  "lat": 29.5602,
-  "lng": 106.575,
+  "address": "重慶市渝中區解放碑臨江路3號",
+  "lat": 29.560092,
+  "lng": 106.577262,
   "hours": "美術館9:00-17:00（16:30停止入場，周一閉館）；建築外觀全天可觀",
   "ticket": "免費（部分特展收費）",
   "rating": "4.6/5",
@@ -10191,16 +11484,19 @@ const PLACES = [
    "順逛解放碑與八一路"
   ],
   "notes": "美術館與國泰劇院同樓；夜景燈光開啟後建築更震撼；距解放碑步行3分鐘",
-  "duration": "1-1.5小時"
+  "duration": "1-1.5小時",
+  "amap_poiid": "B00179022X",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "重慶科技館",
   "city": "重庆",
   "type": "景点",
   "area": "江北區",
-  "address": "重慶市江北區江北城文星門街7號（江北嘴）",
-  "lat": 29.57059,
-  "lng": 106.57762,
+  "address": "重慶市兩江新區文星門街7號",
+  "lat": 29.570973,
+  "lng": 106.577789,
   "hours": "周二至周日9:30-17:00（16:00停止入場，周一閉館，法定節假日除外）",
   "ticket": "免費（需實名預約；部分影院項目收費）",
   "rating": "4.7/5",
@@ -10214,7 +11510,10 @@ const PLACES = [
    "順遊江北嘴中央公園"
   ],
   "notes": "周末與假期需提前在公眾號預約；6號線大劇院站步行可達；可與重慶大劇院同線遊",
-  "duration": "2-3小時"
+  "duration": "2-3小時",
+  "amap_poiid": "B00178TXGC",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "重慶自然博物館",
@@ -10222,8 +11521,8 @@ const PLACES = [
   "type": "景点",
   "area": "北碚區",
   "address": "重慶市北碚區金華路398號",
-  "lat": 29.81886,
-  "lng": 106.40778,
+  "lat": 29.818862,
+  "lng": 106.407804,
   "hours": "周二至周日9:00-17:00（16:00停止入場，周一閉館）",
   "ticket": "免費（需預約）",
   "rating": "4.7/5",
@@ -10237,16 +11536,19 @@ const PLACES = [
    "串聯縉雲山北溫泉一日遊"
   ],
   "notes": "6號線北碚站轉公交或打車前往；恐龍廳是精華建議預留充足時間；節假日需提前預約",
-  "duration": "2-3小時"
+  "duration": "2-3小時",
+  "amap_poiid": "B0FFFCIS0F",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "重慶大劇院",
   "city": "重庆",
   "type": "景点",
   "area": "江北區",
-  "address": "重慶市江北區江北城文星門街2號（江北嘴）",
-  "lat": 29.56984,
-  "lng": 106.58116,
+  "address": "重慶市兩江新區江北城文華街東路2號(大劇院地鐵站3-1號口步行260米)",
+  "lat": 29.569832,
+  "lng": 106.581333,
   "hours": "外觀全天開放；演出及參觀時間以場館公告為準",
   "ticket": "外觀免費；演出票價因劇目而異",
   "rating": "4.7/5",
@@ -10260,7 +11562,10 @@ const PLACES = [
    "順訪重慶科技館"
   ],
   "notes": "6號線大劇院站直達；看對岸洪崖洞夜景的最佳免費位置之一，日落至亮燈時段最美",
-  "duration": "1-2小時"
+  "duration": "1-2小時",
+  "amap_poiid": "B0017876A0",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "WFC會仙樓觀景台",
@@ -10268,8 +11573,8 @@ const PLACES = [
   "type": "景点",
   "area": "渝中區",
   "address": "重慶市渝中區民族路188號環球金融中心73-75層",
-  "lat": 29.5573,
-  "lng": 106.5772,
+  "lat": 29.559095,
+  "lng": 106.577898,
   "hours": "10:00-22:00",
   "ticket": "約60-128元（平台特惠常見60-80元起）",
   "rating": "4.6/5",
@@ -10283,16 +11588,19 @@ const PLACES = [
    "高空郵局寄明信片"
   ],
   "notes": "解放碑步行1分鐘即達；日落前1小時入場可一次看齊白天/日落/夜景；雨霧天能見度差建議改期",
-  "duration": "1-1.5小時"
+  "duration": "1-1.5小時",
+  "amap_poiid": "B0FFJOL1YZ",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "南山植物園",
   "city": "重庆",
   "type": "景点",
   "area": "南岸區",
-  "address": "重慶市南岸區南山街道南山路101號",
-  "lat": 29.55584,
-  "lng": 106.62873,
+  "address": "重慶市南岸區南山公園路101號",
+  "lat": 29.555413,
+  "lng": 106.628035,
   "hours": "8:00-17:00（旺季延至17:30）",
   "ticket": "約15.5-30元（展覽溫室聯票另計，櫻花節等花期價格上浮）",
   "rating": "4.6/5",
@@ -10306,16 +11614,19 @@ const PLACES = [
    "串聯一棵樹看夜景"
   ],
   "notes": "3-4月櫻花季最熱門；與南山一棵樹、老君洞同在南山片區可一日串聯；自駕或打車上山更方便",
-  "duration": "2-3小時"
+  "duration": "2-3小時",
+  "amap_poiid": "B00178TX2P",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "老君洞道觀",
   "city": "重庆",
   "type": "景点",
   "area": "南岸區",
-  "address": "重慶市南岸區南山街道老君坡29號",
-  "lat": 29.551,
-  "lng": 106.6045,
+  "address": "重慶市南岸區崇文路彩瑞苑對面",
+  "lat": 29.542263,
+  "lng": 106.602082,
   "hours": "8:00-17:00",
   "ticket": "免費（求籤等項目另計約10元）",
   "rating": "4.6/5",
@@ -10329,16 +11640,19 @@ const PLACES = [
    "串聯塗山寺步行路線"
   ],
   "notes": "從上新街方向步行上山台階較多，可從南山一側入口少爬坡；著裝注意宗教場所禮儀",
-  "duration": "1-2小時"
+  "duration": "1-2小時",
+  "amap_poiid": "B00178VU7E",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "塗山寺",
   "city": "重庆",
   "type": "景点",
   "area": "南岸區",
-  "address": "重慶市南岸區南山街道崇文路真武山13號",
-  "lat": 29.54971,
-  "lng": 106.60823,
+  "address": "重慶市南岸區南山街道真武山15號",
+  "lat": 29.550031,
+  "lng": 106.608323,
   "hours": "約7:00-17:00",
   "ticket": "免費（香火隨喜）",
   "rating": "4.4/5",
@@ -10352,16 +11666,19 @@ const PLACES = [
    "拍古樹山門"
   ],
   "notes": "與老君洞相距步行約20-30分鐘，可一併遊覽；素齋供應時間有限建議中午前到",
-  "duration": "0.5-1小時"
+  "duration": "0.5-1小時",
+  "amap_poiid": "B001703A9D",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "中山四路",
   "city": "重庆",
   "type": "景点",
   "area": "渝中區",
-  "address": "重慶市渝中區中山四路（上清寺至曾家巖段）",
-  "lat": 29.56382,
-  "lng": 106.54775,
+  "address": "重慶市渝中區",
+  "lat": 29.563204,
+  "lng": 106.547505,
   "hours": "全天開放（桂園、周公館等舊址9:00-17:00，周一閉館）",
   "ticket": "免費",
   "rating": "4.7/5",
@@ -10375,7 +11692,10 @@ const PLACES = [
    "串聯人民大禮堂步行"
   ],
   "notes": "2號線曾家巖站出站即達；舊址類場館需帶身份證；秋冬黃葛樹落葉季最出片",
-  "duration": "1.5-2小時"
+  "duration": "1.5-2小時",
+  "amap_poiid": "BZ9VNP00SP",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "歌樂山紅巖景區（白公館·渣滓洞）",
@@ -10383,8 +11703,8 @@ const PLACES = [
   "type": "景点",
   "area": "沙坪垻區",
   "address": "重慶市沙坪垻區歌樂山麓凌雲路（磁器口西側）",
-  "lat": 29.579,
-  "lng": 106.436,
+  "lat": null,
+  "lng": null,
   "hours": "9:00-16:30（周一渣滓洞、白公館例行維護閉館，以公告為準）",
   "ticket": "免費（需實名預約）",
   "rating": "4.6/5",
@@ -10398,7 +11718,9 @@ const PLACES = [
    "與磁器口古鎮串聯"
   ],
   "notes": "需提前在公眾號實名預約，節假日名額緊張；兩點之間有步道相連約20分鐘；適合與磁器口安排半日",
-  "duration": "2-3小時"
+  "duration": "2-3小時",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "重慶動物園",
@@ -10406,8 +11728,8 @@ const PLACES = [
   "type": "景点",
   "area": "九龍坡區",
   "address": "重慶市九龍坡區西郊一村1號",
-  "lat": 29.503,
-  "lng": 106.507,
+  "lat": 29.504023,
+  "lng": 106.505799,
   "hours": "旺季6:30-21:00（售票8:00-17:00），淡季7:00-20:30",
   "ticket": "30元（學生半價，兒童/老人有優惠）",
   "rating": "4.7/5",
@@ -10421,16 +11743,19 @@ const PLACES = [
    "園內湖邊野餐"
   ],
   "notes": "熊貓上午活躍建議早去；2號線動物園站出站即達；節假日熊貓館需排隊",
-  "duration": "2-4小時"
+  "duration": "2-4小時",
+  "amap_poiid": "B001701F98",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "民主村社區（謝家灣）",
   "city": "重庆",
   "type": "商圈",
   "area": "九龍坡區",
-  "address": "重慶市九龍坡區謝家灣民主村（萬象城旁）",
-  "lat": 29.51112,
-  "lng": 106.52286,
+  "address": "重慶市九龍坡區直港大道與天寶路交叉口東北220米",
+  "lat": 29.510852,
+  "lng": 106.522744,
   "hours": "全天開放（店鋪約10:00-22:00）",
   "ticket": "免費",
   "rating": "4.5/5",
@@ -10444,7 +11769,10 @@ const PLACES = [
    "順逛萬象城"
   ],
   "notes": "緊鄰萬象城可一併逛；工作日人少體驗更好；保留居民生活區請勿擾民",
-  "duration": "1-2小時"
+  "duration": "1-2小時",
+  "amap_poiid": "B0M6BMG8H2",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "紫薇路",
@@ -10452,8 +11780,8 @@ const PLACES = [
   "type": "商圈",
   "area": "渝北區",
   "address": "重慶市渝北區龍溪街道紫薇路（新牌坊附近）",
-  "lat": 29.59239,
-  "lng": 106.53401,
+  "lat": null,
+  "lng": null,
   "hours": "店鋪約11:00-24:00（酒吧至凌晨）",
   "ticket": "免費",
   "rating": null,
@@ -10467,16 +11795,18 @@ const PLACES = [
    "街拍ins風店面"
   ],
   "notes": "傍晚至夜間氛圍最佳；6號線紅旗河溝站步行約15分鐘；周末部分熱門店需排隊",
-  "duration": "2-3小時"
+  "duration": "2-3小時",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "釣魚城",
   "city": "重庆",
   "type": "景点",
   "area": "合川區",
-  "address": "重慶市合川區合陽城街道釣魚城大道（嘉陵江畔釣魚山上）",
-  "lat": 29.989,
-  "lng": 106.319,
+  "address": "重慶市合川區釣魚城大道魚城村",
+  "lat": 30.002952,
+  "lng": 106.311798,
   "hours": "8:30-17:00",
   "ticket": "60元（2026年3月前門票及停車場限時免費，優惠政策以景區公告為準）",
   "rating": "4.6/5",
@@ -10490,16 +11820,19 @@ const PLACES = [
    "俯瞰三江匯流"
   ],
   "notes": "重慶北站乘高鐵至合川約25分鐘再轉車；山上步行量較大；適合歷史愛好者半日遊",
-  "duration": "3-4小時"
+  "duration": "3-4小時",
+  "amap_poiid": "B0017004BD",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "萬盛黑山谷",
   "city": "重庆",
   "type": "景点",
   "area": "萬盛經開區",
-  "address": "重慶市萬盛經開區黑山鎮（重慶主城東南約110公里）",
-  "lat": 28.885,
-  "lng": 106.988,
+  "address": "重慶市綦江區萬盛經開區谷南門",
+  "lat": 28.869711,
+  "lng": 106.960662,
   "hours": "旺季8:30-15:30售票，淡季9:00-15:00售票（景區17:30清場）",
   "ticket": "旺季（3-10月）85元，淡季（11-2月）60元；觀光車/索道單程各約30元",
   "rating": "4.5/5",
@@ -10513,7 +11846,10 @@ const PLACES = [
    "順遊萬盛石林或奧陶紀"
   ],
   "notes": "全程徒步約5-6小時，可南門進北門出；夏季周末人多建議早到；主城有旅遊直通車",
-  "duration": "5-7小時"
+  "duration": "5-7小時",
+  "amap_poiid": "B0FFF36N6W",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "金佛山",
@@ -10521,8 +11857,8 @@ const PLACES = [
   "type": "景点",
   "area": "南川區",
   "address": "重慶市南川區金佛山（西門/北門兩大主入口）",
-  "lat": 29.026,
-  "lng": 107.185,
+  "lat": null,
+  "lng": null,
   "hours": "平日9:00-17:00，周末8:30-17:30，節假日8:00-17:30；滑雪場10:00-16:00",
   "ticket": "淡季70元/旺季80元；往返索道西門80元、北門70元；滑雪另計",
   "rating": "4.6/5",
@@ -10536,7 +11872,9 @@ const PLACES = [
    "絕壁棧道徒步"
   ],
   "notes": "12月-2月滑雪季最熱門，雪具租賃需排隊；西門與北門相距50公里勿走錯；主城自駕約2小時",
-  "duration": "1天"
+  "duration": "1天",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "北溫泉·柏聯溫泉",
@@ -10544,8 +11882,8 @@ const PLACES = [
   "type": "景点",
   "area": "北碚區",
   "address": "重慶市北碚區嘉陵江溫塘峽西岸北溫泉公園內",
-  "lat": 29.8524,
-  "lng": 106.4118,
+  "lat": null,
+  "lng": null,
   "hours": "柏聯溫泉：周一至周五13:00-21:00，周末10:00-22:00",
   "ticket": "柏聯溫泉平日328元、周末398元；北溫泉公園門票另計（較低廉）",
   "rating": "4.7/5",
@@ -10559,16 +11897,18 @@ const PLACES = [
    "串聯金剛碑巡江步道"
   ],
   "notes": "冬季與雨天泡湯氛圍最佳；可與金剛碑、縉雲山組成北碚一日遊；柏聯屬高端定位建議提前訂",
-  "duration": "3-4小時"
+  "duration": "3-4小時",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "兩江國際影視城（民國街）",
   "city": "重庆",
   "type": "景点",
   "area": "渝北區",
-  "address": "重慶市渝北區龍興鎮兩江大道618號",
-  "lat": 29.699,
-  "lng": 106.774,
+  "address": "重慶市兩江新區龍興鎮金御大道268號",
+  "lat": 29.682451,
+  "lng": 106.822367,
   "hours": "8:30-18:30",
   "ticket": "40元（學生、老人等有優惠）",
   "rating": "4.4/5",
@@ -10582,16 +11922,19 @@ const PLACES = [
    "嘗老重慶小吃"
   ],
   "notes": "距主城約40分鐘車程；服裝租賃店多在景區內；節假日有主題活動人氣最旺",
-  "duration": "3-5小時"
+  "duration": "3-5小時",
+  "amap_poiid": "B001790Z9L",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "武隆仙女山國家森林公園",
   "city": "重庆",
   "type": "景点",
   "area": "武隆區",
-  "address": "重慶市武隆區仙女山鎮（武隆城區北側）",
-  "lat": 29.503,
-  "lng": 107.726,
+  "address": "重慶市武隆區雙河鄉",
+  "lat": 29.495371,
+  "lng": 107.749641,
   "hours": "旺季8:30-17:00（冬季雪季以公告為準）",
   "ticket": "50-60元（小火車、滑雪、騎馬等項目另計）",
   "rating": "4.6/5",
@@ -10605,16 +11948,19 @@ const PLACES = [
    "森林步道徒步"
   ],
   "notes": "與天生三橋（已收錄）可組兩日遊；海拔近2000米早晚溫差大；雪季周末房源緊張需早訂",
-  "duration": "半天-1天"
+  "duration": "半天-1天",
+  "amap_poiid": "B001786W8A",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "光環購物公園",
   "city": "重庆",
   "type": "商场",
   "area": "渝北區",
-  "address": "重慶市渝北區湖彩路118號（軌道重光站2B口旁）",
-  "lat": 29.651281,
-  "lng": 106.530216,
+  "address": "重慶市兩江新區湖彩路118號(重光地鐵站1號口步行)",
+  "lat": 29.650527,
+  "lng": 106.529275,
   "hours": "10:00-21:30",
   "ticket": "免費",
   "rating": "4.8/5",
@@ -10628,16 +11974,19 @@ const PLACES = [
    "巨型松鼠「閃閃」合影"
   ],
   "notes": "沐光森林免費但高峰期需預約或排隊；工作日人少出片更容易；地鐵重光站直達",
-  "duration": "2-3小時"
+  "duration": "2-3小時",
+  "amap_poiid": "B0G0XNX46G",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "新光天地重慶",
   "city": "重庆",
   "type": "商场",
   "area": "渝北區",
-  "address": "重慶市渝北區新溉大道2號",
-  "lat": 29.601,
-  "lng": 106.53,
+  "address": "重慶市兩江新區紅錦大道89號SKLP(新光裡)",
+  "lat": 29.595483,
+  "lng": 106.520895,
   "hours": "10:00-22:00",
   "ticket": "免費",
   "rating": "4.7/5",
@@ -10651,7 +12000,10 @@ const PLACES = [
    "節日主題美陳打卡"
   ],
   "notes": "節日美陳（聖誕、新年）為打卡高峰；停車方便適合自駕；與紫薇路相距不遠可串聯",
-  "duration": "2-3小時"
+  "duration": "2-3小時",
+  "amap_poiid": "B0G0A6PYTQ",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "砂之船（重慶兩江）奧萊",
@@ -10659,8 +12011,8 @@ const PLACES = [
   "type": "商场",
   "area": "渝北區（兩江新區）",
   "address": "重慶市兩江新區奧特萊斯路1號",
-  "lat": 29.623,
-  "lng": 106.556,
+  "lat": null,
+  "lng": null,
   "hours": "10:00-22:00",
   "ticket": "免費",
   "rating": "4.5/5",
@@ -10674,7 +12026,9 @@ const PLACES = [
    "周年慶蹲大促"
   ],
   "notes": "店慶（9月前後）與年末折扣力度最大；軌道金渝站步行可達；周末人多建議上午去",
-  "duration": "2-4小時"
+  "duration": "2-4小時",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "際華園奧特萊斯",
@@ -10682,8 +12036,8 @@ const PLACES = [
   "type": "商场",
   "area": "渝北區（兩江新區龍興）",
   "address": "重慶市兩江新區龍興鎮兩江大道聯東U谷旁際華園",
-  "lat": 29.708,
-  "lng": 106.73,
+  "lat": null,
+  "lng": null,
   "hours": "10:00-21:00",
   "ticket": "免費",
   "rating": "4.4/5",
@@ -10697,16 +12051,18 @@ const PLACES = [
    "順遊兩江影視城"
   ],
   "notes": "極限運動項目需另行購票預約；距主城約40分鐘車程適合自駕；與民國街打包一日遊",
-  "duration": "3-5小時"
+  "duration": "3-5小時",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "重慶天地",
   "city": "重庆",
   "type": "商圈",
   "area": "渝中區",
-  "address": "重慶市渝中區化龍橋嘉陵江畔重慶天地（瑞安天地系）",
-  "lat": 29.553176,
-  "lng": 106.507616,
+  "address": "重慶市渝中區(停運)T002路;(停運)T777路;3200路",
+  "lat": 29.552445,
+  "lng": 106.509423,
   "hours": "店鋪約10:00-22:00（酒吧餐廳至更晚）",
   "ticket": "免費",
   "rating": "4.6/5",
@@ -10720,16 +12076,19 @@ const PLACES = [
    "節日市集逛攤"
   ],
   "notes": "傍晚至夜間氛圍最佳；緊鄰李子壩可串聯輕軌穿樓；聖誕新年燈飾季人氣最高",
-  "duration": "2-3小時"
+  "duration": "2-3小時",
+  "amap_poiid": "BV10883708",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "長嘉匯購物公園",
   "city": "重庆",
   "type": "商场",
   "area": "南岸區",
-  "address": "重慶市南岸區南濱路22號（彈子石，長江嘉陵江交匯處）",
-  "lat": 29.561,
-  "lng": 106.596,
+  "address": "重慶市南岸區泰昌路69號",
+  "lat": 29.578216,
+  "lng": 106.58603,
   "hours": "10:00-22:00",
   "ticket": "免費",
   "rating": "4.7/5",
@@ -10743,7 +12102,10 @@ const PLACES = [
    "節日無人機表演最佳機位"
   ],
   "notes": "跨年與節日燈光秀時人氣爆棚；與彈子石老街（已收錄）無縫銜接；日落時分到場最佳",
-  "duration": "2-3小時"
+  "duration": "2-3小時",
+  "amap_poiid": "B0FFH435WX",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "囍街",
@@ -10751,8 +12113,8 @@ const PLACES = [
   "type": "夜市",
   "area": "渝中區",
   "address": "重慶市渝中區化龍橋瑞天路56號（重慶天地旁）",
-  "lat": 29.569,
-  "lng": 106.52,
+  "lat": null,
+  "lng": null,
   "hours": "約11:00-次日2:00（夜間為高峰）",
   "ticket": "免費",
   "rating": null,
@@ -10766,16 +12128,18 @@ const PLACES = [
    "與重慶天地連逛"
   ],
   "notes": "夜晚亮燈後才是精華；與重慶天地步行可達；周末深夜排隊店多",
-  "duration": "1.5-3小時"
+  "duration": "1.5-3小時",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "三峽廣場商圈",
   "city": "重庆",
   "type": "商圈",
   "area": "沙坪垻區",
-  "address": "重慶市沙坪垻區小龍坎—沙坪垻站之間三峽廣場",
-  "lat": 29.557,
-  "lng": 106.456,
+  "address": "重慶市沙坪垻區沙坪垻地鐵站出入口步行420米",
+  "lat": 29.557122,
+  "lng": 106.462431,
   "hours": "全天開放（商場約10:00-22:00）",
   "ticket": "免費",
   "rating": "4.5/5",
@@ -10789,7 +12153,10 @@ const PLACES = [
    "順訪磁器口或大學城"
   ],
   "notes": "高鐵沙坪垻站與1號線/環線交匯交通極便利；學生放學與周末人流大；與磁器口相距僅2站",
-  "duration": "2-3小時"
+  "duration": "2-3小時",
+  "amap_poiid": "B00170I203",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "成都太古里春熙美居酒店",
@@ -10797,13 +12164,16 @@ const PLACES = [
   "city": "成都",
   "category": "住宿",
   "area": "錦江區·春熙路/總府路",
-  "address": "四川省成都市錦江區暑襪北三街20號蜀都大廈東樓11-30層",
-  "lat": 30.6613,
-  "lng": 104.0763,
+  "address": "成都市錦江區暑襪北三街20號東樓11-30層",
+  "lat": 30.659346,
+  "lng": 104.075525,
   "price": "約350-550元",
   "hours": "24h",
   "reason": "374間高層客房，位於總府路蜀都大廈，高樓層視野好；步行10分鐘內到春熙路太古里，是春熙路商圈性價比之選。",
-  "notes": "步行至地鐵2/3號線春熙路站約10分鐘、1/2號線天府廣場站約12分鐘；與宜必思蜀都大廈店同樓，注意別訂錯。"
+  "notes": "步行至地鐵2/3號線春熙路站約10分鐘、1/2號線天府廣場站約12分鐘；與宜必思蜀都大廈店同樓，注意別訂錯。",
+  "amap_poiid": "B0FFJ3R2IL",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "重慶解放碑美居酒店",
@@ -10811,22 +12181,25 @@ const PLACES = [
   "city": "重庆",
   "category": "住宿",
   "area": "渝中區·解放碑/較場口",
-  "address": "重慶市渝中區八一路183號",
-  "lat": 29.555,
-  "lng": 106.575,
+  "address": "重慶市渝中區八一路183號(較場口地鐵站9號口步行440米)",
+  "lat": 29.555131,
+  "lng": 106.577749,
   "price": "約350-500元",
   "hours": "24h",
   "reason": "解放碑商圈核心的四星美居，出門即八一路好吃街，逛解放碑、洪崖洞都步行可達。",
-  "notes": "距地鐵1/2號線較場口站9號口步行約350米5分鐘；到洪崖洞步行約12分鐘；跨年夜（12/31）解放碑人流巨大且房價暴漲，儘早預訂。"
+  "notes": "距地鐵1/2號線較場口站9號口步行約350米5分鐘；到洪崖洞步行約12分鐘；跨年夜（12/31）解放碑人流巨大且房價暴漲，儘早預訂。",
+  "amap_poiid": "B0JUVS73UZ",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "成都SKP",
   "city": "成都",
   "type": "商场",
   "area": "高新區·交子公園商圈",
-  "address": "成都市高新區天府大道北段2001號（交子大道旁）",
-  "lat": 30.5842,
-  "lng": 104.065,
+  "address": "成都市武侯區天府大道北段2001號",
+  "lat": 30.569005,
+  "lng": 104.070442,
   "hours": "10:00-22:00",
   "reason": "亞洲最大下沉式高端時尚百貨，與交子公園無縫銜接，是成都最新的奢侈品地標，公園+購物一體的獨特體驗。",
   "activities": [
@@ -10836,16 +12209,19 @@ const PLACES = [
    "RENDEZ-VOUS 書店與咖啡",
    "地下美食層覓食"
   ],
-  "notes": "持台胞證/外國護照可辦理離境退稅；建築為下沉式，入口在公園地面層，注意導航定位；12月傍晚可順看雙子塔燈光秀，室外風大注意保暖。"
+  "notes": "持台胞證/外國護照可辦理離境退稅；建築為下沉式，入口在公園地面層，注意導航定位；12月傍晚可順看雙子塔燈光秀，室外風大注意保暖。",
+  "amap_poiid": "B0LKVH3MZY",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "新世紀環球中心",
   "city": "成都",
   "type": "商场",
   "area": "武侯區·天府大道",
-  "address": "成都市武侯區天府大道北段1700號",
-  "lat": 30.5731,
-  "lng": 104.0618,
+  "address": "成都市武侯區天府大道北段1700號環球中心",
+  "lat": 30.568143,
+  "lng": 104.065769,
   "hours": "10:00-22:00",
   "reason": "世界最大單體建築（約176萬㎡），集購物、室內海洋樂園、溜冰場、洲際酒店於一體，本身就是打卡奇觀。",
   "activities": [
@@ -10855,7 +12231,10 @@ const PLACES = [
    "中庭地中海風格建築拍照",
    "各層餐飲美食"
   ],
-  "notes": "體量極大、容易迷路，建議先看樓層導覽圖規劃路線；地鐵1號線錦城廣場站直達；12月室內恆溫，適合躲寒流的雨天備案行程。"
+  "notes": "體量極大、容易迷路，建議先看樓層導覽圖規劃路線；地鐵1號線錦城廣場站直達；12月室內恆溫，適合躲寒流的雨天備案行程。",
+  "amap_poiid": "B0FFL9N1KX",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "成都萬象城",
@@ -10863,8 +12242,8 @@ const PLACES = [
   "type": "商场",
   "area": "成華區·雙慶路",
   "address": "成都市成華區雙慶路8號",
-  "lat": 30.64974,
-  "lng": 104.11693,
+  "lat": 30.64849,
+  "lng": 104.11539,
   "hours": "10:00-22:00",
   "reason": "華潤旗下城東最大購物中心，一二期連體，品牌齊全、餐飲豐富，是本地人氣最旺的綜合體之一。",
   "activities": [
@@ -10874,7 +12253,10 @@ const PLACES = [
    "小酒館萬象城店（比玉林店好排隊）",
    "樓上川菜與火鍋餐廳"
   ],
-  "notes": "地鐵7/8號線東郊記憶站或雙店路一帶可達；周末餐廳排隊嚴重，建議避開飯點或提前取號；12月聖誕美陳適合拍照。"
+  "notes": "地鐵7/8號線東郊記憶站或雙店路一帶可達；周末餐廳排隊嚴重，建議避開飯點或提前取號；12月聖誕美陳適合拍照。",
+  "amap_poiid": "B001C8O6UD",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "成都大悅城",
@@ -10882,8 +12264,8 @@ const PLACES = [
   "type": "商场",
   "area": "武侯區·大悅路",
   "address": "成都市武侯區大悅路518號",
-  "lat": 30.626443,
-  "lng": 104.01037,
+  "lat": 30.626041,
+  "lng": 104.011166,
   "hours": "10:00-22:00",
   "reason": "城西南年輕潮流地標，街區式+盒子結合，網紅餐飲和文創業態密集，周末市集活動多。",
   "activities": [
@@ -10893,7 +12275,10 @@ const PLACES = [
    "看展或主題市集（不定期）",
    "金逸影城"
   ],
-  "notes": "地鐵9號線錦城大道站/機場路沿線可達；離市中心稍遠，建議與武侯祠、錦里同日安排；夜間街區燈光適合拍照但12月室外冷。"
+  "notes": "地鐵9號線錦城大道站/機場路沿線可達；離市中心稍遠，建議與武侯祠、錦里同日安排；夜間街區燈光適合拍照但12月室外冷。",
+  "amap_poiid": "B0FFFACY1X",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "王府井百貨（總府店）",
@@ -10901,8 +12286,8 @@ const PLACES = [
   "type": "商场",
   "area": "錦江區·總府路（春熙路商圈北）",
   "address": "成都市錦江區總府路15號",
-  "lat": 30.6607,
-  "lng": 104.0812,
+  "lat": 30.658311,
+  "lng": 104.079598,
   "hours": "10:00-22:00",
   "reason": "春熙路商圈老牌百貨，化妝品與國內外品牌專櫃齊全，價格常有折扣，本地人買正價品的傳統首選。",
   "activities": [
@@ -10912,7 +12297,10 @@ const PLACES = [
    "順遊華興街老字號小吃",
    "步行至春熙路/太古里"
   ],
-  "notes": "地鐵2/3號線春熙路站步行可達；周年慶與年末折扣力度大，12月正值促銷季；與華興街夜宵可串成一條線。"
+  "notes": "地鐵2/3號線春熙路站步行可達；周年慶與年末折扣力度大，12月正值促銷季；與華興街夜宵可串成一條線。",
+  "amap_poiid": "B001C8N4NW",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "伊藤洋華堂（春熙店）",
@@ -10920,8 +12308,8 @@ const PLACES = [
   "type": "商场",
   "area": "錦江區·春熙路商圈",
   "address": "成都市錦江區大科甲巷8號",
-  "lat": 30.6558,
-  "lng": 104.0832,
+  "lat": null,
+  "lng": null,
   "hours": "10:00-22:00",
   "reason": "日系百貨在成都的傳奇門店，地下食品超市是買伴手禮和熟食的寶藏，本地人黏性極高。",
   "activities": [
@@ -10931,16 +12319,18 @@ const PLACES = [
    "頂樓餐廳街",
    "步行逛春熙路"
   ],
-  "notes": "位於春熙路旁的大科甲巷，入口不大易錯過；傍晚熟食區打折人多；適合行程最後一天集中採購伴手禮。"
+  "notes": "位於春熙路旁的大科甲巷，入口不大易錯過；傍晚熟食區打折人多；適合行程最後一天集中採購伴手禮。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "仁恆置地廣場",
   "city": "成都",
   "type": "商场",
   "area": "錦江區·人民南路",
-  "address": "成都市錦江區人民南路二段108號",
-  "lat": 30.6528,
-  "lng": 104.0723,
+  "address": "成都市錦江區督院街街道人民南路二段一號",
+  "lat": 30.651889,
+  "lng": 104.067183,
   "hours": "10:00-22:00",
   "reason": "人民南路上的精品高端商場，奢侈品與輕奢品牌精選，人流比太古里少，購物體驗清靜。",
   "activities": [
@@ -10950,16 +12340,19 @@ const PLACES = [
    "毗鄰天府廣場順遊",
    "咖啡廳小憩"
   ],
-  "notes": "地鐵1/2號線天府廣場站步行約10分鐘；商場偏安靜，適合不愛人擠人的購物；可與天府廣場、四川科技館同線安排。"
+  "notes": "地鐵1/2號線天府廣場站步行約10分鐘；商場偏安靜，適合不愛人擠人的購物；可與天府廣場、四川科技館同線安排。",
+  "amap_poiid": "B001C7XTIW",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "龍湖濱江天街",
   "city": "成都",
   "type": "商场",
   "area": "成華區·杉板橋（東郊記憶旁）",
-  "address": "成都市成華區杉板橋路266號",
-  "lat": 30.6552,
-  "lng": 104.1285,
+  "address": "成都市成華區成華大道杉板橋路266號",
+  "lat": 30.66552,
+  "lng": 104.125231,
   "hours": "周一至周四 10:00-22:00；周五周六及節假日 10:00-22:30",
   "reason": "城東年輕潮流聚集地，緊鄰東郊記憶藝術園區，餐飲娛樂業態新，適合與工業風園區串聯遊玩。",
   "activities": [
@@ -10969,16 +12362,19 @@ const PLACES = [
    "潮牌與運動品牌",
    "屋頂露台夜景"
   ],
-  "notes": "地鐵8號線杉板橋站A口步行約300米；建議下午逛東郊記憶、晚上回天街吃飯；12月夜間室外區域較冷。"
+  "notes": "地鐵8號線杉板橋站A口步行約300米；建議下午逛東郊記憶、晚上回天街吃飯；12月夜間室外區域較冷。",
+  "amap_poiid": "B0FFLO2OW7",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "玉林夜市（玉林生活廣場一帶）",
   "city": "成都",
   "type": "夜市",
   "area": "武侯區·玉林西路",
-  "address": "成都市武侯區玉林西街12號玉林綜合市場至玉林西路、玉林街一帶",
-  "lat": 30.6271,
-  "lng": 104.059,
+  "address": "成都市武侯區玉林南路15號",
+  "lat": 30.620563,
+  "lng": 104.058036,
   "hours": "玉林綜合市場約早晨至傍晚；街區夜市、餐館與酒館約17:00-02:00，高峰20:00-24:00",
   "reason": "玉林不是單一攤販夜市，而是從玉林綜合市場向玉林西路、玉林街延伸的分散型美食夜生活區；菜市熟食、串串、烤兔、火鍋、冰粉與小酒館構成完整逛吃路線。",
   "activities": [
@@ -10989,16 +12385,19 @@ const PLACES = [
    "小酒館門口打卡《成都》",
    "沙子堰東巷與玉林西路散步"
   ],
-  "notes": "建議下午先逛玉林綜合市場，傍晚接玉林街烤兔與串串，最後沿玉林西路走到小酒館；市場熟食多在傍晚前收攤。此處是街區型分散夜市，不是有統一入口與固定攤位的觀光夜市。"
+  "notes": "建議下午先逛玉林綜合市場，傍晚接玉林街烤兔與串串，最後沿玉林西路走到小酒館；市場熟食多在傍晚前收攤。此處是街區型分散夜市，不是有統一入口與固定攤位的觀光夜市。",
+  "amap_poiid": "B001C0ACZL",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "犀浦夜市",
   "city": "成都",
   "type": "夜市",
   "area": "郫都區·犀浦（大學城）",
-  "address": "成都市郫都區犀浦街道玉龍二巷7號一帶",
-  "lat": 30.7565,
-  "lng": 103.9705,
+  "address": "",
+  "lat": 30.750466,
+  "lng": 103.96438,
   "hours": "約17:00-24:00，高峰19:00-22:30",
   "reason": "成都為數不多的老牌大型夜市，被稱為犀浦大學城的美食之光，小吃便宜量足、攤位密集。",
   "activities": [
@@ -11008,16 +12407,19 @@ const PLACES = [
    "烤五花、烤魷魚",
    "淘各種平價雜貨攤"
   ],
-  "notes": "地鐵2號線犀浦站（成灌鐵路同站）步行可達，距市區約40分鐘車程；學生客群為主、價格親民；冬夜露天攤位冷，多穿一件。"
+  "notes": "地鐵2號線犀浦站（成灌鐵路同站）步行可達，距市區約40分鐘車程；學生客群為主、價格親民；冬夜露天攤位冷，多穿一件。",
+  "amap_poiid": "B0J6AO98ZW",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "華興街夜宵街",
   "city": "成都",
   "type": "夜市",
   "area": "錦江區·華興正街（春熙路商圈北）",
-  "address": "成都市錦江區華興正街、華興上街一帶",
-  "lat": 30.6614,
-  "lng": 104.0792,
+  "address": "成都市錦江區純陽觀街與梓潼橋西街交叉口南20米",
+  "lat": 30.660342,
+  "lng": 104.079535,
   "hours": "老字號白天營業，夜宵檔至凌晨；高峰21:00-01:00",
   "reason": "緊鄰春熙路的百年老街，藏著成都人心中的老味道，煎蛋面、盤飧市滷味等老字號是深夜食堂經典。",
   "activities": [
@@ -11027,16 +12429,19 @@ const PLACES = [
    "夜宵燒烤與冷淡杯",
    "順看悅來茶園川劇"
   ],
-  "notes": "從春熙路/王府井步行即到，適合逛完商圈來吃宵夜；老店多為蒼蠅館子風格，環境樸素但味道地道；部分老字號22點前打烊，純夜宵檔更晚。"
+  "notes": "從春熙路/王府井步行即到，適合逛完商圈來吃宵夜；老店多為蒼蠅館子風格，環境樸素但味道地道；部分老字號22點前打烊，純夜宵檔更晚。",
+  "amap_poiid": "B0IUC977DS",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "香香巷（望平街）",
   "city": "成都",
   "type": "夜市",
   "area": "成華區·望平街（錦江邊）",
-  "address": "成都市成華區望平街香香巷",
-  "lat": 30.653776,
-  "lng": 104.089806,
+  "address": "成都市成華區望平街25號附1號",
+  "lat": 30.653756,
+  "lng": 104.09007,
   "hours": "約11:00-23:00（各店不一），高峰18:00-22:00",
   "reason": "寬不足5米、長約百米的川西民居窄巷，霓虹燈下密集匯聚火鍋、燒鳥、鹽幫菜、甜品酒館，被稱為微縮版賽博唐人街。",
   "activities": [
@@ -11046,16 +12451,19 @@ const PLACES = [
    "覓豆豆花甜品",
    "沿錦江望平濱河路夜間散步"
   ],
-  "notes": "巷子極窄、飯點排隊多，建議錯峰18點前入座；環境比傳統夜市精緻，適合怕髒亂的遊客；可與祥和里、東門碼頭夜遊錦江串聯。"
+  "notes": "巷子極窄、飯點排隊多，建議錯峰18點前入座；環境比傳統夜市精緻，適合怕髒亂的遊客；可與祥和里、東門碼頭夜遊錦江串聯。",
+  "amap_poiid": "B001C8OQ5G",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "祥和里美食街",
   "city": "成都",
   "type": "夜市",
   "area": "成華區·雙林路/猛追灣",
-  "address": "成都市成華區祥和里（近雙林路）",
-  "lat": 30.6585,
-  "lng": 104.106,
+  "address": "成都市成華區祥和里123號祥和里123號居民大院",
+  "lat": 30.657505,
+  "lng": 104.096742,
   "hours": "10:00-24:00，高峰19:00-22:00",
   "reason": "600米老居民樓街區改造的特色美食街，蒼蠅館子與網紅店混搭，是本地人帶外地朋友吃飯的口袋名單。",
   "activities": [
@@ -11065,16 +12473,19 @@ const PLACES = [
    "老居民樓街景拍照",
    "周邊精釀酒吧與咖啡店"
   ],
-  "notes": "與香香巷步行可串聯（約10-15分鐘）；店多為小館子，高峰期需拼桌或等位；街區無大型停車場，建議地鐵+步行。"
+  "notes": "與香香巷步行可串聯（約10-15分鐘）；店多為小館子，高峰期需拼桌或等位；街區無大型停車場，建議地鐵+步行。",
+  "amap_poiid": "B001C7WANC",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "雙流老媽兔頭（總店）美食一條街",
   "city": "成都",
   "type": "夜市",
   "area": "雙流區·東升街道",
-  "address": "成都市雙流區東升街道清泰路一段41號",
-  "lat": 30.5605,
-  "lng": 103.9295,
+  "address": "成都市雙流區清泰路一段43號",
+  "lat": 30.574303,
+  "lng": 103.92964,
   "hours": "08:00-22:00，高峰18:00-21:00（晚市排隊最長）",
   "reason": "30年老店、號稱全四川別無分號的雙流老媽兔頭髮源地，現滷現賣常年排隊，周邊聚集雙流特色美食。",
   "activities": [
@@ -11085,6 +12496,9 @@ const PLACES = [
    "感受雙流老城煙火氣"
   ],
   "notes": "地鐵3號線東升站B口步行約9分鐘；離市區較遠（約1小時），適合與黃龍溪古鎮或雙流機場行程搭配；22點打烊，不是深夜檔，請安排在晚飯時段。",
+  "amap_poiid": "B001C089E1",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "rating": "4.3/5",
   "rating_source": "大眾點評（用戶提供，2026/07/12）"
  },
@@ -11093,9 +12507,9 @@ const PLACES = [
   "city": "重庆",
   "type": "商场",
   "area": "渝中區·朝天門",
-  "address": "重慶市渝中區朝天門接聖街8號",
-  "lat": 29.563517,
-  "lng": 106.58813,
+  "address": "重慶市渝中區接聖街8號重慶來福士公寓(朝天門地鐵站2號口步行90米)",
+  "lat": 29.56386,
+  "lng": 106.586015,
   "hours": "商場10:00-22:00；水晶連廊觀景台10:00-22:00（21:15停止檢票）",
   "reason": "兩江交匯處的橫向摩天樓地標，250米高空水晶連廊俯瞰朝天門江景，購物+觀景一次滿足。",
   "activities": [
@@ -11105,16 +12519,19 @@ const PLACES = [
    "高空餐廳酒吧看夜景",
    "下樓即朝天門碼頭看遊輪"
   ],
-  "notes": "地鐵1/6號線小什字站8號口步行可達；觀景台分時段實名預約限流，旺季建議提前購票；12月江邊風大，日落約18點、可銜接兩江夜遊。"
+  "notes": "地鐵1/6號線小什字站8號口步行可達；觀景台分時段實名預約限流，旺季建議提前購票；12月江邊風大，日落約18點、可銜接兩江夜遊。",
+  "amap_poiid": "B0I0MH34JJ",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "龍湖北城天街",
   "city": "重庆",
   "type": "商场",
   "area": "江北區·觀音橋商圈",
-  "address": "重慶市江北區建新北路8號",
-  "lat": 29.57793,
-  "lng": 106.5341,
+  "address": "重慶市兩江新區北城天街6號北城天街A館",
+  "lat": 29.577828,
+  "lng": 106.533355,
   "hours": "10:00-22:00",
   "reason": "龍湖天街始祖店、觀音橋商圈核心，年輕潮流品牌密集，緊鄰觀音橋步行街與不夜九街。",
   "activities": [
@@ -11124,7 +12541,10 @@ const PLACES = [
    "好吃街小吃",
    "夜逛九街（步行/一站地鐵）"
   ],
-  "notes": "地鐵3號線觀音橋站直達；周末與晚間人流量極大；可安排傍晚逛街、夜裡轉場九街，一晚玩透觀音橋。"
+  "notes": "地鐵3號線觀音橋站直達；周末與晚間人流量極大；可安排傍晚逛街、夜裡轉場九街，一晚玩透觀音橋。",
+  "amap_poiid": "B0L13772TQ",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "龍湖時代天街",
@@ -11132,8 +12552,8 @@ const PLACES = [
   "type": "商场",
   "area": "渝中區·大坪",
   "address": "重慶市渝中區長江二路174號（大坪站上蓋）",
-  "lat": 29.53912,
-  "lng": 106.51046,
+  "lat": null,
+  "lng": null,
   "hours": "10:00-22:00",
   "reason": "全國體量最大的龍湖天街之一（A-E多館連體），品牌與餐飲選擇極多，地鐵上蓋交通極便利。",
   "activities": [
@@ -11143,16 +12563,18 @@ const PLACES = [
    "電影院與室內娛樂",
    "聖誕季中庭美陳拍照"
   ],
-  "notes": "地鐵1/2號線大坪站直連商場；體量巨大建議鎖定目標館再逛；飯點熱門餐廳取號早，可先取號再逛街。"
+  "notes": "地鐵1/2號線大坪站直連商場；體量巨大建議鎖定目標館再逛；飯點熱門餐廳取號早，可先取號再逛街。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "重慶萬象城",
   "city": "重庆",
   "type": "商场",
   "area": "九龍坡區·謝家灣",
-  "address": "重慶市九龍坡區謝家灣正街55號",
-  "lat": 29.524,
-  "lng": 106.5205,
+  "address": "重慶市九龍坡區謝家灣正街55號(謝家灣地鐵站6號口步行450米)",
+  "lat": 29.517778,
+  "lng": 106.518844,
   "hours": "10:00-22:00",
   "reason": "華潤在重慶的高端綜合體，一二期連通，品牌梯度全、環境寬敞，是九龍坡區的商業地標。",
   "activities": [
@@ -11162,16 +12584,19 @@ const PLACES = [
    "餐飲層重慶本地菜",
    "順遊附近民主村更新街區"
   ],
-  "notes": "地鐵2號線謝家灣站步行可達；比解放碑商圈人少、逛起來舒適；附近李子壩穿樓列車打卡點僅兩站地鐵。"
+  "notes": "地鐵2號線謝家灣站步行可達；比解放碑商圈人少、逛起來舒適；附近李子壩穿樓列車打卡點僅兩站地鐵。",
+  "amap_poiid": "B0FFF3O598",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "重慶IFS國金中心",
   "city": "重庆",
   "type": "商场",
   "area": "江北區·江北嘴CBD",
-  "address": "重慶市江北區江北嘴慶雲路1號",
-  "lat": 29.57621,
-  "lng": 106.57354,
+  "address": "重慶市兩江新區慶雲路1號(江北城地鐵站4號口步行70米)",
+  "lat": 29.575714,
+  "lng": 106.57343,
   "hours": "10:00-22:00",
   "reason": "江北嘴金融區的高端購物中心，樓頂趴著標誌性雕塑I AM HERE熊貓，隔江正對朝天門來福士夜景。",
   "activities": [
@@ -11181,16 +12606,19 @@ const PLACES = [
    "高空景觀餐廳",
    "沿江北嘴江灘步道散步"
   ],
-  "notes": "地鐵6/9號線江北城站直連；觀景與拍夜景建議日落後前往；12月江風冷，室外觀景平台注意保暖。"
+  "notes": "地鐵6/9號線江北城站直連；觀景與拍夜景建議日落後前往；12月江風冷，室外觀景平台注意保暖。",
+  "amap_poiid": "B0FFF9Q677",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "龍湖金沙天街",
   "city": "重庆",
   "type": "商场",
   "area": "沙坪垻區·沙坪垻高鐵站上蓋",
-  "address": "重慶市沙坪垻區站東路1號（沙坪垻站上蓋）",
-  "lat": 29.5545,
-  "lng": 106.4555,
+  "address": "重慶市沙坪垻區北站東路188號(沙坪垻地鐵站8號口步50米)",
+  "lat": 29.553927,
+  "lng": 106.460765,
   "hours": "10:00-22:00",
   "reason": "全國首個高鐵站上蓋TOD商業，東西雙館體量巨大，光環購物公園式綠植中庭出片，沙坪垻商圈新地標。",
   "activities": [
@@ -11200,7 +12628,10 @@ const PLACES = [
    "餐飲層小吃與火鍋",
    "順遊磁器口古鎮（地鐵2站）"
   ],
-  "notes": "地鐵1/9號線、環線沙坪垻站直達；搭乘成渝高鐵往返成都可順路逛（行李可寄存）；與磁器口、歌樂山同線安排最順。"
+  "notes": "地鐵1/9號線、環線沙坪垻站直達；搭乘成渝高鐵往返成都可順路逛（行李可寄存）；與磁器口、歌樂山同線安排最順。",
+  "amap_poiid": "B0FFI60L1Z",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "重慶百貨大樓（解放碑店）",
@@ -11208,8 +12639,8 @@ const PLACES = [
   "type": "商场",
   "area": "渝中區·解放碑步行街",
   "address": "重慶市渝中區民權路2號",
-  "lat": 29.5573,
-  "lng": 106.5762,
+  "lat": null,
+  "lng": null,
   "hours": "10:00-22:00",
   "reason": "重慶本土百貨龍頭的旗艦老店，坐落解放碑碑體旁，化妝品與黃金珠寶專櫃是本地人年末採購主場。",
   "activities": [
@@ -11219,14 +12650,16 @@ const PLACES = [
    "八一路好吃街覓食",
    "夜看解放碑燈光"
   ],
-  "notes": "地鐵2號線臨江門站或1號線較場口站步行可達；年末促銷折扣多；解放碑跨年夜人流極端擁擠，12月下旬夜間注意錯峰。"
+  "notes": "地鐵2號線臨江門站或1號線較場口站步行可達；年末促銷折扣多；解放碑跨年夜人流極端擁擠，12月下旬夜間注意錯峰。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "撫琴夜市",
   "city": "成都",
   "type": "夜市",
   "area": "金牛區·撫琴",
-  "address": "成都市金牛區撫琴東巷4號（撫琴地鐵站B1口步行約160米）",
+  "address": "成都市金牛區撫琴東巷4號(撫琴地鐵站B1口步行160米)",
   "lat": 30.677227,
   "lng": 104.041565,
   "hours": "17:00-23:30（以當天攤位實際營業為準）",
@@ -11237,16 +12670,19 @@ const PLACES = [
    "觀察本地社區夜生活",
    "地鐵5號線撫琴站B1口進出"
   ],
-  "notes": "多數攤位並非清真且常見烤豬蹄、肥腸等豬肉小吃；不食豬者以散步為主，購買前確認油料與夾具是否混用。"
+  "notes": "多數攤位並非清真且常見烤豬蹄、肥腸等豬肉小吃；不食豬者以散步為主，購買前確認油料與夾具是否混用。",
+  "amap_poiid": "B0IGLU3TUB",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "英利大融城（解放碑店）",
   "city": "重庆",
   "type": "商场",
   "area": "渝中區·解放碑商圈",
-  "address": "重慶市渝中區民權路26號",
-  "lat": 29.556,
-  "lng": 106.577,
+  "address": "重慶市渝中區民權路28號(臨江門地鐵站3號口步行160米)",
+  "lat": 29.555787,
+  "lng": 106.575118,
   "hours": "10:00-22:00",
   "reason": "解放碑商圈年輕化購物中心，潮牌、餐飲與娛樂業態集中，是本地年輕人在解放碑的主要聚點。",
   "activities": [
@@ -11256,16 +12692,19 @@ const PLACES = [
    "與解放碑、八一路串逛",
    "地下層平價小吃"
   ],
-  "notes": "位於解放碑步行街旁，與重慶百貨、較場口夜市步行皆5-10分鐘；適合作為解放碑一帶躲雨歇腳點；晚市餐廳等位較長。"
+  "notes": "位於解放碑步行街旁，與重慶百貨、較場口夜市步行皆5-10分鐘；適合作為解放碑一帶躲雨歇腳點；晚市餐廳等位較長。",
+  "amap_poiid": "B001792LJ2",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "不夜九街（江北九街）",
   "city": "重庆",
   "type": "夜市",
   "area": "江北區·觀音橋商圈·鯉魚池路",
-  "address": "重慶市江北區鯉魚池路九街街區",
-  "lat": 29.5848,
-  "lng": 106.5402,
+  "address": "重慶市兩江新區北城天街46號",
+  "lat": 29.579658,
+  "lng": 106.543085,
   "hours": "街區全天，夜間業態通宵營業；高峰22:00-04:00",
   "reason": "重慶夜經濟地標、公認的不夜城核心，酒吧、燒烤、深夜食堂密集，是體驗重慶夜生活的第一站。",
   "activities": [
@@ -11275,16 +12714,19 @@ const PLACES = [
    "live house與音樂酒吧",
    "凌晨小面收尾"
   ],
-  "notes": "地鐵6/10號線紅土地站或3號線觀音橋站步行可達；越夜越熱鬧、24點後才是高峰；治安整體可但深夜留意隨身物品，打車高峰需排隊。"
+  "notes": "地鐵6/10號線紅土地站或3號線觀音橋站步行可達；越夜越熱鬧、24點後才是高峰；治安整體可但深夜留意隨身物品，打車高峰需排隊。",
+  "amap_poiid": "B0I1TY4DXU",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "較場口夜市",
   "city": "重庆",
   "type": "夜市",
   "area": "渝中區·解放碑·較場口",
-  "address": "重慶市渝中區八一路與中華路交匯處協和城（八一廣場後）",
-  "lat": 29.5545,
-  "lng": 106.5738,
+  "address": "重慶市渝中區中華路與八一路交叉口東南20米",
+  "lat": 29.554882,
+  "lng": 106.577228,
   "hours": "10:00-次日02:00（部分商戶24小時），高峰19:00-23:00",
   "reason": "解放碑商圈的現代工業風貨櫃夜市，小吃品類極全、離主景點最近，遊客體驗重慶夜市的首選。",
   "activities": [
@@ -11294,16 +12736,19 @@ const PLACES = [
    "串串香",
    "屋頂露天區看解放碑夜色"
   ],
-  "notes": "地鐵1/2號線較場口站9號口步行即到；人均約50元；與解放碑、洪崖洞步行串聯，12月夜間露天座位冷、建議室內區用餐。"
+  "notes": "地鐵1/2號線較場口站9號口步行即到；人均約50元；與解放碑、洪崖洞步行串聯，12月夜間露天座位冷、建議室內區用餐。",
+  "amap_poiid": "B0FFHIUR17",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "八一路好吃街",
   "city": "重庆",
   "type": "夜市",
   "area": "渝中區·解放碑",
-  "address": "重慶市渝中區八一路（解放碑步行街旁）",
-  "lat": 29.5562,
-  "lng": 106.5752,
+  "address": "重慶市渝中區步行街與八一路交叉口西40米",
+  "lat": 29.5564,
+  "lng": 106.577433,
   "hours": "約09:00-23:00，高峰12:00-14:00、18:00-22:00",
   "reason": "解放碑旁最出名的小吃街，山城湯圓、酸辣粉、烤腦花等重慶經典小吃一條街吃齊。",
   "activities": [
@@ -11313,7 +12758,10 @@ const PLACES = [
    "陳麻花、火鍋底料伴手禮",
    "邊吃邊逛到解放碑"
   ],
-  "notes": "緊鄰解放碑碑體，遊客密度全城最高；熱門攤位隨時在排隊，建議避開正午與晚飯尖峰；注意與較場口夜市步行僅數分鐘，可二選一或串吃。"
+  "notes": "緊鄰解放碑碑體，遊客密度全城最高；熱門攤位隨時在排隊，建議避開正午與晚飯尖峰；注意與較場口夜市步行僅數分鐘，可二選一或串吃。",
+  "amap_poiid": "B0KA5RCWGJ",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "南坪東路夜市",
@@ -11321,8 +12769,8 @@ const PLACES = [
   "type": "夜市",
   "area": "南岸區·南坪商圈",
   "address": "重慶市南岸區南坪東路一帶",
-  "lat": 29.5265,
-  "lng": 106.576,
+  "lat": null,
+  "lng": null,
   "hours": "約18:00-次日02:00，高峰20:00-24:00",
   "reason": "南岸區老牌地攤夜市，本地居民為主、幾乎沒有遊客，燒烤大排檔和地攤小吃煙火氣十足。",
   "activities": [
@@ -11332,16 +12780,18 @@ const PLACES = [
    "平價水果攤",
    "感受重慶本地人的夜生活"
   ],
-  "notes": "地鐵3號線南坪站步行可達；攤位為流動性質、位置隨管理調整，以現場為準；環境較市井，適合想看在地生活的旅行者，冬夜露天注意保暖。"
+  "notes": "地鐵3號線南坪站步行可達；攤位為流動性質、位置隨管理調整，以現場為準；環境較市井，適合想看在地生活的旅行者，冬夜露天注意保暖。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "大學城熙街夜市",
   "city": "重庆",
   "type": "夜市",
   "area": "沙坪垻區·重慶大學城",
-  "address": "重慶市沙坪垻區大學城南二路熙街（NANA吃街）",
-  "lat": 29.6058,
-  "lng": 106.3072,
+  "address": "重慶市沙坪垻區大學城中路46號富力城五星名座",
+  "lat": 29.600658,
+  "lng": 106.305185,
   "hours": "商街10:00-22:00，小吃夜市至24:00；高峰18:00-22:00",
   "reason": "大學城腹地的美食集大成之地，學生客群帶來物美價廉的海量小吃，NANA吃街是核心。",
   "activities": [
@@ -11351,7 +12801,10 @@ const PLACES = [
    "川滇菜與火鍋正餐",
    "人均二三十吃到飽"
   ],
-  "notes": "地鐵1號線大學城站步行可達，距市區約40-50分鐘；價格全城最親民、許多小吃第二份半價；離主城景點遠，建議與川美虎溪校區羅中立美術館同線。"
+  "notes": "地鐵1號線大學城站步行可達，距市區約40-50分鐘；價格全城最親民、許多小吃第二份半價；離主城景點遠，建議與川美虎溪校區羅中立美術館同線。",
+  "amap_poiid": "B0I1B6IF3A",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "青石橋海鮮市場（代客加工）",
@@ -11361,8 +12814,8 @@ const PLACES = [
   "cuisine": "海鮮市場＋代客加工（活帝王蟹秤重單點）",
   "area": "錦江區·青石橋",
   "address": "成都市錦江區青石橋中街8號格萊美空間一帶（近春熙路、鹽市口）",
-  "lat": 30.6552,
-  "lng": 104.0783,
+  "lat": null,
+  "lng": null,
   "hours": "約08:00-22:00（各攤不一，傍晚至夜間最熱鬧）",
   "price": "活帝王蟹秤重市價＋加工約¥30/道起（帝王蟹大件約¥100/隻，以現場為準）；人均約¥50-100",
   "rating": null,
@@ -11374,7 +12827,9 @@ const PLACES = [
    "蟹肉粥/炒飯"
   ],
   "reason": "成都市中心最大水產市場：買活鮮（帝王蟹/龍蝦/貝類）→交加工店現做，是青石橋的核心玩法；近春熙路、傍晚最熱鬧。",
-  "notes": "加工店選擇：①紅太陽海鮮大排檔（格萊美空間附6-7號，電話13981934671，掛名最穩）②胖姐海鮮燒烤大排檔（格萊美空間1幢50號）③青石橋海鮮大排檔（青石橋中街71號）——店家更迭快，現場挑乾淨、生意旺、明碼標價者即可。⚠️務必用公平秤複秤、先講死單價與加工費做法。避豬：海鮮易避，但避開川味豬油/臘肉現炒與燒烤豬肉串，明講『只海鮮、不豬、不用豬油』。⚠️同名陷阱：另有一家『青石橋海鮮大排檔』在青羊區大石西路長樂坊、非此市場，認準青石橋中街。"
+  "notes": "加工店選擇：①紅太陽海鮮大排檔（格萊美空間附6-7號，電話13981934671，掛名最穩）②胖姐海鮮燒烤大排檔（格萊美空間1幢50號）③青石橋海鮮大排檔（青石橋中街71號）——店家更迭快，現場挑乾淨、生意旺、明碼標價者即可。⚠️務必用公平秤複秤、先講死單價與加工費做法。避豬：海鮮易避，但避開川味豬油/臘肉現炒與燒烤豬肉串，明講『只海鮮、不豬、不用豬油』。⚠️同名陷阱：另有一家『青石橋海鮮大排檔』在青羊區大石西路長樂坊、非此市場，認準青石橋中街。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "唐宮·粵菜海鮮（高新仁和新城店）",
@@ -11383,9 +12838,9 @@ const PLACES = [
   "halal": false,
   "cuisine": "港資粵式海鮮酒樓（生猛海鮮池·活帝王蟹單點）",
   "area": "高新區·仁和新城",
-  "address": "成都市高新區府城大道西段505號仁和春天國際廣場C座二樓（仁和新城2樓）",
-  "lat": 30.5717,
-  "lng": 104.0648,
+  "address": "成都市武侯區府城大道西端505號仁和新城C座2層",
+  "lat": 30.587285,
+  "lng": 104.051091,
   "hours": "約11:00-14:30、17:00-21:30（以門店為準）",
   "price": "人均約¥120-170（帝王蟹按時價另計）",
   "rating": "4.4/5",
@@ -11398,16 +12853,19 @@ const PLACES = [
    "燒鵝皇"
   ],
   "reason": "香港唐宮飲食集團1992年老字號，進門即生猛海鮮池、帝王蟹是招牌可單點；想要正式粵式海鮮酒樓體驗＋確定有帝王蟹的首選。",
-  "notes": "非清真、有叉燒臘味燒肉等豬肉燒臘需避開；海鮮、乳鴿、燒鵝、乾炒牛河可安心點。電話028-85827799；帝王蟹屬時令高價貨，去前先電話確認到貨與單價。"
+  "notes": "非清真、有叉燒臘味燒肉等豬肉燒臘需避開；海鮮、乳鴿、燒鵝、乾炒牛河可安心點。電話028-85827799；帝王蟹屬時令高價貨，去前先電話確認到貨與單價。",
+  "amap_poiid": "B0FFITGL89",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "鐘書閣（都江堰融創茂店）",
   "city": "成都",
   "type": "景点",
   "area": "都江堰市·玉堂/融創文旅城",
-  "address": "都江堰市玉堂鎮至臻路融創茂2F",
-  "lat": 30.9608,
-  "lng": 103.6169,
+  "address": "成都市都江堰市成都融創茂2層",
+  "lat": 30.955633,
+  "lng": 103.623581,
   "hours": "10:00-21:00",
   "ticket": "免費（消費另計）",
   "reason": "以都江堰水利工程為靈感的鏡面挑高書店，被網友稱為『書殿』，是都江堰包車一日遊午後順路的網紅打卡點。",
@@ -11417,7 +12875,10 @@ const PLACES = [
    "咖啡歇腳"
   ],
   "notes": "位於融創茂購物中心2樓；停留約20-30分鐘即可；為都江堰包車D6午後打卡點",
-  "duration": "20-30分鐘"
+  "duration": "20-30分鐘",
+  "amap_poiid": "B0G22ZTS45",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "白家海鮮市場·海未海鮮餐廳",
@@ -11426,9 +12887,9 @@ const PLACES = [
   "halal": false,
   "cuisine": "海鮮市場大排檔＋潮汕川粵（活帝王蟹秤重現撈）",
   "area": "雙流區·白家",
-  "address": "成都市雙流區成白路98號一樓（成都農產品中心批發市場水產區旁）",
-  "lat": 30.5445,
-  "lng": 104.0195,
+  "address": "成都市雙流區成白路98號",
+  "lat": 30.564025,
+  "lng": 104.020025,
   "hours": "約10:00-22:00（各檔不一）",
   "price": "帝王蟹約¥235/斤、人均約¥150",
   "rating": "4.5/5",
@@ -11440,7 +12901,10 @@ const PLACES = [
    "蟹肉粥/炒飯"
   ],
   "reason": "西南最大海鮮市場的選活鮮現撈現做，帝王蟹秤重約¥235/斤、潮汕師傅現做，最貼近『生猛海鮮大排檔』。",
-  "notes": "非清真、菜單有黑豬肉等豬料理需避開，點海鮮相對單純；位於雙流、離市區較遠；市場加工店多現場排位，建議當日致電。"
+  "notes": "非清真、菜單有黑豬肉等豬料理需避開，點海鮮相對單純；位於雙流、離市區較遠；市場加工店多現場排位，建議當日致電。",
+  "amap_poiid": "B0FFLHI1CF",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "清真·西遇憶品·燒烤·西北菜·手抓羊肉（青龍巷店）",
@@ -11449,9 +12913,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真新疆/西北菜·燒烤",
   "area": "青羊區·文殊院（青龍巷）",
-  "address": "成都市青羊區青龍巷36號附19號（文殊院站E口約500m）",
-  "lat": 30.67124,
-  "lng": 104.06404,
+  "address": "成都市青羊區青龍巷36號泰業·城中城F1層",
+  "lat": 30.671709,
+  "lng": 104.064581,
   "hours": "全天營業（以門店為準）",
   "price": 64,
   "rating": "4.3/5",
@@ -11463,7 +12927,10 @@ const PLACES = [
    "西北菜"
   ],
   "reason": "文殊院站旁的清真新疆／西北菜，主打手抓羊肉與現烤、熱菜現制現炒；青龍街美食人氣榜第4名。",
-  "notes": "清真；全天營業、有停車場、有包間、7-10人桌。距地鐵文殊院站E口約500m。同品牌另有九眼橋店。"
+  "notes": "清真；全天營業、有停車場、有包間、7-10人桌。距地鐵文殊院站E口約500m。同品牌另有九眼橋店。",
+  "amap_poiid": "B0FFMBPLNO",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "清真·牛比得·地道川菜",
@@ -11472,9 +12939,9 @@ const PLACES = [
   "halal": true,
   "cuisine": "清真川菜（現制鮮牛肉）",
   "area": "青羊區·寬窄巷子",
-  "address": "成都市青羊區少城街道槐樹街51號附8號（近寬窄巷子）",
-  "lat": 30.67045,
-  "lng": 104.05212,
+  "address": "成都市青羊區槐樹街51號附8號",
+  "lat": 30.670032,
+  "lng": 104.052079,
   "hours": "11:00-21:30",
   "price": 70,
   "rating": "4.6/5",
@@ -11485,7 +12952,10 @@ const PLACES = [
    "家常川菜"
   ],
   "reason": "寬窄巷子旁的清真川菜館，明廚亮灶、現點現做鮮牛肉、拒絕預製；寬窄巷子川菜回頭客榜第2名，避豬旅客的地道川菜好選擇。",
-  "notes": "清真認證；有停車場、有包間、7-10人桌、可電話預訂；11:00-21:30。距地鐵4號線寬窄巷子站D口約780m。"
+  "notes": "清真認證；有停車場、有包間、7-10人桌、可電話預訂；11:00-21:30。距地鐵4號線寬窄巷子站D口約780m。",
+  "amap_poiid": "B0L2BUKQHP",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "雍容薈活帝王蟹波龍放題自助（IFS二店）",
@@ -11494,9 +12964,9 @@ const PLACES = [
   "halal": false,
   "cuisine": "高端海鮮自助（活帝王蟹/松葉蟹/波龍）",
   "area": "錦江區·成都IFS",
-  "address": "成都市錦江區IFS國際金融中心6樓606號（優衣庫旁邊，憑餐廳小票商場免費停車3小時）",
-  "lat": 30.6529,
-  "lng": 104.081,
+  "address": "成都市錦江區紅星路三段IFS國際金融中心6樓606號(優衣庫旁邊)",
+  "lat": 30.655213,
+  "lng": 104.081967,
   "hours": "11:30-14:00、17:30-21:00",
   "price": "約¥697/人",
   "rating": "4.6/5",
@@ -11509,14 +12979,17 @@ const PLACES = [
    "法式鐵板"
   ],
   "reason": "成都IFS六樓的活帝王蟹波龍放題自助，錦江區海鮮自助回頭客榜第2名；草堂後直接來IFS午餐、餐後順逛太古里與IFS。",
-  "notes": "午市11:30-14:00、晚市17:30-21:00（D8 週六中午可用）；建議提前1-2天於大眾點評或電話預訂並註明午市；海鮮為主但自助區有含豬肉熱菜與混合製作區，非清真，取餐前請確認；IFS 6樓606號、優衣庫旁，憑餐廳小票免費停車3小時。"
+  "notes": "午市11:30-14:00、晚市17:30-21:00（D8 週六中午可用）；建議提前1-2天於大眾點評或電話預訂並註明午市；海鮮為主但自助區有含豬肉熱菜與混合製作區，非清真，取餐前請確認；IFS 6樓606號、優衣庫旁，憑餐廳小票免費停車3小時。",
+  "amap_poiid": "B0LDR7I84L",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "兩江夜遊遊船（朝天門碼頭）",
   "type": "景点",
   "area": "渝中區 朝天門碼頭",
-  "lat": 29.5663,
-  "lng": 106.5864,
+  "lat": 29.563552,
+  "lng": 106.586816,
   "hours": "晚場約19:00-21:30滾動發班（以船公司為準）",
   "ticket": "經典船¥138-158、臻品船¥168-258",
   "reason": "兩江夜遊的主要登船碼頭，就在朝天門廣場江邊；夜航嘉陵江＋長江，船上看洪崖洞、千廝門大橋與來福士夜景。",
@@ -11527,7 +13000,11 @@ const PLACES = [
   ],
   "notes": "提前在「重慶交運兩江遊」公眾號／攜程／Klook 購票並確認班次；提前30分持護照/台胞證報到；12月江風很冷需羽絨衣。",
   "duration": "約1.5小時（含往返碼頭）",
-  "city": "重庆"
+  "city": "重庆",
+  "address": "重慶市渝中區陝西路11號朝天門(地鐵站)",
+  "amap_poiid": "B0H3S7N77H",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "盒馬鮮生（來福士廣場店）",
@@ -11536,9 +13013,9 @@ const PLACES = [
   "halal": false,
   "cuisine": "生鮮賣場·活帝王蟹選活秤重代客加工堂食",
   "area": "武侯區·桐梓林",
-  "address": "成都市武侯區人民南路四段3號來福士廣場B2（成都另有銀泰in99、茶店子、大悅城、錦江光環等18+門市可就近選）",
-  "lat": 30.62,
-  "lng": 104.073,
+  "address": "成都市武侯區人民南路四段3號來福士廣場B2F",
+  "lat": 30.631329,
+  "lng": 104.067859,
   "hours": "約09:00-22:00（依商場）",
   "price": "帝王蟹約¥299/斤（整隻約¥900-1400）＋代加工約¥60/隻",
   "rating": null,
@@ -11550,7 +13027,10 @@ const PLACES = [
    "活波士頓龍蝦"
   ],
   "reason": "成都最穩定買得到活帝王蟹的通路：門市活鮮缸選活蟹→秤重→現場代客加工堂食（清蒸/蒜蓉/椒鹽），連鎖標準一致、遊客好到達。⚠️屬生鮮賣場代客加工，非酒樓/大排檔。",
-  "notes": "帝王蟹做法本身無豬；賣場另售豬肉，堂食點海鮮避豬容易，粥/炒飯留意別加臘腸火腿。帝王蟹為時令貨，去前可先確認當日到貨與單價。"
+  "notes": "帝王蟹做法本身無豬；賣場另售豬肉，堂食點海鮮避豬容易，粥/炒飯留意別加臘腸火腿。帝王蟹為時令貨，去前可先確認當日到貨與單價。",
+  "amap_poiid": "B0I0XREDL3",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "受氣牛肉·耙牛肉火鍋（觀音橋大融城店）",
@@ -11558,9 +13038,9 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "牛肉火鍋/江湖菜",
   "area": "江北區 觀音橋",
-  "address": "重慶市江北區觀音橋大融城（觀音橋步行街商圈）",
-  "lat": 29.5755,
-  "lng": 106.5308,
+  "address": "重慶市兩江新區觀音橋大融城L6層(觀音橋地鐵站5號口步行190米)",
+  "lat": 29.575528,
+  "lng": 106.533096,
   "hours": "約 11:00–22:00",
   "price": "人均 70–100 元",
   "dishes": [
@@ -11574,16 +13054,19 @@ const PLACES = [
   "notes": "全店以牛肉牛雜為主、幾乎可全程無豬（廚房非清真、牛油鍋底＝牛脂非豬油）；大眾點評精確評分未查到，訂前可用App確認。",
   "city": "重庆",
   "rating": null,
-  "rating_source": null
+  "rating_source": null,
+  "amap_poiid": "B0H0RRB478",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "李山山茶事·瓦煲煮茶（春熙路REX店）",
   "category": "饮料",
   "halal": "友善",
   "area": "錦江區·春熙路",
-  "address": "成都市錦江區春熙路北段49號1樓1號（REX春熙巷、工行對面；近太古里）",
-  "lat": 30.6524,
-  "lng": 104.0806,
+  "address": "成都市錦江區春熙路北段49號1層檔口1號",
+  "lat": 30.657361,
+  "lng": 104.078126,
   "hours": "約 11:00-22:00（主要堂食）",
   "price": 30,
   "dishes": [
@@ -11596,7 +13079,10 @@ const PLACES = [
   "notes": "以堂食為主、熱門常排隊；成都多家門店、位置以地圖App實時為準。",
   "city": "成都",
   "rating": "4.0/5",
-  "rating_source": "大眾點評（約1000條）"
+  "rating_source": "大眾點評（約1000條）",
+  "amap_poiid": "B0J36ZFDZN",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "喜茶 HEYTEA（東郊記憶一帶）",
@@ -11605,9 +13091,9 @@ const PLACES = [
   "halal": "友善",
   "cuisine": "新式茶飲",
   "area": "成華區·東郊記憶",
-  "address": "成都市成華區東郊記憶／建設路一帶（喜茶成都門店眾多，實際門店以喜茶GO小程序就近為準）",
-  "lat": 30.668,
-  "lng": 104.126,
+  "address": "成都市成華區建設北路二段157號印象城首層",
+  "lat": 30.674306,
+  "lng": 104.105942,
   "hours": "約10:00-22:00",
   "price": "約15-30元",
   "rating": "4.5/5",
@@ -11618,15 +13104,18 @@ const PLACES = [
    "烤黑糖波波牛乳"
   ],
   "reason": "新式茶飲開創者；D7 逛東郊記憶順手一杯（東郊記憶與鄰近建設路一帶皆有門店）。",
-  "notes": "喜茶成都門店眾多，東郊記憶／建設路一帶皆有；實際門店與位置以喜茶GO小程序就近為準；周末出杯較慢可小程序先點。"
+  "notes": "喜茶成都門店眾多，東郊記憶／建設路一帶皆有；實際門店與位置以喜茶GO小程序就近為準；周末出杯較慢可小程序先點。",
+  "amap_poiid": "B0KUD76ILK",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "重慶江北國際機場 T3航站樓",
   "city": "重庆",
   "category": "交通",
   "area": "渝北區",
-  "lat": 29.72,
-  "lng": 106.643,
+  "lat": 29.710724,
+  "lng": 106.656296,
   "hours": "航班時刻為準（12/5 CX966 16:00抵達）",
   "reason": "你的入境機場：CX966 香港→重慶降落於此。",
   "activities": [
@@ -11634,15 +13123,19 @@ const PLACES = [
    "機場快線K01至解放碑",
    "計程車至解放碑約30-40分鐘、60-70元"
   ],
-  "notes": "入境後可在站內購軌道交通計次票（1日18元/3日45元）；T3很大，預留步行時間"
+  "notes": "入境後可在站內購軌道交通計次票（1日18元/3日45元）；T3很大，預留步行時間",
+  "address": "重慶市兩江新區江北機場T3航站樓地鐵站4號口步行120米",
+  "amap_poiid": "B0FFKW1Y1G",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "重慶北站（成渝高鐵）",
   "city": "重庆",
   "category": "交通",
   "area": "渝北區",
-  "lat": 29.6095,
-  "lng": 106.551,
+  "lat": 29.609378,
+  "lng": 106.550953,
   "hours": "約06:30-22:30",
   "reason": "赴成都高鐵主力站：成渝高鐵至成都東約1.5小時。",
   "activities": [
@@ -11650,45 +13143,55 @@ const PLACES = [
    "高鐵二等座約154元",
    "12306 App 提前購票"
   ],
-  "notes": "分南北廣場，高鐵多在北廣場；進站安檢+取票預留40分鐘"
+  "notes": "分南北廣場，高鐵多在北廣場；進站安檢+取票預留40分鐘",
+  "address": "重慶市兩江新區崑崙大道51號附8號",
+  "amap_poiid": "B001781ZYX",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "沙坪垻站（高鐵）",
   "city": "重庆",
   "category": "交通",
   "area": "沙坪垻區",
-  "lat": 29.55421,
-  "lng": 106.4602,
+  "lat": 29.554118,
+  "lng": 106.460662,
   "hours": "約07:00-22:00",
   "reason": "磁器口附近的高鐵站，逛完磁器口直接搭車去成都最順路。",
   "activities": [
    "軌道1/9號線直達",
    "至成都東約1小時15分"
   ],
-  "notes": "站體在龍湖金沙天街商場下方，可順便用餐購物"
+  "notes": "站體在龍湖金沙天街商場下方，可順便用餐購物",
+  "address": "重慶市沙坪垻區北站東路200號",
+  "amap_poiid": "B0FFFGQ5M8",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "重慶西站（往大足）",
   "city": "重庆",
   "category": "交通",
   "area": "沙坪垻區",
-  "lat": 29.523,
-  "lng": 106.44,
+  "lat": null,
+  "lng": null,
   "hours": "約06:30-22:30",
   "reason": "前往大足石刻的高鐵出發站（約40分鐘至大足石刻站）。",
   "activities": [
    "軌道5號線/環線直達",
    "大足石刻一日遊鐵路起點"
   ],
-  "notes": "距市中心較遠，從解放碑出發預留50-60分鐘"
+  "notes": "距市中心較遠，從解放碑出發預留50-60分鐘",
+  "coordinate_status": "unverified",
+  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
  },
  {
   "name": "成都天府國際機場",
   "city": "成都",
   "category": "交通",
   "area": "簡陽市（天府新區東側）",
-  "lat": 30.313,
-  "lng": 104.443,
+  "lat": 30.308016,
+  "lng": 104.446518,
   "hours": "航班時刻為準（12/13 CI552 13:15起飛）",
   "reason": "你的出境機場：CI552 由此飛回台北，國際線建議起飛前2小時以上抵達。",
   "activities": [
@@ -11696,51 +13199,67 @@ const PLACES = [
    "春熙路出發地鐵全程約70-80分鐘",
    "打車約60-70分鐘、180-220元"
   ],
-  "notes": "12/13早上09:30前務必出發；T1為國際航站樓"
+  "notes": "12/13早上09:30前務必出發；T1為國際航站樓",
+  "address": "成都市簡陽市蘆葭鎮空港大道",
+  "amap_poiid": "B0FFH0JJ8F",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "成都雙流國際機場",
   "city": "成都",
   "category": "交通",
   "area": "雙流區",
-  "lat": 30.561028,
-  "lng": 103.946281,
+  "lat": 30.559807,
+  "lng": 103.951229,
   "hours": "航班時刻為準",
   "reason": "成都第二機場（本次行程未使用，備用參考）。",
   "activities": [
    "地鐵10號線直達"
   ],
-  "notes": "注意與天府機場區分，出發前確認航站樓"
+  "notes": "注意與天府機場區分，出發前確認航站樓",
+  "address": "成都市雙流區機場北二路",
+  "amap_poiid": "B001C06GIA",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "成都東站（成渝高鐵）",
   "city": "成都",
   "category": "交通",
   "area": "成華區",
-  "lat": 30.635,
-  "lng": 104.143,
+  "lat": 30.629343,
+  "lng": 104.141687,
   "hours": "約06:30-23:00",
   "reason": "從重慶抵達成都的高鐵到站，進市區最方便的樞紐。",
   "activities": [
    "地鐵2號線直達春熙路約20分鐘",
    "地鐵7號線環線換乘"
   ],
-  "notes": "站體龐大，出站跟隨地鐵指標走"
+  "notes": "站體龐大，出站跟隨地鐵指標走",
+  "address": "成都市成華區邛崍山路333號成都東站2F層",
+  "amap_poiid": "B0J0SLFPAN",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  },
  {
   "name": "犀浦站（往都江堰）",
   "city": "成都",
   "category": "交通",
   "area": "郫都區",
-  "lat": 30.759,
-  "lng": 103.96,
+  "lat": 30.757376,
+  "lng": 103.972131,
   "hours": "約06:30-21:30",
   "reason": "都江堰/青城山一日遊的動車出發站，30分鐘直達。",
   "activities": [
    "地鐵2/6號線直達",
    "動車至都江堰站/青城山站"
   ],
-  "notes": "地鐵與動車同站台換乘（國內首創），預留20分鐘取票進站"
+  "notes": "地鐵與動車同站台換乘（國內首創），預留20分鐘取票進站",
+  "address": "成都市郫都區學園路148號",
+  "amap_poiid": "B001C808TY",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
  }
 ];
 const GUIDES = [
@@ -12789,4 +14308,4 @@ const TOURS = [
   "reason": "行程彈性最大化，尤其適合想「早進熊貓基地+午後三星堆」高效組合的旅人"
  }
 ];
-const T2S = {"麵": "面", "裡": "里", "遊": "游", "隻": "只", "乾": "干", "後": "后", "髮": "发", "於": "于", "臺": "台", "嚐": "尝", "聯": "联", "發": "发", "騾": "骡", "倉": "仓", "現": "现", "憶": "忆", "視": "视", "領": "领", "幾": "几", "鍾": "钟", "質": "质", "還": "还", "濟": "济", "朧": "胧", "碼": "码", "詢": "询", "團": "团", "聽": "听", "搶": "抢", "潔": "洁", "騰": "腾", "鯽": "鲫", "蝦": "虾", "記": "记", "鈀": "钯", "強": "强", "聞": "闻", "測": "测", "貴": "贵", "湧": "涌", "說": "说", "説": "说", "陰": "阴", "閉": "闭", "隊": "队", "餡": "馅", "齊": "齐", "覺": "觉", "貼": "贴", "餈": "糍", "漢": "汉", "會": "会", "鷺": "鹭", "醫": "医", "萬": "万", "頸": "颈", "涼": "凉", "換": "换", "構": "构", "勢": "势", "雞": "鸡", "缽": "钵", "撈": "捞", "陳": "陈", "廟": "庙", "齋": "斋", "爐": "炉", "澤": "泽", "曬": "晒", "離": "离", "遷": "迁", "販": "贩", "處": "处", "户": "戶", "頁": "页", "點": "点", "榮": "荣", "這": "这", "鉑": "铂", "詩": "诗", "獨": "独", "壽": "寿", "顏": "颜", "塗": "涂", "詞": "词", "著": "着", "統": "统", "穩": "稳", "訊": "讯", "長": "长", "個": "个", "盧": "卢", "燻": "熏", "變": "变", "戲": "戏", "樞": "枢", "愛": "爱", "磚": "砖", "環": "环", "夾": "夹", "爺": "爷", "鍵": "键", "讀": "读", "櫃": "柜", "跡": "迹", "蔣": "蒋", "鹼": "碱", "寧": "宁", "釣": "钓", "鄉": "乡", "繪": "绘", "欄": "栏", "導": "导", "狀": "状", "薈": "荟", "邏": "逻", "蠍": "蝎", "羣": "群", "膩": "腻", "區": "区", "紹": "绍", "鑑": "鉴", "薔": "蔷", "楊": "杨", "觀": "观", "達": "达", "鏈": "链", "際": "际", "駝": "驼", "壺": "壶", "飛": "飞", "薩": "萨", "節": "节", "階": "阶", "專": "专", "蓮": "莲", "羶": "膻", "轟": "轰", "選": "选", "瀉": "泻", "鎖": "锁", "嘗": "尝", "飄": "飘", "隱": "隐", "樂": "乐", "嘆": "叹", "範": "范", "嗆": "呛", "滾": "滚", "臨": "临", "岡": "冈", "價": "价", "犛": "牦", "釐": "厘", "錫": "锡", "窯": "窑", "温": "溫", "巖": "岩", "邊": "边", "釋": "释", "鯉": "鲤", "載": "载", "漸": "渐", "鰍": "鳅", "虜": "虏", "擼": "撸", "綠": "绿", "棄": "弃", "證": "证", "準": "准", "無": "无", "壩": "坝", "條": "条", "閃": "闪", "頂": "顶", "該": "该", "時": "时", "層": "层", "撲": "扑", "寬": "宽", "採": "采", "營": "营", "溼": "湿", "濕": "湿", "評": "评", "鴦": "鸯", "屬": "属", "順": "顺", "霧": "雾", "亞": "亚", "庫": "库", "鴨": "鸭", "軍": "军", "劃": "划", "連": "连", "來": "来", "實": "实", "麥": "麦", "夠": "够", "鍋": "锅", "緊": "紧", "萊": "莱", "縫": "缝", "崗": "岗", "態": "态", "繚": "缭", "沒": "没", "葱": "蔥", "鳥": "鸟", "東": "东", "當": "当", "運": "运", "摻": "掺", "薦": "荐", "彌": "弥", "氣": "气", "臉": "脸", "話": "话", "綜": "综", "歲": "岁", "覽": "览", "訂": "订", "鄧": "邓", "從": "从", "織": "织", "鳴": "鸣", "張": "张", "礦": "矿", "攜": "携", "隨": "随", "銜": "衔", "腳": "脚", "勞": "劳", "慶": "庆", "懷": "怀", "貿": "贸", "擺": "摆", "詳": "详", "勝": "胜", "則": "则", "魚": "鱼", "劇": "剧", "譽": "誉", "寵": "宠", "紐": "纽", "義": "义", "縣": "县", "茲": "兹", "擾": "扰", "據": "据", "藥": "药", "絡": "络", "終": "终", "網": "网", "駐": "驻", "維": "维", "靈": "灵", "媽": "妈", "膠": "胶", "訓": "训", "誕": "诞", "肅": "肃", "簷": "檐", "峽": "峡", "徑": "径", "廣": "广", "為": "为", "問": "问", "銅": "铜", "龍": "龙", "將": "将", "閱": "阅", "閲": "阅", "啟": "启", "啓": "启", "災": "灾", "龜": "龟", "額": "额", "農": "农", "暫": "暂", "約": "约", "鶉": "鹑", "轉": "转", "壓": "压", "雲": "云", "單": "单", "減": "减", "廠": "厂", "鮮": "鲜", "獲": "获", "驗": "验", "鯨": "鲸", "誼": "谊", "許": "许", "剛": "刚", "稅": "税", "塊": "块", "埡": "垭", "傷": "伤", "帶": "带", "勁": "劲", "撻": "挞", "辦": "办", "卧": "臥", "鴛": "鸳", "決": "决", "餚": "肴", "蹺": "跷", "麗": "丽", "髒": "脏", "鬱": "郁", "極": "极", "軌": "轨", "讓": "让", "擋": "挡", "鏡": "镜", "鹽": "盐", "溫": "温", "峯": "峰", "聶": "聂", "貢": "贡", "鷹": "鹰", "鑽": "钻", "羅": "罗", "職": "职", "雙": "双", "術": "术", "鴉": "鸦", "線": "线", "側": "侧", "園": "园", "櫻": "樱", "陸": "陆", "餞": "饯", "風": "风", "經": "经", "規": "规", "叢": "丛", "動": "动", "魯": "鲁", "謝": "谢", "項": "项", "劉": "刘", "賽": "赛", "較": "较", "吳": "吴", "幫": "帮", "爛": "烂", "舊": "旧", "窮": "穷", "鵪": "鹌", "勸": "劝", "攪": "搅", "鈴": "铃", "軒": "轩", "設": "设", "齡": "龄", "懸": "悬", "傘": "伞", "覓": "觅", "漿": "浆", "縮": "缩", "熱": "热", "脈": "脉", "夥": "伙", "縱": "纵", "隕": "陨", "湊": "凑", "謠": "谣", "黃": "黄", "賦": "赋", "裏": "里", "凍": "冻", "筍": "笋", "聲": "声", "黨": "党", "擠": "挤", "養": "养", "課": "课", "輕": "轻", "電": "电", "內": "内", "談": "谈", "籤": "签", "銷": "销", "蹤": "踪", "靜": "静", "晉": "晋", "脫": "脱", "護": "护", "遺": "遗", "題": "题", "荊": "荆", "箏": "筝", "況": "况", "財": "财", "並": "并", "澆": "浇", "優": "优", "寫": "写", "躍": "跃", "郵": "邮", "濃": "浓", "攤": "摊", "蔭": "荫", "學": "学", "崍": "崃", "萵": "莴", "燴": "烩", "鳳": "凤", "蕎": "荞", "烏": "乌", "紙": "纸", "擬": "拟", "俠": "侠", "兇": "凶", "魷": "鱿", "負": "负", "疊": "叠", "緒": "绪", "種": "种", "絕": "绝", "濤": "涛", "飽": "饱", "禪": "禅", "難": "难", "餘": "余", "臘": "腊", "備": "备", "權": "权", "廚": "厨", "擇": "择", "嚴": "严", "煙": "烟", "關": "关", "縉": "缙", "灘": "滩", "進": "进", "繕": "缮", "鄒": "邹", "醬": "酱", "納": "纳", "儲": "储", "奪": "夺", "掛": "挂", "築": "筑", "壯": "壮", "筆": "笔", "瑪": "玛", "擴": "扩", "細": "细", "調": "调", "紗": "纱", "恆": "恒", "蔥": "葱", "親": "亲", "戶": "户", "淨": "净", "幹": "干", "滿": "满", "揚": "扬", "須": "须", "檢": "检", "鬥": "斗", "歸": "归", "獅": "狮", "飪": "饪", "陣": "阵", "滷": "卤", "歡": "欢", "贊": "赞", "豔": "艳", "燜": "焖", "適": "适", "門": "门", "蘆": "芦", "韓": "韩", "過": "过", "鯊": "鲨", "館": "馆", "盤": "盘", "瀾": "澜", "駱": "骆", "協": "协", "腦": "脑", "娛": "娱", "溝": "沟", "帳": "帐", "賬": "账", "樹": "树", "針": "针", "禮": "礼", "漁": "渔", "囪": "囱", "員": "员", "飼": "饲", "貨": "货", "絲": "丝", "復": "复", "錯": "错", "買": "买", "粵": "粤", "彈": "弹", "諸": "诸", "給": "给", "尋": "寻", "閒": "闲", "趙": "赵", "韻": "韵", "賃": "赁", "餃": "饺", "積": "积", "資": "资", "樸": "朴", "龐": "庞", "饢": "馕", "謂": "谓", "艦": "舰", "體": "体", "湯": "汤", "檔": "档", "燉": "炖", "豬": "猪", "僅": "仅", "紋": "纹", "廂": "厢", "濱": "滨", "闊": "阔", "躥": "蹿", "壇": "坛", "雜": "杂", "悅": "悦", "類": "类", "擁": "拥", "麼": "么", "語": "语", "賓": "宾", "紀": "纪", "認": "认", "襪": "袜", "蘇": "苏", "兒": "儿", "莊": "庄", "蒼": "苍", "殺": "杀", "慮": "虑", "灩": "滟", "購": "购", "灣": "湾", "圖": "图", "輝": "辉", "編": "编", "歷": "历", "顆": "颗", "橋": "桥", "與": "与", "飾": "饰", "剎": "刹", "險": "险", "棲": "栖", "鈔": "钞", "響": "响", "託": "托", "訪": "访", "參": "参", "淵": "渊", "預": "预", "賀": "贺", "佔": "占", "啞": "哑", "錄": "录", "匯": "汇", "儀": "仪", "譚": "谭", "艙": "舱", "亂": "乱", "賞": "赏", "場": "场", "卻": "却", "魨": "鲀", "廬": "庐", "譜": "谱", "願": "愿", "雖": "虽", "猶": "犹", "紡": "纺", "燒": "烧", "凱": "凯", "趕": "赶", "錢": "钱", "簡": "简", "費": "费", "續": "续", "潤": "润", "龔": "龚", "槳": "桨", "葉": "叶", "鋼": "钢", "蓋": "盖", "鄰": "邻", "業": "业", "漬": "渍", "圓": "圆", "橫": "横", "斷": "断", "計": "计", "鰱": "鲢", "貓": "猫", "棟": "栋", "數": "数", "巔": "巅", "籠": "笼", "撫": "抚", "藍": "蓝", "車": "车", "確": "确", "鬧": "闹", "鶴": "鹤", "輯": "辑", "貝": "贝", "輩": "辈", "華": "华", "蘿": "萝", "饊": "馓", "紅": "红", "爾": "尔", "裝": "装", "繹": "绎", "蠅": "蝇", "師": "师", "綿": "绵", "懶": "懒", "圍": "围", "熗": "炝", "餅": "饼", "軟": "软", "欖": "榄", "貳": "贰", "廳": "厅", "顯": "显", "藝": "艺", "錦": "锦", "瘋": "疯", "棗": "枣", "蟲": "虫", "軸": "轴", "衝": "冲", "宮": "宫", "鵝": "鹅", "鋪": "铺", "寶": "宝", "鵑": "鹃", "滄": "沧", "獎": "奖", "嶽": "岳", "帥": "帅", "顧": "顾", "陽": "阳", "間": "间", "濁": "浊", "蘭": "兰", "島": "岛", "貫": "贯", "練": "练", "開": "开", "棧": "栈", "兩": "两", "嶺": "岭", "掃": "扫", "樣": "样", "槓": "杠", "鎮": "镇", "揮": "挥", "褲": "裤", "繼": "继", "試": "试", "產": "产", "興": "兴", "駕": "驾", "鷗": "鸥", "銀": "银", "陝": "陕", "盡": "尽", "臥": "卧", "畫": "画", "氳": "氲", "饞": "馋", "閣": "阁", "悦": "悅", "釀": "酿", "嬌": "娇", "燈": "灯", "奧": "奥", "結": "结", "漲": "涨", "夢": "梦", "遠": "远", "書": "书", "頗": "颇", "對": "对", "曉": "晓", "飲": "饮", "彎": "弯", "暢": "畅", "鱔": "鳝", "論": "论", "異": "异", "妝": "妆", "牆": "墙", "講": "讲", "級": "级", "繞": "绕", "擔": "担", "葷": "荤", "醃": "腌", "傳": "传", "蟬": "蝉", "見": "见", "請": "请", "標": "标", "鹹": "咸", "鮑": "鲍", "飯": "饭", "钂": "镋", "窩": "窝", "嗎": "吗", "輪": "轮", "馬": "马", "別": "别", "純": "纯", "鎢": "钨", "廝": "厮", "號": "号", "賣": "卖", "應": "应", "創": "创", "廈": "厦", "國": "国", "機": "机", "頌": "颂", "聖": "圣", "絨": "绒", "豐": "丰", "組": "组", "眾": "众", "戰": "战", "殞": "殒", "攝": "摄", "務": "务", "驛": "驿", "輛": "辆", "頻": "频", "總": "总", "駁": "驳", "櫚": "榈", "議": "议", "賴": "赖", "綴": "缀", "畝": "亩", "樓": "楼", "鐵": "铁", "頓": "顿", "冊": "册", "餵": "喂", "補": "补", "腸": "肠", "稱": "称", "頭": "头", "紉": "纫", "么": "幺", "識": "识", "騎": "骑", "燙": "烫", "誌": "志", "紮": "扎", "緣": "缘", "畢": "毕", "捨": "舍", "報": "报", "糰": "团", "穀": "谷", "週": "周", "薑": "姜", "輸": "输", "罈": "坛", "蹟": "迹", "膽": "胆", "檯": "台", "鬆": "松", "蔔": "卜", "簽": "签", "儘": "尽", "鴿": "鸽", "禦": "御", "係": "系", "盪": "荡", "鐘": "钟", "韆": "千", "鱂": "鳉", "併": "并", "緻": "致", "臟": "脏", "孃": "娘", "憑": "凭", "製": "制", "垻": "坝", "註": "注", "迴": "回", "驚": "惊", "闆": "板", "菸": "烟", "複": "复", "鞦": "秋", "聰": "聪"};
+const T2S = {"麵": "面", "裡": "里", "遊": "游", "隻": "只", "乾": "干", "後": "后", "髮": "发", "於": "于", "臺": "台", "嚐": "尝", "萬": "万", "與": "与", "專": "专", "業": "业", "叢": "丛", "東": "东", "絲": "丝", "兩": "两", "嚴": "严", "個": "个", "豐": "丰", "臨": "临", "為": "为", "麗": "丽", "麼": "么", "義": "义", "烏": "乌", "樂": "乐", "鄉": "乡", "書": "书", "買": "买", "亂": "乱", "雲": "云", "亞": "亚", "產": "产", "畝": "亩", "親": "亲", "僅": "仅", "從": "从", "侖": "仑", "倉": "仓", "儀": "仪", "價": "价", "眾": "众", "優": "优", "夥": "伙", "會": "会", "傘": "伞", "傳": "传", "傷": "伤", "體": "体", "餘": "余", "俠": "侠", "側": "侧", "儲": "储", "兒": "儿", "黨": "党", "蘭": "兰", "關": "关", "興": "兴", "茲": "兹", "養": "养", "內": "内", "岡": "冈", "冊": "册", "寫": "写", "軍": "军", "農": "农", "衝": "冲", "決": "决", "況": "况", "凍": "冻", "淨": "净", "準": "准", "涼": "凉", "減": "减", "湊": "凑", "幾": "几", "鳳": "凤", "凱": "凯", "兇": "凶", "劃": "划", "劉": "刘", "則": "则", "剛": "刚", "創": "创", "別": "别", "剎": "刹", "劇": "剧", "勸": "劝", "辦": "办", "務": "务", "動": "动", "勁": "劲", "勞": "劳", "勢": "势", "區": "区", "醫": "医", "華": "华", "單": "单", "賣": "卖", "佔": "占", "盧": "卢", "滷": "卤", "臥": "卧", "衛": "卫", "衞": "卫", "卻": "却", "廠": "厂", "廳": "厅", "歷": "历", "壓": "压", "釐": "厘", "廂": "厢", "廈": "厦", "廚": "厨", "廝": "厮", "縣": "县", "參": "参", "雙": "双", "發": "发", "變": "变", "疊": "叠", "葉": "叶", "號": "号", "嘆": "叹", "嗎": "吗", "聽": "听", "啟": "启", "啓": "启", "吳": "吴", "員": "员", "嗆": "呛", "鹹": "咸", "響": "响", "啞": "哑", "餵": "喂", "團": "团", "園": "园", "囪": "囱", "圍": "围", "國": "国", "圖": "图", "圓": "圆", "聖": "圣", "場": "场", "塊": "块", "壇": "坛", "壩": "坝", "埡": "垭", "牆": "墙", "壯": "壮", "聲": "声", "壺": "壶", "處": "处", "備": "备", "復": "复", "夠": "够", "頭": "头", "夾": "夹", "奪": "夺", "獎": "奖", "奧": "奥", "妝": "妆", "媽": "妈", "嬌": "娇", "娛": "娱", "學": "学", "寧": "宁", "寶": "宝", "實": "实", "寵": "宠", "宮": "宫", "寬": "宽", "賓": "宾", "對": "对", "尋": "寻", "導": "导", "壽": "寿", "將": "将", "爾": "尔", "嘗": "尝", "盡": "尽", "層": "层", "屬": "属", "歲": "岁", "崗": "岗", "島": "岛", "巖": "岩", "嶺": "岭", "峽": "峡", "峯": "峰", "崍": "崃", "巔": "巅", "帥": "帅", "師": "师", "帳": "帐", "帶": "带", "幫": "帮", "幹": "干", "並": "并", "么": "幺", "廣": "广", "莊": "庄", "慶": "庆", "廬": "庐", "庫": "库", "應": "应", "廟": "庙", "龐": "庞", "開": "开", "異": "异", "棄": "弃", "張": "张", "彌": "弥", "彎": "弯", "彈": "弹", "強": "强", "歸": "归", "當": "当", "錄": "录", "徑": "径", "憶": "忆", "懷": "怀", "態": "态", "總": "总", "恆": "恒", "悅": "悦", "懸": "悬", "願": "愿", "懶": "懒", "戲": "戏", "戰": "战", "户": "戶", "戶": "户", "撲": "扑", "託": "托", "擴": "扩", "掃": "扫", "揚": "扬", "擾": "扰", "撫": "抚", "搶": "抢", "護": "护", "擔": "担", "枴": "拐", "擬": "拟", "擁": "拥", "擇": "择", "掛": "挂", "撻": "挞", "擋": "挡", "擠": "挤", "揮": "挥", "撈": "捞", "換": "换", "據": "据", "摻": "掺", "攪": "搅", "攜": "携", "攝": "摄", "擺": "摆", "攤": "摊", "擼": "撸", "數": "数", "齋": "斋", "鬥": "斗", "斷": "断", "無": "无", "舊": "旧", "時": "时", "顯": "显", "晉": "晋", "曬": "晒", "曉": "晓", "暫": "暂", "術": "术", "樸": "朴", "機": "机", "殺": "杀", "雜": "杂", "權": "权", "槓": "杠", "條": "条", "來": "来", "楊": "杨", "極": "极", "構": "构", "樞": "枢", "棗": "枣", "櫃": "柜", "標": "标", "棧": "栈", "棟": "栋", "欄": "栏", "樹": "树", "棲": "栖", "樣": "样", "檔": "档", "橋": "桥", "槳": "桨", "夢": "梦", "檢": "检", "樓": "楼", "欖": "榄", "櫚": "榈", "檳": "槟", "橫": "横", "櫻": "樱", "簷": "檐", "歡": "欢", "殞": "殒", "氣": "气", "氳": "氲", "匯": "汇", "漢": "汉", "湯": "汤", "溝": "沟", "沒": "没", "滄": "沧", "瀉": "泻", "澤": "泽", "潔": "洁", "漿": "浆", "澆": "浇", "濁": "浊", "測": "测", "濟": "济", "濃": "浓", "塗": "涂", "湧": "涌", "濤": "涛", "潤": "润", "漲": "涨", "淵": "渊", "漬": "渍", "漸": "渐", "漁": "渔", "溫": "温", "灣": "湾", "溼": "湿", "濕": "湿", "温": "溫", "滾": "滚", "灩": "滟", "滿": "满", "濱": "滨", "灘": "滩", "瀾": "澜", "燈": "灯", "靈": "灵", "災": "灾", "爐": "炉", "燉": "炖", "熗": "炝", "點": "点", "爛": "烂", "煙": "烟", "燒": "烧", "燴": "烩", "燙": "烫", "熱": "热", "燜": "焖", "燻": "熏", "愛": "爱", "爺": "爷", "犛": "牦", "狀": "状", "猶": "犹", "獨": "独", "獅": "狮", "豬": "猪", "貓": "猫", "瑪": "玛", "環": "环", "現": "现", "電": "电", "畫": "画", "暢": "畅", "瘋": "疯", "鹽": "盐", "蓋": "盖", "盤": "盘", "著": "着", "礦": "矿", "碼": "码", "磚": "砖", "確": "确", "鹼": "碱", "禮": "礼", "禪": "禅", "離": "离", "種": "种", "積": "积", "稱": "称", "稅": "税", "穩": "稳", "窮": "穷", "窯": "窑", "窩": "窝", "筍": "笋", "筆": "笔", "籠": "笼", "築": "筑", "箏": "筝", "籤": "签", "簡": "简", "類": "类", "粵": "粤", "餈": "糍", "緊": "紧", "紅": "红", "約": "约", "級": "级", "紀": "纪", "紉": "纫", "緯": "纬", "純": "纯", "紗": "纱", "納": "纳", "縱": "纵", "紙": "纸", "紋": "纹", "紡": "纺", "紐": "纽", "線": "线", "練": "练", "組": "组", "細": "细", "織": "织", "終": "终", "紹": "绍", "繹": "绎", "經": "经", "絨": "绒", "結": "结", "繞": "绕", "繪": "绘", "給": "给", "絡": "络", "絕": "绝", "統": "统", "繼": "继", "緒": "绪", "續": "续", "維": "维", "綿": "绵", "綜": "综", "綠": "绿", "綴": "缀", "編": "编", "縉": "缙", "縫": "缝", "縮": "缩", "繚": "缭", "繕": "缮", "網": "网", "羅": "罗", "羣": "群", "聶": "聂", "職": "职", "聯": "联", "肅": "肃", "腸": "肠", "餚": "肴", "勝": "胜", "朧": "胧", "膠": "胶", "脈": "脉", "髒": "脏", "腦": "脑", "腳": "脚", "脫": "脱", "臉": "脸", "臘": "腊", "醃": "腌", "膩": "腻", "騰": "腾", "羶": "膻", "卧": "臥", "艦": "舰", "艙": "舱", "豔": "艳", "藝": "艺", "節": "节", "蘆": "芦", "蒼": "苍", "蘇": "苏", "範": "范", "荊": "荆", "薦": "荐", "蕎": "荞", "薈": "荟", "榮": "荣", "葷": "荤", "蔭": "荫", "藥": "药", "萊": "莱", "蓮": "莲", "萵": "莴", "獲": "获", "蘿": "萝", "營": "营", "薩": "萨", "蔥": "葱", "蔣": "蒋", "藍": "蓝", "葱": "蔥", "薔": "蔷", "虜": "虏", "慮": "虑", "蟲": "虫", "雖": "虽", "蝦": "虾", "蠅": "蝇", "蟬": "蝉", "蠍": "蝎", "銜": "衔", "補": "补", "襪": "袜", "裝": "装", "褲": "裤", "見": "见", "觀": "观", "規": "规", "覓": "觅", "視": "视", "覽": "览", "覺": "觉", "譽": "誉", "計": "计", "訂": "订", "認": "认", "讓": "让", "訓": "训", "議": "议", "訊": "讯", "記": "记", "講": "讲", "許": "许", "論": "论", "設": "设", "訪": "访", "證": "证", "評": "评", "識": "识", "詞": "词", "試": "试", "詩": "诗", "話": "话", "誕": "诞", "詢": "询", "該": "该", "詳": "详", "語": "语", "說": "说", "説": "说", "請": "请", "諸": "诸", "讀": "读", "課": "课", "調": "调", "談": "谈", "誼": "谊", "謂": "谓", "謝": "谢", "謠": "谣", "譚": "谭", "譜": "谱", "貝": "贝", "負": "负", "貢": "贡", "財": "财", "賬": "账", "貨": "货", "質": "质", "販": "贩", "購": "购", "貫": "贯", "貳": "贰", "貼": "贴", "貴": "贵", "貿": "贸", "費": "费", "賀": "贺", "賃": "赁", "資": "资", "賦": "赋", "賞": "赏", "賴": "赖", "賽": "赛", "贊": "赞", "趙": "赵", "趕": "赶", "躍": "跃", "蹺": "跷", "蹤": "踪", "躥": "蹿", "車": "车", "軌": "轨", "軒": "轩", "轉": "转", "輪": "轮", "軟": "软", "轟": "轰", "軸": "轴", "輕": "轻", "載": "载", "較": "较", "輛": "辆", "輩": "辈", "輝": "辉", "輯": "辑", "邊": "边", "達": "达", "遷": "迁", "過": "过", "運": "运", "還": "还", "這": "这", "進": "进", "遠": "远", "連": "连", "跡": "迹", "適": "适", "選": "选", "邏": "逻", "遺": "遗", "鄧": "邓", "郵": "邮", "鄒": "邹", "鄰": "邻", "鬱": "郁", "醬": "酱", "釀": "酿", "採": "采", "釋": "释", "裏": "里", "鑑": "鉴", "針": "针", "釣": "钓", "鈔": "钞", "鍾": "钟", "鋼": "钢", "鎢": "钨", "鈀": "钯", "錢": "钱", "缽": "钵", "鑽": "钻", "鐵": "铁", "鉑": "铂", "鈴": "铃", "銅": "铜", "銀": "银", "鋪": "铺", "鏈": "链", "銷": "销", "鎖": "锁", "鍋": "锅", "錯": "错", "錫": "锡", "錦": "锦", "鍵": "键", "鎮": "镇", "钂": "镋", "鏡": "镜", "長": "长", "門": "门", "閃": "闪", "閉": "闭", "問": "问", "閒": "闲", "間": "间", "鬧": "闹", "聞": "闻", "閣": "阁", "閱": "阅", "閲": "阅", "闊": "阔", "隊": "队", "陽": "阳", "陰": "阴", "陣": "阵", "階": "阶", "際": "际", "陸": "陆", "陳": "陈", "陝": "陕", "隕": "陨", "險": "险", "隨": "随", "隱": "隐", "難": "难", "霧": "雾", "靜": "静", "韓": "韩", "韻": "韵", "頁": "页", "頂": "顶", "項": "项", "順": "顺", "須": "须", "顧": "顾", "頓": "顿", "頌": "颂", "預": "预", "領": "领", "頗": "颇", "頸": "颈", "頻": "频", "顆": "颗", "題": "题", "顏": "颜", "額": "额", "風": "风", "飄": "飘", "飛": "飞", "飪": "饪", "飯": "饭", "飲": "饮", "餞": "饯", "飾": "饰", "飽": "饱", "飼": "饲", "餃": "饺", "餅": "饼", "餡": "馅", "館": "馆", "饞": "馋", "饊": "馓", "饢": "馕", "馬": "马", "駁": "驳", "駐": "驻", "駝": "驼", "駕": "驾", "驛": "驿", "駱": "骆", "驗": "验", "騎": "骑", "騾": "骡", "魚": "鱼", "魷": "鱿", "魨": "鲀", "魯": "鲁", "鮑": "鲍", "鮮": "鲜", "鰱": "鲢", "鯉": "鲤", "鯊": "鲨", "鯽": "鲫", "鯨": "鲸", "鰍": "鳅", "鱔": "鳝", "鳥": "鸟", "雞": "鸡", "鳴": "鸣", "鷗": "鸥", "鴉": "鸦", "鴨": "鸭", "鴦": "鸯", "鴛": "鸳", "鵑": "鹃", "鵝": "鹅", "鵪": "鹌", "鶉": "鹑", "鶴": "鹤", "鷺": "鹭", "鷹": "鹰", "麥": "麦", "黃": "黄", "齊": "齐", "齡": "龄", "龍": "龙", "龔": "龚", "龜": "龟", "併": "并", "係": "系", "儘": "尽", "垻": "坝", "報": "报", "孃": "娘", "崑": "昆", "崙": "仑", "憑": "凭", "捨": "舍", "檯": "台", "畢": "毕", "盪": "荡", "禦": "御", "穀": "谷", "簽": "签", "糰": "团", "紮": "扎", "緣": "缘", "緻": "致", "罈": "坛", "聰": "聪", "膽": "胆", "臟": "脏", "菸": "烟", "蔔": "卜", "薑": "姜", "製": "制", "複": "复", "註": "注", "誌": "志", "蹟": "迹", "輸": "输", "迴": "回", "週": "周", "鐘": "钟", "闆": "板", "鞦": "秋", "韆": "千", "驚": "惊", "鬆": "松", "鱂": "鳉", "鴿": "鸽"};

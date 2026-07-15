@@ -126,7 +126,7 @@ def build_t2s(payload_text):
         return {}
     t2s = {"麵": "面", "裡": "里", "遊": "游", "隻": "只", "乾": "干",
            "後": "后", "髮": "发", "於": "于", "臺": "台", "嚐": "尝"}
-    for ch in set(payload_text):
+    for ch in sorted(set(payload_text)):
         if not "一" <= ch <= "鿿":
             continue
         for variant in (convert(ch, "zh-tw"), convert(ch, "zh-hk")):
@@ -187,7 +187,7 @@ try:
     # 字元集合：最終繁體資料 ∪ 原簡體資料的 zh-tw 轉換（涵蓋使用者可能輸入、
     # 但被修正表改掉的字，如 臺）
     char_pool = set(final_payload) | set(_conv(payload, "zh-tw"))
-    for ch in char_pool:
+    for ch in sorted(char_pool):
         if not "一" <= ch <= "鿿":
             continue
         simp = _conv(ch, "zh-cn")
