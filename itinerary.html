@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>成都・重慶 12/5–12/13 最終行程</title>
-<link rel="preload" href="data.js?v=97" as="script">
-<link rel="preload" href="trip.js?v=97" as="script">
+<link rel="preload" href="data.js?v=98" as="script">
+<link rel="preload" href="trip.js?v=98" as="script">
 <link rel="prefetch" href="libs/leaflet.js">
 <link rel="prefetch" href="libs/leaflet.css">
 <link rel="prefetch" href="map.html">
@@ -44,15 +44,18 @@ a:active,.chip:active,.card:active,.navlinks a:active{transform:scale(.97)}
 /* 黏性日期導覽 */
 .daynav{position:sticky;top:58px;z-index:30;display:flex;gap:6px;overflow-x:auto;padding:10px 2px;margin:0 -2px;background:rgba(250,247,242,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);-webkit-overflow-scrolling:touch;scrollbar-width:none}
 .daynav::-webkit-scrollbar{display:none}
-.daynav a{display:inline-flex;align-items:center;gap:5px;flex-shrink:0;padding:7px 12px;border-radius:20px;border:1px solid var(--line);background:var(--panel);font-size:12.5px;font-weight:700;color:var(--ink);text-decoration:none;white-space:nowrap;box-shadow:0 1px 2px rgba(0,0,0,.03)}
-.daynav .daynav-title{font-weight:600;color:var(--muted)}
-.daynav .daynav-title::before,.daynav a small::before{content:"｜";margin-right:5px;color:#c0b5a7}
-.daynav a small{display:inline;font-weight:400;font-size:11px;color:var(--muted);line-height:1.1;text-align:left}
+.daynav a{display:flex;flex-direction:column;align-items:stretch;gap:4px;width:205px;min-height:58px;flex-shrink:0;padding:8px 11px;border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--ink);text-decoration:none;box-shadow:0 1px 2px rgba(0,0,0,.03)}
+.daynav-top{display:flex;align-items:center;gap:6px;line-height:1}
+.daynav-day{font-size:13px;font-weight:900}
+.daynav-city{font-size:11px;font-weight:700;color:var(--accent);padding:2px 5px;border-radius:5px;background:#f9ece9}
+.daynav .daynav-title{font-size:11px;font-weight:500;color:var(--muted);line-height:1.35;white-space:normal;overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2}
+.daynav a small{margin-left:auto;font-weight:700;font-size:10.5px;color:var(--muted);white-space:nowrap}
 .daynav a.active{color:#fff;border-color:var(--accent2);background:var(--accent2);box-shadow:0 3px 10px rgba(0,0,0,.18)}
 .daynav a[data-city="重庆"].active{border-color:var(--cq);background:var(--cq)}
 .daynav a[data-city="成都"].active{border-color:var(--cd);background:var(--cd)}
 .daynav a[data-city="双城"].active{border-color:#8e44ad;background:#8e44ad}
-.daynav a.active small,.daynav a.active .daynav-title{color:rgba(255,255,255,.82)}
+.daynav a.active small,.daynav a.active .daynav-title,.daynav a.active .daynav-city{color:rgba(255,255,255,.86)}
+.daynav a.active .daynav-city{background:rgba(255,255,255,.16)}
 .daynav a.bkx{color:var(--amber);border-color:#e8d9a8;background:var(--amberbg)}
 .daynav a.bkx.active{color:#fff;border-color:var(--amber);background:var(--amber);box-shadow:0 3px 10px rgba(0,0,0,.18)}
 .wrap{max-width:900px;margin:0 auto;padding:0 14px}
@@ -127,10 +130,12 @@ header .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
   .navlinks{gap:5px}
   .navlinks a{min-height:32px;padding:0 8px;font-size:12px;border-radius:7px}
   .daynav{top:44px}
-  .daynav a{display:block}
+  .daynav a{display:block;width:auto;min-height:0;padding:7px 10px;border-radius:9px}
+  .daynav-top{display:block;text-align:center}
+  .daynav-city{display:inline;background:none;padding:0;color:inherit;font-size:10px}
+  .daynav-day{font-size:12px}
   .daynav .daynav-title{display:none}
   .daynav a small{display:block;font-size:10px;text-align:center}
-  .daynav a small::before{content:none}
   .day,.backup{scroll-margin-top:106px}
   header h1{font-size:20px}
   .stop .tm{width:36px;font-size:11px}
@@ -151,7 +156,7 @@ header .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
 <nav class="topnav" aria-label="主要導覽">
   <div class="brand">
     <strong>Sichuan Trip</strong>
-    <span class="site-meta"><a data-site-meta href="changelog.html" aria-label="查看網站修改紀錄">2026/12/5–12/13 ｜ v97・更新 2026/07/16</a></span>
+    <span class="site-meta"><a data-site-meta href="changelog.html" aria-label="查看網站修改紀錄">2026/12/5–12/13 ｜ v98・更新 2026/07/16</a></span>
   </div>
   <div class="navlinks">
     <a href="prep.html">行前</a>
@@ -185,8 +190,8 @@ header .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
 </div>
 </div>
 
-<script src="data.js?v=97"></script>
-<script src="trip.js?v=97"></script>
+<script src="data.js?v=98"></script>
+<script src="trip.js?v=98"></script>
 <script>
 // ---- 共用：地點查找與繁簡 ----
 const _T2S=(typeof T2S!=="undefined")?T2S:{};
@@ -332,7 +337,7 @@ TRIP.forEach(day=>{
 const daynav=document.getElementById('daynav');
 function dayCityLabel(city){return city==='重庆'?'重慶':city==='成都'?'成都':'重慶→成都';}
 daynav.innerHTML=
-  TRIP.map(d=>`<a href="#day-${d.d}" data-day="${d.d}" data-city="${d.city}"><span>D${d.d} ${dayCityLabel(d.city)}</span><span class="daynav-title">${d.title}</span><small>${d.date}</small></a>`).join("")+
+  TRIP.map(d=>`<a href="#day-${d.d}" data-day="${d.d}" data-city="${d.city}"><span class="daynav-top"><b class="daynav-day">D${d.d}</b><span class="daynav-city">${dayCityLabel(d.city)}</span><small>${d.date}</small></span><span class="daynav-title">${d.title}</span></a>`).join("")+
   `<a class="bkx" href="#backup" data-backup>📌 備選</a>`;
 
 // 依目前瀏覽到的日卡自動高亮，並將按鈕水平置中。
@@ -396,6 +401,6 @@ document.addEventListener('click',e=>{
   if(a&&!a.target)document.getElementById('pgload').classList.remove('done');
 });
 </script>
-<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){if(!('caches'in window))return;caches.open('sichuan-app-v97').then(function(c){document.querySelectorAll('script[src],link[href]').forEach(function(el){var u=el.src||el.href;if(!u||u.indexOf(location.origin)!==0)return;c.match(u).then(function(hit){if(!hit)fetch(u).catch(function(){});});});});}).catch(function(){});});}</script>
+<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){if(!('caches'in window))return;caches.open('sichuan-app-v98').then(function(c){document.querySelectorAll('script[src],link[href]').forEach(function(el){var u=el.src||el.href;if(!u||u.indexOf(location.origin)!==0)return;c.match(u).then(function(hit){if(!hit)fetch(u).catch(function(){});});});});}).catch(function(){});});}</script>
 </body>
 </html>
