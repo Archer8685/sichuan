@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>成都・重慶 9天8夜 — 景點餐廳地圖</title>
-<link rel="preload" href="data.js?v=96" as="script">
-<link rel="preload" href="trip.js?v=96" as="script">
+<link rel="preload" href="data.js?v=97" as="script">
+<link rel="preload" href="trip.js?v=97" as="script">
 <link rel="prefetch" href="itinerary.html">
 <link rel="prefetch" href="prep.html">
 <link rel="prefetch" href="guide.html">
@@ -175,7 +175,7 @@ html,body{overscroll-behavior:none} /* 防止下拉手勢觸發瀏覽器 pull-to
 <nav class="topnav" aria-label="主要導覽">
   <div class="brand">
     <strong>Sichuan Trip</strong>
-    <span class="site-meta"><a data-site-meta href="changelog.html" aria-label="查看網站修改紀錄">2026/12/5–12/13 ｜ v96・更新 2026/07/16</a></span>
+    <span class="site-meta"><a data-site-meta href="changelog.html" aria-label="查看網站修改紀錄">2026/12/5–12/13 ｜ v97・更新 2026/07/16</a></span>
   </div>
   <div class="navlinks">
     <a href="prep.html">行前</a>
@@ -217,8 +217,8 @@ html,body{overscroll-behavior:none} /* 防止下拉手勢觸發瀏覽器 pull-to
 </div>
 <div class="legend" id="legend"></div>
 
-<script src="data.js?v=96"></script>
-<script src="trip.js?v=96"></script>
+<script src="data.js?v=97"></script>
+<script src="trip.js?v=97"></script>
 <script>
 // 分類設定：顏色＋圖示
 const CATS={
@@ -274,7 +274,7 @@ function focusOn(latlng,zoom){
   if(s>0)map.panBy([0,Math.round(s/2)],{animate:false}); // 讓目標落在可視區中央
 }
 
-let state={city:"成都",cats:new Set(Object.keys(CATS)),halalOnly:false,q:"",tripDay:1,tripShowAll:true};
+let state={city:"成都",cats:new Set(Object.keys(CATS)),halalOnly:false,q:"",tripDay:1,tripPlan:"A",tripShowAll:true};
 let markers=[];
 let routeLine=null;
 
@@ -499,6 +499,7 @@ function renderTrip(keepView){
   if(routeLine){map.removeLayer(routeLine);routeLine=null;}
   const list=document.getElementById('list');list.innerHTML="";
   const day=TRIP.find(x=>x.d===state.tripDay)||TRIP[0];
+  const activeStops=day.variants?day.stops.filter(s=>s.plan===state.tripPlan):day.stops;
   // 日期選擇 chips
   const chipRow=document.createElement('div');chipRow.className='trip-controls';
   chipRow.style.cssText='display:flex;flex-wrap:wrap;gap:5px;padding:6px 4px 10px';
@@ -506,9 +507,18 @@ function renderTrip(keepView){
     const c=document.createElement('span');c.className='chip'+(dd.d===day.d?' on':'');
     c.textContent=`D${dd.d} ${dd.date}`;
     if(dd.d===day.d){c.style.background='#c0392b';c.style.color='#fff';}
-    c.onclick=()=>{state.tripDay=dd.d;renderTrip();};
+    c.onclick=()=>{state.tripDay=dd.d;state.tripPlan="A";renderTrip();};
     chipRow.appendChild(c);
   });
+  if(day.variants){
+    day.variants.forEach(v=>{
+      const c=document.createElement('span');c.className='chip'+(v.id===state.tripPlan?' on':'');
+      c.textContent=`方案 ${v.id}`;
+      if(v.id===state.tripPlan){c.style.background=v.id==='A'?'#1a7a6d':'#9a7415';c.style.color='#fff';}
+      c.onclick=()=>{state.tripPlan=v.id;renderTrip();};
+      chipRow.appendChild(c);
+    });
+  }
   // 顯示全部地點開關（疊加背景小圖釘，尊重上方分類/清真/搜尋篩選）
   const allChip=document.createElement('span');
   allChip.className='chip'+(state.tripShowAll?' on':'');
@@ -525,7 +535,7 @@ function renderTrip(keepView){
   let bgCount=0;
   if(state.tripShowAll){
     const dayCities=day.city==='双城'?['重庆','成都']:[day.city];
-    const stopNames=new Set(day.stops.map(s=>t2s(s.name)));
+    const stopNames=new Set(activeStops.map(s=>t2s(s.name)));
     const q=t2s(state.q.toLowerCase());
     PLACES.forEach(p=>{
       if(!p.lat||!dayCities.includes(p.city))return;
@@ -544,10 +554,11 @@ function renderTrip(keepView){
     });
   }
   const bgHint=state.tripShowAll?(bgCount>0?`（＋背景 ${bgCount} 個地點）`:`（背景 0 個——受上方分類/清真/搜尋篩選影響，按「全選」可顯示全部類型）`):"";
-  document.getElementById('count').textContent=`📅 12月${day.date.split('/')[1]}日 ｜ ${day.stops.length} 站${bgHint}`;
+  const planHint=day.variants?`・方案 ${state.tripPlan}`:"";
+  document.getElementById('count').textContent=`📅 12月${day.date.split('/')[1]}日${planHint} ｜ ${activeStops.length} 站${bgHint}`;
   // 路線與標記
   const pts=[];
-  day.stops.forEach((s,i)=>{
+  activeStops.forEach((s,i)=>{
     const p=findPlace(s.name);
     if(p&&p.lat&&p.lng){
       pts.push([p.lat,p.lng]);
@@ -566,7 +577,7 @@ function renderTrip(keepView){
       ${(s.kind==='meal'||s.alt)?(function(){const h=altHTML(s);return h?`<div class="meta" style="margin-top:4px;color:#a04b12">${h}</div>`:"";})():""}
       ${eats?`<div class="meta" style="margin-top:4px;color:#0e7c3f">🍽 附近用餐：${eats}</div>`:""}
       ${nb?`<div class="meta" style="margin-top:4px">🧭 附近：${nb}</div>`:""}
-      ${(s.go&&i<day.stops.length-1)?`<div class="meta" style="margin-top:4px;color:#4a6b8a">↓ ${s.go}</div>`:""}`;
+      ${(s.go&&i<activeStops.length-1)?`<div class="meta" style="margin-top:4px;color:#4a6b8a">↓ ${s.go}</div>`:""}`;
     card.onclick=()=>{
       const mk=markers.find(m=>m._stopIdx===i);
       if(mk){focusOn(mk.getLatLng(),15);mk.openPopup();}
@@ -834,7 +845,7 @@ document.addEventListener('click',e=>{
     window.addEventListener('load',function(){
       navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){
         if(!('caches' in window))return;
-        caches.open('sichuan-app-v96').then(function(c){
+        caches.open('sichuan-app-v97').then(function(c){
           document.querySelectorAll('script[src],link[href]').forEach(function(el){
             var u=el.src||el.href; if(!u||u.indexOf(location.origin)!==0)return;
             c.match(u).then(function(hit){ if(!hit) fetch(u).catch(function(){}); });

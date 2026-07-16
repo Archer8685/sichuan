@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>成都・重慶 12/5–12/13 最終行程</title>
-<link rel="preload" href="data.js?v=96" as="script">
-<link rel="preload" href="trip.js?v=96" as="script">
+<link rel="preload" href="data.js?v=97" as="script">
+<link rel="preload" href="trip.js?v=97" as="script">
 <link rel="prefetch" href="libs/leaflet.js">
 <link rel="prefetch" href="libs/leaflet.css">
 <link rel="prefetch" href="map.html">
@@ -72,6 +72,22 @@ header .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
 .day-h .cbadge{font-size:11px;color:#fff;border-radius:8px;padding:2px 8px;white-space:nowrap}
 .day-h .title{font-size:12.5px;color:var(--muted);margin-left:auto;text-align:right}
 .day-b{padding:8px 16px 12px}
+.variant-index{display:flex;gap:8px;flex-wrap:wrap;padding:12px 0 4px}
+.variant-index a{display:inline-flex;align-items:center;gap:6px;padding:7px 11px;border-radius:9px;text-decoration:none;font-size:12px;font-weight:800}
+.variant-index a[data-plan="A"]{color:#116457;background:#e9f7f3;border:1px solid #b9ddd4}
+.variant-index a[data-plan="B"]{color:#7b5a0b;background:#fff8df;border:1px solid #ead493}
+.variant{margin:10px 0 18px;border:2px solid;border-radius:12px;overflow:hidden;scroll-margin-top:130px}
+.variant[data-plan="A"]{border-color:#78bbae;background:#fbfffe}
+.variant[data-plan="B"]{border-color:#d7b75c;background:#fffdf7}
+.variant-h{display:flex;align-items:flex-start;gap:10px;padding:10px 12px}
+.variant[data-plan="A"] .variant-h{background:#e9f7f3}
+.variant[data-plan="B"] .variant-h{background:#fff4cc}
+.variant-tag{flex-shrink:0;color:#fff;border-radius:8px;padding:3px 9px;font-size:12px;font-weight:900}
+.variant[data-plan="A"] .variant-tag{background:#1a7a6d}
+.variant[data-plan="B"] .variant-tag{background:#9a7415}
+.variant-title{font-size:14px;font-weight:800;line-height:1.45}
+.variant-note{font-size:11.5px;color:var(--muted);line-height:1.5;margin-top:2px}
+.variant-stops{padding:4px 12px 10px}
 
 /* 站點（時間軸） */
 .stop{display:flex;gap:8px;padding:8px 0 2px}
@@ -120,6 +136,10 @@ header .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
   .stop .tm{width:36px;font-size:11px}
   .go{margin-left:52px;max-width:calc(100% - 58px)}
   .day-h .title{width:100%;text-align:left;margin-left:0}
+  .variant-index a{flex:1;justify-content:center}
+  .variant-h{align-items:center}
+  .variant-note{font-size:12px}
+  .variant-stops{padding-left:6px;padding-right:8px}
   .stop .line1{font-size:14.5px}
   .stop .note{font-size:13px}
   .backup li{font-size:13px}
@@ -131,7 +151,7 @@ header .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
 <nav class="topnav" aria-label="主要導覽">
   <div class="brand">
     <strong>Sichuan Trip</strong>
-    <span class="site-meta"><a data-site-meta href="changelog.html" aria-label="查看網站修改紀錄">2026/12/5–12/13 ｜ v96・更新 2026/07/16</a></span>
+    <span class="site-meta"><a data-site-meta href="changelog.html" aria-label="查看網站修改紀錄">2026/12/5–12/13 ｜ v97・更新 2026/07/16</a></span>
   </div>
   <div class="navlinks">
     <a href="prep.html">行前</a>
@@ -165,8 +185,8 @@ header .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
 </div>
 </div>
 
-<script src="data.js?v=96"></script>
-<script src="trip.js?v=96"></script>
+<script src="data.js?v=97"></script>
+<script src="trip.js?v=97"></script>
 <script>
 // ---- 共用：地點查找與繁簡 ----
 const _T2S=(typeof T2S!=="undefined")?T2S:{};
@@ -253,7 +273,13 @@ TRIP.forEach(day=>{
     <span class="date">12月${day.date.split('/')[1]}日（${day.wd}）</span>
     <span class="cbadge" style="background:${cc}">${day.city==='重庆'?'重慶':day.city}</span>
     <span class="title">${day.title}</span></div><div class="day-b">`;
-  day.stops.forEach((s,i)=>{
+  if(day.variants){
+    html+=`<div class="variant-index" aria-label="D${day.d} 行程版本">`+
+      day.variants.map(v=>`<a href="#day-${day.d}-${v.id}" data-plan="${v.id}">方案 ${v.id}｜${v.title}</a>`).join("")+
+      `</div>`;
+  }
+  function renderStops(stops){
+   stops.forEach((s,i)=>{
     const p=lookup(s.name);
     const k=KIND[s.kind]||KIND.spot;
     const facts=[];
@@ -284,8 +310,20 @@ TRIP.forEach(day=>{
       ${(s.kind==='meal'||s.alt)?altHTML(s):""}
       ${moreBits.length?`<details open><summary>更多（營業時間・注意・附近）</summary><div class="more">${moreBits.join("<br>")}</div></details>`:""}
     </div></div>`;
-    if(s.go&&i<day.stops.length-1)html+=`<div class="go">${s.go}</div>`;
+    if(s.go&&i<stops.length-1)html+=`<div class="go">${s.go}</div>`;
   });
+  }
+  if(day.variants){
+    day.variants.forEach(v=>{
+      html+=`<section class="variant" id="day-${day.d}-${v.id}" data-plan="${v.id}">
+        <div class="variant-h"><span class="variant-tag">方案 ${v.id}</span><div><div class="variant-title">${v.title}</div><div class="variant-note">${v.note}</div></div></div>
+        <div class="variant-stops">`;
+      renderStops(day.stops.filter(s=>s.plan===v.id));
+      html+=`</div></section>`;
+    });
+  }else{
+    renderStops(day.stops);
+  }
   html+=`</div></div>`;
   daysEl.innerHTML+=html;
 });
@@ -358,6 +396,6 @@ document.addEventListener('click',e=>{
   if(a&&!a.target)document.getElementById('pgload').classList.remove('done');
 });
 </script>
-<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){if(!('caches'in window))return;caches.open('sichuan-app-v96').then(function(c){document.querySelectorAll('script[src],link[href]').forEach(function(el){var u=el.src||el.href;if(!u||u.indexOf(location.origin)!==0)return;c.match(u).then(function(hit){if(!hit)fetch(u).catch(function(){});});});});}).catch(function(){});});}</script>
+<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){if(!('caches'in window))return;caches.open('sichuan-app-v97').then(function(c){document.querySelectorAll('script[src],link[href]').forEach(function(el){var u=el.src||el.href;if(!u||u.indexOf(location.origin)!==0)return;c.match(u).then(function(hit){if(!hit)fetch(u).catch(function(){});});});});}).catch(function(){});});}</script>
 </body>
 </html>
