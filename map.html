@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>成都・重慶 9天8夜 — 景點餐廳地圖</title>
-<link rel="preload" href="data.js?v=98" as="script">
-<link rel="preload" href="trip.js?v=98" as="script">
+<link rel="preload" href="data.js?v=99" as="script">
+<link rel="preload" href="trip.js?v=99" as="script">
 <link rel="prefetch" href="itinerary.html">
 <link rel="prefetch" href="prep.html">
 <link rel="prefetch" href="guide.html">
@@ -175,7 +175,7 @@ html,body{overscroll-behavior:none} /* 防止下拉手勢觸發瀏覽器 pull-to
 <nav class="topnav" aria-label="主要導覽">
   <div class="brand">
     <strong>Sichuan Trip</strong>
-    <span class="site-meta"><a data-site-meta href="changelog.html" aria-label="查看網站修改紀錄">2026/12/5–12/13 ｜ v98・更新 2026/07/16</a></span>
+    <span class="site-meta"><a data-site-meta href="changelog.html" aria-label="查看網站修改紀錄">2026/12/5–12/13 ｜ v99・更新 2026/07/16</a></span>
   </div>
   <div class="navlinks">
     <a href="prep.html">行前</a>
@@ -217,8 +217,8 @@ html,body{overscroll-behavior:none} /* 防止下拉手勢觸發瀏覽器 pull-to
 </div>
 <div class="legend" id="legend"></div>
 
-<script src="data.js?v=98"></script>
-<script src="trip.js?v=98"></script>
+<script src="data.js?v=99"></script>
+<script src="trip.js?v=99"></script>
 <script>
 // 分類設定：顏色＋圖示
 const CATS={
@@ -845,7 +845,7 @@ document.addEventListener('click',e=>{
     window.addEventListener('load',function(){
       navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){
         if(!('caches' in window))return;
-        caches.open('sichuan-app-v98').then(function(c){
+        caches.open('sichuan-app-v99').then(function(c){
           document.querySelectorAll('script[src],link[href]').forEach(function(el){
             var u=el.src||el.href; if(!u||u.indexOf(location.origin)!==0)return;
             c.match(u).then(function(hit){ if(!hit) fetch(u).catch(function(){}); });
