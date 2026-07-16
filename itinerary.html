@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>成都・重慶 12/5–12/13 最終行程</title>
-<link rel="preload" href="data.js?v=100" as="script">
-<link rel="preload" href="trip.js?v=100" as="script">
+<link rel="preload" href="data.js?v=101" as="script">
+<link rel="preload" href="trip.js?v=101" as="script">
 <link rel="prefetch" href="libs/leaflet.js">
 <link rel="prefetch" href="libs/leaflet.css">
 <link rel="prefetch" href="map.html">
@@ -42,9 +42,12 @@ body{font-family:"PingFang TC","Microsoft JhengHei","Noto Sans TC",sans-serif;co
 a:active,.chip:active,.card:active,.navlinks a:active{transform:scale(.97)}
 
 /* 黏性日期導覽 */
-.daynav{position:sticky;top:58px;z-index:30;display:flex;gap:6px;overflow-x:auto;padding:10px 2px;margin:0 -2px;background:rgba(250,247,242,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.daynav-shell{position:sticky;top:58px;z-index:30;display:flex;align-items:stretch;gap:7px;padding:8px 0;background:rgba(250,247,242,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.day-jump{width:132px;flex-shrink:0;padding:0 10px;border:1px solid var(--accent2);border-radius:10px;background:#fff;color:var(--ink);font:700 12px/1.3 inherit;cursor:pointer}
+.day-jump:focus-visible{outline:3px solid rgba(26,122,109,.25);outline-offset:2px}
+.daynav{display:flex;gap:6px;min-width:0;overflow-x:auto;padding:2px;margin:-2px;background:transparent;-webkit-overflow-scrolling:touch;scrollbar-width:thin;scrollbar-color:#c9bda9 transparent;scroll-snap-type:x proximity}
 .daynav::-webkit-scrollbar{display:none}
-.daynav a{display:flex;flex-direction:column;align-items:stretch;gap:4px;width:205px;min-height:58px;flex-shrink:0;padding:8px 11px;border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--ink);text-decoration:none;box-shadow:0 1px 2px rgba(0,0,0,.03)}
+.daynav a{display:flex;flex-direction:column;align-items:stretch;gap:4px;width:205px;min-height:58px;flex-shrink:0;padding:8px 11px;border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--ink);text-decoration:none;box-shadow:0 1px 2px rgba(0,0,0,.03);scroll-snap-align:start}
 .daynav-top{display:flex;align-items:center;gap:6px;line-height:1}
 .daynav-day{font-size:13px;font-weight:900}
 .daynav-city{font-size:11px;font-weight:700;color:var(--accent);padding:2px 5px;border-radius:5px;background:#f9ece9}
@@ -67,8 +70,8 @@ header .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
 .flight b{color:var(--accent)}
 
 /* 天卡片 */
-.day{background:var(--panel);border:1px solid var(--line);border-radius:14px;margin:14px 0;overflow:hidden;scroll-margin-top:124px}
-.backup{scroll-margin-top:124px}
+.day{background:var(--panel);border:1px solid var(--line);border-radius:14px;margin:14px 0;overflow:hidden;scroll-margin-top:142px}
+.backup{scroll-margin-top:142px}
 .day-h{display:flex;align-items:center;gap:9px;padding:11px 16px;border-bottom:1px solid var(--line);background:linear-gradient(to right,#fdfbf7,#fff);flex-wrap:wrap}
 .day-h .dnum{font-size:12px;color:#fff;background:var(--accent2);border-radius:8px;padding:2px 8px;white-space:nowrap}
 .day-h .date{font-weight:700;font-size:15px;white-space:nowrap}
@@ -129,7 +132,8 @@ header .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
   .brand .site-meta{display:block;font-size:9.5px}
   .navlinks{gap:5px}
   .navlinks a{min-height:32px;padding:0 8px;font-size:12px;border-radius:7px}
-  .daynav{top:44px}
+  .daynav-shell{top:44px;gap:5px;padding:7px 0}
+  .day-jump{width:98px;padding:0 7px;font-size:11px}
   .daynav a{display:block;width:auto;min-height:0;padding:7px 10px;border-radius:9px}
   .daynav-top{display:block;text-align:center}
   .daynav-city{display:inline;background:none;padding:0;color:inherit;font-size:10px}
@@ -156,7 +160,7 @@ header .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
 <nav class="topnav" aria-label="主要導覽">
   <div class="brand">
     <strong>Sichuan Trip</strong>
-    <span class="site-meta"><a data-site-meta href="changelog.html" aria-label="查看網站修改紀錄">2026/12/5–12/13 ｜ v100・更新 2026/07/16</a></span>
+    <span class="site-meta"><a data-site-meta href="changelog.html" aria-label="查看網站修改紀錄">2026/12/5–12/13 ｜ v101・更新 2026/07/16</a></span>
   </div>
   <div class="navlinks">
     <a href="prep.html">行前</a>
@@ -175,7 +179,10 @@ header .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
   </div>
 </header>
 
-<nav class="daynav" id="daynav"></nav>
+<div class="daynav-shell">
+  <select class="day-jump" id="day-jump" aria-label="快速選擇行程日期"></select>
+  <nav class="daynav" id="daynav" aria-label="每日行程"></nav>
+</div>
 <div id="days"></div>
 <div class="backup" id="backup"><h2>📌 備選清單</h2></div>
 
@@ -190,8 +197,8 @@ header .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
 </div>
 </div>
 
-<script src="data.js?v=100"></script>
-<script src="trip.js?v=100"></script>
+<script src="data.js?v=101"></script>
+<script src="trip.js?v=101"></script>
 <script>
 // ---- 共用：地點查找與繁簡 ----
 const _T2S=(typeof T2S!=="undefined")?T2S:{};
@@ -335,10 +342,16 @@ TRIP.forEach(day=>{
 
 // ---- 日期導覽列 ----
 const daynav=document.getElementById('daynav');
+const dayJump=document.getElementById('day-jump');
 function dayCityLabel(city){return city==='重庆'?'重慶':city==='成都'?'成都':'重慶→成都';}
 daynav.innerHTML=
   TRIP.map(d=>`<a href="#day-${d.d}" data-day="${d.d}" data-city="${d.city}"><span class="daynav-top"><b class="daynav-day">D${d.d}</b><span class="daynav-city">${dayCityLabel(d.city)}</span><small>${d.date}</small></span><span class="daynav-title">${d.title}</span></a>`).join("")+
   `<a class="bkx" href="#backup" data-backup>📌 備選</a>`;
+dayJump.innerHTML=TRIP.map(d=>`<option value="${d.d}">D${d.d} ${dayCityLabel(d.city)}・${d.date}</option>`).join("")+`<option value="backup">📌 備選</option>`;
+dayJump.addEventListener('change',()=>{
+  const target=dayJump.value==='backup'?document.getElementById('backup'):document.getElementById(`day-${dayJump.value}`);
+  if(target)target.scrollIntoView({behavior:'auto',block:'start'});
+});
 
 // 依目前瀏覽到的日卡自動高亮，並將按鈕水平置中。
 const daySections=TRIP.map(d=>document.getElementById(`day-${d.d}`));
@@ -350,6 +363,7 @@ function setActiveDay(day){
   const key=String(day);
   if(key===activeDay)return;
   activeDay=key;
+  dayJump.value=key;
   dayLinks.forEach(a=>{
     const on=a.dataset.day===key;
     a.classList.toggle('active',on);
@@ -401,6 +415,6 @@ document.addEventListener('click',e=>{
   if(a&&!a.target)document.getElementById('pgload').classList.remove('done');
 });
 </script>
-<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){if(!('caches'in window))return;caches.open('sichuan-app-v100').then(function(c){document.querySelectorAll('script[src],link[href]').forEach(function(el){var u=el.src||el.href;if(!u||u.indexOf(location.origin)!==0)return;c.match(u).then(function(hit){if(!hit)fetch(u).catch(function(){});});});});}).catch(function(){});});}</script>
+<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){if(!('caches'in window))return;caches.open('sichuan-app-v101').then(function(c){document.querySelectorAll('script[src],link[href]').forEach(function(el){var u=el.src||el.href;if(!u||u.indexOf(location.origin)!==0)return;c.match(u).then(function(hit){if(!hit)fetch(u).catch(function(){});});});});}).catch(function(){});});}</script>
 </body>
 </html>
