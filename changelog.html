@@ -123,22 +123,23 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
     <div class="eyebrow">Website field notes</div>
     <h1>一路修到更順。<span>網頁修改紀錄</span></h1>
     <p class="lead">把網站功能、行程調整與資料校正整理成可讀的版本誌。內容依 Git commit 與現有頁面交叉核對；相近的小修改合併描述，保留 commit 編號供回查。</p>
-    <p class="source-note">資料截點：2026/07/15（UTC+8）・<a href="https://github.com/Archer8685/sichuan/commits" target="_blank" rel="noopener">查看完整 Git 歷史 ↗</a></p>
+    <p class="source-note">資料截點：2026/07/16（UTC+8）・<a href="https://github.com/Archer8685/sichuan/commits" target="_blank" rel="noopener">查看完整 Git 歷史 ↗</a></p>
     <aside class="ticket" aria-label="版本資訊">
       <small>CHANGE LOG</small>
-      <strong>v93</strong>
+      <strong>v94</strong>
       <div class="route">CKG 重慶<br>↓ 9 DAYS<br>CTU 成都</div>
     </aside>
   </header>
 
   <section class="stats" aria-label="紀錄摘要">
-    <div class="stat"><b>100</b><span>筆本次修改前 Git commits</span></div>
-    <div class="stat"><b>5 日</b><span>2026/07/11–07/15</span></div>
+    <div class="stat"><b>101</b><span>筆本次修改前 Git commits</span></div>
+    <div class="stat"><b>6 日</b><span>2026/07/11–07/16</span></div>
     <div class="stat"><b>5 頁</b><span>行前、行程、地圖、攻略、紀錄</span></div>
   </section>
 
   <nav class="jump" aria-label="依日期跳轉">
-    <a href="#d0715">07/15 最新</a>
+    <a href="#d0716">07/16 最新</a>
+    <a href="#d0715">07/15</a>
     <a href="#d0714">07/14</a>
     <a href="#d0713">07/13</a>
     <a href="#d0712">07/12 主體完成</a>
@@ -147,11 +148,22 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
   </nav>
 
   <section class="timeline" aria-label="修改時間軸">
+    <article class="release" id="d0716">
+      <div class="date"><time datetime="2026-07-16">07 / 16</time><span>目前工作區・最新</span></div>
+      <div class="release-body">
+        <section class="change" data-kind="fix">
+          <h2>行程地點連結改為直接定位並顯示資訊 <span class="new">LATEST</span></h2>
+          <p>從行程頁點擊地點進入地圖時，網址中的地點名稱現在只用於切換正確城市、將地圖置中至該 POI 並自動開啟資訊卡，不再寫入搜尋框或啟動搜尋篩選；附近完整地點清單仍會保留。定位沿用完整分店名稱優先的匹配邏輯，並將網站資源與離線快取版本同步更新為 v94。</p>
+          <div class="meta"><span class="kind">地圖互動＋版本</span><span class="commit">目前工作區</span></div>
+        </section>
+      </div>
+    </article>
+
     <article class="release" id="d0715">
-      <div class="date"><time datetime="2026-07-15">07 / 15</time><span>目前工作區・最新</span></div>
+      <div class="date"><time datetime="2026-07-15">07 / 15</time><span>D7 路線整理</span></div>
       <div class="release-body">
         <section class="change" data-kind="trip">
-          <h2>D7 保留芳草玉林主線，加入錦江夜景備選 <span class="new">LATEST</span></h2>
+          <h2>D7 保留芳草玉林主線，加入錦江夜景備選</h2>
           <p>D7 維持東郊記憶後前往芳草街、芳華街、玉林路及清真高原第一家資格烤羊肉的主線 C；另在同日行程底部加入整套替換的夜景路線 B：東郊記憶後改往望平街、猛追灣，再到清真西遇憶品九眼橋店晚餐，續走安順廊橋與九眼橋夜景。頁面明確註明兩線不可混走，並補上星期五人潮、雨天低溫與餐廳排隊的選擇條件。地點沿用 07/15 高德 POI 稽核資料，網站版本更新為 v93。</p>
           <div class="meta"><span class="kind">行程備選＋版本</span><span class="commit">目前工作區</span></div>
         </section>
