@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>攻略・一日遊 — 成都・重慶 12/5–12/13</title>
-<link rel="preload" href="data.js?v=94" as="script">
-<link rel="preload" href="trip.js?v=94" as="script">
+<link rel="preload" href="data.js?v=95" as="script">
+<link rel="preload" href="trip.js?v=95" as="script">
 <link rel="prefetch" href="itinerary.html">
 <link rel="prefetch" href="map.html">
 <link rel="prefetch" href="prep.html">
@@ -73,7 +73,7 @@ a.card:hover{border-color:#cdb8d4;box-shadow:0 4px 14px rgba(0,0,0,.07)}
 <nav class="topnav" aria-label="主要導覽">
   <div class="brand">
     <strong>Sichuan Trip</strong>
-    <span class="site-meta"><a data-site-meta href="changelog.html" aria-label="查看網站修改紀錄">2026/12/5–12/13 ｜ v94・更新 2026/07/16</a></span>
+    <span class="site-meta"><a data-site-meta href="changelog.html" aria-label="查看網站修改紀錄">2026/12/5–12/13 ｜ v95・更新 2026/07/16</a></span>
   </div>
   <div class="navlinks">
     <a href="prep.html">行前</a>
@@ -97,8 +97,8 @@ a.card:hover{border-color:#cdb8d4;box-shadow:0 4px 14px rgba(0,0,0,.07)}
   <div id="count"></div>
   <div class="grid" id="list"></div>
 </main>
-<script src="data.js?v=94"></script>
-<script src="trip.js?v=94"></script>
+<script src="data.js?v=95"></script>
+<script src="trip.js?v=95"></script>
 <script>
 const _T2S=(typeof T2S!=="undefined")?T2S:{};
 function t2s(s){let r="";for(const c of s)r+=_T2S[c]||c;return r;}
@@ -139,6 +139,6 @@ document.getElementById("search").oninput=e=>{state.q=e.target.value.trim();rend
 render();
 document.getElementById("pgload").classList.add("done");
 </script>
-<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){if(!('caches'in window))return;caches.open('sichuan-app-v94').then(function(c){document.querySelectorAll('script[src],link[href]').forEach(function(el){var u=el.src||el.href;if(!u||u.indexOf(location.origin)!==0)return;c.match(u).then(function(hit){if(!hit)fetch(u).catch(function(){});});});});}).catch(function(){});});}</script>
+<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){if(!('caches'in window))return;caches.open('sichuan-app-v95').then(function(c){document.querySelectorAll('script[src],link[href]').forEach(function(el){var u=el.src||el.href;if(!u||u.indexOf(location.origin)!==0)return;c.match(u).then(function(hit){if(!hit)fetch(u).catch(function(){});});});});}).catch(function(){});});}</script>
 </body>
 </html>
