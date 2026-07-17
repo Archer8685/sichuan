@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>成都・重慶 12/5–12/13 最終行程</title>
-<link rel="preload" href="data.js?v=103" as="script">
-<link rel="preload" href="trip.js?v=103" as="script">
+<link rel="preload" href="data.js?v=104" as="script">
+<link rel="preload" href="trip.js?v=104" as="script">
 <link rel="prefetch" href="libs/leaflet.js">
 <link rel="prefetch" href="libs/leaflet.css">
 <link rel="prefetch" href="map.html">
@@ -160,7 +160,7 @@ header .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
 <nav class="topnav" aria-label="主要導覽">
   <div class="brand">
     <strong>Sichuan Trip</strong>
-    <span class="site-meta"><a data-site-meta href="changelog.html" aria-label="查看網站修改紀錄">2026/12/5–12/13 ｜ v103・更新 2026/07/17</a></span>
+    <span class="site-meta"><a data-site-meta href="changelog.html" aria-label="查看網站修改紀錄">2026/12/5–12/13 ｜ v104・更新 2026/07/17</a></span>
   </div>
   <div class="navlinks">
     <a href="prep.html">行前</a>
@@ -175,7 +175,7 @@ header .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
   <div class="sub">2026/12/5（六）– 12/13（日）｜重慶進・成都出｜重慶解放碑美居 3 晚＋成都太古里春熙美居 5 晚</div>
   <div class="flights">
     <div class="flight">✈️ 去程 12/5（六）<b>CI903</b>＋<b>CX966</b> 香港 13:25 → <b>重慶江北 T3 16:00</b></div>
-    <div class="flight">✈️ 回程 12/13（日）<b>CI552</b> <b>成都天府機場 13:15</b> 起飛（09:30 出發死線）</div>
+    <div class="flight">✈️ 回程 12/13（日）<b>CI552</b> <b>成都雙流機場 CTU 13:15</b> 起飛（08:50 預定出發／09:15 死線）</div>
   </div>
 </header>
 
@@ -191,14 +191,14 @@ header .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
 <b>重慶市區：</b>軌道計次票 3日45元（T3 站內購買）；渝中區內（解放碑↔較場口↔小什字）步行常比打車快（單行道多）。<br>
 <b>成渝高鐵：</b>重慶北→成都東約 1.5 小時（二等 154 元），12306 App 支援台胞證註冊，提前購票。<br>
 <b>成都市區：</b>打車便宜暢通（起步約 9 元）；地鐵天府通 App／支付寶乘車碼皆可。<br>
-<b>回程機場：</b>CI552 13:15 起飛，11:00 前抵達天府機場——<b>09:30 出發死線</b>（打車 60–70 分 180–220 元／地鐵 18 號線約 75 分）。<br>
+<b>回程機場：</b>CI552 13:15 起飛，10:15 前抵達成都雙流機場 CTU——<b>09:15 出發死線</b>，行程預定08:50退房（打車約35–50分、50–80元／地鐵3號線至太平園轉10號線約55–65分；航廈出發前確認）。<br>
 <b>12 月提醒：</b>兩地均溫 5–13°C 濕冷，羽絨衣＋防滑鞋＋暖暖包；重慶多霧影響夜景（見各日雨霧備案）；預約類景點均需護照/台胞證實名。<br>
 <b>飲食提醒：</b>火鍋「牛油」＝牛脂非豬油；豌雜麵含豬改牛肉麵；☪＝清真認證、「友善」＝無豬或易避開，點餐仍建議聲明不食豬肉豬油。
 </div>
 </div>
 
-<script src="data.js?v=103"></script>
-<script src="trip.js?v=103"></script>
+<script src="data.js?v=104"></script>
+<script src="trip.js?v=104"></script>
 <script>
 // ---- 共用：地點查找與繁簡 ----
 const _T2S=(typeof T2S!=="undefined")?T2S:{};
@@ -415,6 +415,6 @@ document.addEventListener('click',e=>{
   if(a&&!a.target)document.getElementById('pgload').classList.remove('done');
 });
 </script>
-<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){if(!('caches'in window))return;caches.open('sichuan-app-v103').then(function(c){document.querySelectorAll('script[src],link[href]').forEach(function(el){var u=el.src||el.href;if(!u||u.indexOf(location.origin)!==0)return;c.match(u).then(function(hit){if(!hit)fetch(u).catch(function(){});});});});}).catch(function(){});});}</script>
+<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){if(!('caches'in window))return;caches.open('sichuan-app-v104').then(function(c){document.querySelectorAll('script[src],link[href]').forEach(function(el){var u=el.src||el.href;if(!u||u.indexOf(location.origin)!==0)return;c.match(u).then(function(hit){if(!hit)fetch(u).catch(function(){});});});});}).catch(function(){});});}</script>
 </body>
 </html>
