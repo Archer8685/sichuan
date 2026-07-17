@@ -123,22 +123,23 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
     <div class="eyebrow">Website field notes</div>
     <h1>一路修到更順。<span>網頁修改紀錄</span></h1>
     <p class="lead">把網站功能、行程調整與資料校正整理成可讀的版本誌。內容依 Git commit 與現有頁面交叉核對；相近的小修改合併描述，保留 commit 編號供回查。</p>
-    <p class="source-note">資料截點：2026/07/16（UTC+8）・<a href="https://github.com/Archer8685/sichuan/commits" target="_blank" rel="noopener">查看完整 Git 歷史 ↗</a></p>
+    <p class="source-note">資料截點：2026/07/17（UTC+8）・<a href="https://github.com/Archer8685/sichuan/commits" target="_blank" rel="noopener">查看完整 Git 歷史 ↗</a></p>
     <aside class="ticket" aria-label="版本資訊">
       <small>CHANGE LOG</small>
-      <strong>v101</strong>
+      <strong>v102</strong>
       <div class="route">CKG 重慶<br>↓ 9 DAYS<br>CTU 成都</div>
     </aside>
   </header>
 
   <section class="stats" aria-label="紀錄摘要">
-    <div class="stat"><b>103</b><span>筆本次修改前 Git commits</span></div>
-    <div class="stat"><b>6 日</b><span>2026/07/11–07/16</span></div>
+    <div class="stat"><b>109</b><span>筆本次修改前 Git commits</span></div>
+    <div class="stat"><b>7 日</b><span>2026/07/11–07/17</span></div>
     <div class="stat"><b>5 頁</b><span>行前、行程、地圖、攻略、紀錄</span></div>
   </section>
 
   <nav class="jump" aria-label="依日期跳轉">
-    <a href="#d0716">07/16 最新</a>
+    <a href="#d0717">07/17 最新</a>
+    <a href="#d0716">07/16</a>
     <a href="#d0715">07/15</a>
     <a href="#d0714">07/14</a>
     <a href="#d0713">07/13</a>
@@ -148,11 +149,22 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
   </nav>
 
   <section class="timeline" aria-label="修改時間軸">
-    <article class="release" id="d0716">
-      <div class="date"><time datetime="2026-07-16">07 / 16</time><span>目前工作區・最新</span></div>
+    <article class="release" id="d0717">
+      <div class="date"><time datetime="2026-07-17">07 / 17</time><span>目前工作區・最新</span></div>
       <div class="release-body">
         <section class="change" data-kind="fix">
-          <h2>每日標籤新增快速選日，紅旗連鎖移至 D4 <span class="new">LATEST</span></h2>
+          <h2>行前 APP 清單依實際用途重新分級 <span class="new">LATEST</span></h2>
+          <p>重新查證境外手機號、國際信用卡、台胞證購票、熊貓谷微信預約與叫車支援後，APP清單改為必裝、推薦、可選與不用裝四級。支付寶、微信、12306與高德列為最精簡必裝組合；大眾點評、滴滴 Greater China、Trip.com及華航／國泰列為推薦。Trip.com國際版與中國版攜程旅行分開說明，高鐵仍以12306為主；美團、Klook／KKday、ALL Accor及中國版攜程僅在實際有訂單或需求時安裝。頁面補上官方查證連結，網站資源與離線快取更新為 v102。</p>
+          <div class="meta"><span class="kind">行前APP分級＋官方查證＋版本</span><span class="commit">目前工作區</span></div>
+        </section>
+      </div>
+    </article>
+
+    <article class="release" id="d0716">
+      <div class="date"><time datetime="2026-07-16">07 / 16</time><span>版本 v101</span></div>
+      <div class="release-body">
+        <section class="change" data-kind="fix">
+          <h2>每日標籤新增快速選日，紅旗連鎖移至 D4</h2>
           <p>行程頁的黏性日期導覽保留每日簡介卡，旁邊新增固定可見的快速選日選單，可直接跳到 D1–D9 或備選，不再需要一路橫向滑動才能選 D4 之後的行程。D4 取消撫琴夜市，晚餐後改到飯店附近的紅旗連鎖總府路店採買，再步行約5分鐘回飯店；原 D8 紅旗站同步移除，避免重複。網站資源與離線快取更新為 v101。</p>
           <div class="meta"><span class="kind">日期導覽＋D4行程＋版本</span><span class="commit">目前工作區</span></div>
         </section>
