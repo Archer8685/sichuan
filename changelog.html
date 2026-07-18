@@ -123,22 +123,23 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
     <div class="eyebrow">Website field notes</div>
     <h1>一路修到更順。<span>網頁修改紀錄</span></h1>
     <p class="lead">把網站功能、行程調整與資料校正整理成可讀的版本誌。內容依 Git commit 與現有頁面交叉核對；相近的小修改合併描述，保留 commit 編號供回查。</p>
-    <p class="source-note">資料截點：2026/07/17（UTC+8）・<a href="https://github.com/Archer8685/sichuan/commits" target="_blank" rel="noopener">查看完整 Git 歷史 ↗</a></p>
+    <p class="source-note">資料截點：2026/07/18（UTC+8）・<a href="https://github.com/Archer8685/sichuan/commits" target="_blank" rel="noopener">查看完整 Git 歷史 ↗</a></p>
     <aside class="ticket" aria-label="版本資訊">
       <small>CHANGE LOG</small>
-      <strong>v104</strong>
+      <strong>v105</strong>
       <div class="route">CKG 重慶<br>↓ 9 DAYS<br>CTU 成都</div>
     </aside>
   </header>
 
   <section class="stats" aria-label="紀錄摘要">
-    <div class="stat"><b>111</b><span>筆本次修改前 Git commits</span></div>
-    <div class="stat"><b>7 日</b><span>2026/07/11–07/17</span></div>
+    <div class="stat"><b>112</b><span>筆本次修改前 Git commits</span></div>
+    <div class="stat"><b>8 日</b><span>2026/07/11–07/18</span></div>
     <div class="stat"><b>5 頁</b><span>行前、行程、地圖、攻略、紀錄</span></div>
   </section>
 
   <nav class="jump" aria-label="依日期跳轉">
-    <a href="#d0717">07/17 最新</a>
+    <a href="#d0718">07/18 最新</a>
+    <a href="#d0717">07/17</a>
     <a href="#d0716">07/16</a>
     <a href="#d0715">07/15</a>
     <a href="#d0714">07/14</a>
@@ -149,11 +150,22 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
   </nav>
 
   <section class="timeline" aria-label="修改時間軸">
-    <article class="release" id="d0717">
-      <div class="date"><time datetime="2026-07-17">07 / 17</time><span>目前工作區・最新</span></div>
+    <article class="release" id="d0718">
+      <div class="date"><time datetime="2026-07-18">07 / 18</time><span>目前工作區・最新</span></div>
       <div class="release-body">
         <section class="change" data-kind="fix">
-          <h2>CI552 回程機場改為成都雙流 CTU <span class="new">LATEST</span></h2>
+          <h2>山城步道地圖名稱改為可直接辨識 <span class="new">LATEST</span></h2>
+          <p>確認網站原有「山城第三步道」點位已由高德匹配為「山城步道」，地址為渝中區中興路234號旁，GCJ-02座標與高德POI ID皆已核對；為避免使用者以「山城步道」搜尋時誤以為地圖缺漏，主要地圖名稱改為「山城步道（山城第三步道）」。原山城巷傳統風貌區仍保留為另一個入口與街區點，不新增重複標記，網站資源與離線快取更新為 v105。</p>
+          <div class="meta"><span class="kind">重慶地圖名稱＋高德點位＋版本</span><span class="commit">目前工作區</span></div>
+        </section>
+      </div>
+    </article>
+
+    <article class="release" id="d0717">
+      <div class="date"><time datetime="2026-07-17">07 / 17</time><span>版本 v104</span></div>
+      <div class="release-body">
+        <section class="change" data-kind="fix">
+          <h2>CI552 回程機場改為成都雙流 CTU</h2>
           <p>依最新航班異動，D9 回程由成都天府機場改為成都雙流國際機場（CTU）；保留原08:50提早退房，預計09:40前抵達，並將交通改為打車約35–50分鐘、50–80元，或地鐵3號線至太平園轉10號線約55–65分鐘。地圖資料同步把CI552航班資訊移至雙流機場，高德座標維持既有稽核結果；天府機場保留為辨識參考並醒目標註本次不前往。因12月航廈尚無可核對的官方時刻資料，行程保留出發前依華航訂單與登機證確認航廈的提醒，網站資源與離線快取更新為 v104。</p>
           <div class="meta"><span class="kind">D9航班＋雙流機場地圖點＋交通＋版本</span><span class="commit">目前工作區</span></div>
         </section>
