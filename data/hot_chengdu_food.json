@@ -20,7 +20,9 @@
       "甜烧白"
     ],
     "reason": "兰桂均大师私房菜，2018年首版黑珍珠成都唯一三钻，现为米其林二星，成都精致川菜天花板",
-    "notes": "需至少提前3天预约并付订金，无招牌藏于居民楼；菜单含猪肉菜式，特殊饮食需求需提前沟通",
+    "notes": "米其林『清真选项』筛选店家，但不是全店清真或清真认证；菜单含猪肉菜式，需至少提前3天预约并明确确认无猪、器具分开与酒精需求",
+    "michelin_halal_option": true,
+    "source_url": "https://guide.michelin.com/tw/zh_TW/chengdu-municipality/chengdu/restaurant/yu-zhi-lan-1196150",
     "amap_poiid": "B001C8R4F8",
     "coordinate_status": "verified",
     "coordinate_source": "高德地图 GCJ-02（2026-07-15核对）"
@@ -71,7 +73,9 @@
       "樟茶鸭"
     ],
     "reason": "黑珍珠指南成都常客，以味型编排菜单的川菜名店，红焖甲鱼为镇店之宝",
-    "notes": "晚市建议提前订位；部分经典川菜含猪肉",
+    "notes": "米其林『清真选项』筛选店家，但不是全店清真或清真认证；部分经典川菜含猪肉，订位时需明确确认无猪、器具分开与酒精需求",
+    "michelin_halal_option": true,
+    "source_url": "https://guide.michelin.com/tw/zh_TW/chengdu-municipality/chengdu/restaurant/xu-s-cuisine",
     "amap_poiid": "B0FFF6JVL2",
     "coordinate_status": "verified",
     "coordinate_source": "高德地图 GCJ-02（2026-07-15核对）"

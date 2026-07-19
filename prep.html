@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>行前準備 — 成都・重慶 12/5–12/13</title>
-<link rel="preload" href="trip.js?v=105" as="script">
+<link rel="preload" href="trip.js?v=106" as="script">
 <link rel="prefetch" href="itinerary.html">
 <link rel="prefetch" href="map.html">
-<link rel="prefetch" href="data.js?v=105">
+<link rel="prefetch" href="data.js?v=106">
 <link rel="prefetch" href="guide.html">
 <link rel="prefetch" href="changelog.html">
 <style>
@@ -81,7 +81,7 @@ section li{margin:3px 0}
 <nav class="topnav" aria-label="主要導覽">
   <div class="brand">
     <strong>Sichuan Trip</strong>
-    <span class="site-meta"><a data-site-meta href="changelog.html" aria-label="查看網站修改紀錄">2026/12/5–12/13 ｜ v105・更新 2026/07/18</a></span>
+    <span class="site-meta"><a data-site-meta href="changelog.html" aria-label="查看網站修改紀錄">2026/12/5–12/13 ｜ v106・更新 2026/07/19</a></span>
   </div>
   <div class="navlinks">
     <a href="prep.html" aria-current="page">行前</a>
@@ -252,7 +252,7 @@ section li{margin:3px 0}
 </section>
 
 </div>
-<script src="trip.js?v=105"></script>
+<script src="trip.js?v=106"></script>
 <script>
 // 載入層：渲染完成即淡出；點站內連結立刻重新顯示
 document.getElementById('pgload').classList.add('done');
@@ -261,6 +261,6 @@ document.addEventListener('click',e=>{
   if(a&&!a.target)document.getElementById('pgload').classList.remove('done');
 });
 </script>
-<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){if(!('caches'in window))return;caches.open('sichuan-app-v105').then(function(c){document.querySelectorAll('script[src],link[href]').forEach(function(el){var u=el.src||el.href;if(!u||u.indexOf(location.origin)!==0)return;c.match(u).then(function(hit){if(!hit)fetch(u).catch(function(){});});});});}).catch(function(){});});}</script>
+<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){if(!('caches'in window))return;caches.open('sichuan-app-v106').then(function(c){document.querySelectorAll('script[src],link[href]').forEach(function(el){var u=el.src||el.href;if(!u||u.indexOf(location.origin)!==0)return;c.match(u).then(function(hit){if(!hit)fetch(u).catch(function(){});});});});}).catch(function(){});});}</script>
 </body>
 </html>

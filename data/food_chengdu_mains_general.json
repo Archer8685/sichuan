@@ -412,7 +412,9 @@
       "时令素菜"
     ],
     "reason": "杜甫草堂旁的传统川菜园林酒楼，出品稳定，逛完草堂顺路用餐极方便。",
-    "notes": "含猪注意：招牌『烤肉』与烧白类为猪肉需避开，鸡、鱼类菜品选择多。环境好、性价比中上，饭点建议预约。",
+    "notes": "米其林『清真选项』筛选店家，但不是全店清真或清真认证；招牌『烤肉』与烧白类为猪肉需避开，订位时需明确确认无猪、器具分开与酒精需求。",
+    "michelin_halal_option": true,
+    "source_url": "https://guide.michelin.com/tw/zh_TW/chengdu-municipality/chengdu/restaurant/fu-rong-huang",
     "amap_poiid": "B001C7UCNH",
     "coordinate_status": "verified",
     "coordinate_source": "高德地图 GCJ-02（2026-07-15核对）"

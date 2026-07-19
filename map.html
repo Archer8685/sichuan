@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>成都・重慶 9天8夜 — 景點餐廳地圖</title>
-<link rel="preload" href="data.js?v=105" as="script">
-<link rel="preload" href="trip.js?v=105" as="script">
+<link rel="preload" href="data.js?v=106" as="script">
+<link rel="preload" href="trip.js?v=106" as="script">
 <link rel="prefetch" href="itinerary.html">
 <link rel="prefetch" href="prep.html">
 <link rel="prefetch" href="guide.html">
@@ -100,6 +100,7 @@ html,body{overscroll-behavior:none} /* 防止下拉手勢觸發瀏覽器 pull-to
 .card .top{display:flex;align-items:center;gap:7px}
 .badge{font-size:10.5px;color:#fff;padding:2px 7px;border-radius:9px;white-space:nowrap}
 .halal-tag{font-size:10.5px;color:#0e7c3f;border:1px solid #0e7c3f;padding:1px 6px;border-radius:9px;white-space:nowrap}
+.michelin-option-tag{font-size:10.5px;color:#8a4b08;border:1px solid #c88932;background:#fff8e8;padding:1px 6px;border-radius:9px;white-space:nowrap}
 .card h3{font-size:14.5px;flex:1}
 .card .meta{font-size:11.5px;color:var(--muted);margin-top:5px;line-height:1.5}
 .card .dishes{font-size:12px;margin-top:5px;color:#5a5248}
@@ -175,7 +176,7 @@ html,body{overscroll-behavior:none} /* 防止下拉手勢觸發瀏覽器 pull-to
 <nav class="topnav" aria-label="主要導覽">
   <div class="brand">
     <strong>Sichuan Trip</strong>
-    <span class="site-meta"><a data-site-meta href="changelog.html" aria-label="查看網站修改紀錄">2026/12/5–12/13 ｜ v105・更新 2026/07/18</a></span>
+    <span class="site-meta"><a data-site-meta href="changelog.html" aria-label="查看網站修改紀錄">2026/12/5–12/13 ｜ v106・更新 2026/07/19</a></span>
   </div>
   <div class="navlinks">
     <a href="prep.html">行前</a>
@@ -217,8 +218,8 @@ html,body{overscroll-behavior:none} /* 防止下拉手勢觸發瀏覽器 pull-to
 </div>
 <div class="legend" id="legend"></div>
 
-<script src="data.js?v=105"></script>
-<script src="trip.js?v=105"></script>
+<script src="data.js?v=106"></script>
+<script src="trip.js?v=106"></script>
 <script>
 // 分類設定：顏色＋圖示
 const CATS={
@@ -281,6 +282,7 @@ let routeLine=null;
 function catOf(p){return p.type||p.category;}
 function isHalalish(p){return p.halal===true||p.halal==="友善"||p.halal==="true";}
 function halalLabel(p){if(p.halal===true||p.halal==="true")return"☪ 清真";if(p.halal==="友善")return"☪ 清真友善";return null;}
+function michelinOptionLabel(p){return p.michelin_halal_option?"米其林・清真選項（需確認）":null;}
 // 早餐／午晚餐共用餐廳圖示；甜點與飲料永遠保留自己的圖示，清真狀態另以標籤呈現。
 function iconFor(cat,p){
   if(MEAL_CATS.has(cat)&&p&&isHalalish(p))return{emoji:HALAL_EMOJI,color:(p.halal==="友善"?HALAL_FRIENDLY_COLOR:HALAL_COLOR)};
@@ -362,7 +364,7 @@ function popupHtml(p){
   const dishes=(p.dishes||p.activities||[]).map(d=>`<span>${d}</span>`).join("");
   return `<div class="pp">
     <h3>${p.name}</h3>
-    <div class="sub">${p.city}・${p.area||""} ${p.brand?("・"+p.brand):""} ${p.cuisine?("・"+p.cuisine):""} ${halalLabel(p)?("・"+halalLabel(p)):""}</div>
+    <div class="sub">${p.city}・${p.area||""} ${p.brand?("・"+p.brand):""} ${p.cuisine?("・"+p.cuisine):""} ${halalLabel(p)?("・"+halalLabel(p)):""} ${michelinOptionLabel(p)?("・"+michelinOptionLabel(p)):""}</div>
     ${p.rating?`<div class="row"><b>⭐ ${p.rating}</b>${p.rating_source?`（${p.rating_source}）`:""}</div>`:""}
     ${p.hours?`<div class="row"><b>🕐 </b>${p.hours}</div>`:""}
     ${p.price?`<div class="row"><b>💰 </b>${p.price}</div>`:""}
@@ -386,7 +388,7 @@ function passesBase(p){
 function matchesSearch(p){
   if(!state.q)return true;
   const q=t2s(state.q.toLowerCase());
-  const hay=t2s([p.name,p.area,p.address,p.cuisine,p.brand,p.reason,...(p.dishes||[]),...(p.activities||[])].join(" ").toLowerCase());
+  const hay=t2s([p.name,p.area,p.address,p.cuisine,p.brand,p.reason,p.michelin_halal_option?"米其林 清真選項":"",...(p.dishes||[]),...(p.activities||[])].join(" ").toLowerCase());
   if(!hay.includes(q))return false;
   return true;
 }
@@ -413,10 +415,10 @@ function buildList(items){
   items.forEach(p=>{
     const cat=catOf(p);
     const card=document.createElement('div');card.className='card';
-    const hl=halalLabel(p);
+    const hl=halalLabel(p), ml=michelinOptionLabel(p);
     const badgeCfg=iconFor(cat,p);
     const label=(CATS[cat]||{label:cat}).label;
-    card.innerHTML=`<div class="top"><span class="badge" style="background:${badgeCfg.color}${badgeCfg.color===HALAL_FRIENDLY_COLOR?';color:#14532d':''}">${badgeCfg.emoji||""} ${label}</span><h3>${p.name}</h3>${hl?`<span class="halal-tag">${hl}</span>`:""}</div>
+    card.innerHTML=`<div class="top"><span class="badge" style="background:${badgeCfg.color}${badgeCfg.color===HALAL_FRIENDLY_COLOR?';color:#14532d':''}">${badgeCfg.emoji||""} ${label}</span><h3>${p.name}</h3>${hl?`<span class="halal-tag">${hl}</span>`:""}${ml?`<span class="michelin-option-tag">${ml}</span>`:""}</div>
       <div class="meta">${p.rating?"⭐ "+p.rating+"｜":""}${p.area||""}${p.brand?"｜"+p.brand:""}${p.hours?"｜"+p.hours:""}${p.price?"｜"+p.price:""}${p.ticket?"｜門票 "+p.ticket:""}</div>
       ${(p.dishes||p.activities)?`<div class="dishes">${(p.dishes||p.activities).slice(0,4).join("、")}</div>`:""}`;
     card.onclick=()=>{
@@ -543,7 +545,7 @@ function renderTrip(keepView){
       if(!state.cats.has(cat))return;
       if(state.halalOnly&&FOOD_CATS.has(cat)&&!isHalalish(p))return;
       let searchMatch=true;
-      if(q){const hay=t2s([p.name,p.area,p.address,p.cuisine,...(p.dishes||[]),...(p.activities||[])].join(" ").toLowerCase());searchMatch=hay.includes(q);}
+      if(q){const hay=t2s([p.name,p.area,p.address,p.cuisine,p.michelin_halal_option?"米其林 清真選項":"",...(p.dishes||[]),...(p.activities||[])].join(" ").toLowerCase());searchMatch=hay.includes(q);}
       if(stopNames.has(t2s(p.name)))return;
       const cfg=iconFor(cat,p);
       const mk=L.marker([p.lat,p.lng],{icon:L.divIcon({className:'pin-wrap',
@@ -845,7 +847,7 @@ document.addEventListener('click',e=>{
     window.addEventListener('load',function(){
       navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){
         if(!('caches' in window))return;
-        caches.open('sichuan-app-v105').then(function(c){
+        caches.open('sichuan-app-v106').then(function(c){
           document.querySelectorAll('script[src],link[href]').forEach(function(el){
             var u=el.src||el.href; if(!u||u.indexOf(location.origin)!==0)return;
             c.match(u).then(function(hit){ if(!hit) fetch(u).catch(function(){}); });
