@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>成都・重慶 — 餐廳一覽</title>
-<link rel="preload" href="data.js?v=110" as="script">
+<link rel="preload" href="data.js?v=111" as="script">
 <link rel="prefetch" href="map.html">
 <link rel="prefetch" href="itinerary.html">
 <style>
@@ -103,7 +103,7 @@ select{font-size:13px;padding:6px 10px;border:1px solid var(--line);border-radiu
         <option value="rating">評分高→低</option>
         <option value="rating_asc">評分低→高</option>
         <option value="name">名稱 A→Z</option>
-        <option value="cat">類型分組</option>
+        <option value="cuisine">菜系分組</option>
         <option value="city">城市分組</option>
       </select>
     </div>
@@ -119,13 +119,9 @@ select{font-size:13px;padding:6px 10px;border:1px solid var(--line);border-radiu
       <button class="chip" data-halal="halal">☪ 清真</button>
       <button class="chip" data-halal="friendly">清真友善</button>
     </div>
-    <div class="ctrl-row" id="catChips">
-      <span class="ctrl-label">類型</span>
-      <button class="chip on" data-cat="all">全部</button>
-      <button class="chip" data-cat="午晚餐">午晚餐</button>
-      <button class="chip" data-cat="早餐">早餐</button>
-      <button class="chip" data-cat="甜点">甜點</button>
-      <button class="chip" data-cat="饮料">飲料</button>
+    <div class="ctrl-row" id="cuisineChips">
+      <span class="ctrl-label">菜系</span>
+      <button class="chip on" data-cuisine="all">全部</button>
     </div>
   </div>
 
@@ -133,18 +129,36 @@ select{font-size:13px;padding:6px 10px;border:1px solid var(--line);border-radiu
   <div class="grid" id="grid"></div>
 </div>
 
-<script src="data.js?v=110"></script>
+<script src="data.js?v=111"></script>
 <script>
-// 餐飲類別（category）
+// 餐飲類別（category）— 僅用於過濾出餐飲店家
 const FOOD_CATS=["午晚餐","早餐","甜点","饮料"];
-const CAT_LABEL={"午晚餐":"午晚餐","早餐":"早餐","甜点":"甜點","饮料":"飲料"};
+// 菜系大類（依 name+cuisine+dishes 關鍵字歸類）
+const CUISINE_CATS=["火鍋・串串・冒菜","新疆・西北菜","川菜・渝菜・本地菜","麵食・小吃","燒烤・烤魚","湯鍋・牛羊肉湯","海鮮","中東・南亞料理","素食","甜點・糕餅","飲品・咖啡・茶","其他・綜合"];
+function classifyCuisine(p){
+  const cuisine=p.cuisine||"";
+  const hay=[p.name||"",cuisine,(p.dishes||[]).join(" ")].join(" ");
+  const has=(...ks)=>ks.some(k=>hay.includes(k));
+  if(p.category==="饮料")return "飲品・咖啡・茶";
+  if(p.category==="甜点")return "甜點・糕餅";
+  if(has("海鮮","海鲜","帝王蟹","波龍","波龙","龍蝦","龙虾","粥底"))return "海鮮";
+  if(has("中東","土耳其","阿拉伯","杜拜","巴基斯坦","印度","北非","沙威瑪","法拉費","唐杜里","庫斯庫斯"))return "中東・南亞料理";
+  if(has("新疆","大盤雞","大盘鸡","手抓羊","饢","馕","椒麻雞","抓飯","抓饭","烤包子","錫伯","西北","蘭州","兰州","銅鍋涮","铜锅涮","冰煮羊","架子肉","拌麵","拌面"))return "新疆・西北菜";
+  if(has("火鍋","火锅","串串","冒菜","冒椒","麻辣燙","麻辣烫"))return "火鍋・串串・冒菜";
+  if(has("燒烤","烧烤","烤肉","烤羊","烤串","炭火","燻烤","BBQ","羊肉串","烤魚","烤鱼"))return "燒烤・烤魚";
+  if(has("素食","素齋","素斋","齋飯","斋饭"))return "素食";
+  if(has("羊肉湯","羊肉汤","蹺腳","跷脚","牛肉湯","牛肉汤","羊蠍"))return "湯鍋・牛羊肉湯";
+  if(has("麵","面","米線","米粉","抄手","餃","饺","小面","鍋盔","锅盔","包子","燒麥","烧麦","涼粉","凉粉","涼麵","凉面","餛飩","馄饨"))return "麵食・小吃";
+  if(has("川菜","渝菜","江湖菜","家常","蒼蠅","苍蝇","精緻川","粵","粤","甜皮鴨","回鍋","水煮魚","麻婆","宮保","魚頭","鱼头","兔頭","兔头","滷","卤","鴨","鸭"))return "川菜・渝菜・本地菜";
+  return "其他・綜合";
+}
 // 繁簡對照（沿用 data.js 的 T2S 提供搜尋容錯）
 const _T2S=(typeof T2S!=="undefined")?T2S:{};
 function _t2s(s){let r="";for(const c of (s||""))r+=_T2S[c]||c;return r;}
 function _norm(s){return _t2s((s||"").replace(/[·・\s]/g,"").toLowerCase());}
 
-// 只取餐飲店家
-const RESTAURANTS=PLACES.filter(p=>FOOD_CATS.includes(p.category));
+// 只取餐飲店家，並預先標記菜系大類
+const RESTAURANTS=PLACES.filter(p=>FOOD_CATS.includes(p.category)).map(p=>{p._cuisineCat=classifyCuisine(p);return p;});
 
 function ratingNum(p){
   if(!p.rating)return -1;
@@ -154,13 +168,13 @@ function ratingNum(p){
 function cityCls(c){return c==="重庆"?"cq":(c==="成都"?"cd":"");}
 function cityLabel(c){return c==="重庆"?"重慶":c;}
 
-const state={city:"all",halal:"all",cat:"all",sort:"rating",q:""};
+const state={city:"all",halal:"all",cuisine:"all",sort:"rating",q:""};
 
 function matches(p){
   if(state.city!=="all"&&p.city!==state.city)return false;
   if(state.halal==="halal"&&p.halal!==true)return false;
   if(state.halal==="friendly"&&p.halal!=="友善")return false;
-  if(state.cat!=="all"&&p.category!==state.cat)return false;
+  if(state.cuisine!=="all"&&p._cuisineCat!==state.cuisine)return false;
   if(state.q){
     const q=_norm(state.q);
     const hay=_norm([p.name,p.cuisine,p.area,p.address,(p.dishes||[]).join("")].join(""));
@@ -174,11 +188,10 @@ function sortList(list){
   const byName=(a,b)=>_norm(a.name)<_norm(b.name)?-1:1;
   if(s==="rating")list.sort((a,b)=>ratingNum(b)-ratingNum(a)||byName(a,b));
   else if(s==="rating_asc")list.sort((a,b)=>{const ra=ratingNum(a),rb=ratingNum(b);
-    // 無評分(-1)排最後
     if(ra<0&&rb<0)return byName(a,b); if(ra<0)return 1; if(rb<0)return -1;
     return ra-rb||byName(a,b);});
   else if(s==="name")list.sort(byName);
-  else if(s==="cat")list.sort((a,b)=>FOOD_CATS.indexOf(a.category)-FOOD_CATS.indexOf(b.category)||ratingNum(b)-ratingNum(a));
+  else if(s==="cuisine")list.sort((a,b)=>CUISINE_CATS.indexOf(a._cuisineCat)-CUISINE_CATS.indexOf(b._cuisineCat)||ratingNum(b)-ratingNum(a));
   else if(s==="city")list.sort((a,b)=>cityLabel(a.city)<cityLabel(b.city)?-1:(cityLabel(a.city)>cityLabel(b.city)?1:ratingNum(b)-ratingNum(a)));
   return list;
 }
@@ -191,13 +204,13 @@ function cardHTML(p){
   if(p.area||p.address)meta.push(`<b>📍</b> ${p.area||p.address}`);
   if(p.price)meta.push(`<b>💰</b> ${p.price}`);
   if(p.hours)meta.push(`<b>🕐</b> ${p.hours}`);
-  const cuisine=p.cuisine?`<span class="tag">${p.cuisine.length>18?p.cuisine.slice(0,18)+"…":p.cuisine}</span>`:"";
+  const cuisineRaw=p.cuisine?`<span class="tag">${p.cuisine.length>18?p.cuisine.slice(0,18)+"…":p.cuisine}</span>`:"";
   return `<a class="rcard ${cityCls(p.city)}" href="map.html?q=${encodeURIComponent(p.name.trim())}">
     <div class="rc-top"><div class="rc-name">${p.name}</div>${rate}</div>
     <div class="rc-tags">
       <span class="tag ${cityCls(p.city)}">${cityLabel(p.city)}</span>
-      <span class="tag cat">${CAT_LABEL[p.category]||p.category}</span>
-      ${halalTag}${cuisine}
+      <span class="tag cat">${p._cuisineCat}</span>
+      ${halalTag}${cuisineRaw}
     </div>
     ${meta.length?`<div class="rc-meta">${meta.join("<br>")}</div>`:""}
     ${dishes}
@@ -212,20 +225,32 @@ function render(){
   document.getElementById("count").textContent=`顯示 ${list.length} / ${total} 家餐廳`;
 }
 
-// 綁定 chip 群組
+// 動態產生菜系 chips（依實際店家數，由多到少；含數量）
+(function buildCuisineChips(){
+  const counts={};
+  RESTAURANTS.forEach(p=>{counts[p._cuisineCat]=(counts[p._cuisineCat]||0)+1;});
+  const box=document.getElementById("cuisineChips");
+  CUISINE_CATS.filter(c=>counts[c]).sort((a,b)=>counts[b]-counts[a]).forEach(c=>{
+    const b=document.createElement("button");
+    b.className="chip";b.dataset.cuisine=c;b.textContent=`${c} (${counts[c]})`;
+    box.appendChild(b);
+  });
+})();
+
+// 綁定 chip 群組（key = dataset 屬性名）
 function bindChips(containerId,key){
   const box=document.getElementById(containerId);
   box.addEventListener("click",e=>{
     const btn=e.target.closest(".chip");if(!btn)return;
     box.querySelectorAll(".chip").forEach(c=>c.classList.remove("on"));
     btn.classList.add("on");
-    state[key]=btn.dataset[key==="city"?"city":key==="halal"?"halal":"cat"];
+    state[key]=btn.dataset[key];
     render();
   });
 }
 bindChips("cityChips","city");
 bindChips("halalChips","halal");
-bindChips("catChips","cat");
+bindChips("cuisineChips","cuisine");
 document.getElementById("sort").addEventListener("change",e=>{state.sort=e.target.value;render();});
 document.getElementById("q").addEventListener("input",e=>{state.q=e.target.value;render();});
 
