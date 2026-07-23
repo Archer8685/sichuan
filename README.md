@@ -37,6 +37,16 @@ compact_list.txt  rest_names.txt  中間產物（可不上傳）
 每次修改 `data.js` 或 `trip.js` 內容後，記得把兩個 HTML 檔裡對應的 `?v=N` 數字 +1，
 否則使用者（含 GitHub Pages CDN）可能繼續看到舊版本。
 
+⚠️ **重要：改版號時，Service Worker 快取名也必須同步更新，否則 PWA 會一直吃舊殼層。**
+本站有 Service Worker（`sw.js`）做離線快取，快取版本名散落在 5 個位置，**必須全部一起改成同一個 vN**：
+
+1. `sw.js` 的 `const APP_CACHE = 'sichuan-app-vN'`（決定 SW 是否重新安裝、清舊快取）
+2. `guide.html`／`itinerary.html`／`map.html`／`prep.html` 各自底部 warm-up 腳本裡的 `caches.open('sichuan-app-vN')`
+
+若只改了 HTML 的 `?v=N` 卻沒改 `sw.js` 的 `APP_CACHE`，Service Worker 不會偵測到更新、不會重新預快取殼層，
+使用者（尤其已把網站加到主畫面的 PWA）會持續看到舊版 HTML／JS。**版號一律五處同步 +1。**
+
+
 ## 更新資料
 
 修改或新增 `data/*.json` 後執行 `python build_data.py`（需 `pip install zhconv`），
