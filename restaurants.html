@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>成都・重慶 — 餐廳一覽</title>
+<link rel="preload" href="data.js?v=110" as="script">
+<link rel="prefetch" href="map.html">
+<link rel="prefetch" href="itinerary.html">
+<style>
+#pgload{position:fixed;inset:0;z-index:9999;background:#faf7f2;display:flex;flex-direction:column;gap:12px;align-items:center;justify-content:center;transition:opacity .22s}
+#pgload.done{opacity:0;pointer-events:none}
+#pgload .sp{width:34px;height:34px;border:3px solid #e0d5c2;border-top-color:#c0392b;border-radius:50%;animation:pgsp .7s linear infinite}
+#pgload small{color:#8a8177;font-size:12px}
+@keyframes pgsp{to{transform:rotate(360deg)}}
+:root{
+  --bg:#faf7f2; --panel:#ffffff; --ink:#2b2620; --muted:#8a8177;
+  --accent:#c0392b; --accent2:#1a7a6d; --line:#e8e1d6; --chip:#f3ede3;
+  --cq:#c0392b; --cd:#2255a4;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{font-family:"PingFang TC","Microsoft JhengHei","Noto Sans TC",sans-serif;color:var(--ink);background:var(--bg)}
+a:active,.chip:active,.rcard:active{transform:scale(.98)}
+/* topnav（與其他頁一致） */
+.topnav{position:sticky;top:0;z-index:1200;display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:58px;padding:9px clamp(14px,3vw,28px);background:rgba(250,247,242,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+.brand{display:flex;flex-direction:column;min-width:0}
+.brand strong{font-size:15px;line-height:1.25}
+.brand span{color:var(--muted);font-size:12px;line-height:1.35;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.brand .site-meta a{color:inherit;text-decoration:none}
+.navlinks{display:flex;align-items:center;gap:8px;flex-shrink:0;flex-wrap:wrap;justify-content:flex-end}
+.navlinks a{font-size:13.5px;color:var(--ink);text-decoration:none;padding:5px 10px;border-radius:8px}
+.navlinks a:hover{background:var(--chip)}
+.navlinks a[aria-current]{background:var(--accent);color:#fff}
+/* 內容容器 */
+.wrap{max-width:1100px;margin:0 auto;padding:16px clamp(12px,3vw,24px) 60px}
+h1{font-size:20px;margin-bottom:4px}
+.sub{color:var(--muted);font-size:13px;margin-bottom:14px}
+/* 控制列 */
+.controls{position:sticky;top:58px;z-index:900;background:rgba(250,247,242,.97);backdrop-filter:blur(8px);padding:10px 0;border-bottom:1px solid var(--line);margin-bottom:14px}
+.ctrl-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:8px}
+.ctrl-row:last-child{margin-bottom:0}
+.ctrl-label{font-size:12px;color:var(--muted);margin-right:2px;font-weight:600}
+.chip{font-size:12.5px;padding:5px 12px;border:1px solid var(--line);border-radius:999px;background:var(--panel);cursor:pointer;color:var(--ink);white-space:nowrap;transition:.12s}
+.chip.on{background:var(--accent2);border-color:var(--accent2);color:#fff}
+select{font-size:13px;padding:6px 10px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--ink)}
+.search{flex:1;min-width:160px;font-size:14px;padding:7px 12px;border:1px solid var(--line);border-radius:10px;background:var(--panel);color:var(--ink)}
+.count{font-size:12.5px;color:var(--muted);margin:6px 0 10px}
+/* 卡片格 */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+.rcard{display:block;text-decoration:none;color:inherit;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:13px 15px;transition:.14s;border-left:4px solid var(--line)}
+.rcard:hover{box-shadow:0 4px 14px rgba(0,0,0,.07);transform:translateY(-1px)}
+.rcard.cq{border-left-color:var(--cq)}
+.rcard.cd{border-left-color:var(--cd)}
+.rc-top{display:flex;align-items:flex-start;justify-content:space-between;gap:8px}
+.rc-name{font-size:15px;font-weight:700;line-height:1.3}
+.rc-rate{font-size:13px;font-weight:700;color:var(--accent);white-space:nowrap}
+.rc-rate small{color:var(--muted);font-weight:400}
+.rc-tags{display:flex;flex-wrap:wrap;gap:5px;margin:7px 0}
+.tag{font-size:11px;padding:2px 8px;border-radius:999px;background:var(--chip);color:#6a6055}
+.tag.halal{background:#0e7c3f;color:#fff}
+.tag.halalfr{background:#5cba6b;color:#fff}
+.tag.city{background:#eee}
+.tag.cq{background:#f7e3e0;color:#a5342a}
+.tag.cd{background:#e0e9f7;color:#2255a4}
+.tag.cat{background:#e8f3f0;color:#1a7a6d}
+.rc-meta{font-size:12px;color:var(--muted);line-height:1.7;margin-top:4px}
+.rc-meta b{color:var(--ink);font-weight:600}
+.rc-dishes{font-size:12px;color:#6a6055;margin-top:6px;line-height:1.6}
+.rc-map{font-size:11.5px;color:var(--accent2);margin-top:8px;font-weight:600}
+.empty{text-align:center;color:var(--muted);padding:40px 0;font-size:14px}
+@media (max-width:600px){
+  .topnav{min-height:44px;padding:4px 12px}
+  .brand strong{font-size:13.5px}
+  .grid{grid-template-columns:1fr}
+  .controls{top:44px}
+}
+</style>
+</head>
+<body>
+<div id="pgload"><div class="sp"></div><small>載入餐廳資料…</small></div>
+<nav class="topnav" aria-label="主要導覽">
+  <div class="brand">
+    <strong>Sichuan Trip</strong>
+    <span class="site-meta"><a data-site-meta href="changelog.html" aria-label="查看網站修改紀錄">2026/12/5–12/13</a></span>
+  </div>
+  <div class="navlinks">
+    <a href="prep.html">行前</a>
+    <a href="itinerary.html">行程</a>
+    <a href="map.html">地圖</a>
+    <a href="restaurants.html" aria-current="page">餐廳</a>
+    <a href="guide.html">攻略</a>
+  </div>
+</nav>
+
+<div class="wrap">
+  <h1>🍽 餐廳一覽</h1>
+  <div class="sub">成都・重慶行程收錄的餐飲店家，可篩選、排序，點卡片跳到地圖定位。</div>
+
+  <div class="controls">
+    <div class="ctrl-row">
+      <input type="search" class="search" id="q" placeholder="搜尋店名、菜系、區域…（支援繁體）">
+      <select id="sort">
+        <option value="rating">評分高→低</option>
+        <option value="rating_asc">評分低→高</option>
+        <option value="name">名稱 A→Z</option>
+        <option value="cat">類型分組</option>
+        <option value="city">城市分組</option>
+      </select>
+    </div>
+    <div class="ctrl-row" id="cityChips">
+      <span class="ctrl-label">城市</span>
+      <button class="chip on" data-city="all">全部</button>
+      <button class="chip" data-city="成都">成都</button>
+      <button class="chip" data-city="重庆">重慶</button>
+    </div>
+    <div class="ctrl-row" id="halalChips">
+      <span class="ctrl-label">清真</span>
+      <button class="chip on" data-halal="all">全部</button>
+      <button class="chip" data-halal="halal">☪ 清真</button>
+      <button class="chip" data-halal="friendly">清真友善</button>
+    </div>
+    <div class="ctrl-row" id="catChips">
+      <span class="ctrl-label">類型</span>
+      <button class="chip on" data-cat="all">全部</button>
+      <button class="chip" data-cat="午晚餐">午晚餐</button>
+      <button class="chip" data-cat="早餐">早餐</button>
+      <button class="chip" data-cat="甜点">甜點</button>
+      <button class="chip" data-cat="饮料">飲料</button>
+    </div>
+  </div>
+
+  <div class="count" id="count"></div>
+  <div class="grid" id="grid"></div>
+</div>
+
+<script src="data.js?v=110"></script>
+<script>
+// 餐飲類別（category）
+const FOOD_CATS=["午晚餐","早餐","甜点","饮料"];
+const CAT_LABEL={"午晚餐":"午晚餐","早餐":"早餐","甜点":"甜點","饮料":"飲料"};
+// 繁簡對照（沿用 data.js 的 T2S 提供搜尋容錯）
+const _T2S=(typeof T2S!=="undefined")?T2S:{};
+function _t2s(s){let r="";for(const c of (s||""))r+=_T2S[c]||c;return r;}
+function _norm(s){return _t2s((s||"").replace(/[·・\s]/g,"").toLowerCase());}
+
+// 只取餐飲店家
+const RESTAURANTS=PLACES.filter(p=>FOOD_CATS.includes(p.category));
+
+function ratingNum(p){
+  if(!p.rating)return -1;
+  const m=String(p.rating).match(/[\d.]+/);
+  return m?parseFloat(m[0]):-1;
+}
+function cityCls(c){return c==="重庆"?"cq":(c==="成都"?"cd":"");}
+function cityLabel(c){return c==="重庆"?"重慶":c;}
+
+const state={city:"all",halal:"all",cat:"all",sort:"rating",q:""};
+
+function matches(p){
+  if(state.city!=="all"&&p.city!==state.city)return false;
+  if(state.halal==="halal"&&p.halal!==true)return false;
+  if(state.halal==="friendly"&&p.halal!=="友善")return false;
+  if(state.cat!=="all"&&p.category!==state.cat)return false;
+  if(state.q){
+    const q=_norm(state.q);
+    const hay=_norm([p.name,p.cuisine,p.area,p.address,(p.dishes||[]).join("")].join(""));
+    if(!hay.includes(q))return false;
+  }
+  return true;
+}
+
+function sortList(list){
+  const s=state.sort;
+  const byName=(a,b)=>_norm(a.name)<_norm(b.name)?-1:1;
+  if(s==="rating")list.sort((a,b)=>ratingNum(b)-ratingNum(a)||byName(a,b));
+  else if(s==="rating_asc")list.sort((a,b)=>{const ra=ratingNum(a),rb=ratingNum(b);
+    // 無評分(-1)排最後
+    if(ra<0&&rb<0)return byName(a,b); if(ra<0)return 1; if(rb<0)return -1;
+    return ra-rb||byName(a,b);});
+  else if(s==="name")list.sort(byName);
+  else if(s==="cat")list.sort((a,b)=>FOOD_CATS.indexOf(a.category)-FOOD_CATS.indexOf(b.category)||ratingNum(b)-ratingNum(a));
+  else if(s==="city")list.sort((a,b)=>cityLabel(a.city)<cityLabel(b.city)?-1:(cityLabel(a.city)>cityLabel(b.city)?1:ratingNum(b)-ratingNum(a)));
+  return list;
+}
+
+function cardHTML(p){
+  const halalTag=p.halal===true?'<span class="tag halal">☪ 清真</span>':(p.halal==="友善"?'<span class="tag halalfr">清真友善</span>':"");
+  const rate=p.rating?`<span class="rc-rate">⭐ ${String(p.rating).split("（")[0]}</span>`:"";
+  const dishes=(p.dishes&&p.dishes.length)?`<div class="rc-dishes">🍴 ${p.dishes.slice(0,4).join("、")}</div>`:"";
+  const meta=[];
+  if(p.area||p.address)meta.push(`<b>📍</b> ${p.area||p.address}`);
+  if(p.price)meta.push(`<b>💰</b> ${p.price}`);
+  if(p.hours)meta.push(`<b>🕐</b> ${p.hours}`);
+  const cuisine=p.cuisine?`<span class="tag">${p.cuisine.length>18?p.cuisine.slice(0,18)+"…":p.cuisine}</span>`:"";
+  return `<a class="rcard ${cityCls(p.city)}" href="map.html?q=${encodeURIComponent(p.name.trim())}">
+    <div class="rc-top"><div class="rc-name">${p.name}</div>${rate}</div>
+    <div class="rc-tags">
+      <span class="tag ${cityCls(p.city)}">${cityLabel(p.city)}</span>
+      <span class="tag cat">${CAT_LABEL[p.category]||p.category}</span>
+      ${halalTag}${cuisine}
+    </div>
+    ${meta.length?`<div class="rc-meta">${meta.join("<br>")}</div>`:""}
+    ${dishes}
+    <div class="rc-map">🗺 點擊在地圖上查看 →</div>
+  </a>`;
+}
+
+function render(){
+  const list=sortList(RESTAURANTS.filter(matches));
+  document.getElementById("grid").innerHTML=list.length?list.map(cardHTML).join(""):'<div class="empty">沒有符合條件的餐廳</div>';
+  const total=RESTAURANTS.length;
+  document.getElementById("count").textContent=`顯示 ${list.length} / ${total} 家餐廳`;
+}
+
+// 綁定 chip 群組
+function bindChips(containerId,key){
+  const box=document.getElementById(containerId);
+  box.addEventListener("click",e=>{
+    const btn=e.target.closest(".chip");if(!btn)return;
+    box.querySelectorAll(".chip").forEach(c=>c.classList.remove("on"));
+    btn.classList.add("on");
+    state[key]=btn.dataset[key==="city"?"city":key==="halal"?"halal":"cat"];
+    render();
+  });
+}
+bindChips("cityChips","city");
+bindChips("halalChips","halal");
+bindChips("catChips","cat");
+document.getElementById("sort").addEventListener("change",e=>{state.sort=e.target.value;render();});
+document.getElementById("q").addEventListener("input",e=>{state.q=e.target.value;render();});
+
+render();
+document.getElementById("pgload").classList.add("done");
+document.addEventListener("click",e=>{const a=e.target.closest('a[href$=".html"],a[href*=".html?"]');if(a&&!a.target)document.getElementById("pgload").classList.remove("done");});
+</script>
+<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js');});}</script>
+</body>
+</html>
