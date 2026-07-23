@@ -126,7 +126,7 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
     <p class="source-note">資料截點：2026/07/23（UTC+8）・<a href="https://github.com/Archer8685/sichuan/commits" target="_blank" rel="noopener">查看完整 Git 歷史 ↗</a></p>
     <aside class="ticket" aria-label="版本資訊">
       <small>CHANGE LOG</small>
-      <strong>v107</strong>
+      <strong>v108</strong>
       <div class="route">CKG 重慶<br>↓ 9 DAYS<br>CTU 成都</div>
     </aside>
   </header>
@@ -138,7 +138,7 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
   </section>
 
   <nav class="jump" aria-label="依日期跳轉">
-    <a href="#d0723">07/23 最新</a>
+    <a href="#d0723b">07/23 最新</a>
     <a href="#d0719">07/19</a>
     <a href="#d0718">07/18</a>
     <a href="#d0717">07/17</a>
@@ -152,11 +152,22 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
   </nav>
 
   <section class="timeline" aria-label="修改時間軸">
-    <article class="release" id="d0723">
+    <article class="release" id="d0723b">
       <div class="date"><time datetime="2026-07-23">07 / 23</time><span>目前工作區・最新</span></div>
       <div class="release-body">
+        <section class="change" data-kind="data">
+          <h2>南山燒烤座標核對：修正夜景燒烤區位置為一天門／上新街 <span class="new">LATEST</span></h2>
+          <p>核對 D2 南山燒烤座標時發現原資料把「南山泉水雞一條街」（黃桷埡崇文路、山另一側、看不到市區）與真正的賞夜景燒烤區混為一談。實際俯瞰渝中半島（來福士、洪崖洞）的露天炭火燒烤集中在長江索道南站上方的一天門／上新街一帶。依既有高德稽核資料，黃玉明烤肉（南岸區一天門街102號附1號，29.553911, 106.599189）為已驗證錨點；街區、南山有燒烤與丁老頭燒烤先以該錨點鄰近估算並標為 approximate，待逐店高德核對確切門牌。四家均已進 data.js 地圖，網站資源與離線快取更新為 v108。</p>
+          <div class="meta"><span class="kind">南山燒烤座標＋地理修正＋高德錨點＋版本</span><span class="commit">目前工作區</span></div>
+        </section>
+      </div>
+    </article>
+
+    <article class="release" id="d0723">
+      <div class="date"><time datetime="2026-07-23">07 / 23</time><span>版本 v107</span></div>
+      <div class="release-body">
         <section class="change" data-kind="fix">
-          <h2>D1／D2 晚餐重排：馬隊長清真火鍋移至 D1、D2 改南山燒烤看夜景 <span class="new">LATEST</span></h2>
+          <h2>D1／D2 晚餐重排：馬隊長清真火鍋移至 D1、D2 改南山燒烤看夜景</h2>
           <p>D1（12/5 六）把八一路好吃街降級為抵達後輕嚐小吃，正式晚餐改為馬隊長重慶清真火鍋（清真寺店），就在解放碑旁的中興路清真寺街區，動線更順。D2（12/6 日）白天行程正在南山、南濱路一帶，晚餐順勢改為南山燒烤一條街，露天炭火邊吃邊俯瞰渝中半島夜景（來福士、洪崖洞方向）；新增南山燒烤資料（南山有燒烤・水泥管包廂、丁老頭燒烤、黃玉明燒烤三家名店），並註明多數店非清真、同烤五花與內臟，忌口者需點純牛羊肉／蔬菜並請分開烤具。同步更新重慶餐廳遺珠榜相關敘述、重建 data.js，網站資源與離線快取更新為 v107。南山燒烤座標尚待高德核對。</p>
           <div class="meta"><span class="kind">D1/D2 晚餐重排＋南山燒烤資料＋清真風險標註＋版本</span><span class="commit">目前工作區</span></div>
         </section>
