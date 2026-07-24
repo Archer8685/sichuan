@@ -567,8 +567,8 @@ const PLACES = [
   "halal": "友善",
   "area": "青羊區",
   "address": "成都市青羊區奎星樓街東口（寬窄巷子步行5分鐘）",
-  "lat": null,
-  "lng": null,
+  "lat": 30.66836,
+  "lng": 104.055608,
   "hours": "約 11:00-22:00",
   "price": 15,
   "dishes": [
@@ -578,8 +578,8 @@ const PLACES = [
   ],
   "reason": "『冰粉一條街』奎星樓街的手工冰粉代表，吧檯現搓現做、料足文藝。",
   "notes": "12月冬季冰粉偏涼，可選擇熱醪糟類品項；配料全素，清真友善。",
-  "coordinate_status": "unverified",
-  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-24 網頁版核對）",
   "city": "成都",
   "rating": "3.8/5",
   "rating_source": "攜程"
@@ -2818,8 +2818,8 @@ const PLACES = [
   "cuisine": "清真回民燉菜/家常牛肉菜（老館子）",
   "area": "青羊區 金家壩街（天府廣場西側）",
   "address": "青羊區金家壩街5號",
-  "lat": null,
-  "lng": null,
+  "lat": 30.660654,
+  "lng": 104.060741,
   "hours": null,
   "price": "人均 40-70 元",
   "rating": null,
@@ -2832,8 +2832,8 @@ const PLACES = [
   ],
   "reason": "天府廣場旁小街裡的回民老館子，以燉菜和酥點見長，多個清真美食指南（WildGreatWall、HalalChinaTrips）點名推薦。",
   "notes": "皇城清真寺穆斯林社區常去的老店，清真可靠；電話 13808055715；無平台評分快照，填 null。",
-  "coordinate_status": "unverified",
-  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-24 網頁版核對）"
  },
  {
   "name": "清真·鵝市巷·成都回民菜（小河街店）",

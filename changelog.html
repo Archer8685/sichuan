@@ -124,7 +124,7 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
     <div class="eyebrow">Website field notes</div>
     <h1>一路修到更順。<span>網頁修改紀錄</span></h1>
     <p class="lead">把網站功能、行程調整與資料校正整理成可讀的版本誌。內容依 Git commit 與現有頁面交叉核對；相近的小修改合併描述，保留 commit 編號供回查。</p>
-    <p class="source-note">資料截點：2026/07/23（UTC+8）・<a href="https://github.com/Archer8685/sichuan/commits" target="_blank" rel="noopener">查看完整 Git 歷史 ↗</a></p>
+    <p class="source-note">資料截點：2026/07/24（UTC+8）・<a href="https://github.com/Archer8685/sichuan/commits" target="_blank" rel="noopener">查看完整 Git 歷史 ↗</a></p>
     <aside class="ticket" aria-label="版本資訊">
       <small>CHANGE LOG</small>
       <strong>v108</strong>
@@ -139,7 +139,8 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
   </section>
 
   <nav class="jump" aria-label="依日期跳轉">
-    <a href="#d0723b">07/23 最新</a>
+    <a href="#d0724">07/24 最新</a>
+    <a href="#d0723b">07/23</a>
     <a href="#d0719">07/19</a>
     <a href="#d0718">07/18</a>
     <a href="#d0717">07/17</a>
@@ -153,11 +154,22 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
   </nav>
 
   <section class="timeline" aria-label="修改時間軸">
+    <article class="release" id="d0724">
+      <div class="date"><time datetime="2026-07-24">07 / 24</time><span>目前工作區・最新</span></div>
+      <div class="release-body">
+        <section class="change" data-kind="fix">
+          <h2>修正「點餐廳→看地圖→上一頁」卡在讀取中；無座標店家改用高德搜尋定位 <span class="new">LATEST</span></h2>
+          <p>修正跨頁載入遮罩在瀏覽器「上一頁」（bfcache 還原）時不會收起、導致餐廳／行程／地圖／行前頁卡在「讀取中」的問題（新增 pageshow persisted 還原處理，四頁一致）。餐廳頁另針對 2026/07/15 高德座標稽核中無法可靠匹配、內部地圖不顯示的無座標店家調整點擊行為：卡片改標「座標待確認」，點擊改開高德地圖搜尋該店（uri.amap.com 官方深連結，手機直接開高德 App 定位；店名／城市轉簡體提升匹配率），不再靜默無反應；並透過高德網頁版逐店核對，先為街道精準吻合的「回堂春」「眷蜀冰社」補上 GCJ-02 座標進內部地圖（待確認由 155→153 家）。網站資源與離線快取更新為 v114。</p>
+          <div class="meta"><span class="kind">bfcache 上一頁修復＋無座標店家高德外連＋版本</span><span class="commit">目前工作區</span></div>
+        </section>
+      </div>
+    </article>
+
     <article class="release" id="d0723b">
-      <div class="date"><time datetime="2026-07-23">07 / 23</time><span>目前工作區・最新</span></div>
+      <div class="date"><time datetime="2026-07-23">07 / 23</time><span>版本 v108</span></div>
       <div class="release-body">
         <section class="change" data-kind="data">
-          <h2>南山燒烤座標核對：修正夜景燒烤區位置為一天門／上新街 <span class="new">LATEST</span></h2>
+          <h2>南山燒烤座標核對：修正夜景燒烤區位置為一天門／上新街</h2>
           <p>核對 D2 南山燒烤座標時發現原資料把「南山泉水雞一條街」（黃桷埡崇文路、山另一側、看不到市區）與真正的賞夜景燒烤區混為一談。實際俯瞰渝中半島（來福士、洪崖洞）的露天炭火燒烤集中在長江索道南站上方的一天門／上新街一帶。依既有高德稽核資料，黃玉明烤肉（南岸區一天門街102號附1號，29.553911, 106.599189）為已驗證錨點；街區、南山有燒烤與丁老頭燒烤先以該錨點鄰近估算並標為 approximate，待逐店高德核對確切門牌。四家均已進 data.js 地圖，網站資源與離線快取更新為 v108。</p>
           <div class="meta"><span class="kind">南山燒烤座標＋地理修正＋高德錨點＋版本</span><span class="commit">目前工作區</span></div>
         </section>

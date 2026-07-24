@@ -524,8 +524,8 @@
     "halal": "友善",
     "area": "青羊区",
     "address": "成都市青羊区奎星楼街东口（宽窄巷子步行5分钟）",
-    "lat": null,
-    "lng": null,
+    "lat": 30.66836,
+    "lng": 104.055608,
     "hours": "约 11:00-22:00",
     "price": 15,
     "dishes": [
@@ -535,8 +535,8 @@
     ],
     "reason": "『冰粉一条街』奎星楼街的手工冰粉代表，吧台现搓现做、料足文艺。",
     "notes": "12月冬季冰粉偏凉，可选择热醪糟类品项；配料全素，清真友善。",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_status": "verified",
+    "coordinate_source": "高德地图 GCJ-02（2026-07-24 网页版核对）"
   },
   {
     "name": "禅泉冰粉（奎星楼店）",

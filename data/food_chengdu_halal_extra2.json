@@ -262,8 +262,8 @@
     "cuisine": "清真回民炖菜/家常牛肉菜（老馆子）",
     "area": "青羊区 金家坝街（天府广场西侧）",
     "address": "青羊区金家坝街5号",
-    "lat": null,
-    "lng": null,
+    "lat": 30.660654,
+    "lng": 104.060741,
     "hours": null,
     "price": "人均 40-70 元",
     "rating": null,
@@ -276,8 +276,8 @@
     ],
     "reason": "天府广场旁小街里的回民老馆子，以炖菜和酥点见长，多个清真美食指南（WildGreatWall、HalalChinaTrips）点名推荐。",
     "notes": "皇城清真寺穆斯林社区常去的老店，清真可靠；电话 13808055715；无平台评分快照，填 null。",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_status": "verified",
+    "coordinate_source": "高德地图 GCJ-02（2026-07-24 网页版核对）"
   },
   {
     "name": "清真·鹅市巷·成都回民菜（小河街店）",

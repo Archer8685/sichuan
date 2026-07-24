@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>成都・重慶 9天8夜 — 景點餐廳地圖</title>
-<link rel="preload" href="data.js?v=112" as="script">
-<link rel="preload" href="trip.js?v=112" as="script">
+<link rel="preload" href="data.js?v=114" as="script">
+<link rel="preload" href="trip.js?v=114" as="script">
 <link rel="prefetch" href="itinerary.html">
 <link rel="prefetch" href="prep.html">
 <link rel="prefetch" href="guide.html">
@@ -219,8 +219,8 @@ html,body{overscroll-behavior:none} /* 防止下拉手勢觸發瀏覽器 pull-to
 </div>
 <div class="legend" id="legend"></div>
 
-<script src="data.js?v=112"></script>
-<script src="trip.js?v=112"></script>
+<script src="data.js?v=114"></script>
+<script src="trip.js?v=114"></script>
 <script>
 // 分類設定：顏色＋圖示
 const CATS={
@@ -741,6 +741,8 @@ document.addEventListener('click',e=>{
   const a=e.target.closest('a[href$=".html"]');
   if(a&&!a.target)document.getElementById('pgload').classList.remove('done');
 });
+// 從 bfcache（上一頁）還原時，把載入遮罩收掉，避免卡在「讀取中」
+window.addEventListener('pageshow',e=>{if(e.persisted)document.getElementById('pgload').classList.add('done');});
 
 // ---------- 手機底部面板：覆蓋式 bottom sheet（translateY 位移） ----------
 // 效能設計：面板固定渲染在 88% 高、用 transform:translateY 露出不同比例。
@@ -848,7 +850,7 @@ document.addEventListener('click',e=>{
     window.addEventListener('load',function(){
       navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){
         if(!('caches' in window))return;
-        caches.open('sichuan-app-v112').then(function(c){
+        caches.open('sichuan-app-v114').then(function(c){
           document.querySelectorAll('script[src],link[href]').forEach(function(el){
             var u=el.src||el.href; if(!u||u.indexOf(location.origin)!==0)return;
             c.match(u).then(function(hit){ if(!hit) fetch(u).catch(function(){}); });
