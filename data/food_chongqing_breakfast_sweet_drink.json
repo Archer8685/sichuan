@@ -5,8 +5,8 @@
     "halal": true,
     "area": "渝中区",
     "address": "渝中区中兴路（较场口清真寺旁）",
-    "lat": null,
-    "lng": null,
+    "lat": 29.552656,
+    "lng": 106.572198,
     "hours": "09:30-22:00",
     "price": 42,
     "dishes": [
@@ -17,8 +17,9 @@
     ],
     "reason": "重庆最老牌的清真餐厅之一，被称为重庆新疆菜鼻祖，牛羊肉自新疆空运，紧邻较场口清真寺。",
     "notes": "清真认证，可放心用餐；开门较晚（9:30），适合当早午餐；节假日礼拜时段人多。",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_status": "verified",
+    "coordinate_source": "高德地图 GCJ-02（2026-07-25核对）",
+    "amap_poiid": "B0MB2S0DJ0"
   },
   {
     "name": "新疆真伊顺清真美食坊",

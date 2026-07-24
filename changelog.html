@@ -127,7 +127,7 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
     <p class="source-note">資料截點：2026/07/24（UTC+8）・<a href="https://github.com/Archer8685/sichuan/commits" target="_blank" rel="noopener">查看完整 Git 歷史 ↗</a></p>
     <aside class="ticket" aria-label="版本資訊">
       <small>CHANGE LOG</small>
-      <strong>v121</strong>
+      <strong>v122</strong>
       <div class="route">CKG 重慶<br>↓ 9 DAYS<br>CTU 成都</div>
     </aside>
   </header>
@@ -139,7 +139,8 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
   </section>
 
   <nav class="jump" aria-label="依日期跳轉">
-    <a href="#d0724h">07/24 最新</a>
+    <a href="#d0725a">07/25 最新</a>
+    <a href="#d0724h">07/24 清真維護</a>
     <a href="#d0724g">07/24 行程定案</a>
     <a href="#d0724f">07/24 餐廳座標</a>
     <a href="#d0724e">07/24 餐廳維護</a>
@@ -160,11 +161,22 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
   </nav>
 
   <section class="timeline" aria-label="修改時間軸">
-    <article class="release" id="d0724h">
-      <div class="date"><time datetime="2026-07-24">07 / 24</time><span>版本 v121・最新</span></div>
+    <article class="release" id="d0725a">
+      <div class="date"><time datetime="2026-07-25">07 / 25</time><span>版本 v122・最新</span></div>
       <div class="release-body">
         <section class="change" data-kind="data">
-          <h2>依大眾點評截圖批次維護 21 家清真餐廳（新增 11、更新評分、補座標上地圖） <span class="new">LATEST</span></h2>
+          <h2>4 家行程備選餐廳補上高德座標、正式上地圖 <span class="new">LATEST</span></h2>
+          <p>透過高德地圖 PlaceSearch 為原本「暫無座標、不顯示在地圖」的行程備選餐廳補上 GCJ-02 精確座標並核對店名地址：成都吃客（奎星樓總店・奎星樓街8號）、青石橋海鮮市場（青石橋中街）、慶聚齋清真餐廳（重慶中興路較場口）、受氣牛肉·耙牛肉火鍋（重慶大坪正街老店）。四家皆帶高德 POI ID、標記 verified 上地圖。另「馬記永·蘭州牛肉麵」高德目前僅查得新津遠郊分店（距春熙路約 25 公里），為免誤標暫維持「暫無座標」。網站資源與離線快取更新為 v122。</p>
+          <div class="meta"><span class="kind">行程備選餐廳補座標＋高德POI＋版本</span><span class="commit">目前工作區</span></div>
+        </section>
+      </div>
+    </article>
+
+    <article class="release" id="d0724h">
+      <div class="date"><time datetime="2026-07-24">07 / 24</time><span>版本 v121</span></div>
+      <div class="release-body">
+        <section class="change" data-kind="data">
+          <h2>依大眾點評截圖批次維護 21 家清真餐廳（新增 11、更新評分、補座標上地圖）</h2>
           <p>依 2026/07/24 大眾點評截圖一次維護 21 家清真餐廳：<strong>新增 11 家</strong>（重慶：新疆熱提薩爾羊肉串、尚河寧夏灘羊火鍋、蔣記爆汁羊肉、馬賽文燒烤盤龍店；成都：熱氏辣子牛肉麵、蕃坊酥小蒙牛肉餅金牛萬達店、穆伊軒老北京銅鍋涮肉、楊樂辣子雞太古里店、笨犇牛鮮切牛肉老火鍋、貴州清真牛肉中和店、雅君中國菜春熙路總店），皆以最近地鐵站／地標經 OSM 查得座標並轉 GCJ-02（標為近似位置，精確門牌待補）後上地圖。<strong>更新評分</strong>：真伊順松牌路 4.6、青渝大叔 4.1、川院裡 4.0、酥小蒙天府廣場 4.3、鵝市巷 4.4（4159 則）、西北第一家黃楊路 4.2、馬賽文盤龍店 4.6（與龍頭寺店分開計）。<strong>補座標上地圖</strong>：伊佳人涮烤（西南大學站）、粵香村（東城根南街）。<strong>新增分店</strong>：駝鈴巷清真西北菜八公里店（南岸區，與巴南交通大學店並存）。全站地點數增至 575。網站資源與離線快取更新為 v121。</p>
           <div class="meta"><span class="kind">21 家清真餐廳批次維護＋近似座標＋版本</span><span class="commit">目前工作區</span></div>
         </section>

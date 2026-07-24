@@ -4664,8 +4664,8 @@ const PLACES = [
   "halal": true,
   "area": "渝中區",
   "address": "渝中區中興路（較場口清真寺旁）",
-  "lat": null,
-  "lng": null,
+  "lat": 29.552656,
+  "lng": 106.572198,
   "hours": "09:30-22:00",
   "price": 42,
   "dishes": [
@@ -4676,8 +4676,9 @@ const PLACES = [
   ],
   "reason": "重慶最老牌的清真餐廳之一，被稱為重慶新疆菜鼻祖，牛羊肉自新疆空運，緊鄰較場口清真寺。",
   "notes": "清真認證，可放心用餐；開門較晚（9:30），適合當早午餐；節假日禮拜時段人多。",
-  "coordinate_status": "unverified",
-  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-25核對）",
+  "amap_poiid": "B0MB2S0DJ0",
   "city": "重庆",
   "rating": "4.7/5",
   "rating_source": "大眾點評"
@@ -7090,8 +7091,8 @@ const PLACES = [
   "cuisine": "牛肉火鍋/江湖菜",
   "area": "渝中區 大坪",
   "address": "重慶市渝中區大坪正街石油路家屬區底商（時代天街A館1號門對面）",
-  "lat": null,
-  "lng": null,
+  "lat": 29.541493,
+  "lng": 106.519722,
   "hours": "約 11:00–22:00",
   "price": "人均 70–100 元",
   "dishes": [
@@ -7103,8 +7104,9 @@ const PLACES = [
   ],
   "reason": "以大塊軟耙牛肉聞名的本地傳奇老店，牛肉主打、麻辣鮮香，是避豬旅客最省心的一頓。",
   "notes": "全店以牛肉牛雜為主，幾乎可全程無豬（廚房非清真）。老店在居民樓下、店規『霸道』出名，態度直接勿介意；來福士也有分店（環境較好）。",
-  "coordinate_status": "unverified",
-  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-25核對）",
+  "amap_poiid": "B0H3ND1YEI",
   "city": "重庆",
   "rating": "4.5/5",
   "rating_source": "綜合"
@@ -8303,8 +8305,8 @@ const PLACES = [
   "cuisine": "創意川菜/網紅川菜",
   "area": "武侯區·致民路（另有奎星樓街等分店）",
   "address": "致民路48號",
-  "lat": null,
-  "lng": null,
+  "lat": 30.667881,
+  "lng": 104.055095,
   "hours": "12:00-13:30，17:00-21:00（排隊取號早）",
   "price": "人均約90-110元",
   "rating": null,
@@ -8317,8 +8319,9 @@ const PLACES = [
   ],
   "reason": "大眾點評必吃榜多年常客，奎星樓街與致民路「排隊王」，創意擺盤配紮實川味",
   "notes": "不接受電話訂位，需現場取號排隊，建議開餐前到；烤腦花為豬腦花需避開者注意",
-  "coordinate_status": "unverified",
-  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-25核對）",
+  "amap_poiid": "B0FFG0APBU"
  },
  {
   "name": "五里關火鍋",
@@ -13521,8 +13524,8 @@ const PLACES = [
   "cuisine": "海鮮市場＋代客加工（活帝王蟹秤重單點）",
   "area": "錦江區·青石橋",
   "address": "成都市錦江區青石橋中街8號格萊美空間一帶（近春熙路、鹽市口）",
-  "lat": null,
-  "lng": null,
+  "lat": 30.653463,
+  "lng": 104.071368,
   "hours": "約08:00-22:00（各攤不一，傍晚至夜間最熱鬧）",
   "price": "活帝王蟹秤重市價＋加工約¥30/道起（帝王蟹大件約¥100/隻，以現場為準）；人均約¥50-100",
   "rating": null,
@@ -13535,8 +13538,9 @@ const PLACES = [
   ],
   "reason": "成都市中心最大水產市場：買活鮮（帝王蟹/龍蝦/貝類）→交加工店現做，是青石橋的核心玩法；近春熙路、傍晚最熱鬧。",
   "notes": "加工店選擇：①紅太陽海鮮大排檔（格萊美空間附6-7號，電話13981934671，掛名最穩）②胖姐海鮮燒烤大排檔（格萊美空間1幢50號）③青石橋海鮮大排檔（青石橋中街71號）——店家更迭快，現場挑乾淨、生意旺、明碼標價者即可。⚠️務必用公平秤複秤、先講死單價與加工費做法。避豬：海鮮易避，但避開川味豬油/臘肉現炒與燒烤豬肉串，明講『只海鮮、不豬、不用豬油』。⚠️同名陷阱：另有一家『青石橋海鮮大排檔』在青羊區大石西路長樂坊、非此市場，認準青石橋中街。",
-  "coordinate_status": "unverified",
-  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-25核對）",
+  "amap_poiid": "B001C8MHRH"
  },
  {
   "name": "唐宮·粵菜海鮮（高新仁和新城店）",
