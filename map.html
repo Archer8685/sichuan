@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>成都・重慶 9天8夜 — 景點餐廳地圖</title>
-<link rel="preload" href="data.js?v=115" as="script">
-<link rel="preload" href="trip.js?v=115" as="script">
+<link rel="preload" href="data.js?v=116" as="script">
+<link rel="preload" href="trip.js?v=116" as="script">
 <link rel="prefetch" href="itinerary.html">
 <link rel="prefetch" href="prep.html">
 <link rel="prefetch" href="guide.html">
@@ -84,6 +84,9 @@ header p{font-size:12px;color:var(--muted);margin-top:3px}
 .chip{padding:5px 10px;border-radius:20px;font-size:12.5px;cursor:pointer;border:1px solid var(--line);background:#fff;user-select:none;transition:.12s}
 .chip.on{color:#fff;border-color:transparent}
 .chip.halal-chip.on{background:#0e7c3f}
+.chip.cuisine-chip.on{background:var(--accent2);color:#fff;border-color:transparent}
+#cuisineChips{border-top:1px dashed var(--line);padding-top:8px;margin-top:2px}
+#cuisineChips.hidden{display:none}
 #search{width:100%;padding:9px 34px 9px 12px;border:1px solid var(--line);border-radius:10px;font-size:14px;outline:none}
 #search:focus{border-color:var(--accent)}
 .search-wrap{position:relative}
@@ -176,7 +179,7 @@ html,body{overscroll-behavior:none} /* 防止下拉手勢觸發瀏覽器 pull-to
 <nav class="topnav" aria-label="主要導覽">
   <div class="brand">
     <strong>Sichuan Trip</strong>
-    <span class="site-meta"><a data-site-meta href="changelog.html" aria-label="查看網站修改紀錄">2026/12/5–12/13 ｜ v106・更新 2026/07/19</a></span>
+    <span class="site-meta"><a data-site-meta href="changelog.html" aria-label="查看網站修改紀錄">2026/12/5–12/13 ｜ v116・更新 2026/07/24</a></span>
   </div>
   <div class="navlinks">
     <a href="prep.html">行前</a>
@@ -201,6 +204,7 @@ html,body{overscroll-behavior:none} /* 防止下拉手勢觸發瀏覽器 pull-to
     <button class="filter-toggle" id="filterToggle" type="button" aria-expanded="true">⚙️ 隱藏篩選</button>
     <div class="filters" id="filters">
       <div class="filter-row" id="catChips"></div>
+      <div class="filter-row hidden" id="cuisineChips"></div>
       <div class="filter-row">
         <span class="chip halal-chip" id="halalOnly">☪ 只看清真／清真友善（餐飲）</span>
         <span class="chip" id="resetBtn">✅ 全選</span>
@@ -219,8 +223,8 @@ html,body{overscroll-behavior:none} /* 防止下拉手勢觸發瀏覽器 pull-to
 </div>
 <div class="legend" id="legend"></div>
 
-<script src="data.js?v=115"></script>
-<script src="trip.js?v=115"></script>
+<script src="data.js?v=116"></script>
+<script src="trip.js?v=116"></script>
 <script>
 // 分類設定：顏色＋圖示
 const CATS={
@@ -237,6 +241,27 @@ const CATS={
 };
 const FOOD_CATS=new Set(["早餐","甜点","饮料","午晚餐"]);
 const MEAL_CATS=new Set(["早餐","午晚餐"]);
+// 合併後的「餐飲」大類 chip 設定
+const FOOD_MERGED={color:"#e67e22",emoji:"🍽",label:"餐飲"};
+// 餐飲子分類（菜系大類）— 與餐廳頁 restaurants.html 一致
+const CUISINE_CATS=["火鍋・串串・冒菜","新疆・西北菜","川菜・渝菜・本地菜","麵食・小吃","燒烤・烤魚","湯鍋・牛羊肉湯","海鮮","中東・南亞料理","素食","甜點・糕餅","飲品・咖啡・茶","其他・綜合"];
+function classifyCuisine(p){
+  const cuisine=p.cuisine||"";
+  const hay=[p.name||"",cuisine,(p.dishes||[]).join(" ")].join(" ");
+  const has=(...ks)=>ks.some(k=>hay.includes(k));
+  if(p.category==="饮料")return "飲品・咖啡・茶";
+  if(p.category==="甜点")return "甜點・糕餅";
+  if(has("海鮮","海鲜","帝王蟹","波龍","波龙","龍蝦","龙虾","粥底"))return "海鮮";
+  if(has("中東","土耳其","阿拉伯","杜拜","巴基斯坦","印度","北非","沙威瑪","法拉費","唐杜里","庫斯庫斯"))return "中東・南亞料理";
+  if(has("新疆","大盤雞","大盘鸡","手抓羊","饢","馕","椒麻雞","抓飯","抓饭","烤包子","錫伯","西北","蘭州","兰州","銅鍋涮","铜锅涮","冰煮羊","架子肉","拌麵","拌面"))return "新疆・西北菜";
+  if(has("火鍋","火锅","串串","冒菜","冒椒","麻辣燙","麻辣烫"))return "火鍋・串串・冒菜";
+  if(has("燒烤","烧烤","烤肉","烤羊","烤串","炭火","燻烤","BBQ","羊肉串","烤魚","烤鱼"))return "燒烤・烤魚";
+  if(has("素食","素齋","素斋","齋飯","斋饭"))return "素食";
+  if(has("羊肉湯","羊肉汤","蹺腳","跷脚","牛肉湯","牛肉汤","羊蠍"))return "湯鍋・牛羊肉湯";
+  if(has("麵","面","米線","米粉","抄手","餃","饺","小面","鍋盔","锅盔","包子","燒麥","烧麦","涼粉","凉粉","涼麵","凉面","餛飩","馄饨"))return "麵食・小吃";
+  if(has("川菜","渝菜","江湖菜","家常","蒼蠅","苍蝇","精緻川","粵","粤","甜皮鴨","回鍋","水煮魚","麻婆","宮保","魚頭","鱼头","兔頭","兔头","滷","卤","鴨","鸭"))return "川菜・渝菜・本地菜";
+  return "其他・綜合";
+}
 const HALAL_COLOR="#0e7c3f",HALAL_FRIENDLY_COLOR="#5cba6b",HALAL_EMOJI="☪";
 const CITY_CENTER={"成都":[30.6598,104.0633],"重庆":[29.5630,106.5516]};
 
@@ -251,7 +276,10 @@ L.tileLayer('https://webrd0{s}.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scal
 
 // 建立分類篩選 chips 與圖例
 const catChips=document.getElementById('catChips');
+const cuisineChipsBox=document.getElementById('cuisineChips');
+// 非餐飲類別照舊各一顆 chip
 Object.entries(CATS).forEach(([k,v])=>{
+  if(FOOD_CATS.has(k))return; // 餐飲類統一由合併 chip 處理
   const c=document.createElement('span');c.className='chip on';c.dataset.cat=k;
   c.textContent=v.emoji+" "+v.label;
   c.style.background=v.color;c.style.color="#fff";
@@ -263,6 +291,37 @@ Object.entries(CATS).forEach(([k,v])=>{
   };
   catChips.appendChild(c);
 });
+// 合併後的「🍽 餐飲」大類 chip：一次開關全部餐飲類別，並顯示/收合子分類列
+const foodChip=document.createElement('span');
+foodChip.className='chip on';foodChip.id='foodChip';
+foodChip.textContent=FOOD_MERGED.emoji+" "+FOOD_MERGED.label;
+foodChip.style.background=FOOD_MERGED.color;foodChip.style.color="#fff";
+foodChip.onclick=()=>{
+  foodChip.classList.toggle('on');
+  const on=foodChip.classList.contains('on');
+  if(on){FOOD_CATS.forEach(k=>state.cats.add(k));foodChip.style.background=FOOD_MERGED.color;foodChip.style.color="#fff";}
+  else{FOOD_CATS.forEach(k=>state.cats.delete(k));foodChip.style.background="#fff";foodChip.style.color="var(--ink)";}
+  cuisineChipsBox.classList.toggle('hidden',!on);
+  rerender();
+};
+catChips.appendChild(foodChip);
+// 餐飲子分類 chips（子分類參考餐廳頁）——依實際店家數由多到少，含數量
+(function buildCuisineChips(){
+  const counts={};
+  PLACES.forEach(p=>{if(FOOD_CATS.has(p.category)){const cc=classifyCuisine(p);counts[cc]=(counts[cc]||0)+1;}});
+  CUISINE_CATS.filter(c=>counts[c]).sort((a,b)=>counts[b]-counts[a]).forEach(cc=>{
+    const c=document.createElement('span');c.className='chip cuisine-chip on';c.dataset.cuisine=cc;
+    c.textContent=`${cc} (${counts[cc]})`;
+    c.onclick=()=>{
+      c.classList.toggle('on');
+      if(c.classList.contains('on'))state.cuisines.add(cc);else state.cuisines.delete(cc);
+      rerender();
+    };
+    cuisineChipsBox.appendChild(c);
+  });
+})();
+// 初始：餐飲 chip 預設開啟 → 子分類列一併顯示
+cuisineChipsBox.classList.toggle('hidden',!foodChip.classList.contains('on'));
 document.getElementById('legend').innerHTML=
   Object.entries(CATS).filter(([k])=>!MEAL_CATS.has(k)).map(([k,v])=>`<div>${v.emoji} ${v.label}</div>`).join("")+
   `<div>🍽 早餐／午晚餐（非清真）</div><div style="color:${HALAL_COLOR}">${HALAL_EMOJI} 清真（深綠）</div><div style="color:${HALAL_FRIENDLY_COLOR}">${HALAL_EMOJI} 清真友善（淺綠）</div>`;
@@ -276,7 +335,7 @@ function focusOn(latlng,zoom){
   if(s>0)map.panBy([0,Math.round(s/2)],{animate:false}); // 讓目標落在可視區中央
 }
 
-let state={city:"成都",cats:new Set(Object.keys(CATS)),halalOnly:false,q:"",tripDay:1,tripPlan:"A",tripShowAll:true};
+let state={city:"成都",cats:new Set(Object.keys(CATS)),cuisines:new Set(CUISINE_CATS),halalOnly:false,q:"",tripDay:1,tripPlan:"A",tripShowAll:true};
 let markers=[];
 let routeLine=null;
 
@@ -383,6 +442,7 @@ function passesBase(p){
   if(p.city!==state.city)return false;
   const cat=catOf(p);
   if(!state.cats.has(cat))return false;
+  if(FOOD_CATS.has(cat)&&!state.cuisines.has(p._cuisineCat||classifyCuisine(p)))return false;
   if(state.halalOnly&&FOOD_CATS.has(cat)&&!isHalalish(p))return false;
   return true;
 }
@@ -544,6 +604,7 @@ function renderTrip(keepView){
       if(!p.lat||!dayCities.includes(p.city))return;
       const cat=catOf(p);
       if(!state.cats.has(cat))return;
+      if(FOOD_CATS.has(cat)&&!state.cuisines.has(p._cuisineCat||classifyCuisine(p)))return;
       if(state.halalOnly&&FOOD_CATS.has(cat)&&!isHalalish(p))return;
       let searchMatch=true;
       if(q){const hay=t2s([p.name,p.area,p.address,p.cuisine,p.michelin_halal_option?"米其林 清真選項":"",...(p.dishes||[]),...(p.activities||[])].join(" ").toLowerCase());searchMatch=hay.includes(q);}
@@ -615,10 +676,14 @@ document.getElementById('halalOnly').onclick=e=>{
 };
 document.getElementById('resetBtn').onclick=()=>{
   state.cats=new Set(Object.keys(CATS));
+  state.cuisines=new Set(CUISINE_CATS);
   document.querySelectorAll('#catChips .chip').forEach(c=>{
     c.classList.add('on');
+    if(c.id==='foodChip'){c.style.background=FOOD_MERGED.color;c.style.color="#fff";return;}
     const v=CATS[c.dataset.cat];c.style.background=v.color;c.style.color="#fff";
   });
+  cuisineChipsBox.querySelectorAll('.chip').forEach(c=>c.classList.add('on'));
+  cuisineChipsBox.classList.remove('hidden');
   rerender();
 };
 const _searchEl=document.getElementById('search');
@@ -634,14 +699,17 @@ function _clearSearch(){_searchEl.value="";state.q="";_syncSearchClear();_search
 document.getElementById('searchClear').onclick=_clearSearch;
 document.getElementById('clearBtn').onclick=()=>{
   state.cats.clear();
+  state.cuisines.clear();
   document.querySelectorAll('#catChips .chip').forEach(c=>{
     c.classList.remove('on');
     c.style.background="#fff";c.style.color="var(--ink)";
   });
+  cuisineChipsBox.querySelectorAll('.chip').forEach(c=>c.classList.remove('on'));
+  cuisineChipsBox.classList.add('hidden');
   rerender();
 };
 
-PLACES.forEach((p,i)=>p._id=i);
+PLACES.forEach((p,i)=>{p._id=i;if(FOOD_CATS.has(p.category))p._cuisineCat=classifyCuisine(p);});
 document.getElementById('subtitle').textContent=`12/5–12/13 ｜ ${PLACES.length} 個地點`;
 
 // 支援 map.html?q=地點名稱（行程頁連結跳轉用）：只定位並開啟資訊，不啟動搜尋篩選
@@ -850,7 +918,7 @@ window.addEventListener('pageshow',e=>{if(e.persisted)document.getElementById('p
     window.addEventListener('load',function(){
       navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){
         if(!('caches' in window))return;
-        caches.open('sichuan-app-v115').then(function(c){
+        caches.open('sichuan-app-v116').then(function(c){
           document.querySelectorAll('script[src],link[href]').forEach(function(el){
             var u=el.src||el.href; if(!u||u.indexOf(location.origin)!==0)return;
             c.match(u).then(function(hit){ if(!hit) fetch(u).catch(function(){}); });
