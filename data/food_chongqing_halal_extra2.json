@@ -336,30 +336,6 @@
    "coordinate_source": "高德地图 GCJ-02（2026-07-15核对）"
  },
  {
-   "name": "清真牛羊肉（中兴路店）",
-   "city": "重庆",
-   "category": "午晚餐",
-   "halal": true,
-   "cuisine": "清真生鲜/熟食铺（牛羊肉、酱牛肉）",
-   "area": "渝中区 较场口（穆斯林大厦旁）",
-   "address": "重庆市渝中区中兴路穆斯林大厦西门北侧约40米",
-   "lat": null,
-   "lng": null,
-   "hours": null,
-   "price": null,
-   "rating": null,
-   "rating_source": null,
-   "dishes": [
-     "新鲜牛羊肉",
-     "酱牛肉/卤牛肉",
-     "清真熟食"
-   ],
-   "reason": "清真寺旁的清真牛羊肉铺，可买放心肉与卤味熟食带走，填补清真食品店/伴手礼品类。",
-   "notes": "百度地图收录POI，紧邻重庆清真寺与庆聚斋；主营零售，适合自炊住客与伴手礼采购。；熟食滷味外帶鋪（醬牛肉），非內用餐廳",
-   "coordinate_status": "unverified",
-   "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
- },
- {
    "name": "伊品辣清真重庆火锅（爱里耶赛儿店）",
    "city": "重庆",
    "category": "午晚餐",

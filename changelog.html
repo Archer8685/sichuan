@@ -127,7 +127,7 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
     <p class="source-note">資料截點：2026/07/24（UTC+8）・<a href="https://github.com/Archer8685/sichuan/commits" target="_blank" rel="noopener">查看完整 Git 歷史 ↗</a></p>
     <aside class="ticket" aria-label="版本資訊">
       <small>CHANGE LOG</small>
-      <strong>v117</strong>
+      <strong>v118</strong>
       <div class="route">CKG 重慶<br>↓ 9 DAYS<br>CTU 成都</div>
     </aside>
   </header>
@@ -139,7 +139,8 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
   </section>
 
   <nav class="jump" aria-label="依日期跳轉">
-    <a href="#d0724d">07/24 最新</a>
+    <a href="#d0724e">07/24 最新</a>
+    <a href="#d0724d">07/24 資料清理</a>
     <a href="#d0724c">07/24 地圖分類</a>
     <a href="#d0724b">07/24 評分回填</a>
     <a href="#d0723b">07/23</a>
@@ -156,11 +157,22 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
   </nav>
 
   <section class="timeline" aria-label="修改時間軸">
-    <article class="release" id="d0724d">
-      <div class="date"><time datetime="2026-07-24">07 / 24</time><span>版本 v117・最新</span></div>
+    <article class="release" id="d0724e">
+      <div class="date"><time datetime="2026-07-24">07 / 24</time><span>版本 v118・最新</span></div>
       <div class="release-body">
         <section class="change" data-kind="data">
-          <h2>移除查無實體的餐廳「回堂春」；皇城壩牛肉館評分更新 <span class="new">LATEST</span></h2>
+          <h2>新增蘇記穆罕餐館評分並修正地址、鵝市巷補評分、移除中興路清真牛羊肉鋪、修正「乾煸／乾燒」繁體誤轉 <span class="new">LATEST</span></h2>
+          <p>依 2026/07/24 大眾點評截圖批次維護餐飲資料：（1）「蘇記穆罕餐館」原記錄地址誤標青羊區皇城壩，依截圖修正為金牛區盛達街318-320號興盛世家，菜系改為清真牛肉菜／回民家常菜（其他中餐），並補上評分 4.2（883 則）；（2）「清真·鵝市巷·成都回民菜（小河街店）」補上評分 4.4（4155 則，成都特色菜人氣榜第 10 名）；（3）移除「清真牛羊肉（中興路店）」——經確認為熟食外帶鋪而非內用餐廳、且無精確座標，不宜列入地圖景點餐廳。同時修正建置腳本 build_data.py 的簡繁轉換：餐飲語境的「干」（干煸、干燒、干拌、干熘、干碟、干香）原被 zhconv 誤轉為「幹」，新增逐詞修正表校正為正確的「乾」。蘇記穆罕與部分店家因大眾點評／高德未提供精確經緯度、座標待補，暫僅於餐廳頁顯示、不上地圖。網站資源與離線快取更新為 v118。</p>
+          <div class="meta"><span class="kind">餐廳評分維護＋資料清理＋繁簡修正＋版本</span><span class="commit">目前工作區</span></div>
+        </section>
+      </div>
+    </article>
+
+    <article class="release" id="d0724d">
+      <div class="date"><time datetime="2026-07-24">07 / 24</time><span>版本 v117</span></div>
+      <div class="release-body">
+        <section class="change" data-kind="data">
+          <h2>移除查無實體的餐廳「回堂春」；皇城壩牛肉館評分更新</h2>
           <p>使用者回報遍尋不著「回堂春」（原標金家壩街回民燉菜老館，來源為清真美食指南轉引），大眾點評與高德地圖均查無可靠對應店家，判定為查無實體或已歇業，故從 data/food_chengdu_halal_extra2.json 移除並重建 data.js（成都清真午晚餐少一筆）。同批依 2026/07/24 最新大眾點評截圖，將「清真·皇城壩牛肉館（三桂前街店）」評分由 4.2 更新為 4.1（評價數 2701→2707 則）。網站資源與離線快取更新為 v117。</p>
           <div class="meta"><span class="kind">資料清理＋評分更新＋版本</span><span class="commit">目前工作區</span></div>
         </section>
