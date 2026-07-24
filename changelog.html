@@ -127,7 +127,7 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
     <p class="source-note">資料截點：2026/07/24（UTC+8）・<a href="https://github.com/Archer8685/sichuan/commits" target="_blank" rel="noopener">查看完整 Git 歷史 ↗</a></p>
     <aside class="ticket" aria-label="版本資訊">
       <small>CHANGE LOG</small>
-      <strong>v119</strong>
+      <strong>v120</strong>
       <div class="route">CKG 重慶<br>↓ 9 DAYS<br>CTU 成都</div>
     </aside>
   </header>
@@ -158,11 +158,22 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
   </nav>
 
   <section class="timeline" aria-label="修改時間軸">
+    <article class="release" id="d0724g">
+      <div class="date"><time datetime="2026-07-24">07 / 24</time><span>版本 v120・最新</span></div>
+      <div class="release-body">
+        <section class="change" data-kind="feat">
+          <h2>D5／D7 行程定案（移除 A/B 雙方案）＋餐廳頁菜系數量隨篩選動態連動 <span class="new">LATEST</span></h2>
+          <p>行程調整：（1）D5 固定為單一方案，晚餐由九眼橋清真西北菜改為<strong>撫琴夜市</strong>逛吃、並移除夜遊錦江搭船段（原晚餐西遇憶品九眼橋店降為備選）；（2）D7 固定為單一方案（望平街・錦江夜景線，移除芳草玉林 A 方案），晚餐改為就在望平街散步動線上的<strong>清真老馬資格烤羊肉串（望平街店）</strong>（原晚餐西遇憶品九眼橋店降為備選）；兩天皆移除 A/B variants，行程頁不再需要切換方案。連帶更新候補清單中關於 D5 夜遊錦江與 D7 動線的說明。餐廳頁改良：菜系篩選標籤的數量會<strong>隨城市／清真／評分／搜尋條件即時重算</strong>（例如切到重慶時火鍋由 67 變 31），目前條件下為 0 家的菜系標籤自動隱藏；若已選菜系在切換城市後無店家，會自動退回「全部」。網站資源與離線快取更新為 v120。</p>
+          <div class="meta"><span class="kind">行程定案＋餐廳頁動態計數＋版本</span><span class="commit">目前工作區</span></div>
+        </section>
+      </div>
+    </article>
+
     <article class="release" id="d0724f">
-      <div class="date"><time datetime="2026-07-24">07 / 24</time><span>版本 v119・最新</span></div>
+      <div class="date"><time datetime="2026-07-24">07 / 24</time><span>版本 v119</span></div>
       <div class="release-body">
         <section class="change" data-kind="data">
-          <h2>蘇記穆罕餐館補上近似座標，正式上地圖 <span class="new">LATEST</span></h2>
+          <h2>蘇記穆罕餐館補上近似座標，正式上地圖</h2>
           <p>接續 v118：由於大眾點評／高德網頁版對本機環境觸發滑塊驗證與登入牆，無法直接取得「蘇記穆罕餐館」精確門牌座標，改以 OpenStreetMap 查得盛達街街道中點，經地鐵 6 號線侯家橋站距離交叉驗證（兩點皆在金牛區西華街道、約 1.1km，與截圖「近侯家橋站 B 口步行 1.3km」相符）後，將 WGS-84 轉換為高德底圖用的 GCJ-02 座標（30.728516, 104.011585）寫入記錄，coordinate_status 標為 approximate（近似位置：街道中點，精確門牌待補）。此店由此正式顯示於地圖。網站資源與離線快取更新為 v119。</p>
           <div class="meta"><span class="kind">近似座標回填＋上地圖＋版本</span><span class="commit">目前工作區</span></div>
         </section>

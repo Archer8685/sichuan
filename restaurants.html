@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>成都・重慶 — 餐廳一覽</title>
-<link rel="preload" href="data.js?v=119" as="script">
+<link rel="preload" href="data.js?v=120" as="script">
 <link rel="prefetch" href="map.html">
 <link rel="prefetch" href="itinerary.html">
 <style>
@@ -83,7 +83,7 @@ select{font-size:13px;padding:6px 10px;border:1px solid var(--line);border-radiu
 <nav class="topnav" aria-label="主要導覽">
   <div class="brand">
     <strong>Sichuan Trip</strong>
-    <span class="site-meta"><a data-site-meta href="changelog.html" aria-label="查看網站修改紀錄">2026/12/5–12/13</a></span>
+    <span class="site-meta"><a data-site-meta href="changelog.html" aria-label="查看網站修改紀錄">2026/12/5–12/13 ｜ v120・更新 2026/07/24</a></span>
   </div>
   <div class="navlinks">
     <a href="prep.html">行前</a>
@@ -133,7 +133,7 @@ select{font-size:13px;padding:6px 10px;border:1px solid var(--line);border-radiu
   <div class="grid" id="grid"></div>
 </div>
 
-<script src="data.js?v=119"></script>
+<script src="data.js?v=120"></script>
 <script>
 // 餐飲類別（category）— 僅用於過濾出餐飲店家
 const FOOD_CATS=["午晚餐","早餐","甜点","饮料"];
@@ -239,16 +239,45 @@ function render(){
   const total=RESTAURANTS.length;
   const rated=list.filter(p=>p.rating).length;
   document.getElementById("count").textContent=`顯示 ${list.length} / ${total} 家餐廳（其中 ${rated} 家有評分）`;
+  updateCuisineCounts();
 }
 
-// 動態產生菜系 chips（依實際店家數，由多到少；含數量）
+// 除「菜系」以外的條件（城市／清真／評分／搜尋）是否通過——供菜系標籤動態計數用
+function matchesExceptCuisine(p){
+  if(state.city!=="all"&&p.city!==state.city)return false;
+  if(state.halal==="halal"&&p.halal!==true)return false;
+  if(state.halal==="friendly"&&p.halal!=="友善")return false;
+  if(state.ratedOnly&&!p.rating)return false;
+  if(state.q){
+    const q=_norm(state.q);
+    const hay=_norm([p.name,p.cuisine,p.area,p.address,(p.dishes||[]).join("")].join(""));
+    if(!hay.includes(q))return false;
+  }
+  return true;
+}
+
+// 依目前其他篩選條件，更新各菜系標籤上的數量（「全部」顯示總符合數）
+function updateCuisineCounts(){
+  const base=RESTAURANTS.filter(matchesExceptCuisine);
+  const counts={};
+  base.forEach(p=>{counts[p._cuisineCat]=(counts[p._cuisineCat]||0)+1;});
+  document.querySelectorAll("#cuisineChips .chip").forEach(btn=>{
+    const c=btn.dataset.cuisine;
+    if(c==="all"){btn.textContent=`全部 (${base.length})`;return;}
+    const n=counts[c]||0;
+    btn.textContent=`${btn.dataset.label} (${n})`;
+    btn.style.display=n?"":"none"; // 該菜系在目前條件下為 0 家時隱藏，避免誤點空集合
+  });
+}
+
+// 動態產生菜系 chips（依實際店家數，由多到少；含數量，之後由 updateCuisineCounts 動態更新）
 (function buildCuisineChips(){
   const counts={};
   RESTAURANTS.forEach(p=>{counts[p._cuisineCat]=(counts[p._cuisineCat]||0)+1;});
   const box=document.getElementById("cuisineChips");
   CUISINE_CATS.filter(c=>counts[c]).sort((a,b)=>counts[b]-counts[a]).forEach(c=>{
     const b=document.createElement("button");
-    b.className="chip";b.dataset.cuisine=c;b.textContent=`${c} (${counts[c]})`;
+    b.className="chip";b.dataset.cuisine=c;b.dataset.label=c;b.textContent=`${c} (${counts[c]})`;
     box.appendChild(b);
   });
 })();
@@ -261,6 +290,15 @@ function bindChips(containerId,key){
     box.querySelectorAll(".chip").forEach(c=>c.classList.remove("on"));
     btn.classList.add("on");
     state[key]=btn.dataset[key];
+    // 切換城市／清真後，若目前選中的菜系在新條件下已無店家，自動退回「全部」
+    if((key==="city"||key==="halal")&&state.cuisine!=="all"){
+      const base=RESTAURANTS.filter(matchesExceptCuisine);
+      if(!base.some(p=>p._cuisineCat===state.cuisine)){
+        state.cuisine="all";
+        const cbox=document.getElementById("cuisineChips");
+        cbox.querySelectorAll(".chip").forEach(c=>c.classList.toggle("on",c.dataset.cuisine==="all"));
+      }
+    }
     render();
   });
 }
