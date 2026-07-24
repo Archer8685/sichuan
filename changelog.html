@@ -127,7 +127,7 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
     <p class="source-note">資料截點：2026/07/24（UTC+8）・<a href="https://github.com/Archer8685/sichuan/commits" target="_blank" rel="noopener">查看完整 Git 歷史 ↗</a></p>
     <aside class="ticket" aria-label="版本資訊">
       <small>CHANGE LOG</small>
-      <strong>v108</strong>
+      <strong>v115</strong>
       <div class="route">CKG 重慶<br>↓ 9 DAYS<br>CTU 成都</div>
     </aside>
   </header>
@@ -139,7 +139,7 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
   </section>
 
   <nav class="jump" aria-label="依日期跳轉">
-    <a href="#d0724">07/24 最新</a>
+    <a href="#d0724b">07/24 最新</a>
     <a href="#d0723b">07/23</a>
     <a href="#d0719">07/19</a>
     <a href="#d0718">07/18</a>
@@ -154,11 +154,22 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
   </nav>
 
   <section class="timeline" aria-label="修改時間軸">
+    <article class="release" id="d0724b">
+      <div class="date"><time datetime="2026-07-24">07 / 24</time><span>版本 v115・最新</span></div>
+      <div class="release-body">
+        <section class="change" data-kind="data">
+          <h2>為 20 家原本「暫無評分」的成都餐廳補上大眾點評評分 <span class="new">LATEST</span></h2>
+          <p>透過登入後的大眾點評逐店查詢，為原本顯示「暫無評分」的 20 家成都餐廳補上精確評分（大眾點評 shopPowerRate 總分，另抓到口味／環境／服務子項與評價則數）。評分直接寫入來源 data/food_*.json 的店家記錄，而非 ratings 匯總檔——因為建置腳本對 ratings 檔採「去括號後包含式」模糊比對，會把評分誤套到名稱為子字串的同名景點（例如把素食餐廳的分數套到「文殊院」這個景點），直寫來源即可避免擴散。重建 data.js 後，有評分餐廳由 180 增為 200 家。每筆評分來源都註明實際對應到的大眾點評店名與評價則數，方便日後核對分店差異（部分為同品牌不同分店）。剩餘無評分店家因大眾點評反爬蟲驗證頻繁，本次先補齊可精確取得的 20 家。網站資源與離線快取更新為 v115。</p>
+          <div class="meta"><span class="kind">餐廳評分回填＋來源直寫＋版本</span><span class="commit">a9ce37e</span></div>
+        </section>
+      </div>
+    </article>
+
     <article class="release" id="d0724">
-      <div class="date"><time datetime="2026-07-24">07 / 24</time><span>目前工作區・最新</span></div>
+      <div class="date"><time datetime="2026-07-24">07 / 24</time><span>版本 v114</span></div>
       <div class="release-body">
         <section class="change" data-kind="fix">
-          <h2>修正「點餐廳→看地圖→上一頁」卡在讀取中；無座標店家改用高德搜尋定位 <span class="new">LATEST</span></h2>
+          <h2>修正「點餐廳→看地圖→上一頁」卡在讀取中；無座標店家改用高德搜尋定位</h2>
           <p>修正跨頁載入遮罩在瀏覽器「上一頁」（bfcache 還原）時不會收起、導致餐廳／行程／地圖／行前頁卡在「讀取中」的問題（新增 pageshow persisted 還原處理，四頁一致）。餐廳頁另針對 2026/07/15 高德座標稽核中無法可靠匹配、內部地圖不顯示的無座標店家調整點擊行為：卡片改標「座標待確認」，點擊改開高德地圖搜尋該店（uri.amap.com 官方深連結，手機直接開高德 App 定位；店名／城市轉簡體提升匹配率），不再靜默無反應；並透過高德網頁版逐店核對，先為街道精準吻合的「回堂春」「眷蜀冰社」補上 GCJ-02 座標進內部地圖（待確認由 155→153 家）。網站資源與離線快取更新為 v114。</p>
           <div class="meta"><span class="kind">bfcache 上一頁修復＋無座標店家高德外連＋版本</span><span class="commit">目前工作區</span></div>
         </section>
