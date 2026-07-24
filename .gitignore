@@ -10,3 +10,5 @@ exclude_lists.txt
 guides.json
 live_*.html
 live_*.js
+data/_*.txt
+data/_dianping_scrape_raw.txt
