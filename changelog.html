@@ -127,7 +127,7 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
     <p class="source-note">資料截點：2026/07/24（UTC+8）・<a href="https://github.com/Archer8685/sichuan/commits" target="_blank" rel="noopener">查看完整 Git 歷史 ↗</a></p>
     <aside class="ticket" aria-label="版本資訊">
       <small>CHANGE LOG</small>
-      <strong>v120</strong>
+      <strong>v121</strong>
       <div class="route">CKG 重慶<br>↓ 9 DAYS<br>CTU 成都</div>
     </aside>
   </header>
@@ -139,7 +139,9 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
   </section>
 
   <nav class="jump" aria-label="依日期跳轉">
-    <a href="#d0724f">07/24 最新</a>
+    <a href="#d0724h">07/24 最新</a>
+    <a href="#d0724g">07/24 行程定案</a>
+    <a href="#d0724f">07/24 餐廳座標</a>
     <a href="#d0724e">07/24 餐廳維護</a>
     <a href="#d0724d">07/24 資料清理</a>
     <a href="#d0724c">07/24 地圖分類</a>
@@ -158,11 +160,22 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
   </nav>
 
   <section class="timeline" aria-label="修改時間軸">
+    <article class="release" id="d0724h">
+      <div class="date"><time datetime="2026-07-24">07 / 24</time><span>版本 v121・最新</span></div>
+      <div class="release-body">
+        <section class="change" data-kind="data">
+          <h2>依大眾點評截圖批次維護 21 家清真餐廳（新增 11、更新評分、補座標上地圖） <span class="new">LATEST</span></h2>
+          <p>依 2026/07/24 大眾點評截圖一次維護 21 家清真餐廳：<strong>新增 11 家</strong>（重慶：新疆熱提薩爾羊肉串、尚河寧夏灘羊火鍋、蔣記爆汁羊肉、馬賽文燒烤盤龍店；成都：熱氏辣子牛肉麵、蕃坊酥小蒙牛肉餅金牛萬達店、穆伊軒老北京銅鍋涮肉、楊樂辣子雞太古里店、笨犇牛鮮切牛肉老火鍋、貴州清真牛肉中和店、雅君中國菜春熙路總店），皆以最近地鐵站／地標經 OSM 查得座標並轉 GCJ-02（標為近似位置，精確門牌待補）後上地圖。<strong>更新評分</strong>：真伊順松牌路 4.6、青渝大叔 4.1、川院裡 4.0、酥小蒙天府廣場 4.3、鵝市巷 4.4（4159 則）、西北第一家黃楊路 4.2、馬賽文盤龍店 4.6（與龍頭寺店分開計）。<strong>補座標上地圖</strong>：伊佳人涮烤（西南大學站）、粵香村（東城根南街）。<strong>新增分店</strong>：駝鈴巷清真西北菜八公里店（南岸區，與巴南交通大學店並存）。全站地點數增至 575。網站資源與離線快取更新為 v121。</p>
+          <div class="meta"><span class="kind">21 家清真餐廳批次維護＋近似座標＋版本</span><span class="commit">目前工作區</span></div>
+        </section>
+      </div>
+    </article>
+
     <article class="release" id="d0724g">
-      <div class="date"><time datetime="2026-07-24">07 / 24</time><span>版本 v120・最新</span></div>
+      <div class="date"><time datetime="2026-07-24">07 / 24</time><span>版本 v120</span></div>
       <div class="release-body">
         <section class="change" data-kind="feat">
-          <h2>D5／D7 行程定案（移除 A/B 雙方案）＋餐廳頁菜系數量隨篩選動態連動 <span class="new">LATEST</span></h2>
+          <h2>D5／D7 行程定案（移除 A/B 雙方案）＋餐廳頁菜系數量隨篩選動態連動</h2>
           <p>行程調整：（1）D5 固定為單一方案，晚餐由九眼橋清真西北菜改為<strong>撫琴夜市</strong>逛吃、並移除夜遊錦江搭船段（原晚餐西遇憶品九眼橋店降為備選）；（2）D7 固定為單一方案（望平街・錦江夜景線，移除芳草玉林 A 方案），晚餐改為就在望平街散步動線上的<strong>清真老馬資格烤羊肉串（望平街店）</strong>（原晚餐西遇憶品九眼橋店降為備選）；兩天皆移除 A/B variants，行程頁不再需要切換方案。連帶更新候補清單中關於 D5 夜遊錦江與 D7 動線的說明。餐廳頁改良：菜系篩選標籤的數量會<strong>隨城市／清真／評分／搜尋條件即時重算</strong>（例如切到重慶時火鍋由 67 變 31），目前條件下為 0 家的菜系標籤自動隱藏；若已選菜系在切換城市後無店家，會自動退回「全部」。網站資源與離線快取更新為 v120。</p>
           <div class="meta"><span class="kind">行程定案＋餐廳頁動態計數＋版本</span><span class="commit">目前工作區</span></div>
         </section>
