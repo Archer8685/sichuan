@@ -40,7 +40,9 @@
     "notes": "常排队、可能只收现金/扫码；逛完天府广场和成都博物馆顺路。",
     "amap_poiid": "B0IBKSH88M",
     "coordinate_status": "verified",
-    "coordinate_source": "高德地图 GCJ-02（2026-07-15核对）"
+    "coordinate_source": "高德地图 GCJ-02（2026-07-15核对）",
+    "rating": "4.3/5",
+    "rating_source": "大众点评 酥小蒙牛肉饼店(天府广场店)（5096则，2026/07）"
   },
   {
     "name": "陈香贵·兰州牛肉面（春熙路商圈店）",
@@ -82,7 +84,9 @@
     "notes": "校园食堂，入校及支付方式可能受限（或需校园卡/访客登记），行前确认。",
     "amap_poiid": "B001C8VXHC",
     "coordinate_status": "verified",
-    "coordinate_source": "高德地图 GCJ-02（2026-07-15核对）"
+    "coordinate_source": "高德地图 GCJ-02（2026-07-15核对）",
+    "rating": "3.3/5",
+    "rating_source": "大众点评 四川大学-华西清真餐厅（203则，2026/07）"
   },
   {
     "name": "唐家寺罗记卤坊（牛肉饼）",
@@ -102,7 +106,9 @@
     "reason": "唐家寺是成都近郊传统回民聚居地，牛肉饼外皮酥脆、大葱胡椒牛肉馅香气足。",
     "notes": "离市区较远（约20公里），可与新都桂湖/宝光寺行程合并；小摊多收现金或扫码。",
     "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）",
+    "rating": "4.2/5",
+    "rating_source": "大众点评 唐家寺罗记卤坊(土桥店)（147则，2026/07）"
   },
   {
     "name": "严太婆锅魁（文殊院店）",
@@ -186,7 +192,9 @@
     "reason": "老字号豆花专门店，馓子豆花咸鲜酥脆，是成都传统早餐的经典。",
     "notes": "豆花本身为素；豆花面的臊子含猪肉，避开点纯豆花品项即可。",
     "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）",
+    "rating": "4.2/5",
+    "rating_source": "大众点评 小谭豆花(西大街店)（10182则，2026/07）"
   },
   {
     "name": "华兴街煎蛋面（华兴正街）",
@@ -227,7 +235,9 @@
     "reason": "本地人心中的面馆顶流，早上七点就开门，汤面香浓有锅气。",
     "notes": "招牌怪味面臊子含猪肉，请改点牛肉面；高峰排队。",
     "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）",
+    "rating": "3.5/5",
+    "rating_source": "大众点评 牛王庙怪味面(城郊联社小区店)（939则，2026/07）"
   },
   {
     "name": "钟水饺（人民公园总店）",
@@ -334,7 +344,9 @@
     "notes": "点牛肉或素椒口味可避开猪肉；店小人多，环境市井；建议现金/扫码。",
     "amap_poiid": "B001C7UPYD",
     "coordinate_status": "verified",
-    "coordinate_source": "高德地图 GCJ-02（2026-07-15核对）"
+    "coordinate_source": "高德地图 GCJ-02（2026-07-15核对）",
+    "rating": "3.7/5",
+    "rating_source": "大众点评 王婆荞面·海鲜大排档(玉林20年好店)（1404则，2026/07）"
   },
   {
     "name": "小名堂担担甜水面（东城根街店）",
@@ -355,7 +367,9 @@
     "notes": "甜水面与钵钵鸡无猪肉；担担面臊子含猪肉请避开。",
     "amap_poiid": "B0FFKMK9TS",
     "coordinate_status": "verified",
-    "coordinate_source": "高德地图 GCJ-02（2026-07-15核对）"
+    "coordinate_source": "高德地图 GCJ-02（2026-07-15核对）",
+    "rating": "4.0/5",
+    "rating_source": "大众点评 小名堂担担甜水面(东城根街店)（5433则，2026/07）"
   },
   {
     "name": "文殊院·香园（素食）",
@@ -376,7 +390,9 @@
     "reason": "文殊院内的素斋茶园，全素无肉，环境清幽，吃完可逛寺院与文殊坊。",
     "notes": "全素食，天然清真友善；节假日人多，部分窗口下午早收。",
     "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）",
+    "rating": "3.9/5",
+    "rating_source": "大众点评 文殊院香园-素食餐厅（8则，2026/07）"
   },
   {
     "name": "工人村陆记蛋烘糕（曹家巷）",
@@ -437,7 +453,9 @@
     "notes": "下午才出摊且常排队；肉松等咸馅或含猪肉制品，甜馅最稳妥；备现金/扫码。",
     "amap_poiid": "B0FFF6WGQR",
     "coordinate_status": "verified",
-    "coordinate_source": "高德地图 GCJ-02（2026-07-15核对）"
+    "coordinate_source": "高德地图 GCJ-02（2026-07-15核对）",
+    "rating": "4.3/5",
+    "rating_source": "大众点评 贺记蛋烘糕(文庙西街店)（3091则，2026/07）"
   },
   {
     "name": "邓记（新一代）糖油果子（三道街）",
@@ -456,7 +474,9 @@
     "notes": "传统做法用菜籽油非猪油，购买时可再确认；小摊现金/扫码。",
     "amap_poiid": "B0FFKEV6GR",
     "coordinate_status": "verified",
-    "coordinate_source": "高德地图 GCJ-02（2026-07-15核对）"
+    "coordinate_source": "高德地图 GCJ-02（2026-07-15核对）",
+    "rating": "4.2/5",
+    "rating_source": "大众点评 邓记新一代糖油果子(四川煤管局供销公司职工宿舍店)（3871则，2026/07）"
   },
   {
     "name": "市中医大银耳汤（老摊）",
@@ -556,7 +576,9 @@
     "reason": "网红冰粉店，醪糟、银耳、桂花蜜的组合清爽不腻。",
     "notes": "全素配料，清真友善；冬天客流少、部分冰品可能停售。",
     "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）",
+    "rating": "4.4/5",
+    "rating_source": "大众点评 禅泉冰粉(奎星楼店)（5357则，2026/07）"
   },
   {
     "name": "川记糍粑冰粉（玉双路店）",
@@ -641,7 +663,9 @@
     "notes": "茶水20-30元/位无低消，可续水坐一下午；周末人多建议上午去；采耳约30-100元需议价。",
     "amap_poiid": "B0FFH4YYGC",
     "coordinate_status": "verified",
-    "coordinate_source": "高德地图 GCJ-02（2026-07-15核对）"
+    "coordinate_source": "高德地图 GCJ-02（2026-07-15核对）",
+    "rating": "4.1/5",
+    "rating_source": "大众点评 人民公园鹤鸣茶楼（985则，2026/07）"
   },
   {
     "name": "观音阁老茶馆（双流彭镇）",
@@ -661,7 +685,9 @@
     "notes": "游客茶价约10元/杯；离市区约1小时车程建议打车/自驾；清晨去拍照光线最佳，尊重老茶客先询问再拍。",
     "amap_poiid": "B0J32C050K",
     "coordinate_status": "verified",
-    "coordinate_source": "高德地图 GCJ-02（2026-07-15核对）"
+    "coordinate_source": "高德地图 GCJ-02（2026-07-15核对）",
+    "rating": "4.7/5",
+    "rating_source": "大众点评 观音阁百年老茶馆（2437则，2026/07）"
   },
   {
     "name": "大慈茶社（大慈寺内）",
@@ -681,7 +707,9 @@
     "notes": "寺院内全素环境，清真友善；下午茶位紧张，需先购寺院门票（低价）或免票入内。",
     "amap_poiid": "B0KD05WXH2",
     "coordinate_status": "verified",
-    "coordinate_source": "高德地图 GCJ-02（2026-07-15核对）"
+    "coordinate_source": "高德地图 GCJ-02（2026-07-15核对）",
+    "rating": "4.0/5",
+    "rating_source": "大众点评 大慈茶社(大慈寺店)（955则，2026/07）"
   },
   {
     "name": "顺兴老茶馆（世纪城会展中心店）",

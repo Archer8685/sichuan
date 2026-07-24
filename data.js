@@ -44,6 +44,8 @@ const PLACES = [
   "amap_poiid": "B0IBKSH88M",
   "coordinate_status": "verified",
   "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
+  "rating": "4.3/5",
+  "rating_source": "大眾點評 酥小蒙牛肉餅店(天府廣場店)（5096則，2026/07）",
   "city": "成都"
  },
  {
@@ -90,6 +92,8 @@ const PLACES = [
   "amap_poiid": "B001C8VXHC",
   "coordinate_status": "verified",
   "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
+  "rating": "3.3/5",
+  "rating_source": "大眾點評 四川大學-華西清真餐廳（203則，2026/07）",
   "city": "成都"
  },
  {
@@ -111,6 +115,8 @@ const PLACES = [
   "notes": "離市區較遠（約20公里），可與新都桂湖/寶光寺行程合併；小攤多收現金或掃碼。",
   "coordinate_status": "unverified",
   "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
+  "rating": "4.2/5",
+  "rating_source": "大眾點評 唐家寺羅記滷坊(土橋店)（147則，2026/07）",
   "city": "成都"
  },
  {
@@ -203,6 +209,8 @@ const PLACES = [
   "notes": "豆花本身為素；豆花面的臊子含豬肉，避開點純豆花品項即可。",
   "coordinate_status": "unverified",
   "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
+  "rating": "4.2/5",
+  "rating_source": "大眾點評 小譚豆花(西大街店)（10182則，2026/07）",
   "city": "成都"
  },
  {
@@ -246,6 +254,8 @@ const PLACES = [
   "notes": "招牌怪味面臊子含豬肉，請改點牛肉麵；高峰排隊。",
   "coordinate_status": "unverified",
   "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
+  "rating": "3.5/5",
+  "rating_source": "大眾點評 牛王廟怪味面(城郊聯社小區店)（939則，2026/07）",
   "city": "成都"
  },
  {
@@ -366,6 +376,8 @@ const PLACES = [
   "amap_poiid": "B001C7UPYD",
   "coordinate_status": "verified",
   "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
+  "rating": "3.7/5",
+  "rating_source": "大眾點評 王婆蕎面·海鮮大排檔(玉林20年好店)（1404則，2026/07）",
   "city": "成都"
  },
  {
@@ -388,6 +400,8 @@ const PLACES = [
   "amap_poiid": "B0FFKMK9TS",
   "coordinate_status": "verified",
   "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
+  "rating": "4.0/5",
+  "rating_source": "大眾點評 小名堂擔擔甜水麵(東城根街店)（5433則，2026/07）",
   "city": "成都"
  },
  {
@@ -410,6 +424,8 @@ const PLACES = [
   "notes": "全素食，天然清真友善；節假日人多，部分窗口下午早收。",
   "coordinate_status": "unverified",
   "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
+  "rating": "3.9/5",
+  "rating_source": "大眾點評 文殊院香園-素食餐廳（8則，2026/07）",
   "city": "成都"
  },
  {
@@ -474,6 +490,8 @@ const PLACES = [
   "amap_poiid": "B0FFF6WGQR",
   "coordinate_status": "verified",
   "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
+  "rating": "4.3/5",
+  "rating_source": "大眾點評 賀記蛋烘糕(文廟西街店)（3091則，2026/07）",
   "city": "成都"
  },
  {
@@ -494,6 +512,8 @@ const PLACES = [
   "amap_poiid": "B0FFKEV6GR",
   "coordinate_status": "verified",
   "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
+  "rating": "4.2/5",
+  "rating_source": "大眾點評 鄧記新一代糖油果子(四川煤管局供銷公司職工宿舍店)（3871則，2026/07）",
   "city": "成都"
  },
  {
@@ -603,6 +623,8 @@ const PLACES = [
   "notes": "全素配料，清真友善；冬天客流少、部分冰品可能停售。",
   "coordinate_status": "unverified",
   "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
+  "rating": "4.4/5",
+  "rating_source": "大眾點評 禪泉冰粉(奎星樓店)（5357則，2026/07）",
   "city": "成都"
  },
  {
@@ -696,6 +718,8 @@ const PLACES = [
   "amap_poiid": "B0FFH4YYGC",
   "coordinate_status": "verified",
   "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
+  "rating": "4.1/5",
+  "rating_source": "大眾點評 人民公園鶴鳴茶樓（985則，2026/07）",
   "city": "成都"
  },
  {
@@ -717,6 +741,8 @@ const PLACES = [
   "amap_poiid": "B0J32C050K",
   "coordinate_status": "verified",
   "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
+  "rating": "4.7/5",
+  "rating_source": "大眾點評 觀音閣百年老茶館（2437則，2026/07）",
   "city": "成都"
  },
  {
@@ -738,6 +764,8 @@ const PLACES = [
   "amap_poiid": "B0KD05WXH2",
   "coordinate_status": "verified",
   "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
+  "rating": "4.0/5",
+  "rating_source": "大眾點評 大慈茶社(大慈寺店)（955則，2026/07）",
   "city": "成都"
  },
  {
@@ -912,8 +940,8 @@ const PLACES = [
   "lng": 104.054095,
   "hours": "約11:30-次日02:00（實時營業時間以門店為準）",
   "price": "約51元/人",
-  "rating": null,
-  "rating_source": null,
+  "rating": "4.3/5",
+  "rating_source": "大眾點評 黔三胖安順奪奪粉(玉林總店)（6795則，2026/07）",
   "dishes": [
    "安順奪奪粉",
    "酸湯鍋",
@@ -939,8 +967,8 @@ const PLACES = [
   "lng": null,
   "hours": "09:00-19:00",
   "price": "約15-20元/人",
-  "rating": null,
-  "rating_source": null,
+  "rating": "4.3/5",
+  "rating_source": "大眾點評 沈堂甜水麵（3873則，2026/07）",
   "dishes": [
    "招牌甜水麵",
    "冰醉豆腐花",
@@ -965,8 +993,8 @@ const PLACES = [
   "lng": null,
   "hours": "約10:00-次日02:00；展覽時段依活動公告",
   "price": "約40-80元/人",
-  "rating": null,
-  "rating_source": null,
+  "rating": "4.0/5",
+  "rating_source": "大眾點評 白夜花神詩空間 COFFEE（688則，2026/07）",
   "dishes": [
    "花神主題咖啡",
    "甜點",
@@ -990,8 +1018,8 @@ const PLACES = [
   "lng": 104.055931,
   "hours": "11:00-次日01:30",
   "price": "約90-105元/人",
-  "rating": null,
-  "rating_source": null,
+  "rating": "4.2/5",
+  "rating_source": "大眾點評 飄香火鍋(玉林西路店)（6262則，2026/07）",
   "dishes": [
    "火鍋牛排",
    "嫩牛肉",
@@ -1069,8 +1097,8 @@ const PLACES = [
   "lng": 104.062106,
   "hours": "09:00-次日04:30",
   "price": "約77元/人",
-  "rating": null,
-  "rating_source": null,
+  "rating": "4.0/5",
+  "rating_source": "大眾點評 玉林串串香·成都老字號(玉林街總店)（5413則，2026/07）",
   "dishes": [
    "牛肉串串",
    "秘制排骨",
@@ -1096,8 +1124,8 @@ const PLACES = [
   "lng": 104.0622,
   "hours": "約09:30-24:00（不同平台時段有差異）",
   "price": "約56-70元/人",
-  "rating": null,
-  "rating_source": null,
+  "rating": "3.8/5",
+  "rating_source": "大眾點評 老黃記手撕烤兔(玉林街店)（8477則，2026/07）",
   "dishes": [
    "香辣手撕烤兔",
    "五香手撕烤兔",
