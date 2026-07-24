@@ -22,8 +22,8 @@ const PLACES = [
   "coordinate_status": "verified",
   "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）",
   "city": "成都",
-  "rating": "4.2/5",
-  "rating_source": "大眾點評截圖（2701條，2026/07/12）"
+  "rating": "4.1/5",
+  "rating_source": "大眾點評截圖（2707條，2026/07/24）"
  },
  {
   "name": "酥小蒙牛肉餅店（天府廣場店）",
@@ -2824,7 +2824,7 @@ const PLACES = [
   "lng": 104.079664,
   "hours": null,
   "price": "人均 107 元",
-  "rating": "4.0/5",
+  "rating": "4/5",
   "rating_source": "攜程美食",
   "dishes": [
    "銅鍋涮羔羊肉",
@@ -2837,31 +2837,6 @@ const PLACES = [
   "amap_poiid": "B0FFGRRGV3",
   "coordinate_status": "verified",
   "coordinate_source": "高德地圖 GCJ-02（2026-07-15核對）"
- },
- {
-  "name": "回堂春",
-  "city": "成都",
-  "category": "午晚餐",
-  "halal": true,
-  "cuisine": "清真回民燉菜/家常牛肉菜（老館子）",
-  "area": "青羊區 金家壩街（天府廣場西側）",
-  "address": "青羊區金家壩街5號",
-  "lat": 30.660654,
-  "lng": 104.060741,
-  "hours": null,
-  "price": "人均 40-70 元",
-  "rating": null,
-  "rating_source": null,
-  "dishes": [
-   "紅燒牛肉",
-   "燉牛尾湯",
-   "酥皮牛肉點心",
-   "粉蒸牛肉"
-  ],
-  "reason": "天府廣場旁小街裡的回民老館子，以燉菜和酥點見長，多個清真美食指南（WildGreatWall、HalalChinaTrips）點名推薦。",
-  "notes": "皇城清真寺穆斯林社區常去的老店，清真可靠；電話 13808055715；無平台評分快照，填 null。",
-  "coordinate_status": "verified",
-  "coordinate_source": "高德地圖 GCJ-02（2026-07-24 網頁版核對）"
  },
  {
   "name": "清真·鵝市巷·成都回民菜（小河街店）",

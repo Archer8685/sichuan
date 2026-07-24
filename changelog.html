@@ -127,7 +127,7 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
     <p class="source-note">資料截點：2026/07/24（UTC+8）・<a href="https://github.com/Archer8685/sichuan/commits" target="_blank" rel="noopener">查看完整 Git 歷史 ↗</a></p>
     <aside class="ticket" aria-label="版本資訊">
       <small>CHANGE LOG</small>
-      <strong>v116</strong>
+      <strong>v117</strong>
       <div class="route">CKG 重慶<br>↓ 9 DAYS<br>CTU 成都</div>
     </aside>
   </header>
@@ -139,7 +139,8 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
   </section>
 
   <nav class="jump" aria-label="依日期跳轉">
-    <a href="#d0724c">07/24 最新</a>
+    <a href="#d0724d">07/24 最新</a>
+    <a href="#d0724c">07/24 地圖分類</a>
     <a href="#d0724b">07/24 評分回填</a>
     <a href="#d0723b">07/23</a>
     <a href="#d0719">07/19</a>
@@ -155,11 +156,22 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
   </nav>
 
   <section class="timeline" aria-label="修改時間軸">
+    <article class="release" id="d0724d">
+      <div class="date"><time datetime="2026-07-24">07 / 24</time><span>版本 v117・最新</span></div>
+      <div class="release-body">
+        <section class="change" data-kind="data">
+          <h2>移除查無實體的餐廳「回堂春」；皇城壩牛肉館評分更新 <span class="new">LATEST</span></h2>
+          <p>使用者回報遍尋不著「回堂春」（原標金家壩街回民燉菜老館，來源為清真美食指南轉引），大眾點評與高德地圖均查無可靠對應店家，判定為查無實體或已歇業，故從 data/food_chengdu_halal_extra2.json 移除並重建 data.js（成都清真午晚餐少一筆）。同批依 2026/07/24 最新大眾點評截圖，將「清真·皇城壩牛肉館（三桂前街店）」評分由 4.2 更新為 4.1（評價數 2701→2707 則）。網站資源與離線快取更新為 v117。</p>
+          <div class="meta"><span class="kind">資料清理＋評分更新＋版本</span><span class="commit">目前工作區</span></div>
+        </section>
+      </div>
+    </article>
+
     <article class="release" id="d0724c">
-      <div class="date"><time datetime="2026-07-24">07 / 24</time><span>版本 v116・最新</span></div>
+      <div class="date"><time datetime="2026-07-24">07 / 24</time><span>版本 v116</span></div>
       <div class="release-body">
         <section class="change" data-kind="feat">
-          <h2>地圖頁餐飲分類改為「餐飲」單一大類＋可展開的菜系子分類 <span class="new">LATEST</span></h2>
+          <h2>地圖頁餐飲分類改為「餐飲」單一大類＋可展開的菜系子分類</h2>
           <p>地圖頁原本把餐飲拆成「早餐／甜點／飲料／午晚餐」四顆篩選標籤，實際使用時想找特定菜系（如火鍋、川菜、麵食）並不直覺。本次將四者合併為單一「🍽 餐飲」大類：點選後在下方展開子分類標籤，子分類沿用餐廳頁 restaurants.html 的菜系歸類邏輯（依店名／菜系／招牌菜關鍵字分為火鍋・串串・冒菜、新疆・西北菜、川菜・渝菜・本地菜、麵食・小吃、燒烤・烤魚、湯鍋・牛羊肉湯、海鮮、中東・南亞料理、素食、甜點・糕餅、飲品・咖啡・茶、其他・綜合，共 12 類），每顆標籤帶即時店家數量、可各自開關；關閉「餐飲」大類會一併收合子分類列。地圖與行程模式的背景疊加地點都套用同一套子分類篩選，「全選／清除」按鈕同步大類與所有子分類狀態。網站資源與離線快取更新為 v116。</p>
           <div class="meta"><span class="kind">地圖餐飲分類合併＋菜系子分類＋版本</span><span class="commit">目前工作區</span></div>
         </section>

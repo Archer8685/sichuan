@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>成都・重慶 12/5–12/13 最終行程</title>
-<link rel="preload" href="data.js?v=116" as="script">
-<link rel="preload" href="trip.js?v=116" as="script">
+<link rel="preload" href="data.js?v=117" as="script">
+<link rel="preload" href="trip.js?v=117" as="script">
 <link rel="prefetch" href="libs/leaflet.js">
 <link rel="prefetch" href="libs/leaflet.css">
 <link rel="prefetch" href="map.html">
@@ -196,8 +196,8 @@ header .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
 
 </div>
 
-<script src="data.js?v=116"></script>
-<script src="trip.js?v=116"></script>
+<script src="data.js?v=117"></script>
+<script src="trip.js?v=117"></script>
 <script>
 // ---- 共用：地點查找與繁簡 ----
 const _T2S=(typeof T2S!=="undefined")?T2S:{};
@@ -426,6 +426,6 @@ document.addEventListener('click',e=>{
 // 從 bfcache（上一頁）還原時，把載入遮罩收掉，避免卡在「讀取中」
 window.addEventListener('pageshow',e=>{if(e.persisted)document.getElementById('pgload').classList.add('done');});
 </script>
-<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){if(!('caches'in window))return;caches.open('sichuan-app-v116').then(function(c){document.querySelectorAll('script[src],link[href]').forEach(function(el){var u=el.src||el.href;if(!u||u.indexOf(location.origin)!==0)return;c.match(u).then(function(hit){if(!hit)fetch(u).catch(function(){});});});});}).catch(function(){});});}</script>
+<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){if(!('caches'in window))return;caches.open('sichuan-app-v117').then(function(c){document.querySelectorAll('script[src],link[href]').forEach(function(el){var u=el.src||el.href;if(!u||u.indexOf(location.origin)!==0)return;c.match(u).then(function(hit){if(!hit)fetch(u).catch(function(){});});});});}).catch(function(){});});}</script>
 </body>
 </html>
