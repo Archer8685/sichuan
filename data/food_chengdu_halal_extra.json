@@ -110,8 +110,8 @@
     "cuisine": "新疆菜",
     "area": "金牛区 一品天下/金沙遗址周边",
     "address": "蜀金路36号（蜀金路金阳路交叉口中国农业银行旁）",
-    "lat": null,
-    "lng": null,
+    "lat": 30.679634,
+    "lng": 104.003671,
     "hours": "10:00-21:30",
     "price": "人均约84元",
     "rating": "4.5/5",
@@ -124,8 +124,9 @@
     ],
     "reason": "金沙遗址周边正宗新疆风味老店，成都新疆菜馆排行榜前十",
     "notes": "未查到清真认证公示，按清真友善收录",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_status": "verified",
+    "coordinate_source": "高德地图 GCJ-02（2026-07-25核对）",
+    "amap_poiid": "B0FFG7TO18"
   },
   {
     "name": "雪莲美食饭店",
@@ -238,8 +239,8 @@
     "cuisine": "清真川菜/全牛宴",
     "area": "青白江区 弥牟镇（唐家寺）",
     "address": "弥牟镇八阵巷28号",
-    "lat": null,
-    "lng": null,
+    "lat": 30.880136,
+    "lng": 104.204764,
     "hours": null,
     "price": "人均约53元",
     "rating": "4.0/5",
@@ -253,8 +254,9 @@
     ],
     "reason": "唐家寺回民聚居区的老资格清真全牛宴馆子，环境干净、分量足",
     "notes": "食客评价为'资格的清真馆子'；与唐家寺罗记卤坊同片区但为不同店",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_status": "verified",
+    "coordinate_source": "高德地图 GCJ-02（2026-07-25核对）",
+    "amap_poiid": "B0KGVHFA7G"
   },
   {
     "name": "清真·小马第一家资格烤羊肉串（紫荆美熙广场店）",

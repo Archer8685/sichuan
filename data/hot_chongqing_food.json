@@ -496,8 +496,8 @@
     "cuisine": "私房菜/渝菜",
     "area": "渝北区 恒大世纪城",
     "address": "重庆市渝北区恒大世纪城片区（以大众点评收录为准）",
-    "lat": null,
-    "lng": null,
+    "lat": 29.661882,
+    "lng": 106.525287,
     "hours": "约 11:00–21:30（建议预订）",
     "price": "人均 150–250 元",
     "rating": null,
@@ -509,8 +509,9 @@
     ],
     "reason": "2025黑珍珠餐厅指南重庆新晋一钻餐厅，官方点评称其为『具有当地特色的私房菜餐厅』，扩充了重庆上榜菜系丰富性。",
     "notes": "私房渝菜含猪类菜品（halal:false）。位置较偏渝北，适合专程美食行程；坐标为片区近似值。",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_status": "verified",
+    "coordinate_source": "高德地图 GCJ-02（2026-07-25核对）",
+    "amap_poiid": "B0HA6G66YE"
   },
   {
     "name": "罗宾斯牛排馆（重庆丽晶酒店）",
@@ -546,8 +547,8 @@
     "cuisine": "素食/私宴",
     "area": "江北区·鎏嘉码头",
     "address": "重庆市江北区北滨一路192号附5号4-1（鎏嘉码头店）",
-    "lat": null,
-    "lng": null,
+    "lat": 29.570771,
+    "lng": 106.559965,
     "hours": "预约制（午晚市两轮）",
     "price": "人均 300–500 元",
     "rating": null,
@@ -559,8 +560,9 @@
     ],
     "reason": "2025黑珍珠餐厅指南重庆一钻，全素私宴形态在重庆极为稀有，为回民/素食同行者提供高端选项。",
     "notes": "全素无猪无肉，对清真需求非常友善（仍非清真认证）。完全预约制，需提前通过大众点评/电话订位。",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_status": "verified",
+    "coordinate_source": "高德地图 GCJ-02（2026-07-25核对）",
+    "amap_poiid": "B0FFG6H1KF"
   },
   {
     "name": "乡坝老城来凤鱼（璧山总店）",

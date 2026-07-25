@@ -82,8 +82,8 @@
     "cuisine": "新疆菜",
     "area": "渝北区 红锦大道/财富中心",
     "address": "渝北区红锦大道609号威灵顿酒店三楼（近财富中心）",
-    "lat": null,
-    "lng": null,
+    "lat": 29.610269,
+    "lng": 106.519914,
     "hours": null,
     "price": "人均约119元",
     "rating": "4.5/5",
@@ -96,8 +96,9 @@
     ],
     "reason": "酒店内高档新疆风味餐厅，重庆新疆菜排行榜前三",
     "notes": "未见清真认证公示，标记友善",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_status": "verified",
+    "coordinate_source": "高德地图 GCJ-02（2026-07-25核对）",
+    "amap_poiid": "B0FFGISPK2"
   },
   {
     "name": "老三烤羊肉串",
@@ -204,8 +205,8 @@
     "cuisine": "新疆清真菜",
     "area": "万州区 沙龙路",
     "address": "万州区沙龙路三段2117号",
-    "lat": null,
-    "lng": null,
+    "lat": 30.768062,
+    "lng": 108.396979,
     "hours": null,
     "price": null,
     "rating": null,
@@ -217,8 +218,9 @@
     ],
     "reason": "重庆本地宝'新疆清真菜馆'名录收录的万州清真饭庄",
     "notes": "评分未查到填null",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_status": "verified",
+    "coordinate_source": "高德地图 GCJ-02（2026-07-25核对）",
+    "amap_poiid": "B001795HRK"
   },
   {
     "name": "财红饭庄",

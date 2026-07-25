@@ -88,8 +88,8 @@
     "cuisine": "创意川菜/园林私房菜",
     "area": "青羊区·宽窄巷子",
     "address": "宽巷子25号",
-    "lat": null,
-    "lng": null,
+    "lat": 30.663924,
+    "lng": 104.05372,
     "hours": "午市11:30-14:00，晚市17:30-21:30（需预约）",
     "price": "人均约650-1200元",
     "rating": "黑珍珠钻级（曾上榜）",
@@ -102,8 +102,9 @@
     ],
     "reason": "宽窄巷子内的园林式高端川菜，黑珍珠上榜餐厅，取名庄子「子非鱼」，佐餐有川剧民乐表演",
     "notes": "位置在宽窄巷子景区内，务必提前预约包间；套餐含猪肉菜可提前告知调整",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_status": "verified",
+    "coordinate_source": "高德地图 GCJ-02（2026-07-25核对）",
+    "amap_poiid": "B001C7YBCF"
   },
   {
     "name": "Silver Pot·银锅现代川菜",
@@ -138,8 +139,8 @@
     "cuisine": "精致川菜/川味融合",
     "area": "高新区·交子公园（中海环宇荟）",
     "address": "高新区交子大道277号中海环宇荟",
-    "lat": null,
-    "lng": null,
+    "lat": 30.581761,
+    "lng": 104.05587,
     "hours": "午市11:30-14:00，晚市17:30-21:30",
     "price": "人均约400-800元",
     "rating": "黑珍珠一钻＋米其林一星",
@@ -152,8 +153,9 @@
     ],
     "reason": "柴门餐饮旗下高端线，集米其林一星、黑珍珠一钻、金梧桐大师餐厅头衔于一身（柴门饭儿已收录，此为不同定位品牌）",
     "notes": "建议预约江景位；部分菜品含猪肉",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_status": "verified",
+    "coordinate_source": "高德地图 GCJ-02（2026-07-25核对）",
+    "amap_poiid": "B0FFLC4VQL"
   },
   {
     "name": "银芭1986",
@@ -394,8 +396,8 @@
     "cuisine": "家常川菜/苍蝇馆子",
     "area": "武侯区·玉林",
     "address": "玉林东街16号",
-    "lat": null,
-    "lng": null,
+    "lat": 30.626989,
+    "lng": 104.064943,
     "hours": "约11:00-14:00，17:00-21:00",
     "price": "人均约28-45元",
     "rating": null,
@@ -408,8 +410,9 @@
     ],
     "reason": "玉林片区口碑苍蝇馆子代表，各大成都苍蝇馆子榜单常客，好吃平价",
     "notes": "店面小高峰需等位；家常菜多含猪肉，招牌鸡杂/鱼类可避开",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_status": "verified",
+    "coordinate_source": "高德地图 GCJ-02（2026-07-25核对）",
+    "amap_poiid": "B0FFIR5FMA"
   },
   {
     "name": "盘飧市",

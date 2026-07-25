@@ -174,8 +174,8 @@
     "halal": false,
     "area": "江北区",
     "address": "江北区洋河四路10-18号附8号",
-    "lat": null,
-    "lng": null,
+    "lat": 29.585062,
+    "lng": 106.53371,
     "hours": "约06:30-14:30",
     "price": 14,
     "dishes": [
@@ -185,8 +185,9 @@
     ],
     "reason": "本地口碑面馆，干熘入味、辣度可调，观音桥商圈周边吃地道小面的选择。",
     "notes": "碗杂面含猪肉，点牛肉面/素小面；调料或含猪油，可提前告知店家。",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_status": "verified",
+    "coordinate_source": "高德地图 GCJ-02（2026-07-25核对）",
+    "amap_poiid": "B0J6AMVEUP"
   },
   {
     "name": "老麻抄手重庆小面（解放碑店）",
@@ -215,8 +216,8 @@
     "halal": false,
     "area": "渝中区",
     "address": "渝中区五一路248号",
-    "lat": null,
-    "lng": null,
+    "lat": 29.556036,
+    "lng": 106.578507,
     "hours": "约09:00-21:00",
     "price": 16,
     "dishes": [
@@ -226,8 +227,9 @@
     ],
     "reason": "2002年开业的解放碑老店，以超麻超辣的老麻抄手和过桥吃法著称。",
     "notes": "注意：抄手为猪肉馅，避猪者建议只体验酸辣粉/素面或跳过；嗜麻者再挑战老麻级别。",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_status": "verified",
+    "coordinate_source": "高德地图 GCJ-02（2026-07-25核对）",
+    "amap_poiid": "B0FFFAJAN9"
   },
   {
     "name": "林妈过桥抄手（解放碑店）",
@@ -462,8 +464,8 @@
     "halal": false,
     "area": "江北区",
     "address": "江北区观音桥好吃街",
-    "lat": null,
-    "lng": null,
+    "lat": 29.574525,
+    "lng": 106.533775,
     "hours": "约10:00-22:00",
     "price": 13,
     "dishes": [
@@ -474,8 +476,9 @@
     ],
     "reason": "观音桥小吃街人气甜品店，一家店集齐汤圆、冰粉、凉虾三样重庆甜味。",
     "notes": "汤圆芝麻馅或含猪油，需确认；冰粉凉虾偏夏季，12月去主推热汤圆和糍粑。",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_status": "verified",
+    "coordinate_source": "高德地图 GCJ-02（2026-07-25核对）",
+    "amap_poiid": "B0KDGULWFJ"
   },
   {
     "name": "白象街·拉丝凉糕（八一路店）",
