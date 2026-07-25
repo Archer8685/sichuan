@@ -127,7 +127,7 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
     <p class="source-note">資料截點：2026/07/24（UTC+8）・<a href="https://github.com/Archer8685/sichuan/commits" target="_blank" rel="noopener">查看完整 Git 歷史 ↗</a></p>
     <aside class="ticket" aria-label="版本資訊">
       <small>CHANGE LOG</small>
-      <strong>v123</strong>
+      <strong>v124</strong>
       <div class="route">CKG 重慶<br>↓ 9 DAYS<br>CTU 成都</div>
     </aside>
   </header>
@@ -139,7 +139,8 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
   </section>
 
   <nav class="jump" aria-label="依日期跳轉">
-    <a href="#d0725b">07/25 最新</a>
+    <a href="#d0725c">07/25 最新</a>
+    <a href="#d0725b">07/25 補座標2</a>
     <a href="#d0725a">07/25 補座標</a>
     <a href="#d0724h">07/24 清真維護</a>
     <a href="#d0724g">07/24 行程定案</a>
@@ -162,11 +163,22 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
   </nav>
 
   <section class="timeline" aria-label="修改時間軸">
-    <article class="release" id="d0725b">
-      <div class="date"><time datetime="2026-07-25">07 / 25</time><span>版本 v123・最新</span></div>
+    <article class="release" id="d0725c">
+      <div class="date"><time datetime="2026-07-25">07 / 25</time><span>版本 v124・最新</span></div>
       <div class="release-body">
         <section class="change" data-kind="data">
-          <h2>再補 15 家餐廳高德座標上地圖（嚴格比對地址、避免誤標分店） <span class="new">LATEST</span></h2>
+          <h2>人工覆核「地址未對上」名單，再救回 8 家餐廳座標 <span class="new">LATEST</span></h2>
+          <p>針對上一版被嚴格過濾器擋下（店名有對上、但因本站地址過於籠統而未通過地址比對）的約 50 家逐一人工核對，救回可確認正確門店的 8 家補上 GCJ-02 座標：老甘餃子館（千禧花園店）、Silver Pot 銀鍋（悠方店）、銀芭1986（麓鎮）、萍姐火鍋公路夜市（成都總店）、朱光玉火鍋館（望平街店）、貳麻酒館（339）＝成都；萊憶八零來鳳魚璧山兔（北環店）、小樹啉Live（南濱煙雨）＝重慶。其餘 42 家經核對確認為連鎖不同分店、或店名地址已異動查無可靠對應，維持「暫無座標」不誤標。餐廳無座標 130→122。網站資源與離線快取更新為 v124。</p>
+          <div class="meta"><span class="kind">人工覆核救回 8 家＋版本</span><span class="commit">目前工作區</span></div>
+        </section>
+      </div>
+    </article>
+
+    <article class="release" id="d0725b">
+      <div class="date"><time datetime="2026-07-25">07 / 25</time><span>版本 v123</span></div>
+      <div class="release-body">
+        <section class="change" data-kind="data">
+          <h2>再補 15 家餐廳高德座標上地圖（嚴格比對地址、避免誤標分店）</h2>
           <p>延續上一版，透過高德 PlaceSearch 批次查詢 145 家無座標餐廳，並以「高德門店地址須與本站地址共有街道／地標」的嚴格條件過濾，僅採用可確認正確門店的 15 家補上 GCJ-02 座標與 POI ID：沈堂甜水麵、白夜·花神詩空間、新疆飯店、伊真軒全牛宴、廖老媽蹄花、子非、柴門薈、天添飯店（成都）；曉小麵、鑫麻抄手、龍記山城湯圓、威靈頓酒店醉西域、春秋飯莊、飛龍唐小館、千閱鳴素食（重慶）。其餘多為連鎖分店難以確認正確門市、或店名地址已異動查無可靠對應，為免在地圖上誤標而維持「暫無座標」。有座標餐廳再增 15 家。網站資源與離線快取更新為 v123。</p>
           <div class="meta"><span class="kind">15 家餐廳補座標＋嚴格地址比對＋版本</span><span class="commit">目前工作區</span></div>
         </section>

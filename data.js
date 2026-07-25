@@ -3973,8 +3973,8 @@ const PLACES = [
   "cuisine": "清真面點/餃子",
   "area": "青羊區",
   "address": "成都市青羊區千禧花園附近（以地圖App搜「老甘餃子館」為準）",
-  "lat": null,
-  "lng": null,
+  "lat": 30.711576,
+  "lng": 104.047782,
   "hours": "09:30-15:00、16:00-20:30",
   "price": 30,
   "dishes": [
@@ -3984,8 +3984,9 @@ const PLACES = [
   ],
   "reason": "回民經營的清真餃子館，牛肉茴香餡是招牌，想吃北方口味換換胃時的可靠選擇。",
   "notes": "清真；店面小、環境家常；下午3-4點間休息。",
-  "coordinate_status": "unverified",
-  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-25核對）",
+  "amap_poiid": "B0FFIG7QX8",
   "city": "成都"
  },
  {
@@ -7258,8 +7259,8 @@ const PLACES = [
   "cuisine": "來鳳魚/璧山兔",
   "area": "渝北區 北環",
   "address": "重慶市渝北區北環一帶（導航店名前往）",
-  "lat": null,
-  "lng": null,
+  "lat": 29.601868,
+  "lng": 106.490233,
   "hours": "約 11:00–21:30",
   "price": "人均 60–90 元",
   "dishes": [
@@ -7271,8 +7272,9 @@ const PLACES = [
   ],
   "reason": "同時吃到璧山兩大名產——來鳳魚與璧山兔（重慶老字號技藝），不用專程跑璧山。",
   "notes": "魚+兔主打、易避豬。位置離主城核心區較遠，建議打車或安排在機場/北區行程順路；想吃最正宗可改去璧山區來鳳街道老店（車程約1小時）。",
-  "coordinate_status": "unverified",
-  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）",
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-25核對）",
+  "amap_poiid": "B0FFHVWSXY",
   "city": "重庆"
  },
  {
@@ -8030,8 +8032,8 @@ const PLACES = [
   "cuisine": "融合烤肉·江景 Live 餐吧",
   "area": "南岸區·南濱路/東原1891",
   "address": "重慶市南岸區南濱路80號東原1891",
-  "lat": null,
-  "lng": null,
+  "lat": 29.545696,
+  "lng": 106.587761,
   "hours": "約11:00-次日00:30（Live 時段以店家當日公告為準）",
   "price": "約77元/人",
   "rating": "4.0/5",
@@ -8044,8 +8046,9 @@ const PLACES = [
   ],
   "reason": "東原1891臨江的融合烤肉餐吧，可看渝中半島江景並聽現場音樂，適合南山夜景後下山續攤。",
   "notes": "⚠️ 非清真且菜單含豬肉、供應酒類；點牛肉、雞肉與蔬菜並明確告知忌口，避開豬梅花等豬肉品項；靠江位建議提前預訂，出發前確認 Live 場次。",
-  "coordinate_status": "unverified",
-  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-25核對）",
+  "amap_poiid": "B0KA7U69PH"
  },
  {
   "name": "聚福洋行江景火鍋（南濱路店）",
@@ -8241,8 +8244,8 @@ const PLACES = [
   "cuisine": "現代川菜（花椒風味主題）",
   "area": "高新區·大源（悠方購物中心）",
   "address": "高新區府城大道西段505號悠方購物中心",
-  "lat": null,
-  "lng": null,
+  "lat": 30.583422,
+  "lng": 104.058972,
   "hours": "午市11:30-14:00，晚市17:30-21:30",
   "price": "人均約400-700元",
   "rating": "黑珍珠一鑽＋米其林一星",
@@ -8255,8 +8258,9 @@ const PLACES = [
   ],
   "reason": "連續多年蟬聯黑珍珠一鑽與米其林一星，以「花椒風味實驗室」聞名全國",
   "notes": "熱門時段建議預約；含豬肉菜式，可按需調整菜單",
-  "coordinate_status": "unverified",
-  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-25核對）",
+  "amap_poiid": "B0FFJ6VIUL"
  },
  {
   "name": "柴門薈",
@@ -8292,8 +8296,8 @@ const PLACES = [
   "cuisine": "創意川菜",
   "area": "天府新區·麓鎮",
   "address": "天府新區麓鎮山頂廣場（天府麓鎮店）",
-  "lat": null,
-  "lng": null,
+  "lat": 30.4832,
+  "lng": 104.09263,
   "hours": "午市11:30-14:00，晚市17:30-21:00（建議預約）",
   "price": "人均約300-600元",
   "rating": "黑珍珠鑽級（蟬聯七年）",
@@ -8306,8 +8310,9 @@ const PLACES = [
   ],
   "reason": "蟬聯七年黑珍珠鑽級；「銀芭三味雞」入選2025黑珍珠年度十大菜品（成都唯一代表）",
   "notes": "位置較遠在麓鎮小鎮，適合駕車前往；回鍋肉等招牌含豬肉",
-  "coordinate_status": "unverified",
-  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-25核對）",
+  "amap_poiid": "B0FFIPCPY6"
  },
  {
   "name": "成都吃客",
@@ -8369,8 +8374,8 @@ const PLACES = [
   "cuisine": "重慶老火鍋＋夜市小吃",
   "area": "錦江區/成華區等多店（春熙路商圈有大店）",
   "address": "成都多家門店，以「公路夜市」主題大店為主（另有簡陽店等）",
-  "lat": null,
-  "lng": null,
+  "lat": 30.65622,
+  "lng": 104.09374,
   "hours": "約11:00-次日2:00",
   "price": "人均約90-120元",
   "rating": null,
@@ -8383,8 +8388,9 @@ const PLACES = [
   ],
   "reason": "滷校長團隊打造的火鍋+90年代公路夜市場景品牌，成都曾創單日線上排隊1854桌紀錄，節假日全城熱搜第一",
   "notes": "節假日排隊極長，建議非高峰前往；酥肉等含豬肉",
-  "coordinate_status": "unverified",
-  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-25核對）",
+  "amap_poiid": "B0IGDH9QPQ"
  },
  {
   "name": "朱光玉火鍋館",
@@ -8394,8 +8400,8 @@ const PLACES = [
   "cuisine": "重慶火鍋",
   "area": "成華區·望平街（成都首店）",
   "address": "成華區望平街（濱河路商圈）",
-  "lat": null,
-  "lng": null,
+  "lat": 30.656876,
+  "lng": 104.092343,
   "hours": "約11:30-凌晨",
   "price": "人均約100-130元",
   "rating": "4.6/5",
@@ -8408,8 +8414,9 @@ const PLACES = [
   ],
   "reason": "2021年成都首店落戶望平街即登頂大眾點評美食熱門榜/火鍋熱門榜雙第一，單日排隊400+號",
   "notes": "晚市門口大排長龍，建議提前線上取號",
-  "coordinate_status": "unverified",
-  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-25核對）",
+  "amap_poiid": "B0H26H0CS0"
  },
  {
   "name": "康二姐串串香",
@@ -8678,8 +8685,8 @@ const PLACES = [
   "cuisine": "中式雞尾酒館/成都鬼飲食",
   "area": "成華區·猛追灣339（小森林店，另有蘭桂坊、太古里等店）",
   "address": "成華區猛追灣339購物中心（339小森林店）",
-  "lat": null,
-  "lng": null,
+  "lat": 30.662361,
+  "lng": 104.093856,
   "hours": "約14:00-次日2:00",
   "price": "人均約136-200元",
   "rating": null,
@@ -8693,8 +8700,9 @@ const PLACES = [
   ],
   "reason": "2014年創立的成都本土國潮小酒館頂流，露天壩子茶館式飲酒場景，開新店曾排隊一公里",
   "notes": "供應酒精飲品故不適用清真；鬼飲食小吃部分含豬肉；電視塔夜景位搶手建議早到",
-  "coordinate_status": "unverified",
-  "coordinate_source": "高德地圖未可靠匹配（2026-07-15，地圖暫不顯示）"
+  "coordinate_status": "verified",
+  "coordinate_source": "高德地圖 GCJ-02（2026-07-25核對）",
+  "amap_poiid": "B0FFI7YJDU"
  },
  {
   "name": "何師燒烤",

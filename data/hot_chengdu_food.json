@@ -114,8 +114,8 @@
     "cuisine": "现代川菜（花椒风味主题）",
     "area": "高新区·大源（悠方购物中心）",
     "address": "高新区府城大道西段505号悠方购物中心",
-    "lat": null,
-    "lng": null,
+    "lat": 30.583422,
+    "lng": 104.058972,
     "hours": "午市11:30-14:00，晚市17:30-21:30",
     "price": "人均约400-700元",
     "rating": "黑珍珠一钻＋米其林一星",
@@ -128,8 +128,9 @@
     ],
     "reason": "连续多年蝉联黑珍珠一钻与米其林一星，以「花椒风味实验室」闻名全国",
     "notes": "热门时段建议预约；含猪肉菜式，可按需调整菜单",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_status": "verified",
+    "coordinate_source": "高德地图 GCJ-02（2026-07-25核对）",
+    "amap_poiid": "B0FFJ6VIUL"
   },
   {
     "name": "柴门荟",
@@ -165,8 +166,8 @@
     "cuisine": "创意川菜",
     "area": "天府新区·麓镇",
     "address": "天府新区麓镇山顶广场（天府麓镇店）",
-    "lat": null,
-    "lng": null,
+    "lat": 30.4832,
+    "lng": 104.09263,
     "hours": "午市11:30-14:00，晚市17:30-21:00（建议预约）",
     "price": "人均约300-600元",
     "rating": "黑珍珠钻级（蝉联七年）",
@@ -179,8 +180,9 @@
     ],
     "reason": "蝉联七年黑珍珠钻级；「银芭三味鸡」入选2025黑珍珠年度十大菜品（成都唯一代表）",
     "notes": "位置较远在麓镇小镇，适合驾车前往；回锅肉等招牌含猪肉",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_status": "verified",
+    "coordinate_source": "高德地图 GCJ-02（2026-07-25核对）",
+    "amap_poiid": "B0FFIPCPY6"
   },
   {
     "name": "成都吃客",
@@ -242,8 +244,8 @@
     "cuisine": "重庆老火锅＋夜市小吃",
     "area": "锦江区/成华区等多店（春熙路商圈有大店）",
     "address": "成都多家门店，以「公路夜市」主题大店为主（另有简阳店等）",
-    "lat": null,
-    "lng": null,
+    "lat": 30.65622,
+    "lng": 104.09374,
     "hours": "约11:00-次日2:00",
     "price": "人均约90-120元",
     "rating": null,
@@ -256,8 +258,9 @@
     ],
     "reason": "卤校长团队打造的火锅+90年代公路夜市场景品牌，成都曾创单日线上排队1854桌纪录，节假日全城热搜第一",
     "notes": "节假日排队极长，建议非高峰前往；酥肉等含猪肉",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_status": "verified",
+    "coordinate_source": "高德地图 GCJ-02（2026-07-25核对）",
+    "amap_poiid": "B0IGDH9QPQ"
   },
   {
     "name": "朱光玉火锅馆",
@@ -267,8 +270,8 @@
     "cuisine": "重庆火锅",
     "area": "成华区·望平街（成都首店）",
     "address": "成华区望平街（滨河路商圈）",
-    "lat": null,
-    "lng": null,
+    "lat": 30.656876,
+    "lng": 104.092343,
     "hours": "约11:30-凌晨",
     "price": "人均约100-130元",
     "rating": null,
@@ -281,8 +284,9 @@
     ],
     "reason": "2021年成都首店落户望平街即登顶大众点评美食热门榜/火锅热门榜双第一，单日排队400+号",
     "notes": "晚市门口大排长龙，建议提前线上取号",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_status": "verified",
+    "coordinate_source": "高德地图 GCJ-02（2026-07-25核对）",
+    "amap_poiid": "B0H26H0CS0"
   },
   {
     "name": "康二姐串串香",
@@ -597,8 +601,8 @@
     "cuisine": "中式鸡尾酒馆/成都鬼饮食",
     "area": "成华区·猛追湾339（小森林店，另有兰桂坊、太古里等店）",
     "address": "成华区猛追湾339购物中心（339小森林店）",
-    "lat": null,
-    "lng": null,
+    "lat": 30.662361,
+    "lng": 104.093856,
     "hours": "约14:00-次日2:00",
     "price": "人均约136-200元",
     "rating": null,
@@ -612,8 +616,9 @@
     ],
     "reason": "2014年创立的成都本土国潮小酒馆顶流，露天坝子茶馆式饮酒场景，开新店曾排队一公里",
     "notes": "供应酒精饮品故不适用清真；鬼饮食小吃部分含猪肉；电视塔夜景位抢手建议早到",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_status": "verified",
+    "coordinate_source": "高德地图 GCJ-02（2026-07-25核对）",
+    "amap_poiid": "B0FFI7YJDU"
   },
   {
     "name": "何师烧烤",

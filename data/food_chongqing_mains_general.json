@@ -383,8 +383,8 @@
     "cuisine": "来凤鱼/璧山兔",
     "area": "渝北区 北环",
     "address": "重庆市渝北区北环一带（导航店名前往）",
-    "lat": null,
-    "lng": null,
+    "lat": 29.601868,
+    "lng": 106.490233,
     "hours": "约 11:00–21:30",
     "price": "人均 60–90 元",
     "dishes": [
@@ -396,8 +396,9 @@
     ],
     "reason": "同时吃到璧山两大名产——来凤鱼与璧山兔（重庆老字号技艺），不用专程跑璧山。",
     "notes": "鱼+兔主打、易避豬。位置离主城核心区较远，建议打车或安排在机场/北区行程顺路；想吃最正宗可改去璧山区来凤街道老店（车程约1小时）。",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_status": "verified",
+    "coordinate_source": "高德地图 GCJ-02（2026-07-25核对）",
+    "amap_poiid": "B0FFHVWSXY"
   },
   {
     "name": "顺水鱼馆（南滨路店）",

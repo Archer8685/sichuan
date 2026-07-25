@@ -194,8 +194,8 @@
     "cuisine": "清真面点/饺子",
     "area": "青羊区",
     "address": "成都市青羊区千禧花园附近（以地图App搜「老甘饺子馆」为准）",
-    "lat": null,
-    "lng": null,
+    "lat": 30.711576,
+    "lng": 104.047782,
     "hours": "09:30-15:00、16:00-20:30",
     "price": 30,
     "dishes": [
@@ -205,8 +205,9 @@
     ],
     "reason": "回民经营的清真饺子馆，牛肉茴香馅是招牌，想吃北方口味换换胃时的可靠选择。",
     "notes": "清真；店面小、环境家常；下午3-4点间休息。",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_status": "verified",
+    "coordinate_source": "高德地图 GCJ-02（2026-07-25核对）",
+    "amap_poiid": "B0FFIG7QX8"
   },
   {
     "name": "古牧区烤羊肉串",
