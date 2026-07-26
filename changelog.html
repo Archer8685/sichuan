@@ -127,7 +127,7 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
     <p class="source-note">資料截點：2026/07/24（UTC+8）・<a href="https://github.com/Archer8685/sichuan/commits" target="_blank" rel="noopener">查看完整 Git 歷史 ↗</a></p>
     <aside class="ticket" aria-label="版本資訊">
       <small>CHANGE LOG</small>
-      <strong>v124</strong>
+      <strong>v125</strong>
       <div class="route">CKG 重慶<br>↓ 9 DAYS<br>CTU 成都</div>
     </aside>
   </header>
@@ -139,7 +139,8 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
   </section>
 
   <nav class="jump" aria-label="依日期跳轉">
-    <a href="#d0725c">07/25 最新</a>
+    <a href="#d0726a">07/26 最新</a>
+    <a href="#d0725c">07/25 救回8家</a>
     <a href="#d0725b">07/25 補座標2</a>
     <a href="#d0725a">07/25 補座標</a>
     <a href="#d0724h">07/24 清真維護</a>
@@ -163,11 +164,22 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
   </nav>
 
   <section class="timeline" aria-label="修改時間軸">
-    <article class="release" id="d0725c">
-      <div class="date"><time datetime="2026-07-25">07 / 25</time><span>版本 v124・最新</span></div>
+    <article class="release" id="d0726a">
+      <div class="date"><time datetime="2026-07-26">07 / 26</time><span>版本 v125・最新</span></div>
       <div class="release-body">
         <section class="change" data-kind="data">
-          <h2>人工覆核「地址未對上」名單，再救回 8 家餐廳座標 <span class="new">LATEST</span></h2>
+          <h2>逐家去留：28 家②補近似座標上圖、清理 47 家無法定位餐廳 <span class="new">LATEST</span></h2>
+          <p>承上兩版的高德候選清單，由使用者在自製 HTML 逐家決定去留。<b>保留並定位</b>：28 家「無足夠相符②」採用高德最相近門店座標上圖（標記 <b>approximate 近似</b>、來源記錄對應的高德 POI 名，日後可再校正）；其中「東方宮·觀音橋店→秀山」「清真全牛席→潼南」2 家候選落在錯的行政區，暫保留店家但不定位以免誤標。<b>刪除</b>：47 家（41 家未勾選的②＋6 家①高德查無對應，含松雲澤、陳香貴等；如需保留可隨時由 Git 還原）。餐廳資料由 394→348 家、有座標增至 301 家。網站資源與離線快取更新為 v125。</p>
+          <div class="meta"><span class="kind">逐家去留：定位28／刪47＋近似座標＋版本</span><span class="commit">目前工作區</span></div>
+        </section>
+      </div>
+    </article>
+
+    <article class="release" id="d0725c">
+      <div class="date"><time datetime="2026-07-25">07 / 25</time><span>版本 v124</span></div>
+      <div class="release-body">
+        <section class="change" data-kind="data">
+          <h2>人工覆核「地址未對上」名單，再救回 8 家餐廳座標</h2>
           <p>針對上一版被嚴格過濾器擋下（店名有對上、但因本站地址過於籠統而未通過地址比對）的約 50 家逐一人工核對，救回可確認正確門店的 8 家補上 GCJ-02 座標：老甘餃子館（千禧花園店）、Silver Pot 銀鍋（悠方店）、銀芭1986（麓鎮）、萍姐火鍋公路夜市（成都總店）、朱光玉火鍋館（望平街店）、貳麻酒館（339）＝成都；萊憶八零來鳳魚璧山兔（北環店）、小樹啉Live（南濱煙雨）＝重慶。其餘 42 家經核對確認為連鎖不同分店、或店名地址已異動查無可靠對應，維持「暫無座標」不誤標。餐廳無座標 130→122。網站資源與離線快取更新為 v124。</p>
           <div class="meta"><span class="kind">人工覆核救回 8 家＋版本</span><span class="commit">目前工作區</span></div>
         </section>

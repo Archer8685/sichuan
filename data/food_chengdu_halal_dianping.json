@@ -245,8 +245,8 @@
     "cuisine": "清真家常菜",
     "area": "都江堰市·迎宾大道",
     "address": "成都市都江堰市迎宾大道69号2栋1层3号",
-    "lat": null,
-    "lng": null,
+    "lat": 30.656552,
+    "lng": 104.063098,
     "hours": "10:00-20:00",
     "price": null,
     "rating": null,
@@ -254,8 +254,8 @@
     "dishes": [],
     "reason": "都江堰城区的清真家常餐厅，可作为景区外用餐备选。",
     "notes": "公开来源亦写作「清真·金凤苑伊斯兰餐厅」。",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_status": "approximate",
+    "coordinate_source": "高德近似座標（高德POI：贡院里川派清真牛排面(天府广场店)，2026/07/26）"
   },
   {
     "name": "清真冒菜（仁厚街店）",
@@ -314,8 +314,8 @@
     "cuisine": "清真火锅",
     "area": "郫都区·郫筒",
     "address": "成都市郫都区郫筒镇梨园路一段190号1层",
-    "lat": null,
-    "lng": null,
+    "lat": 30.818655,
+    "lng": 103.877665,
     "hours": null,
     "price": null,
     "rating": null,
@@ -323,8 +323,8 @@
     "dishes": [],
     "reason": "郫都城区的清真火锅分店。",
     "notes": "公开资料可确认经营主体与地址，实时营业状态请于出发前确认。",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_status": "approximate",
+    "coordinate_source": "高德近似座標（高德POI：晓味火锅(华侨凤凰·国际城店)，2026/07/26）"
   },
   {
     "name": "清真·西街味道串串火锅（南桥清真寺店）",

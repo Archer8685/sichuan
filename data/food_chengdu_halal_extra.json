@@ -7,8 +7,8 @@
     "cuisine": "中东/土耳其料理",
     "area": "锦江区 春熙路/太古里",
     "address": "中纱帽街8号成都远洋太古里东里25栋2楼2307B",
-    "lat": null,
-    "lng": null,
+    "lat": 30.6225,
+    "lng": 104.055303,
     "hours": "11:30-21:30",
     "price": "人均约130元",
     "rating": "4.7/5",
@@ -22,8 +22,8 @@
     ],
     "reason": "太古里核心商圈少见的清真认证中东餐厅，由埃及大厨主理，适合游客就近用餐",
     "notes": "店名明确标注清真Halal；西安姑娘与埃及大厨Ahmad创办的品牌",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_status": "approximate",
+    "coordinate_source": "高德近似座標（高德POI：苏坦中东料理·清真西餐(玉林店)，2026/07/26）"
   },
   {
     "name": "香料集市新疆餐厅·清真聚餐（成都远洋太古里店）",
@@ -78,31 +78,6 @@
     "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
   },
   {
-    "name": "一个勺子新疆锡伯主题私房菜",
-    "city": "成都",
-    "category": "午晚餐",
-    "halal": "友善",
-    "cuisine": "新疆菜/锡伯族菜",
-    "area": "青羊区 骡马市/长顺下街",
-    "address": "长顺下街红墙巷49号附8号",
-    "lat": null,
-    "lng": null,
-    "hours": "12:00-14:30, 17:30-22:00",
-    "price": "人均约80元",
-    "rating": "4.5/5",
-    "rating_source": "城市惠（综合排名第4）",
-    "dishes": [
-      "大盘鸡",
-      "香辣羊蹄",
-      "椒麻鸡",
-      "熏马排"
-    ],
-    "reason": "融合经典新疆菜与小众锡伯族特色的主题私房菜，风味独特",
-    "notes": "锡伯族并非穆斯林民族，菜单含熏马肠/熏马排等马肉菜品，严格清真饮食者请注意甄别，标记为友善",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
-  },
-  {
     "name": "新疆饭店",
     "city": "成都",
     "category": "午晚餐",
@@ -127,58 +102,6 @@
     "coordinate_status": "verified",
     "coordinate_source": "高德地图 GCJ-02（2026-07-25核对）",
     "amap_poiid": "B0FFG7TO18"
-  },
-  {
-    "name": "雪莲美食饭店",
-    "city": "成都",
-    "category": "午晚餐",
-    "halal": "友善",
-    "cuisine": "新疆/青海清真风味",
-    "area": "高新区 天府三街",
-    "address": "天府三街947号店铺",
-    "lat": null,
-    "lng": null,
-    "hours": "09:00-22:00",
-    "price": "人均约62元",
-    "rating": "4.5/5",
-    "rating_source": "城市惠",
-    "dishes": [
-      "烤羊肉串（青海羊肉）",
-      "烤羊排",
-      "丁丁炒面",
-      "过油肉拌面",
-      "大盘鸡"
-    ],
-    "reason": "高新区软件园一带少见的西北清真风味馆子，上班族聚餐热门",
-    "notes": "羊肉选用青海羊，未见认证公示，标记友善",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
-  },
-  {
-    "name": "达斯坦风情美食",
-    "city": "成都",
-    "category": "午晚餐",
-    "halal": "友善",
-    "cuisine": "新疆菜",
-    "area": "金牛区 一品天下/清溪西路",
-    "address": "清溪西路40号",
-    "lat": null,
-    "lng": null,
-    "hours": "09:30-14:00, 17:00-22:30",
-    "price": "人均约84元",
-    "rating": "4.5/5",
-    "rating_source": "城市惠",
-    "dishes": [
-      "架子肉",
-      "烤包子",
-      "菠菜面筋",
-      "石河子凉皮",
-      "羊肉粉汤"
-    ],
-    "reason": "维族建筑风格装修，每晚7-8点有新疆歌舞表演，氛围浓郁",
-    "notes": "电话028-86123444；未见认证公示，标记友善",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
   },
   {
     "name": "开斯巴郎",
@@ -215,8 +138,8 @@
     "cuisine": "新疆菜",
     "area": "武侯区 红瓦寺/川大周边",
     "address": "一环路南一段红瓦寺凯悦新城（与西域风情、开斯巴郎相隔数十米）",
-    "lat": null,
-    "lng": null,
+    "lat": 30.671208,
+    "lng": 104.103169,
     "hours": null,
     "price": null,
     "rating": null,
@@ -228,8 +151,8 @@
     ],
     "reason": "红瓦寺凯悦新城三大新疆餐馆之一，川大周边穆斯林学生常去",
     "notes": "公开资料较少，评分未查到，填null",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_status": "approximate",
+    "coordinate_source": "高德近似座標（高德POI：新疆木卡姆烤肉王，2026/07/26）"
   },
   {
     "name": "伊真轩全牛宴（唐家寺店）",
@@ -266,8 +189,8 @@
     "cuisine": "清真烧烤",
     "area": "武侯区 紫荆/桐梓林",
     "address": "紫竹南一街5号紫荆美熙广场3号1层",
-    "lat": null,
-    "lng": null,
+    "lat": 30.613027,
+    "lng": 104.054071,
     "hours": null,
     "price": "人均约55元",
     "rating": null,
@@ -281,8 +204,8 @@
     ],
     "reason": "店名冠'清真'的社区烤串老摊，夜宵挡口，羊肉新鲜无重膻味",
     "notes": "电话15393033900；携程点评数少暂无评分，填null",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_status": "approximate",
+    "coordinate_source": "高德近似座標（高德POI：清真小马家烤羊肉，2026/07/26）"
   },
   {
     "name": "枣子树素餐厅",
@@ -305,30 +228,6 @@
     ],
     "reason": "知名连锁素食品牌在蓉店，全素无肉无酒，适合穆斯林作为清真友善选择",
     "notes": "电话028-86282848；素食餐厅非清真认证，标记友善；评分未查到填null",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
-  },
-  {
-    "name": "土桥清真伊金园",
-    "city": "成都",
-    "category": "午晚餐",
-    "halal": true,
-    "cuisine": "清真中餐/火锅",
-    "area": "金牛区 土桥（回民聚居半条街）",
-    "address": "金牛区土桥金牛宾馆侧",
-    "lat": null,
-    "lng": null,
-    "hours": null,
-    "price": null,
-    "rating": null,
-    "rating_source": null,
-    "dishes": [
-      "清真火锅",
-      "卤牛肉",
-      "牛杂汤"
-    ],
-    "reason": "土桥清真寺周边回民半条街上的清真中餐火锅馆",
-    "notes": "电话028-87503809；来源为成都清真饮食攻略，评分未查到填null",
     "coordinate_status": "unverified",
     "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
   },

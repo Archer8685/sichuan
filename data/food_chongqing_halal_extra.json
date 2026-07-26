@@ -7,8 +7,8 @@
     "cuisine": "清真重庆火锅",
     "area": "渝北区 松牌路清真一条街",
     "address": "松牌路米兰天空101号附23号（大连银行旁）",
-    "lat": null,
-    "lng": null,
+    "lat": 29.552703,
+    "lng": 106.571875,
     "hours": null,
     "price": "人均约90元",
     "rating": null,
@@ -21,8 +21,8 @@
     ],
     "reason": "松牌路新疆清真一条街上的清真牛油火锅，牛骨熬汤、鲜切鲜烫，店内禁烟酒",
     "notes": "电话023-67288186；携程有收录但评分未查到填null",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_status": "approximate",
+    "coordinate_source": "高德近似座標（高德POI：伊兰穆斯清真重庆火锅，2026/07/26）"
   },
   {
     "name": "伊兰穆斯重庆清真火锅",
@@ -58,8 +58,8 @@
     "cuisine": "清真重庆火锅",
     "area": "渝中区 较场口/清真寺",
     "address": "渝中区较场口中兴路5号附1号（渝亚大厦旁）",
-    "lat": null,
-    "lng": null,
+    "lat": 29.552686,
+    "lng": 106.572238,
     "hours": null,
     "price": null,
     "rating": null,
@@ -71,8 +71,8 @@
     ],
     "reason": "紧邻较场口清真寺（穆斯林大厦）的老牌清真火锅城",
     "notes": "360地图有收录；评分未查到填null",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_status": "approximate",
+    "coordinate_source": "高德近似座標（高德POI：真伊顺·新疆清真美食坊(重庆中兴路5号店)，2026/07/26）"
   },
   {
     "name": "威灵顿酒店·醉西域风味餐厅",
@@ -108,8 +108,8 @@
     "cuisine": "清真烧烤",
     "area": "南岸区 南坪",
     "address": "南坪西路与珊瑚路交叉口东南方向227米",
-    "lat": null,
-    "lng": null,
+    "lat": 29.616875,
+    "lng": 106.362415,
     "hours": null,
     "price": "人均约60元",
     "rating": null,
@@ -122,31 +122,8 @@
     ],
     "reason": "南坪人气清真烧烤，用料新鲜讲究、无重膻味",
     "notes": "清真美食网（纯真生活）推荐；评分未查到填null",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
-  },
-  {
-    "name": "沙湾兰州拉面馆",
-    "city": "重庆",
-    "category": "早餐",
-    "halal": true,
-    "cuisine": "兰州牛肉拉面",
-    "area": "渝北区 回兴/宝圣大道",
-    "address": "渝北区宝圣大道816号",
-    "lat": null,
-    "lng": null,
-    "hours": null,
-    "price": "人均约15元",
-    "rating": null,
-    "rating_source": null,
-    "dishes": [
-      "清汤牛肉拉面",
-      "牛肉小菜"
-    ],
-    "reason": "传统手工兰州拉面工艺，清真早餐/简餐选择",
-    "notes": "清真美食网推荐；评分未查到填null",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_status": "approximate",
+    "coordinate_source": "高德近似座標（高德POI：老三烧烤(金科·天宸店)，2026/07/26）"
   },
   {
     "name": "华岩寺素食餐厅",
@@ -182,8 +159,8 @@
     "cuisine": "寺院素面/素斋",
     "area": "渝中区 解放碑/罗汉寺",
     "address": "渝中区罗汉寺街7号罗汉寺内",
-    "lat": null,
-    "lng": null,
+    "lat": 29.552943,
+    "lng": 106.572116,
     "hours": "08:00-17:00（随寺院开放时间）",
     "price": "素面约10-20元（寺门票20元）",
     "rating": null,
@@ -194,8 +171,8 @@
     ],
     "reason": "解放碑核心区寺院素面，全素平价，游览洪崖洞/解放碑时的清真友善简餐",
     "notes": "佛教素斋非清真认证，标记友善；评分未查到填null",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_status": "approximate",
+    "coordinate_source": "高德近似座標（高德POI：宁夏回乡斋清真餐厅(解放碑步行街店)，2026/07/26）"
   },
   {
     "name": "春秋饭庄",
@@ -223,29 +200,6 @@
     "amap_poiid": "B001795HRK"
   },
   {
-    "name": "财红饭庄",
-    "city": "重庆",
-    "category": "午晚餐",
-    "halal": true,
-    "cuisine": "新疆清真菜",
-    "area": "万州区 龙宝",
-    "address": "万州区龙安路与龙宝大道交叉口旁",
-    "lat": null,
-    "lng": null,
-    "hours": null,
-    "price": null,
-    "rating": null,
-    "rating_source": null,
-    "dishes": [
-      "大盘鸡",
-      "牛羊肉家常菜"
-    ],
-    "reason": "重庆本地宝'新疆清真菜馆'名录收录的万州清真饭庄",
-    "notes": "评分未查到填null",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
-  },
-  {
     "name": "八大碗（万州）",
     "city": "重庆",
     "category": "午晚餐",
@@ -269,30 +223,6 @@
     "amap_poiid": "B001795I69",
     "coordinate_status": "verified",
     "coordinate_source": "高德地图 GCJ-02（2026-07-15核对）"
-  },
-  {
-    "name": "李福记抓饭",
-    "city": "重庆",
-    "category": "午晚餐",
-    "halal": true,
-    "cuisine": "新疆抓饭",
-    "area": "万州区 珊瑚街/万达广场",
-    "address": "万州区珊瑚街8号附14号万达广场3号",
-    "lat": null,
-    "lng": null,
-    "hours": "09:00-21:00",
-    "price": "人均约25元",
-    "rating": null,
-    "rating_source": null,
-    "dishes": [
-      "羊肉手抓饭",
-      "烤肉",
-      "酸奶"
-    ],
-    "reason": "万州万达广场旁的清真抓饭专门店，重庆本地宝清真菜名录收录",
-    "notes": "评分未查到填null",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
   },
   {
     "name": "新疆果园（万州）",

@@ -253,33 +253,13 @@
     "coordinate_source": "高德地图 GCJ-02（2026-07-15核对）"
   },
   {
-    "name": "曾记巷巷油茶（十八梯店）",
-    "category": "早餐",
-    "halal": "友善",
-    "area": "渝中区",
-    "address": "渝中区十八梯传统风貌区（老店原址：南纪门善果巷11号附1号）",
-    "lat": null,
-    "lng": null,
-    "hours": "约07:00-14:00",
-    "price": 8,
-    "dishes": [
-      "油茶馓子",
-      "糯米团",
-      "醪糟蛋"
-    ],
-    "reason": "重庆油茶名店，米糊细腻绵滑、馓子酥脆，麻辣鲜香，是最本味的山城早餐。",
-    "notes": "油茶主料为米糊+油炸馓子，一般无猪肉；建议确认馓子用植物油炸制。十八梯游客多，早去。",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
-  },
-  {
     "name": "刘妈妈油茶早餐铺",
     "category": "早餐",
     "halal": "友善",
     "area": "渝中区",
     "address": "渝中区小苑路10号",
-    "lat": null,
-    "lng": null,
+    "lat": 29.533118,
+    "lng": 106.541322,
     "hours": "约06:30-11:00",
     "price": 7,
     "dishes": [
@@ -289,8 +269,8 @@
     ],
     "reason": "社区老早点铺，本地人从小吃到大的油茶味道，便宜量足。",
     "notes": "无猪肉主料，但非清真认证；卖完即收摊，尽量9点前到；小店可能只收现金/微信。",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_status": "approximate",
+    "coordinate_source": "高德近似座標（高德POI：手工早点铺(铜元局店)，2026/07/26）"
   },
   {
     "name": "大王油茶（磁器口店）",
@@ -418,26 +398,6 @@
     "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
   },
   {
-    "name": "凌汤圆（磁器口店）",
-    "category": "甜点",
-    "halal": false,
-    "area": "沙坪坝区",
-    "address": "沙坪坝区磁器口正街",
-    "lat": null,
-    "lng": null,
-    "hours": "约09:00-20:00",
-    "price": 12,
-    "dishes": [
-      "山城小汤圆",
-      "黑芝麻大汤圆",
-      "醪糟小汤圆"
-    ],
-    "reason": "始于1930年代的重庆汤圆老字号，皮糯馅香，是山城汤圆的代表符号。",
-    "notes": "注意：传统黑芝麻馅按老做法含猪板油，介意者询问是否有植物油/无猪油款，或点醪糟粉子小汤圆（多为无馅）。",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
-  },
-  {
     "name": "巴渝正月山城小汤圆（解放碑店）",
     "category": "甜点",
     "halal": false,
@@ -481,26 +441,6 @@
     "amap_poiid": "B0KDGULWFJ"
   },
   {
-    "name": "白象街·拉丝凉糕（八一路店）",
-    "category": "甜点",
-    "halal": "友善",
-    "area": "渝中区",
-    "address": "渝中区八一路好吃街",
-    "lat": null,
-    "lng": null,
-    "hours": "约10:00-22:00",
-    "price": 10,
-    "dishes": [
-      "拉丝凉糕",
-      "玫瑰冰粉",
-      "手工糍粑"
-    ],
-    "reason": "以能拉丝的红糖凉糕出圈，米制甜品清爽不腻，逛解放碑的甜品补给站。",
-    "notes": "米制品无猪肉，较友好；凉糕冰粉偏凉，冬天怕凉可选热糍粑。",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
-  },
-  {
     "name": "渝味道冰汤圆（大井巷店）",
     "category": "甜点",
     "halal": false,
@@ -523,33 +463,13 @@
     "coordinate_source": "高德地图 GCJ-02（2026-07-15核对）"
   },
   {
-    "name": "深井冰手工冰粉（观音桥店）",
-    "category": "甜点",
-    "halal": "友善",
-    "area": "江北区",
-    "address": "江北区观音桥商圈（重庆20余家分店，以地图App为准）",
-    "lat": null,
-    "lng": null,
-    "hours": "约11:00-22:30",
-    "price": 12,
-    "dishes": [
-      "糍粑冰粉",
-      "玫瑰冰籽冰粉",
-      "米凉糕"
-    ],
-    "reason": "重庆本土冰粉连锁，手工冰籽冰粉气泡感明显，配料给得大方，米凉糕口碑最好。",
-    "notes": "植物基甜品，较友好；冰品为主，12月可能部分门店缩短营业或推热甜品，先查点评。",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
-  },
-  {
     "name": "阿坤甜品（观音桥店）",
     "category": "甜点",
     "halal": "友善",
     "area": "江北区",
     "address": "江北区观音桥香港城好吃街出口处",
-    "lat": null,
-    "lng": null,
+    "lat": 29.557514,
+    "lng": 106.461887,
     "hours": "约11:00-22:00",
     "price": 8,
     "dishes": [
@@ -559,8 +479,8 @@
     ],
     "reason": "人均不到10元的平价甜品老店，红豆沙双皮奶是招牌，性价比极高。",
     "notes": "奶制甜品无猪肉；龟苓膏含龟板等动物成分，介意者避开只点双皮奶。",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_status": "approximate",
+    "coordinate_source": "高德近似座標（高德POI：阿坤传统手工小吃(沙坪坝店)，2026/07/26）"
   },
   {
     "name": "陈昌银麻花（磁器口正街店）",
@@ -583,26 +503,6 @@
     "amap_poiid": "B0FFG419S7",
     "coordinate_status": "verified",
     "coordinate_source": "高德地图 GCJ-02（2026-07-15核对）"
-  },
-  {
-    "name": "衹等一味（北仓文创街区店）",
-    "category": "甜点",
-    "halal": "友善",
-    "area": "江北区",
-    "address": "江北区观音桥北仓文创街区",
-    "lat": null,
-    "lng": null,
-    "hours": "约12:00-21:00",
-    "price": 40,
-    "dishes": [
-      "法式千层",
-      "季节限定慕斯",
-      "手冲配甜品套餐"
-    ],
-    "reason": "藏在北仓文创园的人气法甜店，出品精致，适合下午茶歇脚拍照。",
-    "notes": "法甜可能含明胶（吉利丁）等动物成分，严格清真者点前询问；店小热门时段需等位。",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
   },
   {
     "name": "满记甜品（解放碑时代广场店）",
@@ -667,26 +567,6 @@
     "coordinate_source": "高德地图 GCJ-02（2026-07-15核对）"
   },
   {
-    "name": "小日子茶馆（山城巷店）",
-    "category": "饮料",
-    "halal": "友善",
-    "area": "渝中区",
-    "address": "渝中区山城巷传统风貌区内",
-    "lat": null,
-    "lng": null,
-    "hours": "约10:00-21:00",
-    "price": 25,
-    "dishes": [
-      "老荫茶",
-      "坝坝茶",
-      "盖碗沱茶"
-    ],
-    "reason": "藏在山城巷的老重庆茶馆，喝的就是爬坡上坎后那一碗老荫茶的解乏感。",
-    "notes": "纯茶饮无忌口问题；山城巷步道台阶多，穿好走的鞋；观景位下午容易满。",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
-  },
-  {
     "name": "东华观藏书楼坝坝茶",
     "category": "饮料",
     "halal": "友善",
@@ -729,66 +609,6 @@
     "coordinate_source": "高德地图 GCJ-02（2026-07-15核对）"
   },
   {
-    "name": "在场·山城咖啡（山城步道店）",
-    "category": "饮料",
-    "halal": "友善",
-    "area": "渝中区",
-    "address": "渝中区山城巷/第三步道沿线（领事巷入口附近）",
-    "lat": null,
-    "lng": null,
-    "hours": "约10:00-19:00",
-    "price": 30,
-    "dishes": [
-      "辣椒咖啡",
-      "山城一枝花特调",
-      "手冲单品"
-    ],
-    "reason": "开在山城步道上的特调咖啡店，辣椒咖啡等在地化创意特调，是‘山城味’咖啡代表。",
-    "notes": "纯咖啡饮品；沿步道爬坡而上，建议与山城巷、十八梯串成一条步行线。",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
-  },
-  {
-    "name": "Dandy Art House（鹅岭二厂店）",
-    "category": "饮料",
-    "halal": "友善",
-    "area": "渝中区",
-    "address": "渝中区鹅岭正街1号鹅岭贰厂文创公园内",
-    "lat": null,
-    "lng": null,
-    "hours": "约10:30-21:00",
-    "price": 35,
-    "dishes": [
-      "特调咖啡",
-      "澳白",
-      "气泡美式"
-    ],
-    "reason": "鹅岭二厂里的金属冷淡风咖啡店，饮品与空间颜值双高，《从你的全世界路过》取景园区。",
-    "notes": "饮品为主无忌口问题；二厂在渝中半岛制高点，可顺看两江景色，周末人多。",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
-  },
-  {
-    "name": "雲上天台·下午茶·咖啡（鹅岭二厂店）",
-    "category": "饮料",
-    "halal": "友善",
-    "area": "渝中区",
-    "address": "渝中区鹅岭贰厂文创公园1号楼5楼天台",
-    "lat": null,
-    "lng": null,
-    "hours": "约11:00-22:00",
-    "price": 40,
-    "dishes": [
-      "围炉煮茶",
-      "手冲咖啡",
-      "水果茶"
-    ],
-    "reason": "二厂天台上的观景茶座，同时望长江嘉陵江，12月围炉煮茶配江景正合适。",
-    "notes": "天台风大，冬天注意保暖；煮茶套餐配的茶点若含肉脯类可要求更换。",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
-  },
-  {
     "name": "慌张咖啡（解放碑店）",
     "category": "饮料",
     "halal": "友善",
@@ -808,25 +628,5 @@
     "amap_poiid": "B0J2PHCGDV",
     "coordinate_status": "verified",
     "coordinate_source": "高德地图 GCJ-02（2026-07-15核对）"
-  },
-  {
-    "name": "蓝白调咖啡馆（红旗河沟店）",
-    "category": "饮料",
-    "halal": "友善",
-    "area": "江北区",
-    "address": "江北区红旗河沟附近",
-    "lat": null,
-    "lng": null,
-    "hours": "约11:00-21:00",
-    "price": 30,
-    "dishes": [
-      "拿铁",
-      "韩式甜咖",
-      "柚子茶"
-    ],
-    "reason": "简约韩式风格的社区咖啡馆，安静适合歇脚，避开景区人流的本地选择。",
-    "notes": "饮品无忌口问题；位于商住区内，具体楼栋以地图App搜索店名为准。",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
   }
 ]
