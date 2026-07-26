@@ -44,27 +44,6 @@
     "coordinate_source": "高德地图 GCJ-02（2026-07-15核对）"
   },
   {
-    "name": "东方宫中国兰州牛肉拉面（观音桥店）",
-    "category": "早餐",
-    "halal": true,
-    "area": "江北区",
-    "address": "江北区观音桥商圈（连锁多店，以高德/大众点评最新门店为准）",
-    "lat": null,
-    "lng": null,
-    "hours": "约07:00-21:00",
-    "price": 25,
-    "dishes": [
-      "兰州牛肉拉面",
-      "酿皮",
-      "牛肉小菜",
-      "甜胚子"
-    ],
-    "reason": "全国性清真兰州拉面品牌，清汤牛肉面早餐稳妥之选，早上即营业。",
-    "notes": "清真连锁；门店位置可能调整，出发前用地图App确认最近门店。",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
-  },
-  {
     "name": "蒋六十八梯眼镜面（渝中店）",
     "category": "早餐",
     "halal": false,
@@ -133,8 +112,8 @@
     "halal": false,
     "area": "九龙坡区",
     "address": "九龙坡区谢家湾正街（华润万象城旁）",
-    "lat": null,
-    "lng": null,
+    "lat": 29.516328,
+    "lng": 106.522184,
     "hours": "约06:30-15:00",
     "price": 15,
     "dishes": [
@@ -144,8 +123,8 @@
     ],
     "reason": "重庆小面50强第一名出身的老字号摊摊面，油辣子香气霸道，游客与本地人都多。",
     "notes": "招牌豌杂面为猪肉杂酱，务必改点牛肉面或素椒面；分店多，认准谢家湾/杨家坪一带门店。",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_status": "verified",
+    "coordinate_source": "高德地图 GCJ-02（高德POI：秦云老太婆摊摊面(全国总店)，2026/07/26核对）"
   },
   {
     "name": "花市豌杂面（较场口总店）",
@@ -382,8 +361,8 @@
     "halal": false,
     "area": "渝中区",
     "address": "渝中区大同路（解放碑商圈，另有多家分店）",
-    "lat": null,
-    "lng": null,
+    "lat": 29.562681,
+    "lng": 106.547072,
     "hours": "约07:30-19:00",
     "price": 12,
     "dishes": [
@@ -394,8 +373,8 @@
     ],
     "reason": "始于1931年的重庆老字号包子，非遗技艺，甜口豆沙包和烧麦同样出彩。",
     "notes": "注意：招牌酱肉包为猪肉馅，避猪者点玫瑰豆沙包、素菜包、糯米烧麦（烧麦或含猪油，需询问）。",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_status": "verified",
+    "coordinate_source": "高德地图 GCJ-02（高德POI：九园包子(上清寺店)，2026/07/26核对）"
   },
   {
     "name": "巴渝正月山城小汤圆（解放碑店）",
@@ -510,8 +489,8 @@
     "halal": "友善",
     "area": "渝中区",
     "address": "渝中区解放碑时代广场",
-    "lat": null,
-    "lng": null,
+    "lat": 29.522186,
+    "lng": 106.571006,
     "hours": "约10:00-22:00",
     "price": 30,
     "dishes": [
@@ -521,8 +500,8 @@
     ],
     "reason": "港式甜品连锁，出品稳定、环境舒适，逛解放碑时的保底甜品选项。",
     "notes": "无猪肉；班戟奶油类甜品含乳制品和明胶风险低，严格者仍可询问成分。",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_status": "verified",
+    "coordinate_source": "高德地图 GCJ-02（高德POI：满记甜品(南坪协信星光时代广场店)，2026/07/26核对）"
   },
   {
     "name": "交通茶馆",

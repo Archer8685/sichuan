@@ -232,8 +232,8 @@
     "cuisine": "新疆清真菜",
     "area": "万州区 友谊路",
     "address": "万州区友谊路",
-    "lat": null,
-    "lng": null,
+    "lat": 29.576746,
+    "lng": 106.484411,
     "hours": null,
     "price": null,
     "rating": null,
@@ -245,8 +245,8 @@
     ],
     "reason": "万州清真餐厅名录收录的新疆风味餐厅",
     "notes": "评分未查到填null",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_status": "verified",
+    "coordinate_source": "高德地图 GCJ-02（高德POI：新疆果园(盘溪二支路店)，2026/07/26核对）"
   },
   {
     "name": "新疆大盘鸡（长寿店）",
@@ -256,8 +256,8 @@
     "cuisine": "新疆大盘鸡",
     "area": "长寿区 桃源北二路",
     "address": "长寿区桃源北二路",
-    "lat": null,
-    "lng": null,
+    "lat": 29.539861,
+    "lng": 106.510957,
     "hours": null,
     "price": null,
     "rating": null,
@@ -269,8 +269,8 @@
     ],
     "reason": "重庆本地宝'新疆清真'栏目收录的长寿区大盘鸡专门店",
     "notes": "清真认证情况未确认，标记友善；评分未查到填null",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_status": "verified",
+    "coordinate_source": "高德地图 GCJ-02（高德POI：新疆大盘鸡(时代天街店)，2026/07/26核对）"
   },
   {
     "name": "老字号新疆餐厅大盘鸡",

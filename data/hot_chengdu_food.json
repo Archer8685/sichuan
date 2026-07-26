@@ -193,8 +193,8 @@
     "cuisine": "牛油火锅",
     "area": "金牛区·五里墩（总店，另有奎星楼街、小关庙等分店）",
     "address": "金牛区五里墩（居民楼总店），分店遍布市区",
-    "lat": null,
-    "lng": null,
+    "lat": 30.6424,
+    "lng": 104.090577,
     "hours": "约11:30-凌晨（各店略异）",
     "price": "人均约100-130元",
     "rating": null,
@@ -208,8 +208,8 @@
     ],
     "reason": "从五里墩居民楼「锅底实验室」起家的现象级排队王，日均排队2000+号，大众点评热门榜/必吃榜常客",
     "notes": "务必提前线上取号排队；午餐肉、酱肉蒸饺等自制品含猪肉",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_status": "verified",
+    "coordinate_source": "高德地图 GCJ-02（高德POI：五里关火锅(九眼桥店)，2026/07/26核对）"
   },
   {
     "name": "萍姐火锅·公路夜市",
@@ -551,8 +551,8 @@
     "cuisine": "现烤芝士蛋糕/网红甜品",
     "area": "锦江区·春熙路商圈（成都首店）",
     "address": "春熙路商圈（成都首店，另有多家商场店）",
-    "lat": null,
-    "lng": null,
+    "lat": 30.568177,
+    "lng": 104.070288,
     "hours": "约10:00-22:00（随商场）",
     "price": "人均约40-70元",
     "rating": null,
@@ -565,8 +565,8 @@
     ],
     "reason": "2020年创立的现烤芝士蛋糕排队王，成都首店开业即成打卡点，城市限定款吸引甜品客",
     "notes": "无猪肉制品标友善（含乳制品与酒渍配料个别款需确认）；热门时段需排队叫号",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_status": "verified",
+    "coordinate_source": "高德地图 GCJ-02（高德POI：KUMO KUMO(成都SKP店)，2026/07/26核对）"
   },
   {
     "name": "贰麻酒馆",
@@ -603,8 +603,8 @@
     "cuisine": "川式烧烤/夜宵",
     "area": "锦江区·太古里（另有交子大道等40+直营店）",
     "address": "春熙路太古里商圈（太古里店）",
-    "lat": null,
-    "lng": null,
+    "lat": 30.581541,
+    "lng": 104.051839,
     "hours": "约17:00-次日2:00（部分店午市营业）",
     "price": "人均约52-70元",
     "rating": null,
@@ -618,8 +618,8 @@
     ],
     "reason": "1994年五位西南财大学子创办，30年40+家全直营门店，川渝烧烤行业标杆品牌",
     "notes": "招牌烤五花为猪肉，牛肉串/烤鱼/素烤可避开；夜宵高峰排队",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_status": "verified",
+    "coordinate_source": "高德地图 GCJ-02（高德POI：he‘s何师烧烤(交子大道店)，2026/07/26核对）"
   },
   {
     "name": "银滩鲍鱼火锅",

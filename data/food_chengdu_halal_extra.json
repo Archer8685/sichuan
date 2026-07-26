@@ -59,8 +59,8 @@
     "cuisine": "新疆菜/私房菜",
     "area": "青羊区 宽窄巷子/小南街",
     "address": "小南街包家巷99号院门口",
-    "lat": null,
-    "lng": null,
+    "lat": 30.73838,
+    "lng": 103.997146,
     "hours": "12:00-14:00, 17:30-21:30",
     "price": "人均约91元",
     "rating": "4.5/5",
@@ -74,8 +74,8 @@
     ],
     "reason": "宽窄巷子附近预约制新疆私房菜，开店多年出品稳定，成都新疆菜排行榜第2名",
     "notes": "需提前预约，食材有限售完即止，烤羊腿和凉皮需预约",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_status": "verified",
+    "coordinate_source": "高德地图 GCJ-02（高德POI：成都后花园(金粮路)，2026/07/26核对）"
   },
   {
     "name": "新疆饭店",
@@ -215,8 +215,8 @@
     "cuisine": "素食",
     "area": "青羊区 八宝街/青龙街",
     "address": "青龙街27号铂金城2号楼4楼（近八宝街）",
-    "lat": null,
-    "lng": null,
+    "lat": 30.718875,
+    "lng": 104.572375,
     "hours": "11:00-21:00",
     "price": "人均约98元",
     "rating": null,
@@ -228,8 +228,8 @@
     ],
     "reason": "知名连锁素食品牌在蓉店，全素无肉无酒，适合穆斯林作为清真友善选择",
     "notes": "电话028-86282848；素食餐厅非清真认证，标记友善；评分未查到填null",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_status": "verified",
+    "coordinate_source": "高德地图 GCJ-02（高德POI：枣子树，2026/07/26核对）"
   },
   {
     "name": "伊兰斋牛肉面",
@@ -263,8 +263,8 @@
     "cuisine": "兰州牛肉面",
     "area": "锦江区 春熙路等多商圈",
     "address": "成都多家商场门店（春熙路商圈等，全市多店）",
-    "lat": null,
-    "lng": null,
+    "lat": 30.311234,
+    "lng": 104.446014,
     "hours": "10:00-21:30（各店略有差异）",
     "price": "人均约30元",
     "rating": null,
@@ -276,8 +276,8 @@
     ],
     "reason": "兰州牛肉面新式连锁品牌在蓉扩张，明厨亮灶、可免费续面",
     "notes": "兰州牛肉面为清真品类；成都门店具体评分未查到填null",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_status": "verified",
+    "coordinate_source": "高德地图 GCJ-02（高德POI：张拉拉兰州手撕牛肉面(成都天府机场店)，2026/07/26核对）"
   },
   {
     "name": "共享椒麻鸡",

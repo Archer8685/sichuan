@@ -205,8 +205,8 @@
     "cuisine": "清真兰州牛肉面",
     "area": "渝中区·解放碑",
     "address": "重庆市渝中区解放碑商圈（具体门牌以店铺导航为准）",
-    "lat": null,
-    "lng": null,
+    "lat": 29.422125,
+    "lng": 106.595225,
     "hours": "24小时营业",
     "price": "约25元/人",
     "rating": "4.4/5",
@@ -217,8 +217,8 @@
     ],
     "reason": "解放碑商圈24小时清真牛肉面，适合早餐与宵夜。",
     "notes": "截图显示解放碑商圈及24小时营业；公开网页未查得可靠门牌，点位标在商圈中心。",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_status": "verified",
+    "coordinate_source": "高德地图 GCJ-02（高德POI：兰州纯汤牛肉面，2026/07/26核对）"
   },
   {
     "name": "宸溪清真排酸牛羊肉",

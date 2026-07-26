@@ -73,8 +73,8 @@
     "halal": true,
     "area": "新都区",
     "address": "成都市新都区唐家寺（回民聚居片区，川陕路沿线）",
-    "lat": null,
-    "lng": null,
+    "lat": 30.65687,
+    "lng": 104.063177,
     "hours": "约 07:00-18:00（卖完即止）",
     "price": 12,
     "dishes": [
@@ -84,8 +84,8 @@
     ],
     "reason": "唐家寺是成都近郊传统回民聚居地，牛肉饼外皮酥脆、大葱胡椒牛肉馅香气足。",
     "notes": "离市区较远（约20公里），可与新都桂湖/宝光寺行程合并；小摊多收现金或扫码。",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）",
+    "coordinate_status": "verified",
+    "coordinate_source": "高德地图 GCJ-02（高德POI：清真唐家寺罗记卤坊皇城寺店，2026/07/26核对）",
     "rating": "4.2/5",
     "rating_source": "大众点评 唐家寺罗记卤坊(土桥店)（147则，2026/07）"
   },
@@ -158,8 +158,8 @@
     "halal": "友善",
     "area": "青羊区",
     "address": "成都市青羊区西大街86号附13号",
-    "lat": null,
-    "lng": null,
+    "lat": 30.659703,
+    "lng": 104.076475,
     "hours": "约 08:00-20:30",
     "price": 15,
     "dishes": [
@@ -170,8 +170,8 @@
     ],
     "reason": "老字号豆花专门店，馓子豆花咸鲜酥脆，是成都传统早餐的经典。",
     "notes": "豆花本身为素；豆花面的臊子含猪肉，避开点纯豆花品项即可。",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）",
+    "coordinate_status": "verified",
+    "coordinate_source": "高德地图 GCJ-02（高德POI：西月城谭豆花(春熙路店)，2026/07/26核对）",
     "rating": "4.2/5",
     "rating_source": "大众点评 小谭豆花(西大街店)（10182则，2026/07）"
   },
@@ -202,8 +202,8 @@
     "halal": "友善",
     "area": "锦江区",
     "address": "成都市锦江区武成大街与牛王庙路口一带（牛王庙地铁站附近）",
-    "lat": null,
-    "lng": null,
+    "lat": 30.66338,
+    "lng": 104.046619,
     "hours": "约 07:00-20:00",
     "price": 18,
     "dishes": [
@@ -213,8 +213,8 @@
     ],
     "reason": "本地人心中的面馆顶流，早上七点就开门，汤面香浓有锅气。",
     "notes": "招牌怪味面臊子含猪肉，请改点牛肉面；高峰排队。",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）",
+    "coordinate_status": "verified",
+    "coordinate_source": "高德地图 GCJ-02（高德POI：牛王庙怪味面(城郊联社小区店)，2026/07/26核对）",
     "rating": "3.5/5",
     "rating_source": "大众点评 牛王庙怪味面(城郊联社小区店)（939则，2026/07）"
   },
@@ -268,8 +268,8 @@
     "halal": false,
     "area": "锦江区",
     "address": "成都市锦江区红星路四段（总店，另有多家分店）",
-    "lat": null,
-    "lng": null,
+    "lat": 30.65283,
+    "lng": 104.073184,
     "hours": "约 07:30-19:00",
     "price": 15,
     "dishes": [
@@ -280,8 +280,8 @@
     ],
     "reason": "百年包子老字号，皮薄松泡，是成都传统包子铺的代表。",
     "notes": "以猪肉包为主，清真需求者建议略过或只点素菜包+豆浆。",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_status": "verified",
+    "coordinate_source": "高德地图 GCJ-02（高德POI：韩包子(青石桥店)，2026/07/26核对）"
   },
   {
     "name": "甘食记·成都肥肠粉（文殊坊店）",
@@ -289,8 +289,8 @@
     "halal": false,
     "area": "青羊区",
     "address": "成都市青羊区文殊坊街区内（草市街附近，另有多家分店）",
-    "lat": null,
-    "lng": null,
+    "lat": 30.652024,
+    "lng": 104.082563,
     "hours": "约 09:00-21:00",
     "price": 25,
     "dishes": [
@@ -301,8 +301,8 @@
     ],
     "reason": "成都肥肠粉非遗代表，手打红薯粉滑弹，是本地早餐名片之一。",
     "notes": "招牌以猪肥肠为主，不符合清真需求；仅推荐给同行的非清真旅伴。",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_status": "verified",
+    "coordinate_source": "高德地图 GCJ-02（高德POI：甘食记成都肥肠粉(太古里店)，2026/07/26核对）"
   },
   {
     "name": "王婆荞面（青石桥）",
@@ -356,8 +356,8 @@
     "halal": "友善",
     "area": "金牛区",
     "address": "成都市金牛区曹家巷工人村2栋楼下（近太升桥）",
-    "lat": null,
-    "lng": null,
+    "lat": 30.675977,
+    "lng": 104.083719,
     "hours": "约 10:30-18:00（卖完即止，常不定休）",
     "price": 8,
     "dishes": [
@@ -367,8 +367,8 @@
     ],
     "reason": "『南有贺记、北有陆记』的北派代表，铜锅炭火慢烘，皮脆芯软。",
     "notes": "肉松馅可能为猪肉松，点甜馅或问清馅料；只收现金/扫码，排队常见。",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_status": "verified",
+    "coordinate_source": "高德地图 GCJ-02（高德POI：工人村，2026/07/26核对）"
   },
   {
     "name": "三义园牛肉焦饼（锦里档口）",
@@ -481,8 +481,8 @@
     "halal": "友善",
     "area": "青羊区",
     "address": "成都市青羊区奎星楼街（近宽窄巷子）",
-    "lat": null,
-    "lng": null,
+    "lat": 30.668229,
+    "lng": 104.054813,
     "hours": "约 11:00-22:00",
     "price": 15,
     "dishes": [
@@ -492,8 +492,8 @@
     ],
     "reason": "网红冰粉店，醪糟、银耳、桂花蜜的组合清爽不腻。",
     "notes": "全素配料，清真友善；冬天客流少、部分冰品可能停售。",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）",
+    "coordinate_status": "verified",
+    "coordinate_source": "高德地图 GCJ-02（高德POI：禅泉冰粉，2026/07/26核对）",
     "rating": "4.4/5",
     "rating_source": "大众点评 禅泉冰粉(奎星楼店)（5357则，2026/07）"
   },
@@ -503,8 +503,8 @@
     "halal": "友善",
     "area": "青羊区",
     "address": "成都市青羊区酱园公所街58号（文殊院旁）",
-    "lat": null,
-    "lng": null,
+    "lat": 30.675918,
+    "lng": 104.070809,
     "hours": "约 08:30-19:00",
     "price": 20,
     "dishes": [
@@ -515,8 +515,8 @@
     ],
     "reason": "文殊院旁永远在排队的中式糕点老铺，现烤桃酥香气扑鼻，伴手礼首选。",
     "notes": "部分传统酥点（如某些酥皮）可能使用猪油，购买前询问店员成分；排队常见。",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_status": "verified",
+    "coordinate_source": "高德地图 GCJ-02（高德POI：文殊院宫廷糕点铺(人民中路连锁店)，2026/07/26核对）"
   },
   {
     "name": "闻酥园（文殊坊店）",
@@ -656,8 +656,8 @@
     "halal": "友善",
     "area": "锦江区",
     "address": "成都市锦江区春熙路商圈（总部在成都，市内门店密集）",
-    "lat": null,
-    "lng": null,
+    "lat": 30.572594,
+    "lng": 104.069459,
     "hours": "约 10:00-22:30",
     "price": 12,
     "dishes": [
@@ -667,8 +667,8 @@
     ],
     "reason": "『半杯都是料』的成都本土品牌，烧仙草配料扎实，性价比高。",
     "notes": "全素配料为主，清真友善。",
-    "coordinate_status": "unverified",
-    "coordinate_source": "高德地图未可靠匹配（2026-07-15，地图暂不显示）"
+    "coordinate_status": "verified",
+    "coordinate_source": "高德地图 GCJ-02（高德POI：书亦烧仙草(成都大魔方店)，2026/07/26核对）"
   },
   {
     "name": "丸摩堂（春熙路店）",
