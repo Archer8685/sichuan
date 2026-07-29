@@ -626,5 +626,30 @@
     "coordinate_status": "verified",
     "coordinate_source": "高德地图 GCJ-02（2026-07-25核对）",
     "amap_poiid": "B001C7WG16"
+  },
+  {
+    "name": "TRUFFE BOULANGERIE by B&C 松露与面包（四川旗舰店）",
+    "city": "成都",
+    "category": "甜点",
+    "halal": "友善",
+    "cuisine": "法式烘焙/面包蛋糕",
+    "area": "锦江区·春熙路/太古里",
+    "address": "成都市锦江区中纱帽街8号成都太古里15栋一层1226号商铺",
+    "lat": 30.653378,
+    "lng": 104.083806,
+    "hours": "12:00-22:00",
+    "price": 45,
+    "rating": "3.9/5",
+    "rating_source": "大众点评截图（6081条，2026/07/24）",
+    "dishes": [
+      "法式可颂",
+      "车轮泡芙",
+      "法式面包",
+      "蛋糕"
+    ],
+    "reason": "成都太古里内的法式烘焙旗舰店，成都面包甜品打卡人气榜第1名，逛太古里顺路买。",
+    "notes": "面包蛋糕店（非清真认证，标清真友善）；就在太古里15栋一层，近春熙路站350m。",
+    "coordinate_status": "approximate",
+    "coordinate_source": "成都远洋太古里建筑群座標 GCJ-02（同栋，2026-07-24）"
   }
 ]

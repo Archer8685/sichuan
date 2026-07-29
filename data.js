@@ -3388,6 +3388,31 @@ const PLACES = [
   "rating_source": "綜合"
  },
  {
+  "name": "TRUFFE BOULANGERIE by B&C 松露與麵包（四川旗艦店）",
+  "city": "成都",
+  "category": "甜点",
+  "halal": "友善",
+  "cuisine": "法式烘焙/麵包蛋糕",
+  "area": "錦江區·春熙路/太古里",
+  "address": "成都市錦江區中紗帽街8號成都太古里15棟一層1226號商鋪",
+  "lat": 30.653378,
+  "lng": 104.083806,
+  "hours": "12:00-22:00",
+  "price": 45,
+  "rating": "3.9/5",
+  "rating_source": "大眾點評截圖（6081條，2026/07/24）",
+  "dishes": [
+   "法式可頌",
+   "車輪泡芙",
+   "法式麵包",
+   "蛋糕"
+  ],
+  "reason": "成都太古里內的法式烘焙旗艦店，成都麵包甜品打卡人氣榜第1名，逛太古里順路買。",
+  "notes": "麵包蛋糕店（非清真認證，標清真友善）；就在太古里15棟一層，近春熙路站350m。",
+  "coordinate_status": "approximate",
+  "coordinate_source": "成都遠洋太古里建築群座標 GCJ-02（同棟，2026-07-24）"
+ },
+ {
   "name": "天方樓·邂逅新派川菜清真（天府廣場店）",
   "category": "午晚餐",
   "halal": true,
