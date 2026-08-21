@@ -124,10 +124,10 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
     <div class="eyebrow">Website field notes</div>
     <h1>一路修到更順。<span>網頁修改紀錄</span></h1>
     <p class="lead">把網站功能、行程調整與資料校正整理成可讀的版本誌。內容依 Git commit 與現有頁面交叉核對；相近的小修改合併描述，保留 commit 編號供回查。</p>
-    <p class="source-note">資料截點：2026/07/24（UTC+8）・<a href="https://github.com/Archer8685/sichuan/commits" target="_blank" rel="noopener">查看完整 Git 歷史 ↗</a></p>
+    <p class="source-note">資料截點：2026/08/21（UTC+8）・<a href="https://github.com/Archer8685/sichuan/commits" target="_blank" rel="noopener">查看完整 Git 歷史 ↗</a></p>
     <aside class="ticket" aria-label="版本資訊">
       <small>CHANGE LOG</small>
-      <strong>v130</strong>
+      <strong>v132</strong>
       <div class="route">CKG 重慶<br>↓ 9 DAYS<br>CTU 成都</div>
     </aside>
   </header>
@@ -139,6 +139,8 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
   </section>
 
   <nav class="jump" aria-label="依日期跳轉">
+    <a href="#d0821">08/21 最新</a>
+    <a href="#d0818a">08/18 D3鵝嶺二廠</a>
     <a href="#d0817c">08/17 渡輪上圖</a>
     <a href="#d0817b">08/17 D8海鮮自助</a>
     <a href="#d0817a">08/17 行程調整</a>
@@ -169,11 +171,33 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
   </nav>
 
   <section class="timeline" aria-label="修改時間軸">
+    <article class="release" id="d0821">
+      <div class="date"><time datetime="2026-08-21">08 / 21</time><span>版本 v132・最新</span></div>
+      <div class="release-body">
+        <section class="change" data-kind="fix">
+          <h2>手機地圖改為地圖優先介面 <span class="new">LATEST</span></h2>
+          <p>比照福岡專案的手機體驗，把 <b>map.html 手機版</b>從半屏底部面板改成<b>地圖優先</b>：預設只顯示底部工具列，篩選與清單改成按需抽屜，點圖釘或清單卡片以底部詳情卡顯示內容，手機版隱藏 Leaflet popup 避免遮住地圖。行程模式新增浮動 D1–D9 日期列，並保留「地圖最大化」按鈕快速回到純地圖。同步修正手機 deep link <code>map.html?q=...</code> 會定位但看不到詳情的問題，並補上手機互動狀態的可及性標記。網站資源與離線快取更新為 v132。</p>
+          <div class="meta"><span class="kind">手機地圖 UX＋版本</span><span class="commit">目前工作區</span></div>
+        </section>
+      </div>
+    </article>
+
+    <article class="release" id="d0818a">
+      <div class="date"><time datetime="2026-08-18">08 / 18</time><span>版本 v131</span></div>
+      <div class="release-body">
+        <section class="change" data-kind="trip">
+          <h2>D3 新增「鵝嶺二廠文創公園」</h2>
+          <p>依使用者要求在 <b>D3（12/7 週一）</b>李子壩輕軌穿樓與觀音橋之間<b>加入「鵝嶺二廠文創公園」</b>（trip.js）。鵝嶺二廠就在李子壩上方，順路：行程改為李子壩看穿樓後<b>打車上山（或2號線一站至鵝嶺站）到鵝嶺二廠</b>約11:40抵達，逛民國印鈔廠改造的工業風文創園、上天台看兩江天際線與《從你的全世界路過》同款天橋，午餐可在園區咖啡輕食（Coffeeholic 二廠店）解決，約1.5-2小時後再搭2號線轉3號線往觀音橋。李子壩交通接續同步更新為上山往二廠。該地點卡原已存在 data.js（免費、渝中區鵝嶺正街1號），本次僅將其排入行程。網站資源與離線快取更新為 v131。</p>
+          <div class="meta"><span class="kind">D3 加點＋版本</span><span class="commit">目前工作區</span></div>
+        </section>
+      </div>
+    </article>
+
     <article class="release" id="d0817c">
-      <div class="date"><time datetime="2026-08-17">08 / 17</time><span>版本 v130・最新</span></div>
+      <div class="date"><time datetime="2026-08-17">08 / 17</time><span>版本 v130</span></div>
       <div class="release-body">
         <section class="change" data-kind="data">
-          <h2>兩江渡輪（朝天門過江）新增地點卡，修正地圖不顯示 <span class="new">LATEST</span></h2>
+          <h2>兩江渡輪（朝天門過江）新增地點卡，修正地圖不顯示</h2>
           <p>D2 去程新增的「兩江渡輪（朝天門過江）」原本只是 trip.js 的交通站（move），data.js 沒有對應地點卡，因此<b>地圖不顯示</b>（map 只畫 data.js 中有座標的地點）。本次<b>在 data.js 新增一筆「兩江渡輪（朝天門過江）」交通/景點卡</b>，名稱與 trip.js 站點完全一致，補上朝天門碼頭一帶概略座標（暫標 approximate 待高德POI核對）、班次與注意事項，讓它能在地圖顯示並可從行程點連結。網站資源與離線快取更新為 v130。</p>
           <div class="meta"><span class="kind">兩江渡輪上圖＋餐廳資料＋版本</span><span class="commit">目前工作區</span></div>
         </section>

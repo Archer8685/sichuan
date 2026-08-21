@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>成都・重慶 9天8夜 — 景點餐廳地圖</title>
-<link rel="preload" href="data.js?v=130" as="script">
-<link rel="preload" href="trip.js?v=130" as="script">
+<link rel="preload" href="data.js?v=132" as="script">
+<link rel="preload" href="trip.js?v=132" as="script">
 <link rel="prefetch" href="itinerary.html">
 <link rel="prefetch" href="prep.html">
 <link rel="prefetch" href="guide.html">
@@ -137,6 +137,7 @@ html,body{overscroll-behavior:none} /* 防止下拉手勢觸發瀏覽器 pull-to
 
 /* legend */
 .legend{position:absolute;bottom:18px;right:12px;z-index:900;background:rgba(255,255,255,.94);border:1px solid var(--line);border-radius:12px;padding:8px 12px;font-size:12px;line-height:1.9}
+#mobileToolbar,#mobileDetail,#mobileDayBar{display:none}
 
 /* ---------- mobile ---------- */
 @media (max-width:760px){
@@ -147,30 +148,58 @@ html,body{overscroll-behavior:none} /* 防止下拉手勢觸發瀏覽器 pull-to
   .navlinks{gap:5px}
   .navlinks a{min-height:32px;padding:0 8px;font-size:12px;border-radius:7px}
   #app{height:calc(100vh - 44px);height:calc(100dvh - 44px);position:relative;display:block}
-  /* 地圖固定滿版；面板改覆蓋式＋translateY 位移：拖曳純 GPU 合成、
-     地圖尺寸不變，不再需要逐幀 invalidateSize（卡頓主因） */
   #map{position:absolute;inset:0;height:100%}
-  #sidebar{position:absolute;left:0;right:0;bottom:0;width:100%;min-width:0;height:88%;
-    border-right:none;border-top:1px solid var(--line);border-radius:16px 16px 0 0;z-index:1001;
-    box-shadow:0 -4px 16px rgba(0,0,0,.14);flex:none;
-    transform:translateY(44%);transition:transform .28s cubic-bezier(.2,.7,.3,1);will-change:transform}
+  #sidebar{position:absolute;left:0;right:0;bottom:0;width:100%;min-width:0;height:min(88%,calc(100dvh - 52px));
+    border-right:none;border-top:1px solid var(--line);border-radius:18px 18px 0 0;z-index:1001;
+    box-shadow:0 -4px 18px rgba(0,0,0,.16);flex:none;background:rgba(255,255,255,.98);
+    transform:translateY(105%);transition:transform .24s cubic-bezier(.2,.7,.3,1);will-change:transform;padding-bottom:78px}
+  body.mui-list #sidebar{transform:translateY(12%)}
+  body.mui-filter #sidebar{transform:translateY(6%)}
+  body.mui-map #sidebar{transform:translateY(105%)}
   #sidebar.dragging{transition:none}
-  .sheet-handle{display:flex;justify-content:center;align-items:center;padding:9px 0 6px;cursor:grab;touch-action:none;flex-shrink:0}
+  .sheet-handle{display:flex;justify-content:center;align-items:center;padding:10px 0 7px;cursor:pointer;touch-action:none;flex-shrink:0}
   .sheet-handle span{width:44px;height:5px;border-radius:3px;background:#ddd4c6}
   header{padding:0 14px 6px}
   header h1{font-size:15.5px}
   header p{font-size:11px}
-  .city-tabs{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .city-tabs{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding-bottom:2px}
   .city-tabs::-webkit-scrollbar{display:none}
   .city-tab{padding:8px 10px;font-size:13.5px;flex:0 0 auto;min-width:64px}
-  .filter-row{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding-bottom:3px}
+  .filter-toggle{display:none}
+  body.mui-list .filters,body.mui-list #count{display:none}
+  body.mui-filter .filters,body.mui-filter .filters.collapsed{display:block}
+  body.mui-filter #list,body.mui-filter #count,body.mui-filter #offlineBtn{display:none}
+  body.mui-filter header p::after{content:'｜設定完按下方「地圖」回去'}
+  .filters{border-bottom:0;padding:10px 14px 18px;overflow-y:auto}
+  .filter-row{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding-bottom:5px;margin-bottom:10px}
   .filter-row::-webkit-scrollbar{display:none}
-  .chip{padding:7px 12px;font-size:13px;flex:0 0 auto;white-space:nowrap}
-  #search{font-size:16px;padding:10px 34px 10px 12px}   /* 避免 iOS 聚焦自動放大 */
+  .chip{padding:8px 13px;font-size:13px;flex:0 0 auto;white-space:nowrap}
+  #search{font-size:16px;padding:11px 34px 11px 12px}
+  #list{padding:4px 12px 96px}
+  #offlineBtn{margin-bottom:8px}
   .card{padding:12px 14px}
   .card h3{font-size:15px}
   .legend{display:none}
-  .leaflet-popup-content{min-width:190px;max-width:240px}
+  .leaflet-popup{display:none}
+  #mobileToolbar{position:fixed;left:10px;right:10px;bottom:calc(env(safe-area-inset-bottom,0px) + 10px);z-index:1102;
+    display:grid;grid-template-columns:1.4fr .95fr .95fr 44px;gap:7px;align-items:center;padding:8px;
+    background:rgba(255,255,255,.96);border:1px solid rgba(232,225,214,.95);border-radius:17px;box-shadow:0 8px 24px rgba(0,0,0,.18);backdrop-filter:blur(12px)}
+  #mobileToolbar button{height:42px;border:1px solid var(--line);border-radius:12px;background:#fff;color:var(--ink);font:700 12.5px inherit;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  #mobileToolbar button.active{background:var(--accent2);border-color:var(--accent2);color:#fff}
+  #mobileStatus{display:block;font-size:10px;font-weight:500;opacity:.78;line-height:1.1;margin-top:1px;overflow:hidden;text-overflow:ellipsis}
+  #mobileFilterBadge{display:inline-flex;align-items:center;justify-content:center;min-width:18px;height:18px;margin-left:3px;border-radius:9px;background:#e67e22;color:#fff;font-size:10px;vertical-align:middle}
+  #mobileFilterBadge:empty{display:none}
+  #mobileDetail{position:fixed;left:10px;right:10px;bottom:calc(env(safe-area-inset-bottom,0px) + 70px);z-index:1101;display:block;
+    max-height:min(42dvh,330px);overflow:auto;-webkit-overflow-scrolling:touch;background:#fff;border:1px solid var(--line);border-radius:18px;
+    box-shadow:0 10px 28px rgba(0,0,0,.2);padding:13px 14px 14px;transform:translateY(0);transition:.2s}
+  #mobileDetail[hidden]{display:none}
+  #mobileDetail .md-close{position:sticky;top:0;float:right;width:30px;height:30px;border:0;border-radius:50%;background:var(--chip);color:var(--muted);font-weight:900;z-index:2}
+  #mobileDetail .pp h3{padding-right:34px}
+  #mobileDayBar{position:fixed;left:8px;right:8px;top:52px;z-index:900;display:none;gap:5px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding:3px 0}
+  #mobileDayBar::-webkit-scrollbar{display:none}
+  body.trip-ui #mobileDayBar{display:flex}
+  #mobileDayBar .chip{background:rgba(255,255,255,.94);box-shadow:0 2px 8px rgba(0,0,0,.12);border-color:rgba(232,225,214,.95);font-size:12px;padding:7px 10px}
+  #mobileDayBar .chip.on{background:var(--accent);color:#fff}
 }
 </style>
 </head>
@@ -179,7 +208,7 @@ html,body{overscroll-behavior:none} /* 防止下拉手勢觸發瀏覽器 pull-to
 <nav class="topnav" aria-label="主要導覽">
   <div class="brand">
     <strong>Sichuan Trip</strong>
-    <span class="site-meta"><a data-site-meta href="changelog.html" aria-label="查看網站修改紀錄">2026/12/5–12/13 ｜ v130・更新 2026/08/17</a></span>
+    <span class="site-meta"><a data-site-meta href="changelog.html" aria-label="查看網站修改紀錄">2026/12/5–12/13 ｜ v132・更新 2026/08/21</a></span>
   </div>
   <div class="navlinks">
     <a href="prep.html">行前</a>
@@ -222,9 +251,17 @@ html,body{overscroll-behavior:none} /* 防止下拉手勢觸發瀏覽器 pull-to
   <div id="map"></div>
 </div>
 <div class="legend" id="legend"></div>
+<div id="mobileDayBar" aria-label="行程日期快速切換"></div>
+<div id="mobileToolbar" aria-label="手機地圖工具列">
+  <button type="button" id="mobileModeMap" class="active">🗺 地圖<span id="mobileStatus">地圖優先</span></button>
+  <button type="button" id="mobileModeFilter">⚙️ 篩選<span id="mobileFilterBadge"></span></button>
+  <button type="button" id="mobileModeList">📋 清單</button>
+  <button type="button" id="mobileMaxBtn" title="地圖最大化">⛶</button>
+</div>
+<div id="mobileDetail" hidden></div>
 
-<script src="data.js?v=130"></script>
-<script src="trip.js?v=130"></script>
+<script src="data.js?v=132"></script>
+<script src="trip.js?v=132"></script>
 <script>
 // 分類設定：顏色＋圖示
 const CATS={
@@ -326,18 +363,88 @@ document.getElementById('legend').innerHTML=
   Object.entries(CATS).filter(([k])=>!MEAL_CATS.has(k)).map(([k,v])=>`<div>${v.emoji} ${v.label}</div>`).join("")+
   `<div>🍽 早餐／午晚餐（非清真）</div><div style="color:${HALAL_COLOR}">${HALAL_EMOJI} 清真（深綠）</div><div style="color:${HALAL_FRIENDLY_COLOR}">${HALAL_EMOJI} 清真友善（淺綠）</div>`;
 
-// 手機覆蓋式面板會遮住地圖下半部：取景與聚焦都要補償露出高度
-function _sheetPx(){return (typeof window.sheetVisiblePx==='function')?window.sheetVisiblePx():0;}
+function _sheetPx(){return currentSheetObstruction();}
 function fitPad(){return {paddingTopLeft:[40,40],paddingBottomRight:[40,40+_sheetPx()]};}
 function focusOn(latlng,zoom){
   map.setView(latlng,zoom,{animate:false});
   const s=_sheetPx();
-  if(s>0)map.panBy([0,Math.round(s/2)],{animate:false}); // 讓目標落在可視區中央
+  if(s>0)map.panBy([0,Math.round(s/2)],{animate:false});
 }
 
 let state={city:"成都",cats:new Set(Object.keys(CATS)),cuisines:new Set(CUISINE_CATS),halalOnly:false,q:"",tripDay:1,tripPlan:"A",tripShowAll:true};
 let markers=[];
 let routeLine=null;
+const MOBILE_MQ=window.matchMedia('(max-width:760px)');
+let mobileMode='map';
+function isMobileUX(){return MOBILE_MQ.matches;}
+function _filterDelta(){
+  let n=0;
+  if(state.cats.size!==Object.keys(CATS).length)n++;
+  if(state.cats.has('早餐')||state.cats.has('甜点')||state.cats.has('饮料')||state.cats.has('午晚餐')){
+    if(state.cuisines.size!==CUISINE_CATS.length)n++;
+  }
+  if(state.halalOnly)n++;
+  if(state.q)n++;
+  return n;
+}
+function syncMobileHud(){
+  document.body.classList.toggle('trip-ui',isMobileUX()&&state.city==='__trip');
+  const st=document.getElementById('mobileStatus');
+  const ct=document.getElementById('count');
+  if(st&&ct)st.textContent=ct.textContent.replace(/^顯示 /,'').replace(/（/,'｜').replace(/）/,'').slice(0,24);
+  const b=document.getElementById('mobileFilterBadge');
+  if(b){const n=_filterDelta();b.textContent=n?String(n):'';}
+  [['mobileModeMap','map'],['mobileModeFilter','filter'],['mobileModeList','list']].forEach(([id,m])=>{
+    const el=document.getElementById(id); if(el){el.classList.toggle('active',mobileMode===m);el.setAttribute('aria-pressed',String(mobileMode===m));}
+  });
+}
+function setMobileMode(m){
+  mobileMode=m||'map';
+  document.body.classList.toggle('mui-map',isMobileUX()&&mobileMode==='map');
+  document.body.classList.toggle('mui-filter',isMobileUX()&&mobileMode==='filter');
+  document.body.classList.toggle('mui-list',isMobileUX()&&mobileMode==='list');
+  if(mobileMode!=='map')hideMobileDetail();
+  syncMobileHud();
+  setTimeout(()=>{try{map.invalidateSize();}catch(e){}},260);
+}
+function mobileMaximize(){hideMobileDetail();map.closePopup();setMobileMode('map');}
+function hideMobileDetail(){const d=document.getElementById('mobileDetail');if(d)d.hidden=true;}
+function showMobileDetail(p,lead){
+  if(!isMobileUX()||!p)return;
+  const d=document.getElementById('mobileDetail');
+  if(!d)return;
+  d.innerHTML='<button class="md-close" type="button" aria-label="關閉">✕</button>'+(lead?`<div class="sub" style="font-size:12px;color:var(--muted);margin:2px 34px 6px 0">${lead}</div>`:'')+popupHtml(p);
+  d.querySelector('.md-close').onclick=hideMobileDetail;
+  d.hidden=false;
+  setMobileMode('map');
+}
+function attachMobileMarker(mk,p,lead){
+  mk.on('click',()=>{if(isMobileUX()){setTimeout(()=>map.closePopup(),0);showMobileDetail(p,lead);}});
+  return mk;
+}
+function syncMobileDayBar(day){
+  const bar=document.getElementById('mobileDayBar'); if(!bar)return;
+  if(state.city!=='__trip'){bar.innerHTML='';syncMobileHud();return;}
+  bar.innerHTML=TRIP.map(dd=>`<span class="chip${dd.d===day.d?' on':''}" data-d="${dd.d}">D${dd.d} ${dd.date}</span>`).join('');
+  bar.querySelectorAll('.chip').forEach(c=>c.onclick=()=>{state.tripDay=Number(c.dataset.d);state.tripPlan='A';renderTrip();});
+  syncMobileHud();
+}
+function initMobileControls(){
+  const by=id=>document.getElementById(id);
+  if(by('mobileModeMap'))by('mobileModeMap').onclick=()=>setMobileMode('map');
+  if(by('mobileModeFilter'))by('mobileModeFilter').onclick=()=>setMobileMode('filter');
+  if(by('mobileModeList'))by('mobileModeList').onclick=()=>setMobileMode('list');
+  if(by('mobileMaxBtn'))by('mobileMaxBtn').onclick=mobileMaximize;
+  const h=by('sheetHandle'); if(h){h.setAttribute('aria-label','點擊切換地圖與清單');h.onclick=()=>setMobileMode(mobileMode==='map'?'list':'map');}
+  map.on('click',()=>{if(isMobileUX())hideMobileDetail();});
+}
+function currentSheetObstruction(){
+  if(!isMobileUX())return 0;
+  if(mobileMode==='list')return Math.round(window.innerHeight*.76);
+  if(mobileMode==='filter')return Math.round(window.innerHeight*.82);
+  const d=document.getElementById('mobileDetail');
+  return (d&&!d.hidden)?(d.offsetHeight+76):86;
+}
 
 function catOf(p){return p.type||p.category;}
 function isHalalish(p){return p.halal===true||p.halal==="友善"||p.halal==="true";}
@@ -483,8 +590,13 @@ function buildList(items){
       <div class="meta">${p.rating?"⭐ "+p.rating+"｜":""}${p.area||""}${p.brand?"｜"+p.brand:""}${p.hours?"｜"+p.hours:""}${p.price?"｜"+p.price:""}${p.ticket?"｜門票 "+p.ticket:""}</div>
       ${(p.dishes||p.activities)?`<div class="dishes">${(p.dishes||p.activities).slice(0,4).join("、")}</div>`:""}`;
     card.onclick=()=>{
-      if(p.lat&&p.lng){focusOn([p.lat,p.lng],15);
-        const mk=markers.find(m=>m._pid===p._id);if(mk)mk.openPopup();}
+      if(p.lat&&p.lng){
+        const mk=markers.find(m=>m._pid===p._id);
+        if(isMobileUX()){
+          setMobileMode('map');
+          requestAnimationFrame(()=>{focusOn([p.lat,p.lng],15);showMobileDetail(p);});
+        }else{focusOn([p.lat,p.lng],15);if(mk)mk.openPopup();}
+      }
     };
     if(p.lat&&p.lng){
       card.onmouseenter=()=>{card.classList.add('active');highlightMarker(p._id,true);};
@@ -506,10 +618,13 @@ function render(){
       const z=matchesSearch(p)?100:0;
       const mk=L.marker([p.lat,p.lng],{icon:makeIcon(cat,p,!!state.q&&!matchesSearch(p)),zIndexOffset:z})
         .addTo(map).bindPopup(popupHtml(p),{maxWidth:popW});
+      attachMobileMarker(mk,p);
       mk._pid=p._id;mk._z=z;markers.push(mk);
     }
   });
   buildList(sortByCenter(items));
+  syncMobileDayBar({d:0});
+  syncMobileHud();
 }
 // 平移／縮放結束後，清單依新的地圖中心重新由近到遠排序（僅地點模式，行程模式不動）
 map.on('moveend',()=>{
@@ -540,9 +655,10 @@ function focusTripPlace(name){
     const cat=catOf(p);
     mk=L.marker([p.lat,p.lng],{icon:makeIcon(cat,p,false),zIndexOffset:1200})
       .addTo(map).bindPopup(popupHtml(p),{maxWidth:Math.min(300,window.innerWidth-90)});
+    attachMobileMarker(mk,p);
     mk._pid=p._id;markers.push(mk);
   }
-  mk.openPopup();
+  if(isMobileUX())showMobileDetail(p);else mk.openPopup();
 }
 document.getElementById('list').addEventListener('click',e=>{
   const link=e.target.closest('a[data-focus-place]');
@@ -614,6 +730,7 @@ function renderTrip(keepView){
         html:`<div class="pin" style="background:${cfg.color};transform:rotate(-45deg) scale(.72);opacity:${searchMatch?'.62':'.16'}"><span>${cfg.emoji}</span></div>`,
         iconSize:[30,30],iconAnchor:[15,30],popupAnchor:[0,-26]}),zIndexOffset:0})
         .addTo(map).bindPopup(popupHtml(p),{maxWidth:Math.min(300,window.innerWidth-90)});
+      attachMobileMarker(mk,p);
       mk._pid=p._id;markers.push(mk);bgCount++;
     });
   }
@@ -626,9 +743,11 @@ function renderTrip(keepView){
     const p=findPlace(s.name);
     if(p&&p.lat&&p.lng){
       pts.push([p.lat,p.lng]);
+      const lead=`${s.t}｜${s.label||''}`;
       const mk=L.marker([p.lat,p.lng],{icon:numIcon(i+1,s.kind),zIndexOffset:1000+i})
         .addTo(map)
-        .bindPopup(`<div class="pp"><div class="sub" style="margin-bottom:4px">${s.t}｜${s.label}</div>`+popupHtml(p).replace('<div class="pp">','')+`</div>`,{maxWidth:Math.min(300,window.innerWidth-90)});
+        .bindPopup(`<div class="pp"><div class="sub" style="margin-bottom:4px">${lead}</div>`+popupHtml(p).replace('<div class="pp">','')+`</div>`,{maxWidth:Math.min(300,window.innerWidth-90)});
+      attachMobileMarker(mk,p,lead);
       mk._stopIdx=i;markers.push(mk);
     }
     const card=document.createElement('div');card.className='card';
@@ -644,7 +763,12 @@ function renderTrip(keepView){
       ${(s.go&&i<activeStops.length-1)?`<div class="meta" style="margin-top:4px;color:#4a6b8a">↓ ${s.go}</div>`:""}`;
     card.onclick=()=>{
       const mk=markers.find(m=>m._stopIdx===i);
-      if(mk){focusOn(mk.getLatLng(),15);mk.openPopup();}
+      if(mk){
+        if(isMobileUX()){
+          setMobileMode('map');
+          requestAnimationFrame(()=>{focusOn(mk.getLatLng(),15);if(p)showMobileDetail(p,`${s.t}｜${s.label||''}`);});
+        }else{focusOn(mk.getLatLng(),15);mk.openPopup();}
+      }
     };
     list.appendChild(card);
   });
@@ -652,13 +776,15 @@ function renderTrip(keepView){
     routeLine=L.polyline(pts,{color:'#c0392b',weight:3,opacity:.75,dashArray:'8 6'}).addTo(map);
     if(!keepView)map.fitBounds(routeLine.getBounds(),fitPad());
   }else if(pts.length===1&&!keepView){focusOn(pts[0],13);}
+  syncMobileDayBar(day);
+  syncMobileHud();
 }
 
 document.querySelectorAll('.city-tab').forEach(t=>t.onclick=()=>{
   document.querySelectorAll('.city-tab').forEach(x=>x.classList.remove('active'));
   t.classList.add('active');state.city=t.dataset.city;
-  if(state.city==="__trip"){renderTrip();return;}
-  map.setView(CITY_CENTER[state.city],12);render();
+  if(state.city==="__trip"){setMobileMode('map');renderTrip();return;}
+  setMobileMode('map');map.setView(CITY_CENTER[state.city],12);render();
 });
 document.getElementById('filterToggle').onclick=e=>{
   const filters=document.getElementById('filters');
@@ -669,6 +795,7 @@ document.getElementById('filterToggle').onclick=e=>{
 function rerender(){
   if(state.city==="__trip")renderTrip(true);// 篩選變動不重置視角
   else render();
+  syncMobileHud();
 }
 document.getElementById('halalOnly').onclick=e=>{
   e.target.classList.toggle('on');state.halalOnly=e.target.classList.contains('on');
@@ -711,6 +838,8 @@ document.getElementById('clearBtn').onclick=()=>{
 
 PLACES.forEach((p,i)=>{p._id=i;if(FOOD_CATS.has(p.category))p._cuisineCat=classifyCuisine(p);});
 document.getElementById('subtitle').textContent=`12/5–12/13 ｜ ${PLACES.length} 個地點`;
+initMobileControls();
+setMobileMode('map');
 
 // 支援 map.html?q=地點名稱（行程頁連結跳轉用）：只定位並開啟資訊，不啟動搜尋篩選
 const _urlQ=new URLSearchParams(location.search).get('q');
@@ -723,7 +852,8 @@ if(hitPlace){
 render();
 if(_urlQ&&hitPlace){
   const hitMarker=markers.find(m=>m._pid===hitPlace._id);
-  if(hitMarker)hitMarker.openPopup();
+  if(isMobileUX())showMobileDetail(hitPlace);
+  else if(hitMarker)hitMarker.openPopup();
 }
 
 // ---------- 📡 定位：顯示目前位置 ----------
@@ -812,103 +942,20 @@ document.addEventListener('click',e=>{
 // 從 bfcache（上一頁）還原時，把載入遮罩收掉，避免卡在「讀取中」
 window.addEventListener('pageshow',e=>{if(e.persisted)document.getElementById('pgload').classList.add('done');});
 
-// ---------- 手機底部面板：覆蓋式 bottom sheet（translateY 位移） ----------
-// 效能設計：面板固定渲染在 88% 高、用 transform:translateY 露出不同比例。
-// 拖曳＝純 GPU 合成（零重排）；地圖滿版尺寸固定，完全不需 invalidateSize。
-// 高度計算用 window.innerHeight＋常數（不依賴 dvh/getBoundingClientRect，
-// 背景分頁下才可靠）。
+// ---------- 手機地圖優先面板 ----------
 (function(){
-  const sidebar=document.getElementById('sidebar');
-  const handle=document.getElementById('sheetHandle');
-  const TOPNAV_H=44; // 與手機版 .topnav 高度一致
   const isMobile=()=>window.matchMedia('(max-width:760px)').matches;
-  const PEEK=132; // 收合時露出：把手＋標題＋城市頁籤
-  let mode='half'; // 'peek' | 'half' | 'full'
-  let curShown=0;  // 目前露出的像素（供 fitBounds 底部留白）
-  function appH(){return Math.max(320,window.innerHeight-TOPNAV_H);}
-  function sheetH(){return Math.round(appH()*0.88);}
-  function shownFor(m){
-    if(m==='peek')return PEEK;
-    if(m==='full')return sheetH();
-    return Math.round(appH()*0.44);
-  }
-  function setShown(px,animate){
-    curShown=px;
-    sidebar.classList.toggle('dragging',!animate);
-    sidebar.style.transform=`translateY(${sheetH()-px}px)`;
-  }
-  window.sheetVisiblePx=()=>isMobile()?curShown:0; // 給 fitBounds 用
-  function applyMode(m,animate){mode=m;setShown(shownFor(m),animate);}
-  function setInitial(){
-    if(window.innerWidth<10)return; // 分頁在背景時 innerWidth 可能為 0，跳過以免誤判裝置
-    if(!isMobile()){sidebar.style.transform='';sidebar.style.height='';curShown=0;return;}
-    sidebar.style.height=sheetH()+'px';
-    applyMode('half',false);
-    try{map.invalidateSize();}catch(e){} // 佈局初始化時做一次即可
-  }
-  setInitial();
-  requestAnimationFrame(setInitial); // 首幀後再校正一次（載入瞬間尺寸未定時）
-  window.addEventListener('resize',setInitial);
-  window.addEventListener('orientationchange',setInitial);
-
-  // ── 手勢：整個面板皆可拖（Google Maps 式）──
-  // 規則：把手＝無條件拖面板；面板其他區域＝智慧判斷——
-  //   往下滑且清單已在頂部 → 拖面板（收合）
-  //   往上滑且面板未全開   → 拖面板（展開）；全開後上滑交還給清單捲動
-  // 判定前 8px 為緩衝（不干擾點擊）；水平為主的滑動不接管（保留篩選列橫滑）。
-  const listEl=document.getElementById('list');
-  let drag=null; // {startY,startX,startShown,taking,decided,fromHandle,moved,startT}
-  function snap(){
-    const cands={peek:shownFor('peek'),half:shownFor('half'),full:shownFor('full')};
-    let best='half',bestD=Infinity;
-    Object.entries(cands).forEach(([k,v])=>{const d=Math.abs(curShown-v);if(d<bestD){bestD=d;best=k;}});
-    applyMode(best,true);
-  }
-  function gStart(y,x,fromHandle){
-    if(!isMobile())return;
-    drag={startY:y,startX:x,startShown:curShown||shownFor(mode),
-          taking:fromHandle,decided:fromHandle,fromHandle,moved:0,startT:Date.now()};
-    if(fromHandle)sidebar.classList.add('dragging');
-  }
-  function gMove(y,x,e){
-    if(!drag)return;
-    const dy=drag.startY-y; // 正值＝往上
-    const dx=Math.abs(drag.startX-x);
-    drag.moved=Math.max(drag.moved,Math.abs(dy));
-    if(!drag.decided){
-      if(Math.abs(dy)<8&&dx<8)return;           // 緩衝區
-      if(dx>Math.abs(dy)){drag=null;return;}    // 橫向為主 → 交給橫滑列
-      const atFull=curShown>=sheetH()-4;
-      drag.taking = dy<0 ? (listEl.scrollTop<=0)   // 下滑：清單在頂才接管
-                         : !atFull;                 // 上滑：未全開才接管
-      drag.decided=true;
-      if(!drag.taking){drag=null;return;}          // 交還原生捲動
-      sidebar.classList.add('dragging');
-    }
-    if(drag.taking){
-      if(e&&e.cancelable)e.preventDefault();       // 阻止清單捲動/瀏覽器手勢搶走
-      setShown(Math.min(sheetH(),Math.max(PEEK,drag.startShown+dy)),false);
+  function sync(){
+    if(isMobile())setMobileMode(mobileMode||'map');
+    else{
+      document.body.classList.remove('mui-map','mui-list','mui-filter','trip-ui');
+      hideMobileDetail();
+      try{map.invalidateSize();}catch(e){}
     }
   }
-  function gEnd(){
-    if(!drag)return;
-    const d=drag;drag=null;
-    sidebar.classList.remove('dragging');
-    if(!d.taking)return;
-    const isTap=d.fromHandle&&d.moved<6&&(Date.now()-d.startT)<300;
-    if(isTap){applyMode(mode==='peek'?'half':'peek',true);return;}
-    snap();
-  }
-  sidebar.addEventListener('touchstart',e=>{
-    if(e.target.closest('input'))return;           // 搜尋框不攔
-    gStart(e.touches[0].clientY,e.touches[0].clientX,!!e.target.closest('.sheet-handle'));
-  },{passive:true});
-  sidebar.addEventListener('touchmove',e=>gMove(e.touches[0].clientY,e.touches[0].clientX,e),{passive:false});
-  sidebar.addEventListener('touchend',gEnd);
-  sidebar.addEventListener('touchcancel',gEnd);    // 瀏覽器手勢中斷也要收尾，否則卡死
-  handle.addEventListener('mousedown',e=>{gStart(e.clientY,e.clientX,true);e.preventDefault();});
-  window.addEventListener('mousemove',e=>gMove(e.clientY,e.clientX,e));
-  window.addEventListener('mouseup',gEnd);
+  sync();
+  window.addEventListener('resize',sync);
+  window.addEventListener('orientationchange',sync);
 })();
 </script>
 <script>
@@ -918,7 +965,7 @@ window.addEventListener('pageshow',e=>{if(e.persisted)document.getElementById('p
     window.addEventListener('load',function(){
       navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){
         if(!('caches' in window))return;
-        caches.open('sichuan-app-v130').then(function(c){
+        caches.open('sichuan-app-v132').then(function(c){
           document.querySelectorAll('script[src],link[href]').forEach(function(el){
             var u=el.src||el.href; if(!u||u.indexOf(location.origin)!==0)return;
             c.match(u).then(function(hit){ if(!hit) fetch(u).catch(function(){}); });
