@@ -31,23 +31,28 @@ compact_list.txt  rest_names.txt  中間產物（可不上傳）
 
 其餘（Leaflet、字型、資料）皆已本地化，離線也能開啟版面。
 
-## 快取提醒
+## 版號與快取
 
-`map.html`／`itinerary.html` 以 `data.js?v=N`／`trip.js?v=N` 帶版本號載入，是為了避免瀏覽器快取舊檔案。
-每次修改 `data.js` 或 `trip.js` 內容後，記得把兩個 HTML 檔裡對應的 `?v=N` 數字 +1，
-否則使用者（含 GitHub Pages CDN）可能繼續看到舊版本。
+`map.html`／`itinerary.html` 等頁面以 `data.js?v=N`／`trip.js?v=N` 載入以避開瀏覽器快取，
+Service Worker（`sw.js`）的 `APP_CACHE = 'sichuan-app-vN'` 則決定 PWA 殼層是否重新預快取。
+兩者**必須同號**——只改 `?v=N` 沒改 `APP_CACHE`，加到主畫面的使用者會一直看到舊版。
 
-⚠️ **重要：改版號時，Service Worker 快取名也必須同步更新，否則 PWA 會一直吃舊殼層。**
-本站有 Service Worker（`sw.js`）做離線快取，快取版本名散落在 5 個位置，**必須全部一起改成同一個 vN**：
+版號共有三種寫法、散在 7 個檔 23 處，**一律用腳本改，不要手改**：
 
-1. `sw.js` 的 `const APP_CACHE = 'sichuan-app-vN'`（決定 SW 是否重新安裝、清舊快取）
-2. `guide.html`／`itinerary.html`／`map.html`／`prep.html` 各自底部 warm-up 腳本裡的 `caches.open('sichuan-app-vN')`
-
-若只改了 HTML 的 `?v=N` 卻沒改 `sw.js` 的 `APP_CACHE`，Service Worker 不會偵測到更新、不會重新預快取殼層，
-使用者（尤其已把網站加到主畫面的 PWA）會持續看到舊版 HTML／JS。**版號一律五處同步 +1。**
-
+```bash
+python bump_version.py          # 全部 +1，並更新 SITE_UPDATED_AT
+python bump_version.py --check  # 只檢查一致性
+```
 
 ## 更新資料
 
-修改或新增 `data/*.json` 後執行 `python build_data.py`（需 `pip install zhconv`），
-會重新產生 `data.js`（含去重、評分合併、繁→簡搜尋對照表）。
+修改或新增 `data/*.json` 後，跑完整串：
+
+```bash
+python build_data.py    # data/*.json → data.js（去重、評分合併、簡→繁、搜尋對照表）
+python check_all.py     # 全域健檢：資料／座標／版號／行程邏輯／營業時間／跨檔殘留
+python bump_version.py  # 同步 23 處版號
+```
+
+需 `pip install zhconv`。`check_all.py` 有問題會回傳 1，可直接掛 CI 或 commit hook；
+它檢查什麼、以及各項為何存在，見 [`AGENTS.md`](AGENTS.md)。
