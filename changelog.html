@@ -124,10 +124,10 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
     <div class="eyebrow">Website field notes</div>
     <h1>一路修到更順。<span>網頁修改紀錄</span></h1>
     <p class="lead">把網站功能、行程調整與資料校正整理成可讀的版本誌。內容依 Git commit 與現有頁面交叉核對；相近的小修改合併描述，保留 commit 編號供回查。</p>
-    <p class="source-note">資料截點：2026/08/21（UTC+8）・<a href="https://github.com/Archer8685/sichuan/commits" target="_blank" rel="noopener">查看完整 Git 歷史 ↗</a></p>
+    <p class="source-note">資料截點：2026/11/06（UTC+8）・<a href="https://github.com/Archer8685/sichuan/commits" target="_blank" rel="noopener">查看完整 Git 歷史 ↗</a></p>
     <aside class="ticket" aria-label="版本資訊">
       <small>CHANGE LOG</small>
-      <strong>v132</strong>
+      <strong>v136</strong>
       <div class="route">CKG 重慶<br>↓ 9 DAYS<br>CTU 成都</div>
     </aside>
   </header>
@@ -139,7 +139,9 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
   </section>
 
   <nav class="jump" aria-label="依日期跳轉">
-    <a href="#d0821">08/21 最新</a>
+    <a href="#d1106">11/06 最新</a>
+    <a href="#d0823">08/23 桌機地圖</a>
+    <a href="#d0821">08/21 手機地圖</a>
     <a href="#d0818a">08/18 D3鵝嶺二廠</a>
     <a href="#d0817c">08/17 渡輪上圖</a>
     <a href="#d0817b">08/17 D8海鮮自助</a>
@@ -171,11 +173,38 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
   </nav>
 
   <section class="timeline" aria-label="修改時間軸">
-    <article class="release" id="d0821">
-      <div class="date"><time datetime="2026-08-21">08 / 21</time><span>版本 v132・最新</span></div>
+    <article class="release" id="d1106">
+      <div class="date"><time datetime="2026-11-06">11 / 06</time><span>版本 v136・最新</span></div>
+      <div class="release-body">
+        <section class="change" data-kind="trip">
+          <h2>文殊院移到 D8 早上、海宴尚辰改為晚餐 <span class="new">LATEST</span></h2>
+          <p><b>D7（12/11 週五）</b>：蜀宴賦需 <b>11:00 到場化妝</b>（12:00 驗券、12:30 開席），原本早上的文殊院排不下，因此上午不排行程，前一天包車晚歸可以睡飽，10:35 由酒店打車直達東郊記憶南大門。<b>D8（12/12 週六）</b>改為 08:50 出門 → 文殊院 → 寺內香園素齋輕食午餐 → IFS／太古里 → 回酒店休息 → <b>17:30 海宴尚辰晚市</b>（美團晚市 ¥865/人）→ 回春熙路看太古里點燈夜景並整理行李。往返仁和新城的地鐵說明改為在天府廣場轉乘 1／2 號線；prep.html 訂位提醒同步改為「註明晚市」並補上蜀宴賦化妝時間。網站資源與離線快取更新為 v136。</p>
+          <div class="meta"><span class="kind">D7／D8 行程調整＋版本</span><span class="commit">23ab2d8</span></div>
+        </section>
+      </div>
+    </article>
+
+    <article class="release" id="d0823">
+      <div class="date"><time datetime="2026-08-23">08 / 23</time><span>版本 v135</span></div>
       <div class="release-body">
         <section class="change" data-kind="fix">
-          <h2>手機地圖改為地圖優先介面 <span class="new">LATEST</span></h2>
+          <h2>桌機地圖改為三欄工作區，重疊圖釘自動散開</h2>
+          <p><b>map.html 桌機版</b>改為三欄：左側 D1–D9 日期欄、中間當日流程欄（今日摘要＋可展開看營業時間、票價與備選的行程卡）、右側地圖。距離太近的行程圖釘會自動排成環狀散開，並以虛線連回真實位置；點行程卡定位一律用真實座標。切換日期時自動取景，圖例改為右下可收合按鈕，搜尋框不再被分類標籤擠出畫面；手機版維持原本的地圖優先設計。</p>
+          <div class="meta"><span class="kind">桌機地圖 UX</span><span class="commit">8500efa</span></div>
+        </section>
+        <section class="change" data-kind="prep">
+          <h2>行程文案只寫現況，加上全域健檢</h2>
+          <p>行程與行前清單的備註清掉修改歷程的寫法，只描述出發當天要用的內容；prep.html 同步 D4 早班高鐵與 D8 海宴尚辰訂位，並移除已不在行程內的兩江夜遊、杜甫草堂提醒。另外新增離線健檢與版號同步工具，之後每次調整行程都會自動檢查站點、營業時間、停留時間與各頁殘留。網站資源與離線快取更新為 v135。</p>
+          <div class="meta"><span class="kind">文案＋健檢＋版本</span><span class="commit">8500efa</span></div>
+        </section>
+      </div>
+    </article>
+
+    <article class="release" id="d0821">
+      <div class="date"><time datetime="2026-08-21">08 / 21</time><span>版本 v132</span></div>
+      <div class="release-body">
+        <section class="change" data-kind="fix">
+          <h2>手機地圖改為地圖優先介面</h2>
           <p>比照福岡專案的手機體驗，把 <b>map.html 手機版</b>從半屏底部面板改成<b>地圖優先</b>：預設只顯示底部工具列，篩選與清單改成按需抽屜，點圖釘或清單卡片以底部詳情卡顯示內容，手機版隱藏 Leaflet popup 避免遮住地圖。行程模式新增浮動 D1–D9 日期列，並保留「地圖最大化」按鈕快速回到純地圖。同步修正手機 deep link <code>map.html?q=...</code> 會定位但看不到詳情的問題，並補上手機互動狀態的可及性標記。網站資源與離線快取更新為 v132。</p>
           <div class="meta"><span class="kind">手機地圖 UX＋版本</span><span class="commit">目前工作區</span></div>
         </section>
