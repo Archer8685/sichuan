@@ -124,10 +124,10 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
     <div class="eyebrow">Website field notes</div>
     <h1>一路修到更順。<span>網頁修改紀錄</span></h1>
     <p class="lead">把網站功能、行程調整與資料校正整理成可讀的版本誌。內容依 Git commit 與現有頁面交叉核對；相近的小修改合併描述，保留 commit 編號供回查。</p>
-    <p class="source-note">資料截點：2026/11/06（UTC+8）・<a href="https://github.com/Archer8685/sichuan/commits" target="_blank" rel="noopener">查看完整 Git 歷史 ↗</a></p>
+    <p class="source-note">資料截點：2026/11/08（UTC+8）・<a href="https://github.com/Archer8685/sichuan/commits" target="_blank" rel="noopener">查看完整 Git 歷史 ↗</a></p>
     <aside class="ticket" aria-label="版本資訊">
       <small>CHANGE LOG</small>
-      <strong>v136</strong>
+      <strong>v138</strong>
       <div class="route">CKG 重慶<br>↓ 9 DAYS<br>CTU 成都</div>
     </aside>
   </header>
@@ -139,7 +139,8 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
   </section>
 
   <nav class="jump" aria-label="依日期跳轉">
-    <a href="#d1106">11/06 最新</a>
+    <a href="#d1108">11/08 最新</a>
+    <a href="#d1106">11/06 D7/D8調整</a>
     <a href="#d0823">08/23 桌機地圖</a>
     <a href="#d0821">08/21 手機地圖</a>
     <a href="#d0818a">08/18 D3鵝嶺二廠</a>
@@ -173,11 +174,22 @@ summary{color:var(--teal);font-size:12px;font-weight:800;cursor:pointer}
   </nav>
 
   <section class="timeline" aria-label="修改時間軸">
-    <article class="release" id="d1106">
-      <div class="date"><time datetime="2026-11-06">11 / 06</time><span>版本 v136・最新</span></div>
+    <article class="release" id="d1108">
+      <div class="date"><time datetime="2026-11-08">11 / 08</time><span>版本 v138・最新</span></div>
       <div class="release-body">
         <section class="change" data-kind="trip">
-          <h2>文殊院移到 D8 早上、海宴尚辰改為晚餐 <span class="new">LATEST</span></h2>
+          <h2>D8 加入淺深泡湯、準備頁標記台胞證與 APP 實名完成 <span class="new">LATEST</span></h2>
+          <p><b>D8（12/12 週六）</b>：太古里逛到約 14:30，直接打車往高新區 <b>淺深（成都店）</b>泡湯約 2 小時（大眾點評 4.5 分、8197 則，24 小時營業），17:10 再打車到仁和新城吃 <b>17:30 海宴尚辰晚市</b>；不再回酒店休息。淺深座標以高德 POI 核對（B0KRBZRC3X），車程未查證、出發前以高德確認。準備頁「現在～11月初」一列標記台胞證與支付寶／微信／12306 實名已完成（v137）。網站資源與離線快取更新為 v138。</p>
+          <div class="meta"><span class="kind">D8 行程調整＋準備頁＋版本</span><span class="commit">733a1a0</span></div>
+        </section>
+      </div>
+    </article>
+
+    <article class="release" id="d1106">
+      <div class="date"><time datetime="2026-11-06">11 / 06</time><span>版本 v136</span></div>
+      <div class="release-body">
+        <section class="change" data-kind="trip">
+          <h2>文殊院移到 D8 早上、海宴尚辰改為晚餐</h2>
           <p><b>D7（12/11 週五）</b>：蜀宴賦需 <b>11:00 到場化妝</b>（12:00 驗券、12:30 開席），原本早上的文殊院排不下，因此上午不排行程，前一天包車晚歸可以睡飽，10:35 由酒店打車直達東郊記憶南大門。<b>D8（12/12 週六）</b>改為 08:50 出門 → 文殊院 → 寺內香園素齋輕食午餐 → IFS／太古里 → 回酒店休息 → <b>17:30 海宴尚辰晚市</b>（美團晚市 ¥865/人）→ 回春熙路看太古里點燈夜景並整理行李。往返仁和新城的地鐵說明改為在天府廣場轉乘 1／2 號線；prep.html 訂位提醒同步改為「註明晚市」並補上蜀宴賦化妝時間。網站資源與離線快取更新為 v136。</p>
           <div class="meta"><span class="kind">D7／D8 行程調整＋版本</span><span class="commit">23ab2d8</span></div>
         </section>
