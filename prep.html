@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>行前準備 — 成都・重慶 12/5–12/13</title>
-<link rel="preload" href="trip.js?v=142" as="script">
+<link rel="preload" href="trip.js?v=143" as="script">
 <link rel="prefetch" href="itinerary.html">
 <link rel="prefetch" href="map.html">
-<link rel="prefetch" href="data.js?v=142">
+<link rel="prefetch" href="data.js?v=143">
 <link rel="prefetch" href="guide.html">
 <link rel="prefetch" href="changelog.html">
 <style>
@@ -111,7 +111,7 @@ section li{margin:3px 0}
 <tr><td><b>11/24（二）11:00</b></td><td>🔥 <b>12306 開搶 12/8 約 10:00 成渝高鐵票</b>（預售 15 天含乘車日；重慶北站每日 11:00 起售，以 12306 公告為準）</td></tr>
 <tr><td><b>12/1 前後</b></td><td>訂蜀宴賦 12/11 午宴（提前 7 天內最穩）</td></tr>
 <tr><td><b>12/2–12/4</b></td><td>長江索道（D2 夜間場次）——官方公眾號／小程序購票取號；再次確認 D6 包車接送、熊貓谷（官方線上實名購票）與都江堰首來族門票處理；海宴尚辰 12/12 晚市提前 1–2 天訂位｜查成渝天氣打包行李</td></tr>
-<tr><td><b>12/5 出發日</b></td><td>台胞證＋護照隨身｜人民幣現金｜行動電源放隨身包（≤20000mAh）｜到重慶 T3 先買軌道 3 日票</td></tr>
+<tr><td><b>12/5 出發日</b></td><td>台胞證＋護照隨身｜行動電源放隨身包（≤20000mAh）｜到重慶 T3 先買軌道 3 日票</td></tr>
 </table>
 </section>
 
@@ -187,7 +187,6 @@ section li{margin:3px 0}
 <h2>💳 支付</h2>
 <ul>
 <li><b>主力：支付寶掃碼</b>（綁台灣信用卡）：單筆 ≤200 元人民幣免手續費、超過收約 3%——大部分餐廳門票單筆都在 200 內，幾乎無感。微信支付當備援（少數店只收微信）。</li>
-<li><b>現金 ¥500–1000</b>：老攤（范嬢嬢糯米糰、蛋烘糕）、夜市小攤偶爾只收現金或掃不了境外卡。台灣銀行換匯或桃機換少量即可，剩的回程機場花掉。</li>
 <li>信用卡實體卡基本刷不了（外卡機具少），別指望；酒店押金可用信用卡預授權。</li>
 <li>選一張<b>海外回饋高、免國外手續費</b>的卡綁支付寶，回饋可抵掉 3% 手續費。</li>
 </ul>
@@ -245,13 +244,13 @@ section li{margin:3px 0}
 <li><b>回程伴手禮</b>：肉類製品（滷牛肉、麻花含肉餡）<b>不可帶回台灣</b>（非洲豬瘟裁罰重）——陳昌銀麻花選無肉口味、茶葉糕點類安心買。</li>
 <li><b>天氣查詢</b>：出發前 3 天看「成都/重慶 15 天預報」，若 12/6 重慶大霧預報明顯，D2 南山夜景改用 WFC 會仙樓室內觀景台備案。</li>
 <li><b>禮拜時段</b>：週五主麻日（12/11）清真寺周邊餐廳中午人多，錯峰即可。</li>
-<li><b>電子支付失靈備案</b>：任何掃碼刷不過就換微信→現金→請店家掃你（被掃改主掃）三連招。</li>
+<li><b>電子支付失靈備案</b>：任何掃碼刷不過就換微信→請店家掃你（被掃改主掃）三連招。</li>
 <li>把本站三個頁面（行前/行程/地圖）加到手機主畫面，離線也能查大部分內容。</li>
 </ul>
 </section>
 
 </div>
-<script src="trip.js?v=142"></script>
+<script src="trip.js?v=143"></script>
 <script>
 // 載入層：渲染完成即淡出；點站內連結立刻重新顯示
 document.getElementById('pgload').classList.add('done');
@@ -262,6 +261,6 @@ document.addEventListener('click',e=>{
 // 從 bfcache（上一頁）還原時，把載入遮罩收掉，避免卡在「讀取中」
 window.addEventListener('pageshow',e=>{if(e.persisted)document.getElementById('pgload').classList.add('done');});
 </script>
-<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){if(!('caches'in window))return;caches.open('sichuan-app-v142').then(function(c){document.querySelectorAll('script[src],link[href]').forEach(function(el){var u=el.src||el.href;if(!u||u.indexOf(location.origin)!==0)return;c.match(u).then(function(hit){if(!hit)fetch(u).catch(function(){});});});});}).catch(function(){});});}</script>
+<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){if(!('caches'in window))return;caches.open('sichuan-app-v143').then(function(c){document.querySelectorAll('script[src],link[href]').forEach(function(el){var u=el.src||el.href;if(!u||u.indexOf(location.origin)!==0)return;c.match(u).then(function(hit){if(!hit)fetch(u).catch(function(){});});});});}).catch(function(){});});}</script>
 </body>
 </html>
