@@ -131,16 +131,16 @@
   "lat": 30.548129,
   "lng": 104.088904,
   "hours": "10:00-23:00",
-  "price": 62,
-  "rating": "4.5/5",
-  "rating_source": "大众点评截图（948条，2026/07/24）",
+  "price": 64,
+  "rating": "4.4/5",
+  "rating_source": "大众点评截图（1200条，2026/11/15）",
   "dishes": [
    "贵州清真牛肉",
    "黔菜",
    "牛肉汤锅"
   ],
-  "reason": "双流区贵州菜口味榜第1，清真黔味牛肉。",
-  "notes": "清真贵州牛肉；近张家寺站约1.2km。座标为梓州大道近似。",
+  "reason": "双流区贵州菜/黔菜回头客榜第1名，清真黔味牛肉。",
+  "notes": "清真贵州牛肉；近张家寺站A2口约1.2km。座标为梓州大道近似。",
   "coordinate_status": "approximate",
   "coordinate_source": "OSM 梓州大道 双流 WGS-84转GCJ-02（2026-07-24）；精确门牌待补"
  },
@@ -168,5 +168,81 @@
   "notes": "清真西北民间菜；近太升南路站约680m。座标为太升南路近似。",
   "coordinate_status": "approximate",
   "coordinate_source": "OSM 太升南路 WGS-84转GCJ-02（2026-07-24）；精确门牌待补"
+ },
+ {
+  "name": "唐家寺腌卤（土桥老店）",
+  "city": "成都",
+  "category": "小吃",
+  "halal": false,
+  "cuisine": "卤味/鸭脖",
+  "area": "金牛区·茶店子商圈",
+  "address": "成都金牛区金科北路209号",
+  "lat": null,
+  "lng": null,
+  "hours": "07:00-18:00",
+  "price": 43,
+  "rating": "4.4/5",
+  "rating_source": "大众点评截图（406条，2026/11/15）",
+  "dishes": [
+   "拌兔",
+   "卤兔",
+   "凉拌肺片"
+  ],
+  "reason": "茶店子商圈美食热门榜第1名的老字号腌卤店。",
+  "notes": "截图未标示清真，不能视为清真餐厅；座标未查证，出发前确认。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "未查证"
+ },
+ {
+  "name": "清真·九牛三虎小食堂",
+  "city": "成都",
+  "category": "小吃",
+  "halal": true,
+  "cuisine": "快餐简餐/成都小吃",
+  "area": "成华区·新华公园",
+  "address": "成都成华区新鸿南路86号49栋附4号",
+  "lat": null,
+  "lng": null,
+  "hours": "11:30-20:30",
+  "price": 20,
+  "rating": "4.3/5",
+  "rating_source": "大众点评截图（31条，2026/11/15）",
+  "dishes": [
+   "素冒菜",
+   "凉面",
+   "粉蒸牛肉",
+   "清汤包面",
+   "牛肠酸辣粉",
+   "千层酥锅盔"
+  ],
+  "reason": "新华公园附近的平价清真成都小吃，适合一人简餐。",
+  "notes": "近地铁6号线新鸿路站C2口约310m；座标未查证，出发前确认。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "未查证"
+ },
+ {
+  "name": "清真·小泰福馄饨",
+  "city": "成都",
+  "category": "小吃",
+  "halal": true,
+  "cuisine": "馄饨/抄手/扁食",
+  "area": "金牛区·太升路/春熙路",
+  "address": "成都金牛区星辉中路3号1栋1层14号",
+  "lat": null,
+  "lng": null,
+  "hours": "07:30-19:00",
+  "price": 18,
+  "rating": "3.5/5",
+  "rating_source": "大众点评截图（54条，2026/11/15）",
+  "dishes": [
+   "招牌锅贴",
+   "韭菜鸡蛋锅贴",
+   "三掺小馄饨",
+   "牛肉酱米粉"
+  ],
+  "reason": "红星桥附近的清真馄饨、锅贴与米粉小店。",
+  "notes": "近地铁红星桥站F口约610m；座标未查证，出发前确认。",
+  "coordinate_status": "unverified",
+  "coordinate_source": "未查证"
  }
 ]
