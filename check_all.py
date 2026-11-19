@@ -179,7 +179,8 @@ const stops=[];
 m.TRIP.forEach(function(d){d.stops.forEach(function(s,i){stops.push({
   day:d.d, date:d.date, wd:d.wd, city:d.city, t:s.t, name:s.name,
   kind:s.kind||'', label:s.label||'', note:s.note||'', go:s.go||'',
-  alt:s.alt||[], idx:i, last:i===d.stops.length-1
+  alt:s.alt||[], plan:s.plan||'', idx:i,
+  last:!d.stops.slice(i+1).some(function(x){return (x.plan||'')===(s.plan||'')})
 })})});
 const backupNames=[];const backupItems=[];
 m.BACKUPS.forEach(function(g){(g.items||[]).forEach(function(it){
@@ -255,10 +256,14 @@ def check_trip(trip, placenames):
     byday = {}
     for s in trip["stops"]:
         byday.setdefault(s["day"], []).append(s)
-    for day, ss in byday.items():
+    byroute = {}
+    for s in trip["stops"]:
+        byroute.setdefault((s["day"], s.get("plan") or "main"), []).append(s)
+    for (day, plan), ss in byroute.items():
         for a, b in zip(ss, ss[1:]):
             if _mins(b["t"]) < _mins(a["t"]):
-                err("D%s 時間逆行：%s → %s %s" % (day, a["t"], b["t"], b["name"]))
+                tag = "" if plan == "main" else " 方案%s" % plan
+                err("D%s%s 時間逆行：%s → %s %s" % (day, tag, a["t"], b["t"], b["name"]))
                 bad += 1
 
     for s in trip["stops"]:
@@ -471,7 +476,7 @@ HISTORY_WORDS = [
 ]
 
 # 換過主站之後最容易在別處殘留的舊站名；每換掉一站就往這裡加一筆。
-RETIRED = ["杜甫草堂", "磁器口", "兩江夜遊", "雍容薈", "寬窄巷子",
+RETIRED = ["杜甫草堂", "兩江夜遊", "雍容薈", "寬窄巷子",
            "奎星樓街", "人民公園"]
 
 # 有些「原」是地點屬性而非修改歷程（例：原址、原貌、原味）
