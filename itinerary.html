@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>成都・重慶 12/5–12/13 最終行程</title>
-<link rel="preload" href="data.js?v=146" as="script">
-<link rel="preload" href="trip.js?v=146" as="script">
+<link rel="preload" href="data.js?v=147" as="script">
+<link rel="preload" href="trip.js?v=147" as="script">
 <link rel="prefetch" href="libs/leaflet.js">
 <link rel="prefetch" href="libs/leaflet.css">
 <link rel="prefetch" href="map.html">
@@ -196,8 +196,8 @@ header .sub{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.7}
 
 </div>
 
-<script src="data.js?v=146"></script>
-<script src="trip.js?v=146"></script>
+<script src="data.js?v=147"></script>
+<script src="trip.js?v=147"></script>
 <script>
 // ---- 共用：地點查找與繁簡 ----
 const _T2S=(typeof T2S!=="undefined")?T2S:{};
@@ -279,7 +279,7 @@ const KIND={spot:{c:"#c0392b",t:"景點"},meal:{c:"#1a7a6d",t:"餐"},hotel:{c:"#
 // 通用交通與注意事項（每天行程底部都顯示，方便隨時查閱）
 const GTIPS_HTML=`<div class="daytips"><details><summary>🚇 通用交通與注意事項</summary><div class="daytips-b">
 <b>重慶市區：</b>軌道計次票 3日45元（T3 站內購買）；渝中區內（解放碑↔較場口↔小什字）步行常比打車快（單行道多）。<br>
-<b>成渝高鐵：</b>重慶北→成都東約 1.5 小時（二等 154 元），12306 App 支援台胞證註冊，提前購票。<br>
+<b>成渝高鐵：</b>已訂 12/8 G8610，重慶北 09:32→成都東 10:58（1小時26分；商務座 01車 02A／02C，兩人共 ¥1,228）。檢票口 16B17B（如有變更，以現場公告為準）。<br>
 <b>成都市區：</b>打車便宜暢通（起步約 9 元）；地鐵天府通 App／支付寶乘車碼皆可。<br>
 <b>回程機場：</b>CI552 13:15 起飛，10:15 前抵達成都雙流機場 CTU——<b>09:15 出發死線</b>，行程預定08:50退房（打車約35–50分、50–80元／地鐵3號線至太平園轉10號線約55–65分；航廈出發前確認）。<br>
 <b>12 月提醒：</b>兩地均溫 5–13°C 濕冷，羽絨衣＋防滑鞋＋暖暖包；重慶多霧影響夜景（見各日雨霧備案）；預約類景點均需護照/台胞證實名。<br>
@@ -426,6 +426,6 @@ document.addEventListener('click',e=>{
 // 從 bfcache（上一頁）還原時，把載入遮罩收掉，避免卡在「讀取中」
 window.addEventListener('pageshow',e=>{if(e.persisted)document.getElementById('pgload').classList.add('done');});
 </script>
-<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){if(!('caches'in window))return;caches.open('sichuan-app-v146').then(function(c){document.querySelectorAll('script[src],link[href]').forEach(function(el){var u=el.src||el.href;if(!u||u.indexOf(location.origin)!==0)return;c.match(u).then(function(hit){if(!hit)fetch(u).catch(function(){});});});});}).catch(function(){});});}</script>
+<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').then(function(){return navigator.serviceWorker.ready;}).then(function(){if(!('caches'in window))return;caches.open('sichuan-app-v147').then(function(c){document.querySelectorAll('script[src],link[href]').forEach(function(el){var u=el.src||el.href;if(!u||u.indexOf(location.origin)!==0)return;c.match(u).then(function(hit){if(!hit)fetch(u).catch(function(){});});});});}).catch(function(){});});}</script>
 </body>
 </html>
